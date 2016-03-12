@@ -1,0 +1,155 @@
+- |
+    __perc__!TEX TS-program = xelatex
+    \documentclass[english,a4paper,11pt]{article}
+    \usepackage[margin=3cm,a4paper]{geometry}
+    \usepackage{graphicx}
+    \usepackage{amssymb}
+    \usepackage[utf8]{inputenc}
+    \usepackage[norsk]{babel}
+    \usepackage{color}
+    \usepackage{xcolor}
+    \usepackage{booktabs}
+    \usepackage{array}
+    \usepackage{wrapfig}
+    \usepackage{calc}
+    \usepackage{hyperref}
+    \usepackage{xspace}
+    \usepackage{parskip}
+    \definecolor{xalblue}{rgb}{0.1992,0.1992,0.5977}
+    \definecolor{xaldark}{rgb}{0.1992,0.1992,0}
+    \definecolor{lightgray}{gray}{0.8}
+    \renewcommand*{\familydefault}{\sfdefault}
+    \newcolumntype{L}{>{\raggedright}p{0.16\textwidth}}
+    \newcolumntype{R}{p{0.74\textwidth}}
+    \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+    \usepackage{titlesec}
+    \newcommand\secformat[1]{\normalfont\Large\bfseries\color{xalblue}#1}
+    \titleformat{name=\section}[block]{}{}{}{\secformat}
+    \begin{document}
+    \vspace*{-3cm}
+    \hspace*{12.5cm}\includegraphics[width=4cm]{logo.pdf}
+    \vspace*{-1.65cm}
+
+    \noindent
+    {\LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
+    
+    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
+    \end{document}
+- Name: "%s"
+  Basic:
+    - |
+        \section*{Personal information}
+
+        \begin{minipage}[t]{0.4\textwidth}
+        \begin{tabbing}Nationality---\=olaf\kill 
+        %(Address)s%(Post)s%(Birth)s\end{tabbing}
+        \end{minipage}
+        $\quad\quad$
+        \begin{minipage}[t]{0.3\textwidth}
+        \begin{tabbing}Nationality---\=olaf\kill 
+        %(Email)s%(Phone)sNationality: \>Norwegian\\
+        \end{tabbing}
+        \end{minipage}
+    - Name: |
+        Name: \> %s \\
+
+      Address: |
+        Address: \> %s \\
+      Post: |
+        \> %s \\
+      Birth: |
+        Born: \>%s \\
+
+      Email: |
+        E-mail: \>%s \\
+
+      Phone: |
+        Phone: \>%s \\
+  Summary: "\n\n\\section*{Summary}\n\n%s\\\\\n"
+  Skills:
+    - - |
+        \section*{Technical skills}
+
+        \begin{tabular}{LR}
+      - ""
+      - "\\end{tabular}\n\n"
+    - - - ""
+        - " & "
+        - "\\\\ \n"
+      - - ""
+        - ", "
+        - ""
+  Languages:
+    - - |
+        \section*{Languages}
+
+        \begin{tabular}{LR}
+      - ""
+      - "\\end{tabular}\n\n"
+    - - - ""
+        - " & "
+        - "\\\\ \n"
+      - "%s"
+  SelectedSkills:
+    - - |
+        \section*{Personal skills}
+
+        \begin{tabular}{LR}
+
+      - ""
+      - "\\end{tabular}\n\n"
+    - - - ""
+        - " & "
+        - "\\\\ \n"
+      - "%s"
+  Interests:
+    - - |
+        \section*{Some interests and hobbies}
+
+        \begin{tabular}{LR}
+      - ""
+      - "\\end{tabular}\n\n"
+    - - - ""
+        - " & "
+        - "\\\\ \n"
+      - - ""
+        - ", "
+        - ""
+  Education:
+    - - |
+        \section*{Education}
+
+        \begin{tabular}{LR}
+      - ""
+      - "\\end{tabular}\n\n"
+    - - - ""
+        - " & "
+        - "\\\\ \n"
+      - "%s"
+  Work:
+    - - |
+        \section*{Professional experience}
+
+        \begin{tabular}{LR}
+      - ""
+      - "\\end{tabular}\n\n"
+    - - - ""
+        - " -- "
+        - " & "
+        - "\\\\ \n"
+      - "%s"
+  Projects:
+      - - "\\section*{Extended descriptions of selected projects}\n\n
+\\begin{tabular}{@{}LR}\n"
+        - |
+            \end{tabular}
+
+            \begin{tabular}{@{}LR}
+        - "\\end{tabular}\n"
+      - A:
+        - "%(Activity)s%(Role)s%(Staffing)s%(Description)s%(Tools)s"
+        - Activity: "Activity & %s \\\\ \n"
+          Role: "Role & %s \\\\ \n"
+          Staffing: "Staffing & %s \\\\ \n"
+          Description: "Description & %s \\\\ \n"
+          Tools: "Tools & %s \\\\ \n"

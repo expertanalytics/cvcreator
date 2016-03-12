@@ -1,0 +1,14 @@
+- - |
+    \documentclass{article}
+    \begin{document}
+    \begin{verbatim}
+  - "\n"
+  - |
+    \end{verbatim}
+    \end{document}
+- - "\n"
+  - "\n"
+  - "\n"
+  - - "<"
+    - ", "
+    - ">

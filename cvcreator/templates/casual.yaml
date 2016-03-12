@@ -1,0 +1,108 @@
+- |
+    __perc__!TEX TS-program = pdflatex
+    \documentclass[10pt,a4paper,sans]{moderncv}
+    \moderncvstyle{casual}
+    \moderncvcolor{blue}
+    \usepackage[utf8]{inputenc}
+    \usepackage[scale=0.75]{geometry}
+    %(Basic)s
+    \begin{document}
+    \makecvtitle
+
+    %(Summary)s%(Skills)s%(Education)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
+    \end{document}
+- Name: "%s"
+  Basic:
+    - |
+        \name{%(Name)s}{}
+        \title{Expert Analytics}
+        \address{%(Address)s}{%(Post)s}{Norway}
+        \phone[mobile]{%(Phone)s}
+        \email{%(Email)s}
+        \photo[64pt][0.0pt]{logo.pdf}
+    - Name: "%s"
+      Address: "%s"
+      Post: "%s"
+      Birth: "%s"
+      Email: "%s"
+      Phone: "%s"
+  Summary: "\\section{Summary}\n\n%s\n\n"
+  Skills:
+    - - |
+        \section{Technical skills}
+
+      - ""
+      - "\n"
+    - - - "\\cvitem{"
+        - "}{"
+        - "}\n"
+      - - ""
+        - ", "
+        - ""
+  Languages:
+    - - |
+        \section{Languages}
+
+      - ""
+      - "\n"
+    - - - "\\cvitem{"
+        - "}{"
+        - "}\n"
+      - "%s"
+  SelectedSkills:
+    - - |
+        \section{Languages}
+
+      - ""
+      - "\n"
+    - - - "\\cvitem{"
+        - "}{"
+        - "}\n"
+      - "%s"
+  Interests:
+    - - |
+        \section{Some interests and hobbies}
+
+      - ""
+      - "\n"
+    - - - "\\cvitem{"
+        - "}{"
+        - "}\n"
+      - - ""
+        - ", "
+        - ""
+  Education:
+    - - |
+        \section{Education}
+
+      - ""
+      - "\n"
+    - - - "\\cvitem{"
+        - "}{"
+        - "}\n"
+      - "%s"
+  Work:
+    - - |
+        \section{Professional experience}
+
+      - ""
+      - "\n"
+    - - - "\\cvitem{"
+        - " -- "
+        - "}{"
+        - "}\n"
+      - "%s"
+  Projects:
+      - - |
+          \section{Extended descriptions of selected projects}
+
+        - ""
+        - "\n"
+      - A:
+        - |
+            \cventry{%(Staffing)s}{%(Tools)s}{%(Activity)s}{%(Role)s}{}{%(Description)s}
+        - Activity: "%s"
+          Role: "Role: %s"
+          Staffing: "Staffing: %s"
+          Description: "%s"
+          Tools: "Tools: %s"
