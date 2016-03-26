@@ -38,12 +38,16 @@ Get YAML example filename
 
 class open(object):
 
-    def __init__(self, filename, template=None):
+    def __init__(self, filename, template=None, target=None):
 
         assert os.path.isfile(filename)
         self.path = tempfile.mkdtemp() + os.path.sep
 
         self.filename = os.path.basename(filename)
+        if target:
+            self.target = os.path.basename(target)[:-4] + ".pdf"
+        else:
+            self.target = self.filename
 
         # get template dir
         templatedir = os.path.dirname(inspect.getfile(cvcreator))
@@ -60,20 +64,20 @@ class open(object):
             template = "default"
         template = template
         if not os.path.isfile(self.path + template + ".yaml"):
-            self.template_mot_found(template)
+            self.template_not_found(template)
         self.template = template
 
 
     def __enter__(self):
         return self
 
-    def __exit__(self, ty, va, tb):
+    def __exit__(self, typ, val, traceb):
         self.close()
 
     def close(self):
         shutil.rmtree(self.path)
 
-    def template_mot_found(self, template):
+    def template_not_found(self, template):
         raise ValueError("""\
 Template '%s' not found in available templates:
 %s""" % (template, get_template_names()))
@@ -96,13 +100,13 @@ Template '%s' not found in available templates:
 
     def compile(self, textxt):
 
-        texname = self.path + self.filename[:-4] + "tex"
+        texname = self.path + self.target[:-3] + "tex"
         with builtin_open(texname, "w") as f:
             f.write(textxt)
 
         os.system("cd %s; latexmk %s -pdf -latexoption=\"-interaction=nonstopmode\"" % (self.path, texname))
 
-        pdfname = self.path + self.filename[:-4] + "pdf"
+        pdfname = self.path + self.target
         return pdfname
 
 

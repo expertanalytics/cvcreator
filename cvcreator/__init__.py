@@ -23,7 +23,8 @@ def main(args):
     
     else:
 
-        with cvcreator.open(args.filename, args.template) as src:
+        with cvcreator.open(args.filename, template=args.template,
+                            target=args.output) as src:
 
             content = src.get_content()
             template = src.get_template()
