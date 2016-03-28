@@ -1,3 +1,4 @@
+# encoding: utf-8
 """
 """
 import tempfile
@@ -45,9 +46,9 @@ class open(object):
 
         self.filename = os.path.basename(filename)
         if target:
-            self.target = os.path.basename(target)[:-4] + ".pdf"
+            self.target = target
         else:
-            self.target = self.filename
+            self.target = os.path.basename(filename)[:-4] + "pdf"
 
         # get template dir
         templatedir = os.path.dirname(inspect.getfile(cvcreator))
@@ -57,7 +58,21 @@ class open(object):
         # copy everything over
         for name in glob.glob(templatedir + "*"):
             shutil.copy(name, self.path)
-        shutil.copy(filename, self.path + "_content")
+
+        with builtin_open(filename, "r") as f:
+            content = f.read()
+
+        content = content.replace("æ", "\\ae{}"
+                                  ).replace("Æ", "\\AE{}"
+                                  ).replace("ø", "\\o{}"
+                                  ).replace("Ø", "\\O{}"
+                                  ).replace("å", "\\aa{}"
+                                  ).replace("Å", "\\AA{}"
+                                  ).replace("é", "\\'e{}"
+                                  ).replace("É", "\\'E{}")
+
+        with builtin_open(self.path + "_content", "w") as f:
+            f.write(content)
 
         # process template name
         if not template:
@@ -107,6 +122,7 @@ Template '%s' not found in available templates:
         os.system("cd %s; latexmk %s -pdf -latexoption=\"-interaction=nonstopmode\"" % (self.path, texname))
 
         pdfname = self.path + self.target
+        assert os.path.isfile(pdfname)
         return pdfname
 
 
