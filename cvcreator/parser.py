@@ -56,8 +56,8 @@ Examples:
             if not all([isinstance(i, str) for i in inner.values()]):
                 for key,val in inner.items():
                     if not isinstance(val, str):
-                        print(key)
-                        print(val)
+                        print(repr(key))
+                        print(repr(val))
                         raise ValueError("Values in dict not properly vetted!")
             inner = [inner[k] for k in sorted(inner.keys())]
 
