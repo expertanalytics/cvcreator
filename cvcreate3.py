@@ -31,6 +31,9 @@ parser.add_argument("-o", "--output", type=str, dest="output",
 parser.add_argument("-l", '--latex', action="store_true",
         help="""Create latex file instead of pdf.""")
 
+parser.add_argument("-s", '--silent', action="store_true",
+        help="""Muffle output.""")
+
 parser.add_argument("a", metavar="a", type=int, nargs="*",
         help="Projects to include. Omit/0 for all/none.")
 

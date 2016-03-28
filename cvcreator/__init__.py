@@ -51,7 +51,7 @@ def main(args):
                     f.write(textxt)
 
             else:
-                pdffile = src.compile(textxt)
+                pdffile = src.compile(textxt, args.silent)
 
                 destination = args.output or "."
                 shutil.copy(pdffile, destination)

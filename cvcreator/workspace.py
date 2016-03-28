@@ -6,6 +6,7 @@ import shutil
 import inspect
 import glob
 import os
+import subprocess
 import yaml
 
 import cvcreator
@@ -113,13 +114,16 @@ Template '%s' not found in available templates:
         with builtin_open(self.path + "_content") as f:
             return yaml.load(f)
 
-    def compile(self, textxt):
+    def compile(self, textxt, silent):
 
         texname = self.path + self.target[:-3] + "tex"
         with builtin_open(texname, "w") as f:
             f.write(textxt)
 
-        os.system("cd %s; latexmk %s -pdf -latexoption=\"-interaction=nonstopmode\"" % (self.path, texname))
+        if silent:
+            os.system("cd %s; latexmk %s -silent -pdf -latexoption=\"-interaction=nonstopmode\"" % (self.path, texname))
+        else:
+            os.system("cd %s; latexmk %s -pdf -latexoption=\"-interaction=nonstopmode\"" % (self.path, texname))
 
         pdfname = self.path + self.target
         assert os.path.isfile(pdfname)
