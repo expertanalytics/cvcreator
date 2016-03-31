@@ -1,3 +1,4 @@
+
 CVcreator is an automated CV generator from which uses YAML templates.
 For example outputs, take a look into the `examples/` folder.
 
