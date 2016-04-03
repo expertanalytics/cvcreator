@@ -38,6 +38,14 @@ parser.add_argument("-s", '--silent', action="store_true",
 parser.add_argument("a", metavar="a", type=int, nargs="*",
         help="Projects to include. Omit/0 for all/none.")
 
+parser.add_argument("-lw", "--logo-width", type=str, dest="logo_width",
+        help="Set the logo width.")
+parser.add_argument("-lt", "--logo-top", type=str, dest="logo_top",
+        help="Set the logo top position.")
+parser.add_argument("-ll", "--logo-left", type=str, dest="logo_left",
+        help="Set the logo left position.")
+parser.add_argument("-lm", "--logo-margin", type=str, dest="logo_margin",
+        help="Set the margin after logo.")
 
 try:
     import argcomplete

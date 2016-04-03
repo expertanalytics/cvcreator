@@ -1,12 +1,19 @@
 #!/usr/bin/env python
 # encoding: utf8
+# PYTHON_ARGCOMPLETE_OK
 
-import sys
+try:
+    import autosudo # redo command with sudo, if failed
+    import setup_completion # use setup.py argcomplete
+except:
+    pass
+
 import shutil
 
 from distutils.core import setup
 
 shutil.copy("logo.pdf", "cvcreator/templates")
+shutil.copy("config.yaml", "cvcreator/templates")
 
 setup(
     name='cvcreator',

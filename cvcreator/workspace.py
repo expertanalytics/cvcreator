@@ -26,6 +26,8 @@ Faster then creating a full Workspace and retriving it from there.
     templatedir = templatedir + os.path.sep + "templates" + os.path.sep
     templates = glob.glob(templatedir + "*.yaml")
     templates = [os.path.basename(t)[:-5] for t in templates]
+    if "config" in templates:
+        templates.remove("config")
     return templates
 
 def get_yaml_example():
@@ -112,6 +114,10 @@ Template '%s' not found in available templates:
 
     def get_content(self):
         with builtin_open(self.path + "_content") as f:
+            return yaml.load(f)
+
+    def get_config(self):
+        with builtin_open(self.path + "config.yaml") as f:
             return yaml.load(f)
 
     def compile(self, textxt, silent):

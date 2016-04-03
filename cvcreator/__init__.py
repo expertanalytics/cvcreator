@@ -26,7 +26,20 @@ def main(args):
         with cvcreator.open(args.filename, template=args.template,
                             target=args.output) as src:
 
+            config = src.get_config()
+
+            if args.logo_width:
+                config["logo_width"] = args.logo_width
+            if args.logo_top:
+                config["logo_top"] = args.logo_top
+            if args.logo_left:
+                config["logo_left"] = args.logo_left
+            if args.logo_margin:
+                config["logo_margin"] = args.logo_margin
+
             content = src.get_content()
+            content.update(config)
+
             template = src.get_template()
 
             if 0 in args.a:
