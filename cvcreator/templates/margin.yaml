@@ -11,8 +11,8 @@
     \reversemarginpar
     \usepackage[paper=a4paper, marginparwidth=30.5mm, marginparsep=1.5mm, margin=25mm, includemp]{geometry}
     \setlength{\parindent}{0in}
-    \definecolor{xalblue}{rgb}{0.1992,0.1992,0.5977}
-    \definecolor{xaldark}{rgb}{0.1992,0.1992,0}
+    \definecolor{xalblue}{rgb}{0.1719,0.3516,0.6250}
+    \definecolor{xaldark}{rgb}{0.1290,0.2566,0.4688}
     \usepackage{fancyhdr,lastpage}
     \pagestyle{fancy}
     \pagestyle{empty}
@@ -42,19 +42,26 @@
     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}
     \hspace{-5pt}}
     \begin{document}
-    \vspace*{-3cm}
+    \vspace*{1cm}
+    \vspace*{%(logo_top)s}
     \begin{raggedright}
-    \hspace*{9cm}
-    \includegraphics[width=4cm]{logo.pdf}
+    \hspace*{-3cm}
+    \hspace*{%(logo_left)s}
+    \includegraphics[width=%(logo_width)s]{logo.pdf}
+    \vspace*{%(logo_margin)s}
     \end{raggedright}
 
-    \vspace*{-60pt}
+    \vspace*{-10pt}
     \makeheading{
     \LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
 
     %(Basic)s%(Summary)s%(Education)s%(Work)s%(Skills)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
     \end{document}
-- Name: "%s"
+- logo_top: "%s"
+  logo_left: "%s"
+  logo_width: "%s"
+  logo_margin: "%s"
+  Name: "%s"
   Basic:
     - |
         \section{Personal Information}

@@ -15,8 +15,8 @@
     \usepackage{hyperref}
     \usepackage{xspace}
     \usepackage{parskip}
-    \definecolor{xalblue}{rgb}{0.1992,0.1992,0.5977}
-    \definecolor{xaldark}{rgb}{0.1992,0.1992,0}
+    \definecolor{xalblue}{rgb}{0.1719,0.3516,0.6250}
+    \definecolor{xaldark}{rgb}{0.1290,0.2566,0.4688}
     \definecolor{lightgray}{gray}{0.8}
     \renewcommand*{\familydefault}{\sfdefault}
     \newcolumntype{L}{>{\raggedright}p{0.16\textwidth}}
@@ -26,16 +26,20 @@
     \newcommand\secformat[1]{\normalfont\Large\bfseries\color{xalblue}#1}
     \titleformat{name=\section}[block]{}{}{}{\secformat}
     \begin{document}
-    \vspace*{-3cm}
-    \hspace*{12.5cm}\includegraphics[width=4cm]{logo.pdf}
-    \vspace*{-1.65cm}
+    \vspace*{%(logo_top)s}
+    \hspace*{%(logo_left)s}\includegraphics[width=%(logo_width)s]{logo.pdf}
+    \vspace*{%(logo_margin)s}
 
     \noindent
     {\LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
     
     %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
     \end{document}
-- Name: "%s"
+- logo_top: "%s"
+  logo_left: "%s"
+  logo_width: "%s"
+  logo_margin: "%s"
+  Name: "%s"
   Basic:
     - |
         \section*{Personal information}

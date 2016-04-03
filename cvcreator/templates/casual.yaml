@@ -11,7 +11,11 @@
 
     %(Summary)s%(Skills)s%(Education)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
     \end{document}
-- Name: "%s"
+- logo_top: "%s"
+  logo_left: "%s"
+  logo_width: "%s"
+  logo_margin: "%s"
+  Name: "%s"
   Basic:
     - |
         \name{%(Name)s}{}
