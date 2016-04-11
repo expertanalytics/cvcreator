@@ -13,6 +13,7 @@ import shutil
 from distutils.core import setup
 
 shutil.copy("logo.pdf", "cvcreator/templates")
+shutil.copy("footer.pdf", "cvcreator/templates")
 shutil.copy("config.yaml", "cvcreator/templates")
 
 setup(
