@@ -40,6 +40,17 @@ sudo apt-get install latexmk
 pip install pyyaml
 ```
 
+OS X
+~~~~
+There is currently a bug in the install process of pyyaml in pip on OS X which
+unables installation under pyenv. The solution is to install using the
+following command:
+```
+CC=$(which python) pip install pyyaml
+```
+The problem and the solution is described here:
+http://stackoverflow.com/questions/25970966/setup-pyyaml-with-pyenv-on-mac-os-x-file-not-found-python-exe
+
 Install
 -------
 Install by downloading and running:
