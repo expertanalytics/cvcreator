@@ -49,7 +49,7 @@ Examples:
             print(outer)
             print(inner)
             raise ValueError("Interpolation fail!")
-    
+
     elif isinstance(outer, list):
 
         if isinstance(inner, dict):
@@ -156,7 +156,7 @@ def _parse(content, template, name):
                         content[key] = _parse(content[key], template[key], key)
 
             elif isinstance(template, list) and len(template) == 2:
-                
+
                 directive2, template = template
                 keys = sorted(content.keys())
                 for key in keys:
@@ -167,7 +167,7 @@ def _parse(content, template, name):
                            for key in keys]
 
             elif isinstance(template, list) and len(template) >= 3:
-                
+
                 keys = sorted(content.keys())
                 for key in keys:
                     content[key] = _parse(content[key], template, key)
@@ -192,7 +192,7 @@ def _parse(content, template, name):
 
         else:
             assert False
-                
+
         return interpolate(directive, content)
 
     if isinstance(template, (int, float, str)):

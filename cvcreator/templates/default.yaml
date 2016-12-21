@@ -60,7 +60,7 @@
         $\quad\quad$
         \begin{minipage}[t]{0.3\textwidth}
         \begin{tabbing}Nationality---\=olaf\kill 
-        %(Email)s%(Phone)sNationality: \>Norwegian\\
+        %(Email)s%(Phone)s%(Nationality)s
         \end{tabbing}
         \end{minipage}
     - Name: |
@@ -78,6 +78,10 @@
 
       Phone: |
         Phone: \>%s \\
+
+      Nationality: |
+        Nationality: \>%s \\
+
   Summary: "\n\n\\section*{Summary}\n\n%s\\\\\n"
   Skills:
     - - |

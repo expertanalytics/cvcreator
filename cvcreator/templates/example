@@ -5,6 +5,7 @@ Basic:
     Birth: "birthdate"
     Email: "email adresse"
     Phone: "phone number"
+    Nationality: "Norwegian"
 Summary: >
     a short description of who you are
     over multiple line if you wanna.

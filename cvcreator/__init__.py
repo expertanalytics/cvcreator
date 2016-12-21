@@ -20,7 +20,7 @@ def main(args):
 
         yamlfile = get_yaml_example()
         shutil.copy(yamlfile, "./example.yaml")
-    
+
     else:
 
         with cvcreator.open(args.filename, template=args.template,
