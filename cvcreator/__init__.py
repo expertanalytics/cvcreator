@@ -5,14 +5,12 @@ cvparser library
 A library for automated create CV on the fly.
 """
 import shutil
-import os
-builtin_open = open # because override
 
-import cvcreator.parser
-from cvcreator.parser import *
+from cvcreator.parser import parse
+from cvcreator.workspace import cvopen, get_yaml_example
 
-import cvcreator.workspace
-from cvcreator.workspace import *
+__all__ = ["main"]
+
 
 def main(args):
 
@@ -23,8 +21,8 @@ def main(args):
 
     else:
 
-        with cvcreator.open(args.filename, template=args.template,
-                            target=args.output) as src:
+        with cvopen(args.filename, template=args.template,
+                    target=args.output) as src:
 
             config = src.get_config()
 
@@ -60,7 +58,7 @@ def main(args):
             textxt = parse(content, template)
 
             if args.latex:
-                with builtin_open(args.filename[:-4]+"tex", "w") as f:
+                with open(args.filename[:-4]+"tex", "w") as f:
                     f.write(textxt)
 
             else:

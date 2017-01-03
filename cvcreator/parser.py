@@ -1,42 +1,42 @@
 """
 """
-import yaml
+
 __all__ = ["interpolate", "parse"]
 
+
 def interpolate(outer, inner):
-    """
-Interpolate text components together.
+    """Interpolate text components together.
 
-+---------+--------+--------------------------------------------+
-| outer   | inner  | results                                    |
-+=========+========+============================================+
-| `<any>` | `""`   | `""`                                       |
-+---------+--------+--------------------------------------------+
-| `str`   | `str`  | `outer % inner`                            |
-+---------+--------+--------------------------------------------+
-| `str`   | `dict` | `outer % inner`                            |
-+---------+--------+----------+-----+---------------------------+
-| `str`   | `list` | `outer[0]+inner+outer[1]`                  |
-+---------+--------+------+----+----+----+----------+----+------+
-| `list`  | `list` | `o[0]+i[0]+o[1]+i[1]+o[1]..o[1]+i[n]+o[2]` |
-+---------+--------+------+----+----+----+----------+----+------+
+    +---------+--------+--------------------------------------------+
+    | outer   | inner  | results                                    |
+    +=========+========+============================================+
+    | `<any>` | `""`   | `""`                                       |
+    +---------+--------+--------------------------------------------+
+    | `str`   | `str`  | `outer % inner`                            |
+    +---------+--------+--------------------------------------------+
+    | `str`   | `dict` | `outer % inner`                            |
+    +---------+--------+----------+-----+---------------------------+
+    | `str`   | `list` | `outer[0]+inner+outer[1]`                  |
+    +---------+--------+------+----+----+----+----------+----+------+
+    | `list`  | `list` | `o[0]+i[0]+o[1]+i[1]+o[1]..o[1]+i[n]+o[2]` |
+    +---------+--------+------+----+----+----+----------+----+------+
 
-Combinations of input not listed are not supported.
+    Combinations of input not listed are not supported.
 
-Args:
-    outer (dict, list, str) : The outer part of the interpolate
-    inner (list, str) : The inner part of the interpolate
+    Args:
+        outer (dict, list, str) : The outer part of the interpolate
+        inner (list, str) : The inner part of the interpolate
 
-Returns:
-    (str): The argument woven together.
+    Returns:
+        (str): The argument woven together.
 
-Examples:
-    >>> print(interpolate("spam%s", "eggs"))
-    spameggs
-    >>> print(interpolate("spam%s", ""))
-    <BLANKLINE>
-    >>> print(interpolate(["pre", "in", "post"], ["1", "2", "3"]))
-    pre1in2in3post
+    Examples:
+        >>> print(interpolate("spam%s", "eggs"))
+        spameggs
+        >>> print(interpolate("spam%s", ""))
+        <BLANKLINE>
+        >>> print(interpolate(["pre", "in", "post"], ["1", "2", "3"]))
+        pre1in2in3post
     """
 
     if not inner:
@@ -54,7 +54,7 @@ Examples:
 
         if isinstance(inner, dict):
             if not all([isinstance(i, str) for i in inner.values()]):
-                for key,val in inner.items():
+                for key, val in inner.items():
                     if not isinstance(val, str):
                         print(repr(key))
                         print(repr(val))
@@ -88,12 +88,11 @@ def verify_structure(content, template, name):
 
 
 def parse(content, template):
-    """
-Weave together to nested YAML-structures using a set of basic rules.
+    """Weave together to nested YAML-structures using a set of basic rules.
 
-Args:
-    content (dist, list, str) : Nested content from user provided content
-    template (dict, list, str) : Nested content from template
+    Args:
+        content (dist, list, str) : Nested content from user provided content
+        template (dict, list, str) : Nested content from template
     """
     # Retrieve name out of scope
     content["Name"] = content["Basic"]["Name"]
@@ -118,7 +117,7 @@ def _parse(content, template, name):
         assert all([isinstance(t, str) for t in template])
 
         if isinstance(content, list):
-            for i,c in zip(range(len(content)), content):
+            for i, c in zip(range(len(content)), content):
                 content[i] = _parse(c, template, name)
 
         elif isinstance(content, dict):
@@ -162,9 +161,7 @@ def _parse(content, template, name):
                 for key in keys:
                     content[key] = _parse(content[key], template, key)
 
-
-                content = [interpolate(directive2, [key, content[key]])\
-                           for key in keys]
+                content = [interpolate(directive2, [key, content[key]]) for key in keys]
 
             elif isinstance(template, list) and len(template) >= 3:
 
@@ -172,17 +169,15 @@ def _parse(content, template, name):
                 for key in keys:
                     content[key] = _parse(content[key], template, key)
 
-
-                content = [interpolate(template, [key, content[key]])\
-                           for key in keys]
+                content = [interpolate(template, [key, content[key]]) for key in keys]
 
             elif isinstance(template, (int, float, str)):
                 raise ValueError(
-                    "Template assumes no subcategory of %s\n%s" %\
-                    (name, template))
+                    "Template assumes no subcategory of %s\n%s" % (
+                        name, template))
 
         elif isinstance(content, list):
-            for i,c in zip(range(len(content)), content):
+            for i, c in zip(range(len(content)), content):
                 content[i] = _parse(c, template, name)
 
         elif isinstance(content, (int, float, str)):
@@ -203,7 +198,7 @@ def _parse(content, template, name):
                 content[key] = _parse(content[key], template, key)
 
         elif isinstance(content, list):
-            for i,c in zip(range(len(content)), content):
+            for i, c in zip(range(len(content)), content):
                 content[i] = _parse(c, template, name)
 
         elif isinstance(content, (int, float, str)):
@@ -217,7 +212,6 @@ def _parse(content, template, name):
     print(content)
     print(template)
     assert False
-
 
 
 if __name__ == "__main__":
