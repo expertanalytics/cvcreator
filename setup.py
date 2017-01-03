@@ -2,6 +2,7 @@
 # encoding: utf8
 # PYTHON_ARGCOMPLETE_OK
 
+import sys
 import os
 import shutil
 from setuptools import setup
@@ -31,6 +32,7 @@ setup(
     ],
 )
 
-os.remove("cvcreator/templates/logo.pdf")
-os.remove("cvcreator/templates/footer.pdf")
-os.remove("cvcreator/templates/config.yaml")
+if "develop" not in sys.argv:
+    os.remove("cvcreator/templates/logo.pdf")
+    os.remove("cvcreator/templates/footer.pdf")
+    os.remove("cvcreator/templates/config.yaml")
