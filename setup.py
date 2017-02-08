@@ -13,7 +13,7 @@ shutil.copy("config.yaml", "cvcreator/templates")
 
 setup(
     name="cvcreator",
-    version="0.4.2",
+    version="0.4.3",
     url="http://github.com/ExpertAnalytics/cvcreator",
 
     author="Jonathan Feinberg",
@@ -30,6 +30,7 @@ setup(
     install_requires=[
         "pyyaml",
     ],
+    zip_safe=False,
 )
 
 if "develop" not in sys.argv:
