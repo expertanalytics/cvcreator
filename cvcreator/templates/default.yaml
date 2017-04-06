@@ -168,9 +168,11 @@
         \begin{longtable}{@{}LR}
       - "\\end{longtable}\n"
     - A:
-        - "%(Activity)s%(Role)s%(Staffing)s%(Description)s%(Tools)s"
+        - "%(Activity)s%(Period)s%(Role)s%(Staffing)s%(Volume)s%(Description)s%(Tools)s"
         - Activity: "Activity & %s \\\\ \n"
+          Period: "Period & %s \\\\ \n"
           Role: "Role & %s \\\\ \n"
           Staffing: "Staffing & %s \\\\ \n"
+          Volume: "Volume & %s \\\\ \n"
           Description: "Description & %s \\\\ \n"
           Tools: "Tools & %s \\\\ \n"
