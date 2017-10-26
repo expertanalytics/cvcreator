@@ -1,0 +1,63 @@
+Basic:
+    Name:  "Guttorm"
+    Address: "Trondheimsveien 5D"
+    Post: "0560 Oslo"
+    Birth: "24/08/1992"
+    Email: "guttorm@xal.no"
+    Phone: "+47 40468642"
+    Nationality: "Norwegian"
+Summary: >
+    I am a curious person with an interest and enthusiasm for technology and problem solving. I submitted my master’s thesis summer 2017 in the field of Computational Science and Engineering at the University of Oslo / Simula. In my work I performed numerical simulations of micro-particles inhaled into the human respiratory system. This involved writing Python scripts and working with open-source solutions and libraries, as well as data analysis and supercomputer simulations. My academic background involves a combination of mathematics and programming, together with insights in physics and fluid mechanics. During my studies I have developed my professional experience through part-time and holiday positions within teaching and customer service. 
+
+Skills:
+    Languages:
+        - "Python"
+        
+    Frameworks:
+        - "Numpy"
+        - "Scipy"
+    Tools:
+        - "Paraview"
+        - "Ansys ICEM"
+Languages:
+    "language1": "Norwegian, native"
+    "language2": "English, fluent"
+SelectedSkills:
+    "Skill1": >
+        Programming
+    "Skill2": >
+        Mathemtics, physics, and mechanics
+Education:
+    - - 
+      - >
+        \textbf{B. Sc. Physics at the University of Oslo}
+    - - 8/12
+      - 6/15
+      - >
+          Introduction to different fields of physics, in addition to mathematics and programming.
+
+    - - 
+      - >
+        \textbf{M. Sc. Computational Science and Engineering at the University of Oslo}
+    - - "8/15"
+      - "6/17"
+      - >
+          Master's thesis on numerical simulation of micro-particles inhaled into the human respiratory system, with applications to inhalation medicine. Subjects covering numerical methods, programming, fluid mechanics, differential equations, and linear algebra. 
+Work:
+    - - 
+      - >
+        \textbf{B. Sc. Physics at the University of Oslo}
+    - - 8/12
+      - 6/15
+      - >
+          Introduction to different fields of physics, in addition to mathematics and programming.
+Projects:
+    A1:
+        Activity: "project title"
+        Period: "start to end"
+        Role: "your role in project"
+        Staffing: "who worked on project"
+        Volume: "Volume of work (eg.\ percent of full time)"
+        Description: >
+            short description of project and your involvement
+        Tools: "tools used"

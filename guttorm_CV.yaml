@@ -1,0 +1,70 @@
+Basic:
+    Name:  "Guttorm"
+    Address: "Trondheimsveien 5D"
+    Post: "0560 Oslo"
+    Birth: "24/08/1992"
+    Email: "guttorm@xal.no"
+    Phone: "+47 40468642"
+    Nationality: "Norwegian"
+Summary: >
+I am a curious person with an interest and entusiasm for technology and problem solving. I submitted my master degree summer 2017 in the field of Computational Science and Engineering at the University of Oslo / Simula. In my thesis I used advanced numerical methods for performing supercomputer simulations of micro-particles inhaled into the human respiratory system. My academic background involves a combination of mathematics and programming, in addition to physics and mechanics. By combining knowledge from different scientific fields, I am able to analyze advanced problems, and create and validate robust solutions to client problems.
+
+Skills:
+    Languages:
+        "Python"
+       
+    Frameworks:
+        - "Numpy"
+	- "Scipy"
+        
+    Tools:
+        - "Paraview
+        - "Ansys ICEM"
+Languages:
+    "language1": "Norwegian, native"
+    "language2": "English, fluent"
+SelectedSkills:
+    "Skill1": >
+	"Programming"
+    "Skill2": >
+        "Science and Technology"
+    "Skill2": >
+	"Costumer Contact"
+
+Education:
+    - - "when degree1 completed"
+      - >
+        description of completed degree1
+    - - "when degree2 start"
+      - "when degree2 completed"
+      - >
+        description of completed degree2
+Work:
+    - - "when"
+      - >
+        description of work1
+    - - "start"
+      - "end"
+      - >
+        description of work2
+    - - "start"
+      - "" # <- blank
+      - >
+        description of work3 where you still work
+Interests:
+    "topic1":
+        - "topic element"
+        - ...
+    "toptic2":
+        - "topic element"
+        - ...
+Projects:
+    A1:
+        Activity: "project title"
+        Period: "start to end"
+        Role: "your role in project"
+        Staffing: "who worked on project"
+        Volume: "Volume of work (eg.\ percent of full time)"
+        Description: >
+            short description of project and your involvement
+        Tools: "tools used"
