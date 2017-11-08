@@ -1,5 +1,5 @@
 
-CVcreator is an automated CV generator from which uses YAML templates.
+CVcreator is an automated CV generator which uses YAML templates.
 For example outputs, take a look into the `examples/` folder.
 
 Usage
@@ -25,13 +25,14 @@ For information about other options, see:
 $ cvcreate --help
 ```
 
-Installation
-============
-
 Custom Logo
 -----------
 To use a custom logo, just replace the local file `logo.pdf` with your own
 user provided file.
+
+Installation
+============
+For installation on Mac OS-X, see section below
 
 Prerequisite
 ------------
@@ -48,6 +49,8 @@ CC=$(which python) pip install pyyaml
 ```
 The problem and the solution is described here:
 http://stackoverflow.com/questions/25970966/setup-pyyaml-with-pyenv-on-mac-os-x-file-not-found-python-exe
+
+Alternatively use MacPorts.
 
 Install
 -------
@@ -76,3 +79,18 @@ sudo activate-global-python-argcomplete3
 It is possible to install argcomplete using `pip`, but the activation script is
 not. It should either be done from package manager or from source:
 https://github.com/kislyuk/argcomplete
+
+Tips for installation on Mac OS-X
+---------------------------------
+The prerequisites can be installed as described above OR using MacPorts
+
+sudo port install latexmk py27-yaml
+
+and then install cvcreator by
+
+python setup.py install --user
+
+(the --user is important not to interfere with the MacPorts installation tree)
+
+It might be necessary to add '/Users/*username*/Library/Python/*python version*/bin/' to the path by replacing the username and python version with the appropriate values and putting the following line in your .profile_bash or .bash file:
+export PATH=/Users/*username*/Library/Python/*python version*/bin/:$PATH
