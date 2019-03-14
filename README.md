@@ -37,7 +37,7 @@ For installation on Mac OS-X, see section below
 Prerequisite
 ------------
 ```
-sudo apt-get install latexmk
+sudo apt-get install latexmk texlive-latex-extra
 python3 -m pip install pipenv
 python3 -m pipenv shell
 pipenv install
