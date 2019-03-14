@@ -38,7 +38,9 @@ Prerequisite
 ------------
 ```
 sudo apt-get install latexmk
-pip install pyyaml
+python3 -m pip install pipenv
+python3 -m pipenv shell
+pipenv install
 ```
 
 There is currently a bug in the install process of pyyaml in pip on OS X which
