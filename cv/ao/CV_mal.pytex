@@ -1,0 +1,126 @@
+header_template = r"""
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[english,a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{}
+\usepackage[margin=3cm,a4paper]{geometry}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[norsk]{babel}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{calc}
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{parskip}
+
+
+\definecolor{xalblue}{rgb}{0.1992,0.1992,0.5977}
+\definecolor{xaldark}{rgb}{0.1992,0.1992,0}
+\definecolor{lightgray}{gray}{0.8}
+
+
+%\usepackage{fontspec,xltxtra,xunicode,relsize}
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text]{Verlag Light}
+%\setmainfont[Mapping=tex-text]{Sina-Regular}
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue}
+%\setmonofont[Scale=MatchLowercase]{Monaco}
+\renewcommand*{\familydefault}{\sfdefault}
+
+\newcolumntype{L}{>{\raggedright}p{0.16\textwidth}}
+\newcolumntype{R}{p{0.74\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+
+\usepackage{titlesec}
+\newcommand\secformat[1]{\normalfont\Large\bfseries\color{xalblue}#1}
+\titleformat{name=\section}[block]{}{}{}{\secformat}
+
+\begin{document}
+
+\vspace*{-3cm}
+\hspace*{12.5cm}\includegraphics[width=4cm]{logo.pdf}
+
+\vspace*{-1.65cm}
+
+\noindent
+{\LARGE \bfseries \color{xaldark}Curriculum Vitae for pName:}
+
+\section*{Personal information}
+
+\begin{minipage}[t]{0.4\textwidth}
+\begin{tabbing}Nationality---\=olaf\kill 
+Address:pAddress:
+Born:pBirth:
+\end{tabbing}
+\end{minipage}
+$\quad\quad$
+\begin{minipage}[t]{0.3\textwidth}
+\begin{tabbing}Nationality---\=olaf\kill 
+E-mail: pEmail:
+Phone: pPhone:
+Nationality:\>Norwegian\\
+\end{tabbing}
+\end{minipage}
+
+\section*{Summary}
+pSummary:
+
+"""
+
+Skills_template = r"""\section*{Technical Skills}
+\begin{tabular}{LR}
+pSkills:
+\end{tabular}
+"""
+
+Education_template = r"""\section*{Education}
+\begin{tabular}{LR}
+pEducation:
+\end{tabular}
+"""
+
+Work_template = r"""\section*{Professional Experience}
+\begin{tabular}{LR}
+pWork:
+\end{tabular}
+"""
+
+Other_template = r"""\section*{Other Experience}
+\begin{tabular}{LR}
+pOther:
+\end{tabular}
+"""
+
+Languages_template = r"""\section*{Languages}
+\begin{tabular}{LR}
+pLanguages:
+\end{tabular}
+"""
+
+SelectedSkills_template = r"""\section*{Personal Skills}
+\begin{tabular}{LR}
+pSelectedSkills:
+\end{tabular}
+"""
+
+Interests_template = r"""\section*{Some interests and hobbies}
+\begin{tabular}{LR}
+pInterests:
+\end{tabular}
+"""
+
+footer_template = r"""\section*{Extended descriptions of select projects}
+
+pProjects:
+
+\end{document}
+"""

@@ -1,0 +1,46 @@
+Interests:
+    "topic1":
+        - "topic element"
+        - ...
+    "toptic2":
+        - "topic element"
+        - ...
+
+Profiles:
+    - - Linkedin
+      - http://no.linkedin.com/in/martinal/
+    - - Orcid
+      - http://orcid.com/0000-0001-5479-5855
+    - - arXiv
+      - http://arxiv.org/a/alnaes_m_1
+    - - Google
+      - http://scholar.google.no/citations?user=Rk5ddqAAAAAJ
+    - - Bitbucket
+      - http://bitbucket.com/martinal/
+    - - Github
+      - http://github.com/martinal/
+    - - Simula
+      - http://simula.no/people/martinal/
+
+Snippets:
+    - Future A15 addition, work in progress:
+            Based on experience from these partially overlapping projects
+            we designed a framework with reusable components for scientific
+            3D visualization libraries, called FIXME-INSERT-NAME, and
+            (INSERT final story here, hopefully we'll get the other projects on board with our work).
+
+Projects:
+    A83:
+        Activity: "Profiling and optimizing Python libraries"
+        Role: "Lead developer"
+        Staffing: "1 developer"
+        Period: "20XX.XX -- 20XX.XX"
+        Description: >
+            FEniCS is a highly scalable parallel high performance computing system,
+            but with a serial overhead due to preprocessing stages
+            employing symbolic computations and code generation.
+            Motivated in particular by optimization applications using
+            the dolfin-adjoint library which relies heavily on these
+            symbolic capabilities of FEniCS, I profiled and optimized
+            large parts of the Python code.
+        Tools: "Python, cProfile"

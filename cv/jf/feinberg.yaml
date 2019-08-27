@@ -1,0 +1,171 @@
+Basic:
+    Name:  Jonathan Feinberg
+    Address: Wessels gate 9A
+    Post: 0165 Oslo
+    Birth: 28.04.1984
+    Email: jonathan@xal.no
+    Phone: +47 932 14 474
+Summary: >
+        I have recently defended my doctorate at the Department of mathematics
+        at the University of Oslo. My educational background is in probability
+        theory, statistics and machine learning with heavy focus on numerical
+        programming and practical applications. My skills include programming
+        in Python, which I have used to write a few software packages. I am
+        also familiar with other languages, like Matlab and R, and can easily
+        adapt beyond this.
+Skills:
+    Languages:
+        - Bash
+        - C++
+        - MATLAB
+        - Python
+        - R
+        - Vimscript
+        - \LaTeX
+        - Markdown/Rst
+    Frameworks:
+        - Armadillo
+        - Keras
+        - PyMC
+        - GIS
+        - MPI
+        - Matplotlib
+        - Numpy
+        - SciPy
+    Tools:
+        - Flask
+        - Git
+        - Linux
+        - Regex
+        - Sphinx
+        - Sqlite
+Languages:
+    Norwegian: Mother tongue
+    English: Fluent
+SelectedSkills:
+    Technology: >
+        Large enthusiasm for learning and mastering anything new within
+        science, technology and programming.
+    Communication: >
+        Able to convey research and condensed knowledge into a presentable and
+        explainable form. Extensive experience as university lecturer and
+        teacher.
+    Planning: >
+        I am a ``Problem solver'', able to see strengths and weaknesses of
+        proposed progress plans, grounded in fact-based thought.
+Education:
+    - - 2015
+      - 'Ph.D. in Mathematics from the Department of Mathematics, University of
+        Oslo. Title of dissertation: "Some Improvements and Applications and
+        Non-intrusive Polynomial Chaos Expansions". Supervisor: Professor Hans
+        Petter Langtangen.'
+    - - 2009
+      - 'M.Sc. in Modelling and Data Analysis from the Department of
+        Mathematics, University of Oslo. Title of thesis: "Threshold Definition
+        of Early Warning Systems to Natural Hazards". Supervisor: Professor
+        Bent Natvig.'
+    - - 2007
+      - 'B.Sc. in Mathematics, Informatics and Technology, University of Oslo.'
+Work:
+    - - 2016
+      - 
+      - Consultant at Expert Analytics
+    - - 2014
+      - 2015
+      - 20\% Teaching Position at the Department of Informatics, University of Oslo
+    - - 2014
+      - 2015
+      - 10\% Private tutor at high school and under-graduate level at House of Math
+    - - 2014
+      - 2015
+      - 50\% Scientific Programmer for Simula Research Laboratory
+    - - 2013
+      - 2014
+      - 10\% Consultant at Kalkulo AS
+    - - 2011
+      - 2014
+      - Ph.D. student at Simula Research Laboratory
+    - - 2009
+      - 2010
+      - Research Assistant at Texas A\&M University
+    - - 2009
+      - 2009
+      - Science Teacher at Smerud Medical Research
+    - - 2008
+      - 30\% Assistant Teacher at Department of Mathematics, University of Oslo
+    - - 2007
+      - 2008
+      - '20\% Student Ambassador at Public Relations and Events Office,
+        University of Oslo'
+    - - 2007
+      - 30\% Data Analyst at If P\&C Insurance
+Interests:
+    Personal:
+        - Dancing
+        - Traveling
+    Tech:
+        - Biotechnology
+        - Web-design
+Projects:
+    A1:
+        Activity: Machine learning for Oncoimmunity
+        Role: Consultant
+        Staffing: 4 developers
+        Description: >
+            OncoImmunity develop bioinformatics software that has the
+            ability to empower precision cancer immunotherapy, and thus
+            improves the outlook for patients with late-stage disease. My role
+            is to develop machine-learning methods applied to genomic data for
+            tumor immune profiling. The goal is to select optimal patients to
+            be assigned to cancer immunotherapy clinical trials.
+        Tools: Python, Scikit-learn, Keras
+    A2:
+        Activity: Machine learning for Statkraft
+        Role: Consultant
+        Staffing: 3 developers
+        Description: >
+            Statkraft is a leading company in hydropower internationally, and
+            Europe's largest generator of renewable energy. Our role was to
+            explore the possibility of applying machine learning to parts of
+            Statkraft's core business. In particular, we looked into various
+            machine learning techniques that could be used to predict future
+            market energy consume. The techniques included applying methods
+            like statistical regression, time-series models, and artificial
+            neural networks.
+        Tools: Python, Keras, Statsmodels, Scikit-learn
+    A3:
+        Activity: Information screen for Høyer
+        Role: Backend developer
+        Staffing: 2 developers
+        Description: >
+            Høyer is a clothing department store chain in Norway. The have
+            multiple outlets across the country. Our job was to create
+            information screen based on the daily and monthly sales and budget
+            numbers. My contribution was to implement a web application that
+            retrieved and processed data to be displayed.
+        Tools: Python, Flask, Sqlite
+    A4:
+        Activity: Matlab to C++ converter
+        Role: Software developer
+        Staffing: 2 developers
+        Description: >
+            As part of an EU sponsored project, Simula Research Laboratory and
+            Western Geco is collaborating to speed up the code translation step
+            from Matlab to C++ using Armadillo. The approach involves creating
+            a full parser that creates semi-automatic translations.
+            I contributed as the developer of the parser, and the structure of
+            translation.
+        Tools: Python, Armadillo, Sphinx
+    A5:
+        Activity: Chaospy -- Uncertainty Quantification Toolbox
+        Role: Researcher and algorithm developer
+        Staffing: 1 researchers
+        Description: >
+            Chaospy is an open source toolbox containing a large collection of
+            uncertainty quantification tools. It also include some
+            state-of-the-art tools designed to reduce the computational budget
+            in analysis. I wrote the software as part of my Ph.D. work. In
+            collaboration with other researchers, I also help integrate Chaospy
+            into other practical applications involving for example blood flow
+            simulations.
+        Tools: Python

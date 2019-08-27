@@ -1,0 +1,195 @@
+Basic:
+    Name:  "Ola Skavhaug"
+    Address: "Aslakveien 31"
+    Post: "0753 Oslo"
+    Birth: "10 April"
+    Email: "ola@xal.no"
+    Phone: "92612490"
+    Nationality: "Norwegian"
+Summary: >
+    I am a skillful software developer, researcher, and project leader with 16 years professional experience.
+    My main areas of technical expertise are mathematical and numerical software development, algorithm 
+    development, advanced scripting with modern scripting languages, parallel programming, software testing 
+    and deployment, library design, and scientific visualization.\\
+
+    In 2013, I founded Expert Analytics AS together with Åsmund Ødegård. Since then, my assignments have mostly involved
+    writing simulation software in hydrology that combines flexibility and numerical efficiency, and building 
+    frameworks for novel analysis of the behavoir of the North European hydropower markets.
+Skills:
+    Languages:
+        - "Python"
+        - "C"
+        - "C++"
+        - "Fortran"
+        - "Javascript"
+        - "Perl"
+        - "Java"
+        - "PHP"
+        - "Bash"
+        - "Tcl/Tk"
+        - "Matlab"
+        - "LaTeX"
+        - "HTML"
+        - "XML"
+    Frameworks:
+        - "Numpy"
+        - "SciPy"
+        - "Matplotlib"
+        - "Bokeh"
+        - "Flask"
+        - "MPI"
+        - "Swig"
+        - "Boost"
+        - "Stl"
+        - "VTK"
+        - "FEniCS"
+        - "PETSc"
+        - "SLEPc"
+        - "Diffpack"
+    Tools:
+        - "Git"
+        - "Mercurial"
+        - "Subversion"
+        - "CVS"
+        - "Make"
+        - "CMake"
+        - "SCons"
+        - "GCC"
+        - "Autoconf"
+        - "Linux"
+Languages:
+    "Norwegin": "Mother tongue"
+    "English": "Fluent"
+    "German": "Basic"
+SelectedSkills:
+    "Management": >
+        Motivate and lead experts and PhD students, define and implement new projects, 
+        facilitate communication in informal surroundings to break up the work day.
+    "Applied mathematics": >
+        Analyze, develop and implement complex algorithms in applied sciences, while balancing 
+        constraints like flexibility and efficiency. Short, agile development cycles with discussions 
+        and feedback from problem owners.
+Education:
+    - - "2004"
+      - >
+        Dr. Scient in Computer Science, The Faculty of Mathematics and Natural Sciences, University of Oslo. 
+        Thesis’ title: “Numerical Methods and Software with Applications in Computational Finance”.
+    - - "1996"
+      - "1998"
+      - >
+        Cand. Scient in Computer Science, Department of Informatics, University of Oslo.
+Work:
+    - - "2013"
+      - >
+        Consultant, Expert Analytics AS
+    - - "2011"
+      - "2013"
+      - >
+        Innovation manager, Simula Innovation AS
+    - - "2010"
+      - "2011" 
+      - >
+        Senior Scientific Programmer, Kalkulo AS
+    - - "2007"
+      - "2010" 
+      - >
+        Research Scientist and head of the computational middleware software activity at the Centre of Biomedical Computing (CBC) at Simula Research Laboratory
+    - - "2005"
+      - "2007"
+      - >
+        Research Scientist and head of the project Software for PDEs”at Simula Research Laboratory
+    - - "2004"
+      - "2005"
+      - >
+        IT-managet, Simula Research Laboratory
+    - - "2004"
+      - ""
+      - >
+        System Administrator, Simula Research Laboratory
+    - - "2004"
+      - "2010"
+      - > 
+        20\% Associate Professor, Department of Informatics, University of Oslo
+    - - "2001"
+      - "2004"
+      - >
+        Ph.D. Student at Simula Research Laboratory
+    - - "2000"
+      - "2004"
+      - >
+        20\% Teaching Position at the Department of Informatics, University of Oslo
+    - - "2000"
+      - "2001"
+      - >
+        Ph.D. student at the Department of Informatics, University of Oslo
+Interests:
+    "Physical":
+        - "Telemark skiing"
+        - "running"
+        - "biking"
+        - "climbing"
+        - "yoga"
+    "Gastronomical":
+        - "Beer brewing"
+        - "cooking"
+    "Other":
+        - "Reading"
+        - "traveling"
+        - "trekking"
+        - "expeditions"
+Projects:
+    A1:
+        Activity: "LTM Analysis Desktop for Statkraft"
+        Role: "Senior developer and architect"
+        Staffing: "Two main developers, and several analysts"
+        Description: >
+            Analysts at Statkraft use the so called EMPS model to understand the long term behaviour of the North 
+            European power market. Although the core of this system is still solid and provides insights, the 
+            tools and workflows associated with it is dated at best. To fix this, Statkraft has started a project, 
+            the LTM Application Platform, that augments the simulator with a powerful and flexible domain model 
+            written in a mixture of Python and C++. The platform both serves as a frontend to the analysts at Statkraft, 
+            enabling new ways of viewing results through domain specific transformations, and helps to manage the 
+            large amounts of data that is both used as input and produced as results by the EMPS simulator. My role in
+            this project has been to define and implement the domain model together with the chief architect at
+            Statkraft, and contribute to designe the architecture needed to meet the requirements on efficiency 
+            with regards to making the simulation results available to the analyst as soon as possible.
+        Tools: "Python, HDF5, Bokeh, Matplotlib, EMPS model, Microsoft HPC Suite"
+    A2:
+        Activity: "SHyFT development"
+        Role: "Senior developer and architect"
+        Staffing: "Four developers, several hydrologists"
+        Description: >
+            Enki was an open source hydrologcal simulation platform developed by SINTEF for Statkraft over a 
+            time period of several years. The original implementation, being a proof of concept type research 
+            code, was not suited for daily use in an operational setting due to limitations on scalability, 
+            design and performance. I was hired in a project to remedy this, and we quickly realized that we 
+            needed to reimplement everything from scratch and use the existing code base as a starting point 
+            for the algorithmic aspects. The resulting hydrological forcasting toolbox, named SHyFT, is currently
+            operationalized and run daily at Statkraft.
+        Tools: "C++11, Stl, Swig, Boost, Python, Armadillo, dlib, yaml, Codeblocks"
+
+    A3:
+        Activity:   "mCASH backend development"
+        Role:       "Senior Python Developer"
+        Staffing:   "12-15 Python developers"
+        Description: >
+            In this project, I have been working on most parts of the backend of a new mobile payment system. 
+            This includes financial transaction handling, the internal bank implementation, messages emitted 
+            through various protocols based on recipients, OpenID Connect scopes implementation and payment for 
+            these, web handlers for endpoints, and Datastore transaction in the Google app engine, all in Python. 
+            I have also rewritten the instrumentation test framework, that does real life scenario, black box 
+            testing of the core system. The development is test driven, with tests covering close to 100 percent 
+            of the code base, follows the Scrum agile method, and utilizes state-of-the-art technologies like Git 
+            for version control, Nose for testing, and Sphinx for documentation.
+        Tools: "Python, Google app engine, Git, buildout, nose tests, Sphinx, webapp2, Jinja2, OAuthLib, JSON, html, javascript, jQuery, Pusher"
+    A4:
+        Activity:   "Computational Middleware, Center for Biomedical Computing"
+        Role:       "Leader, scientist and software developer"
+        Staffing:   "3-4 scientists and developers"
+        Description: >
+            As a project leader, I had the responsibility of the technical development, scientific achievements, 
+            the economy, and the personnel in the project. The project strongly emphasized the development of 
+            reliable, extensible and numerical efficient software components for solving scientific problems through 
+            simulations.
+
+

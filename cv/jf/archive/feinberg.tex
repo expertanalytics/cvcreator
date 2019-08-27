@@ -1,0 +1,193 @@
+%!TEX TS_program = pdflatex
+\documentclass[10pt]{article}
+\usepackage[norsk]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{calc}
+\reversemarginpar
+\usepackage[paper=a4paper, marginparwidth=30.5mm, marginparsep=1.5mm, margin=25mm, includemp]{geometry}
+\setlength{\parindent}{0in}
+\definecolor{xalblue}{rgb}{0.1992,0.1992,0.5977}
+\definecolor{xaldark}{rgb}{0.1992,0.1992,0}
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\pagestyle{empty}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newcommand{\makeheading}[2][]
+{\hspace*{-\marginparsep minus \marginparwidth}
+\begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}
+{\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]
+\rule{\columnwidth}{1pt}
+\end{minipage}
+\vspace*{3pt}}
+\renewcommand{\section}[1]
+{\pagebreak[3]
+\vspace{1.2\baselineskip}\par
+\color{xalblue}
+\large
+\phantomsection\addcontentsline{toc}{section}{#1}
+\noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}
+\vspace{\baselineskip}\par
+\color{black}
+\normalsize
+}
+\renewcommand{\subsection}[1]
+{\pagebreak[3]
+\phantomsection\addcontentsline{toc}{section}{#1}
+\noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}
+\hspace{-5pt}}
+\begin{document}
+\vspace*{-3cm}
+\begin{raggedright}
+\hspace*{9cm}
+\includegraphics[width=4cm]{logo.pdf}
+\end{raggedright}
+
+\vspace*{-60pt}
+\makeheading{
+\LARGE \bfseries \color{xaldark}Curriculum Vitae for Jonathan Feinberg}
+
+\section{Personal Information}
+
+\subsection{Name}
+Jonathan Feinberg
+
+\subsection{Address}
+Wessels gate 9A, 0165 Oslo
+
+\subsection{Birth}
+28.04.1984
+
+\subsection{Email}
+jonathan@xal.no
+
+\subsection{Phone}
++47 932 14 474
+
+\section{Summary}
+\vspace{-2.5\baselineskip}\par
+
+I have recently defended my doctorate at the department of mathematics at the University of Oslo. My educational background is in probability theory and statistics with heavy focus on numerical programming and practical applications. My skills include programming in Python, which I have used to write a few software packages. I am also familiar with other languages, like Matlab and R, and can easily adapt beyond this.
+
+\section{Education}
+\subsection{2015}
+Ph.D. in Mathematics from the Department of Mathematics, University of Oslo. Title of dissertation: "Some Improvements and Applicaions and Non-intrusive Polynomial Chaos Expansions". Supervisor: Profeosor Hans Petter Langtangen.
+
+\subsection{2009}
+M.Sc. in Modelling and Data Analysis from the Department of Mathematics, University of Oslo. Title of thesis: "Threshold Definition of Early Warning Systems to Natural Hazards". Supervisor: Professor Bent Natvig.
+
+\subsection{2007}
+B.Sc. in Mathematics, Informatics and Technology, University of Oslo.
+
+\section{Professional Experience}
+\subsection{2016 -- }
+Consultant at Expert Analytics
+
+\subsection{2014 -- 2015}
+20\% Teaching Position at the Department of Informatics, University of Oslo
+
+\subsection{2014 -- 2015}
+10\% Private tutor at high school and under-graduate level at House of Math
+
+\subsection{2014 -- 2015}
+50\% Scientific Programmer for Simula Research Laboratory
+
+\subsection{2013 -- 2014}
+10\% Consultant at Kalkulo AS
+
+\subsection{2011 -- 2014}
+Ph.D. student at Simula Research Laboratory
+
+\subsection{2009 -- 2010}
+Research Assistant at Texas A\&M University
+
+\subsection{2009 -- 2009}
+Science Teacher at Smerud Medical Research
+
+\subsection{2008}
+30\% Assistant Teacher at Department of Mathematics, University of Oslo
+
+\subsection{2007 -- 2008}
+20\% Student Ambassador at Public Relations and Events Office, University of Oslo
+
+\subsection{2007}
+30\% Data Analyst at If P\&C Insurance
+\section{Technical Skills}
+
+\subsection{Frameworks}
+Numpy, Scipy, Sphinx, MPI, GIS
+
+\subsection{Languages}
+Python, R, Bash, MATLAB, \LaTeX, HTML, CSS
+
+\subsection{Tools}
+Linux, Git, Sphinx
+\section{Languages}
+\subsection{English}
+Fluent
+
+\subsection{Norwegian}
+Mother tongue
+\section{Personal Skills}
+
+\subsection{Communication}
+Able to convey research and condensed knowledge into a presentable and explainable form.
+
+
+\subsection{Planning}
+``Problem solver'', able to see strengths and weaknesses of proposed progress plans, not easily swayed, grounded in fact-based thought.
+
+
+\subsection{Technology}
+Large enthusiasm for learning and mastering anything new within science, technology and programming.
+
+\section{Interests}
+\subsection{Personal}
+Dancing, Traveling
+
+\subsection{Tech}
+Biotechnology, Nuclear energy, Web-design, Machine learning
+\section{Selected Projects}
+\subsection{Activity}
+Chaospy -- uncertainty quantification toolbox
+
+\subsection{Role}
+Researcher and algorithm developer
+
+\subsection{Description}
+Chaospy is an open source toolbox containing a large collection of uncertainty quantification tools. It also include some state-of-the-art tools designed to reduce the computational budget in analysis. I wrote the software as part of my Ph.D. work. In collaboration with other researchers, I also help integrate Chaospy into other practical applications involving for example blood flow simulations.
+
+
+\subsection{Tools}
+Python
+
+\subsection{Staffing}
+1 researchers
+
+
+
+\vspace*{1cm}
+
+\subsection{Activity}
+Matlab to C++ converter
+
+\subsection{Role}
+software developer
+
+\subsection{Description}
+As part of an EU sponsored project, Simula Research Laboratory and Western Geco is collaborating to speed up the code translation step from Matlab to C++ using Armadillo. The approach involes creating a full parser that creates semi-automatic translations. I contributed as the developer of the parser, and the structure of translation.
+
+
+\subsection{Tools}
+Python, Armadillo, Sphinx
+
+\subsection{Staffing}
+2 developers
+
+
+
+\end{document}

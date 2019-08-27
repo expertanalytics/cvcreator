@@ -1,0 +1,259 @@
+Basic:
+    Name:  "Johannes Weissmann"
+    Address: "\xC5motlia 5"
+    Post: "1389 Heggedal"
+    Birth: "04.08.1984"
+    Email: "johannes@xal.no"
+    Phone: "+47 488 43 550"
+    Nationality: "German"
+Summary: >
+    I am a computational phycisist and experienced software developer.
+    I am also an easy to work with, pragmatic person and problem solver who
+    is capabale of seeing the greater picture in things.
+    Although I do have my personal preferences, I can quickly integrate into
+    existing teams and choose the approriate tools for the problem at hand.
+
+
+    Throughout my career I have worked with a broad variety of tools, ranging
+    from embedded systems to cloud architectures. The last years, I have
+    primarily worked with Python, building systems to process time-series data
+    from industrial sensors and with backend systems to process large amounts
+    of satellite image data.
+
+
+    I enjoy taking new technologies into use, have demonstrated the benefits
+    of utlizing new tools in a variety of projets and believe that many
+    companies can greatly benefit from modernising their technology stacks.
+    Most recently, I am working with functional languages and features,
+    especially Rust and Haskell.
+
+
+    Therefore, I am looking to work together with companies interested in
+    exploring ways to benefit from the use of new languages and paradigms.
+    Especially projects where both speed, concurrency and safety are a concern.
+
+
+#    My current mission is to contibute to the Norwegian technology landscape by
+    #advocating the use of Rust (new technologies) and help companies
+    #to profit from new developments in the computer science scene in general.
+
+
+#I am available both as a consultant on-sight, trainer and speaker for
+#    selected topics.
+
+
+# Key points:
+#   * algorithms/data structures
+#   * Rust
+#   * functional
+#   * python
+#   * satellite data
+#   * time-series
+#   * performance
+#   * clean-code --> goes to personal skills
+#   * agile/lean/etc. --> goes to personal skills
+
+#
+    #or where large amounts of data
+    #need to be handeled.
+#    The last years I have primarily worked with Python building systems to work
+#    with time-series data from sensors and most recently with a backend system
+#    to process large amounts of satellite images.
+#
+#
+#
+#    In the last year I was mainly programming in Python with a strong focus on
+#    backend systems for the processing of time-series and satellite data.
+#
+
+
+#
+# Notes: I added everything where I could point out a little bit experience.
+# In concrete cases I would appreciate to narrow it down to the relevant things.
+# e.g. Java, it's long ago I programmed in it, and it is not on my whishlist either
+Skills:
+    Languages:
+        - "Python"
+        - "Rust"
+        - "Haskell"
+        - "Go"
+        - "C"
+        - "Java"
+        - "HTML/CSS"
+    Frameworks:
+        - "numpy"
+        - "pandas"
+        - "gdal"
+        - "shapely"
+        - "SciPy"
+        - "Flask"
+        - "Keras"
+        - "Tensorflow"
+    Tools:
+        - "Docker"
+        - "Git"
+        - "SVN"
+        - "Linux"
+        - "NoSql"
+        - "MongoDB"
+        - "InfluxDB"
+        - "OAuth 2.0"
+        - "Grafana"
+        - "Make"
+        - "CI/CD"
+        - "Jenkins"
+        - "TDD"
+        - "RESTful"
+    #Soft:
+        #- "TDD"
+        #- "Agile"
+Languages:
+    "German": "Native"
+    "English": "Fluent"
+    "Norwegian": "Fluent"
+    "Spanish": "Beginner"
+SelectedSkills:
+    "Communication": >
+        I am a very entrepreneurial and communicative person and are able to
+        grasp the bigger picture behind things very well.
+        In my projects I have documented the ability to be an extraordinary good
+        bridge between development and management and able to communicate on
+        both sides with the appropriate insight.
+    "Quality": >
+        I develop my skills and challenge myself continuously with new methods
+        and tools.
+        I take a strong ownership in code I develop and strive to develop high
+        quality, maintainable and well crafted code. 
+    "Firefighting": >
+        An ability I am proud to have proven to add to teams is the capability
+        to stay calm and rational under extreme pressure.
+        I am able to help teams to stay focused to find a solution when things
+        are critical.
+Education:
+    - - "2012"
+      - "2013"
+      - >
+          Diploma thesis at the Max-Planck-Institute for Plasma Physics running
+          high performance numerical analyses at the SuperMUC.
+    - - "2007"
+      - "2013"
+      - >
+        Diploma degree in physics from the Technical Univeristy of Munich with
+        a specialization in computational and plasma physics. One year as
+        exchange student at the NTNU in Trondheim.
+Work:
+    - - "01/2018"
+      - ""
+      - >
+        Consultant at Expert Analytics
+    - - "01/2017"
+      - "01/2018"
+      - >
+        Scientific Software Engineer at Science [\&] Technology AS.
+        Working on algorithms and the backend of Silvisense
+        (silvisense.com) to process satellite data, mainly from Sentinel-2.
+        The backend system is built with Python, with all individual processing
+        steps being encapsulated in docker images.
+    - - "08/2016"
+      - "01/2017"
+      - >
+        Senior Engineer at 4Subsea AS.
+        Responsible to develop a prototype for the next generation data
+        processing platform in close cooperation with a pilot client. The
+        proof-of-concept was used to deliver a real-world project while features
+        where added continuously to the live system.
+    - - "08/2013"
+      - "08/2016"
+      - >
+        Engineer at 4Subsea AS in the group Integrity Services \& Products.
+        Working mainly with sensor systems to monitor subsea equipment. Involved
+        in system design, signal analysis, data processing and field engineering.
+        Successfully installed many systems offshore including prototypes.
+        Responsible for the development and maintenance of the data processing
+        software and the complete development and production toolchain.
+    - - "10/2010"
+      - "09/2011"
+      - >
+        Working student at NTNU/IPT Computer Tomopgraphy Lab.
+        Development of image processing software to establish fast and
+        standardised work flows. Responsible for design and manufacturing
+        of sleeves and acoustic transducers for core flooding experiments.
+    - - "02/2002"
+      - "09/2006"
+      - >
+        Consultant and Software Developer (Freelancer) at ADESTIS IT-Service GmbH.
+        Web and front-end software development.
+        Freelancer for internal product development, technology scouting and
+        external business consultant.
+#Interests:
+    #"Climbing":
+        #- "topic element"
+        #- ...k
+    #"Science Fiction":
+        #- "Discussing science fiction literature or ideas with friends and others to contemplate how much
+#already became real and where society is heading."
+
+Projects:
+    A1:
+        Activity: "Dagger (core development)"
+        Period: "01/2017 -- 08/2017"
+        Role: "Developer"
+        Staffing: "5"
+        Volume: "100 \\%"
+        Description: >
+            Part of the core developer team for Science [\&] Technology's
+            satellite data processing backend. The backend system was built
+            with python and all processing chains are abstracted as directed
+            acyclic graphs. Each processing node was packed into docker images.
+        Tools: "Python, Docker, Postgres, RESTful, TDD, git"
+    A2:
+        Activity: "Silvisense"
+        Period: "08/2017 -- 12/2017"
+        Role: "Developer"
+        Staffing: "5"
+        Volume: "100 \\%"
+        Description: >
+            Developed a processing chain to automatically detect land-cover
+            changes with satellite images.
+            The core of this work is a neural network to classify the land-cover
+            type from satellite images. Changes are detected by analysing
+            time-series of images.
+            Besides the core algorithm a variety of tooling to facilitate in-
+            and output of data had to be developed.
+        Tools: "Python, C++, Keras, GDAL, shapely, hdf"
+    A3:
+        Activity: "Datana Prototype"
+        Period: "1/2016 -- 12/2016"
+        Role: "Developer"
+        Staffing: "2"
+        Volume: "100 \\%"
+        Description: >
+            Developed an internal prototype to handle the streaming of sensor
+            data from offshore drilling units and their real-time analysis.
+            The prototype was capable of handling both hot (streaming) data,
+            and managing cold (archived) data with the same interface and user
+            experience.
+            A key feature I have designed was the possibility for engineers to
+            submit their custom processing scripts to the backend system to make
+            these results real-time available in the dashboard system targeted
+            towards management.
+        Tools: "Python, Go, Docker, MongoDB, InfluxDB, JWT, OAuth 2.0, Azure,
+                Grafana, RESTful, Jupyter Notebook, git, TDD, agile"
+    A4:
+        Activity: "SWIM System"
+        Period: "1/2016 -- 12/2016"
+        Role: "Developer"
+        Staffing: "3"
+        Volume: "100 \\%"
+        Description: >
+            Developed the data processing pipeline for 4Subsea's subsea
+            monitoring system. The work involved designing of the workflow and
+            architecture, interfacing the hardware, establishing communication
+            to the subsea equipment, backend systems and the signal analysis
+            itself.
+            As part of this work I have migrated a large code basis from Matlab
+            to Python and helped an engineering team to incorporate software
+            development best practices into their workflow. For example source
+            control, git workflow and code reviews.
+        Tools: "Python, Jupyter Notebook, Git, Serial Protocols"
+

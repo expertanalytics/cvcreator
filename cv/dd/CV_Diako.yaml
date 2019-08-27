@@ -1,0 +1,177 @@
+Basic:
+    Name:  "Diako Darian"
+    Address: "Tvetenveien 215"
+    Post: "0675 Oslo"
+    Birth: "24.08.1985"
+    Email: "diako.darian@gmail.com"
+    Phone: "+47 466 93 039"
+    Nationality: "Norwegian"
+Summary: >
+    I hold a MSc. in Theoretical Physics and I have submitted my Ph.D. in 
+    Computational Fluid Mechanics. As a student at both Physics and Mathematics 
+    institutes at the University of Oslo, I have acquired a broad knowledge in 
+    various physical, mathematical and numerical methods, as well as data science.
+
+    Within my Ph.D. period I have had the opportunity to work both alone and in 
+    team with other researchers from both Norway and several other international 
+    universities. In addition, I have had two international research stays 
+    (six months in total) at the Kobe University, Japan. The core of my doctoral 
+    research was related to the development of high performance numerical codes, 
+    utilizing both low level (C/C++) and high level (Python/Cython) languages, 
+    to study plasma-object interactions and ionospheric instabilities and 
+    turbulence. An important part of my research has been the validation of 
+    existing and new mathematical models of plasma-object interactions by means 
+    of numerical simulations and comparison with experimental measurements. 
+
+Skills:
+    Languages:
+        - "C"
+        - "C++"
+        - "Fortran"
+        - "Java"
+        - "Python"
+        - "Cython"
+        - "Matlab"
+        - "Mathematica"
+        - "Bash"
+        - "Julia"
+        - "Rust"
+        
+    Frameworks:
+        - "FEniCS"
+        - "STL"
+        - "Boost"
+        - "MPI"
+        - "PETSc"
+        - "NumPy"
+        - "SciPy"
+        - "Matplotlib"
+    Tools:
+        - "Jupyter Notebook"
+        - "LaTex"
+        - "Git"
+        - "GCC"
+        - "CMake"
+        - "Linux"
+        - "OpenFoam"
+        - "ParaView"
+Languages:
+    "English": "Fluent"
+    "Norwegian": "Fluent"
+    "Turkish": "Fluent"
+    "Persian": "Fluent"
+    "Kurdish": "Fluent"
+SelectedSkills:
+    "Communication": >
+        As a result of my Ph.D. research in a multidisciplinary research 
+        environment, and teaching duties at the University of Oslo, I have a lot 
+        of training in writing and presenting complex methods and technical details
+        to a wide spectrum of audiences with different backgrounds.     
+    "Development": >
+        I have been involved in developing both high performance codes and writing 
+        scripts for data analysis and visualization for both large and small 
+        projects. My Ph.D. research reflects my ability to work alone and in 
+        teams with people with different background and education. 
+    "Management": >
+        Through my work with different projects and people I have gained experience 
+        in how to design, develop and manage both small and large projects.  
+    "Physics, Mathematics, and Programming": >
+        With a broad background from different fields within Physics and Mathematics, 
+        I have developed the necessary analytical skills and mindset for approaching 
+        complex phenomena and problems. Developing new numerical codes, and generating 
+        and analyzing large scale simulation data to validate existing and new 
+        mathematical models have been a core component of my research.      
+Education:
+    - - "2014 - 2018"
+      - >
+        Ph.D. in Mechanics, Department of Mathematics, University of Oslo. Thesis title 'Plasma-object interactions'.
+    - - "2008 - 2010"
+      - >
+        MSc. in Theoretical Physics, Department of Physics, University of Oslo
+    - - "2005 - 2008"
+      - >
+        BSc. in Physics, Department of Physics, University of Oslo        
+Work:  
+    - - "2019"
+      - ""
+      - >
+        Consultant at Expert Analytics
+    - - "2014"
+      - "2018"
+      - >
+        Ph.D. Research Fellow, Department of Mathematics, University of Oslo. Including 25\% assistant teacher in Calculus, Field Theory and Continuum Mechanics.
+    - - "2006"
+      - "2010" # <- blank
+      - >
+        Student mentor to motivate teenagers to choose scientific higher education by offering training in Mathematics and Physics, ENT3R, Faculty of Mathematics and Natural Sciences, University of Oslo.
+        
+Interests:
+    "Academic":
+        - "Scientific Computing"
+        - "Hydrodynamics"
+        - "Magnetohydrodynamics"
+        - "Space and Plasma Physics"
+        - "Cosmology"
+        - "Geometric Algebra"
+    "Other":
+        - "Powerlifting"
+        - "Skiing"
+        - "Hiking"
+        - "Running"
+Projects:
+    A1:
+        Activity: "Implementation of generic velocity distribution functions for modeling of plasmas."
+        Period: "2018 (October-December)"
+        Role: "Lead developer and manager"
+        Staffing: "2"
+        Volume: 80\% - 100\%
+        Description: >
+            This was my final project as a Ph.D. student. During this project,
+            I extended the Orbital-motion-limited (OML) theory, which describes 
+            plasma-object interactions, to non-Maxwellian plasmas. To validate 
+            the theory, I had to add a generic functionality to PUNC++ (described 
+            below) for handling plasma particles with arbitrary velocity distribution 
+            functions. A very good agreement between the theory and numerical 
+            simulations with PUNC++ was achieved. 
+        Tools: "C++, CMake, GCC, FEniCS, PUNC++, ParaView"
+    A2:
+        Activity: "PUNC++ - Particle-in-Unstructured-Cell written in C++"
+        Period: "July 2017 - October 2018"
+        Role: "Lead developer and co-leader of the project"
+        Staffing: "4"
+        Volume: 100\%
+        Description: >
+            In order to be able to run large scale simulations of plasma-object 
+            interactions, a high performance programming code is an absolute 
+            necessity. For this reason C++ was chosen as the main programming 
+            language for this project. PUNC++ is capable of simulating multiple 
+            electrically conducting objects with arbitrary geometries, both 
+            floating and connected to other objects in arbitrary circuits. 
+            Several finite element solvers with different order of accuracy are 
+            also implemented, which can be chosen by the user depending on the 
+            desired computational accuracy and efficiency.    
+        Tools: "C++, CMake, GCC, FEniCS"
+    A3:
+        Activity: "PUNC - Particle-in-Unstructured-Cell"
+        Period: "2016 (September-December)"
+        Role: "Co-leader and co-developer of the project"
+        Staffing: "4"
+        Volume: 100\%
+        Description: >
+            The main goal of this project was a rapid prototyping of a new model 
+            for handling conducting objects with complex geometries in plasmas 
+            using the particle-in-cell method within the framework of FEniCS.  
+        Tools: "Python, FEniCS"
+    A4:
+        Activity: "Implementation of magnetohydrodynamics equations in SpectralDNS"
+        Period: "2015 (January-December)"
+        Role: "Lead developer"
+        Staffing: "2"
+        Volume: 100\%
+        Description: >
+             SpectralDNS is a high-performance pseudo-spectral Navier-Stokes DNS 
+             solver developed by Mikael Mortensen. My contribution to this 
+             project is the implementation of magnetohydrodynamics solvers to 
+             study plasma instabilities and turbulence in the ionosphere.
+        Tools: "Python, Cython, ParaView"
+

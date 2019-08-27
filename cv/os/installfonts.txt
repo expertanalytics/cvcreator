@@ -1,0 +1,13 @@
+I am going to check if you have fonts, and try to install them if not.
+
+
+\noindent
+TEXMFHOME is set to /Users/ola/Library/texmf
+\begin{verbatim}
+verlag is already installed
+sorbonne is already installed
+jacobsans is already installed
+qurillian is already installed
+helveticaneue is already installed
+eurostile is already installed
+\end{verbatim}

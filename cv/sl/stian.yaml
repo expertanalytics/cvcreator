@@ -1,0 +1,151 @@
+Basic:
+    Name:  "Stian L{\\aa}gstad"
+    Address: "Turbinveien 20"
+    Post: "0195 Oslo"
+    Birth: "22.12.89"
+    Email: "stianlagstad@gmail.com"
+    Phone: "+47 41808025"
+Summary: >
+    I have a masters thesis from The University of Oslo, finished in 2016. During my time as a student I got exposed to several programming languages, such as R, Python, Scheme, Java, and Javascript. In my work experience following that, I have been eager to improve my knowledge of functional programming in strict languages, such as Scala and Haskell. I believe in letting the compiler and linting tools do as much work as possible, because then I as the developer have fewer options to shoot myself in the foot. I consider myself a pragmatic programmer with the ability to see the world from the users perspective, and can thus see their problems and create real solutions. I have experience being the link between a development team and the customer, having been a tech lead for a small development team in my previous job.
+Skills:
+    Languages:
+        - "Bash"
+        - "Java"
+        - "Javascript"
+        - "TeX/LaTeX"
+        - "PHP"
+        - "Pyhon"
+        - "R"
+        - "Scheme"
+        - "Scala"
+    Frameworks:
+        - "Angular"
+        - "Akka"
+        - "Backbone"
+        - "Cordova"
+        - "HK2"
+        - "Ionic"
+        - "Jersey"
+        - "Jetty"
+        - "JOOQ"
+        - "JUnit"
+        - "Netflix OSS (Feign, Hystrix, ++)"
+        - "OpenTracing"
+        - "Pytest"
+        - "R Tidyverse"
+        - "Scalatra"
+        - "Scalatest"
+        - "Spring Boot"
+    Tools:
+        - "Docker"
+        - "Elasticsearch, Logstash, Kibana"
+        - "Git, Subversion"
+        - "Google Cloud Platform (Pubsub, Bigtable, CloudSQL, Stackdriver, App Engine, ++)"
+        - "Gradle, Maven"
+        - "Grafana, Prometheus, Alertmanager"
+        - "Jenkins, Travis"
+        - "Jetbrains IDE's"
+        - "Kubernetes"
+        - "Mesos, Marathon"
+        - "MSSQL, MySQL, Oracle, PostgreSQL"
+        - "New Relic"
+        - "OpenApI/Swagger"
+        - "Pipenv"
+        - "REST, SOAP, GRPC"
+        - "RStudio"
+        - "sbt"
+        - "Spinnaker"
+        - "Terraform"
+        - "tmux"
+        - "Vim"
+Languages:
+    "Norwegian": "Native"
+    "English": "Fluent"
+SelectedSkills:
+    "Learning and teaching": >
+        I am very passionate about learning, and sharing what I have learned. I have spoken at Javazone, at Tekna meetups, and have held many internal technical presentations where I have worked.
+    "Documentation": >
+        I am eager to properly document what I do, because I want to make the next developer's life as easy as possible.
+    "Code quality": >
+        I am a firm believer in getting as much help as possible from the compiler, from linters, and from static code analysis tools to write high quality code.
+Education:
+    - - "2016"
+      - >
+        M.Sc. in Informatics for Technical and Scientific Applications, University of Oslo and Oslo University Hospital. I got the grade A for my thesis, Visualizing Chimeric RNA, where I created a visualization package for fusion genes in R. An application note about chimeraviz was published in the journal Oxford Bioinformatics in 2017. Supervisors: Rolf Skotheim and Ole Christian Lingjærde.
+    - - "2014"
+      - >
+        B.Sc. in Mathematics, Informatics, and Technology, University of Oslo.
+Work:
+    - - "2019"
+      - ""
+      - >
+        IT Consultant at Expert Analytics
+    - - "2017"
+      - "2019"
+      - >
+        Software Engineer at Cognite
+    - - "2016"
+      - "2017"
+      - >
+        IT Consultant at Knowit
+    - - "2014"
+      - "2016"
+      - >
+        Consultant at The Science Library, University of Oslo
+    - - "2011, 2013"
+      - >
+        Assistant teacher, Introduction to Object-Oriented Programming in Java, University of Oslo
+Interests:
+    "Personal":
+        - "Running"
+        - "Football"
+        - "Board games"
+        - "Choir"
+        - "Piano"
+    "Professional":
+        - "Functional programming"
+        - "Bioinformatics"
+Projects:
+    A1:
+        Activity: "Development for Cognite"
+        Role: "Software Engineer"
+        Staffing: "From around 10 developers when I started in October of 2017, to around 80 in the beginning of 2019. In teams of 3-10."
+        Description: >
+            I worked extensively on the Cognite Data Platform, which includes many different API’s and services in Java, Scala, and Python. I also worked on various data extraction applications, applications that integrated to various systems and fed data back to the Cognite Data Platform.
+        Tools: "Java, Scala, Jersey, Jetty, Maven, Gradle, HK2, JUnit, Spotbugs, pmd, IntelliJ, Pycharm, Rider, Datagrip, Spring Restdocs, OpenAPI, Swagger, OpenTracing, Docker, Kubernetes, Google Cloud Platform (Bigtable, CloudSQL, Google Kubernetes Engine, Pub/Sub, ++), Terraform, Spinnaker, Python, Pipenv, MySQL, MSSQL, Oracle, PostgreSQL, Jenkins, Grafana, Prometheus, Terraform, Alertmanager, WITSML."
+    A2:
+        Activity: "Development for NSB/Entur"
+        Role: "Consultant from Knowit"
+        Staffing: "Around 50 developers in total, divided in multiple teams of 3-8"
+        Description: >
+           Developed and maintained backend ticketing systems built with Java and Scala.
+        Tools: "Java, Oracle SQL, Spring (Spring Boot, Spring Cloud, ++), Kibana, New Relic, REST, SOAP, SOAPUI, Postman, Jetty, Gradle, Maven, IntelliJ, Datagrip, JBoss, Jenkins, Mesos, Marathon, Netflix OSS (Feign, Hystrix, ++), Docker, HAProxy, Elasticsearch, Logstash, Kibana, Scala, SBT."
+    A3:
+        Activity: "R package development for my masters thesis"
+        Role: "Developer"
+        Staffing: "1 developer"
+        Description: >
+            I created an R Bioconductor package called chimeraviz during my masters thesis. The package is actively used by bioinformatics researchers, and is still under development.
+        Tools: "R, RStudio, Docker, Tidyverse, LaTeX."
+    A4:
+        Activity: "Android/iPhone app for The Science Library"
+        Role: "Developer"
+        Staffing: "3 in-house developers"
+        Description: >
+            We developed a simple book browsing Android and iPhone application for The Science Library at The University of Oslo.
+        Tools: "Backbone, Javascript, Ionic, Cordova, PHP."
+    A5:
+        Activity: "Book collection explorer for The Science Library"
+        Role: "Developer"
+        Staffing: "3 in-house developers"
+        Description: >
+            We developed an interactive book collection explorer.
+        Tools: "Backbone, Javascript, Twitter bootstrap, PHP."
+    A6:
+        Activity: "New book registrar for The Science Library"
+        Role: "Developer"
+        Staffing: "2 in-house developers"
+        Description: >
+            We developed a single-page application that simplified registration of new books.
+        Tools: "Angular 1, Javascript, Twitter Bootstrap, PHP."
+

@@ -1,0 +1,143 @@
+Basic:
+    Name:               "Jakob Emil Schreiner"
+    Address:            "Presidentgata 3a"
+    Post:               "0474 Oslo"
+    Birth:              "26.02.1992"
+    Email:              "jakob@xal.no"
+    Phone:              "+47 991 52 009"
+    Nationality:        "Norwegian"
+Summary: |
+    I submitted my master's degree in Computational Science and Engineering at the University of
+    Oslo in 2016. My educational background is in mathematics and computational science applied on
+    mechanical problems using numerical methods. This has fuelled my interest for science and 
+    technology. I have mainly used Python and have substantial experience using numerical libraries 
+    such as Numpy/Scipy and FEniCS. I am also familiar with C/C++ and Java. My experience include 
+    teaching introductory Python at the University of Oslo, mostly in one-to-one settings.
+                
+    Before joining Expert Analytics I was engaged as a Research Engineer at Simula 
+    Research Laboratory. In my thesis I simulated the cerebrospinal fluid flow in patient specific 
+    geometries. I solved partial differential equations with the finite element method using 
+    supercomputers, both in my master's thesis and during my work at Simula. Through my education 
+    and work I have gained significant experience with numerical simulations and mathematical 
+    modelling, as well as problem solving in general.
+Skills:
+    Languages:
+        - "Python"
+        - "Java"
+        - "C/C++"
+        - "Bash"
+    Frameworks:
+        - "MPI"
+        - "Numpy"
+        - "Scipy"
+        - "Matplotlib"
+        - "FEniCS"
+        - "Pybind"
+        - "Tensorflow"
+        - "scikit-learn" 
+        - "keras"
+    Tools:
+        - "Git"
+        - "Vim editor"
+        - "Linux"
+        - "Paraview"
+        - \LaTeX
+Languages:
+    "Norwegian": "Mother tongue"
+    "English": "Proficient for professional work"
+SelectedSkills:
+    "Technology": >
+        I am always eager to learn anything new in science and technology.
+    "Problem Solving": >
+        I can grasp new ideas and technologies relatively easily, and enjoy using mathematics to 
+        get solve real world problems in a broad range of fields.
+Education:
+    - - "2017"
+      - "" 
+      - 'Ph.D in mathematics at Department of Mathematics, University of Oslo. The project is a 
+        collaboration between Expert Analytics, Simula Research Laboratory,
+        Haukeland Universitetssykehus and the University of Oslo. Supervisors:
+            Professor Kent-Andre Mardal, Ph.D Ola Skavhaug,
+            Ph.d, MD Leif Oltadal, Professor Aslak Tveito'
+    - - "2014"
+      - "2016"
+      - 'M.Sc in Computational Science and Engineering at the University of Oslo.
+        My thesis was titled \it{Computational Fluid Mechanics Modelling of Cerebrospinal Fluid
+        Flow in Patient Specific Geometries}. Supervisors: Professor Kent Andre Mardal,
+        Postdoctoral Fellow Erika Kristina Lindström'
+    - - "2011"
+      - "2014"
+      - 'B.Sc degree in applied mathematics at the University of Oslo.'
+Work:
+    - - "2013"
+      - "2015"
+      - |
+        Teacher's assistant at the University of Oslo in the introductory course to Python for 
+        scientific applications.
+
+        I was responsible for a weekly programming lab as well as student evaluation.
+    - - "2016"
+      - "2017"
+      - |
+        Research Engineer at Simula Research Laboratory.
+
+        I developed code for the simulation of the fluid structure interaction between the blood 
+            flow in the Ophthalmic artery and arterial wall as part of the iBrainSafeCLOUD project.
+    - - "2017"
+      - "" # <- blank
+      - |
+        IT Consultant at Expert Analytics AS.
+Interests:
+    "Personal":
+        - "History"
+        - "Economics" 
+        - "Bicycling"
+Projects:
+    A1:
+        Activity: |
+            Computational Fluid Dynamics Modelling of Cerebrospinal Fluid
+                Flow in Patient Specific Geometries.
+        Role: "Researcher and developer"
+        Staffing: "1 researcher"
+        Description: >
+            In my master's thesis I simulated the cerebrospinal fluid flow in patient specific 
+            geometries, with the goal of reproducing the measured velocity and pressure. 
+        Tools: Python, FEniCS, vmtk and ParaView
+    A2:
+        Activity: | 
+            Finite Element software for the fluid structure interaction in the Ophthalmic artery.
+        Role: "Researcher and developer"
+        Staffing: "2 researchers"
+        Description: >
+            During the fall of 2016 I worked at the iBrainSafeCloud project at Simula Research 
+            Laboratory as a research engineer. The work involved writing a fully decoupled fluid 
+            structure interaction solver. Furthermore, we made a web user interface enabling 
+            non-expert users to perform simulations on a supercomputer. It was implemented using the 
+            Python interface of FEniCS.
+        Tools: Python, FEniCS and Git
+    A3:
+        Activity: |
+            Finite element and mesh generation software for modelling of electroconvulsive therapy.
+        Role: "Researcher and developer"
+        Staffing: "1 researcher"
+        Description: >
+            During a six week project I created a simulator for the electrical currents in the human
+            brain intended for simulations of electroconvulsive therapy. The software includes 
+            geometrical modelling and mesh generation for the skull and brain, as well as an 
+            efficient numerical solver using the finite element method. The project was in 
+            cooperation with Simula Research Laboratory.
+        Tools: Python, FEniCS and Git
+    A4:
+        Activity: |
+            Machine learning for OncoImmunity
+        Role: "Consultant"
+        Staffing: "5 defelopers"
+        Description: >
+            OncoImmunity develop bioinformatics software that has the
+            ability to empower precision cancer immunotherapy, and thus
+            improves the outlook for patients with late-stage disease. My role
+            is to develop machine-learning methods applied to genomic data for
+            tumor immune profiling. The goal is to select optimal patients to
+            be assigned to cancer immunotherapy clinical trials.
+        Tools:
+            Python, Keras

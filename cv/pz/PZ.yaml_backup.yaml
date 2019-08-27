@@ -1,0 +1,144 @@
+Basic:
+    Name:  Pia Zacharias
+    Address: Akebakkeskogen 67B
+    Post: 0490 Oslo
+    Birth: 29th of August 1980
+    Email: pia@xal.no
+    Phone: +47 40 56 73 50
+ #   Nationality: German
+
+Summary: >
+    I am a physicist with more than ten years of experience in scientific computing. I obtained a PhD in astrophysics on numerical simulations of the Sun in 2010. My areas of expertise include statistical data analysis, signal processing, and the development of various feature recognition algorithms and visualization tools for big data. My analytical mindset and a solid background in physics provide me with a good foundation for finding solutions to complex problems. I am an experienced project leader, thriving to continously develop my skills, while working either alone or in a team.
+
+Education:
+    - - 2006 -- 2010
+#      - 2009
+      - >
+        PhD (Dr. rer. nat.) in physics from University of Freiburg, Germany. Thesis titled "Analysis of 3D MHD simulations of the solar corona"
+
+    - - 2005 -- 2006
+#      - 2006
+      - >
+        Diploma degree in physics (Dipl. Phys.) from University of Freiburg with specialization in astrophysics and plasma physics. Thesis titled "Investigating stellar coronae using models of stellar structure"
+Work:
+    - - 2006
+      - 2010
+      - >
+        PhD student, Kiepenheuer Institute for Solar Physics, Freiburg, Germany. A 4-year appointment including 75\% research training and 25\% teaching/administration
+    - - 2011
+      - 2013
+      - >
+        Researcher (postdoc), International Space Science Institute, Bern, Switzerland with 25\% administration/teaching responsibility
+    - - 2013
+      - 2018
+      - >
+        Researcher (postdoc), Institute of Theoretical Astrophysics, University of Oslo. A 4-year appointment including 15\% course lecturing and 10\% student supervision/mentoring
+    - - 2018
+      - "" # <- blank
+      - >
+        Consultant, Expert Analytics
+
+Skills:
+    Languages:
+        - Python
+        - IDL/GDL
+        - Fortran
+        - C++
+        - Matlab
+    Frameworks:
+        - NumPy
+        - SciPy
+        - Astropy
+        - Pandas
+        - Matplotlib
+        - MPI
+        - OpenMPI
+    Tools:
+        - Git
+        - Mac OS X
+        - Linux
+        - Jupyter Notebook
+        - Microsoft Office
+        - LaTeX
+
+Languages:
+    German: Mother tongue
+    English: Fluent
+    Norwegian: Working knowledge
+    French: Basic
+
+SelectedSkills:
+    Analytical skills: >
+        Ability to collect and analyze information and find solutions in a timely-efficient manner. Skilled in physics, math, programming and statistics
+    Creative problem solving: >
+        Breaking down problems into small, managable parts. Solving problems by combining methods across disciplines
+    Project leadership and teamwork: >
+        Experience as project leader with both national and international collaborators. As a team member, I am open-minded and responsible, while working structured and result-oriented.
+    Communication: >
+        Condensing difficult material into a comprehensive language and grasp the bigger picture behind things
+    Flexibility: >
+        Adapt quickly and sucessfully to changing situations and environments
+#    Machine learning: >
+#        Develop simple tools for exploring data, data preparation, regression, clustering
+Interests:
+    Sports and nature:
+        - Running
+        - biking
+        - skiing
+        - outdoor activities with kids
+        - track and field coach (national level)
+#   Teaching:
+#       - flipped classroom
+#       - engaged learning
+    Scientific outreach:
+        - Talks about science
+        - Astronomy On Tap (astronomy for the public)
+
+Projects:
+    A1:
+        Activity: Spectral analysis of magnetohydrodynamic models of the solar atmosphere
+        Role: Project leader
+        Staffing: core team of 5, extended team of 10 collaborators
+        Description: >
+            This project on three-dimensional MHD models of the solar atmosphere aims at a detailed understanding of the underlying mechanisms, which lead to the high temperatures of the outer atmosphere of the Sun and other stars. I was leading the analysis part of the project, which includes carrying out numerical simulations on high-performance computing facilities and implementing new physics modules, as well as the analysis of synthetic spectra and their comparison with ground- and space-based solar observations.
+#With a group of experts in the field, we are trying to find a good compromise between approximation, realism and computing time.
+        Tools: numerical modeling, statistical data analysis, image analysis, scientific writing (documentation, scientific reports), python, fortran, git
+    A2:
+        Activity: Multi-wavelength analysis of magnetic bright points
+        Role: Project leader
+        Staffing: team of 4
+        Description: >
+           	This project aimed at studying the structure of magnetic bright points (MBPs), small-scale, magnetic elements in various layers of the solar atmosphere. The study is based on the analysis of high spatial- and temporal-resolution image-sequences from the Swedish Solar Telescope on La Palma. MBPs were identified and tracked in the time-series of images, and various physical properties of MBPs were determined by means of statistical data analysis.
+        Tools: image analysis, feature recognition algorithms, python, scientific writing (documentation, scientific reports, master thesis), student supervision
+    A3:
+        Activity: Analysis of different wave-modes in MHD models
+        Role: Project leader
+        Staffing: team of 4
+        Description: >
+            In this study, we applied a wavelet power analysis to determine the frequency and power of various kind of waves that are present in the time-series of MHD simulations of the solar atmosphere. I developed unique analysis and visualization tools to investigated the power spectra of individual parcels of plasma, which has led to new insights on how and where energy is dissipated in various layers of the solar atmosphere.
+        Tools: Signal processing, numerical modelling, scientific writing (documentation, scientific reports)
+    A4:
+        Activity: International team leader at International Space Science Institute
+        Role: team leader (co-leadership)
+        Staffing: team of 12
+        Description: >
+            I was leading an international team of experts in a series of 3 one-weak workshops on the coronal mass cycle at the International Space Science Institute (ISSI), Bern, Switzerland. This two-year project included proposal writing, assembly of the team, invitation of speakers, organization of scientific programme, leadership of the workshop, and writing of publications.
+        Tools: Project management, organization, scientific writing
+    A5:
+        Activity: European Solar Physics meeting and other scientific conferences and workshops
+        Role: Head/member of organizing committee
+        Staffing: 8-12 committee members
+        Description: >
+             I was in charge of and member of several local and scientific organizing committees, such as the European Solar Physics Meeting, which is Europe's biggest solar physics community meeting with approximately 350 participants. I was responsible for organizing the programme, the planning of social activities, and providing information for participants. Between 2011 and 2014, I was supporting the organization of several workshops in the fields of Solar Physics, Earth Science and Cosmology. I was the scientific contact person for workshop attendees at the International Space Science Institute.
+        Tools: Project leadership, organisation and management
+    A6:
+        Activity: AstronomyOnTap Oslo
+        Role: Member of organizing committee
+        Staffing: $\sim$8 members
+        Description: >
+            Together with my colleagues from the Institute of Theoretical Astrophysics at the University of Oslo, I am part of the initiative called Astronomy On Tap, which takes science to the public by giving talks at a pub in Oslo. The events are very popular and attract an audience of $\sim$100 on Monday nights.
+        Tools: Science communication, public outreach, organization and management
+
+
+
+

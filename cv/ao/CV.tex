@@ -1,0 +1,344 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[english,a4paper,11pt]{article}
+
+\nonstopmode
+
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[margin=3cm,a4paper]{geometry}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[norsk]{babel}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{calc}
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{parskip}
+
+
+\definecolor{xalblue}{rgb}{0.1992,0.1992,0.5977}
+\definecolor{xaldark}{rgb}{0.1992,0.1992,0}
+
+
+\usepackage{fontspec,xltxtra,xunicode,relsize}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text]{Verlag Light}
+%\setmainfont[Mapping=tex-text]{Sina-Regular}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue}
+\setmonofont[Scale=MatchLowercase]{Monaco}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedright}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.76\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+
+\usepackage{titlesec}
+\newcommand\secformat[1]{\normalfont\Large\bfseries\color{xalblue}#1}
+\titleformat{name=\section}[block]{}{}{}{\secformat}
+
+\begin{document}
+
+\vspace*{-3cm}
+\hspace*{12.5cm}\includegraphics[width=4cm]{logo.pdf}
+
+\vspace*{-1.65cm}
+
+\noindent
+{\LARGE \bfseries \color{xaldark}Curriculum Vitae for Åsmund Ødegård}
+
+\section*{Personal information}
+
+\begin{minipage}[t]{0.4\textwidth}
+\begin{tabbing}Nationality---\=olaf\kill 
+Address: \>Sneisveien 26, \\
+\>1407 Vinterbro \\
+Born:\>23.08.1972 \\
+\end{tabbing}
+\end{minipage}
+$\quad\quad$
+\begin{minipage}[t]{0.3\textwidth}
+\begin{tabbing}Nationality---\=olaf\kill 
+E-mail: \>asmund@xal.no\\
+Phone: \>+47 900 69 915\\
+Nationality:\>Norwegian\\
+\end{tabbing}
+\end{minipage}
+
+\section*{Summary}
+
+I am a senior software developer and project leader. Most of my professional
+career has been with Simula Research Laboratory, 
+recently ranked as Norway's best ICT research institution. Through various
+positions in the company I have obtained a broad set of technical and management
+skills. My main areas of technical expertise spans from mathematical 
+software development and scripting, to administration of advanced ICT
+solutions and configuration management. Both through education and
+practical hands-on experience I have developed strong analytical skills within
+my fields of expertise. 
+
+As manager and leader of several projects with internal and external
+participants, I have learned the importance of understanding the strengths and
+weaknesses of the participants in order to deliver on time. Communication within
+the team is always key to ensure that everyone have ownership in the project and
+stays motivated. This must always be balanced with a firm leadership.
+
+\section*{Technical Skills}
+
+\begin{tabular}{LR}
+Languages & Python, C, C++, PHP, Java, Javascript, Bash, Matlab, Perl,
+LaTeX, HTML, Sql, CSS, Scala, Common-Lisp, Clojure \\
+
+Frameworks & jQuery, Web.py, Turbogears, Numpy, Pandas, SciPy, MPI, BSP,
+Diffpack, Bootstrap, Plone, buildout, Puppet \\
+
+Tools & Linux, OS X, VirtualBox, Vagrant, MySql, Apache, Nginx, Subversion, CVS,
+Git, Mercurial, Make, SCons, Autoconf \\
+\end{tabular}
+
+\section*{Education}
+\begin{tabular}{LR}
+2006 & PhD (Dr. Scient) in Scientific Computing, 
+University of Oslo, Norway. Thesis' title ``Applications of high level software
+for parallel solution of Partial Differential Equations'' \\
+1995 & Cand. Scient in Applied and Industrial Mathematics, University of
+Oslo, Norway.
+\end{tabular}
+
+
+\section*{Professional Experience}
+
+\begin{tabular}{LR}
+2011 -- 2013 &  Director of External Research Funding at Simula Research
+   Laboratory \\
+2010 -- 2011 & Director of Administration at Simula Research Laboratory \\
+2008 -- 2010 & Assistant Director of Administration at Simula Research Laboratory \\
+2005 -- 2007 & Research Scientist at Simula Research Laboratory \\ 
+2004 -- 2009 & IT Manager at Simula Research Laboratory \\
+2001 -- 2005 & Scientific Programmer at Simula Research Laboratory \\
+2000 -- 2001 & Scientific Programmer at Department of Informatics, University of Oslo \\
+1996 -- 1999 & Research Assistant at Department of Informatics, University of Oslo \\
+1996         & Summer intern, SINTEF Applied Mathematics \\
+1993 -- 1994 & Assistant teacher, Department of Mathematics, University of Oslo \\
+\end{tabular}
+
+\section*{Languages}
+\begin{tabular}{LR}
+Norwegian & Mother tongue \\
+English & Fluent \\
+%German & Basic \\
+%French & Rudimentary \\
+\end{tabular}
+
+\section*{Personal Skills}
+\begin{tabular}{LR}
+Management & Development and implementation of strategies, guidelines and
+procedures, Lead and encourage staff, Personnel follow-up \\ \addlinespace
+Communication & Writing and Editing, typesetting \& typography. Try to learn
+French.
+\\ \addlinespace
+Funding & EU and RCN funding instruments, consortium development, proposal
+writing \\ \addlinespace
+Technology & Extensive knowledge about
+system administration; always eager to learn about new frameworks and open
+source technologies. Solution architect and problem solver. \\
+\end{tabular}
+
+\section*{Some Interests and Hobbies}
+\begin{tabular}{LR}
+Soft & Playing clarinet and saxophone, Cooking \& Wine, Photography \\
+Hard & Bicycle, motorcycle \\
+Tech & Fonts, typesetting with \TeX, gadgets, live coding 
+\end{tabular}
+
+\section*{Extended Description of Select Projects}
+
+\begin{tabular}{@{}LR}
+Activity & Tool for demographical and economical planning \\
+Role & Architect and main developer \\
+Staffing & Project leader, developer, front-end designer \\
+Description & For the customer we developed a web-based system for statistical
+estimation of demographics within a large closed group, and a tool for economical
+planning of a large scale development. My main contribution was the mathematical
+analysis of the problem and development of the necessary logic. The work was
+carried out in close collaboration with financial experts and a designer.\\
+Tools & Python, Pandas, Web.py, sqlite, MS SQL, Excel, HTML, CSS, JavaScript, jQuery \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & Establishing technical infrastructure of Simula Research Laboratory \\
+Role & Project leader and main architect \\
+Staffing & Project leader, four system administrators, entrepreneur
+representatives \\
+Description & For the newly created research institute Simula Research
+Laboratory we designed and developed a full technical infrastructure in the
+renovated office building at the old airport at Fornebu; office network, backend
+facilities and computer room, telephone systems, printers, servers. \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & Symphonical \\
+Role & Main developer \\
+Staffing & Project leader and two developers \\
+Description & Symphonical is a web-based collaboration tools. Initially it was
+conceived as a tool for running agile software development projects based on the
+metaphor of post-it notes on a virtual wall. We created the first prototype 
+of the system, in 2005, before it was spun out as a company and devloped further
+by others. \\
+Tools & PHP, Mysql \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & Simulation of Medical Ultrasound \\
+Role & Researcher and main developer \\
+Staffing & Four--five researchers and developers \\
+Description & A research project where we studied different mathematical models
+for numerical simulation of medical ultrasound. My main responsibility was
+implementation of Finite element based simulators of ultrasound propagating in
+inhomogeneous media. The target application was detection of tumors in tissue. \\
+Tools & C++, Diffpack, MPI, VTK \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & PySE \\
+Role & Main developer \\
+Description & Python Stencil Environment (PySE) is a high level environment for
+solving partial differential equations using Finite difference methods. The
+environment provides an abstraction for the stencil concept of FDM, which makes
+it possible to implement FDM-based simulators in a notation very close to the
+mathematical formulation. The environment handles parallelization and will
+distribute the problem on the available hardware in an optimal way relatively to
+the communication patterns defined by the stencils. PySE was
+developed as part of my PhD studies and published as open source software.
+\\
+Tools & Python, Numpy, Scipy, SWIG, C++, MPI \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & Python Computing Components (PyCC) \\
+Role & Developer \\
+Description & PyCC is a modern and efficient scripting framework that is used
+to solve differential equations to study the electrical activity in the human
+heart. The main parts of PyCC is a high level scripting interface implemented in
+Python for flexibility and low-level extension modules implemented in C/C++ and
+Fortran for efficiency. My main role in the project was to provide a flexible
+build system for PyCC taking into account all the dependencies of the system.
+The build system was implemented using the SCons framework. I was also involved
+in \\
+Tools & C/C++, Fortran, Python, Swig, MPI, Subversion, SCons, PETSc, FEniCS,
+Hypre, BoomerAMG, Diffpack, GNU Compiler Collection and Debugger \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & Web site for Simula Research Laboratory \\
+Role & Main developer and designer \\
+Description & In order to facilitates new communication strategies for the
+company, it was necessary to update the web site for Simula Research Laboratory.
+New channels for communicating news and ongoing research projects were created,
+as well as a complete redesign of the company Intranet which at the same time
+replaced mailing list as the primary form of official internal communication.
+The process of upgrading the pages included both technical work and
+meetings with all the stakeholders within the organisation.
+\\
+Tools & Python, PHP, Javascript, Plone, mysql \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & Outsourcing of ICT services \\
+Role & Project coordinator \\
+Description & Simula Research Laboratory decided to put a contract for
+its IT operations out for tender, after running the services with internal
+resources for a decade. My core responsibility was authoring the specification
+of the tender and evaluating the offers as well as take part in negotiating the
+final contract. I also was responsible for handling the communication with all
+the internal stakeholders. As the change affected the daily work of all
+employees it was particularly important to have an open and inclusive dialog. \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+\begin{tabular}{@{}LR}
+Activity & \\
+Role & \\
+Staffing & \\
+Description &  \\
+Tools & \\
+\addlinespace \bottomrule[.1pt] \addlinespace
+\end{tabular}
+
+
+Clustere
+
+Google apps
+
+IT Outsourcing
+
+%VAMPiLE
+%RITE
+
+
+
+%\section*{Primary skills}
+%
+%Managing and Developing research funding proposals, for the framework programs of the
+%European Commision, the European Research Council, and other research
+%funding agencies.
+%
+%Personnel Management.
+%
+%Developing and managing administrative procedures.
+%   
+%Extensive technological experience, including web, social media, and
+%backend/server programming. From my earlier PhD training, I have extensive
+%knowledge about parallel programming and development of parallel computing
+%systems. 
+%
+%Scientific scripting with Python and other tools.
+%
+%%Combining Python and C/C++ libraries using tools like Swig or SIP, or by
+%%manually creating wrapper code.
+%
+%%Parallel programming with Python, using tools like pypar, mpi4py, pympi or
+%%direct use of MPI through custom built C extensions.
+%
+%Solving practical system administration related problems on the Linux and
+%MacOSX platform. 
+%
+%Based on my education and later involvement in the research at Simula Research
+%Laboratory, I have a strong mathematical background. In my management work and
+%proposal writing work in recent years, I have utilised this background to
+%analyse and drill down into complex issues in several other fields, spanning
+%from Scientific problems in related topics to development of budgeting
+%procedures and administrative challenges. Although I am not working with
+%mathematics every day, I am confident that my professional training has served
+%me well and help me solve the various tasks I meet on a daily basis.
+%
+% \end{itemize}
+% \item General Linux system administration. Have been a linux user since 1995, and a 
+% professional linux administrator since 1999. I have mainly worked with Debian Linux,
+% although I on several occasions also have looked into Gentoo, Suse and RedHat. 
+% \item In recent years, I have also used and done system administration on the
+% Mac OSX platform, and have gained significant insight on that platform as
+% well. 
+% \item Configuration and installation of Linux clusters. I have designed and
+%installed three smaller linux clusters (from 32 to 96 processors), both
+%hardware and software wise, based on Debian, FAI automatic installations,
+%OpenPBS, Torque, and MAUI schedulers. 
+
+
+\end{document}
+
+% vim: tw=80

@@ -1,0 +1,149 @@
+Basic:
+    Name:           "Eivind Storm Aarn{\\ae}s"
+    Address:        "Maridalsveien 240"
+    Post:           "0467 Oslo"
+    Birth:          "21.02.1991"
+    Email:          "eivind@xal.no"
+    Phone:          "+47 988 84 317"
+    Nationality:    "Norwegian"
+Summary: |
+    I have a masters degree in Computational Science from the University of Oslo, completed in
+    2016. My project was about a particle system modeling linear elasticity, and accelerating
+    linear algebra computations using GPUs. From my studies leading to this degree I have gained
+    broad knowledge about algorithms, numerical mathematics, and programming in several languages.
+
+    Prior work experience includes teaching programming: mostly one-to-one teaching in a lab
+    setting, but also as lecturing and live coding in plenary settings. I have also worked with
+    testing{---}both manual and automated, and with Android development and some minor Javascript
+    development.
+Skills:
+    Languages:
+        - "C/C++"
+        - "Python"
+        - "Javascript"
+        - "Java"
+        - "TeX/LaTeX"
+    Frameworks:
+        - "OpenCL"
+        - "Android"
+        - "Node.js"
+    Tools:
+        - "Git"
+        - "CMake"
+        - "Vim editor"
+        - "Atom editor"
+        - "IntelliJ IDEA"
+Languages:
+    "Norwegian":    "Native proficiency"
+    "English":      "Professional working proficiency"
+SelectedSkills:
+    "OpenCL": |
+        As part of my masters degree I have implemented OpenCL GPU operations for several
+        sparse matrix schemes.
+    "Reading Code": |
+        Through my work as a teaching assistant I have read and graded somewhere around
+        140~000 lines of code (Python/Java).
+Education:
+    - - "2011"
+      - "2014"
+      - >
+        Bachelor Degree in Applied Mathematics at the University of Oslo.
+    - - "2014"
+      - "2016"
+      - |
+        Masters Degree in Computational Science at the University of Oslo.
+
+        My thesis was titled {\it {``}Sparse Matrix Storage Schemes for a Linear System arising
+        from a Discrete Model of Elasticity{''}}.
+Work:
+    - - "2017"
+      - ""
+      - >
+        IT Consultant at Expert Analytics AS.
+    - - "2012"
+      - "2015"
+      - |
+        Teaching Assistant at the University of Oslo in the course {\it {``}INF1100: Introduction
+        the programming with scientific applications{''}}. Only the autumn semesters.
+
+        Was responsible for a weekly programming lab. I also corrected assignments for my class.
+    - - "2013"
+      - "2014"
+      - |
+        Summer intern and contract software developer at Teleplan Globe AS.
+
+        Prototyped an Android app for logging mobile network parameters, and identifying all
+        the cell towers the device communicated with.
+    - - "2014"
+      - "2014"
+      - |
+        Teaching Assistant at the University of Oslo in the course {\it {``}INF1010: Object
+        oriented programming{''}}. Only the spring semester.
+
+        Shared responsibility for both reviewing the past weeks exercises in plenary for the entire
+        course, and lecturing the pre-course for students with no prior knowledge in Java.
+    - - "2013"
+      - "2013"
+      - |
+        Teaching Assistant at the University of Oslo in the course {\it {``}INF1010: Object
+        oriented programming{''}}. Only the spring semester.
+
+        Was responsible for a weekly programming lab. I also corrected assignments for my class.
+    - - "2012"
+      - "2013"
+      - |
+        Summer intern at Teleplan Globe AS.
+
+        Worked on testing web applications: both manually and by automating manual procedures.
+Projects:
+    A1:
+        Activity: The norwegian land register (NO:~{\it{}{``}Matrikkelen{''}})
+        Period: "April.\ 2017 ---"
+        Role: "Developer"
+        Staffing: "More than 10 developers"
+        Volume: "100\\%"
+        Description: |
+            I redesigned and implemented the algorithms for computing land borders using
+            a specialized depth-first graph search. 
+        Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence and Perforce
+    A2:
+        Activity: Region and Municipality reorganization (NO:~{\it{}{``}Kommunereformen{''}})
+        Period: "Jan.\ 2017 --- April.\ 2017"
+        Role: "Developer"
+        Staffing: "5 developers"
+        Volume: "100\\%"
+        Description: |
+            My part of the project was to partition land data into sets of independent data
+            to enable parallel processing without dead-locking the database.
+            Data dependence was defined by both logical and algorithmic constraints of the data
+            transforms, and by database indices and constraints.
+            The partitioning was done using graph partitioning algorithms.
+        Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence and Perforce
+    A3:
+        Activity: "A C++/OpenCL library for sparse linear algebra"
+        Period: "Aug.\ 2015 --- Dec. 2017"
+        Role: "Researcher and developer"
+        Staffing: "1 researcher"
+        Volume: "100\\%"
+        Description: |
+            Developed as part of my masters degree at the University of Oslo.
+            The library implements several different sparse matrix schemes and matrix-vector
+            operations. Matrix-vector algorithms are implemented both serially, and parallel for
+            GPUs using the OpenCL framework.
+        Tools: C++, OpenCL, Python, CMake, and Git
+    A4:
+        Activity: "Prototype an Android app for logging mobile network parameters"
+        Period: "June 2013 --- Aug.\ 2014"
+        Role: "Developer"
+        Staffing: "1 developer"
+        Volume: "June/july 2013 and 2014: 100\\%. Otherwise: 20\\%"
+        Description: |
+            The project was to determine if an Android device coupled with proprietary data from
+            the network operator could access enough parameters from the mobile network as to be
+            usefull for logging network state and diagnosing network problems.
+            To access enough parameters hidden Android APIs was accessed through reflection in
+            addition to the public APIs available through the Android SDK.
+            As the app used proprietary network data it was never meant for public use and is not
+            available.
+        Tools: Android, Java, IntelliJ IDEA, Gradle, and Git
+

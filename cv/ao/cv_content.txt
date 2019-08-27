@@ -1,0 +1,229 @@
+Name: 
+Åsmund Ødegård
+
+Address:
+\>Sneisveien 26, \\
+\>1407 Vinterbro \\
+
+Birth:
+\>23.08.1972 \\
+
+Email:
+\>asmund@xal.no \\
+
+Phone:
+\> +47 900 69 915 \\
+
+Summary:
+I am a senior software developer, project leader, and researcher, with 19 years 
+of professional experience.  
+Most of my 
+career prior to founding Expert Analytics AS together with Ola Skavhaug,
+has been with Simula Research Laboratory, 
+ranked as Norway's best ICT research institution in 2012. Through various
+positions in that company I have obtained a broad set of technical and management
+skills, which I since 2013 has used as Managing Director and Senior Consultant
+in Expert Analytics. My main areas of technical expertise spans from mathematical 
+software development and scripting, to administration of advanced ICT
+solutions and configuration management. Both through education and
+practical hands-on experience I have developed strong analytical skills within
+my fields of expertise. 
+\\
+\\
+As manager and leader of several projects with internal and external
+participants, I have learned the importance of understanding the strengths and
+skills of the participants in order to deliver on time. Communication within
+the team is always key to ensure that everyone have ownership in the project and
+stay motivated. This must always be balanced with a firm leadership.
+
+
+Skills:
+Languages & Python, C, C++, C\#, PHP, Java, Javascript, Bash, Matlab, \LaTeX, HTML, Sql, CSS, Scala, Lisp \\
+Frameworks & Google App Engine, Puppet, Numpy, Pandas, SciPy, MPI, BSP, Diffpack, Plone, Knockout, jQuery, RequireJS, Web.py, Turbogears, Bootstrap, Slim, Twig\\
+Tools & Linux, OS X, VirtualBox, Vagrant, MySql, Sqlite, NoSqls, Apache, Nginx, Git, Subversion, CVS, Mercurial, Make, SCons, Autoconf, buildout
+
+Languages:
+Norwegian & Mother tongue \\
+English & Fluent \\
+%German & Basic \\
+%French & Rudimentary \\
+
+SelectedSkills:
+Management & Development and implementation of strategies, guidelines and procedures, lead and encourage staff, personnel follow-up \\
+Communication & Writing and editing, typesetting \& typography, try to learn French \\
+Funding & EU and RCN funding instruments, consortium development, proposal writing \\
+Technology & Extensive knowledge about system administration; always eager to learn about new frameworks and open source technologies; solution architect and problem solver \\
+
+Education:
+2006 & Dr. Scient in Scientific Computing, Faculty of Mathematics and Natural Sciences, University of Oslo. Thesis' title ``Applications of high level software for parallel solution of Partial Differential Equations.'' \\
+1995 & Cand. Scient in Applied and Industrial Mathematics, Department of Mathematics, University of Oslo
+
+Work:
+2013 --      & Managing Director and Consultant at Expert Analytics \\
+2011 -- 2013 & Director of External Research Funding at Simula Research Laboratory \\
+2010 -- 2011 & Director of Administration at Simula Research Laboratory \\
+2008 -- 2010 & Assistant Director of Administration at Simula Research Laboratory \\
+2005 -- 2007 & Research Scientist at Simula Research Laboratory \\ 
+2004 -- 2009 & IT Manager at Simula Research Laboratory \\
+2001 -- 2005 & Scientific Programmer at Simula Research Laboratory \\
+2000 -- 2001 & Scientific Programmer at Department of Informatics, University of Oslo \\
+1996 -- 1999 & Research Assistant at Department of Informatics, University of Oslo \\
+1996         & Summer intern, SINTEF Applied Mathematics \\
+1993 -- 1994 & Assistant teacher, Department of Mathematics, University of Oslo \\
+
+Interests:
+Soft & Playing clarinet and saxophone, cooking \& wine, photography \\
+Hard & Bicycle, motorcycle \\
+Tech & Fonts, typesetting with \TeX, computers, gadgets, coding 
+
+A1:
+Activity: Demographic and financial estimations \\
+Role:  Architect and main developer \\
+Staffing:  Project leader, developer, front-end designer \\
+Description:  For customer we developed a web-based tool for statistical
+estimation of demographics within a large closed group, and a tool for economical
+planning of a large scale development. My main contribution was the mathematical
+analysis of the problem, and development of the necessary logic and algorithms. Further, I 
+also implemented the system in a custom application server. The work was
+carried out in close collaboration with financial experts and a designer. \\
+Tools: Python, Pandas, Web.py, Sqlite, MS Sql, Excel, HTML, CSS, JavaScript, jQuery  \\
+
+A2:
+Activity: Establishing technical infrastructure of Simula Research Laboratory \\
+Role:  Project leader and main architect \\
+Staffing: Project leader, 4 system administrators, external contractors \\
+Description: For the newly created research institute 
+we designed and developed a full technical infrastructure in the
+renovated office building at the old airport at Fornebu; office networks, back-end
+facilities and computer room, telephone systems, printers, servers, etc. Technical requirements,
+budgetary limitations and practical issues had to be taken into consideration in order
+to establish a scalable and flexible infrastructure.  \\
+
+A3:
+Activity: Symphonical \\
+Role: Main developer \\
+Staffing: Project leader and two developers \\
+Description: Symphonical is a web-based collaboration tool. Initially it was
+conceived as a tool for running agile software development projects based on the
+metaphor of post-it notes on a virtual wall, a scope that since has been
+widened. We created the first prototype of the system, in 2005,
+before it was spun out as a company and developed further
+by others. \\
+Tools: PHP, MySql \\
+
+A4:
+Activity: Simulation of Medical Ultrasound \\
+Role: Researcher and main developer \\
+Staffing: 4--5 researchers and developers \\
+Description: A research project where we studied different mathematical models
+for numerical simulation of medical ultrasound. My main responsibility was
+implementation of object oriented finite element based simulators for ultrasound propagating in
+inhomogeneous media. The target application was detection of tumors in tissue. \\
+Tools: C++, Diffpack, MPI, VTK \\
+
+A5:
+Activity: PySE \\
+Role: Main developer and researcher \\
+Description: Python Stencil Environment (PySE) is a high level environment for
+solving partial differential equations using finite difference methods (FDM). The
+environment provides an abstraction for the stencil concept of FDM, which makes
+it possible to implement FDM-based simulators in notation very close to the
+mathematical formulation. The environment is inherently parallell and 
+distributes a problem on the available hardware in an optimal way based on
+the communication patterns defined by the stencils. PySE was
+developed as part of my PhD studies and published as open source software.\\
+Tools: Python, Numpy, Scipy, SWIG, C++, MPI \\
+
+A6:
+Activity: Python Computing Components (PyCC) \\
+Role: Developer \\
+Description: PyCC is a modern and efficient scripting framework that is used
+to solve differential equations to study the electrical activity in the human
+heart. The main parts of PyCC is a high level scripting interface implemented in
+Python for flexibility and low-level extension modules implemented in C/C++ and
+Fortran for efficiency. My main role in the project was to provide a flexible
+build system for PyCC taking into account all the dependencies of the system.
+The build system was implemented using the SCons framework. \\
+Tools: C/C++, Fortran, Python, Swig, MPI, Subversion, SCons, PETSc, FEniCS,
+Hypre, BoomerAMG, Diffpack, GNU Compiler Collection and Debugger  \\
+
+A7:
+Activity: Web site for Simula Research Laboratory \\
+Role: Main developer and designer \\
+Description: In order to facilitates new communication strategies for the
+company, it was necessary to update the web site for Simula Research Laboratory.
+New channels for communicating news and ongoing research projects were created,
+as well as a complete redesign of the company Intranet which at the same time
+replaced mailing list as the primary form of official internal communication.
+The process of upgrading the system consisted both of technical work and
+meetings with all the stakeholders within the organisation in order to develop a 
+system in line with their needs.\\
+Tools: Python, PHP, Javascript, Plone, MySql \\
+
+A8:
+Activity: Outsourcing of ICT services \\
+Role: Project coordinator \\
+Description: Simula Research Laboratory decided in 2012 to put a contract for
+its IT operations out for tender, after running the services with internal
+resources for a decade. My core responsibility was authoring the specification
+of the tender and evaluating the offers as well as participate in negotiating the
+final contract. I was also responsible for handling the communication with all
+the internal stakeholders. As the change affected the daily work of all
+employees it was particularly important to have an open and inclusive dialog in 
+the process to ensure a satisfactory result. \\
+
+A9:
+Activity: mCASH development\\
+Role: Senior Python Developer \\
+Staffing: 12--15 developers \\
+Description: My responsibilities in this project included
+integrations of third-party APIs for user-identification with
+Norwegian BankID, and 
+development of APIs for access to mCASH resources for external integrators,
+based on OpenID Connect and
+Oauth protocols. I was also deeply involved in design and implementation of
+the transactional engine handling the payments; the core of the mCASH system.
+This engine connects persons, merchants and banks together, and computes
+transation fees for involved parties in addition to moving correct amounts.
+The backend system of mCASH is implemented solely in Python.
+The development at mCASH followed the Scrum agile method.\\
+Tools: Python, Google app engine, webapp2, Jinja2, Javascript, jQuery, HTML, Nose tests, Git, Jira. \\
+
+A10:
+Activity: SmartBlikk development \\
+Role: Systems Architect and Senior Developer \\
+Description: SmartBlikk is a business intelligence solution for the SME market. My
+responsibility was development of an API for the system for import of data from external
+systems, as well as integrating external APIs for use from SmartBlikk, mainly for
+importing accounting data. The pilot of SmartBlikk was created by the founder of
+Intelliview, and I am in charge of designing and implementing the second version of the
+system with dynamic in-browser reporting capabilities. I am also in charge of
+establishing a deployment environment for SmartBlikk on the cloud, specifically
+on Amazon Elastic Beanstalk scaling out with multiple EC2 nodes and using AWS
+RDS database. \\
+Tools: Php, Mysql, Slim, Twig, Javascript, jQuery, AWS EB, AWS EC2, AWS RDS. \\
+
+A11:
+Activity: FrontSystems development \\
+Role: Senior Developer and adviser \\
+Staffing: 3 developers \\
+Description: FrontSystems is a Norwegian company developing a web-based POS system. The current
+system was build on some technologies that are approaching EOL, and my main role was
+to advise and contribute towards a more modern architecture. This include
+moving development and deployment to Github and Azure as well as implementing
+reporting services in POS backend using client-side JS rather than Microsoft
+reporting services. \\
+Tools: C\#, JavaScript, Asp.Net, Knockout, Bootstrap, RequireJS, jQuery, MSSQL, TeamCity, Git, Azure. \\
+
+A12: 
+Activity: Building linux clusters \\
+Role: Project manager, lead architect and developer \\
+Staffing: 2 additional Systems administrators \\
+Description: For the scientific computing group at Ifi, University of Oslo and
+later at Simula Research Laboratory, I was in charge of building three
+different compute clusteres for advanced numerical computations. The systems
+grew from 32 compute cores up to 576, and was configured with core os, multiple
+networks, schedulers and queue systems. The first clusters where managed with
+CFengine as provisioning system, while the last one was provisioned using
+Puppet. \\
+Tools: Debian GNU/Linux, CFengine, Puppet, OpenPBS, MAUI, MPIch, BSP, \\

@@ -1,0 +1,83 @@
+Basic:
+    Name:  "Sebastian Gjertsen"
+    Address: R{\o}dstuveien
+    Post: "0572 Oslo"
+    Birth: "20.07.1990"
+    Email: "sebastian@xal.no"
+    Phone: "90804329"
+Summary: >
+    I hold a masters degree in applied mathematics from the University of Oslo and Simula Research Labratory, finished in 2017.
+    In my thesis I built a Fluid-Structure Interaction solver with Python using the FEniCS platform. This also included working with
+    supercomputers parallelizing the computational efforts.
+    During my studies I gained knowledge in algorithms, numerical computing and programming in different languages.
+
+
+    After graduating I worked for Shortcut AS, an app-development company, developing iOS apps and working with Splunk for monitoring and
+    analyzing machine-generated big data. I have also taken courses and attended conferences on AI/Machine Learning, learning neural networks
+    using Tensorflow, Keras, Scikit-Learn.
+    Apart from that I am highly adaptable to any situation and can quickly learn new languages and frameworks.
+
+Skills:
+    Languages:
+        - "Python"
+        - "Java"
+        - "C/C++"
+        - "Swift"
+    Frameworks:
+        - "FEniCS"
+        - "Tensorflow"
+        - "Keras"
+        - "Pandas"
+    Tools:
+        - "Git"
+        - "Splunk"
+        - "VSTS"
+Languages:
+    Norwegian: "Native language"
+    English: "Fluent, lived in the US for 2 years as a teenager."
+SelectedSkills:
+    Machine learning: >
+         While working for Shortcut I took courses in machine learning, learning about neural networks, recommender systems etc.
+         Using frameworks such TensorFlow, Keras, scikit-learn, Pandas, programming in Python and Matlab.
+         Course certificate: \url{https://www.coursera.org/account/accomplishments/certificate/EHGJT2SFVHVK}.
+         I was also involved in the initial phases of setting up a recommender system for a client while working for Shortcut.
+    Programming: >
+         I am most familiar with Python because of the extensive use in my studies, but I also have an understanding of Java, C/C++.
+         I love programming and I am always interested in, and consider myself quickly adaptable to, new programming languages.
+         In my studies and in my working experience I have used GitHub and I am familiar with agile software development.
+
+Education:
+    - - "2015 - 2017"
+      - >
+        Master in Computational Science from the University of Oslo, Norway
+    - - "2015"
+      - >
+        Exchange student at the University of Utrecth, Netherlands
+    - - "2012 - 2015"
+      - >
+        Bachelor in Mathematics with Informatics from the University of Oslo, Norway
+Work:
+    - - "2018 - "
+      - >
+        Expert Analytics AS
+    - - "2017 - 2018"
+      - >
+        Shortcut AS
+Interests:
+    Music:
+        - Most of my time spent outside of work is playing guitar.
+          I play in a band which plays original music and gigs often around Oslo. I also play in different projects with singers, djs etc.
+    Ice-Hockey:
+        - I played Ice-hockey throughout my youth, and lived 2 years in Minnesota,USA playing and attending high school.
+          Now I play somewhat frequently with a lower division team in Oslo.
+Projects:
+    A1:
+        Activity: REMA1000, {\AE} app with over 1 million users.
+        Role: "Splunk Coordinator, iOS developer"
+        Staffing: "Shortcut, Bouvet, Communicate, SopraSteria, Stix, Verifone and Visma"
+        Description: >
+            {\AE} is an app by REMA1000 to help consumers save money and keep track of their purchases.
+            My job was to use the Splunk tool to overview the API calls made by the app to several endpoints, and
+            to set up automatic alarm systems to warn for excessive error codes.
+            I also worked as a iOS developer on this project.
+        Tools: "Splunk"

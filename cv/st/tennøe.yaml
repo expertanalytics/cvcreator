@@ -1,0 +1,102 @@
+Basic:
+    Name:  Simen Tennøe
+    Address: Larsbråtveien 207
+    Post: "0674 Oslo"
+    Birth: "19.09.87"
+    Email: "simetenn@gmail.com"
+    Phone: "47397531"
+    Nationality: "Norwegian"
+Summary: >
+    I am a computational scientist with a broad education in computational
+    physics and computational neuroscience. I have much experience with
+    learning new disciplines and enjoy using the computer to solve complex
+    problems, create models and numerical simulations and perform data analysis.
+Skills:
+    Languages:
+        - "Python"
+        - "C++"
+        - "also used: Matlab, Fortran, C"
+    Frameworks:
+        - "MPI"
+    Tools:
+        - "Git"
+        - "Docker"
+        - "LaTeX"
+        - "DocOnce"
+Languages:
+    "Norwegian": "Native"
+    "English": "Fluent"
+    "German": "Basic"
+# SelectedSkills:
+#     "Skill1": >
+#         short description of skill1
+#     "Skill2": >
+#         short description of skill2
+Education:
+    - - "2014"
+      - "2019"
+      - >
+        \textbf{Ph.D.}
+        Working with computational neuroscience at the University of Oslo.
+        My work is focused on quantifying uncertainties in computational models of
+        neurons and neural networks.
+        Towards this end I have created a Python toolbox,
+        found on my \href{https://github.com/simetenn/uncertainpy}{Github},
+        tailored for performing these calculations in neuroscience.
+        My Ph.D. work also includes learning new subjects,
+        tools and techniques as necessary,
+        as well as presenting my work in a wide variety of settings.
+    - - "2011"
+      - "2013"
+      - >
+        \textbf{Master of Astronomy.}
+        I specialized in numerical astrophysics and cosmology.
+        I developed software ``from scratch'' in C++ that compares the results
+        from large-scale N-body simulations of the universe with observational data.
+        This problem is computationally intensive and the work included
+        implementing advanced clustering algorithms,
+        parallelization using MPI, and large-scale data analysis.
+    - - "2007"
+      - "2010"
+      - >
+        \textbf{Bachelor of Physics, Astronomy and Meteorology} Specialization in physics.
+Work:
+    - - "2014"
+      - "2019"
+      - >
+        \textbf{Ph.D.} See education section above.
+    - - "2014"
+      - >
+        \textbf{Software engineer at Schlumberger.} I worked on developing software
+        (Petrel) in C++ for modeling in oil and gas reservoirs.
+    - - "2013, 2009, 2008"
+      - >
+        \textbf{Teaching assistant at the University of Oslo}
+        in a Python programming course - \href{http://www.uio.no/studier/emner/matnat/ifi/INF1100/}{Introduction to programming with scientific applications}.
+        The work of a teaching assistant is to manage a class of students in
+        their work with weekly compulsory programming projects.
+        Additionally I corrected about 100 exercises from students every week.
+    - - "2012, 2011"
+      - >
+       \textbf{Summer job at the Institute of Theoretical Astrophysics at the University of Oslo}.
+        The first year I performed data reduction on a set of
+        astronomical images and created software to automate the process (2011).
+        The second year I implemented support for parallelization, using MPI,
+        for what turned into the software I developed during my master (2012).
+
+# Interests:
+#     "Role playing games":
+#         - "DnD"
+#     "Reading":
+#         - "Fantasy"
+#         - "Science fiction"
+# Projects:
+#     A1:
+#         Activity: "project title"
+#         Period: "start to end"
+#         Role: "your role in project"
+#         Staffing: "who worked on project"
+#         Volume: "Volume of work (eg.\ percent of full time)"
+#         Description: >
+#             short description of project and your involvement
+#         Tools: "tools used"

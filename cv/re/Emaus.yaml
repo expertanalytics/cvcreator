@@ -1,0 +1,119 @@
+Basic:
+    Name:  Roar Emaus
+    Address: Hagelundveien 5 - H202
+    Post: 0963 Oslo
+    Birth: 24.06.1986
+    Email: roar@xal.no
+    Phone: +47 99 00 13 86
+
+Summary: >
+    I hold a masters degree in particle physics from the University of Oslo (2018),
+    and a certificate of apprenticeship as an electrician from N{\o}rve Viderg{\aa}ende skole 
+    (2009). 
+    I have been in different jobs with a highly varied work environments; teacher, factory 
+    worker, electrician (both for industry and domestic), salesman and conference
+    organiser. This has given me broad experience working in both small and large scale projects 
+    and with various kinds of people, obtaining experience working in both leading and team 
+    positions.
+    \\[12pt]
+    My thesis consisted of running simulations for two different models (Quark-Gluon String Model 
+    and Hadron Resonance Gas Model) to predict experimental observables. The simulations were 
+    written in Fortran and apart from running the simulations, I wrote code to systemize and 
+    analyze the statistical data, this with Python and C++. 
+    \\[12pt] 
+    Through courses at the University I have programmed in Python, C/C++ and MatLab. I have 
+    experience with parallel programming through C/C++ and Python with the open source libraries 
+    OpenMP and MPI on both super computer clusters and local machines. I have also programmed
+    differential equation solvers to calculate the orbits of our solar system and the evolution of
+    star clusters, and spent a lot of time visualising data, mostly through Python and Matplotlib, 
+    creating interactive plots, animations and static graphs.
+    \\[12pt]
+    In my spare time I have used Linux and Python as my hobby to create for example interactive
+    bots for Slack, a team communication software, socket programming with personal servers to
+    communicate with Android phones.
+    Also working with electronics to create automated and interactive systems, e.g. hydroponics 
+    system, using Arduino and Raspberry Pi.
+    \\[12pt]
+    My latest projects included creating interfaces which talks to REST API's using Python with
+    asynchronous calling. This is being used for staff optimisation for the service industry and 
+    also open source project for data retrieval from the Frost API.
+
+Skills:
+    Languages:
+        - Python
+        - C/C++
+        - MatLab
+        - Bash
+    Frameworks:
+        - Numpy, Matplotlib, MPI, asyncio, Armadillo
+    Tools:
+        - Git
+        - Linux
+        - Vim
+
+Languages:
+    English: Fluent
+    Norwegian: Native language
+
+SelectedSkills:
+    Programming: >
+        I have mostly programmed in Python during my university years and it is my language of
+        choice, if possible, when programming in my spare time. Through different courses I have 
+        also programmed in C/C++. Within these courses I have also implemented distributed 
+        parallelization in both languages through MPI, running both locally and on super computers.
+        I enjoy programming and am adaptable to any programming language that is needed.
+    LaTeX: >
+        Written in LaTeX since 2011
+
+Education:
+    - - 2015 - 2018
+      - >
+          Master in Particle Physics from University of Oslo, Norway
+    - - 2017
+      - >
+          Exchange student at Bogolyubov Institute of Theoretical Physics, Ukraine
+    - - 2011 - 2015
+      - >
+          Bachelor in Physics from University of Oslo, Norway
+    - - 2006 - 2007
+      - > 
+          Fagerlia Viderg{\aa}ende Skole, Norway
+    - - 2002 - 2009
+      - >
+          Certificate of apprenticeship as electrician N{\o}rve Viderg{\aa}ende Skole, Norway
+
+Work:
+    - - 2018 - 
+      - >
+          Expert Analytics AS
+    - - 2016 - 2018
+      - >
+          Organiser for International Conference on New Frontiers in Physics (ICNFP)
+    - - 2006 - 2008 
+      - >
+          Spjelkavik Elektro AS (SEAS)
+    - - 2006
+      - >
+          Telekiosken (part time)
+    - - 2007
+      - >
+          Intern at {\O}rsta primary school
+    - - 2010 - 2011
+      - > 
+          Br{\o}drene Sunde (part time)
+
+Interests:
+    Electronics:
+        - Creating automated systems with Raspberry Pi and Arduino (e.g. hydroponics),
+          costumes and accessories with embedded electronics, IoT.
+    Programming:
+        - Web scraping, scripts which automate daily tasks, security/privacy.
+          
+#Projects:
+#    A1:
+#        Activity: "project title"
+#        Role: "your role in project"
+#        Staffing: "who worked on project"
+#        Description: >
+#            short description of project and your involvement
+#        Tools: "Python"

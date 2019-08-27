@@ -1,0 +1,21 @@
+03-06: Jonathan Feinberg - topic: ChaosPy
+03-19: Kent-Andre Mardal - topic: modellering av sykdomsspredning 
+04-05: Ola Skavhaug - topic: Rasputin
+05-02: Pia Zacharias - topic: Solving complicated cases with simple analytics
+05-14: Simen Tennøe - topic: Uncertainty quantification in neuroscience
+05-29: Alocias Mariadasom - topic:
+06-11: Stian Lågstad - topic: Spaced repetition learning
+06-26:
+07-09: Sommerferie
+07-24: Sommerferie
+08-06:
+08-21:
+09-03:
+09-18:
+10-01:
+10-16:
+10-29: Konferanse
+11-13:
+11-26:
+12-11:
+12-24: Avlyst pga Julaften!

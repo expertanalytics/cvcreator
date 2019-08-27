@@ -1,0 +1,113 @@
+Basic:
+    Name:   "Alexander Fleischer"
+    Address: "Lindebergveien 7A"
+    Post:  "1069 Oslo"
+    Birth: "10.04.1991"
+    Email: "alexander@xal.no"
+    Phone: "+47 482 71 967"
+    Nationality: "Norwegian"
+Summary: >
+    I submitted my master thesis in computational physics in the beginning of
+    2018. The objective of the thesis was building a C++ application for simulating 
+    quantum dots. 
+    My goal was to develop code that was up to par with industry standards and
+    my focus was on writing good, readable code with extensive unit-testing. 
+    In addition to C++ I used Python for data analysis during my thesis.
+    As a developer, I've cultivated my Python skills, and I now have eight years
+    of experience with Python. 
+    I am currently working on a project at the transit company Ruter.
+    
+Skills:
+    Languages:
+        - "Python" 
+        - "C"
+        - "C++" 
+        - "Javascript"
+        - "Java"
+        - "MATLAB"
+        - "Bash"
+        - "PHP"
+    Frameworks:
+        - "Numpy"
+        - "Armadillo"
+        - "MPI"
+        - "Flask"
+        - "PyPDF2"
+        - ""
+    Tools:
+        - "Git"
+        - "Vim editor"
+        - "Unix"
+        - "LaTeX"
+Languages:
+    Norwegian: Mother tongue
+    English: Fluent
+SelectedSkills:
+    Programming: >
+        During my education, practically every subject involved some
+        form of programming and I also enjoy recreational programming and scripting.
+        I have eight years of Python programming experience and about five years
+        of experience with Git.
+    Quick learner: >
+        I like to learn, and do so quickly, in particular about programming and science.
+    Problem solving: >
+        Both my current project, previous work experience and my master thesis has taught me to 
+        work independently and assess the task at hand.
+    Written communication: >
+        I like writing clear and concise texts. 
+        Everything from popular science to documenting code.
+Education:
+    - - 2018
+      - 'M.Sc. Computational Physics from the Department of
+        Physics, University of Oslo. Title of thesis:  "Monte Carlo Studies of Quantum Dots". Supervisor: Professor
+        Morten Hjorth-Jensen.'
+    - - 2017
+      - 'B.Sc. in Physics, University of Oslo.'
+Work:
+    - - 2018–
+      - 'Consultant at Expert Analytics'
+    - - 2015–2017
+      - '30\\% IT Support at the Department of Physics, University of Oslo'
+    - - 2013–2017
+      - 'Course Leader at Forskerfabrikken Summer School'
+    - - 2013–2014
+      - 'Private Tutor at Studenthjelp privatundervisning'
+Projects:
+    A1:
+        Activity: "Stop Poster Production System (flakmotor), Trafikantinformasjon- og designprogram (TID)/Ruter As)"
+        Role: "Developer"
+        Staffing: "1 developer"
+        Period: "February 2018—December 2018"
+        Volume: "100\\%"
+        Description: >
+            The "Stop Poster Production System" is Ruter's system for 
+            automated generation of timetable posters for the 8000 bus stops 
+            in Oslo and Akershus.
+            I further developed the backend logic and expanded the system to a
+            self-service website for easily generating and
+            distributing large quantities of stop posters at a time.
+            The website was developed with the Python micro-framework
+            and hosted using Apache.
+            I also implemented the Travelling Salesman Problem for
+            finding the quickest route between a set of bus stops for more
+            efficient deployment of stop posters.
+            In addition to development, I planned and ordered the change
+            of stop posters during the bianually route updates.
+
+        Tools: "Python, Javascript, Flask, Apache, Google OR-Tools, Google Maps API"
+    A2:
+        Activity: "Monte Carlo Studies of Quantum Dots"
+        Staffing: "2 researchers"
+        Description: >
+            For my master thesis, I developed software for finding the ground 
+            state energies of quantum dots (fermions) using the variational Monte-Carlo method.
+            The program handles different potential wells like the single and double
+            harmonic oscillator and the finite square well.
+            Furthermore I solved the Schrödinger equation of the potential systems to obtain
+            one-particle wavefunctions of the energy states.
+            The resulting wavefunction was then written as a linear combination 
+            of simple harmonic oscillator basisfunctions which were used in the 
+            Monte-Carlo solver and compared against the results of the original Monte-Carlo simulations.
+            The code was primarily C++ with some data analysis in Python.
+            I put effort and focus on unit testing and writing clean code.
+        Tools: "C++, Python, Armadillo, MPI, Numpy"

@@ -1,0 +1,142 @@
+Basic:
+    Name:  "Anis A. Ayati"
+    Address: "Spireaveien 12A"
+    Post: "0580 Oslo"
+    Birth: "26.01.1986"
+    Email: "ayati.anis@gmail.com"
+    Phone: "+4799464312"
+    Nationality: "Norwegian"
+Summary:
+    
+    I work as a Data Scientist at the Production Optimalization Crew in Aker BP's digitalization program ``Eureka".
+    
+    I hold a Ph.D. in Fluid Mechanics and a MSc. in Applied Mathematics. Before joining Expert Analytics, I completed a three-year postdoctoral fellowship, which included two international research stays; one year at PUC-Rio, Brazil and six months at Princeton University, USA.
+    
+Skills:
+    Languages:
+        - Python, Matlab, C++, Java.
+    Frameworks:
+        - Numpy, SciPy, Scikit-learn, Matplotlib, Diffpack, AMIDST.
+    Tools:
+        - Git, Bitbucket, Latex, LabView. 
+Languages:
+    "Norwegian": "Fluent"
+    "English": "Fluent"
+    "French": "Fluent"
+    "Portuguese": "Intermediate"
+    "Spanish": "Basic"
+    "Algerian": "Intermediate"
+
+Education:
+    - - "2015"
+      - >
+        {\bf Ph.D. in Fluid Mechanics}, Department of Mathematics, University of Oslo. Thesis title 'Dynamics of stratified gas-liquid pipe flow'
+    - - "2008"
+      - "2010"
+      - >
+        {\bf MSc. in Applied Mathematics and Mechanics}, Department of Mathematics, University of Oslo.
+    - - "2005"
+      - "2008"
+      - >
+        {\bf BSc. in Physics}, Department of Physics, University of Oslo.
+Work:
+    - - "2019"
+      - Present # <- blank
+      - |
+        {\bf Senior Consultant} at Expert Analytics.
+        
+        - {\bf Data Scientist} at Aker BP's digitalisation program "Eureka". Part of the Production Optimalization team.
+
+    - - "2015"
+      - "2018"
+      - |
+        {\bf Postdoctoral Fellow}, Department of Mathematics, University of Oslo.
+        
+        - 2018: {\bf Visiting researcher}, Department of Mechanical and Aerospace Engineering, Princeton University, USA.
+        
+        - 2017: {\bf University Lecturer} in Fluid Mechanics, Department of Mathematics, University of Oslo.
+
+        - 2016: {\bf Visiting researcher}, Department of Mechanical Engineering, PUC-Rio, Brazil.  
+    - - "2015"
+      - >
+        {\bf University Lecturer}, Department of Physics, Norwegian University of Life Sciences.
+    - - "2010"
+      - "2014"
+      - |
+        {\bf Ph.D. Research Fellow}, Department of Mathematics, University of Oslo.
+        
+        - 20\% assistant teacher in Vector Algebra.
+    - - "2006"
+      - "2010"
+      - >
+        {\bf Student Mentor}, TENK (now ENT3R), Faculty of Mathematics and Natural Sciences, University of Oslo.
+
+    - - "2009"
+      - >
+        {\bf Summer intern}, DNV Summer Project 2009, Det Norske Veritas.
+
+    - - "2008"
+      - >
+        {\bf Summer intern}, Software Development, Forsvarets Forskningsinstitutt.
+        
+
+Interests: 
+    "Academic": 
+        - "Machine Learning"
+        - "Fluid Mechanics"
+        - "Mathematical Programming."
+    "Other":
+        - Reading, traveling, football, boxing, skiing, fitness.
+
+Projects:
+    A1:
+        Activity: "Smart Monitoring and Recommender System (SMRS)"
+        Period: "02/19 - present"
+        Role: "Co-lead developer"
+        Staffing: "2"
+        Volume: 100\%
+        Description: >
+            SMRS is a tool that provides monitoring and recommendation of mitigation actions associated with high oil-in-water (oiw) levels in produced water at the Ula offshore platform. SMRS is connected to the Cognite Data Platform and runs a machine-learning backend that provides predictions of oiw levels and categorization of production parameters according to their historical degree of impact on oiw levels. 
+        Tools: "Python, Cognite Data Platform, Databricks, Grafana"
+
+    A2:
+        Activity: "Development of an aerodynamic model for Vertical-Axis Wind Turbines"
+        Period: "2018 (April-October)"
+        Role: "Lead developer"
+        Staffing: "1"
+        Volume: 100\%
+        Description: >
+            During my six-month research stay at Princeton University, I developed and implemented a numerical model that is able to accurately predict the aerodynamic performance of vertical-axis wind turbines. The model is an adaptation of the blade element momentum theory to the vertical-axis configuration. 
+        Tools: "Matlab, Python, LaTeX"
+    A3:
+        Activity: "Detailed measurements of waves and turbulence in gas-liquid pipe flow"
+        Period: "2010-2018"
+        Role: "Lead investigator"
+        Staffing: "3"
+        Volume: 80\% -100\%
+        Description: |
+            In my doctoral and postdoctoral work, I combined a variety experimental methods in multiple experimental campaigns to quantify the dynamics of turbulence and shear-generated interfacial waves. The experiments resulted in large data sets consisting of high-spatial resolution images and various types of electrical signals. The data was subsequently structured and analysed using mathematical tools based on linear algebra, stochastic theory and spectral decomposition. The programming was done in Matlab and C++. 
+            Experimental insight was used to optimize Computational Fluid Dynamics simulations.
+
+            {\bf Collaboration}: During my Ph.D. I collaborated with a fellow Ph.D. student, whereas in my postdoctoral period, I've supervised two Ph.D. student and three MSc. student.
+            
+            {\bf Publications}: 21 publications, including peer-reviewed journal papers, conference proceedings and theses. More than 30 talks in conferences and seminars. Reviewer in 4 international peer-reviewed journals and one international conference.
+        Tools: "Matlab, Fortran, C++, ANSYS Fluent, Digiflow, LabView, LaTeX"
+
+    A4:
+        Activity: "A framework for risk assessment using Monte Carlo Simulation and Google Sheets API"
+        Period: "2018"
+        Role: "Lead developer"
+        Staffing: "2"
+        Description: >
+            As a hobby project, I developed a simple risk assessment code consisting of Monte Carlo simulations running on a Python backend and Google Sheets frontend. The project was initiated by a friend of mine who worked for a project management company and was looking for a more elegant solution to the company's Microsoft Excel framework.
+        Tools: "Python, Google Sheets"
+
+    A5:
+        Activity: "Establishement of a research and education cooperation between Norway and Brazil"
+        Period: "2015-2018"
+        Role: "Project coordinator"
+        Staffing: "10+"
+        Volume: 20\%
+        Description: >
+            During my research visit at PUC-Rio, I helped establish a research and edcuation cooperation funded by the Norwegian Research Council and its Brazilian counterpart. During the project duration, 2017-2018, I organized and chaired several workshops, supervised and organized the exchange of Ph.D. and MSc. students and conducted collaborative research with my Brazilian colleagues. In Spring 2017, I was main author of a project application on behalf of the Faculty of Mathematics and Natural Sciences, University of Oslo. The goal of the project is to tie together a large network of Norwegian and Brazilian universities and research institutions through the organization of an annual conference ("The November Conference") in Rio de Janeiro. I have acted as co-organizer and session chair in the conference in the period 2016-2018.
