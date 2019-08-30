@@ -5,11 +5,11 @@
 05-14: Simen Tennøe - topic: Uncertainty quantification in neuroscience
 05-29: Alocias Mariadasom - topic:
 06-11: Stian Lågstad - topic: Spaced repetition learning
-06-26:
+06-26: (ikke foredrag)
 07-09: Sommerferie
 07-24: Sommerferie
-08-06:
-08-21:
+08-06: (ikke foredrag)
+08-21: Thomas Golding
 09-03:
 09-18:
 10-01:
