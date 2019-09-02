@@ -27,11 +27,11 @@ SelectedSkills:
     "Analytical skills": >
         Strong skills for understanding and formulating the problem in a solvable way.
     "Bayesian statistics": >
-        Parameter optimisation, model selection, Monte Carlo Markov Chains
+        Parameter optimization, model selection, Monte Carlo Markov Chains (MCMC)
     "Creative problem solving": >
-        Demonstrated the ability to learn and creative new and complicated material within a reasonable timescale
+        Demonstrated the ability to learn new and complicated material within a reasonable timescale
     "Machine learning": >
-        Regression, classification, support vector machines, K-means clustering, principal/independent component analysis
+        Regression, classification, support vector machines (SVM), K-means clustering, principal/independent component analysis (PCA/ICA)
 Education:
     - - "2008 - 2014"
       - >
@@ -51,7 +51,7 @@ Work:
     - - "2014"
       - "2016"
       - >
-        Postdoctoral researcher, Astroparticle and Cosmology Laboratory, Universite Paris VII. Developed simulations of gravitationally lensed CMB signal and extragalactic microwave emissions. Collaborated in developing a PCG based imaging software for CMB polarisation from Planck satellite data. Collaborated in developing a Bayesian source separation method for cosmological hydrogen line signal.
+        Postdoctoral researcher, Astroparticle and Cosmology Laboratory, Universite Paris VII. Developed simulations of gravitationally lensed CMB signal and extragalactic microwave emissions. Collaborated in developing a PCA based imaging software for CMB polarisation from Planck satellite data. Collaborated in developing a Bayesian source separation method for cosmological hydrogen line signal.
     - - "2016"
       - "2019"
       - >
@@ -73,7 +73,7 @@ Projects:
         Staffing: "Team of 7"
         Volume: "Full time"
         Description: >
-            The project was aimed at detection of B-mode polarization of the cosmic microwave background radiation with a Bayesian inference method for power spectra and signal reconstruction from interferometric data interferometers by using the technique of Gibbs sampling. The validity of the method was demonstrated in the flat-sky approximation for a simulation of an interferometric observation on a finite patch with incomplete coverage, a finite beam size and a realistic noise model. 
+            The project was aimed at detection of B-mode polarization of the cosmic microwave background radiation with a Bayesian inference method for power spectra and signal reconstruction from interferometric data by using the technique of Gibbs sampling. The validity of the method was demonstrated in the flat-sky approximation for a simulation of an interferometric observation on a finite patch with incomplete coverage, a finite beam size and a realistic noise model. 
         Tools: "Statistical modeling, statistical data analysis, image analysis, MCMC, scientific writing, C++"
     A2:
         Activity: "A 3-D model of polarised dust emission in the Milky Way"
@@ -91,5 +91,5 @@ Projects:
         Staffing: "Independent project in a mid-size international collaboration"
         Volume: "Full time"
         Description: >
-            The project was aimed at developing a Principal Component Analysis based source separation software for CMB signal analysis in spherical wavelet domain from multi-frequency observations while minimizing the contamination from instrumental noise. The method performs localized analysis in both harmonic space and pixel space via needllet decomposition and as such it adapts component separation to local conditions of contamination both over the sky and over angular scale, and it uses not only spectral information, but also spatial information of the non-Galactic components in order to disentangle the CMB from the Galactic signal and noise contamination.
-        Tools: "Signal processing, source separation, numerical modeling, statistical data analysis, image analysis, scientific writing, python"
+            The project was aimed at developing a Principal Component Analysis based source separation software for CMB signal analysis in spherical wavelet domain from multi-frequency observations while minimizing the contamination from instrumental noise. The method performs localized analysis in both harmonic space and pixel space via needlet decomposition and as such it adapts component separation to local conditions of contamination both over the sky and over angular scale, and it uses not only spectral information, but also spatial information of the non-Galactic components in order to disentangle the CMB from the Galactic signal and noise contamination.
+        Tools: "Signal processing, source separation, numerical modeling, statistical data analysis, image analysis, scientific writing, Python"
