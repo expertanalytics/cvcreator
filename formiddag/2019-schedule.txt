@@ -10,7 +10,7 @@
 07-24: Sommerferie
 08-06: (ikke foredrag)
 08-21: Thomas Golding
-09-03:
+09-03: Jonathan Feinberg - Numpy Polynomials
 09-18: Gry Tveten
 10-01:
 10-16:
