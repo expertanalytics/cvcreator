@@ -33,7 +33,7 @@ dette av følgende:
 ### Telefoni
 
 Telefonabonnement overføres til selskapet, slik at Expert Analytics kan dekke
-regningen. I mappen https:/github.com/expertanalytics/internal/hr finnes
+regningen. I mappen https://github.com/expertanalytics/internal/hr finnes
 eierskifte skjema hvor selskapets informasjon er fylt inn. Fyll inn informasjon
 om nåværende eier, samt nummer som skal overføres, signer, og send til daglig
 leder som håndterer resten.

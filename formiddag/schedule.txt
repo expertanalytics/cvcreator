@@ -1,4 +1,4 @@
-03-06: Jonathan Feinberg - topic: ChaosPy
+03-06: Jonathan Feinberg - topic: ChaosPy -- Numerical software for doing Uncertainty Quantification
 03-19: Kent-Andre Mardal - topic: modellering av sykdomsspredning 
 04-05: Ola Skavhaug - topic: Rasputin
 05-02: Pia Zacharias - topic: Solving complicated cases with simple analytics
@@ -10,7 +10,7 @@
 07-24: Sommerferie
 08-06: (ikke foredrag)
 08-21: Thomas Golding
-09-03: Jonathan Feinberg - Numpy Polynomials
+09-03: Jonathan Feinberg - topic: NumPoly -- Fitting polynomials into Numpy's data types
 09-18: Gry Tveten
 10-01:
 10-16:
