@@ -1,7 +1,7 @@
 Basic:
     Name:  "Ada Ortiz-Carbonell"
     Address: "Colletts gate 59"
-    Post: "0456 - Oslo"
+    Post: "0456 Oslo"
     Birth: "7$^{th}$ January 1975"
     Email: "ada@xal.no"
     Phone: "+47 98887847"
@@ -13,7 +13,7 @@ Skills:
     Scientific skills:
         - "Image analysis, pattern recognition, anomaly detection, analysis of time series, analytical modelling, statistical analysis"
     Languages:
-        - "IDL, Fortran, LaTeX in a Unix and Mac OS X environment"
+        - "IDL, Fortran, LaTeX"
     Tools:
         - "Mac OS X and Unix"
 Languages:
@@ -115,15 +115,15 @@ Projects:
             I am in charge of organizing and managing a series of posts in the social media about the Sun and the European Solar Telescope project in order to educate the general public about the importance of studying our nearest star. Also in charge of the outreach and education activities in Norway related to the EST project.
         #Tools: "tools used"
 
-    A4:
-        Activity: "Human resources and administration, hiring committee at the Institute of Theoretical Astrophysics (University of Oslo)."
-        #Period: "start to end"
-        Role: "member"
-        Staffing: "3-5 members"
-        #Volume: "Volume of work (eg.\ percent of full time)"
-        Description: >
-            I rutinely evaluated and interviewed candidates for the open positions at the Institute, from PhD students to postdoctoral fellows and researchers.
-        #Tools: "tools used"
+#    A4:
+#        Activity: "Human resources and administration, hiring committee at the Institute of Theoretical Astrophysics (University of Oslo)."
+#        #Period: "start to end"
+#        Role: "member"
+#        Staffing: "3-5 members"
+#        #Volume: "Volume of work (eg.\ percent of full time)"
+#        Description: >
+#            I rutinely evaluated and interviewed candidates for the open positions at the Institute, from PhD students to postdoctoral fellows and researchers.
+#        #Tools: "tools used"
 
     A5:
         Activity: "Organisation of international conferences and schools"
