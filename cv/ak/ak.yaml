@@ -1,0 +1,95 @@
+Basic:
+    Name:  "Ata Karakci"
+    Address: "Olaf Schous vei 5"
+    Post: "0572 Oslo"
+    Birth: "25 December 1980"
+    Email: "ata@xal.no"
+    Phone: "+47 92 22 57 05"
+    Nationality: "Turkish"
+Summary: >
+    I have a PhD in physics with specialisation in astrophysics and have worked as a researcher at various international institution for over a decade. I have expertise in statistical analysis of big data sets, numerical modelling, signal processing, imaging, and programming together with a demonstrated ability to learn complex material provides me with an excellent foundation for contributing to the development of machine learning and artificial intelligence systems for next generation of big data analysis. I consider myself as a motivated, self-driven, result oriented and creative problem solver with strong analytic skills.
+Skills:
+    Languages:
+        - "Python, C/C++, IDL/GDL"
+        - ...
+    Frameworks:
+        - "Numpy, Scipy, Astropy, Pandas, Matplotlib, Scikit-learn"
+        - ...
+    Tools:
+        - "Git, Unix, Mac OS X, Jupyter Notebook, Microsoft Office"
+        - ...
+Languages:
+    "Turkish": "Native"
+    "English": "Fluent"
+    "French": "Intermediate"
+    "Norwegian": "Intermediate"
+SelectedSkills:
+    "Analytical skills": >
+        Strong skills for understanding and formulating the problem in a solvable way.
+    "Bayesian statistics": >
+        Parameter optimization, model selection, Monte Carlo Markov Chains (MCMC)
+    "Creative problem solving": >
+        Demonstrated the ability to learn new and complicated material within a reasonable timescale
+    "Machine learning": >
+        Regression, classification, support vector machines (SVM), K-means clustering, principal/independent component analysis (PCA/ICA)
+Education:
+    - - "2008 - 2014"
+      - >
+        PhD in physics from Brown University, thesis titled "Bayesian Analysis of Systematic Effects in Interferometric Observations of the Cosmic Microwave Background Polarization"
+    - - "2004 - 2006"
+      - >
+        Masters in physics from Bogazici University, thesis titled "S-duality in String Gas Cosmology"
+Work:
+    - - "2008"
+      - "2014"
+      - >
+        PhD student, Brown University, Providence, RI. Developed a Gibbs sampling image reconstruction software for interferometric observations of polarised CMB signal. Collaborated in maximum likelihood analysis of systematic errors in microwave interferometers. Taught undergraduate laboratory classes.
+    - - "2014"
+      - "2014"
+      - >
+        Visiting researcher, Lawrence Berkeley National Laboratory, UC Berkeley. Collaborated in joint analysis of ground-based BICEP2/Keck Array and satellite-based Planck data. Developed simulations of Galactic microwave emissions.
+    - - "2014"
+      - "2016"
+      - >
+        Postdoctoral researcher, Astroparticle and Cosmology Laboratory, Universite Paris VII. Developed simulations of gravitationally lensed CMB signal and extragalactic microwave emissions. Collaborated in developing a PCG based imaging software for CMB polarisation from Planck satellite data. Collaborated in developing a Bayesian source separation method for cosmological hydrogen line signal.
+    - - "2016"
+      - "2019"
+      - >
+        Postdoctoral researcher, Institute of Theoretical Astrophysics, University of Oslo. Developed a PCA-based source separation software for CMB signal analysis in spherical wavelet domain. Applied a Gibbs sampling / MCMC method for CMB component separation. Collaborated in constructing a 3D model of the Galactic dust polarisation. Gave lectures and supervised master student projects.
+    - - "2019"
+      - "" # <- blank
+      - >
+        Consultant, Expert Analytics
+Interests:
+    "Sports and nature":
+        - "Running, hiking, mountain biking, skiing"
+    "Music":
+        - "Violin"
+Projects:
+    A1:
+        Activity: "Interferometric Gibbs Sampling"
+        Period: "2010 - 2014"
+        Role: "Researcher"
+        Staffing: "Team of 7"
+        Volume: "Full time"
+        Description: >
+            The project was aimed at detection of B-mode polarization of the cosmic microwave background radiation with a Bayesian inference method for power spectra and signal reconstruction from interferometric data by using the technique of Gibbs sampling. The validity of the method was demonstrated in the flat-sky approximation for a simulation of an interferometric observation on a finite patch with incomplete coverage, a finite beam size and a realistic noise model. 
+        Tools: "Statistical modeling, statistical data analysis, image analysis, MCMC, scientific writing, C++"
+    A2:
+        Activity: "A 3-D model of polarised dust emission in the Milky Way"
+        Period: "2014 - 2016"
+        Role: "Researcher"
+        Staffing: "Team of 3"
+        Volume: "Full time"
+        Description: >
+            The project was aimed at constructing a three-dimensional model of polarised galactic dust emission that takes into account the variation of the dust density, spectral index and temperature along the line of sight, and contains randomly generated small scale polarisation fluctuations. The model is constrained to match observed dust emission on large scales, and match on smaller scales extrapolations of observed intensity and polarisation power spectra. The model was used to investigate the impact of plausible complexity of the polarised dust foreground emission on the analysis and interpretation of CMB polarisation observations. 
+        Tools: "Analytical modeling, statistical data analysis, signal analysis, scientific writing, IDL"
+    A3:
+        Activity: "Needlet Internal Linear Combination Analysis for CMB Data"
+        Period: "2016 - 2019"
+        Role: "Researcher"
+        Staffing: "Independent project in a mid-size international collaboration"
+        Volume: "Full time"
+        Description: >
+            The project was aimed at developing a Principal Component Analysis based source separation software for CMB signal analysis in spherical wavelet domain from multi-frequency observations while minimizing the contamination from instrumental noise. The method performs localized analysis in both harmonic space and pixel space via needlet decomposition and as such it adapts component separation to local conditions of contamination both over the sky and over angular scale, and it uses not only spectral information, but also spatial information of the non-Galactic components in order to disentangle the CMB from the Galactic signal and noise contamination.
+        Tools: "Signal processing, source separation, numerical modeling, statistical data analysis, image analysis, scientific writing, Python"
