@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "hover_numpoly"
+version = "0.0.1"
+authors = ["Jonathan Feinberg <jonathan@feinberg.no>"]
+repository = "https://github.com/expertanalytics/internal"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+hovercraft = "*"
+chaospy = "*"
+numpy = "*"
+scipy = "*"
+matplotlib = "*"
+numpoly = "*"
+ipython = "*"
