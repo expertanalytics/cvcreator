@@ -1,0 +1,22 @@
+version: 2
+jobs:
+  tests:
+    docker:
+      - image: circleci/python:3.7.3
+    steps:
+      - checkout
+      - run:
+          name: "Installation"
+          command: sudo pip install cvcreator
+      - run:
+          name: "Compile CV documents"
+          command: |
+            for filename in cv/*/*.yaml; do
+                echo "compiling $filename"
+                cvcreate $filename --output output.tex --latex
+            done
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - tests
