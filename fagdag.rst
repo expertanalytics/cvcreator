@@ -33,3 +33,16 @@ Repository     `<https://github.com/jonathf/numpoly>`_
 Tasks          `<https://github.com/jonathf/numpoly/tasks.rst>`_
 Keywords       Python, Numpy, Polynomials
 =============  ================================================================
+
+Rasputin -- Tool for generating triangle surface meshes from rasters
+--------------------------------------------------------------------
+
+Rasputin in a hybrid C++/Python tool to generate TINs from rasters.
+
+=============  ================================================================
+Lead           Ola Skavhaug
+Repository     `<https://github.com/expertanalytics/rasputin>`_
+Tasks          `<https://github.com/expertanalytics/rasputin/wiki>`_
+Keywords       Python, C++, Computational Geometry, Hydrology
+=============  ================================================================
+
