@@ -1,7 +1,7 @@
 Fagdagsprosjekter
 =================
 
-Under finner man en rask oversikt over de forskjellige Fagdagsprosjektene
+Under finner man en rask oversikt over de forskjellige fagdagsprosjektene
 i bedriften.
 
 Chaospy -- Python library for doing Uncertainty Qualification
@@ -22,7 +22,7 @@ Keywords       Python, Probability theory, Uncertainty Quantification
 Numpoly -- Polynomials represented as numpy data types
 ------------------------------------------------------
 
-Numpoly is a generic library for creating, manipulating polynomial arrays.
+Numpoly is a generic library for creating and manipulating polynomial arrays.
 
 ``numpoly`` is a subclass of ``numpy.ndarray`` and as such is compatible with
 most ``numpy`` functions, where that makes sense.
