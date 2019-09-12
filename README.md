@@ -63,9 +63,9 @@ Alternatively use MacPorts.
 
 Install
 -------
-Install by downloading and running:
+Install by running:
 ```
-python setup.py install
+pip install cvcreator
 ```
 
 Argument completion

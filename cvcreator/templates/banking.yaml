@@ -30,6 +30,7 @@
       Birth: "%s"
       Email: "%s"
       Phone: "%s"
+      Nationality: "%s"
   Summary: "\\section{Summary}\n\n%s\n\n"
   Skills:
     - - |
