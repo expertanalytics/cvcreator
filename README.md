@@ -36,8 +36,15 @@ For installation on Mac OS-X, see section below
 
 Prerequisite
 ------------
+System dependencies:
+- Latex (on Ubuntu/Debian: `sudo apt-get install latexmk texlive-latex-extra`)
+- Python
+
+Python package dependencies:
+- PyYAML
+
+To use pipenv (to avoid installing the package on your system, but rather in a virtual environment), do:
 ```
-sudo apt-get install latexmk texlive-latex-extra
 python3 -m pip install pipenv
 python3 -m pipenv shell
 pipenv install
