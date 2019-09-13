@@ -95,7 +95,8 @@ def parse(content, template):
         template (dict, list, str) : Nested content from template
     """
     # Retrieve name out of scope
-    content["Name"] = content["Basic"]["Name"]
+    if "Basic" in content:
+        content["Name"] = content["Basic"]["Name"]
 
     # Fix scope for all A<n>
     if "Projects" in template[1] and "Projects" in content:

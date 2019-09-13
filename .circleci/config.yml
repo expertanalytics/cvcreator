@@ -16,6 +16,12 @@ jobs:
           command: |
               source venv/bin/activate
               cvcreate examples/example.yaml --output output.tex --latex
+      - run:
+          name: "Run tests"
+          command: |
+              source venv/bin/activate
+              pip install pytest
+              pytest --doctest-modules cvcreator cvcreator/testsuite.py
 workflows:
   version: 2
   workflow:
