@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  tests:
+    docker:
+      - image: circleci/python:3.7.3
+    steps:
+      - checkout
+      - run:
+          name: "Installation"
+          command: |
+              python -m venv venv
+              source venv/bin/activate
+              python setup.py install
+      - run:
+          name: "Compile CV documents"
+          command: |
+              source venv/bin/activate
+              cvcreate examples/example.yaml --output output.tex --latex
+      - run:
+          name: "Run tests"
+          command: |
+              source venv/bin/activate
+              pip install pytest
+              pytest --doctest-modules cvcreator cvcreator/testsuite.py
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - tests
