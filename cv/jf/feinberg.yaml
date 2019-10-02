@@ -1,47 +1,50 @@
 Basic:
-    Name:  Jonathan~Feinberg
-    Address: Wessels gate 9A
-    Post: 0165 Oslo
-    Birth: 28.04.1984
-    Email: jonathan@xal.no
-    Phone: +47 932 14 474
+    Name: "Jonathan Feinberg"
+    Address: "Wessels Gate 9A"
+    Post: "0165 Oslo"
+    Birth: "28.04.1984"
+    Email: "jonathan@xal.no"
+    Phone: "+47 932 14 474"
 Summary: >
-        I have recently defended my doctorate at the Department of mathematics
-        at the University of Oslo. My educational background is in probability
-        theory, statistics and machine learning with heavy focus on numerical
-        programming and practical applications. My skills include programming
-        in Python, which I have used to write a few software packages. I am
-        also familiar with other languages, like Matlab and R, and can easily
-        adapt beyond this.
+    I am specialist in probability theory, statistics and machine learning with
+    heavy focus on numerical programming and practical applications. I am
+    highly analytical in my thinking and quickly can breaks down open ended
+    complex problems into solvable components. I am also well versed as
+    a programmer, with expert level experience in the Python programming
+    language.
 Skills:
     Languages:
-        - Bash
-        - C++
-        - MATLAB
-        - Python
-        - R
-        - Vimscript
-        - \LaTeX
-        - Markdown/Rst
+        - "Bash"
+        - "C"
+        - "C++"
+        - "Latex"
+        - "MATLAB"
+        - "Python"
+        - "R"
+        - "RST/Markdown"
+        - "Vimscript"
     Frameworks:
-        - Armadillo
-        - Keras
-        - PyMC
-        - GIS
-        - MPI
-        - Matplotlib
-        - Numpy
-        - SciPy
+        - "Armadillo"
+        - "GIS"
+        - "Keras/Tensorflow"
+        - "Matplotlib"
+        - "NumPy/SciPy"
+        - "Pandas"
+        - "PyMC"
+        - "Scikit-Learn"
+        - "Statsmodels"
+        - "XGBoost"
     Tools:
-        - Flask
-        - Git
-        - Linux
-        - Regex
-        - Sphinx
-        - Sqlite
+        - "CircleCI"
+        - "Docker"
+        - "Git"
+        - "Linux"
+        - "OSX"
+        - "Regular Expression"
+        - "Sphinx"
 Languages:
-    Norwegian: Mother tongue
-    English: Fluent
+    Norwegian: "Mother tongue"
+    English: "Fluent"
 SelectedSkills:
     Technology: >
         Large enthusiasm for learning and mastering anything new within
@@ -55,33 +58,38 @@ SelectedSkills:
         proposed progress plans, grounded in fact-based thought.
 Education:
     - - 2015
-      - 'Ph.D. in Mathematics from the Department of Mathematics, University of
-        Oslo. Title of dissertation: "Some Improvements and Applications and
-        Non-intrusive Polynomial Chaos Expansions". Supervisor: Professor Hans
-        Petter Langtangen.'
+      - "Ph.D. in Mathematics from the Department of Mathematics, University of
+         Oslo \\newline
+         Thesis: ``Some Improvements and Applications and Non-intrusive
+         Polynomial Chaos Expansions'' \\newline
+         Supervisor: Professor Hans Petter Langtangen"
     - - 2009
-      - 'M.Sc. in Modelling and Data Analysis from the Department of
-        Mathematics, University of Oslo. Title of thesis: "Threshold Definition
-        of Early Warning Systems to Natural Hazards". Supervisor: Professor
-        Bent Natvig.'
+      - "M.Sc. in Modelling and Data Analysis from the Department of
+         Mathematics, University of Oslo \\newline
+         Thesis: ``Threshold Definition of Early Warning Systems to Natural
+         Hazards'' \\newline
+         Supervisor: Professor Bent Natvig"
     - - 2007
-      - 'B.Sc. in Mathematics, Informatics and Technology, University of Oslo.'
+      - "B.Sc. in Mathematics, Informatics and Technology, University of Oslo"
 Work:
     - - 2016
-      - 
+      - ""
       - Consultant at Expert Analytics
+    - - 2016
+      - 2018
+      - Guest lecturer at the Department of Informatics, University of Oslo
     - - 2014
       - 2015
-      - 20\% Teaching Position at the Department of Informatics, University of Oslo
+      - Teaching Position at the Department of Informatics, University of Oslo
     - - 2014
       - 2015
-      - 10\% Private tutor at high school and under-graduate level at House of Math
+      - Private tutor at high school and under-graduate level at House of Math
     - - 2014
       - 2015
-      - 50\% Scientific Programmer for Simula Research Laboratory
+      - Scientific Programmer for Simula Research Laboratory
     - - 2013
       - 2014
-      - 10\% Consultant at Kalkulo AS
+      - Consultant at Kalkulo AS
     - - 2011
       - 2014
       - Ph.D. student at Simula Research Laboratory
@@ -92,25 +100,28 @@ Work:
       - 2009
       - Science Teacher at Smerud Medical Research
     - - 2008
-      - 30\% Assistant Teacher at Department of Mathematics, University of Oslo
+      - Assistant Teacher at Department of Mathematics, University of Oslo
     - - 2007
       - 2008
-      - '20\% Student Ambassador at Public Relations and Events Office,
-        University of Oslo'
+      - "Student Ambassador at Public Relations and Events Office,
+         University of Oslo"
     - - 2007
-      - 30\% Data Analyst at If P\&C Insurance
+      - Data Analyst at If P\&C Insurance
 Interests:
     Personal:
-        - Dancing
         - Traveling
+        - Gin tasting
     Tech:
-        - Biotechnology
-        - Web-design
+        - Bayesian Statistics/Probabilistic Modelling
+        - Open Source Software
+        - Machine Learning
+        - Global Optimization Algorithms
+        - Python programming
 Projects:
     A1:
-        Activity: Machine learning for Oncoimmunity
-        Role: Consultant
-        Staffing: 4 developers
+        Activity: NEC Oncoimmunity
+        Role: Senior Developer and Data Scientist
+        Staffing: 20 Developers/Data Scientists/Bioinformatitions
         Description: >
             OncoImmunity develop bioinformatics software that has the
             ability to empower precision cancer immunotherapy, and thus
@@ -118,10 +129,10 @@ Projects:
             is to develop machine-learning methods applied to genomic data for
             tumor immune profiling. The goal is to select optimal patients to
             be assigned to cancer immunotherapy clinical trials.
-        Tools: Python, Scikit-learn, Keras
+        Tools: Python, Keras/Tensorflow, Numpy, Pandas, Scikit-learn, XGBoost
     A2:
-        Activity: Machine learning for Statkraft
-        Role: Consultant
+        Activity: Statkraft
+        Role: Data Scientist
         Staffing: 3 developers
         Description: >
             Statkraft is a leading company in hydropower internationally, and
@@ -132,40 +143,43 @@ Projects:
             market energy consume. The techniques included applying methods
             like statistical regression, time-series models, and artificial
             neural networks.
-        Tools: Python, Keras, Statsmodels, Scikit-learn
+        Tools: Python, Keras/Tensorflow, Scikit-learn, Statsmodels
     A3:
-        Activity: Information screen for Høyer
-        Role: Backend developer
-        Staffing: 2 developers
-        Description: >
-            Høyer is a clothing department store chain in Norway. The have
-            multiple outlets across the country. Our job was to create
-            information screen based on the daily and monthly sales and budget
-            numbers. My contribution was to implement a web application that
-            retrieved and processed data to be displayed.
-        Tools: Python, Flask, Sqlite
-    A4:
         Activity: Matlab to C++ converter
         Role: Software developer
         Staffing: 2 developers
         Description: >
             As part of an EU sponsored project, Simula Research Laboratory and
-            Western Geco is collaborating to speed up the code translation step
+            WesternGeco is collaborating to speed up the code translation step
             from Matlab to C++ using Armadillo. The approach involves creating
             a full parser that creates semi-automatic translations.
             I contributed as the developer of the parser, and the structure of
             translation.
         Tools: Python, Armadillo, Sphinx
-    A5:
+    A4:
         Activity: Chaospy -- Uncertainty Quantification Toolbox
-        Role: Researcher and algorithm developer
-        Staffing: 1 researchers
+        Role: Software Maintainer
+        Staffing: 2 developers
         Description: >
-            Chaospy is an open source toolbox containing a large collection of
-            uncertainty quantification tools. It also include some
-            state-of-the-art tools designed to reduce the computational budget
-            in analysis. I wrote the software as part of my Ph.D. work. In
-            collaboration with other researchers, I also help integrate Chaospy
-            into other practical applications involving for example blood flow
-            simulations.
-        Tools: Python
+            Chaospy is an actively maintained open source toolbox containing
+            a large collection of uncertainty quantification tools. It also
+            include some state-of-the-art tools designed to reduce the
+            computational budget in analysis. Chaospy is currently used as
+            numerical engine in multiple research and development projects.
+            \newline
+            \url{https://github.com/jonathf/chaospy}
+        Tools: Python, NumPy, SciPy
+    A5:
+        Activity: Numpoly -- Multivariate polynomials as NumPy datatype
+        Role: Software Maintainer
+        Staffing: 1 developer
+        Description: >
+            Numpoly is an open source library for creating, manipulating
+            polynomial arrays. The library provides a subclass of
+            \verb;numpy.ndarray; implemented to represent polynomials as array
+            element. As such it is fast and scales very well with the size of
+            the coefficients, in addition to it being compatible with most
+            \verb;numpy; functionalities.
+            \newline
+            \url{https://github.com/jonathf/numpoly}
+        Tools: Python, NumPy
