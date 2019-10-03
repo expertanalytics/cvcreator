@@ -1,12 +1,12 @@
 Basic:
     Name: "Jonathan Feinberg"
-    Address: "Wessels Gate 9A"
+    Address: "Wessels gate 9A"
     Post: "0165 Oslo"
     Birth: "28.04.1984"
     Email: "jonathan@xal.no"
     Phone: "+47 932 14 474"
 Summary: >
-    I am specialist in probability theory, statistics and machine learning with
+    I am a specialist in probability theory, statistics and machine learning with
     heavy focus on numerical programming and practical applications. I am
     highly analytical in my thinking and can quickly break down open ended
     complex problems into solvable components. I am also well versed as
@@ -83,7 +83,7 @@ Work:
       - Teaching Position at the Department of Informatics, University of Oslo
     - - 2014
       - 2015
-      - Private tutor at high school and under-graduate level at House of Math
+      - Private tutor at high school and undergraduate level at House of Math
     - - 2014
       - 2015
       - Scientific Programmer for Simula Research Laboratory
@@ -121,7 +121,7 @@ Projects:
     A1:
         Activity: NEC Oncoimmunity
         Role: Senior Developer and Data Scientist
-        Staffing: 20 Developers/Data Scientists/Bioinformatitions
+        Staffing: 20 Developers/Data Scientists/Bioinformaticians
         Description: >
             OncoImmunity develop bioinformatics software that has the
             ability to empower precision cancer immunotherapy, and thus
@@ -163,7 +163,7 @@ Projects:
         Description: >
             Chaospy is an actively maintained open source toolbox containing
             a large collection of uncertainty quantification tools. It also
-            include some state-of-the-art tools designed to reduce the
+            includes some state-of-the-art tools designed to reduce the
             computational budget in analysis. Chaospy is currently used as
             numerical engine in multiple research and development projects.
             \newline
