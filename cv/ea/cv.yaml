@@ -34,6 +34,7 @@ Skills:
         - "CMake"
         - "Vim editor"
         - "JetBrains IDEs (PyCharm, IntelliJ, and CLion)"
+        - "Docker"
 Languages:
     "Norwegian": "Native proficiency"
     "English":   "Professional working proficiency"
@@ -138,7 +139,7 @@ Projects:
         Staffing: "More than 10 developers"
         Volume: "100\\%"
         Description: |
-            Kartverket develop and maintains the lad register software systems. The system has
+            Kartverket develops and maintains the land register software systems. The system has
             to be performant for changes, and to keep a full history of every change to the data.
 
             I have redesigned and implemented the algorithms for computing changes to land borders
@@ -152,7 +153,7 @@ Projects:
         Staffing: "5 developers"
         Volume: "100\\%"
         Description: |
-            Kartverket develop and maintains the lad register software systems. As part of the
+            Kartverket develops and maintains the land register software systems. As part of the
             norwegian region and municipality reoragnization, the land register needs to perform
             huge number of changes in as short a time as possible. As such they need to implement
             specialized algorithms to be able to process the data in the available time frame.
