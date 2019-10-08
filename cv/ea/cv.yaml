@@ -12,7 +12,7 @@ Summary: |
     linear algebra computations using GPUs. From my studies leading to this degree I have gained
     broad knowledge about algorithms, numerical mathematics, and programming in several languages.
 
-    Prior work experience includes teaching programming: mostly one-to-one teaching in a lab
+    Work experience prior to Expert Analytics includes mostly one-to-one teaching in a lab
     setting, but also as lecturing and live coding in plenary settings. I have also worked with
     testing{---}both manual and automated, and with Android development and some minor Javascript
     development.
@@ -20,29 +20,35 @@ Skills:
     Languages:
         - "C/C++"
         - "Python"
-        - "Javascript"
         - "Java"
         - "TeX/LaTeX"
     Frameworks:
         - "OpenCL"
-        - "Android"
-        - "Node.js"
+        - "Numpy and SciPy"
+        - "Matplotlib"
+        - "Boost.Python and Pybind11"
+        - "PyTest"
     Tools:
+        - "Sphinx"
         - "Git"
         - "CMake"
         - "Vim editor"
-        - "Atom editor"
-        - "IntelliJ IDEA"
+        - "JetBrains IDEs (PyCharm, IntelliJ, and CLion)"
+        - "Docker"
 Languages:
-    "Norwegian":    "Native proficiency"
-    "English":      "Professional working proficiency"
+    "Norwegian": "Native proficiency"
+    "English":   "Professional working proficiency"
 SelectedSkills:
-    "OpenCL": |
-        As part of my masters degree I have implemented OpenCL GPU operations for several
-        sparse matrix schemes.
     "Reading Code": |
         Through my work as a teaching assistant I have read and graded somewhere around
-        140~000 lines of code (Python/Java).
+        140~000 lines of code (Python/Java), and as a developer I have reviewed and provided
+        feedback to both developers and specialists.
+    "Technology": |
+        I have a large enthusiasm for learning and mastering anything within programming,
+        technology, and science.
+    "Problem solving": |
+        I enjoy working on and finding solutions to non-obvious problems, and are able to see
+        and work with strengths and weaknesses that may appear.
 Education:
     - - "2011"
       - "2014"
@@ -59,7 +65,7 @@ Work:
     - - "2017"
       - ""
       - >
-        IT Consultant at Expert Analytics AS.
+        Consultant at Expert Analytics AS.
     - - "2012"
       - "2015"
       - |
@@ -97,31 +103,70 @@ Work:
         Worked on testing web applications: both manually and by automating manual procedures.
 Projects:
     A1:
-        Activity: The norwegian land register (NO:~{\it{}{``}Matrikkelen{''}})
-        Period: "April.\ 2017 ---"
+        Activity: "Prototype IoT platform at Statkraft"
+        Period: "July 2019 ---"
+        Role: "Developer"
+        Staffing: "3 developers"
+        Volume: "20\\%"
+        Description: |
+            At Statkraft they need to monitor and collect diverse sensor data. To look into
+            building their own IoT platform they are hosting a project to set up a prototype
+            platform, and develop sensor nodes to collect operational data from a wind park.
+
+            My role in the project is to design and build the sensor node, to implement
+            communication between the node and the gateway using LoRaWAN, and interface the node
+            with the sensor circuitry being developed in parallel.
+        Tools: ESP32, Arduino, ESP-IDF, and C/C++
+    A2:
+        Activity: "Data collection, modelling, and analysis at Statkraft"
+        Period: "Aug.\ 2017 ---"
+        Role: "Developer"
+        Staffing: "3 developers, 2 hydrologists"
+        Volume: "100\\% until June 2019, 80\\% from July 2019"
+        Description: |
+            Statkraft is a major hydropower producer in Norway, and have need of stable and correct
+            data. As part of updating their data frameworks they are hosting several projects for
+            improving data collection and storage, and redesigning models and access layers.
+
+            My role has been to develop interfaces and collection utilities for unstable data
+            sources, design and implement a model of the network of sensor stations and nodes,
+            and data analysis of hydrological/meterologial time series data.
+        Tools: Python, C++, Boost Python, Git, and Sphinx
+    A3:
+        Activity: The norwegian land register (NO:~{\it{}{``}Matrikkelen{''}}) at Kartverket
+        Period: "Apr.\ 2017 --- May 2017"
         Role: "Developer"
         Staffing: "More than 10 developers"
         Volume: "100\\%"
         Description: |
-            I redesigned and implemented the algorithms for computing land borders using
-            a specialized depth-first graph search. 
-        Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence and Perforce
-    A2:
+            Kartverket develops and maintains the land register software systems. The system has
+            to be performant for changes, and to keep a full history of every change to the data.
+
+            I have redesigned and implemented the algorithms for computing changes to land borders
+            using a specialized depth-first graph search.
+        Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence, and Perforce
+    A4:
         Activity: Region and Municipality reorganization (NO:~{\it{}{``}Kommunereformen{''}})
-        Period: "Jan.\ 2017 --- April.\ 2017"
+            at Kartverket
+        Period: "Jan.\ 2017 --- Apr.\ 2017"
         Role: "Developer"
         Staffing: "5 developers"
         Volume: "100\\%"
         Description: |
-            My part of the project was to partition land data into sets of independent data
-            to enable parallel processing without dead-locking the database.
-            Data dependence was defined by both logical and algorithmic constraints of the data
-            transforms, and by database indices and constraints.
-            The partitioning was done using graph partitioning algorithms.
-        Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence and Perforce
-    A3:
+            Kartverket develops and maintains the land register software systems. As part of the
+            norwegian region and municipality reoragnization, the land register needs to perform
+            huge number of changes in as short a time as possible. As such they need to implement
+            specialized algorithms to be able to process the data in the available time frame.
+
+            My part of the project has been to develop algorithms to automatically partition land
+            data into sets of independent structures to enable parallel processing without
+            dead-locking the database. Data dependence was defined by both logical and algorithmic
+            constraints of the data transforms, and by database constraints. The partitioning was
+            done using graph search and graph partitioning algorithms.
+        Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence, and Perforce
+    A5:
         Activity: "A C++/OpenCL library for sparse linear algebra"
-        Period: "Aug.\ 2015 --- Dec. 2017"
+        Period: "Aug.\ 2015 --- Dec.\ 2017"
         Role: "Researcher and developer"
         Staffing: "1 researcher"
         Volume: "100\\%"
@@ -131,12 +176,12 @@ Projects:
             operations. Matrix-vector algorithms are implemented both serially, and parallel for
             GPUs using the OpenCL framework.
         Tools: C++, OpenCL, Python, CMake, and Git
-    A4:
+    A6:
         Activity: "Prototype an Android app for logging mobile network parameters"
         Period: "June 2013 --- Aug.\ 2014"
         Role: "Developer"
         Staffing: "1 developer"
-        Volume: "June/july 2013 and 2014: 100\\%. Otherwise: 20\\%"
+        Volume: "June/July 2013 and 2014: 100\\%. Otherwise: 20\\%"
         Description: |
             The project was to determine if an Android device coupled with proprietary data from
             the network operator could access enough parameters from the mobile network as to be
