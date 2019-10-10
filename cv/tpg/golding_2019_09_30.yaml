@@ -1,0 +1,177 @@
+Basic:
+    Name:  "Thomas Peter Golding"
+    Address: "Vekterveien 18B"
+    Post: "0681 Oslo"
+    Birth: "1985, June 2nd"
+    Email: "thomas@xal.no"
+    Phone: "+47 404 55 503"
+    Nationality: "Norwegian"
+Summary: >
+    Thomas is interested in bringing to life the potential of data for AI, automation and insight purposes. 
+    He will happily engage in the steps of such a process, from analysis and machine learning to data collection and 
+    software development.
+
+    Thomas holds a PhD in astrophysics for developing and studying models of the solar atmosphere. After finishing the
+    PhD he worked as an analyst in the public sector. Here he took part in the business intelligence process 
+    as well as data analyses, data modeling and system architecting. Thomas also completed the two year 
+    leadership development program Teach First Norway.  
+
+    The varied experience makes Thomas a diverse problem solver with a critical and systematic approach. 
+    He has the ability of quickly adopting to new projects and suggest novel solutions.
+Skills:
+    Languages:
+        - "Python"
+        - "R"
+        - "SQL"
+        - "C++"
+        - "Fortran"
+        - "IDL"
+        - "Qlik"
+    Platforms:
+        - "Google Cloud Platform"
+    Frameworks:
+        - "Numpy"
+        - "Pandas" 
+        - "Scikit-learn" 
+        - "Keras" 
+        - "Tensorflow"
+        - "Spark"
+    Tools:
+        - "Git"
+        - "Linux"
+        - "CVS"
+        - "Confluence"
+        - "Jira"
+        - "RStudio"
+        - "Latex"
+Languages:
+    "Norwegian": "mother tongue"
+    "English": "fluent"
+# SelectedSkills:
+#     "Skill1": >
+#         short description of skill1
+#     "Skill2": >
+#         short description of skill2
+Education:
+    - - "2012"
+      - "2017"
+      - >
+        PhD in astrophysics, UiO. Physical processes in the solar atmosphere. The work included 
+        building mathematical and numerical representiontions of the physical system. The numerical 
+        model served as an experiment and a basis for analysis. Research results 
+        were published in scientific journals and presented at conferences.
+    - - "2010"
+      - "2011"
+      - >
+        Teacher qualification, UiO. Training to be a maths and science teacher in secondary and upper 
+        secondary school.
+    - - "2005"
+      - "2010"
+      - >
+        Master of science in astrophysics, UiO. Numerical modelling of the solar atmosphere. Physics, maths
+        and computer science on bachelor level.          
+Work:
+    - - "2019"
+      - "" # <- blank
+      - >
+        Consultant, Expert analytics
+    - - "2019"
+      - "2019"
+      - >
+        Consultant, Accenture. Data science, Google cloud platform, big data and BI business analysis.
+    - - "2016"
+      - "2018"
+      - >
+        Analyst, Statens pensjonskasse. business intelligence, data science, forecasting, insurance mathematics, 
+        software development, data warehousing and database design.
+    - - "2010"
+      - "2012"
+      - >
+        Teach First Norway candidate. A two year teacher and leadership development program for graduates.
+Interests:
+    "Technology":
+        - "machine learning"
+        - "natural language processing"
+        - "programming"
+    "Personal":
+        - "playing music"
+        - "news and podcasts"
+Projects:
+    A1:
+        Activity: "New pension premium system at Statens pensjonskasse"
+        Period: "04/2017-09/2017"
+        Role: "Developer for a premium forecast model"
+        Staffing: "3 developers and 7 analysts"
+        Volume: "50\\%"
+        Description: >
+            The organization was moving a large part of their customers to a new pension 
+            premium system. How the premiums were computed changed, and this had consequences 
+            for a large part of the organization. Thomas was responsible for developing the 
+            premium forecast system. He built a mathematical 
+            description of the model and implemented in a computer program. He designed the 
+            data flow and automated data queries. The various components were built into 
+            a software package.
+        Tools: "R, SQL, Jira"
+    A2:
+        Activity: "Building a data pipeline at Statens pensjonskasse"
+        Period: "10/2017-01/2018"
+        Role: "Developer and architect"
+        Staffing: "2 developers"
+        Volume: "50\\%"
+        Description: >
+            Thomas identified a bottle neck in one of the organization's central processes. He suggested, 
+            designed, implemented and saw through the realization of a data pipeline 
+            for data from different sub processes. The solution included new software for 
+            the transform and load of business data, as well as a centralized data base for storage.
+            The project presented a unification of data from the relevant sub processes into one standard 
+            data model. The solution resulted in higher efficiency and paved the way for future automation.
+        Tools: "R, SQL, Jira"
+    A3:
+        Activity: "PhD - numerical modeling of the solar atmosphere"
+        Period: "08/2012-02/2017"
+        # Role: "Qlikview development"
+        # Volume: "100\\%"
+        Description: >
+            Thomas studied how time dependent atomic processes affect the temperature and overall 
+            state of the solar atmosphere. To do this he developed a mathematical description of 
+            the problem and translated it into a computer algorithm. He implemented the algorithm 
+            in a parallel computer code for simulating the sun. Numerical models were 
+            produced by running the code on supercomputers. The numerical models 
+            were used to analyse interaction between solar gas and light. In particular how temperature 
+            and ability to emit light changed due to the time dependent atomic process.
+            The efforts resulted in four academic papers in the project, three of these as the first author. 
+            All four papers were published in peer-reviewed journals.
+        Tools: "Fortran, IDL, Python, Latex"
+    A4:
+        Activity: "Business intelligence development at Statens pensjonskasse"
+        Period: "06/2016-12/2018"
+        Role: "Qlikview development"
+        Staffing: "3 developers"
+        Volume: "20\\%"
+        Description: >
+            Statens pensjonskasse is continuously working on development and improvements of their automated reports. 
+            Thomas worked on mapping out business needs and suggested solutions in the datawarehouse. 
+            He also worked on report development in QlikView and QlikSense.
+        Tools: "R, Qlikview, Qliksense, Jira"
+    A5:
+        Activity: "Business intelligence development"
+        Period: "04/2019-08/2019"
+        Role: "Business analyst"
+        Staffing: "Project manager, business analyst and 5 developers"
+        Volume: "100\\%"
+        Description: >
+            Thomas acted as a bridge between business and technical development. 
+            He mapped out business needs and requirements, wrote technical 
+            specifications and performed administrative tasks related to the operation. 
+        Tools: "Qlikview, Qliksense, SAS, Jira, Python"
+    A6:
+        Activity: "Teach First Norway candidate"
+        Period: "07/2010-06/2012"
+        Description: >
+            Candidates work as teachers in challenging schools in Oslo at the same time as they are 
+            following a demanding development and training program. The program revolves around the 
+            pupil's learning outcome through the candidate's progress as teachers and leaders.
+            Thomas worked 2 years as a teacher in Gran skole at Furuset in Oslo. Here he taught maths 
+            and science from 4th-10th grade (10-16 year). Simultaneously he completed formal teacher 
+            training the first year and a leadership program at Equinor the second year.
+    
