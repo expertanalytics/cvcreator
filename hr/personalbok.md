@@ -23,12 +23,17 @@ Alle får utstyr man trenger for å utføre sitt arbeide. Som utgangspunkt best�
 dette av følgende:
 
 * Bærbar pc; forventet levetid 3 år (vi kjøper derfor god kvalitet)
-* Etui eller enkel væske for å beskytte pc,
-* En ekstra strøm-adapter
+* Etui eller enkel væske for å beskytte pc
+* En ekstra strøm-adapter til bærbar pc
 * Mobiltelefon; forventet levetid 2 år
-* Tablet - reMarkable, iPad 10", eller annen tablet i samme prisklasse (ca.
+* Tablet -- reMarkable, iPad 10", eller annen tablet i samme prisklasse (ca.
   6K); forventet levetid 3 år
 * Støydempende hodetelefoner
+
+I tillegg vil det finnes skjermer, tastatur, mus, diverse strømadaptere og
+kabler på selskapets kontor på Mesh. Dette er utstyr som fritt kan benyttes 
+av alle, men skal som hovedregel ikke fjernes fra kontoret. Dersom det er
+behov for ekstra utstyr på kontoret, ta kontakt med daglig leder.
 
 ### Telefoni
 
@@ -38,12 +43,28 @@ eierskifteskjema hvor selskapets informasjon er fylt inn. Fyll inn informasjon
 om nåværende eier, samt nummer som skal overføres, signer, og send til daglig
 leder som håndterer resten.
 
+For tiden benytter vi et abonnement fra Talkmore som inkluderer 7GB data. I
+gitte situasjoner kan dette være for lite. Ta kontakt med daglig leder og
+begrunn behovet for ekstra data - dersom det er arbeidsmessige grunner for
+behovet vil det som hovedregel bli innvilget.
+
 ## I Oppdrag
 
 Vi jobber som regel ute hos kunde, og krav kunde stiller til utstyr varierer.
-Når det er hensiktsmessig kjøper vi inn ekstern skjerm, tastatur og mus for
-bruk i kundens lokaler. Vi kjøper også inn JetBrains-lisenser (PyCharm, CLion,
-Goland, Datagrip) ved behov.
+I tillegg til basis-utstyr kjøper vi derfor inn annet utstyr når det er
+et relevant behov. Eksempler på slikt utstyr o.l kan være:
+
+* Ekstern skjerm
+* Eksternt tastatur og mus
+* Docking
+* Backup disk eller annen form for ekstern lagring
+* Software lisenser (f.eks JetBrains PyCharm, CLion, Datagrip, Office365)
+* Fagbøker 
+* Online kurs
+* Journalartikler
+
+Terskelen for å diskutere behov for utstyr er lav; diskusjonen tas med daglig
+leder.
 
 ## Medarbeidersamtale
 
@@ -83,6 +104,50 @@ Ferie avvikles slik ferieloven beskriver; det vil si at alle som har full
 ferieopptjening normalt tar ut hele ferien i løpet av året. Det er mulighet til
 å overføre inntil 2 arbeidsuker (10 dager) ferie fra et år til neste. Det må
 søkes om dette. E-post til daglig leder er tilstrekkelig.
+
+## Fagdager og -kvelder
+
+Det avholdes for tiden fagdag omtrent hver 4. uke, og fagkveld her 14. dag, hele
+året bortsett fra ferie-perioden fra slutten av juni til starten av august. Plan
+for fagdager og -kvelder finnes i en delt kalender. Deltakelse på fagdager og -kvelder
+er et tilbud som er åpent for alle, men det er opp til hver enkelt medarbeider 
+å prioritere deltakelse sett opp mot andre gjøremål for kunde. 
+
+På fagdager møtes vi fra morgenen og jobber sammen på prosjekter definert av oss 
+selv. Lunch på fagdagen dekkes for alle som deltar i prosjektene, enten i form
+av felles lunch eller ved budsjett nærmere angitt av daglig leder for dekning
+av utgiftene. 
+
+På fagkvelder, også betegnet "formiddager", holdes det et fordrag fra kl 17.
+Foredragsholder og tema for foredrag annonseres senest 3 virkedager før oppsatt
+fagkveld, for eksempel ved post i #fagdag-kanalen på slack, ved å legge inn en
+oppføring i formiddag/schedule.txt-filen i github.com/expertanalytics/internal,
+eller på annen måte gjøres kjent for alle
+ansatte. Dersom ingen melder seg som foredragsholder, avlyses arrangementet. De 
+som deltar på foredraget får et budsjett til dekning av kostnader til middag rett 
+etter fordraget -- derav "formiddag". Budsjett angis av daglig leder.
+
+### Organisering av formiddag
+
+Foredragsholder er ansvarlig for å organisere formiddag. Dette innebærer:
+
+* Annonsere tittel på foredrag innen frist som angitt over
+* Velge restaurant/sted hvor man samles for å spise etterpå, av typen hvor
+  budsjettet strekker til
+* Organisere pamelding til middag hvis valgt spisested forutsetter
+  bordbestilling
+* Ta en "selfie" med minimum de som er med på middagen og poste i slack-kanalen
+  #selfie-4-food
+* Publisere foredraget sitt på github.com/expertanalytics/internal/formiddag
+  innen rimelig tid etter foredraget er holdt, inkludert en liste over
+  deltakere.
+
+### Budsjett
+
+Budsjett angis av daglig leder, og er for tiden:
+
+* 400 kroner per person til middag for de som deltar på formiddag
+* 250 kroner per person til lunch for de som deltar på fagdag
 
 ## Verneombud
 
