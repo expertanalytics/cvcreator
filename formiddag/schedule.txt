@@ -12,7 +12,7 @@
 08-21: Thomas Golding
 09-03: Jonathan Feinberg - topic: NumPoly -- Fitting polynomials into Numpy's data types
 09-18: Gry Tveten
-10-01:
+10-01: Anis Ayati
 10-16:
 10-29: Konferanse
 11-13:
