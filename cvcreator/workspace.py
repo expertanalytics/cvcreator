@@ -138,9 +138,10 @@ class cvopen(object):
         if (p.returncode): #Non-zero return code from call to latexmk
             print("latexmk run failed, see errors above ^^^")
             print("trying pdflatex instead...")
-            cmd = ("cd \"%s\" %s pdflatex \"%s\" %s "
-                    "-latexoption=\"-interaction=nonstopmode\""
-                    % (self.path, separator, texname, silentstr))
+            cmd = (" %s pdflatex \"%s\" %s "
+                    "-latexoption=\"-interaction=nonstopmode\" %s"
+                    % (separator, texname, silentstr))
+            cmd = ("cd \"%s\"" % (self.path)) + cmd + cmd 
             p = subprocess.Popen(cmd, shell=True)
             p.wait()
             if (p.returncode): #Non-zero return code from call to latexmk
