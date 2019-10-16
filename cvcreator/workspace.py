@@ -105,15 +105,15 @@ class cvopen(object):
             self.template_not_found(template)
 
         with open(self.path + template + ".yaml") as f:
-            return yaml.load(f, Loader=yaml.FullLoader)
+            return yaml.load(f, Loader=yaml.SafeLoader)
 
     def get_content(self):
         with open(self.path + "_content") as f:
-            return yaml.load(f, Loader=yaml.FullLoader)
+            return yaml.load(f, Loader=yaml.SafeLoader)
 
     def get_config(self):
         with open(self.path + "config.yaml") as f:
-            return yaml.load(f, Loader=yaml.FullLoader)
+            return yaml.load(f, Loader=yaml.SafeLoader)
 
     def compile(self, textxt, silent):
 
@@ -144,7 +144,7 @@ class cvopen(object):
             cmd = ("cd \"%s\"" % (self.path)) + cmd + cmd
             p = subprocess.Popen(cmd, shell=True)
             p.wait()
-            if (p.returncode): #Non-zero return code from call to latexmk
+            if (p.returncode): #Non-zero return code from call to pdflatex
                 print("pdflatex run failed too, see errors above ^^^")
         pdfname = self.path + self.target
         assert os.path.isfile(pdfname)
