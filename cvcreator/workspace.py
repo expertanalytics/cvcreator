@@ -8,6 +8,7 @@ import os
 import shutil
 import tempfile
 import yaml
+import subprocess
 
 import cvcreator
 
@@ -104,33 +105,47 @@ class cvopen(object):
             self.template_not_found(template)
 
         with open(self.path + template + ".yaml") as f:
-            return yaml.load(f)
+            return yaml.load(f, Loader=yaml.SafeLoader)
 
     def get_content(self):
         with open(self.path + "_content") as f:
-            return yaml.load(f)
+            return yaml.load(f, Loader=yaml.SafeLoader)
 
     def get_config(self):
         with open(self.path + "config.yaml") as f:
-            return yaml.load(f)
+            return yaml.load(f, Loader=yaml.SafeLoader)
 
     def compile(self, textxt, silent):
 
-        texname = self.path + self.target[:-3] + "tex"
-        with open(texname, "w") as f:
+        texname = self.target[:-3] + "tex"
+        with open(self.path + texname, "w") as f:
             f.write(textxt)
 
+        #print("wrote %s" % (self.path + texname))
         if silent:
-            os.system(
-                "cd %s; "
-                "latexmk %s -silent -pdf -latexoption=\"-interaction=nonstopmode\"" % (
-                    self.path, texname))
+            silentstr = "-silent"
         else:
-            os.system(
-                "cd %s; "
-                "latexmk %s -pdf -latexoption=\"-interaction=nonstopmode\"" % (
-                    self.path, texname))
-
+            silentstr = ""
+        if os.name == 'nt':
+            separator = "&" #Windows systems use & instead of ; in shell
+        else:
+            separator = ";"
+        cmd = ("cd \"%s\" %s latexmk \"%s\" %s -pdf "
+                "-latexoption=\"-interaction=nonstopmode\""
+                % (self.path, separator, texname, silentstr))
+        p = subprocess.Popen(cmd, shell=True)
+        p.wait()
+        if (p.returncode): #Non-zero return code from call to latexmk
+            print("latexmk run failed, see errors above ^^^")
+            print("trying pdflatex instead...")
+            cmd = (" %s pdflatex \"%s\" %s "
+                    "-latexoption=\"-interaction=nonstopmode\""
+                    % (separator, texname, silentstr))
+            cmd = ("cd \"%s\"" % (self.path)) + cmd + cmd
+            p = subprocess.Popen(cmd, shell=True)
+            p.wait()
+            if (p.returncode): #Non-zero return code from call to pdflatex
+                print("pdflatex run failed too, see errors above ^^^")
         pdfname = self.path + self.target
         assert os.path.isfile(pdfname)
         return pdfname
