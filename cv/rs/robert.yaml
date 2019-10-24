@@ -1,0 +1,103 @@
+Basic:
+    Name:  Robert Solli
+    Address: Ole Moes vei 14a
+    Post: 1165 Oslo
+    Birth: 09.10.1991
+    Email: robert@xal.no
+    Phone: +47 473 93 250
+    Nationality: Norwegian
+Summary: >
+    I submitted my thesis in Computational Physics for the degree of M.Sc. in the fall of 2019. 
+    In my thesis project, I investigated the application of machine learning to a nuclear 
+    physics experiment. At the same time, I held a position as a research assistant at the 
+    department of physics. My education and experience have given me a strong analytical 
+    background. In particular, I am proficient in efficient numerical programming in multiple 
+    languages, advanced machine learning techniques, data processing and database management. 
+Skills:
+    Languages:
+        - Python
+        - C$\nolinebreak[3]\hspace{-0.01em}\raisebox{.2ex}{\small{++}}$
+        - SQL 
+    Frameworks:
+        - Tensorflow
+        - Keras
+        - PyTorch
+        - Scikit-learn
+        - Pandas
+        - Numpy
+        - Sympy
+        - Scipy
+        - Armadillo
+        - MPI
+        - MSSQL
+    Tools:
+        - Git
+        - Linux
+        - \LaTeX
+        - Vim
+Languages:
+    Norwegian: Native speaker
+    English: Fluent
+SelectedSkills:
+    Machine Learning: >
+        In my master's studies a large focus was placed on understanding and developing neural network models.
+        I have extensive experience with the TensorFlow and Keras libraries, as well as experience with PyTorch.
+        As a research assistant I was involved in the machine learning group at the Centre for Computing in Science Education.
+        In this work I used neural network models as well as tree-based, classical and support vector algorithms.
+    Programming: >
+       Programming has been a passion of mine from the start of my University education. Most 
+       courses featured a programming aspect, and this fostered a growing interest 
+       in exploring new technologies. 
+    Problem solving: >
+       In my studies and work I have been challenged with hard interdisciplinary problems. These challenges 
+       have given me an understanding of how to approach and disect such problems to find effective solutions.
+Education:
+    - - 2019
+      - >
+        M.Sc. in Computational Physics from the Factulty of Mathematics and Natural
+        Science, University of Oslo. The title of my thesis was {\it {``}Latent Variable Machine Learning Algorithms: Applications in a Nuclear Physics Experiment{''}}.
+    - - 2017
+      - >
+        B.Sc. in Science, University of Oslo.
+Work:
+    - - 2019 
+      - ""
+      - >
+        Consultant at Expert Analytics AS
+    - - 2017
+      - 2019 
+      - >
+        Research assistant at the Centre for Computing in Science Education (CCSE). Performed quantitative analysis of student behaviour with physics curricula with traditional 
+        statistical tools as well as elements from machine learning.
+    - - 2016
+      - 2017
+      - >
+        Project manager at the Foundation for Student Life in Oslo and Akershus (Studentsamskipnaden i Oslo og Akershus). Scoped and developed the project 'Forening for Alle'
+        with the aim of increasing student participation in volunteer associations. 
+Interests:
+    Sports:
+        - Rock Climbing
+        - Bouldering
+    Miscellaneous:
+        - Cooking
+        - Gaming
+        - Programming
+Projects:
+    A1:
+        Activity: "Examining the relationship between student performance and video interactions"
+        Staffing: "3 Researchers"
+        Description: >
+            As part of my work as a research assistant I investigated whether one can predict delayed performance outcomes from video interactions.
+            The project involved taking raw timestamped interactions with topical videos in a physics lab course. These interactions were used to predict
+            student performance on a presentation tied to the topics presented in the videos.
+            This work lead to a paper published in the proceedings of the Physics Education Research Conference 2017.
+        Tools: "Python, SQL"
+    A2:
+        Activity: "Autoencoder methods for track identification in the AT-TPC"
+        Staffing: "4 Researchers"
+        Description: >
+            The AT-TPC detector at the National Superconducting Cyclotron Laboratory at Michigan State University requires efficient identification of rections occuring in the detector.
+            Investigating the aplication of autoencoder neural networks to the identification of these reactions was the topic of my master's thesis. The project involved the construction
+            of a semi-supervised approach to measure the amount of labelled data needed to perform classification. In addition to the semi-supervised approach we investigated
+            autoencoder based clustering algorithms for entirely unsupervised learning of the different reaction types.
+        Tools: "Python, Tensorflow, Keras"
