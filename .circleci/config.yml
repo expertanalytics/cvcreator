@@ -34,12 +34,15 @@ jobs:
       - run:
           name: "Build wheel"
           command: |
+              python -m venv venv
+              source venv/bin/activate
               python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
           command: |
+              source venv/bin/activate
               pip install twine
-              # twine upload --username jonathf --password $PYPI_PASSWORD dist/*
+              twine upload --username jonathf --password $PYPI_PASSWORD dist/*
 workflows:
   version: 2
   workflow:
@@ -50,5 +53,5 @@ workflows:
       - deploy:
           filters:
             <<: *version-tags
-            # branches:
-            #     ignore: /.*/
+            branches:
+                ignore: /.*/
