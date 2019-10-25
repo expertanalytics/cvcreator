@@ -1,3 +1,7 @@
+version-tags: &version-tags
+  tags:
+    only: /v\d+\.\d+\.\d+/
+
 version: 2
 jobs:
   tests:
@@ -22,8 +26,32 @@ jobs:
               source venv/bin/activate
               pip install pytest
               pytest --doctest-modules cvcreator cvcreator/testsuite.py
+  deploy:
+    docker:
+      - image: circleci/python:3.7.3
+    steps:
+      - checkout
+      - run:
+          name: "Build wheel"
+          command: |
+              python -m venv venv
+              source venv/bin/activate
+              python setup.py sdist bdist_wheel --universal
+      - run:
+          name: "Publish to PyPI"
+          command: |
+              source venv/bin/activate
+              pip install twine
+              twine upload --username jonathf --password $PYPI_PASSWORD dist/*
 workflows:
   version: 2
   workflow:
     jobs:
-      - tests
+      - tests:
+          filters:
+            <<: *version-tags
+      - deploy:
+          filters:
+            <<: *version-tags
+            branches:
+                ignore: /.*/
