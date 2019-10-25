@@ -108,18 +108,6 @@
         - " & "
         - "\\\\ \n"
       - "%s"
-  # Education:
-  #   - - |
-  #       \Needspace{\cvneedspaceconst\baselineskip}
-  #       \section*{Education}
-  #       \begin{longtable}{LR}
-  #     - ""
-  #     - "\\end{longtable}\n\n"
-  #   - - - ""
-  #       - " -- "
-  #       - " & "
-  #       - "\\\\ \n"
-  #     - "%s"
   Courses:
     - - |
         \Needspace{\cvneedspaceconst\baselineskip}
