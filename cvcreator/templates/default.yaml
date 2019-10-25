@@ -42,7 +42,7 @@
     \noindent
     {\LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
 
-    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
+    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
 
     \end{document}
 - logo_top: "%s"
@@ -101,6 +101,29 @@
     - - |
         \Needspace{\cvneedspaceconst\baselineskip}
         \section*{Languages}
+        \begin{longtable}{LR}
+      - ""
+      - "\\end{longtable}\n\n"
+    - - - ""
+        - " & "
+        - "\\\\ \n"
+      - "%s"
+  # Education:
+  #   - - |
+  #       \Needspace{\cvneedspaceconst\baselineskip}
+  #       \section*{Education}
+  #       \begin{longtable}{LR}
+  #     - ""
+  #     - "\\end{longtable}\n\n"
+  #   - - - ""
+  #       - " -- "
+  #       - " & "
+  #       - "\\\\ \n"
+  #     - "%s"
+  Courses:
+    - - |
+        \Needspace{\cvneedspaceconst\baselineskip}
+        \section*{Courses}
         \begin{longtable}{LR}
       - ""
       - "\\end{longtable}\n\n"
