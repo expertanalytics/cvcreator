@@ -23,7 +23,7 @@ Alle får utstyr man trenger for å utføre sitt arbeide. Som utgangspunkt best�
 dette av følgende:
 
 * Bærbar pc; forventet levetid 3 år (vi kjøper derfor god kvalitet)
-* Etui eller enkel væske for å beskytte pc
+* Etui eller enkel veske for å beskytte pc
 * En ekstra strøm-adapter til bærbar pc
 * Mobiltelefon; forventet levetid 2 år
 * Tablet -- reMarkable, iPad 10", eller annen tablet i samme prisklasse (ca.
