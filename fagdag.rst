@@ -49,7 +49,7 @@ Keywords       Python, C++, Computational Geometry, Hydrology
 lv2-plugins -- Realtime audio processing plugins for music production
 --------------------------------------------------------------------
 
-The lv2 plugin project is about writin audio processing plugins for music
+The lv2 plugin project is about writing audio processing plugins for music
 production. The plugin in type is `lv2` which can be used on `Linux` and `Mac`.
 The code is written in C.
 So far we have implemented one simple delay alogrithm.
@@ -60,7 +60,7 @@ An interesting boundary condition is that all algorithms should be realtime
 capable.
 
 Some members in the project plan to also build the physical representation of 
-the implemented plugin into a guitar padel. So we can compare the digital vs.
+the implemented plugin into a guitar pedal. So we can compare the digital vs.
 analog signal processing world.
 
 =============  ================================================================
