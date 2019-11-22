@@ -46,3 +46,27 @@ Tasks          `<https://github.com/expertanalytics/rasputin/wiki>`_
 Keywords       Python, C++, Computational Geometry, Hydrology
 =============  ================================================================
 
+lv2-plugins -- Realtime audio processing plugins for music production
+--------------------------------------------------------------------
+
+The lv2 plugin project is about writin audio processing plugins for music
+production. The plugin in type is `lv2` which can be used on `Linux` and `Mac`.
+The code is written in C.
+So far we have implemented one simple delay alogrithm.
+There are many more effect and plugin types one can implement.
+Next steps include: equalizing, high and low pass filtering.
+
+An interesting boundary condition is that all algorithms should be realtime 
+capable.
+
+Some members in the project plan to also build the physical representation of 
+the implemented plugin into a guitar padel. So we can compare the digital vs.
+analog signal processing world.
+
+=============  ================================================================
+Lead           Vinzenz Gregor Eck
+Repository     `<https://github.com/expertanalytics/lv2-plugins>`_
+Tasks          `<https://github.com/expertanalytics/lv2-plugins/wiki>`_
+Keywords       C, Turtle, lv2, signal processing, audio, realtime
+=============  ================================================================
+
