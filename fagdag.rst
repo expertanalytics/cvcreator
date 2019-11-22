@@ -67,6 +67,7 @@ analog signal processing world.
 Lead           Vinzenz Gregor Eck
 Repository     `<https://github.com/expertanalytics/lv2-plugins>`_
 Tasks          `<https://github.com/expertanalytics/lv2-plugins/wiki>`_
+Slack Channel  #audio-signal-proc
 Keywords       C, Turtle, lv2, signal processing, audio, realtime
 =============  ================================================================
 
