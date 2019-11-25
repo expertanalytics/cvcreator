@@ -71,3 +71,40 @@ Slack Channel  #audio-signal-proc
 Keywords       C, Turtle, lv2, signal processing, audio, realtime
 =============  ================================================================
 
+Zigarillo (aka The Yak Shaving Project™) -- Efficient event scheduling using inefficient methods
+------------------------------------------------------------------------------------------------
+
+Scheduling events can be grueling task. We set out with one ambition:
+to solve this problem once and for all.
+By putting our best minds together we ascertained that it had to be solved using very low level tools
+and cutting edge technology. 
+In comes Zig. 
+Zig is a programming language that is so cutting edge that the features we need haven't been implemented yet.
+We also ruled GitHub too high level and started using *sourcehut* 
+as our combined git tool/issue tracker/email list/build tool.
+Unfortunately this tool was also too cutting edge. 
+A less ambitious team might have abandoned ship at this point, but that is not us.
+We saw opportunity.
+
+============= =================================================================
+Lead          Eigil Skjæveland, Alexander Fleischer
+Repository    `<https://git.sr.ht/~af/zigarillo>`
+Tasks         `<https://todo.sr.ht/~af/zigarillo>`
+Slack Channel #zigarillo
+Keywords      Zig, sourcehut, git, email
+============= =================================================================
+
+schedule-bot -- Slackbot for scheduling fagdag/formiddag events
+---------------------------------------------------------------
+
+@b is XAL's trusty slackbot for scheduling and informing about fagdag/formiddag events. 
+He also has a sister called @t. She is the test bot. Their brain is the schedule-bot codebase, which is written in Python.
+The schedule-bot project is a branch of The Yak Shaving Project™.
+
+============= =================================================================
+Lead          Alexander Fleischer
+Repository    `<https://github.com/expertanalytics/schedule-bot>`
+Tasks         `<https://github.com/expertanalytics/schedule-bot/issues>`
+Slack Channel #schedule-bot
+Keywords      Python, Api, Slack, bot
+============= =================================================================
