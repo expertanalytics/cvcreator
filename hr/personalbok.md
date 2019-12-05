@@ -89,6 +89,23 @@ tilgang.
 Vi fører også intern-tid. Da velger du "Administrasjon" under prosjekt, og som
 aktivetet "Interntid - ikke fakturerbar".
 
+## Årsavregning for resultatbasert del av lønn
+
+For å sikre at årsjusteringen av lønn basert på utfakturert beløp hovedsakelig
+kan betales ut innenfor opptjeningsåret, vil vi gjøre en foreløpig beregning av
+resultatbasert lønn på grunnlag av timer ført frem til og med 15. desember.
+Utbetalingen skjer så fort beregningene er klare. Vi gjør deretter en ny
+avregning etter 31. desember for å ta med timene som faktureres på slutten av
+året, med utbetaling tidlig i januar. 
+
+Dersom en ansatt ønsker hele beløpet i årsjusteringen betalt ut i januar, må
+daglig leder få beskjed innen 15. desember. Merk at skatt, pensjon og
+feriepenger må på grunn av lovens krav følge kontantstrømmen. Det vil si at
+skatt og pensjon på årsjustert beløp rapporteres i det året beløpet utbetales,
+og feriepenger settes av for utbetaling det påfølgende år. Dersom man velger å
+få hele årsjusteringen utbetalt i januar, vil altså feriepenger for denne
+andelen av lønnen først utbetales 1 1/2 år senere.
+
 ## Sykdom og annet fravær
 
 Ved sykdom, eller syke barn og liknende, føres tid i Tripletex under prosjekt
