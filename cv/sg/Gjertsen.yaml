@@ -10,28 +10,44 @@ Summary: >
     In my thesis I built a Fluid-Structure Interaction solver with Python using the FEniCS platform. This also included working with
     supercomputers parallelizing the computational efforts.
     During my studies I gained knowledge in algorithms, numerical computing and programming in different languages.
-
-
+    \\
+    \\
     After graduating I worked for Shortcut AS, an app-development company, developing iOS apps and working with Splunk for monitoring and
-    analyzing machine-generated big data. I have also taken courses and attended conferences on AI/Machine Learning, learning neural networks
+    analyzing machine-generated big data, detailed more below. I have also taken courses and attended conferences on AI/Machine Learning, learning neural networks
     using Tensorflow, Keras, Scikit-Learn.
-    Apart from that I am highly adaptable to any situation and can quickly learn new languages and frameworks.
+    \\
+    \\
+    For the last two years I have been working as a consultant at Arundo Analytics working mostly as a data engineer. The projects
+    I was involved in are described in detail below.\\
+    Letter of reccomendation is attached. \\
+    References to contact: Freddy Hansen (Principal Solutions Architect at Arundo Analytics) tlf: +47 97709964,\\
+    Lukasz Mentel (Head of Data Science EMEA at Arundo Analytics) tlf +47 96874214.
+
 
 Skills:
     Languages:
         - "Python"
         - "Java"
-        - "C/C++"
+        - "Scala"
         - "Swift"
     Frameworks:
-        - "FEniCS"
+        - "Pandas"
+        - "Apache Spark"
+        - "Databricks"
+        - "Bokeh"
+        - "Plotly"
+        - "Dash"
         - "Tensorflow"
         - "Keras"
-        - "Pandas"
+        - "FEniCS"
     Tools:
         - "Git"
+        - "PostgreSQL"
+        - "Azure"
         - "Splunk"
+        - "Jira"
         - "VSTS"
+
 Languages:
     Norwegian: "Native language"
     English: "Fluent, lived in the US for 2 years as a teenager."
@@ -65,13 +81,43 @@ Work:
         Shortcut AS
 Interests:
     Music:
-        - Most of my time spent outside of work is playing guitar.
+        - Most of my time spent outside of work is playing guitar and making music.
           I play in a band which plays original music and gigs often around Oslo. I also play in different projects with singers, djs etc.
     Ice-Hockey:
         - I played Ice-hockey throughout my youth, and lived 2 years in Minnesota,USA playing and attending high school.
           Now I play somewhat frequently with a lower division team in Oslo.
 Projects:
     A1:
+        Activity: Arundo with customer TechnipFMC and Unipetrol,
+        Period: "03/19 - 12/19"
+        Role: "Data Engineer"
+        Volume: 100\%
+        Description: >
+            Implementation of data platform, cloud solution for petrochemical plants. \
+            My role as a data engineer was to handle data coming from the petrochemical plant. This involved building a pipeline in Apache Spark
+            which ensured validity, robustness and security. Saving to a database to be used by a UI. \
+            My role also included having direct contact with end customer, understanding the subject matter and receiving data.
+            The team I was apart of used scrum principles with sprints, and Jira for team collaboration.
+        Tools: "Python, Pandas, Apache Spark, PostgreSQL, Jira"
+    A2:
+        Activity: Arundo with customer Menck,
+        Period: "07/18 - 03/19"
+        Role: "Data Engineer"
+        Volume: 100\%
+        Description: >
+            Building dashboard cloud solution with data integration for specialised hydraulic pile-driving services, largerly used in the offshore industry.\
+            My role was to build the dashboard in Python with Plotly Dash, and data integration solution with Apache spark.
+        Tools: "Python, Pandas, Plotly, Dash, PostgreSQL, Jira"
+    A3:
+        Activity: Arundo with customer Coats,
+        Period: "02/18 - 06/18"
+        Role: "Data Engineer"
+        Volume: 100\%
+        Description: >
+            Implementation of data platform integrating data from sewing factories in Asia.
+            My role consisted largerly of building plots and simple data analysis from incoming data giving insights to customer.
+        Tools: "Python, Pandas, Bokeh"
+    A4:
         Activity: REMA1000, {\AE} app with over 1 million users.
         Role: "Splunk Coordinator, iOS developer"
         Staffing: "Shortcut, Bouvet, Communicate, SopraSteria, Stix, Verifone and Visma"
