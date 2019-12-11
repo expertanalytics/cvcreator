@@ -89,35 +89,35 @@ Interests:
 Projects:
     A1:
         Activity: Arundo with customer TechnipFMC and Unipetrol,
-        Period: "03/19 - 12-19"
+        Period: "03/19 - 12/19"
         Role: "Data Engineer"
         Volume: 100\%
         Description: >
-            Implementation of data platform, cloud solution for petrochemical plants. \\
+            Implementation of data platform, cloud solution for petrochemical plants. \
             My role as a data engineer was to handle data coming from the petrochemical plant. This involved building a pipeline in Apache Spark
-            which ensured validity, robustness and security. Saving to a database to be used by a UI.\\
-            My role also included having direct contact with end customer, understanding the subject matter and receiving data.\\
+            which ensured validity, robustness and security. Saving to a database to be used by a UI. \
+            My role also included having direct contact with end customer, understanding the subject matter and receiving data.
             The team I was apart of used scrum principles with sprints, and Jira for team collaboration.
         Tools: "Python, Pandas, Apache Spark, PostgreSQL, Jira"
     A2:
         Activity: Arundo with customer Menck,
-        Period: "07/18 - 03-19"
+        Period: "07/18 - 03/19"
         Role: "Data Engineer"
         Volume: 100\%
         Description: >
-            Building dashboard cloud solution with data integration for specialised hydraulic pile-driving services, largerly used in the offshore industry.\\
+            Building dashboard cloud solution with data integration for specialised hydraulic pile-driving services, largerly used in the offshore industry.\
             My role was to build the dashboard in Python with Plotly Dash, and data integration solution with Apache spark.
         Tools: "Python, Pandas, Plotly, Dash, PostgreSQL, Jira"
-    A2:
+    A3:
         Activity: Arundo with customer Coats,
-        Period: "02/18 - 06-18"
+        Period: "02/18 - 06/18"
         Role: "Data Engineer"
         Volume: 100\%
         Description: >
             Implementation of data platform integrating data from sewing factories in Asia.
             My role consisted largerly of building plots and simple data analysis from incoming data giving insights to customer.
         Tools: "Python, Pandas, Bokeh"
-    A3:
+    A4:
         Activity: REMA1000, {\AE} app with over 1 million users.
         Role: "Splunk Coordinator, iOS developer"
         Staffing: "Shortcut, Bouvet, Communicate, SopraSteria, Stix, Verifone and Visma"
