@@ -192,8 +192,8 @@ Expert Analytics skal til enhver tid ha en tillitsvalgt. Tillitsvalgt velges
 inn demokratisk blant de ansatte som er medlem i Tekna Bedriftsgruppe for en
 periode på ett år.
 
-I perioden 06.02.2019 til 05.02.2020 er Expert Analytics' tillitsvalgt Jonathan Feinberg
-<jonathan@xal.no>.
+I perioden 01.01.2020 til 31.12.2020 er Expert Analytics' tillitsvalgt
+Alexander Fleischer <alexander@xal.no>.
 
 Gjeldende regler for tillitsvalgt beskrives i 
 [Hovedavtalen mellom Tekna og NHO](https://www.tekna.no/globalassets/filer/tariffavtaler)
