@@ -56,10 +56,10 @@ So far we have implemented one simple delay alogrithm.
 There are many more effect and plugin types one can implement.
 Next steps include: equalizing, high and low pass filtering.
 
-An interesting boundary condition is that all algorithms should be realtime 
+An interesting boundary condition is that all algorithms should be realtime
 capable.
 
-Some members in the project plan to also build the physical representation of 
+Some members in the project plan to also build the physical representation of
 the implemented plugin into a guitar pedal. So we can compare the digital vs.
 analog signal processing world.
 
@@ -77,19 +77,19 @@ Zigarillo (aka The Yak Shaving Project™) -- Efficient event scheduling using i
 Scheduling events can be grueling task. We set out with one ambition:
 to solve this problem once and for all.
 By putting our best minds together we ascertained that it had to be solved using very low level tools
-and cutting edge technology. 
-In comes Zig. 
+and cutting edge technology.
+In comes Zig.
 Zig is a programming language that is so cutting edge that the features we need haven't been implemented yet.
-We also ruled GitHub too high level and started using *sourcehut* 
+We also ruled GitHub too high level and started using *sourcehut*
 as our combined git tool/issue tracker/email list/build tool.
-Unfortunately this tool was also too cutting edge. 
+Unfortunately this tool was also too cutting edge.
 A less ambitious team might have abandoned ship at this point, but that is not us.
 We saw opportunity.
 
 ============= =================================================================
 Lead          Eigil Skjæveland, Alexander Fleischer
-Repository    `<https://git.sr.ht/~af/zigarillo>`
-Tasks         `<https://todo.sr.ht/~af/zigarillo>`
+Repository    `<https://git.sr.ht/~af/zigarillo>`_
+Tasks         `<https://todo.sr.ht/~af/zigarillo>`_
 Slack Channel #zigarillo
 Keywords      Zig, sourcehut, git, email
 ============= =================================================================
@@ -97,14 +97,31 @@ Keywords      Zig, sourcehut, git, email
 schedule-bot -- Slackbot for scheduling fagdag/formiddag events
 ---------------------------------------------------------------
 
-@b is XAL's trusty slackbot for scheduling and informing about fagdag/formiddag events. 
+@b is XAL's trusty slackbot for scheduling and informing about fagdag/formiddag events.
 He also has a sister called @t. She is the test bot. Their brain is the schedule-bot codebase, which is written in Python.
 The schedule-bot project is a branch of The Yak Shaving Project™.
 
 ============= =================================================================
 Lead          Alexander Fleischer
-Repository    `<https://github.com/expertanalytics/schedule-bot>`
-Tasks         `<https://github.com/expertanalytics/schedule-bot/issues>`
+Repository    `<https://github.com/expertanalytics/schedule-bot>`_
+Tasks         `<https://github.com/expertanalytics/schedule-bot/issues>`_
 Slack Channel #schedule-bot
 Keywords      Python, Api, Slack, bot
 ============= =================================================================
+
+Bonus Calculator -- Better and more transparent overview of our bonuses
+-----------------------------------------------------------------------
+
+The formula that is used to calculate bonuses is the foundation for how we do
+things in Expert Analytics. Unfortunately because of Norwegian laws, the
+calculations has become more convoluted over time. It has to account for both
+yearly and quarterly bonuses, payed out over 5 payouts, accounting for vacation
+pay and leave along the way. It is therefore important that the code that
+generates the bonuses is as transparent as possible.
+
+=============== ===============================================================
+Lead            Jonathan Feinberg, Åsmund Ødegård
+Repository      `<https://github.com/expertanalytics/bonus>`_
+Tasks           `<https://github.com/expertanalytics/bonus/issues>`_
+Keywords        Python, XAL bonuses
+=============== ===============================================================
