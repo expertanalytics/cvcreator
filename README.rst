@@ -8,3 +8,5 @@ Interne dokumenter i Expert Analytics
    `Timeplan <./formiddag/schedule.txt>`_ for og presentasjoner fra Formiddag.
 ``hr``
    `Personalhåndbok <./hr/personalbok.md>`_ og annen praktisk info.
+``pub_keys``
+   `Public ssh keys <./pub_keys/readme.md>`_ for bruk til kryptering av sensitive filer. 
