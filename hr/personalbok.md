@@ -122,18 +122,18 @@ ferieopptjening normalt tar ut hele ferien i løpet av året. Det er mulighet ti
 å overføre inntil 2 arbeidsuker (10 dager) ferie fra et år til neste. Det må
 søkes om dette. E-post til daglig leder er tilstrekkelig.
 
-## Fagdager og -kvelder
+## Fagdager og -kvelder
 
 Det avholdes for tiden fagdag omtrent hver 4. uke, og fagkveld her 14. dag, hele
 året bortsett fra ferie-perioden fra slutten av juni til starten av august. Plan
 for fagdager og -kvelder finnes i en delt kalender. Deltakelse på fagdager og -kvelder
 er et tilbud som er åpent for alle, men det er opp til hver enkelt medarbeider 
-å prioritere deltakelse sett opp mot andre gjøremål for kunde. 
+å prioritere deltakelse sett opp mot andre gjøremål for kunde.
 
 På fagdager møtes vi fra morgenen og jobber sammen på prosjekter definert av oss 
 selv. Lunch på fagdagen dekkes for alle som deltar i prosjektene, enten i form
 av felles lunch eller ved budsjett nærmere angitt av daglig leder for dekning
-av utgiftene. 
+av utgiftene.
 
 På fagkvelder, også betegnet "formiddager", holdes det et fordrag fra kl 17.
 Foredragsholder og tema for foredrag annonseres senest 3 virkedager før oppsatt
