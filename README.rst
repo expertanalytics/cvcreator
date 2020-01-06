@@ -1,12 +1,12 @@
 Interne dokumenter i Expert Analytics
 
-``cv``
+``cv/``
    Curriculum Vitae og referanser.
-`fagdag <./fagdag.rst>`_
+`fagdag.rst <./fagdag.rst>`_
    Beskrivelse av pågående Fagdagsprosjekter.
-``formiddag``
+``formiddag/``
    `Timeplan <./formiddag/schedule.txt>`_ for og presentasjoner fra Formiddag.
-``hr``
+``hr/``
    `Personalhåndbok <./hr/personalbok.md>`_ og annen praktisk info.
-``pub_keys``
-   `Public ssh keys <./pub_keys/readme.md>`_ for bruk til kryptering av sensitive filer. 
+``pub_keys/``
+   `Public ssh keys <./pub_keys/readme.md>`_ for bruk til kryptering av sensitive filer.
