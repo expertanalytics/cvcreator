@@ -36,14 +36,16 @@ Launching nebula with `nebula -config /etc/nebula/config.yml` now allows you to 
 
 ## Computing resources
 
+Machines that Expert Analytics currently control:
 |Resource name | Subnet IP       | CPU                            | GPU                       | RAM        |
 |--------------|-----------------|--------------------------------|---------------------------|------------|
 |Sally         | 192.168.100.200 | AMD Threadripper 2950x 16-core | Nvidia RTX 2080 8GB GDDR6 | 63 GB DDR4 |
+|dev.xal.no    | 13.53.132.86    | ...
 
 ## Current usage
 
 The public-keys in this repository is currently in use to manage:
-* users on `dev.xal.no`
+* Automatically create users on the servers using name of public key folder. The key is copied to `~/.ssh/authorized_keys`, to grant access to the server.
 * users on Sally
 * certification on XAL nebula sub-network
 
