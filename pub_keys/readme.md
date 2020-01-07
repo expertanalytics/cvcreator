@@ -43,8 +43,8 @@ Launching nebula with `nebula -config /etc/nebula/config.yml` now allows you to 
 
 Machines that Expert Analytics currently control:
 
-|Resource name | Subnet IP       | CPU                            | GPU                       | RAM        |
+|Resource name | Nebula subnet IP| CPU                            | GPU                       | RAM        |
 |--------------|-----------------|--------------------------------|---------------------------|------------|
 |Sally         | 192.168.100.200 | AMD Threadripper 2950x 16-core | Nvidia RTX 2080 8GB GDDR6 | 63 GB DDR4 |
-|dev.xal.no    | 13.53.132.86    | Intel Xenon Platinum 8175M     | N/A                       | 2  GB DDR4 |           
+|dev.xal.no    | 192.168.100.1   | Intel Xenon Platinum 8175M     | N/A                       | 2  GB DDR4 |           
 
