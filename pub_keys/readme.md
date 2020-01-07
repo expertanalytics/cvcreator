@@ -32,3 +32,19 @@ pki:
 to point to your newly aquired certification files. 
 
 Launching nebula with `nebula -config /etc/nebula/config.yml` now allows you to ssh directly to our compute-node `sally` at `USER@192.168.100.200`.
+
+
+## Computing resources
+
+|Resource name | Subnet IP       | CPU                            | GPU                       | RAM        |
+|--------------|-----------------|--------------------------------|---------------------------|------------|
+|Sally         | 192.168.100.200 | AMD Threadripper 2950x 16-core | Nvidia RTX 2080 8GB GDDR6 | 63 GB DDR4 |
+
+## Current usage
+
+The public-keys in this repository is currently in use to manage:
+* users on `dev.xal.no`
+* users on Sally
+* certification on XAL nebula sub-network
+
+All users with keys on `internal/master` have access to the above functionality.
