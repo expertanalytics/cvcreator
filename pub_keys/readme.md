@@ -1,5 +1,4 @@
 
-## Description 
 
 This folder contains the ssh keys for use in encrypting sensitive files. Each user should create a folder with their preferred
 username containing a public ssh key in a single file.
@@ -7,7 +6,7 @@ For simplicity of use, we assume that the encryption scheme used for now is RSA.
 
 ## Current usage
 
-The public-keys in this repository is currently in use to manage:
+The public-keys in this repository is currently used to do the following:
 * Automatically create users on the servers using name of public key folder. The key is copied to `~/.ssh/authorized_keys`, to grant access to the server. Currently accessible servers are listed as [resources](#computing-resources)
 * Certification on XAL nebula sub-network. Instructions for setting up nebula can be found [here](#nebula)
 
@@ -15,9 +14,8 @@ All users with keys on `internal/master` have access to the above functionality.
 
 ## Example
 A user creates a folder `/internal/pub_keys/roberts/` containing a file `id_rsa.pub` which contains the public rsa keystring. 
-When the PR is approved, you can then ssh to dev.xal.no with your username. In the above example we would type `ssh roberts@dev.xal.no`.
+When the PR is approved and merged, you can then ssh to dev.xal.no with your username from any machine using your corresponding private key. In the above example we would type `ssh roberts@dev.xal.no`.
 
-As a neat aside since the age encrpytion we use is based on the public-key in this repo this allows for easy secure file transfer inside the company.
 
 ## Nebula 
 This repository contains a default configuration file to connect to the XAL https://github.com/slackhq/nebula subnetwork. 
@@ -38,7 +36,7 @@ pki:
 ```
 to point to your newly aquired certification files. 
 
-Launching nebula with `nebula -config /etc/nebula/config.yml` now allows you to ssh directly to our compute-node `sally` at `USER@192.168.100.200`.
+Launching nebula with `nebula -config /etc/nebula/config.yml` now allows you to ssh directly to our compute-node `sally` at `$USER@192.168.100.200`.
 
 
 ## Computing resources
@@ -49,5 +47,4 @@ Machines that Expert Analytics currently control:
 |--------------|-----------------|--------------------------------|---------------------------|------------|
 |Sally         | 192.168.100.200 | AMD Threadripper 2950x 16-core | Nvidia RTX 2080 8GB GDDR6 | 63 GB DDR4 |
 |dev.xal.no    | 13.53.132.86    | Intel Xenon Platinum 8175M     | N/A                       | 2  GB DDR4 |           
-
 
