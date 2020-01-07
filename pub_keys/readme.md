@@ -1,10 +1,17 @@
+
 ## Description 
 
 This folder contains the ssh keys for use in encrypting sensitive files. Each user should create a folder with their preferred
 username containing a public ssh key in a single file.
 For simplicity of use, we assume that the encryption scheme used for now is RSA.
 
+## Current usage
 
+The public-keys in this repository is currently in use to manage:
+* Automatically create users on the servers using name of public key folder. The key is copied to `~/.ssh/authorized_keys`, to grant access to the server. Currently accessible servers are listed as [resources](#computing-resources)
+* Certification on XAL nebula sub-network. Instructions for setting up nebula can be found [here](#nebula)
+
+All users with keys on `internal/master` have access to the above functionality.
 
 ## Example
 A user creates a folder `/internal/pub_keys/roberts/` containing a file `id_rsa.pub` which contains the public rsa keystring. 
@@ -37,16 +44,10 @@ Launching nebula with `nebula -config /etc/nebula/config.yml` now allows you to 
 ## Computing resources
 
 Machines that Expert Analytics currently control:
+
 |Resource name | Subnet IP       | CPU                            | GPU                       | RAM        |
 |--------------|-----------------|--------------------------------|---------------------------|------------|
 |Sally         | 192.168.100.200 | AMD Threadripper 2950x 16-core | Nvidia RTX 2080 8GB GDDR6 | 63 GB DDR4 |
-|dev.xal.no    | 13.53.132.86    | ...
+|dev.xal.no    | 13.53.132.86    | Intel Xenon Platinum 8175M     | N/A                       | 2  GB DDR4 |           
 
-## Current usage
 
-The public-keys in this repository is currently in use to manage:
-* Automatically create users on the servers using name of public key folder. The key is copied to `~/.ssh/authorized_keys`, to grant access to the server.
-* users on Sally
-* certification on XAL nebula sub-network
-
-All users with keys on `internal/master` have access to the above functionality.
