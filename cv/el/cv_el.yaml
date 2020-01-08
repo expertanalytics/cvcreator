@@ -1,0 +1,124 @@
+Basic:
+    Name:  "Emil L\xF8vgren"
+    Address: "3. Str\xF8m terrasse 7"
+    Post: "3046 Drammen"
+    Birth: "7$^{th}$ February 1975"
+    Email: "emil@xal.no"
+    Phone: "+47 40 23 10 24"
+    Nationality: "Norwegian"
+Summary: >
+    I am a technology enthusiast with background from applied mathematics, numerical analysis and mechanical engineering. As a researcher at the Norwegian University of Science and Technology and later at Simula Research Laboratory I worked on research projects focusing on numerical methods for CFD, fluid-structure interaction and mesh generation. In particular I worked on Finite Element Methods, Spectral Element Methods and Reduced Basis Element Methods with applications to geometrically complex flow systems.\\
+    After leaving academia in 2009, I have been working in the private sector as a strategy consultant for research and development projects in a wide variety of industry projects. After more than 300 projects I have seen the value of research in industry and I believe there are huge benefits from establishing a stronger collaboration between industry and academia. With the close ties between the researchers at Expert Analytics and e.g. the University of Oslo I think Expert Analytics plays an important role in this context.
+Skills:
+    Scientific:
+        - "Finite Element Methods"
+        - "Spectral Element Methods"
+        - "Computational Fluid Dynamics"
+        - "Fluid Structure Interaction models"
+        - "Numerical Analysis"
+        - "Mathematical Modelling"
+        - "Mesh generation and mapping of geometries"
+    Languages:
+        - "C"
+        - "C++"
+        - "CSS"
+        - "HTML"
+        - "Java"
+        - "Python"
+    Tools:
+        - "Copper"
+        - "Excel"
+        - "Linux"
+        - "Git"
+        - "Matlab"
+        - "Numpy"
+        - "Pandas"
+        - "SuperOffice (CRM)"
+Languages:
+    "Norwegian": "Native"
+    "Swedish": "Native"
+    "English": "Fluent"
+    "German": "Basic"
+SelectedSkills:
+    "Strategic analysis": Broad experience from business development projects involving research strategy, project planning and realising the innovation potential of research projects.
+    "Communication": Excellent communication skills and an expert in technical writing.
+    "Funding": Extensive knowledge of Norwegian public funding schemes from the Research Council and Innovation Norway.
+    "Management": Skilled in organising technical industry seminars, innovation workshops and design thinking hackathons. Experience from customer relations management and administration of joint industry projects.
+Education:
+    - - "2002 - 2005"
+      - >
+        {\bf Dr. Scient. in Numerical Analaysis}. Norwegian University of Science and Technology. Thesis title: “Reduced Basis models for hierarchical flow systems”.
+    - - "1993 - 2002"
+      - >
+        {\bf Cand. Scient. in Mathematics - Numerical Analysis}. University of Oslo. Thesis Title "Multigrid preconditioning for the approximation of scattered data".
+    - - "1994 - 1998"
+      - >
+        {\bf Mechanical Engineer}. University of South-Eastern Norway.
+Work:
+    - - "2020"
+      - "" # <- blank
+      - >
+        {\bf Consultant}. Expert Analytics AS
+    - - "2018"
+      - "2019"
+      - >
+        {\bf Project Manager}. Energy Valley
+    - - "2012"
+      - "2018"
+      - >
+        {\bf Managing Consultant}. Nofas AS
+    - - "2009"
+      - "2012"
+      - >
+        {\bf Project Manager}. Nofas AS
+    - - "2008"
+      - "2009"
+      - >
+        {\bf Post Doc.}. Simula Research Laboratory
+    - - "2007"
+      - "2006"
+      - >
+        {\bf Post Doc.}. Norwegian University of Science and Technology/Simula Research Laboratory
+    - - "2005"
+      - "2002"
+      - >
+        {\bf PhD student}. Norwegian University of Science and Technology
+    - - "2000"
+      - "2002"
+      - >
+        {\bf Tutor in Mathematics}. University of Oslo
+    - - "1997"
+      - "1998"
+      - >
+        {\bf Machine operator}. A/S Pals
+Interests:
+    "Other":
+        - Music - Playing bass guitar
+        - Politics
+        - Organising sporting events
+    "Sports":
+        - Cross country skiing
+        - Running
+        - Snowboarding
+    "Tech":
+        - Additive Manufacturing
+        - Automation
+        - Generative Design
+        - IOT
+        - Robotics
+Projects:
+    A1:
+        Activity: "Reduced Basis modeling of Biomedical Fluids. Research project funded by the Research Council of Norway."
+        Role: "Project leader"
+        Description: The project was part of the Center for Biomedical Computing at Simula Research Laboratory. The aim of the project was to apply the reduced basis element method to compute and simulate e.g. blood flow in deformed geometries. Work included the development of the reduced basis element method for fluid-structure interaction problems. In collaboration with the Norwegian University of Science and Technology, École Polytechnique Fédérale de Lausanne (Switzerland), and Université Pierre et Marie Curie (Paris, France).
+        Tools: "C, C++, CSV, Matlab."
+    A2:
+        Activity: "CFD modeling of the cerebrospinal fluid surrounding the spinal chord and lower part of the brain."
+        Role: "Project participant"
+        Description: The project was part of the Center for Biomedical Computing at Simula Research Laboratory. The aim of the project was to investigate the effect of patient specific malformations blocking the flow of the cerebrospinal fluid through the foramen magnum passage into the scull. The Chiari I malformation typically causes headaches and severe pain for the patients, but the relationship between severity of malformation and symptoms is unclear. Studies were made in collaboration with the University of Wisconsin (Madison, USA).
+        Tools: "C, Matlab, Python, StarCD."
+    A3:
+        Activity: "Using the spectral element method to assess the quality of a global C$^{1}$ map."
+        Role: "Project leader"
+        Description: The project idea is to use known polynomial convergence rates of the spectral element method to assess the computational quality of deformed grids. The goal was to develop a method for transfinite mapping of a structured grid on a regular polygon to a computational grid on a deformed version of the polygon, and to control the quality of the computational grid and the solutions computed. In collaboration with the Norwegian University of Science and Technology and Université Pierre et Marie Curie (Paris, France).
+        Tools: "C, Fortran, Matlab, Python."
