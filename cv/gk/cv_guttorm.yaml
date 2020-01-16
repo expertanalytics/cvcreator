@@ -1,0 +1,123 @@
+Basic:
+    Name:  "Guttorm Kvaal"
+    Address: "Vallefaret 18"
+    Post: "0663 Oslo"
+    Birth: "24/08/1992"
+    Email: "guttorm@xal.no"
+    Phone: "40468642"
+Summary: >
+    I hold a Master's Degree in Computational Science and Engineering from the University of Oslo.
+    As a consultant I have mainly been engaged in the fintech industry implementing automatic systems for performing
+    anti money laundering risk assessment of customers and creating interfaces for handling payment requests.
+    I have experience working with cloud-based applications, managing data in databases, writing effective and transactional SQL queries,
+    performing numerical simulations, in addition to both creating and integrating with APIs.
+
+Skills:
+    Languages:
+        - Golang, Python, HTML, SQL
+    Frameworks:
+        - Google App Engine, Google Cloud Datastore, Azure, Kubernetes, Flask, Numpy, Splunk
+    Tools:
+        - Git, Docker, Linux, \LaTeX
+
+Languages:
+    "Norwegian": Mother tounge
+    "English": Fluent
+
+SelectedSkills:
+    Communication: >
+      Working in teams of people with different cultural and professional backgrounds have taught me to adapt my message
+      to the listeners and to express my self precisely. I do also have teaching experience which I believe is a good attribute in a team-based working environment.
+    Programming: >
+      I do my best to deliver well tested and documented code that is easy to read and maintain.
+    Databases: >
+      I have worked extensively with databases and have a good understanding of the relational model.
+      I do also have experience working with NoSQL databases.
+    Event sourcing: >
+      The last year I have been deeply involved in developing and implementing an event-sourcing system written in Golang and SQL.
+      From this I have learned important key concepts and best practices (as well as potential challenges) when managing data with event-sourcing.
+    Mathematics: >
+      With an academical background in mathematics I have a good foundation
+      for quickly learning and understanding methods used in fields such as data science and modelling.
+
+Education:
+  - - 8/15- 6/17
+    - \textbf{M. Sc. Computational Science and Engineering at the University of Oslo}
+  - -
+    - Master's thesis on application of numerical methods in the development of medical technology. Subjects covering numerical methods, programming, fluid mechanics, differential equations, and linear algebra.
+  - - 8/12 - 6/15
+    - \textbf{B. Sc. Physics at the University of Oslo}
+  - -
+    - Introduction to different fields of physics, in addition to mathematics and programming. Exchange semester fall 2014 at the University of Alberta, Canada.
+
+
+Work:
+  - - 10/17 -
+    - \textbf{Expert Analytics}
+  - -
+    - Consultant. Project details are listed below.
+
+  - - 02/16 - 03/17
+    - \textbf{Unversity of Oslo}
+  - -
+    - Teaching assistant in a Master's level course in numerical methods at the Department of Informatics.
+
+  - - 02/16 - 09/17
+    - \textbf{Simula Research Laboratory}
+  - -
+    - Assisting the administration with writing reports and updating websites.
+
+  - - 02/14 - 05/15
+    - \textbf{Studenthjelp}
+  - -
+    -  Private teacher in mathematics and physics at high school level.
+
+  - - 12/11 - 07/12
+    - \textbf{Klarna}
+  - -
+    -  Assisting new customers with the technical aspects of the integration of Klarna's payment solution.
+Interests:
+    Outdoor:
+        - I love hiking and mountain biking in the summer, and alpine skiing in the winter!
+
+    Cooking:
+        - I am well above average interested in food and wine and love to experiment flavours and techniques from around the world.
+
+Projects:
+  A1:
+    Activity: 04/18-12/19 - Software developer, Vipps.
+    Role: Developer.
+    Staffing: 2-5 developers.
+    Description: >
+      I was a part of a team with the primary responsibility of creating a risk management back-office application.
+      The application is used to organize customer data, monitor transactions, and investigate suspected cases of fraud or money laundering
+      in order to be compliant with financial regulations.
+      Some of my main tasks included implementing an automatic anti money laundering risk categorization system,
+      integrating third-party APIs for collecting customer data, and automating the on-boarding process of merchant customers.
+      I was also involved in designing and writing core components of the application such as the database model.
+      Most of Vipps' applications run in Kubernetes, and through this project I gained experience in using this system
+      for deploying and managing applications.
+    Tools: Golang, SQL, Azure, Kubernetes
+  A2:
+    Activity: 02/18-04/18 - Software developer, Auka.
+    Role: Developer.
+    Staffing: Two developers.
+    Description: >
+      I worked with Auka, previously mCASH, in a project where we created RESTful and idempotent APIs for listing and initiating payments, in accordance with PSD2 standards.
+      The work included integration with a payment service provider API and storing transaction data in a NoSQL database.
+    Tools: Python, Google App Engine, Google Cloud Datastore, Flask.
+  A3:
+    Activity: 01/18-02/18 - Shift schedule optimization.
+    Role: Developer.
+    Staffing: Two developers.
+    Description: >
+      I participated in a project for creating a framework for generating optimal work shift schedules by analysing customer data.
+    Tools: Python, Numpy, Pandas, Google OR-tools.
+  A4:
+    Activity: 08/16-06/17 - Master's thesis.
+    Role: Master student.
+    Staffing: My self.
+    Description:
+      I created a ''virtual laboratory'' for performing numerical simulations of micro particles inhaled into a model of the human respiratory system,
+      with the aim of finding the optimal size of the particles used in inhalation medicine.
+    Tools: Python, FEniCS, Numpy, Paraview.
