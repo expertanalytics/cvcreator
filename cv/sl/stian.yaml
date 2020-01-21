@@ -1,17 +1,17 @@
 Basic:
     Name:  "Stian L{\\aa}gstad"
-    Address: "Østmarkveien 98"
+    Address: "{\\O}stmarkveien 98"
     Post: "0687 Oslo"
     Birth: "22.12.89"
     Email: "stianlagstad@gmail.com"
     Phone: "+47 41808025"
 Summary: >
-    I have a masters thesis from The University of Oslo and Oslo University Hospital, finished in 2016, the result of which was published in Oxford Bioinformatics. During my time as a student I got exposed to several programming languages, such as R, Python, Scheme, Java, and Javascript. In my work experience following that, I have been eager to improve my knowledge of functional programming in strict languages, such as Scala, F# and Haskell, but the bulk of my work experience has been with Java and Python. I believe in letting the compiler and linter tools do as much work as possible, so that I as the developer have fewer options to shoot myself in the foot. I consider myself a pragmatic programmer with the ability to see the world from the users perspective, and can thus see their problems and create real solutions. I have experience being the link between a development team and the customer, having been a tech lead for a small development team in a previous job.
+    I have a masters thesis from The University of Oslo and Oslo University Hospital, finished in 2016, the result of which was published in Oxford Bioinformatics. During my time as a student I got exposed to several programming languages, such as R, Python, Scheme, Java, and Javascript. In my work experience following that, I have been eager to improve my knowledge of functional programming in strict languages, such as Scala, F\# and Haskell, but the bulk of my work experience has been with Java and Python. I believe in letting the compiler and linter tools do as much work as possible, so that I as the developer have fewer options to shoot myself in the foot. I consider myself a pragmatic programmer with the ability to see the world from the users perspective, and can thus see their problems and create real solutions. I have experience being the link between a development team and the customer, having been a tech lead for a small development team in a previous job.
 Skills:
     Languages:
         - "Bash"
-        - "C#"
-        - "F#"
+        - "C\\#"
+        - "F\\#"
         - "Golang"
         - "Java"
         - "Javascript"
@@ -95,7 +95,7 @@ Projects:
         Staffing: "8-10 developers in my team."
         Description: >
             I was part of Team Invoices in Vipps, working in an autonomous team with developers, designers, and product/business developers. The work included designing new applications and API's, ingesting PSD2 API's, integrating various code quality tools, work on observability and monitoring, work with many Azure resources, and more.
-        Tools: "Java, C#, F#, Maven, JUnit, Spotbugs, pmd, IntelliJ, Rider, Datagrip, OpenAPI, Swagger, Docker, Kubernetes, Azure (Azure Kubernetes Service, CosmosDB, MSSQL, ++), Terraform, Golang."
+        Tools: "Java, C\\#, F\\#, Maven, JUnit, Spotbugs, pmd, IntelliJ, Rider, Datagrip, OpenAPI, Swagger, Docker, Kubernetes, Azure (Azure Kubernetes Service, CosmosDB, MSSQL, ++), Terraform, Golang."
     A2:
         Activity: "Development for Cognite"
         Role: "Software Engineer"
