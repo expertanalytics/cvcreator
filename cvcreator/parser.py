@@ -100,11 +100,17 @@ def parse(content, template):
 
     # Fix scope for all A<n>
     if "Projects" in template[1] and "Projects" in content:
-
         projects = template[1]["Projects"][1]
         for a in content["Projects"].keys():
             projects[a] = projects["A"]
         del projects["A"]
+    
+    # Fix scope for all B<n> 
+    if "Publications" in template[1] and "Publications" in content:
+        publications = template[1]["Publications"][1]
+        for b in content["Publications"].keys():
+            publications[b] = publications["B"]
+        del publications["B"]
 
     content = _parse(content, template, "global")
     content = content.replace("__perc__", "%")

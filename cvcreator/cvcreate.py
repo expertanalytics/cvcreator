@@ -19,7 +19,6 @@ def main():
     group.add_argument(
         "-y", "--yaml", action="store_true",
         help="Create simple YAML example.")
-
     parser.add_argument(
         "-t", "--template", type=str, dest="template",
         help="Select which template to use.").completer = (
@@ -36,7 +35,12 @@ def main():
     parser.add_argument(
         "a", metavar="a", type=int, nargs="*",
         help="Projects to include. Omit/0 for all/none.")
-
+    parser.add_argument(
+        "b", metavar="b", type=int, nargs="*",
+        help="Publications to include. Omit/0 for all/none")
+    parser.add_argumene(
+        "-wp", "--with-publications", action="store_true", 
+        help="Publications to include.")
     parser.add_argument(
         "-lw", "--logo-width", type=str, dest="logo_width",
         help="Set the logo width.")
@@ -94,6 +98,21 @@ def main():
                     ai = "A%d" % i
                     if an in proj:
                         content["Projects"][ai] = proj.pop(an)
+                    i += 1
+            
+            if 0 in args.b or not args.wp:
+                content.pop("Publications", None)
+            elif "Publications" not in content or not args.b:
+                pass
+            else:
+                pub = content.pop("Publications", {})
+                content["Publications"] = {}
+                i = 1
+                for n in args.b:
+                    bn = "B%d" % n
+                    bi = "B%d" % i
+                    if an in pub:
+                        content["Publications"][ai] = proj.pop(an)
                     i += 1
 
             textxt = cv.parse(content, template)
