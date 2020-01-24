@@ -38,7 +38,7 @@ def main():
     parser.add_argument(
         "b", metavar="b", type=int, nargs="*",
         help="Publications to include. Omit/0 for all/none")
-    parser.add_argumene(
+    parser.add_argument(
         "-wp", "--with-publications", action="store_true", 
         help="Publications to include.")
     parser.add_argument(
@@ -100,7 +100,7 @@ def main():
                         content["Projects"][ai] = proj.pop(an)
                     i += 1
             
-            if 0 in args.b or not args.wp:
+            if 0 in args.b or not args.with_publications:
                 content.pop("Publications", None)
             elif "Publications" not in content or not args.b:
                 pass
