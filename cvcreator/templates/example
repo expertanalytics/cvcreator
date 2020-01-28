@@ -64,3 +64,12 @@ Projects:
         Description: >
             short description of project and your involvement
         Tools: "tools used"
+Publications:
+    B1:
+        Journal: "title of journal"
+        Date: "publication date"
+        Authors: "the authors of the work"
+        Title: "the title of the work"
+        Summary: >
+            brief summary of work
+        DOI: "the DOI link to the work"

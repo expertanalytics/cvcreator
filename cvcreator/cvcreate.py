@@ -84,7 +84,6 @@ def main():
             content.update(config)
 
             template = src.get_template()
-
             if 0 in args.a:
                 content.pop("Projects", None)
             elif "Projects" not in content or not args.a:
@@ -114,7 +113,6 @@ def main():
                     if an in pub:
                         content["Publications"][ai] = proj.pop(an)
                     i += 1
-
             textxt = cv.parse(content, template)
 
             if args.latex:
