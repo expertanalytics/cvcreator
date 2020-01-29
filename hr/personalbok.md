@@ -112,8 +112,11 @@ Ved sykdom, eller syke barn og liknende, føres tid i Tripletex under prosjekt
 "Administrasjon" og aktivitet "Fravær - syk / syke barn / etc". Denne koden kan
 også benyttes dersom man har velferdspermisjon uten innvirkning på bonus. 
 
-Dersom man har lengre sykefravær, mamma/pappa-perm, eller annet fravær med
+Dersom man har fravær med sykemelding, mamma/pappa-perm, eller annet fravær med
 justering av bonus, ta kontakt med daglig leder for å avklare timeføring.
+Unntaksregelen i bonusordningen for fravær med sykemelding gjelder fra første
+dag sykemeldingen gjelder for, og skal derfor føres med egen aktivitetskode for
+hele sykemeldingsperioden.
 
 ## Ferie
 
