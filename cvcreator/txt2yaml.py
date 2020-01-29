@@ -159,7 +159,14 @@ def main():
             header = "B%d" % (int(header[1:-1])+1)
             data["Publications"][header] = b = {}
 
-            if line[:8] == "Journal":
+            entries = ["Journal", "Date", "Authors", "Title", "Summary", "DOI"]
+            for entry in entries:
+                if line.startswith(entry):
+                    cur = entry
+                    b[entry] = line[len(entry):]
+                    break
+            else:
+                a[cur] += " " + line
                 cur = "Journal"
                 b["Journal"] = line[8:]
 
