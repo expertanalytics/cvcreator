@@ -7,6 +7,12 @@ import shutil
 from glob import glob
 import cvcreator as cv
 
+def tuple_of_ints(string):
+    if string == "all":
+        return string
+    else:
+        return tuple(int(val) for val in string.split(","))
+
 def main():
 
     parser = argparse.ArgumentParser(
@@ -33,14 +39,11 @@ def main():
         "-s", '--silent', action="store_true",
         help="Muffle output.")
     parser.add_argument(
-        "a", metavar="a", type=int, nargs="*",
-        help="Projects to include. Omit/0 for all/none.")
+        "-p", "--projects", type=tuple_of_ints, 
+        default=(), help="Projects to include. Specify which entries by integers or use all to include all entries")
     parser.add_argument(
-        "b", metavar="b", type=int, nargs="*",
-        help="Publications to include. Omit/0 for all/none")
-    parser.add_argument(
-        "-wp", "--with-publications", action="store_true", 
-        help="Publications to include.")
+        "-u", "--publications", type=tuple_of_ints, 
+        default=(), help="Publications to include. Specify which entris by integers or use all to inclue all entries.")
     parser.add_argument(
         "-lw", "--logo-width", type=str, dest="logo_width",
         help="Set the logo width.")
@@ -84,35 +87,34 @@ def main():
             content.update(config)
 
             template = src.get_template()
-            if 0 in args.a:
+            
+            if not args.projects:
+                print("HAPPENING")
                 content.pop("Projects", None)
-            elif "Projects" not in content or not args.a:
+            elif args.projects == "all":
                 pass
             else:
                 proj = content.pop("Projects", {})
                 content["Projects"] = {}
-                i = 1
-                for n in args.a:
-                    an = "A%d" % n
-                    ai = "A%d" % i
-                    if an in proj:
-                        content["Projects"][ai] = proj.pop(an)
-                    i += 1
+                for i, n in enumerate(args.projects):
+                    pn = "A%d" % n
+                    pi = "A%d" % i
+                    if pn in proj:
+                        content["Projects"][pi] = proj.pop(pn)
             
-            if 0 in args.b or not args.with_publications:
+            if not args.publications:
                 content.pop("Publications", None)
-            elif "Publications" not in content or not args.b:
+            elif args.publications == "all":
                 pass
             else:
                 pub = content.pop("Publications", {})
                 content["Publications"] = {}
-                i = 1
-                for n in args.b:
-                    bn = "B%d" % n
-                    bi = "B%d" % i
-                    if an in pub:
-                        content["Publications"][ai] = proj.pop(an)
-                    i += 1
+                for i, n in enumerate(args.publications):
+                    un = "B%d" % n
+                    ui = "B%d" % i
+                    if un in pub:
+                        content["Publications"][ui] = pub.pop(un)
+            
             textxt = cv.parse(content, template)
 
             if args.latex:
