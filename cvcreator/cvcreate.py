@@ -7,7 +7,7 @@ import shutil
 from glob import glob
 import cvcreator as cv
 
-MAX_NUM_CONST = int(99)
+MAX_NUM_CONST = 100
 
 def tuple_of_ints(string):
     if string == "all":
