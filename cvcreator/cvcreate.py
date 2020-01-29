@@ -40,7 +40,7 @@ def main():
         help="Muffle output.")
     parser.add_argument(
         "-p", "--projects", type=tuple_of_ints, 
-        default=(), help="Projects to include. Specify which entries by integers or use all to include all entries")
+        default=(), help="Projects to include. Specify which entries by index or use 'all' to include all entries")
     parser.add_argument(
         "-u", "--publications", type=tuple_of_ints, 
         default=(), help="Publications to include. Specify which entris by integers or use all to inclue all entries.")
