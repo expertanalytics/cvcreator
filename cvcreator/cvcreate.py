@@ -7,17 +7,17 @@ import shutil
 from glob import glob
 import cvcreator as cv
 
+MAX_NUM_CONST = int(99)
+
 def tuple_of_ints(string):
     if string == "all":
-        return string
+        return tuple(range(1, MAX_NUM_CONST))
     else:
         return tuple(int(val) for val in string.split(","))
 
 def main():
-
     parser = argparse.ArgumentParser(
         description="A template based CV creater using YAML templates.")
-
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
         "filename", type=str, nargs="?",
@@ -89,30 +89,27 @@ def main():
             template = src.get_template()
             
             if not args.projects:
-                print("HAPPENING")
                 content.pop("Projects", None)
-            elif args.projects == "all":
-                pass
             else:
                 proj = content.pop("Projects", {})
                 content["Projects"] = {}
-                for i, n in enumerate(args.projects):
-                    pn = "A%d" % n
+                for i, pn in enumerate(sorted(proj)):
+                    n = int(pn[1:])
+                    assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
                     pi = "A%d" % i
-                    if pn in proj:
+                    if n in args.projects:
                         content["Projects"][pi] = proj.pop(pn)
             
             if not args.publications:
                 content.pop("Publications", None)
-            elif args.publications == "all":
-                pass
             else:
                 pub = content.pop("Publications", {})
                 content["Publications"] = {}
-                for i, n in enumerate(args.publications):
-                    un = "B%d" % n
+                for i, un in enumerate(sorted(pub)):
+                    n = int(un[1:])
+                    assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
                     ui = "B%d" % i
-                    if un in pub:
+                    if n in args.publications:
                         content["Publications"][ui] = pub.pop(un)
             
             textxt = cv.parse(content, template)
