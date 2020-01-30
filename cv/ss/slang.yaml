@@ -90,7 +90,7 @@ Publications:
         Journal: "Geophysics"
         Title: "{\\it A convolutional neural network approach to deblending seismic data}"
         DOI: "{\\url https://doi.org/10.1190/geo2019-0173.1}"
-    B3:
+    B4:
         Journal: "81st EAGE Conference and Exhibition 2019"
         Title: "{\\it Using Convolutional Neural Networks for Denoising and Deblending of Marine Seismic Data}"
         DOI: "{\\url https://doi.org/10.3997/2214-4609.201900844}"
