@@ -37,6 +37,7 @@ jobs:
               python -m venv venv
               source venv/bin/activate
               pip install -U setuptools
+              pip install wheel
               python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
