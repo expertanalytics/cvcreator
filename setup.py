@@ -13,7 +13,7 @@ shutil.copy("config.yaml", "cvcreator/templates")
 
 setup(
     name="cvcreator",
-    version="0.4.8",
+    version="0.4.9",
     url="http://github.com/ExpertAnalytics/cvcreator",
 
     author="Jonathan Feinberg",
