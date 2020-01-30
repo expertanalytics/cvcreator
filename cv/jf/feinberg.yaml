@@ -186,25 +186,25 @@ Projects:
 Publications:
     B1:
         Journal: Journal of Computational Science
-        Title: "Chaospy: An open source tool for designing methods of uncertainty quantification"
+        Title: "{\\it Chaospy: An open source tool for designing methods of uncertainty quantification}"
         DOI: "{\\url https://doi.org/0.1016/j.jocs.2015.08.008}"
         Authors: J Feinberg, HP Langtangen
         Date: 2015
     B2:
         Journal: International journal for numerical methods in biomedical engineering
-        Title: A guide to uncertainty quantification and sensitivity analysis for cardiovascular applications
+        Title: "{\\it A guide to uncertainty quantification and sensitivity analysis for cardiovascular applications}"
         DOI: "{\\url https://doi.org/10.1002/cnm.2755}"
         Authors: VG Eck, WP Donders, J Sturdy, J Feinberg, T Delhaas, LR Hellevik
         Date: 2016
     B3:
         Journal: International journal for numerical methods in biomedical engineering
-        Title: Stochastic sensitivity analysis for timing and amplitude of pressure waves in the arterial system
+        Title: "{\\it Stochastic sensitivity analysis for timing and amplitude of pressure waves in the arterial system}"
         DOI: "{\\url https://doi.org/10.1002/cnm.2711}"
         Authors: VG Eck, J Feinberg, HP Langtangen, LR Hellevik
         Date: 2015
     B4:
         Journal: SIAM Journal on Scientific Computing
-        Title: Multivariate polynomial chaos expansions with dependent variables
+        Title: "{\\it Multivariate polynomial chaos expansions with dependent variables}"
         DOI: "{\\url https://doi.org/10.1137/15M1020447}"
         Authors: J Feinberg, VG Eck, HP Langtangen
         Date: 2018
