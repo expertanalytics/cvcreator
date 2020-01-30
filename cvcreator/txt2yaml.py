@@ -19,6 +19,7 @@ def main():
         "Work": [],
         "Interests": {},
         "Projects": {},
+        "Publications": {},
     }
 
     cur = ""
@@ -152,6 +153,20 @@ def main():
                     a["Tools"] = line[6:]
                 else:
                     a[cur] += " " + line
+    
+        elif header[0] == "B":
+            
+            header = "B%d" % (int(header[1:-1])+1)
+            data["Publications"][header] = b = {}
+
+            entries = ["Journal", "Date", "Authors", "Title", "Summary", "DOI"]
+            for entry in entries:
+                if line.startswith(entry):
+                    cur = entry
+                    b[entry] = line[len(entry):]
+                    break
+            else:
+                a[cur] += " " + line
 
     txt = yaml.dump(data, default_flow_style=False)
 

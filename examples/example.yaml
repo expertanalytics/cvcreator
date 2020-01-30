@@ -56,8 +56,19 @@ Interests:
 Projects:
     A1:
         Activity: "project title"
+        Period: "start to end"
         Role: "your role in project"
         Staffing: "who worked on project"
+        Volume: "Volume of work (eg.\ percent of full time)"
         Description: >
             short description of project and your involvement
         Tools: "tools used"
+Publications:
+    B1:
+        Journal: "title of the journal"
+        Date: "Date work was published"
+        Authors: "Authors for work, in correct order"
+        Title: "Title of the work"
+        Summary: > 
+            A short summary of the work
+        DOI: "The DOI link to the work"

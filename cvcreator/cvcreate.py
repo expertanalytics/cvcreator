@@ -7,11 +7,17 @@ import shutil
 from glob import glob
 import cvcreator as cv
 
-def main():
+MAX_NUM_CONST = 100
 
+def tuple_of_ints(string):
+    if string == "all":
+        return tuple(range(1, MAX_NUM_CONST))
+    else:
+        return tuple(int(val) for val in string.split(","))
+
+def main():
     parser = argparse.ArgumentParser(
         description="A template based CV creater using YAML templates.")
-
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
         "filename", type=str, nargs="?",
@@ -19,7 +25,6 @@ def main():
     group.add_argument(
         "-y", "--yaml", action="store_true",
         help="Create simple YAML example.")
-
     parser.add_argument(
         "-t", "--template", type=str, dest="template",
         help="Select which template to use.").completer = (
@@ -34,9 +39,11 @@ def main():
         "-s", '--silent', action="store_true",
         help="Muffle output.")
     parser.add_argument(
-        "a", metavar="a", type=int, nargs="*",
-        help="Projects to include. Omit/0 for all/none.")
-
+        "-p", "--projects", type=tuple_of_ints, 
+        default=(), help="Projects to include. Specify which entries by index or use 'all' to include all entries")
+    parser.add_argument(
+        "-u", "--publications", type=tuple_of_ints, 
+        default=(), help="Publications to include. Specify which entris by integers or use all to inclue all entries.")
     parser.add_argument(
         "-lw", "--logo-width", type=str, dest="logo_width",
         help="Set the logo width.")
@@ -80,22 +87,31 @@ def main():
             content.update(config)
 
             template = src.get_template()
-
-            if 0 in args.a:
+            
+            if not args.projects:
                 content.pop("Projects", None)
-            elif "Projects" not in content or not args.a:
-                pass
             else:
                 proj = content.pop("Projects", {})
                 content["Projects"] = {}
-                i = 1
-                for n in args.a:
-                    an = "A%d" % n
-                    ai = "A%d" % i
-                    if an in proj:
-                        content["Projects"][ai] = proj.pop(an)
-                    i += 1
-
+                for i, pn in enumerate(sorted(proj)):
+                    n = int(pn[1:])
+                    assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
+                    pi = "A%d" % i
+                    if n in args.projects:
+                        content["Projects"][pi] = proj.pop(pn)
+            
+            if not args.publications:
+                content.pop("Publications", None)
+            else:
+                pub = content.pop("Publications", {})
+                content["Publications"] = {}
+                for i, un in enumerate(sorted(pub)):
+                    n = int(un[1:])
+                    assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
+                    ui = "B%d" % i
+                    if n in args.publications:
+                        content["Publications"][ui] = pub.pop(un)
+            
             textxt = cv.parse(content, template)
 
             if args.latex:

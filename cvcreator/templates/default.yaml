@@ -42,7 +42,7 @@
     \noindent
     {\LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
 
-    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s
+    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s%(Publications)s
 
     \end{document}
 - logo_top: "%s"
@@ -187,3 +187,21 @@
           Volume: "Volume & %s \\\\ \n"
           Description: "Description & %s \\\\ \n"
           Tools: "Tools & %s \\\\ \n"
+  Publications:
+     - - |
+         \Needspace{\cvneedspaceconst\baselineskip}
+         \section*{Publications}
+         \begin{longtable}{@{}LR}
+       - |
+         \end{longtable}
+
+         \begin{longtable}{@{}LR}
+       - "\\end{longtable}\n"
+     - B:
+         - "%(Journal)s%(Date)s%(Authors)s%(Title)s%(Summary)s%(DOI)s"
+         - Journal: "Journal & %s \\\\ \n"
+           Date: "Date & %s \\\\ \n"
+           Authors: "Authors & %s \\\\ \n"
+           Title: "Title & %s \\\\ \n"
+           Summary: "Summary & %s \\\\ \n"
+           DOI: "DOI & %s \\\\ \n"
