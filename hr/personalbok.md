@@ -112,8 +112,11 @@ Ved sykdom, eller syke barn og liknende, føres tid i Tripletex under prosjekt
 "Administrasjon" og aktivitet "Fravær - syk / syke barn / etc". Denne koden kan
 også benyttes dersom man har velferdspermisjon uten innvirkning på bonus. 
 
-Dersom man har lengre sykefravær, mamma/pappa-perm, eller annet fravær med
+Dersom man har fravær med sykemelding, mamma/pappa-perm, eller annet fravær med
 justering av bonus, ta kontakt med daglig leder for å avklare timeføring.
+Unntaksregelen i bonusordningen for fravær med sykemelding gjelder fra første
+dag sykemeldingen gjelder for, og skal derfor føres med egen aktivitetskode for
+hele sykemeldingsperioden.
 
 ## Ferie
 
@@ -175,8 +178,8 @@ støtte for arbeidsgiver i vernearbeidet.
 Expert Analytics skal til enhver tid ha et verneombud. Verneombudet skal velges
 inn demokratisk blant de ansatte for en periode på to år.
 
-I perioden februar 2018 til februar 2020 er Expert Analytics' verneombud
-Vinzenz G. Eck <vinzenz@xal.no>.
+I perioden 01.01.2020 til 31.12.2021 er Expert Analytics' verneombud
+Trygve Bærland <trygve@xal.no>.
 
 Gjeldende regler for verneombudet beskrives i 
 [arbeidsmiljøloven kapittel 6](https://lovdata.no/dokument/NL/lov/2005-06-17-62/KAPITTEL_6)
