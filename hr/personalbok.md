@@ -169,6 +169,32 @@ Budsjett angis av daglig leder, og er for tiden:
 * 400 kroner per person til middag for de som deltar på formiddag
 * 250 kroner per person til lunch for de som deltar på fagdag
 
+## Organisering av reise til konferanse
+
+Alle ansatte får reise på en konferanse per år. Siden reise til konferanse både
+skal gi faglig påfyll og være en mulighet for å bli litt bedre kjent med noen
+kollegaer, gjelder følgende regler:
+
+* For å reise til en konferanse må minimum 5 ansatte dra på samme konferanse.
+  Dersom noen må melde forfall på grunn av sykdom og liknende, kan de øvrige
+likevel reise.
+* Konferansen må annonseres for alle minimum 3 månder før den finner sted.
+* Man reiser på statens satser; transport og hotell dekkes etter regning.
+  Reisens varighet må være kompatibel med gjeldene lovgivning; spesielt kan
+  reisens varighet være maksimalt 2 døgn utover konferansens varighet.
+* Økonomisk ramme må avklares med daglig leder i god tid, og senest før man
+  bestiller. Den økonomiske rammen vil bli vurdert mot konferansens
+relevans. Det er hensiktsmessig at de som skal reise på en gitt konferanse
+oppnevner en reiseansvarlig, som legger frem et fullstendig budsjett for daglig
+leder. De som reiser kan gi sin begrunnelse for hvorfor en konferanse er
+relevant, men det er daglig leders ansvar å godkjenne dette.
+
+### Foredrag på konferanser
+
+Reiser til konferanse hvor man har sendt inn et bidrag og blitt akseptert,
+behøver ikke være omfattet av punktet over. I slike tilfeller vil den eller de
+som skal presentere reise etter egen avtale med daglig leder.
+
 ## Verneombud
 
 Verneombudet er arbeidstakernes representant i spørsmål knyttet til
