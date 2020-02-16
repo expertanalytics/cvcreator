@@ -4,11 +4,9 @@ Basic:
     Post: "0457 Oslo"
     Birth: "13.02.1989"
     Email: "fredrik@xal.no"
-    Phone: "+47 90774501"
+    Phone: "+47 907 74 501"
 Summary: >
-    I have a PhD in mathematics in the field of algebraic geometry, obtained in 2017. In the two and a half years after that, I worked as a software consultant at Bekk Consulting AS.
-
-    During my time studying mathematics I was exposed to teaching, both in one-to-many and one-to-one forms. I learned a lot of mathematics, and find learning new technical material easy and fun. As a software consultant I have learned how to build robust software and write good and maintainable code.
+    I am a mathematician with a love of teaching. I enjoy explaining hard concepts, both in a one-to-many and one-to-one setting. I enjoy encountering new problems, and spending time thinking on creative solutions. As a software consultant I have learned how to build robust software and write clean and maintainable code.
 Skills:
     Languages:
         - "Clojure"
@@ -20,7 +18,8 @@ Skills:
         - "HTML"
         - "React"
         - "Macaulay2"
-        - "Scheme."
+        - "Scheme"
+        - "SQL."
     Frameworks:
         - "Akka"
         - "JUnit"
@@ -54,7 +53,7 @@ Education:
     - - "08.2008"
       - "06.2011"
       - >
-        Bachelor in the natural sciences. "Matematikk, informatikk og teknologi" at the University of Oslo. The spring semester of 2011 was spent at the University of Illinois at Urbana--Champaign, USA. 
+        Bachelor in mathematics at the University of Oslo.
         
 Work:
   - -  "03.2020"
@@ -109,4 +108,3 @@ Projects:
         Period: 08.2017 -- 12.2018
         Description: "I worked for a large public organization in the transport sector. Our team built and maintained software for counting, storing, and aggregating traffing count data from the whole country. The backend was a distributive system written in Java and the Akka actor framework. The data was stored in an Elasticsearch cluster, and the frontend was written in React."
         Tools: "Java, Testcontainers, Docker, Scala, React, Elasticsearch, SQL, Vagrant."
-      
