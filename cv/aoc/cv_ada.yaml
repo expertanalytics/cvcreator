@@ -7,13 +7,15 @@ Basic:
     Phone: "+47 98887847"
 #    Nationality: "Spanish"
 Summary: >
-    I hold a PhD in Physics from 2003 specializing in Solar Physics. Since then I have more than 15 years of experience in data mining, image analysis, time-series analysis and spectral analysis. With time I have expanded my research subjects and used different methods including statistical data analysis and signal processing.\\
+    I hold a PhD in Physics from 2003 specializing in Solar Physics. Since then I have 20 years of experience in data mining, image analysis, time-series analysis and spectral analysis. With time I have expanded my research subjects and used different methods including statistical data analysis. I am also becoming interested in machine learning techniques. \\
     I consider myself very perseverant and used to overcome adversity in a scientific environment by being creative, hard-working, and having an analytical mindset. Excellence, accuracy and detail define my scientific work. I have well-proven organisational capabilities. My colleagues regard me as an excellent communicator and an all-terrain asset. I have experience in leading international collaborations, management of grants, student mentoring and scientific outreach. I consider myself a responsible and organised team player.
 Skills:
     Scientific skills:
         - "Image analysis, pattern recognition, anomaly detection, analysis of time series, analytical modelling, statistical analysis"
+    Frameworks:
+        - Numpy, Matplotlib
     Languages:
-        - "IDL, Fortran, LaTeX"
+        - "IDL, Matlab, Python, Fortran, LaTeX"
     Tools:
         - "Mac OS X and Unix"
 Languages:
