@@ -7,16 +7,19 @@ Basic:
     Phone: "phone number"
 Summary: >
     a short description of who you are
-    over multiple line if you wanna.
+    over multiple lines if you wanna.
 Skills:
-    Languages:
-        - "programming language"
+    Applications:
+        - "list of experiences, applications and stuff from projects, e.g. Machine learning, Optimization algorithms, Open source programming"
         - ...
-    Frameworks:
-        - "framework"
+    Languages:
+        - "list of programming language"
+        - ...
+    Packages:
+        - "list of libraries, modules and packages"
         - ...
     Tools:
-        - "software tool"
+        - "list of software and frameworks"
         - ...
 Languages:
     "language1": "how well you speak/write"
