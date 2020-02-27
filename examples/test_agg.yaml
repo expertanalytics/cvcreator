@@ -1,13 +1,10 @@
-Basic:
-    Name:  "name"
-    Address: "address"
-    Post: "zip/post + city"
-    Birth: "birthdate"
-    Email: "email adresse"
-    Phone: "phone number"
 Summary: >
-    a short description of who you are
-    over multiple lines if you wanna.
+    Expert Analytics is a software consultancy company based in Oslo, Norway.
+    We offer high-quality technology solutions to both domestic and international customers.
+    All our experts have a degree (Ph.D or M.Sc.) from the natural sciences (math, physics, etc.) and
+    years of hands-on experience in computational science and modern industrial software development.
+    This translates into an ability to analyse and solve complex challenges for the client, and
+    it guarantees that our solutions will meet their needs and beyond.
 Skills:
     Applications:
         - "list of experiences, applications and stuff from projects, e.g. Machine learning, Optimization algorithms, Open source programming"
@@ -20,41 +17,6 @@ Skills:
         - ...
     Tools:
         - "list of software and frameworks"
-        - ...
-Languages:
-    "language1": "how well you speak/write"
-    "language2": "how well you speak/write"
-SelectedSkills:
-    "Skill1": >
-        short description of skill1
-    "Skill2": >
-        short description of skill2
-Education:
-    - - "when degree1 completed"
-      - >
-        description of completed degree1
-    - - "when degree2 start"
-      - "when degree2 completed"
-      - >
-        description of completed degree2
-Work:
-    - - "when"
-      - >
-        description of work1
-    - - "start"
-      - "end"
-      - >
-        description of work2
-    - - "start"
-      - "" # <- blank
-      - >
-        description of work3 where you still work
-Interests:
-    "topic1":
-        - "topic element"
-        - ...
-    "toptic2":
-        - "topic element"
         - ...
 Projects:
     A1:
