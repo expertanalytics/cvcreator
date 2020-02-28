@@ -12,8 +12,6 @@ jobs:
       - run:
           name: "Installation"
           command: |
-              python -m venv venv
-              source venv/bin/activate
               pipenv install --deploy --dev
       - run:
           name: "Compile CV documents"
@@ -31,16 +29,12 @@ jobs:
       - run:
           name: "Build wheel"
           command: |
-              python -m venv venv
-              source venv/bin/activate
               pipenv install --deploy --dev
               pipenv run python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
           command: |
-              source venv/bin/activate
-              pip install twine
-              twine upload --username jonathf --password $PYPI_PASSWORD dist/*
+              pipenv run twine upload --username jonathf --password $PYPI_PASSWORD dist/*
 workflows:
   version: 2
   workflow:
