@@ -91,8 +91,10 @@ def parse(content, template):
     """Weave together to nested YAML-structures using a set of basic rules.
 
     Args:
-        content (dist, list, str) : Nested content from user provided content
-        template (dict, list, str) : Nested content from template
+        content (dict, list, str):
+            Nested content from user provided content
+        template (dict, list, str):
+            Nested content from template
     """
     # Retrieve name out of scope
     if "Basic" in content:
@@ -104,8 +106,8 @@ def parse(content, template):
         for a in content["Projects"].keys():
             projects[a] = projects["A"]
         del projects["A"]
-    
-    # Fix scope for all B<n> 
+
+    # Fix scope for all B<n>
     if "Publications" in template[1] and "Publications" in content:
         publications = template[1]["Publications"][1]
         for b in content["Publications"].keys():
