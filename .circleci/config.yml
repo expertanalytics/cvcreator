@@ -16,11 +16,13 @@ jobs:
       - run:
           name: "Compile CV documents"
           command: |
-              pipenv run cvcreate examples/example.yaml --output output.tex --latex
+              pipenv shell
+              cvcreate examples/example.yaml --output output.tex --latex
       - run:
           name: "Run tests"
           command: |
-              pipenv run pytest --doctest-modules cvcreator/ test/
+              pipenv shell
+              pytest --doctest-modules cvcreator/ test/
   deploy:
     docker:
       - image: circleci/python:3.6.7
@@ -30,11 +32,13 @@ jobs:
           name: "Build wheel"
           command: |
               pipenv install --deploy --dev
-              pipenv run python setup.py sdist bdist_wheel --universal
+              pipenv shell
+              python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
           command: |
-              pipenv run twine upload --username jonathf --password $PYPI_PASSWORD dist/*
+              pipenv shell
+              twine upload --username jonathf --password $PYPI_PASSWORD dist/*
 workflows:
   version: 2
   workflow:
