@@ -14,18 +14,15 @@ jobs:
           command: |
               python -m venv venv
               source venv/bin/activate
-              python setup.py install
+              pipenv install --deploy --dev
       - run:
           name: "Compile CV documents"
           command: |
-              source venv/bin/activate
-              cvcreate examples/example.yaml --output output.tex --latex
+              pipenv run cvcreate examples/example.yaml --output output.tex --latex
       - run:
           name: "Run tests"
           command: |
-              source venv/bin/activate
-              pip install pytest
-              pytest --doctest-modules cvcreator cvcreator/testsuite.py
+              pipenv run pytest --doctest-modules cvcreator/ test/
   deploy:
     docker:
       - image: circleci/python:3.7.3
@@ -36,9 +33,8 @@ jobs:
           command: |
               python -m venv venv
               source venv/bin/activate
-              pip install -U setuptools
-              pip install wheel
-              python setup.py sdist bdist_wheel --universal
+              pipenv install --deploy --dev
+              pipenv run python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
           command: |
@@ -53,6 +49,8 @@ workflows:
           filters:
             <<: *version-tags
       - deploy:
+          requires:
+            - tests
           filters:
             <<: *version-tags
             branches:
