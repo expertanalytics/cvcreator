@@ -5,39 +5,45 @@ version-tags: &version-tags
 version: 2
 jobs:
   tests:
+    environment:
+      PIPENV_VENV_IN_PROJECT: true
     docker:
-      - image: circleci/python:3.6.7
+      - image: circleci/python:3.6.10
     steps:
       - checkout
       - run:
           name: "Installation"
           command: |
               pipenv install --deploy --dev
+              source .venv/bin/activate
+              python setup.py install
       - run:
           name: "Compile CV documents"
           command: |
-              pipenv shell
+              source .venv/bin/activate
               cvcreate examples/example.yaml --output output.tex --latex
       - run:
           name: "Run tests"
           command: |
-              pipenv shell
+              source .venv/bin/activate
               pytest --doctest-modules cvcreator/ test/
   deploy:
+    environment:
+      PIPENV_VENV_IN_PROJECT: true
     docker:
-      - image: circleci/python:3.6.7
+      - image: circleci/python:3.6.10
     steps:
       - checkout
       - run:
           name: "Build wheel"
           command: |
               pipenv install --deploy --dev
-              pipenv shell
+              source .venv/bin/activate
               python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
           command: |
-              pipenv shell
+              source .venv/bin/activate
               twine upload --username jonathf --password $PYPI_PASSWORD dist/*
 workflows:
   version: 2
