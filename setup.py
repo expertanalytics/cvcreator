@@ -24,6 +24,7 @@ setup(
     entry_points={
         "console_scripts": [
             "cvcreate = cvcreator.cvcreate:main",
+            "aggregate = cvcreator.cvaggregate:main",
             "txt2yaml = cvcreator.txt2yaml:main",
         ]
     },

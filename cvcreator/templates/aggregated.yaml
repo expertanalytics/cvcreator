@@ -42,7 +42,7 @@
     \noindent
     {\LARGE \bfseries \color{xaldark}Fact sheet Expert Analytics}
 
-    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s%(Publications)s
+    %(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Projects)s%(Publications)s
 
     \end{document}
 - logo_top: "%s"
