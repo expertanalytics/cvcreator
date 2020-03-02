@@ -15,7 +15,7 @@ approximations, and Gaussian quadrature.
 =============  ================================================================
 Lead           Jonathan Feinberg
 Repository     `<https://github.com/jonathf/chaospy>`_
-Tasks          `<https://github.com/jonathf/chaospy/tasks.rst>`_
+Tasks          `<https://github.com/jonathf/chaospy/blob/master/tasks.rst>`_
 Keywords       Python, Probability theory, Uncertainty Quantification
 =============  ================================================================
 
@@ -30,7 +30,7 @@ most ``numpy`` functions, where that makes sense.
 =============  ================================================================
 Lead           Jonathan Feinberg
 Repository     `<https://github.com/jonathf/numpoly>`_
-Tasks          `<https://github.com/jonathf/numpoly/tasks.rst>`_
+Tasks          `<https://github.com/jonathf/numpoly/blob/master/tasks.rst>`_
 Keywords       Python, Numpy, Polynomials
 =============  ================================================================
 
