@@ -1,0 +1,110 @@
+Basic:
+    Name: "Fredrik Meyer"
+    Address: "Fagerheimgata 18"
+    Post: "0457 Oslo"
+    Birth: "13.02.1989"
+    Email: "fredrik@xal.no"
+    Phone: "+47 907 74 501"
+Summary: >
+    I am a mathematician with a love of teaching. I enjoy explaining hard concepts, both in a one-to-many and one-to-one setting. I enjoy encountering new problems, and spending time thinking on creative solutions. As a software consultant I have learned how to build robust software and write clean and maintainable code.
+Skills:
+    Languages:
+        - "Clojure"
+        - "Java"
+        - "Javacript"
+        - "Kotlin"
+        - \LaTeX
+        - "Python"
+        - "HTML"
+        - "React"
+        - "Macaulay2"
+        - "Scheme"
+        - "SQL."
+    Frameworks:
+        - "Akka"
+        - "JUnit"
+        - "React."
+    Tools:
+        - "Docker"
+        - "Elasticsearch"
+        - "Emacs"
+        - "Git"
+        - "Maven"
+        - "Jetbrains IDE's."
+Languages:
+    "Norwegian": "Native"
+    "English": "Fluent"
+SelectedSkills:
+    "Public speaking": |
+        I enjoy explaining problems and giving presentations. In june 2019, I held a lightning speech at NDC Oslo titled "RSA in 10 minutes". I have also given several talks at internal conferences at Bekk Consulting AS (a longer version of the RSA talk, and also a lightning talk titled "One year as a consultant").
+    "Writing": |
+        I enjoy writing about new stuff I learn and know. In 2016 I published the article "Hvorfor er kumlokk runde?" ("Why are man holes round?") in Aftenposten. I also have several articles in the student publication Argument.
+Education:
+    - - "08.2013"
+      - "11.2017"
+      - >
+        PhD Research Scholar in algebraic geometry. I wrote a monography titled "Join of hexagons and Calabi--Yau threefolds".
+
+    - - "08.2011"
+      - "06.2013"
+      - >
+        Master in Mathematics at the University of Oslo. "Degenerations of the Grassmannian G(3,6)".
+
+    - - "08.2008"
+      - "06.2011"
+      - >
+        Bachelor in mathematics at the University of Oslo.
+        
+Work:
+  - -  "03.2020"
+    - ""
+    - >
+      Consultant in Expert Analytics
+  - - "08.2017"
+    - "02.2020"
+    - >
+      Software consultant in Bekk Consulting AS.
+  - - "08.2013"
+    - "08.2017"
+    - >
+      PhD Research Scholar at the University of Oslo.
+  - - "08.2012"
+    - "06.2013"
+    - >
+      Assistant teacher in mathematics at the University of Oslo.
+Interests:
+    "Personal":
+        - "Bouldering"
+        - "generative art"
+        - "mathematics"
+        - "running"
+        - "reading."
+    "Professional":
+        - "Functional programmering"
+        - "algorithms and complexity"
+        - "machine learning"
+        - "programming languages."
+
+Projects:
+    A1:
+        Activity: "Web and app development"
+        Role: "Software consultant"
+        Staffing: "4 people in my team"
+        Period: "04.2019 -- 02.2020"
+        Description: >
+            I worked for the mobility team in a large Norwegian transport and ticketing organization. We worked on including alternative forms of transport in our public API's, and also making them available on the company's app and website.
+        Tools: "React, React Native, Typescript, Flow, Bitbucket, JIRA, Google Cloud Platform, Google Firebase."
+    A2:
+        Activity: "Web and backend development"
+        Role: "Software consultant"
+        Staffing: "10+ developers"
+        Period: 12.2018 -- 04.2019
+        Description: "I worked for a large public organization in the transport sector. My main task was implementing an Elasticsearch based search engine for their website (replacing their old CMS based search engine). I also rewrote several old web applications in more modern languages (such as Elm)."
+        Tools: "Java, Kotlin, Elm, Elasticsearch, Apache StormCrawler, RedHat OpenShift, Javascript."
+    A3:
+        Activity: "Web and backend development"
+        Role: "Software consultant"
+        Staffing: "$\\sim8$ developers"
+        Period: 08.2017 -- 12.2018
+        Description: "I worked for a large public organization in the transport sector. Our team built and maintained software for counting, storing, and aggregating traffing count data from the whole country. The backend was a distributive system written in Java and the Akka actor framework. The data was stored in an Elasticsearch cluster, and the frontend was written in React."
+        Tools: "Java, Testcontainers, Docker, Scala, React, Elasticsearch, SQL, Vagrant."
