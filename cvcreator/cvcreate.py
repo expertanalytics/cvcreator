@@ -20,7 +20,10 @@ def main():
         description="A template based CV creater using YAML templates.")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
-        "filename", type=str, nargs="?",
+        "aggregated", type=str, nargs=1,
+        help="YAML source file.").completer = lambda prefix, **kws: glob("*.yaml")
+    group.add_argument(
+        "filename", type=str, nargs="+",
         help="YAML source file.").completer = lambda prefix, **kws: glob("*.yaml")
     group.add_argument(
         "-y", "--yaml", action="store_true",
@@ -64,6 +67,15 @@ def main():
         argcomplete.autocomplete(parser)
     except:
         pass
+
+
+    content = []
+    for filename in args.filename:
+        with open(filename) as src:
+            content.append(yaml.safe_load(src))
+
+    joint_content = merge.merge_configurations(content)
+    joint_content["extra_section"] = ...
 
     if args.yaml:
         yamlfile = cv.get_yaml_example()
