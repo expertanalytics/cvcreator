@@ -42,7 +42,7 @@
     \noindent
     {\LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
 
-    %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s%(Publications)s
+    %(About)s%(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s%(Publications)s
 
     \end{document}
 - logo_top: "%s"
@@ -50,6 +50,7 @@
   logo_width: "%s"
   logo_margin: "%s"
   Name: "%s"
+  About: "\n\n\\section*{About us}\n\n%s\\\\\n"
   Basic:
     - |
         \Needspace{\cvneedspaceconst\baselineskip}
