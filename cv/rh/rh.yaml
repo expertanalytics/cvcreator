@@ -7,7 +7,7 @@ Basic:
     Phone: "+47 992 46 527"
     Nationality: "Norwegian"
 Summary: >
-    I am finishing a PhD in astrophysics at the University of Oslo. My field of research is numerical N-body simulations in cosmology. Through my research I have developed expertise in numerical modeling, statistical and visual analysis of big data sets, signal processing, pattern recognition, high- and low-level programming, and code optimization. I have learned many complex concepts in science and technology, and demonstrated my ability to understand and combine many areas of knowledge. I consider myself an analytical, adaptive, and open-minded person with the ability to work highly individually and quickly adapt to unforseen circumstances.
+    I hold a PhD in astrophysics from the University of Oslo, where my field of research was large scale numerical $N$-body simulations. Through my research I have developed expertise in numerical modeling, statistical and visual analysis of big data sets, signal processing, pattern recognition, high- and low-level programming, and code optimization. I have learned many complex concepts in science and technology, and demonstrated my ability to understand and combine many areas of knowledge. I consider myself an analytical, adaptive, and open-minded person with the ability to work highly individually and quickly adapt to unforseen circumstances. I am experienced with having a holistic overview of a project, and at the same time being able to focus on details.
 Skills:
     Languages:
         - Python
@@ -16,9 +16,11 @@ Skills:
         - Java
         - PHP
         - R
+        - Clojure
     Frameworks:
         - Numpy
         - Scipy
+        - Flask
         - Matplotlib
         - MPI/OpenMP
     Tools:
@@ -28,6 +30,9 @@ Skills:
         - Jupyter Notebook
         - OpenOffice
         - \LaTeX
+        - MSSQL
+        - Azure
+        - CI/CD pipelines
         - Google
 Languages:
     "Norwegian": "Native"
@@ -40,13 +45,13 @@ SelectedSkills:
     "Modeling and data analysis": >
         Able to implement a physical model into computer code in an efficient way, while avoiding numerical problems. Developing custom tools to analyse the output and compare it with measurements.
     "Intuitive and curious": >
-        Not afraid to explore unknown problems and technology. Ability to delve into and learn new material quickly.
+        Not afraid to explore unknown problems and technology. Ability to get an overview and learn necessary material quickly.
     "Communication and teaching": >
         Many years of experience in teaching science and programming. Good ability to understand and explain difficult concepts.
 Education:
     - - "2015 - 2019"
       - >
-              'Ph.D. in astrophysics (cosmology) at the University of Oslo, thesis titled "Astrophysical Simulations for Uncovering Signatures of Gravity". Supervisor: David F. Mota'
+        'Ph.D. in astrophysics (cosmology) at the University of Oslo, thesis titled "Astrophysical Simulations for Uncovering Signatures of Gravity". Supervisor: David F. Mota'
     - - "2013 - 2015"
       - >
         'M.Sc. in Astronomy at the University of Oslo, thesis titled "Cosmological Simulations with Disformally Coupled Symmetron Fields".'
@@ -57,7 +62,7 @@ Work:
     - - "2015"
       - "2019"
       - >
-        PhD student, University of Oslo. Developed and extended several pieces of high-performance parallel software for studying alternative theories of gravity. Collaborated in a highly international research field. 25p teaching duty in bachelor level astronomy course, including development of software for the students.
+        PhD student, University of Oslo. Developed and extended several pieces of high-performance parallel software for studying alternative theories of gravity. Collaborated in a highly international research field. 25~\% teaching duty in bachelor level astronomy course, including development of software for the students.
     - - "2012"
       - "2015"
       - >
@@ -65,7 +70,7 @@ Work:
     - - "2013"
       - "2014"
       - >
-        26.7p position as mathematics teacher with responsibility for a class of VG1 mathematics students. Blackboard and powerpoint lectures, and helping students with exercises. Designing and grading tests. Final grading of students.
+        27~\% position as mathematics teacher with responsibility for a class of VG1 mathematics students. Blackboard and powerpoint lectures, and helping students with exercises. Designing and grading tests. Final grading of students.
     - - "2019"
       - "" # <- blank
       - >
@@ -79,14 +84,22 @@ Interests:
         - "Personal development, learning and experiencing new things, traveling, puzzles, cooking"
 Projects:
     A1:
+        Activity: "Automation of physical systems based on weather forecast"
+        Period: "2019 - 2020"
+        Role: "Lead developer"
+        Staffing: "Team of 4"
+        Description: >
+            A cloud based application for modelling and optimising an automated industrial control system. The application can be accessed from a compatible system through a RESTful API; the cloud application performs a calculation based on online weather data and physical models, and returns the calculated optimal parameters for the automated system. I developed most of the physical model, and implemented the cloud based application from scratch. I was also responsible for assessing and minimising security risks, developing a complete testing pipeline, as well as writing user documentation.
+        Tools: "Python, Azure Web App, Azure SQL, physical modelling (meteorology, thermodynamics)"
+    A2:
         Activity: "Cosmological simulations with scalar fields"
         Period: "2013 - 2019"
         Role: "Researcher"
         Staffing: "Team of 3"
         Description: >
-                Together with my supervisors (David Mota and Claudio Llinares), I extended the freely available cosmological N-body code RAMSES to simulate an additional disformal scalar degree of freedom. This introduces a highly non-linear hyperbolic differential equation for the scalar field, as well as complex equations for the extra forces on the N-body particles. RAMSES is written in FORTRAN, and is designed to run in parallel on supercomputing clusters. Hence, I paid special attention to memory usage, efficient MPI parallelism, and low level code optimization. The output data ranged from gigabytes to terabytes, and statistical analysis of the output was necessary to draw scientific conclusions. I wrote several auxillary tools for data and image analysis, as well as a 1-dimensional hyperbolic solver in spherical symmetry for more detailed study of the non-linear equation of motion of the scalar field.  
+            Together with my supervisors (David Mota and Claudio Llinares), I extended the freely available cosmological $N$-body code RAMSES to simulate an additional disformal scalar degree of freedom. This introduces a highly non-linear hyperbolic differential equation for the scalar field, as well as complex equations for the extra forces on the $N$-body particles. RAMSES is written in FORTRAN, and is designed to run in parallel on supercomputing clusters. Hence, I paid special attention to memory usage, efficient MPI parallelism, and low level code optimization. The output data ranged from gigabytes to terabytes, and statistical analysis of the output was necessary to draw scientific conclusions. I wrote several auxillary tools for data and image analysis, as well as a 1-dimensional hyperbolic solver in spherical symmetry for more detailed study of the non-linear equation of motion of the scalar field.  
         Tools: "Physical modeling, statistical data analysis, image analysis, scientific writing, FORTRAN, Python"
-    A2:
+    A3:
         Activity: "Development and use of student software: AST2000 Mission Control"
         Period: "2015 - 2017"
         Role: "Developer and tester"
