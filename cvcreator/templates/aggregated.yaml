@@ -50,7 +50,13 @@
   logo_width: "%s"
   logo_margin: "%s"
   Name: "%s"
-  About: "\n\n\\section*{About us}\n\n%s\\\\\n"
+  About:
+    - - "\n\n\\section*{About us}\n\n"
+      - ""
+      - "\\\\\n\n"
+    - - ""
+      - ""
+      - ""
   Summary: "\n\n\\section*{Summary}\n\n%s\\\\\n"
   Basic:
     - |
@@ -93,9 +99,9 @@
       - "\\end{longtable}\n\n"
     - - - ""
         - " & "
-        - "\\\\ \n"
+        - "\\\\\n"
       - - ""
-        - ", "
+        - ",\n\n"
         - ""
   Projects:
     - - |
