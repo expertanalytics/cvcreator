@@ -7,6 +7,7 @@ import shutil
 import yaml
 from glob import glob
 import cvcreator as cv
+from cvcreator import merge
 
 MAX_NUM_CONST = 100
 
@@ -80,18 +81,29 @@ def main():
 
     elif args.aggregated:
         joint_content = []
+        
         #Add input from company profile as first entry in joint_content
         with open(args.filename) as src:
             joint_content.append(yaml.safe_load(src))
+            
         #Add input from personal profiles successively
         for filename in args.aggregated:
             with open(filename) as src:
                 joint_content.append(yaml.safe_load(src))
 
-        #Initialize workspace with aggregated content.
-        #Note tha target is NOT specified through -o output, but through company profile filename
-        with cv.cvopen(joint_content, template=args.template,
-                       target=args.filename) as src:
+        #Merge the content in a new Dict
+        merged_content = merge.merge_configurations(joint_content)
+
+        #Define filename for temporary storage of merged content. Modify to input filename + merged-extension
+        merged_file = "merged_content.yaml"
+
+        #Write the merged content to file
+        with open(merged_file, "w") as f:
+            yaml.dump(merged_content,f,default_flow_style=False)            
+        
+        #Initialize workspace with merged content.
+        with cv.cvopen(merged_file, template=args.template,
+                       target=args.output) as src:
             
             config = src.get_config()
             

@@ -41,77 +41,47 @@ class cvopen(object):
 
     def __init__(self, filename, template=None, target=None):
 
-        print(template)
-        if template == 'aggregated':
-            content = merge.merge_configurations(filename)
-            print(template)
-            self.path = tempfile.mkdtemp() + os.path.sep
-            self.filename = os.path.basename(target)
-            self.target = os.path.basename(target)[:-4] + "pdf"
+        assert os.path.isfile(filename)
 
-            # get template dir
-            templatedir = os.path.dirname(inspect.getfile(cvcreator))
-            templatedir = templatedir + os.path.sep + "templates" + os.path.sep
-            assert os.path.isdir(templatedir)
-
-            # copy everything over
-            for name in glob.glob(templatedir + "*"):
-                shutil.copy(name, self.path)
-
-            print(content)
-            with open(self.path + "_content", "w") as f:
-                yaml.dump(content,f)
-
-            # process template name
-            if not template:
-                template = "default"
-            template = template
-            if not os.path.isfile(self.path + template + ".yaml"):
-                self.template_not_found(template)
-            self.template = template
-            
+        self.path = tempfile.mkdtemp() + os.path.sep
+        self.filename = os.path.basename(filename)
+        if target:
+            self.target = target
         else:
-            assert os.path.isfile(filename)
+            self.target = os.path.basename(filename)[:-4] + "pdf"
 
-            self.path = tempfile.mkdtemp() + os.path.sep
-            self.filename = os.path.basename(filename)
-            if target:
-                self.target = target
-            else:
-                self.target = os.path.basename(filename)[:-4] + "pdf"
+        # get template dir
+        templatedir = os.path.dirname(inspect.getfile(cvcreator))
+        templatedir = templatedir + os.path.sep + "templates" + os.path.sep
+        assert os.path.isdir(templatedir)
 
-            # get template dir
-            templatedir = os.path.dirname(inspect.getfile(cvcreator))
-            templatedir = templatedir + os.path.sep + "templates" + os.path.sep
-            assert os.path.isdir(templatedir)
+        # copy everything over
+        for name in glob.glob(templatedir + "*"):
+            shutil.copy(name, self.path)
 
-            # copy everything over
-            for name in glob.glob(templatedir + "*"):
-                shutil.copy(name, self.path)
+        with open(filename, "r") as f:
+            content = f.read()
 
-            with open(filename, "r") as f:
-                content = f.read()
+        content = content \
+            .replace("æ", r"{\ae}") \
+            .replace("Æ", r"{\AE}") \
+            .replace("ø", r"{\o}") \
+            .replace("Ø", r"{\O}") \
+            .replace("å", r"{\aa}") \
+            .replace("Å", r"{\AA}") \
+            .replace("é", r"{\'e}") \
+            .replace("É", r"{\'E}")
 
-            content = content \
-                .replace("æ", r"{\ae}") \
-                .replace("Æ", r"{\AE}") \
-                .replace("ø", r"{\o}") \
-                .replace("Ø", r"{\O}") \
-                .replace("å", r"{\aa}") \
-                .replace("Å", r"{\AA}") \
-                .replace("é", r"{\'e}") \
-                .replace("É", r"{\'E}")
+        with open(self.path + "_content", "w") as f:
+            f.write(content)
 
-            with open(self.path + "_content", "w") as f:
-                f.write(content)
-
-            # process template name
-            if not template:
-                template = "default"
-            template = template
-            if not os.path.isfile(self.path + template + ".yaml"):
-                self.template_not_found(template)
-            self.template = template
+        # process template name
+        if not template:
+            template = "default"
+        template = template
+        if not os.path.isfile(self.path + template + ".yaml"):
+            self.template_not_found(template)
+        self.template = template
 
 
     def __enter__(self):

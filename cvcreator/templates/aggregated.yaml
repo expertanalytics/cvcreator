@@ -42,7 +42,7 @@
     \noindent
     {\LARGE \bfseries \color{xaldark}Fact sheet Expert Analytics}
 
-    %(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Projects)s%(Publications)s
+    %(About)s%(Skills)s
 
     \end{document}
 - logo_top: "%s"
@@ -50,7 +50,8 @@
   logo_width: "%s"
   logo_margin: "%s"
   Name: "%s"
-  Summary: "\n\n\\section*{About us}\n\n%s\\\\\n"
+  About: "\n\n\\section*{About us}\n\n%s\\\\\n"
+  Summary: "\n\n\\section*{Summary}\n\n%s\\\\\n"
   Basic:
     - |
         \Needspace{\cvneedspaceconst\baselineskip}
@@ -96,6 +97,25 @@
       - - ""
         - ", "
         - ""
+  Projects:
+    - - |
+        \Needspace{\cvneedspaceconst\baselineskip}
+        \section*{Selected customer projects}
+        \begin{longtable}{@{}LR}
+      - |
+        \end{longtable}
+
+        \begin{longtable}{@{}LR}
+      - "\\end{longtable}\n"
+    - A:
+        - "%(Activity)s%(Period)s%(Role)s%(Staffing)s%(Volume)s%(Description)s%(Tools)s"
+        - Activity: "Activity & %s \\\\ \n"
+          Period: "Period & %s \\\\ \n"
+          Role: "Role & %s \\\\ \n"
+          Staffing: "Staffing & %s \\\\ \n"
+          Volume: "Volume & %s \\\\ \n"
+          Description: "Description & %s \\\\ \n"
+          Tools: "Tools & %s \\\\ \n"
   Languages:
     - - |
         \Needspace{\cvneedspaceconst\baselineskip}
@@ -167,25 +187,6 @@
         - " & "
         - "\\\\ \n"
       - "%s"
-  Projects:
-    - - |
-        \Needspace{\cvneedspaceconst\baselineskip}
-        \section*{Selected customer projects}
-        \begin{longtable}{@{}LR}
-      - |
-        \end{longtable}
-
-        \begin{longtable}{@{}LR}
-      - "\\end{longtable}\n"
-    - A:
-        - "%(Activity)s%(Period)s%(Role)s%(Staffing)s%(Volume)s%(Description)s%(Tools)s"
-        - Activity: "Activity & %s \\\\ \n"
-          Period: "Period & %s \\\\ \n"
-          Role: "Role & %s \\\\ \n"
-          Staffing: "Staffing & %s \\\\ \n"
-          Volume: "Volume & %s \\\\ \n"
-          Description: "Description & %s \\\\ \n"
-          Tools: "Tools & %s \\\\ \n"
   Publications:
      - - |
          \Needspace{\cvneedspaceconst\baselineskip}
