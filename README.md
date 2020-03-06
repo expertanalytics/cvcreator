@@ -25,6 +25,8 @@ For information about other options, see:
 $ cvcreate --help
 ```
 
+Note that you need to add flags (again, see `cvcreate --help`) to include projects, publications ++.
+
 Custom Logo
 -----------
 To use a custom logo, just replace the local file `logo.pdf` with your own
