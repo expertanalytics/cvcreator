@@ -37,7 +37,7 @@ For installation on Mac OS-X, see section below
 Prerequisite
 ------------
 System dependencies:
-- Latex (on Ubuntu/Debian: `sudo apt-get install latexmk texlive-latex-extra`)
+- Latex (on Ubuntu/Debian: `sudo apt-get install latexmk texlive-latex-extra texlive-lang-european`)
 - Python
 
 Python package dependencies:
