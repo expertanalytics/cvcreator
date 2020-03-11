@@ -29,6 +29,7 @@ dette av følgende:
 * Tablet -- reMarkable, iPad 10", eller annen tablet i samme prisklasse (ca.
   6K); forventet levetid 3 år
 * Støydempende hodetelefoner
+* Skjerm til bruk hjemme, budsjett 4500,- eks.mva; forventet levetid 5 år
 
 I tillegg vil det finnes skjermer, tastatur, mus, diverse strømadaptere og
 kabler på selskapets kontor på Mesh. Dette er utstyr som fritt kan benyttes 
