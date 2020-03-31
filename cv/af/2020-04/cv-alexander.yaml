@@ -1,0 +1,135 @@
+Basic:
+    Name:   "Alexander Fleischer"
+    Address: "Lindebergveien 7A"
+    Post:  "1069 Oslo"
+    Birth: "10.04.1991"
+    Email: "alexander@xal.no"
+    Phone: "+47 482 71 967"
+    Nationality: "Norwegian"
+Summary: >
+    In 2018, I received my master's thesis in computational physics. 
+    The objective of the thesis was building a C++ application for 
+    simulating quantum dots. 
+    My goal was to develop code that was up to par with industry standards and
+    I focused on writing good, readable code with extensive testing. 
+    In addition to C++ I used Python for data analysis.
+    As a developer, I've cultivated my Python skills, 
+    and I now have ten years of experience with Python. 
+    Since February 2018, I have been working on a project at the transit
+    administration company Ruter.
+Skills:
+    Languages:
+        - "Python" 
+        - "C"
+        - "C++" 
+        - "PostgreSQL"
+        - "Javascript"
+        - "Java"
+        - "MATLAB"
+        - "Bash"
+        - "PHP"
+    Frameworks:
+        - "Numpy"
+        - "Flask"
+        - "TensorFlow"
+        - "PyPDF"
+        - "Google OR-tools"
+        - "Reportlab"
+        - "FastAPI"
+        - "Pandas"
+        - "Unittest"
+        - "PyTest"
+        - "uWSGI"
+        - "Node/React"
+        - "Armadillo"
+        - "MPI"
+    Tools:
+        - "Git"
+        - "Vim editor"
+        - "Unix"
+        - "LaTeX"
+        - "Docker"
+Languages:
+    Norwegian: Mother tongue
+    English: Fluent
+SelectedSkills:
+    Programming: >
+        During my education, practically every subject involved some
+        form of programming and I also enjoy recreational programming 
+        and scripting.
+    Quick learner: >
+        I like to learn, and do so quickly, in particular about programming 
+        and science.
+    Problem solving: >
+        Both my current project, previous work experience and my master 
+        thesis has taught me to work independently and assess the task at hand.
+    Written communication: >
+        I like writing clear and concise texts. 
+        Everything from popular science to documenting code.
+Education:
+    - - 2018
+      - "M.Sc. Computational Physics from the Department of
+        Physics, University of Oslo. Title of thesis: 
+        ``Monte Carlo Studies of Quantum Dots''. 
+        Supervisor: Professor Morten Hjorth-Jensen."
+    - - 2017
+      - 'B.Sc. in Physics, University of Oslo.'
+Work:
+    - - 2018–
+      - 'Consultant at Expert Analytics'
+    - - 2015–2017
+      - '30 percent position as IT Support at the Department of Physics, University of Oslo'
+    - - 2013–2017
+      - 'Course Leader at Forskerfabrikken Summer School'
+    - - 2013–2014
+      - 'Private Tutor at Studenthjelp privatundervisning'
+Interests:
+    "Personal":
+        - "Powerlifting"
+        - "Football"
+Projects:
+    A1:
+        Activity: "Project at Ruter As"
+        Role: "Developer"
+        Staffing: "1 developer"
+        Period: "February 2018—March 2020"
+        Description: >
+            Worked as a fullstack developer developing a backend system
+            for automatic generation of production files (PDFs) for analogue
+            transit stop information, and a web app for the users.
+            In addition, I implemented a tool for generating optimal 
+            routes between stops, as well as other tools for the project.
+        Tools: >
+            Python, Javascript, Flask, PostgreSQL, Apache, Google OR-Tools,
+            Google Maps API, Entur API
+    A2:
+        Activity: "Project at Ruter As"
+        Role: "Developer/adviser"
+        Staffing: "3 developers, 1 team lead, 1 UX/UI designer"
+        Period: "February 2018—March 2020"
+        Description: >
+            We developed a content management system in form of a web app
+            for Ruter.
+            In addition to some development (Node/React), 
+            I advised the team on the direction of the project,
+            performed daily code review and contributed to sprint 
+            retrospects and planning.
+        Tools: "Javascript/Node, React, PostgreSQL, AWS, Jenkins, Python"
+    A4:
+        Activity: "Monte Carlo Studies of Quantum Dots"
+        Staffing: "2 researchers"
+        Description: >
+            For my master thesis, I developed software for finding the ground 
+            state energies of quantum dots (fermions) using the variational 
+            Monte-Carlo method. The program handles different potential wells, 
+            like the single and double
+            harmonic oscillator and the finite square well.
+            Furthermore I solved the Schrödinger equation of the potential 
+            systems to obtain one-particle wavefunctions of the energy states.
+            The resulting wavefunction was then written as a linear combination 
+            of simple harmonic oscillator basisfunctions which were used in the 
+            Monte-Carlo solver and compared against the results of the original 
+            Monte-Carlo simulations.
+            The code was primarily C++ with some data analysis in Python.
+            I put effort and focus on unit testing and writing clean code.
+        Tools: "C++, Python, Armadillo, MPI, Numpy"
