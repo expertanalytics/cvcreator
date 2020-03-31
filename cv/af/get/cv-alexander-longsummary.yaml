@@ -65,10 +65,10 @@ SelectedSkills:
         Everything from popular science to documenting code.
 Education:
     - - 2018
-      - 'M.Sc. Computational Physics from the Department of
+      - "M.Sc. Computational Physics from the Department of
         Physics, University of Oslo. Title of thesis: 
-        "Monte Carlo Studies of Quantum Dots". 
-        Supervisor: Professor Morten Hjorth-Jensen.'
+        ``Monte Carlo Studies of Quantum Dots''. 
+        Supervisor: Professor Morten Hjorth-Jensen."
     - - 2017
       - 'B.Sc. in Physics, University of Oslo.'
 Work:
@@ -87,7 +87,7 @@ Projects:
         Staffing: "1 developer"
         Period: "February 2018—March 2020"
         Description: >
-            The \"Stop Poster Production System\" is Ruter's application for 
+            The ``Stop Poster Production System'' is Ruter's application for 
             automated generation of production files (PDFs) for 
             analogue transit information. Ruter governs over 8000 transit
             stops in Oslo and Viken. All of these stops require some
