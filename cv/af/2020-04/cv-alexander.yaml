@@ -22,7 +22,6 @@ Skills:
         - "Python" 
         - "C"
         - "C++" 
-        - "PostgreSQL"
         - "Javascript"
         - "Java"
         - "MATLAB"
@@ -31,6 +30,9 @@ Skills:
     Frameworks:
         - "Numpy"
         - "Flask"
+        - "PostgreSQL"
+        - "SQLAlchemy"
+        - "Alembic"
         - "TensorFlow"
         - "PyPDF"
         - "Google OR-tools"
