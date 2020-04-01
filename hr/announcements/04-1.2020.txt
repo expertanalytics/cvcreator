@@ -1,0 +1,77 @@
+Nytt om ansettelser:
+
+Max Endo Kokubun har, som annonsert tidligere, startet hos oss idag 01.04. Siden 
+vi for tiden er i "online"-modus får vi gjøre vårt beste med å ta i mot han via
+Slack!
+
+Nytt om oppdrag og økonomi:
+
+Stian har fått nytt oppdrag hos Telia, for Get. Oppdraget skal i første omgang
+vare til september-2020. Ruter har forlengdet oppdraget for Alex til 30.06, men
+dette er hovedsakelig snakk om support på timebasis for løsningene han har
+utviklet der tidligere, så omfanget her er foreløpig usikkert.
+
+Cognite har også gitt oss beskjed om at oppdrag hos Statnett for Alocias og
+Robert fortsetter frem til sommeren, med god sannsynlighet slik det ser ut p.t
+for forlengelse også etter sommeren.
+
+På den negative siden har vi fått noen konsekvenser av lav oljepris og
+utfordringer knyttet til Corona. Cognite har sagt opp avtalene med Therese, Anis
+og Thomas. Hos AkerBP avsluttes oppdraget 15.4, mens Thomas hos Lundin får
+arbeide til 30.4. Vipps har også sagt opp engasjement for Åsmund. For de øvrige
+hos Vipps har vi satt ned raten noe, og tilbudt at vi kan jobbe noe færre timer
+for en besparelse på ca 25% for Vipps - for på denne måten forsøke å trygge
+avtalen for de 3 gjenværende der.  Dette kommer i tillegg til at det er litt
+stille på oppdragsfronten for tiden. Vi ligger altså an til å ha ganske god
+kapasitet på intern-benken vår fra 1. mai.
+
+Vi har gjort noen overslag for å se hvordan den økonomiske situasjonen ser ut.
+Dersom vi i gjennomsnitt har samme faktureringsgrad som vi pleier å ha, på rundt
+80%, ligger vi an til et svakt positivt resultat for april; ca. 400.000 i pluss
+før bonuser er tatt hensyn til. Fra mai ligger det an til "break-even" dersom
+det ikke kommer ytterligere oppsigelser. 
+
+For å bidra til å lette den økonomiske situasjonen har ledelsen med virkning fra
+01.04 redusert sin lønn til 6G, slik at vi har samme lønn som de fleste andre i
+selskapet. Vi håper videre å lande et utviklingsprosjekt sammen med Statkraft,
+der vi skal benytte ledig kapasitet til å utvikle noe som på sikt kan bli et
+salgbart produkt innen "audioanalytics". Vi kommer til å søke InnovasjonNorge om
+midler til å dekke noe av vår interne utviklingskostnad på dette prosjektet.
+Ada, Emil, og flere har også vært med på et prosjektforslag sammen med UiO og
+Simula, til en Covid-19 utlysning fra forskningsrådet. Det er mange søkere til
+disse midlene, så forventet suksess-rate er antagelig rundt 5% - men vi krysser
+fingrene for positivt utfall!
+
+Litt HR-nytt:
+
+Det kommer en del nye ordninger i forbindelse med Corona-situasjonen. Av det som
+er kommet som er mest relevant for oss er:
+
+- Mulighet for utvidet bruk av omsorgsdager for pass av barn inntil 12 år.
+  Antall dager man kan benytte til dette er doblet, og NAV refunderer fra og med
+  dag 4. Det er arbeidsgiver som søker om refusjon. Vi har derfor opprettet en
+  kategori i tripletex som skal benyttes for slikt fravær (f.eks om man er
+  hjemme med barn pga. stengt barnehage eller skole). Slikt fravær unntas i
+  bonusberegningen ved årets slutt.
+
+- Utvidet mulighet for bruk av egenmelding på grunn av Covid-19 eller mistanke
+  om slik sykdom. Det kan benyttes egenmelding for inntil 16 dager, mens det fra
+  dag 17 er krav om sykemelding. Arbeidsgiver kan søke refusjon fra dag 4. Det
+  er opprettet en egen "Fravær med Covid-19 sykdom" i tripletex som benyttes for
+  føring av slikt fravær. Slikt fravær unntas i bonusberegningen ved årets
+  slutt. Ta kontakt med daglig leder dersom du skal føre tid i denne kategorien.
+
+Vi forsøker ellers å følge emed på det som kommer av ordninger, men håper at vi
+i det lengste kan holde oss i gang med vanlige oppdrag slik at vi ikke får behov
+for å benytte støtteordningene på bedriftsnivå!
+
+Nytt om telefoni:
+
+Vi vil flytte vår telefoniavtale fra Talkmore til Phonect i løpet av våren.
+Endelig dato for overgang er ikke bestemt enda, blant annet på grunn av den
+ustabile situasjonen vi har akkurat nå, men tentativt vil overgangen bli 1
+juni. Vi fortsetter med Telenor-nett slik at dekning blir akkurat som idag. For
+samme kostnad som vi har idag kommer vi til å få 35GB data med rollover (inntil
+1 måned) - mot 10GB idag. Vi legger opp til å få gjort overgangen så smooth som
+mulig, ved å sende SIM kort til privatadresse i god tid før portering. Vi kommer
+tilbake med mer informasjon om dette.
