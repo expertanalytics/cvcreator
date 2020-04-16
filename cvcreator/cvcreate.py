@@ -99,7 +99,7 @@ def main():
                     try:
                         content["Projects"][i] = proj[key]
                     except KeyError:
-                        print("Key {} not found in Projects and therefore not included in the PDF".format(key))
+                        raise KeyError(f"Key {key} not found in Projects")
 
             if not args.publications:
                 content.pop("Publications", None)
@@ -111,7 +111,7 @@ def main():
                     try:
                         content["Publications"][i] = pub[key]
                     except KeyError:
-                        print("Key {} not found in Publications and therefore not included in the PDF".format(key))
+                        raise KeyError(f"Key {key} not found in Publications")
 
             textxt = cv.parse(content, template)
 
