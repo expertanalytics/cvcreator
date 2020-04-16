@@ -1,0 +1,125 @@
+Basic:
+    Name:    Max Akira Endo Kokubun
+    Address: Waldemars Hage 3
+    Post:    0175 Oslo
+    Birth:   24.01.1986
+    Email:   max@xal.no
+    Phone:   +47 922 98 573
+    Nationality: Brazilian
+Summary: >
+    In essence, I am a problem-solver who relies on my extense scientific knowledge and experience in academia. 
+    I have a PhD in Aerospace Engineering, from the National Institute for Space Research (INPE, 2014) and 
+    before joining Expert Analytics, I held two postdoctoral positions, one in Applied Mathematics, at the National Institute for Pure and Applied Mathematics (IMPA, 2014-2016), 
+    and one in Chemistry/Applied Mathematics, at the University of Bergen (UiB, 2016-2019). 
+    The focus of my projects was on Enhanced Oil Recovery, through combustion (IMPA) and polymer particles (UiB). 
+    Thus, I have expertise in developing mathematical/physical models and performing numerical simulations for fluid mechanics problems (CFD).
+
+    I worked in close collaboration with researchers from different backgrounds (physicists, engineers, mathematicians, experimentalist chemists, etc) and 
+    international institutions (Norway, Brazil, USA, Netherlands, Sweden, Belgium, UK). 
+    Therefore, I have excellent communication skills and can easily connect with both technical and non-technical audiences.
+Skills:
+    Languages:
+        - Matlab
+        - Python
+        - Fortran
+        - Octave
+    Frameworks:
+        - Numpy
+        - Scipy
+        - Matplotlib
+    Tools:
+        - openFOAM
+        - COMSOL
+        - Mathematica
+        - gmsh
+        - Latex
+Languages:
+    "Portuguese": Native
+    "English": Fluent
+    "Norwegian": Good
+    "Spanish": Good
+SelectedSkills:
+    "Team work": >
+        I enjoy being part of a team when solving problems. 
+        My experience in research was always guided by collaborative work, absorbing knowledge from more experienced researchers and guiding younger researchers.
+    "Problem solving": >
+        I like solving real-world problems by analysing them through my scientific background.
+    "Communication": >
+        I am considered an excellent communicator, specifically regarding simplifying very technical topics to the broader audience.
+    "Analytical thinking": >
+        I have a facility in understanding complex problems in an organized matter, breaking it down into smaler, easier to understand pieces.
+Education:
+    - - "2011 - 2014"
+      - >
+        {\bf PhD in Aerospace Engineering}. National Institute for Space Research, Brazil. 
+        ``Theoretical Study of Diffusion Flames Originated from the Burning of Heavy Liquid Fuels in Low Porosity Media (In-Situ Combustion)''
+    - - "2009 - 2011"
+      - >
+        {\bf Master in Aerospace Engineering}. National Institute for Space Research, Brazil.  
+        ``Analytical Analysis of Liquid Fuel Combustion Established in a Low-Porosity Medium''
+    - - "2004 - 2008"
+      - >
+        {\bf Bachelor in Physics}. Federal University of Rio Grande do Sul, Brazil.
+Work:
+    - - 2013
+      - 2014
+      - >
+        {\bf Visiting Scholar}. University of Illinois at Urbana-Champaign, USA
+    - - 2014
+      - 2016
+      - >
+        {\bf Postdoctoral Fellow}. National Institute for Pure and Applied Mathematics, Brazil
+    - - 2016
+      - 2019
+      - >
+        {\bf Postdoctoral Fellow}. University of Bergen, Norway
+    - - 2020 
+      - >
+        {\bf Consultant}. Expert Analytics, Norway
+Interests:
+    "Scientific":
+        - Fluid Mechanics
+        - Computational Fluid Dynamics (CFD)
+        - Porous media
+        - Enhanced Oil Recovery
+        - Machine Learning
+        - Data Science
+    "Personal":
+        - Traveling
+        - Hiking
+        - Sports (football, swimming, rollerblading, tennis)
+        - Music
+Projects:
+    A1:
+        Activity: Experimentally-based modelling of colloid transport in multiphase porous media (EPOCH)
+        Period: 2016-2019
+        Role: Postdoctoral Fellow
+        Staffing: 8 Researchers
+        Volume: 100\\%
+        Description: >
+            This project was funded by Equinor and it aimed at developing mathematical models and numerical solvers for the problem of polymer particles transport in oil-water flow in porous media. 
+            The models we developed were based on experimentally-obtained results for enhanced oil recovery. 
+        Tools: openFOAM, MRST, COMSOL
+    A2:
+        Activity: Mathematical modelling and analysis of medium-temperature oxidation (MTO) of multicomponent oil flow in porous media
+        Period: 2014-2016
+        Role: Postdoctoral Fellow
+        Staffing: 4 Researchers
+        Volume: 100\\%
+        Description: >
+            Development of mathematical models and numerical solvers for the problem of reactive multiphase flow of a multicomponent oil in porous media. 
+            This project was part of IMPA's strategy to tackle industry-relevant problems by the use of high-level mathematical and numerical tools. 
+            Our theoretical results were compared with experimental results from a collaborative research team at TU Delft.
+        Tools: Mathematica, COMSOL, Matlab
+    A3:
+        Activity: Asymptotic analysis of a chambered diffusion flame
+        Period: 2013-2014
+        Role: Visiting Scholar
+        Staffing: 3 Researchers
+        Volume: 100\\%
+        Description: >
+            Analysis of the extinction limits of a diffusion flame established in porous media. 
+            This collaborative work between INPE and the University of Illinois at Urbana-Champaign, USA, was part of my PhD project. 
+            This work identified the similarities between the extinction of a diffusion flame established in a porous matrix and the extinction of spread flames in solid fuels. 
+            The novelty of this work was recognized by The Combustion Institute, who awarded it the prize of Distinguished Paper in the 36th International Symposium on Combustion.
+        Tools: Matlab, Fortran
