@@ -96,10 +96,9 @@ def main():
                 proj_keys = tuple_of_strings(args.projects, proj)
                 content["Projects"] = {}
                 for i, key in enumerate(proj_keys):
-                    try:
-                        content["Projects"][i] = proj[key]
-                    except KeyError:
+                    if key not in proj:
                         raise KeyError(f"Key {key} not found in Projects")
+                    content["Projects"][i] = proj[key]
 
             if not args.publications:
                 content.pop("Publications", None)
