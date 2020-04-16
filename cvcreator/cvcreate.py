@@ -7,14 +7,25 @@ import shutil
 from glob import glob
 import cvcreator as cv
 
-MAX_NUM_CONST = 100
-
 def tuple_of_strings(string, arg):
     if string == "all":
         return tuple(arg.keys())
     else:
         string = string.replace(" ", "")
-        return tuple(val for val in string.split(","))
+        return tuple(string.split(","))
+
+def check_publications_projects(args, str_name, content, function):
+    if not args:
+        content.pop(str_name, None)
+    else:
+        values = content.pop(str_name, {})
+        keys = function(args, values)
+        content[str_name] = {}
+        for i, key in enumerate(keys):
+            if key not in values:
+                raise KeyError(f"Key {key} not found i {str_name}")
+            content[str_name][i] = values[key]
+    return content
 
 def main():
     parser = argparse.ArgumentParser(
@@ -89,27 +100,17 @@ def main():
 
             template = src.get_template()
 
-            if not args.projects:
-                content.pop("Projects", None)
-            else:
-                proj = content.pop("Projects", {})
-                proj_keys = tuple_of_strings(args.projects, proj)
-                content["Projects"] = {}
-                for i, key in enumerate(proj_keys):
-                    if key not in proj:
-                        raise KeyError(f"Key {key} not found in Projects")
-                    content["Projects"][i] = proj[key]
+            # Find projects to include
+            content = check_publications_projects(args.projects,
+                                                "Projects",
+                                                content,
+                                                tuple_of_strings)
 
-            if not args.publications:
-                content.pop("Publications", None)
-            else:
-                pub = content.pop("Publications", {})
-                pub_keys = tuple_of_strings(args.publications, pub)
-                content["Publications"] = {}
-                for i, key in enumerate(pub_keys):
-                    if key not in pub:
-                        raise KeyError(f"Key {key} not found in Publications")
-                    content["Publications"][i] = pub[key]
+            # Find publications to include
+            content = check_publications_projects(args.publications,
+                                                "Publications",
+                                                content,
+                                                tuple_of_strings)
 
             textxt = cv.parse(content, template)
 
