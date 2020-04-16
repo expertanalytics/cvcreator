@@ -107,10 +107,9 @@ def main():
                 pub_keys = tuple_of_strings(args.publications, pub)
                 content["Publications"] = {}
                 for i, key in enumerate(pub_keys):
-                    try:
-                        content["Publications"][i] = pub[key]
-                    except KeyError:
+                    if key not in pub:
                         raise KeyError(f"Key {key} not found in Publications")
+                    content["Publications"][i] = pub[key]
 
             textxt = cv.parse(content, template)
 
