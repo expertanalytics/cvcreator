@@ -10,7 +10,6 @@ import cvcreator as cv
 MAX_NUM_CONST = 100
 
 def tuple_of_strings(string, arg):
-    print(arg)
     if string == "all":
         return tuple(arg.keys())
     else:
@@ -97,7 +96,10 @@ def main():
                 proj_keys = tuple_of_strings(args.projects, proj)
                 content["Projects"] = {}
                 for i, key in enumerate(proj_keys):
-                    content["Projects"][i] = proj[key]
+                    try:
+                        content["Projects"][i] = proj[key]
+                    except KeyError:
+                        print("Key {} not found in Projects and therefore not included in the PDF".format(key))
 
             if not args.publications:
                 content.pop("Publications", None)
@@ -106,7 +108,10 @@ def main():
                 pub_keys = tuple_of_strings(args.publications, pub)
                 content["Publications"] = {}
                 for i, key in enumerate(pub_keys):
-                    content["Publications"][i] = pub[key]
+                    try:
+                        content["Publications"][i] = pub[key]
+                    except KeyError:
+                        print("Key {} not found in Publications and therefore not included in the PDF".format(key))
 
             textxt = cv.parse(content, template)
 
