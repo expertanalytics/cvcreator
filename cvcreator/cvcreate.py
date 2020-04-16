@@ -9,11 +9,12 @@ import cvcreator as cv
 
 MAX_NUM_CONST = 100
 
-def tuple_of_ints(string):
+def tuple_of_strings(string, arg):
     if string == "all":
-        return tuple(range(1, MAX_NUM_CONST))
+        return tuple(arg.keys())
     else:
-        return tuple(int(val) for val in string.split(","))
+        string = string.replace(" ", "")
+        return tuple(val for val in string.split(","))
 
 def main():
     parser = argparse.ArgumentParser(
@@ -39,11 +40,11 @@ def main():
         "-s", '--silent', action="store_true",
         help="Muffle output.")
     parser.add_argument(
-        "-p", "--projects", type=tuple_of_ints, 
-        default=(), help="Projects to include. Specify which entries by index or use 'all' to include all entries")
+        "-p", "--projects", type=str,
+        default=(), help="Projects to include. Specify which entries by keys or use 'all' to include all entries")
     parser.add_argument(
-        "-u", "--publications", type=tuple_of_ints, 
-        default=(), help="Publications to include. Specify which entris by integers or use all to inclue all entries.")
+        "-u", "--publications", type=str,
+        default=(), help="Publications to include. Specify which entries by keys or use all to inclue all entries.")
     parser.add_argument(
         "-lw", "--logo-width", type=str, dest="logo_width",
         help="Set the logo width.")
@@ -87,31 +88,29 @@ def main():
             content.update(config)
 
             template = src.get_template()
-            
+
             if not args.projects:
                 content.pop("Projects", None)
             else:
                 proj = content.pop("Projects", {})
+                proj_keys = tuple_of_strings(args.projects, proj)
                 content["Projects"] = {}
-                for i, pn in enumerate(sorted(proj)):
-                    n = int(pn[1:])
-                    assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
-                    pi = "A%d" % i
-                    if n in args.projects:
-                        content["Projects"][pi] = proj.pop(pn)
-            
+                for i, key in enumerate(proj_keys):
+                    if key not in proj:
+                        raise KeyError(f"Key {key} not found in Projects")
+                    content["Projects"][i] = proj[key]
+
             if not args.publications:
                 content.pop("Publications", None)
             else:
                 pub = content.pop("Publications", {})
+                pub_keys = tuple_of_strings(args.publications, pub)
                 content["Publications"] = {}
-                for i, un in enumerate(sorted(pub)):
-                    n = int(un[1:])
-                    assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
-                    ui = "B%d" % i
-                    if n in args.publications:
-                        content["Publications"][ui] = pub.pop(un)
-            
+                for i, key in enumerate(pub_keys):
+                    if key not in pub:
+                        raise KeyError(f"Key {key} not found in Publications")
+                    content["Publications"][i] = pub[key]
+
             textxt = cv.parse(content, template)
 
             if args.latex:

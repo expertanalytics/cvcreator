@@ -20,6 +20,15 @@ $ cvcreate example.yaml -t<tab>
 banking   casual    classic   default   margin    oldstyle
 ```
 
+To include projects/publications use the flag -p/-u. Can either be called with specific keys:
+```
+cvcreate example.yaml -p="A1, foo, whatever"
+```
+where the added projects/publications will be added in selected order, or all can be included with:
+```
+cvcreate example.yaml -p="all"
+```
+
 For information about other options, see:
 ```
 $ cvcreate --help
