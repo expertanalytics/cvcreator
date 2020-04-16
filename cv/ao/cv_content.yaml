@@ -33,7 +33,7 @@ Languages:
 Projects:
   A14:
     Activity: Vipps development
-    Description: From May 2017 until April 2020 I worked with Vipps AS. the company established to operate and further develop the Vipps payment system.
+    Description: From May 2017 until April 2020 I worked with Vipps AS.
       I was working together with in-house developers and other consultants on development of core and auxillary
       systems. I was project manager and tech lead for systems for Merchant onboarding
       and some of the other projects made necessary in connection with the establishment of Vipps
@@ -53,7 +53,7 @@ Projects:
       for access to mCASH resources for external integrators, based on OpenID Connect
       and Oauth protocols. I was also deeply involved in design and implementation
       of the transactional engine handling the payments; the core of the mCASH system.
-      This engine connects persons, merchants and banks together, and computes transation
+      This engine connects persons, merchants and banks together, and computes transaction
       fees for involved parties in addition to moving correct amounts. I was lead developer for
       a new settlement system for merchants. The backend
       system of mCASH is implemented solely in Python. I have also been involved with other
