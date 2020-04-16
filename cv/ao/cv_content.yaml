@@ -33,20 +33,21 @@ Languages:
 Projects:
   A14:
     Activity: Vipps development
-    Description: From May 2017 I worked with Vipps AS, the company established by DNB, Sparebank 1, and over 100 other
-      Norwegian banks to operate and further develop the Vipps payment system. I was working 
-      together with in-house developers and other consultants on development of core and auxillary 
-      systems. I was project manager and lead developer for systems for Merchant onboarding 
-      and some of the other projects made necessary in connection with the establishment of Vipps 
-      as a separate legal entity. Further, I was continuing work along the lines of earlier 
+    Description: From May 2017 until April 2020 I worked with Vipps AS. the company established to operate and further develop the Vipps payment system.
+      I was working together with in-house developers and other consultants on development of core and auxillary
+      systems. I was project manager and tech lead for systems for Merchant onboarding
+      and some of the other projects made necessary in connection with the establishment of Vipps
+      as a separate legal entity. From fall 2017 until spring 2019 I was also responsible for deployment and operation
+      of Kubernetes clusters on the Azure platform, mainly used for operational services in the Merchant domain.
+      Further, I was continuing work along the lines of earlier
       mCASH development relevant in the new company.
     Role: Senior Consultant
-    Period: 05.2017 -- 
+    Period: 05.2017 -- 04.2020
     Staffing: 20+ developers,
     Tools: Java, Go, Azure, MSSQL, PostgreSQL
   A10:
     Activity: Auka/mCASH development
-    Description: I worked with mCASH, later renamed Auka, in two periods---from August 2013 until May 2014 
+    Description: I worked with mCASH, later renamed Auka, in two periods---from August 2013 until May 2014
       and from February 2016 until April 2017. My responsibilities in this project included integrations of third-party
       APIs for user-identification with Norwegian BankID, and development of APIs
       for access to mCASH resources for external integrators, based on OpenID Connect
@@ -56,7 +57,7 @@ Projects:
       fees for involved parties in addition to moving correct amounts. I was lead developer for
       a new settlement system for merchants. The backend
       system of mCASH is implemented solely in Python. I have also been involved with other
-      parts of the code base, including javascript frontend implemented with React. 
+      parts of the code base, including javascript frontend implemented with React.
       The development at mCASH followed the scrum agile method.
     Role: Senior Python Developer
     Period: 08.2013 -- 05.2014, 02.2016 -- 04.2017
@@ -202,22 +203,14 @@ SelectedSkills:
 Skills:
   Frameworks:
   - Google App Engine
-  - Puppet
+  - AWS
+  - Azure
+  - Kubernetes
   - Numpy
   - Pandas
   - SciPy
   - MPI
-  - React
-  - Knockout
-  - jQuery
-  - RequireJS
   - Web.py
-  - Turbogears
-  - Bootstrap
-  - Slim
-  - Twig
-  - AWS
-  - Azure
   Languages:
   - Python
   - C
@@ -237,17 +230,13 @@ Skills:
   Tools:
   - Linux
   - OS X
-  - VirtualBox
-  - Vagrant
   - MySql
+  - Postgresql
   - Sqlite
   - NoSqls
   - Apache
   - Nginx
   - Git
-  - Subversion
-  - CVS
-  - Mercurial
   - Make
   - SCons
   - Autoconf
