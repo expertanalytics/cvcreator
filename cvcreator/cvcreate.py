@@ -98,6 +98,7 @@ def main():
                     assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
                     pi = "A%d" % i
                     if n in args.projects:
+                        ind = args.projects.index(i+1)
                         content["Projects"][pi] = proj.pop(pn)
             
             if not args.publications:
@@ -106,11 +107,13 @@ def main():
                 pub = content.pop("Publications", {})
                 content["Publications"] = {}
                 for i, un in enumerate(sorted(pub)):
+                    print(pub)
                     n = int(un[1:])
                     assert n < MAX_NUM_CONST, "Does not support cases for indices larger than MAX_NUM_CONST"
                     ui = "B%d" % i
                     if n in args.publications:
-                        content["Publications"][ui] = pub.pop(un)
+                        ind = args.publications.index(i+1)
+                        content["Publications"][ind] = pub.pop(un)
             
             textxt = cv.parse(content, template)
 
