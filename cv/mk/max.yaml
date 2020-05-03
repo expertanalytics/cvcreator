@@ -9,11 +9,11 @@ Basic:
 Summary: >
     In essence, I am a problem-solver who relies on my extense scientific knowledge and experience in academia. 
     I have a PhD in Aerospace Engineering, from the National Institute for Space Research (INPE, 2014) and 
-    before joining Expert Analytics, I held two postdoctoral positions, one in Applied Mathematics, at the National Institute for Pure and Applied Mathematics (IMPA, 2014-2016), 
+    before joining Expert Analytics I held two postdoctoral positions, one in Applied Mathematics, at the National Institute for Pure and Applied Mathematics (IMPA, 2014-2016), 
     and one in Chemistry/Applied Mathematics, at the University of Bergen (UiB, 2016-2019). 
-    The focus of my projects was on Enhanced Oil Recovery, through combustion (IMPA) and polymer particles (UiB). 
-    Thus, I have expertise in developing mathematical/physical models and performing numerical simulations for fluid mechanics problems (CFD).
-
+    My role in these projects was to develop mathematical models, and its associated numerical solvers, describing experimentally-obtained results. 
+    Thus, I have an expertise in understanding real-world problems and translating them into a mathematical framework.
+    
     I worked in close collaboration with researchers from different backgrounds (physicists, engineers, mathematicians, experimentalist chemists, etc) and 
     international institutions (Norway, Brazil, USA, Netherlands, Sweden, Belgium, UK). 
     Therefore, I have excellent communication skills and can easily connect with both technical and non-technical audiences.
@@ -27,10 +27,13 @@ Skills:
         - Numpy
         - Scipy
         - Matplotlib
+        - Pandas
+        - scikit-learn
     Tools:
         - openFOAM
         - COMSOL
         - Mathematica
+        - FEniCS
         - gmsh
         - Latex
 Languages:
