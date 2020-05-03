@@ -1,0 +1,126 @@
+Basic:
+    Name:  "Anis A. Ayati"
+    Address: "Spireaveien 12A"
+    Post: "0580 Oslo"
+    Birth: "26.01.1986"
+    Email: "anis@xal.no"
+    Phone: "+4799464312"
+    Nationality: "Norwegian"
+Summary: |
+    I hold a Ph.D. in Fluid Mechanics and a MSc. in Applied Mathematics from the University of Oslo. Before joining Expert Analytics, I worked as a postdoctoral researcher in the area of multiphase flows with focus on turbulence and interfacial waves. More recently, I worked as a senior data scientist in an industrial digitalization project, in which I developed a machine learning-driven monitoring and recommender system. My technical skill set includes python programming, statistical and spectral time-series analysis, machine learning and visualization.
+    
+    I enjoy working in multidisciplinary teams and I thrive when given the chance to be creative in my work.
+Skills:
+    Languages:
+        - Python, Matlab, C++.
+    Frameworks:
+        - Numpy, Pandas, SciPy, Scikit-learn, Matplotlib, Keras.
+    Tools:
+        - Git, Azure Databricks, Google Cloud, Grafana, Latex.
+    Data analysis:
+        - Spectral analysis, multivariate statistics, ensemble learning, deep learning, optimization.
+SelectedSkills: 
+    "Communication": |
+        As an agile data scientist, I learned to transform input from stakeholders into technical solutions and to demo minimum viable products. As a researcher, I gained experience in publishing scientific findings in international relevant peer-reviewed journals and presenting my work in international conferences. As a teacher and mentor, I learned to break down complex concepts within mathematics and physics in order to explain those to students across the educational ladder, ranging from high-school to university.
+    "Management": |
+        I have experience in defining, applying for and managing scientific projects, as well as organizing and leading meetings and workshops.
+Languages:
+    "Norwegian": "Fluent"
+    "English": "Fluent"
+    "French": "Fluent"
+    "Portuguese": "Intermediate"
+    "Arabic": "Intermediate"
+Education:
+    - - "2015"
+      - >
+        Ph.D. in Fluid Mechanics, Department of Mathematics, University of Oslo. Thesis title 'Dynamics of stratified gas-liquid pipe flow'
+    - - "2008"
+      - "2010"
+      - >
+        MSc. in Applied Mathematics and Mechanics, Department of Mathematics, University of Oslo.
+    - - "2005"
+      - "2008"
+      - >
+        BSc. in Physics, Department of Physics, University of Oslo.
+Work:
+    - - "2019"
+      - "" # <- blank
+      - >
+        Consultant at Expert Analytics
+    - - "2015"
+      - "2018"
+      - |
+        Postdoctoral Fellow, Department of Mathematics, University of Oslo.
+        
+        - 2018: Visiting researcher, Department of Mechanical and Aerospace Engineering, Princeton University, USA.
+        
+        - 2017: University Lecturer in Fluid Mechanics, Department of Mathematics, University of Oslo.
+
+        - 2016: Visiting researcher, Department of Mechanical Engineering, PUC-Rio, Brazil.  
+    - - "2015"
+      - >
+        University Lecturer, Department of Physics, Norwegian University of Life Sciences.
+    - - "2010"
+      - "2014"
+      - |
+        Ph.D. Research Fellow, Department of Mathematics, University of Oslo.
+        
+        - 25\% assistant teacher in Vector Calculus.
+    - - "2006"
+      - "2010"
+      - >
+        Student Mentor, TENK (now ENT3R), Faculty of Mathematics and Natural Sciences, University of Oslo.
+        
+
+Interests: 
+    "Academic": 
+        - "Hydrodynamics"
+        - "Aerodynamics"
+        - "Optimization"
+    "Other":
+        - Reading, traveling, football, martial arts, fitness.
+
+Projects:
+
+    A1:
+        Activity: "Smart Monitoring and Recommender System"
+        Period: "2019-2020"
+        Role: "Senior Data Scientist"
+        Staffing: "2"
+        Volume: 100\%
+        Description: |
+            This project was part of AkerBP's digitalization program, Eureka. I was involved in a production optimization team and worked on a use case addressing produced water treatment.
+            
+            I helped develop a digital assistant that provides root-cause diagnostics in the form of recommendation-based monitoring. I designed and implemented an analytics pipeline which combined physical modeling, data engineering and machine learning. I was actively involved in defining the solution as well as setting up and maintaining the application infrastructure comprising a data lake (Cognite Data Fusion), a python backend, cloud services platform and visualization dashboards. 
+        Tools: "Python, Azure Databricks, Grafana, Cognite Data Fusion"
+
+    A2:
+        Activity: "Detailed measurements of waves and turbulence in gas-liquid pipe flow"
+        Period: "2010-2018"
+        Role: "Lead investigator"
+        Staffing: "3"
+        Volume: 100\%
+        Description: |
+            In my doctoral and postdoctoral work, I combined a variety experimental methods in multiple experimental campaigns to quantify the dynamics of turbulence and shear-induced interfacial waves. The experiments resulted in large data sets consisting of high-spatial resolution images and various types of sensor signals. The data was subsequently structured and analysed using mathematical tools based on linear algebra, stochastic theory and spectral decomposition. Experimental insight was used to improve analytical models and optimize numerical simulations.
+
+            Collaboration: During my Ph.D. I collaborated with a fellow Ph.D. student, whereas in my postdoctoral period, I supervised a Ph.D. student and a MSc. student.
+        Tools: "Matlab, C++, ANSYS Fluent, Digiflow, LabView, LaTeX"
+
+    A3:
+        Activity: "Development of an aerodynamic model for Vertical-Axis Wind Turbines"
+        Period: "2018 (April-October)"
+        Role: "Lead developer"
+        Staffing: "1"
+        Volume: 100\%
+        Description: >
+            During my six-month research stay at Princeton University, I developed a numerical model that is able to accurately predict the aerodynamic performance of vertical-axis wind turbines. The model is an adaptation of the blade element momentum theory to the vertical-axis configuration.
+        Tools: "Matlab, LaTeX"
+
+    A4:
+        Activity: "Establishment of a research and education cooperation between Norway and Brazil"
+        Period: "2015-2018"
+        Role: "Project coordinator"
+        Staffing: "10+"
+        Volume: 20\%
+        Description: >
+            During my research visit at PUC-Rio, I helped establish a research and education cooperation funded by the Norwegian Research Council and its Brazilian counterpart. During the project duration, 2017-2018, I organized and chaired several workshops, supervised and organized the exchange of Ph.D. and MSc. students and conducted collaborative research with my Brazilian colleagues. During Spring 2017, I acted as main author of a project application on behalf of the Faculty of Mathematics and Natural Sciences, University of Oslo. The goal of the project was to tie together a large network of Norwegian and Brazilian universities and research institutions through the organization of an annual conference in Rio de Janeiro. I have acted as co-organizer and session chair in the conference in the period 2016-2018.
