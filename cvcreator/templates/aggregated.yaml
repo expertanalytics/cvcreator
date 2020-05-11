@@ -42,7 +42,7 @@
     \noindent
     {\LARGE \bfseries \color{xaldark}Fact sheet Expert Analytics}
 
-    %(About)s%(Skills)s
+    %(About)s%(Applications)s%(Skills)s
 
     \end{document}
 - logo_top: "%s"
@@ -57,6 +57,13 @@
     - - ""
       - ""
       - ""
+  Applications:
+    - - "\n\n\\section*{Selected applications and projects}\n\n"
+      - ""
+      - "\\\\\n\n"
+    - - ""
+      - ""
+      - "\\\\\n"
   Summary: "\n\n\\section*{Summary}\n\n%s\\\\\n"
   Basic:
     - |
@@ -93,7 +100,7 @@
   Skills:
     - - |
         \Needspace{\cvneedspaceconst\baselineskip}
-        \section*{Aggregated competences and skills}
+        \section*{Software related competences and skills}
         \begin{longtable}{LR}
       - ""
       - "\\end{longtable}\n\n"
@@ -101,7 +108,7 @@
         - " & "
         - "\\\\\n"
       - - ""
-        - ",\n\n"
+        - ", "
         - ""
   Projects:
     - - |
