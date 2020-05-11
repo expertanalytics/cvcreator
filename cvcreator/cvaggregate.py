@@ -3,7 +3,7 @@
 # PYTHON_ARGCOMPLETE_OK
 
 import argparse
-import shutil
+import shutil, os
 import yaml
 from glob import glob
 import cvcreator as cv
@@ -23,15 +23,12 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
         "filename", type=str, nargs="?",
-        help="YAML source file for company profile.").completer = lambda prefix, **kws: glob("*.yaml")
-    #group.add_argument(
-    #    "aggregated", type=str, nargs="+",
-    #    help="YAML source files for personal CVs.").completer = lambda prefix, **kws: glob("*.yaml")
+        help="YAML source file for company profile. Try ./examples/xal_agg.yaml").completer = lambda prefix, **kws: glob("*.yaml")
     group.add_argument(
         "-y", "--yaml", action="store_true",
         help="Create simple YAML example.")
     parser.add_argument(
-        "-t", "--template", type=str, dest="template",
+        "-t", "--template", type=str, dest="template", default="aggregated",
         help="Select which template to use.").completer = (
             lambda prefix, **kws: cv.get_template_names())
     parser.add_argument(
@@ -51,8 +48,7 @@ def main():
         default=(), help="Publications to include. Specify which entris by integers or use all to inclue all entries.")
     parser.add_argument(
         "-a", "--aggregated", type=str, nargs="+",
-        help="Collection of personal CVs to be aggregated.")
-    #Need fix!!!!
+        help="Collection of personal CVs to be aggregated. Try ./test/cv_repo/*.yaml")
     parser.add_argument(
         "-lw", "--logo-width", type=str, dest="logo_width",
         help="Set the logo width.")
@@ -67,14 +63,14 @@ def main():
         help="Set the margin after logo.")
 
     args = parser.parse_args()
-
+    
     try:
         import argcomplete
         argcomplete.autocomplete(parser)
     except:
         pass
 
-    #Need to solve this without checking for aggregated!!
+    #Do we really want this for aggregation?
     if args.yaml:
         yamlfile = cv.get_yaml_example()
         shutil.copy(yamlfile, "./example.yaml")
@@ -94,8 +90,8 @@ def main():
         #Merge the content in a new Dict
         merged_content = merge.merge_configurations(joint_content)
 
-        #Define filename for temporary storage of merged content. Modify to input filename + merged-extension
-        merged_file = "merged_content.yaml"
+        #Define filename for temporary storage of merged content.
+        merged_file = args.filename[:-5]+"_merged.yaml"
 
         #Write the merged content to file
         with open(merged_file, "w") as f:
@@ -154,7 +150,8 @@ def main():
             else:
                 pdffile = src.compile(textxt, args.silent)
 
-                destination = args.output or "."
+                #destination = args.output or "."
+                destination = args.output or os.path.basename(args.filename)[:-5]+"_merged.pdf"#Remove path from filename and store in current folder
                 shutil.copy(pdffile, destination)
 
             
