@@ -59,7 +59,7 @@ def interpolate(outer, inner):
                         print(repr(key))
                         print(repr(val))
                         raise ValueError("Values in dict not properly vetted!")
-            inner = [inner[k] for k in sorted(inner.keys())]
+            inner = list(inner.values())
 
         if isinstance(inner, str):
             inner = [inner]
