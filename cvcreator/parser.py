@@ -59,7 +59,7 @@ def interpolate(outer, inner):
                         print(repr(key))
                         print(repr(val))
                         raise ValueError("Values in dict not properly vetted!")
-            inner = [inner[k] for k in sorted(inner.keys())]
+            inner = list(inner.values())
 
         if isinstance(inner, str):
             inner = [inner]
@@ -130,7 +130,7 @@ def _parse(content, template, name):
                 content[i] = _parse(c, template, name)
 
         elif isinstance(content, dict):
-            for key in sorted(content.keys()):
+            for key in content.keys():
                 content[key] = _parse(content[key], template, key)
 
         elif isinstance(content, (str, int, float)):
@@ -166,7 +166,7 @@ def _parse(content, template, name):
             elif isinstance(template, list) and len(template) == 2:
 
                 directive2, template = template
-                keys = sorted(content.keys())
+                keys = content.keys()
                 for key in keys:
                     content[key] = _parse(content[key], template, key)
 
@@ -174,7 +174,7 @@ def _parse(content, template, name):
 
             elif isinstance(template, list) and len(template) >= 3:
 
-                keys = sorted(content.keys())
+                keys = content.keys()
                 for key in keys:
                     content[key] = _parse(content[key], template, key)
 
