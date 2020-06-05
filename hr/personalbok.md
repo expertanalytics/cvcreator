@@ -226,4 +226,4 @@ I perioden 01.01.2020 til 31.12.2020 er Expert Analytics' tillitsvalgt
 Alexander Fleischer <alexander@xal.no>.
 
 Gjeldende regler for tillitsvalgt beskrives i 
-[Hovedavtalen mellom Tekna og NHO](https://www.tekna.no/globalassets/filer/tariffavtaler)
+[Hovedavtalen mellom Tekna og NHO](https://www.tekna.no/lonn-og-arbeidsvilkar/tariffavtaler/)
