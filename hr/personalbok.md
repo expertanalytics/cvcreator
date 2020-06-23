@@ -44,7 +44,7 @@ eierskifteskjema hvor selskapets informasjon er fylt inn. Fyll inn informasjon
 om nåværende eier, samt nummer som skal overføres, signer, og send til daglig
 leder som håndterer resten.
 
-For tiden benytter vi et abonnement fra Talkmore som inkluderer 7GB data. I
+For tiden benytter vi et abonnement fra Unifon som inkluderer 35 GB data. I
 gitte situasjoner kan dette være for lite. Ta kontakt med daglig leder og
 begrunn behovet for ekstra data - dersom det er arbeidsmessige grunner for
 behovet vil det som hovedregel bli innvilget.
@@ -226,4 +226,4 @@ I perioden 01.01.2020 til 31.12.2020 er Expert Analytics' tillitsvalgt
 Alexander Fleischer <alexander@xal.no>.
 
 Gjeldende regler for tillitsvalgt beskrives i 
-[Hovedavtalen mellom Tekna og NHO](https://www.tekna.no/globalassets/filer/tariffavtaler)
+[Hovedavtalen mellom Tekna og NHO](https://www.tekna.no/lonn-og-arbeidsvilkar/tariffavtaler/)

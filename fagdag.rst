@@ -94,19 +94,18 @@ Slack Channel #zigarillo
 Keywords      Zig, sourcehut, git, email
 ============= =================================================================
 
-schedule-bot -- Slackbot for scheduling fagdag/formiddag events
+bot-api -- Slackbot for scheduling fagdag/formiddag events etc.
 ---------------------------------------------------------------
 
-@b is XAL's trusty slackbot for scheduling and informing about fagdag/formiddag events.
-He also has a sister called @t. She is the test bot. Their brain is the schedule-bot codebase, which is written in Python.
-The schedule-bot project is a branch of The Yak Shaving Project™.
+@c is XAL's trusty slackbot for scheduling and informing about fagdag/formiddag events.
+The bot has a FastAPI backend running on a Heroku server.
 
 ============= =================================================================
 Lead          Alexander Fleischer
-Repository    `<https://github.com/expertanalytics/schedule-bot>`_
-Tasks         `<https://github.com/expertanalytics/schedule-bot/issues>`_
+Repository    `<https://github.com/expertanalytics/bot-api>`_
+Tasks         `<https://github.com/expertanalytics/bot-api/issues>`_
 Slack Channel #schedule-bot
-Keywords      Python, Api, Slack, bot
+Keywords      Python, FastAPI, PostgreSQL, SQLAlchemy, Slack API, Heroku
 ============= =================================================================
 
 Bonus Calculator -- Better and more transparent overview of our bonuses
