@@ -10,38 +10,36 @@ Summary: >
     Thomas is interested in bringing to life the potential of data for artificial intelligence, automation and insight purposes. 
     He will happily engage in the steps of such a process, from analysis and machine learning to data collection and 
     software development.
-
-    Thomas holds a PhD in astrophysics for developing and studying models of the solar atmosphere. After finishing the
-    PhD he worked as an analyst in the public sector. Here he took part in the business intelligence process 
-    as well as data analyses, data modeling and system architecting. Thomas also completed the two year 
-    leadership development program Teach First Norway.  
-
+    Thomas has experience with analysis, data science and programming from the oil and gas and pension and insurance industries, as well as from academia.
+    He holds a PhD in numerical astrophysics and has completed the two year leadership development program Teach First Norway. 
     The varied experience makes Thomas a diverse problem solver with a critical and systematic approach. 
-    He has the ability of quickly adopting to new projects and suggest novel solutions.
+    He is a team player and has the ability of quickly adopting to new projects and suggest novel solutions.
 Skills:
     Languages:
         - "Python"
-        - "R"
         - "SQL"
+        - "R"
         - "C++"
         - "Fortran"
         - "IDL"
         - "Qlik"
     Platforms:
         - "Google Cloud Platform"
+        - "Amazon Web Services"
     Frameworks:
-        - "Numpy"
-        - "Pandas" 
-        - "Scikit-learn" 
-        - "Keras" 
         - "Tensorflow"
+        - "Scikit-learn" 
         - "Spark"
+        - "Flask"
+        - "Plotly dash"
     Tools:
         - "Git"
         - "Linux"
+        - "Docker"
         - "CVS"
         - "Confluence"
         - "Jira"
+        - "Trello"
         - "RStudio"
         - "Latex"
 Languages:
@@ -49,7 +47,7 @@ Languages:
     "English": "fluent"
 Courses:
     - - "2019"
-      - "Data engineering, big data, and machine learning on Google cloud platform. \\textit{Coursera}"
+      - "Data engineering, big data, and machine learning on Google Cloud Platform. \\textit{Coursera}"
     - - "2019"
       - "Apache Spark 2 with Scala. \\textit{Udemy}"
     - - "2018" 
@@ -87,12 +85,11 @@ Work:
     - - "2019"
       - "2019"
       - >
-        Consultant, Accenture. Data science, Google cloud platform, big data and BI business analysis.
+        Consultant, Accenture. Data science, Google Cloud Platform, big data and BI business analysis.
     - - "2016"
       - "2018"
       - >
-        Analyst, Statens pensjonskasse. business intelligence, data science, forecasting, insurance mathematics, 
-        software development, data warehousing and database design.
+        Analyst, Statens pensjonskasse. business intelligence, data science, data architecture, forecasting, insurance mathematics, software development and data warehousing.
     - - "2010"
       - "2012"
       - >
@@ -107,6 +104,28 @@ Interests:
         - "news and podcasts"
 Projects:
     A1:
+        Activity: "Production optimization with Cognite"
+        Period: "11/2019-06/2020"
+        Role: "Data scientist and developer"
+        Staffing: "2-10 developers and data scientists, 3-5 project owners, and 1-3 project managers"
+        Volume: "100\\%"
+        Description: >
+            Thomas worked with production optimization for two different customers in the oil and gas industry.
+            Here he built a system for running physics simulations on demand from a web application.
+            He also prepared and modeled data and built interactive web applications as the front end solution
+            for a gas lift optimization project.
+        Tools: "Python, Pywin32, Grafana, Plotly Dash, Google Cloud Platform"
+    A2:
+        Activity: "Reinforcement learning internal project"
+        Period: "10/2019-11/2019"
+        Role: "Data scientist and developer"
+        Staffing: "1 data scientist"
+        Volume: "100 \\%"
+        Description: >
+            Thomas implemented different reinforcment learning algorithms to solve the classic cart pole problem.
+            The code was packaged as an application programming interface (API) and deployed as a docker container on Amazon web services (AWS).
+        Tools: "Tensorflow, Docker, Python, Amazon Web Services"
+    A3:
         Activity: "New pension premium system at Statens pensjonskasse"
         Period: "04/2017-09/2017"
         Role: "Developer for a premium forecast model"
@@ -114,14 +133,14 @@ Projects:
         Volume: "50\\%"
         Description: >
             The organization was moving a large part of their customers to a new pension 
-            premium system. How the premiums were computed changed, and this had consequences 
+            premium system. The business rules for calculating pension premiums changed, and this had consequences 
             for a large part of the organization. Thomas was responsible for developing the 
             premium forecast system. He built a mathematical 
             description of the model and implemented in a computer program. He designed the 
-            data flow and automated data queries. The various components were built into 
+            data flow and automated the data queries. The various components were built into 
             a software package.
         Tools: "R, SQL, Jira"
-    A2:
+    A4:
         Activity: "Building a data pipeline at Statens pensjonskasse"
         Period: "10/2017-01/2018"
         Role: "Developer and architect"
@@ -133,9 +152,9 @@ Projects:
             for data from different sub processes. The solution included new software for 
             the transform and load of business data, as well as a centralized data base for storage.
             The project presented a unification of data from the relevant sub processes into one standard 
-            data model. The solution resulted in higher efficiency and paved the way for future automation.
+            data model. The solution resulted in higher efficiency and paved the way to further automation.
         Tools: "R, SQL, Jira"
-    A3:
+    A5:
         Activity: "PhD - numerical modeling of the solar atmosphere"
         Period: "08/2012-02/2017"
         # Role: "Qlikview development"
@@ -151,7 +170,7 @@ Projects:
             The efforts resulted in four academic papers in the project, three of these as the first author. 
             All four papers were published in peer-reviewed journals.
         Tools: "Fortran, IDL, Python, Latex"
-    A4:
+    A6:
         Activity: "Business intelligence development at Statens pensjonskasse"
         Period: "06/2016-12/2018"
         Role: "Qlikview development"
@@ -162,7 +181,7 @@ Projects:
             Thomas worked on mapping out business needs and suggested solutions in the datawarehouse. 
             He also worked on report development in QlikView and QlikSense.
         Tools: "R, Qlikview, Qliksense, Jira"
-    A5:
+    A7:
         Activity: "Business intelligence development"
         Period: "04/2019-08/2019"
         Role: "Business analyst"
@@ -173,7 +192,7 @@ Projects:
             He mapped out business needs and requirements, wrote technical 
             specifications and performed administrative tasks related to the operation. 
         Tools: "Qlikview, Qliksense, SAS, Jira, Python"
-    A6:
+    A8:
         Activity: "Teach First Norway candidate"
         Period: "07/2010-06/2012"
         Description: >
@@ -183,4 +202,45 @@ Projects:
             Thomas worked 2 years as a teacher in Gran skole at Furuset in Oslo. Here he taught maths 
             and science from 4th-10th grade (10-16 year). Simultaneously he completed formal teacher 
             training the first year and a leadership program at Equinor the second year.
-    
+Publications:
+    B1:
+        Journal: "Astronomy and Astrophysics"
+        Date: "January 2017"
+        Authors: "Thomas Golding, Jorrit Leenaarts, Mats Carlsson"
+        Title: "Formation of the helium extreme-UV resonance lines"
+        Summary: >
+            Classical modeling of the helium resonance lines of the sun produce intensities roughly an order of magnitude lower than observed values.
+            We find and explain how the modeled helium resonance line intensities are comparable to observed values when including the effects of
+            thick radiative transfer and time dependent ionization in the models. The work was done by producing and analyzing numerical models
+            of the solar atmosphere.
+        DOI: "10.1051/0004-6361/201629462"    
+    B2:
+        Journal: "Astronomy and Astrophysics"
+        Date: "October 2016"
+        Authors: "Jorrit Leenaarts, Thomas Golding, Mats Carlsson, Tine Libbrecht, Jayant Joshi"
+        Title: "The cause of spatial structure in solar He I 1083 nm multiplet images"
+        Summary: >
+            We simulate images of the helium 1033 nm line. The line forms as ionized helium recombines into the lower energy level 
+            and increases the opacity. We describe the most important mechanisms responsible for this recombination and its spatial distribution.
+        DOI: "10.1051/0004-6361/201628490"    
+    B3:
+        Journal: "The Astrophysical Journal"
+        Date: "February 2016"
+        Authors: "Thomas Golding, Jorrit Leenaarts, Mats Carlsson"
+        Title: "Non-equilibrium Helium Ionization in an MHD Simulation of the Solar Atmosphere"
+        Summary: >
+            We develop a model to simulate the solar atmosphere taking into account non-equilibrium ionzation of helium. The code was tested
+            in 2D. We conclude that non-equilibrium ionzation of helium is important for the thermodynamic structure and diagnostics of the upper 
+            chromosphere and lower corona.
+        DOI: "10.3847/0004-637X/817/2/125"    
+    B4:
+        Journal: "The Astrophysical Journal"
+        Date: "March 2014"
+        Authors: "Thomas Golding, Mats Carlsson, Jorrit Leenaarts"
+        Title: "Detailed and Simplified Nonequilibrium Helium Ionization in the Solar Atmosphere"
+        Summary: >
+            We carry out detailed 1D simulations of the solar atmosphere and find that the dominant process in the ionization of helium is 
+            photoionizaiton and direct collisional ionization, counteracted 
+            by radiative recombination cascades. Based on this we develop a simplified description of the physics, suitable for implementing
+            in multidimensional models where more elaborate physics is prohibited by limitations in computing power.
+        DOI: "10.1088/0004-637X/784/1/30"    
