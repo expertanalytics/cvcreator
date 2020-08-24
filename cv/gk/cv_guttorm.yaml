@@ -6,17 +6,18 @@ Basic:
     Email: "guttorm@xal.no"
     Phone: "40468642"
 Summary: >
-    I hold a Master's Degree in Computational Science and Engineering from the University of Oslo.
-    As a consultant I have mainly been engaged in the fintech industry implementing automatic systems for performing
-    anti money laundering risk assessment of customers and creating interfaces for handling payment requests.
-    I have experience working with cloud-based applications, managing data in databases, writing effective and transactional SQL queries,
-    performing numerical simulations, in addition to both creating and integrating with APIs.
+  I hold a Master's Degree in Computational Science and Engineering from the University of Oslo.
+      As a consultant I have primarily been engaged in the fintech industry implementing systems performing automatic
+      anti money laundering risk assessment of customers and creating interfaces for handling payment requests.
+      I have experience working with cloud-based applications, managing data in databases,
+      writing effective and transactional SQL queries, performing numerical simulations,
+      in addition to both creating and integrating with APIs.
 
 Skills:
     Languages:
         - Golang, Python, HTML, SQL
     Frameworks:
-        - Google App Engine, Google Cloud Datastore, Azure, Kubernetes, Flask, Numpy, Splunk
+        - Google Cloud, Azure, Kubernetes, Flask, Tornado, Alembic, Numpy, Keras, Splunk
     Tools:
         - Git, Docker, Linux, \LaTeX
 
@@ -85,6 +86,16 @@ Interests:
 
 Projects:
   A1:
+    Activity: 04/20-07/20 - Software developer, Simula/Smittestopp.
+    Role: Developer.
+    Staffing: 5 developers.
+    Description: >
+      I was contracted by Simula to assist in the development of the contact tracing app Smittestopp that was being
+      created as a response to the COVID-19 pandemic. My main responsibility was to maintain and develop the backend service.
+      This included creating APIs for retrieval of user data, and setting up a system that enabled unit/integration
+      tests to perform actual queries against dockerized replicas of the production database.
+    Tools: Python, Tornado, Alembic, Azure, Kubernetes, Docker.
+  A2:
     Activity: 04/18-12/19 - Software developer, Vipps.
     Role: Developer.
     Staffing: 2-5 developers.
@@ -98,7 +109,7 @@ Projects:
       Most of Vipps' applications run in Kubernetes, and through this project I gained experience in using this system
       for deploying and managing applications.
     Tools: Golang, SQL, Azure, Kubernetes
-  A2:
+  A3:
     Activity: 02/18-04/18 - Software developer, Auka.
     Role: Developer.
     Staffing: Two developers.
@@ -106,14 +117,14 @@ Projects:
       I worked with Auka, previously mCASH, in a project where we created RESTful and idempotent APIs for listing and initiating payments, in accordance with PSD2 standards.
       The work included integration with a payment service provider API and storing transaction data in a NoSQL database.
     Tools: Python, Google App Engine, Google Cloud Datastore, Flask.
-  A3:
+  A4:
     Activity: 01/18-02/18 - Shift schedule optimization.
     Role: Developer.
     Staffing: Two developers.
     Description: >
       I participated in a project for creating a framework for generating optimal work shift schedules by analysing customer data.
     Tools: Python, Numpy, Pandas, Google OR-tools.
-  A4:
+  A5:
     Activity: 08/16-06/17 - Master's thesis.
     Role: Master student.
     Staffing: My self.
