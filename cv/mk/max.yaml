@@ -7,9 +7,9 @@ Basic:
     Phone:   +47 922 98 573
     Nationality: Brazilian
 Summary: >
-    In essence, I am a problem-solver who relies on my extense scientific knowledge and experience in academia. 
+    In essence, I am a problem-solver who relies on my scientific knowledge and experience in academia. 
     I have a PhD in Aerospace Engineering, from the National Institute for Space Research (INPE, 2014) and 
-    before joining Expert Analytics I held two postdoctoral positions, one in Applied Mathematics, at the National Institute for Pure and Applied Mathematics (IMPA, 2014-2016), 
+    before joining Expert Analytics I held two postdoctoral positions: one in Applied Mathematics, at the National Institute for Pure and Applied Mathematics (IMPA, 2014-2016), 
     and one in Chemistry/Applied Mathematics, at the University of Bergen (UiB, 2016-2019). 
     My role in these projects was to develop mathematical models, and its associated numerical solvers, describing experimentally-obtained results. 
     Thus, I have an expertise in understanding real-world problems/data and translating them into a mathematical framework.
@@ -25,7 +25,6 @@ Skills:
         - Fortran
         - Octave
     Frameworks:
-        - Numpy
         - Scipy
         - Matplotlib
         - Pandas
@@ -50,7 +49,7 @@ SelectedSkills:
     "Problem solving": >
         I like solving real-world problems by analysing them through my scientific background.
     "Communication": >
-        I am considered an excellent communicator, specifically regarding simplifying very technical topics to the broader audience.
+        I am considered an excellent communicator, specifically when it comes to simplify very technical topics to the broader audience.
     "Analytical thinking": >
         I have a facility in understanding complex problems in an organized matter, breaking it down into smaler, easier to understand pieces.
 Education:
@@ -105,7 +104,7 @@ Projects:
         Description: >
             This project was funded by Equinor and it aimed at developing mathematical models and numerical solvers for the problem of polymer particles transport in oil-water flow in porous media. 
             The models we developed were based on experimentally-obtained results for enhanced oil recovery. 
-        Tools: openFOAM, MRST, COMSOL
+        Tools: openFOAM, Matlab, MRST, COMSOL
     A2:
         Activity: Mathematical modelling and analysis of medium-temperature oxidation (MTO) of multicomponent oil flow in porous media
         Period: 2014-2016
