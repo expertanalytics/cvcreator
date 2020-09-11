@@ -13,6 +13,9 @@ Summary: >
     department of physics. My education and experience have given me a strong analytical 
     background. In particular, I am proficient in efficient numerical programming in multiple 
     languages, advanced machine learning techniques, data processing and database management. 
+
+    As a consultant for Expert Analytics I have developed solutions for power-grid modelling and data ingestion
+    for Statnett SF.
 Skills:
     Languages:
         - Python
@@ -29,6 +32,7 @@ Skills:
         - Scipy
         - Armadillo
         - MPI
+        - SPARQL
         - MSSQL
     Tools:
         - Git
@@ -60,6 +64,11 @@ Education:
       - >
         B.Sc. in Science, University of Oslo.
 Work:
+    - - 2020
+      - ""
+      - >
+        Consultant at Statnett SF, a large governement operated transmission service operator in the power market. Developed high-performant code for data-ingestion, and
+        code for representing views of the power-grid in the CIM standard.
     - - 2019 
       - ""
       - >
@@ -78,20 +87,20 @@ Interests:
     Sports:
         - Rock Climbing
         - Bouldering
+        - Alpine Skiing
     Miscellaneous:
         - Cooking
         - Gaming
         - Programming
 Projects:
     A1:
-        Activity: "Examining the relationship between student performance and video interactions"
-        Staffing: "3 Researchers"
-        Description: >
-            As part of my work as a research assistant I investigated whether one can predict delayed performance outcomes from video interactions.
-            The project involved taking raw timestamped interactions with topical videos in a physics lab course. These interactions were used to predict
-            student performance on a presentation tied to the topics presented in the videos.
-            This work lead to a paper published in the proceedings of the Physics Education Research Conference 2017.
-        Tools: "Python, SQL"
+        Activity: "Consultant at Statnett SF"
+        Staffing: "4 Developers, project management and domain specialist support"
+        Description : >
+            Developed solutions for representing the power grid model Statnett SF maintains, in Cognite Data Fusion (CDF). The model captures contextual information about components, as well as
+            electrical connectivity. Additionally, we implemented a pipeline from Statnett's data streaming platform to the contextualized model in CDF. The project also involved coding for the integrity 
+            of data ingestion, and several proofs of concept solutions to common power-analysis tasks.
+        Tools: "Python, SPARQL, Cognite Data Fusion, Pandas, Numpy"
     A2:
         Activity: "Autoencoder methods for track identification in the AT-TPC"
         Staffing: "4 Researchers"
@@ -99,5 +108,16 @@ Projects:
             The AT-TPC detector at the National Superconducting Cyclotron Laboratory at Michigan State University requires efficient identification of rections occuring in the detector.
             Investigating the aplication of autoencoder neural networks to the identification of these reactions was the topic of my master's thesis. The project involved the construction
             of a semi-supervised approach to measure the amount of labelled data needed to perform classification. In addition to the semi-supervised approach we investigated
-            autoencoder based clustering algorithms for entirely unsupervised learning of the different reaction types.
+            autoencoder based clustering algorithms for entirely unsupervised learning of the different reaction types. This work led to a paper submitted to the journal Nuclear Instruments and Methods, currently in review.
         Tools: "Python, Tensorflow, Keras"
+    A3:
+        Activity: "Examining the relationship between student performance and video interactions"
+        Staffing: "3 Researchers"
+        Description: >
+            As part of my work as a research assistant I investigated whether one can predict delayed performance outcomes from video interactions.
+            The project involved taking raw timestamped interactions with topical videos in a physics lab course. These interactions were used to predict
+            student performance on a presentation tied to the topics presented in the videos.
+            This work lead to a paper published in the proceedings of the Physics Education Research Conference 2017.
+        Tools: "Python, SQL, Pandas, Numpy"
+
+
