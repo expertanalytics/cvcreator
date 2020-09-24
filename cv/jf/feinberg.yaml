@@ -6,23 +6,24 @@ Basic:
     Email: "jonathan@xal.no"
     Phone: "+47 932 14 474"
 Summary: >
-    I am a specialist in probability theory, statistics and machine learning with
-    heavy focus on numerical programming and practical applications. I am
+    I am a specialist in probability theory, statistics and machine learning
+    with heavy focus on numerical programming and practical applications. I am
     highly analytical in my thinking and can quickly break down open ended
-    complex problems into solvable components. I am also well versed as
-    a programmer, with expert level experience in the Python programming
+    complex problems into manageable components. I am also an experienced
+    programmer, with expert level knowledge in the Python programming
     language.
 Skills:
     Languages:
         - "Bash"
         - "C"
         - "C++"
-        - "Latex"
+        - "\\LaTeX"
         - "MATLAB"
         - "Python"
         - "R"
         - "RST/Markdown"
         - "Vimscript"
+        - "Regular Expression"
     Frameworks:
         - "Armadillo"
         - "GIS"
@@ -35,23 +36,19 @@ Skills:
         - "Statsmodels"
         - "XGBoost"
     Tools:
-        - "CircleCI"
-        - "Docker"
-        - "Git"
-        - "Linux"
-        - "OSX"
-        - "Regular Expression"
-        - "Sphinx"
+        - "Continuous Integration"
+        - "Version Control Systems"
+        - "Documentation Generation"
 Languages:
     Norwegian: "Mother tongue"
     English: "Fluent"
 SelectedSkills:
     Technology: >
-        Large enthusiasm for learning and mastering anything new within
+        I have a high enthusiasm for learning and mastering new skills within
         science, technology and programming.
     Communication: >
-        Able to convey research and condensed knowledge into a presentable and
-        explainable form. Extensive experience as university lecturer and
+        I am able to convey research and condensed knowledge into a presentable
+        and explainable form. Extensive experience as university lecturer and
         teacher.
     Planning: >
         I am a ``Problem solver'', able to see strengths and weaknesses of
@@ -76,7 +73,7 @@ Work:
       - ""
       - Consultant at Expert Analytics
     - - 2016
-      - 2018
+      - ""
       - Guest lecturer at the Department of Informatics, University of Oslo
     - - 2014
       - 2015
@@ -158,20 +155,19 @@ Projects:
         Tools: Python, Armadillo, Sphinx
     A4:
         Activity: Chaospy -- Uncertainty Quantification Toolbox
-        Role: Software Maintainer
+        Role: Co-creator and Maintainer
         Staffing: 2 developers
         Description: >
             Chaospy is an actively maintained open source toolbox containing
-            a large collection of uncertainty quantification tools. It also
-            includes some state-of-the-art tools designed to reduce the
-            computational budget in analysis. Chaospy is currently used as
-            numerical engine in multiple research and development projects.
-            \newline
+            a large collection of uncertainty quantification tools. It includes
+            state-of-the-art tools designed to reduce the computational budget
+            in analysis. Chaospy is currently used as numerical engine in
+            multiple research and development projects. \newline
             \url{https://github.com/jonathf/chaospy}
         Tools: Python, NumPy, SciPy
     A5:
         Activity: Numpoly -- Multivariate polynomials as NumPy datatype
-        Role: Software Maintainer
+        Role: Creator and Maintainer
         Staffing: 1 developer
         Description: >
             Numpoly is an open source library for creating, manipulating
