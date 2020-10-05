@@ -5,18 +5,19 @@ Basic:
     Birth: "7$^{th}$ January 1975"
     Email: "ada@xal.no"
     Phone: "+47 98887847"
+    Nationality: "Spanish"
 Summary: >
-    I am a physicist with 20 years of experience in academia doing research in Astrophysics. I hold a PhD in Physics from 2003 specializing in Astrophysics. My expertise includes image analysis, time-series analysis, spectral analysis, feature recognition and analytical models. With time I expanded my research topics and used different methods including statistical data analysis. In 2019 I moved to the private industry sector where I started using machine learning algorithms. \\
+    I am a physicist with 20 years of experience in academia in the field of Astrophysics. I hold a PhD in Physics from 2003. My expertise includes image analysis, time-series analysis, signal processing, feature recognition and analytical models. With time I expanded my research topics and used different methods including statistical data analysis. In 2019 I moved to the private industry sector where I started using machine learning algorithms. \\
     I consider myself perseverant and used to overcome adversity in a scientific environment by being creative, hard-working, and having an analytical mindset. Excellence, accuracy and detail define my scientific work. My colleagues regard me as an excellent communicator and an all-terrain asset. I have experience in leading international collaborations, management of research grants, student mentoring and scientific outreach.
 Skills:
     Scientific skills:
         - "Image analysis, signal processing, pattern recognition, anomaly detection, analysis of time series, analytical modelling, statistical analysis"
     Frameworks:
-        - NumPy, SciPy, Pandas, Matplotlib, Keras
+        - NumPy, SciPy, Pandas, Matplotlib, TensorFlow/Keras
     Languages:
         - "Python, IDL, Octave/Matlab, Fortran"
     Tools:
-        - "Mac OS X, Unix, Linux, Jupyter Notebook, Git, AWS Cloud, LaTex"
+        - "Mac OS X, Unix, Linux, Jupyter Notebook, Git, AWS, LaTex"
 Languages:
     "Spanish": "mother tongue"
     "Catalan": "mother tongue"
@@ -92,14 +93,14 @@ Interests:
          Alpine skiing, scuba diving, martial arts, white-water rafting
 Projects:
     A1:
-        Activity: "Audio Analytics predictive maintenance"
+        Activity: "Audio Analytics predictive maintenance in Hydropower"
         Period: "2020"
         Role: "Data Scientist"
         Staffing: "team of 6"
         Description: >
             This project investigates whether analysing audio profiles from heavy rotating machinery (hydropower generators) and applying deep learning algorithms can help identifying and isolating faulty units. We take a non-invasive approach that allows continuation of power production while predictive maintenance is being carried out. I contributed to the Machine Learning team developing appropiate signal processing algorithms to be run on edge devices. I was involved in defining the analytical solution as well as in the maintenance of the infrastructure which involves edge devices and a cloud services platform.
             This project is very novel and poses a research challenge. As such, the project is showcased as the Norwegian user-case in a H2020-ECSEL grant application in which Expert Analytics is a partner.
-        Tools: "Python, AWS Cloud, Scipy, Git, Jupyter Notebook, TensorFlow, Keras"
+        Tools: "Python, AWS Cloud, Scipy, Github, Gitlab, Jupyter Notebook, TensorFlow, Keras"
     A2:
         Activity: "Observing and understanding flux emergence using IRIS and SST coordinated data. Research project funded by the Research Council of Norway."
         Period: "2016-2019"
