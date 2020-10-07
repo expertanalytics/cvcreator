@@ -100,12 +100,11 @@ Projects:
         Staffing: 20 Developers/Data Scientists/Bioinformaticians
         Description: >
             The company develops bioinformatics software for predicting
-            tumor targets for use in precision cancer immunotherapy.
+            tumor targets, for use in precision cancer immunotherapy.
             The goal is to select the best targets in the patients tumor,
-            from from genomic data, to be used in cancer immunotherapy.
+            from genomic data, to be used in cancer immunotherapy.
             My role is to develop machine-learning methods applied to genomic
-            data for predicting the end result of various different biological
-            processes.
+            data for predicting the end result of various biological processes.
         Tools: Python, Keras/Tensorflow, Numpy, Pandas, Scikit-learn, and XGBoost
     A2:
         Activity: "Ph.D.: Uncertainty quantification in neuroscience."
@@ -114,7 +113,7 @@ Projects:
         Staffing: 1 researcher
         Volume: 75\%
         Description: >
-            The goal of my Ph.D. has been to create a Python toolbox
+            In my Ph.D. I created a Python toolbox
             tailored to perform uncertainty quantification and sensitivity analysis
             of computational neuroscience models.
             The toolbox implements both quasi-Monte Carlo methods
@@ -129,7 +128,7 @@ Projects:
         Staffing: 4 researchers
         Volume: 25\%
         Description: >
-            I co-authored a new textbook titled
+            I co-authored a textbook titled
             ``Introduction to analysis and modeling in biology with Python'',
             that adress the general lack of computational education in biology.
             This textbook is used as curriculum in the course
