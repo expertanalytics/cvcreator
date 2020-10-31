@@ -1,0 +1,145 @@
+Basic:
+    Name: "Trygve B\\ae{}rland"
+    Address: "Fagerliveien 1"
+    Post: "0587, Oslo"
+    Birth: "11.09.1991"
+    Email: "trygve@xal.no"
+    Phone: "(+47)93839327"
+Summary: >
+    Holds a civil engineering degree in industrial mathematics from NTNU,
+    and a Ph.D. at the department of mathematics, University of Oslo.
+    Excellent analytical skills with a strong foundation in mathematics and physics.
+    Has written computational code extensively throughout work in industry and research.
+Skills:
+    Languages:
+        - "Python"
+        - "C and C++"
+        - "Fortran"
+        - "Matlab"
+    Tools:
+        - "Git"
+        - "Linux"
+        - "Docker"
+        - "Confluence"
+        - "Jira"
+        - "LaTex"
+        - "SWIG"
+        - "Boost libraries"
+        - "FEniCS"
+        - "MFEM"
+        - "Pytest"
+        - "Doctest"
+        - "Sphinx"
+Education:
+    - - "2015"
+      - "2019"
+      - >
+        Ph.D. in mathematics, University of Oslo. Preconditioners for discretizations of multiphysics problems.
+        The work included developing efficient solvers, proving mathematically their robustness, and
+        developing numerical software to exhibit their efficacy.
+        Research results were published in scientific journals and presented at conferences.
+    - - "2010"
+      - "2015"
+      - >
+        Civil engineer in industrial mathematics from the norwegian university of science and technology, NTNU.
+        Master's thesis was on the analysis of spectral methods on anamolous diffusion equations.
+        Many courses in physics, mathematics and computer science throughout the education.
+Work:
+    - - "2019"
+      - ""
+      - >
+        Consultant, Expert Analytics
+    - - "2015"
+      - >
+        Maple T.A. in course on multi-variable calculus, NTNU.
+        Creating electronic exercises and guiding students in their course work.
+    - - "2014"
+      - >
+        Summer internship at Sintef MARINTEK, construction technique.
+        Benchmarking numerous fast Fourier transform implementations in Fortran, C, and CUDA.
+    - - "2014"
+      - >
+        Lead teaching assistant in course on linear algebra, NTNU.
+        Responsible for guiding and helping the other teaching assistants in the course.
+    - - "2012"
+      - "2013"
+      - >
+        Summer internships as pricing analyst for If skadeforsikring, liability insurance.
+        Worked on, amongst other things, designing and implementing new pricing models for corporate insurances.
+    - - "2012"
+      - "2013"
+      - >
+        Film club manager for Studentersamfundets Filmklubb. The film club had weekly movie screenings throughout the school year.
+        Responsibilities included acquiring screening rights, organizing events, as well as working with the treasurer on budget and accounting.
+    - - "2011"
+      - "2012"
+      - >
+        Treasurer for the cultural committee at Studentersamfundet in Trondheim.
+         The cultural committee is responsible for organizing events during weekdays at Studentersamfundet in Trondheim.
+         The treasurer is responsible for working out yearly budgets and accounting for the committee.
+         Responsibilities also included organizing cultural events like debates and lectures.
+    - - "2011"
+      - "2014"
+      - >
+        Teaching assistant in various courses on mathematics at NTNU.
+        Introductory courses on analysis and calculus.
+
+    - - "2010"
+      - "2011"
+      - >
+        Work during summers as home help for Drammen municipality.
+Interests:
+    "Technology":
+        - "programming"
+        - "numerical software"
+    "Personal":
+        - "sewing"
+        - "tennis"
+        - "playing music"
+Projects:
+    A1:
+        Activity: "Short term production planning with Statkraft"
+        Period: "08/2020-"
+        Role: "Backend developer"
+        Staffing: "3-5 developers, 3-7 project owners, 1 project manager"
+        Volume: "50-100\\%"
+        Description: >
+                Trygve worked with development of a tool for hydro power production planning for Statkraft.
+                Here he built a system for solving various optimization problems on demand from either
+                Python scripts or web applications.
+        Tools: "Python, C++, Angular, Apache"
+    A2:
+        Activity: "Analysis platform development with Statkraft"
+        Period: "02/2018-"
+        Role: "Developer"
+        Volume: "50-100\\%"
+        Description: >
+        Tools: "Python, C++, Bokeh, Gitlab, systemd"
+Languages:
+    "Norwegian": "Native speaker and writer"
+    "English": "Speak and write fluently"
+Publications:
+    B1:
+        Journal: "Computational Methods in Applied Mathematics"
+        Date: "June 2017"
+        Authors: "Trygve B\\ae{}rland, Jeonghun J. Lee, Kent-Andre Mardal, Ragnar Winther"
+        Title: "Weakly Imposed Symmetry and Robust Preconditioners for Biot's Consolidation Model"
+        DOI: "https://doi.org/10.1515/cmam-2017-0016"
+    B2:
+        Journal: "Astronomy \\& Astrophysics"
+        Date: "October 2017"
+        Authors: "D.S. Seljebotn, T. B\\ae{}rland, H.K. Eriksen, K.-A. Mardal, I.K. Wehus"
+        Title: "Multi-resolution Bayesian CMB component separation through Wiener filtering with pseudo-inverse preconditioner"
+        DOI: "https://doi.org/10.1051/0004-6361/201732037"
+    B3:
+        Journal: "SIAM Journal on Scientific Computing"
+        Date: "April 2019"
+        Authors: "Trygve B\\ae{}rland, Miroslav Kuchta, Kent-Andre Mardal"
+        Title: "Multigrid Methods for Discrete Fractional Sobolev Spaces"
+        DOI: "https://doi.org/10.1137/18M1191488"
+    B4:
+        Journal: "Numerical Methods for Partial Differential Equations"
+        Date: "July 2020"
+        Authors: "Trygve B\\ae{}rland, Miroslav Kuchta, Kent-Andre Mardal, Travis Thompson"
+        Title: "An observation on the uniform preconditioners for the mixed Darcy problem"
+        DOI: "https://doi.org/10.1002/num.22500"
