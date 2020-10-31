@@ -114,6 +114,8 @@ Projects:
         Role: "Developer"
         Volume: "50-100\\%"
         Description: >
+                Trygve worked with development, maintenance and surveillance on the computer clusters used in many of Statkraft's
+                analysis pipelines. 
         Tools: "Python, C++, Bokeh, Gitlab, systemd"
 Languages:
     "Norwegian": "Native speaker and writer"
