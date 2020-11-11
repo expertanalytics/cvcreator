@@ -67,6 +67,23 @@ et relevant behov. Eksempler på slikt utstyr o.l kan være:
 Terskelen for å diskutere behov for utstyr er lav; diskusjonen tas med daglig
 leder.
 
+### Dekning av ekstraordinære kostnader under pandemier
+
+Under pandemier kan myndigheter gi pålegg om at arbeid skal utføres fra
+hjemmekontor så langt dette er praktisk mulig. I en slik situasjon kan en kunde
+allikevel kreve fremmøte i sine lokaler på enkelt-dager, for utførelse av
+oppgaver eller deltakelse i møter. Når fremmøte hos kunde i gjennomsnitt skjer
+sjeldnere enn 3 dager per uke over en kalendermåned, regnes hjemmekontor som
+arbeidssted. Dersom det foreligger et krav eller en sterk forventning fra kunde
+om fremmøte i kundes lokaler, dekkes ekstraordinære kostnader som følger:
+
+* Kostnader til nødvendig smittevernutstyr for reise til og fra kunde dekkes.
+* Kostnader i forbindelse med reise til kunde dekkes når arbeidssted er
+  hjemmekontor. Det forutsettes at rimeligste praktisk mulige reisemiddel
+  benyttes; det vil som hovedregel bety vanlig offentlig kommunikasjon. 
+
+Spør daglig leder hvis du er usikker på om spesifikke reiser dekkes.
+
 ## Medarbeidersamtale
 
 Det gjennomføres medarbeidersamtale en gang i året, som regel i perioden
