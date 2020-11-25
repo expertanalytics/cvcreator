@@ -116,7 +116,7 @@ Projects:
             developing the implementation to be used with the rest of the project. I worked on
             the overall model design in collaboration with the rest of the team, and on the data
             structure components of the model, and on parsing, analysing, and cleaning existing
-            Json data for before importing.
+            Json data before importing.
         Tools: Python, TypeScript, Git, JIRA, and Confluence
     A2:
         Activity: "Prototype IoT platform at Statkraft"
