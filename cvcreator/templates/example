@@ -5,6 +5,7 @@ Basic:
     Birth: "birthdate"
     Email: "email adresse"
     Phone: "phone number"
+    Nationality: "Norwegian"
 Summary: >
     a short description of who you are
     over multiple line if you wanna.
@@ -56,8 +57,19 @@ Interests:
 Projects:
     A1:
         Activity: "project title"
+        Period: "start to end"
         Role: "your role in project"
         Staffing: "who worked on project"
+        Volume: "Volume of work (eg.\ percent of full time)"
         Description: >
             short description of project and your involvement
         Tools: "tools used"
+Publications:
+    B1:
+        Journal: "title of journal"
+        Date: "publication date"
+        Authors: "the authors of the work"
+        Title: "the title of the work"
+        Summary: >
+            brief summary of work
+        DOI: "the DOI link to the work"

@@ -1,0 +1,61 @@
+version-tags: &version-tags
+  tags:
+    only: /v\d+\.\d+\.\d+/
+
+version: 2
+jobs:
+  tests:
+    environment:
+      PIPENV_VENV_IN_PROJECT: true
+    docker:
+      - image: circleci/python:3.6.10
+    steps:
+      - checkout
+      - run:
+          name: "Installation"
+          command: |
+              pipenv install --deploy --dev
+              source .venv/bin/activate
+              python setup.py install
+      - run:
+          name: "Compile CV documents"
+          command: |
+              source .venv/bin/activate
+              cvcreate examples/example.yaml --output output.tex --latex
+      - run:
+          name: "Run tests"
+          command: |
+              source .venv/bin/activate
+              pytest --doctest-modules cvcreator/ test/
+  deploy:
+    environment:
+      PIPENV_VENV_IN_PROJECT: true
+    docker:
+      - image: circleci/python:3.6.10
+    steps:
+      - checkout
+      - run:
+          name: "Build wheel"
+          command: |
+              pipenv install --deploy --dev
+              source .venv/bin/activate
+              python setup.py sdist bdist_wheel --universal
+      - run:
+          name: "Publish to PyPI"
+          command: |
+              source .venv/bin/activate
+              twine upload --username jonathf --password $PYPI_PASSWORD dist/*
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - tests:
+          filters:
+            <<: *version-tags
+      - deploy:
+          requires:
+            - tests
+          filters:
+            <<: *version-tags
+            branches:
+                ignore: /.*/

@@ -40,7 +40,7 @@
     \vspace*{%(logo_margin)s}
 
     \noindent
-    {\LARGE \bfseries \color{xaldark}Curriculum Vitae for %(Name)s}
+    {\LARGE \bfseries \color{xaldark}Fact sheet Expert Analytics}
 
     %(Basic)s%(Summary)s%(Skills)s%(Education)s%(Courses)s%(Work)s%(Languages)s%(SelectedSkills)s%(Interests)s%(Projects)s%(Publications)s
 
@@ -50,6 +50,7 @@
   logo_width: "%s"
   logo_margin: "%s"
   Name: "%s"
+  Summary: "\n\n\\section*{About us}\n\n%s\\\\\n"
   Basic:
     - |
         \Needspace{\cvneedspaceconst\baselineskip}
@@ -82,12 +83,10 @@
 
       Nationality: |
         Nationality: \>%s \\
-
-  Summary: "\n\n\\section*{Summary}\n\n%s\\\\\n"
   Skills:
     - - |
         \Needspace{\cvneedspaceconst\baselineskip}
-        \section*{Technical skills}
+        \section*{Aggregated competences and skills}
         \begin{longtable}{LR}
       - ""
       - "\\end{longtable}\n\n"
@@ -171,7 +170,7 @@
   Projects:
     - - |
         \Needspace{\cvneedspaceconst\baselineskip}
-        \section*{Extended descriptions of selected projects}
+        \section*{Selected customer projects}
         \begin{longtable}{@{}LR}
       - |
         \end{longtable}

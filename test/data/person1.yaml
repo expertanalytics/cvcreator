@@ -1,0 +1,68 @@
+Basic:
+    Name: "Ola Norman"
+    Address: "Tordenskiolds gate 3"
+    Post: "0160 Oslo"
+    Birth: "01.01.1989"
+    Email: "on@xal.no"
+    Phone: "+47 987 65 432"
+Summary: >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+Skills:
+    Languages:
+        - "Bash"
+        - "C"
+        - "C++"
+        - "Python"
+    Frameworks:
+        - "GIS"
+        - "Keras/Tensorflow"
+        - "NumPy/SciPy"
+        - "Pandas"
+    Tools:
+        - "Docker"
+        - "Git"
+        - "Linux"
+Languages:
+    Norwegian: "Mother tongue"
+    English: "Fluent"
+SelectedSkills:
+    Technology: >
+        I like turtles.
+    Communication: >
+        I know the best words.
+    Planning: >
+        Say what now?
+Education:
+    - - 2015
+      - "Ph.D. in 'Livets harde skole', Somewhere up north of Norway."
+Work:
+    - - 2018
+      - ""
+      - Consultant at Expert Analytics
+    - - 1999
+      - 2018
+      - Drug dealer
+Interests:
+    Personal:
+        - Traveling
+    Tech:
+        - Open Source Software
+        - Python programming
+Projects:
+    A1:
+        Activity: Drug dealing
+        Role: Distributer
+        Staffing: 5 distributers, 1 enforcer
+        Description: >
+            You got to do what you need to, to survive, man.
+        Tools: Python mostly.
+Publications:
+    B1:
+        Journal: Journal of Not-really-a-Journal
+        Title: "Thug life"
+        DOI: "{\\url https://doi.org/0.1016/j.jocs.2015.08.008}"
+        Authors: J Norman
+        Date: 2015

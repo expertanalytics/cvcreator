@@ -1,0 +1,39 @@
+Summary: >
+    Expert Analytics is a software consultancy company based in Oslo, Norway.
+    We offer high-quality technology solutions to both domestic and international customers.
+    All our experts have a degree (Ph.D or M.Sc.) from the natural sciences (math, physics, etc.) and
+    years of hands-on experience in computational science and modern industrial software development.
+    This translates into an ability to analyse and solve complex challenges for the client, and
+    it guarantees that our solutions will meet their needs and beyond.
+Skills:
+    Applications:
+        - "list of experiences, applications and stuff from projects, e.g. Machine learning, Optimization algorithms, Open source programming"
+        - ...
+    Languages:
+        - "list of programming language"
+        - ...
+    Packages:
+        - "list of libraries, modules and packages"
+        - ...
+    Tools:
+        - "list of software and frameworks"
+        - ...
+Projects:
+    A1:
+        Activity: "project title"
+        Period: "start to end"
+        Role: "your role in project"
+        Staffing: "who worked on project"
+        Volume: "Volume of work (eg.\ percent of full time)"
+        Description: >
+            short description of project and your involvement
+        Tools: "tools used"
+Publications:
+    B1:
+        Journal: "title of the journal"
+        Date: "Date work was published"
+        Authors: "Authors for work, in correct order"
+        Title: "Title of the work"
+        Summary: >
+            A short summary of the work
+        DOI: "The DOI link to the work"
