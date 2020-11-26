@@ -1,202 +1,252 @@
 Basic:
-    Name:    Vinzenz Gregor Eck
-    Address: Akersbakken 25 D
-    Post: 0172 Oslo
-    Birth: 21.09.1987
-    Email: vinzenz@xal.no
-    Phone: 45124193
-    
+	Name: Vinzenz Gregor Eck
+	Address: Hubertusstr. 83
+	Post: 82131 Gauting
+	Birth: 21.09.1987
+	Email: vinzenz.eck@expertanalytics.de
+	Phone: +49/162/7935345
+
 Summary: >
-    I am a curious, pragmatic, creative problem solver.
-    I hold a PhD in biomechanical engineering, focusing on stochastic 
-    simulations of the blood flow in the human arterial system.
-    This interdisciplinary work included working within engineering, medicine, biology, 
-    software development and statistics.
-    My educational background is in mechanical engineering, with focus on numerical
-    methods and bio-materials.
-    Beside my studies, I worked in several different fields such as virtual commissioning, petroleum research,
-    biomechanics research.
-    My educational and work experience gave me strong analytic skills, the ability to
-    see problems from different angles and strengthened my communications skills.
-    In the last years I was mainly programming in Python, which I have used to
-    write a comprehensive simulation software.
-    I am also familiar with other languages, like C and C++, and can easily adapt beyond this.
-    
+	I am the founder of Expert Analytics GmbH and a curious, pragmatic and creative problem solver.
+	My educational background is in mechanical engineering, and I hold a PhD in bio-mechanical engineering.
+	I have many years experience in software engineering, designing and implementing:
+	on-edge compute engines, backend systems for data analysis and predictive maintenance, asset/domain models,
+	data-driven analysis, 2d/3d visualisations, stochastic and physics based simulators and numerical solvers.
+	In the last years I was mainly programming in Python, but I am also familiar with other languages, like C and C++,
+	and can easily adapt beyond those.
+
 Skills:
-    Languages:
-        - Python
-        - C
-        - C++
-        - \LaTeX
-        - MATLAB
-        - XML
-        - Yaml
-        - Json
-        
-    Frameworks:
-        - GTK
-        - Matplotlib
-        - NumPy
-        - SciPy
-        - VTK
-        - Mayavi
-        - OpenGl
-        - OSG
-        - Chaospy
-        - Sphinx
-        - DOT
-        - GraphViz
-        - Bokeh
-        
-    Tools:
-        - Git
-        - Subversion
-        - Linux
-        - Eclipse
-        - PyCharm
-        - VirtualBox
-        - Inkscape
-        
+	Languages:
+		- Python
+		- C
+		- C++
+
+	Frameworks:
+		- NumPy
+		- SciPy
+		- Statsmodel
+		- HDBSCAN
+		- Scikit-learn
+		- Chaospy
+		- Sphinx
+		- DOT
+		- GraphViz
+		- Matplotlib
+		- Bokeh
+		- GTK
+		- VTK
+		- OSG
+		- OpenGl
+
+	Tools:
+		- Git
+		- Subversion
+		- Linux
+		- Eclipse
+		- PyCharm
+		- VirtualBox
+		- Inkscape
+		- Amazon AWS
+		- Microsoft Azure
+
 Languages:
-    German: Mother tongue
-    Norwegian: Fluent 
-    English: Fluent
-    French: Basic
-    
+	German: Mother tongue
+	Norwegian: Fluent
+	English: Fluent
+	French: Basic
+
 SelectedSkills:
-    
-    Problem solving: >
-        I like solving problems with my analytic mind and my ability to plan projects
-        combined with knowledge in engineering and programming.
-        
-    Communications: >
-        I am proficient in presenting difficult contents understandably and in
-        communicating within the context of interdisciplinary and international teams.
-        
-    Management: >
-        I am experienced in motivating and leading small groups and planning projects.
-        
+
+	Problem solving: >
+		I like solving problems and combine my knowledge in engineering and IT.
+
+	Communications: >
+		I am proficient in presenting difficult contents understandably and tailored to the target audience.
+
+	Management: >
+		I am experienced in motivating and leading groups and in planning projects.
+
 Education:
-    - - 2016
-      - >
-        Ph.D. in Biomechanics from the Institute of Structural Engineering, 
-        Norwegian University of Science and Technology, Trondheim.
-        Title of dissertation:
-        "Uncertainty quantification and sensitivity analysis for cardiovascular applications".
-        Supervisor: Leif Rune Hellevik
-        
-    - - 2013   
-      - >
-        Diplom Engineer in mechanical engineering, Technische Universität München, Germany.
-        
-    - - 2012 
-      - >
-        Master of Science in Technology, Norwegian University of Science and Technology, Trondheim, Norway.
-        Conducted within the Double Degree Program T.I.M.E. (Top Industrial Manager for Europe).
-        Title of thesis: "Arterial Flow and Pulse Wave Propagation in one dimensional 
-        Arterial Networks with Statistically Distributed Model Parameters". Supervisor: Leif Rune Hellevik
+	- - 2016
+	  - >
+		Ph.D. in Biomechanics from the Institute of Structural Engineering,
+		Norwegian University of Science and Technology, Trondheim.
+		Title of dissertation:
+		"Uncertainty quantification and sensitivity analysis for cardiovascular applications".
+		Supervisor: Leif Rune Hellevik
+
+	- - 2013
+	  - >
+		Diplom Engineer in mechanical engineering, Technische Universität München, Germany.
+
+	- - 2012
+	  - >
+		Master of Science in Technology, Norwegian University of Science and Technology, Trondheim, Norway.
+		Conducted within the Double Degree Program T.I.M.E. (Top Industrial Manager for Europe).
+		Title of thesis:
+		"Arterial Flow and Pulse Wave Propagation in one dimensional
+		Arterial Networks with Statistically Distributed Model Parameters".
+		Supervisor: Leif Rune Hellevik
 Work:
-    - - 2016
-      - 
-      - Consultant at Expert Analytics
-    
-    - - 2012
-      - 2013 
-      - > 
-        Ph.D. student at the
-        Department of Structural Engineering, NTNU, Trondheim.
-    
-    - - 2013
-      - 2012
-      - > 
-        20\% Department Engineer at the
-        Department of Circulation and Medical Imaging, Faculty of medicine, NTNU, Trondheim.
-        Development of a hemodynamic-simulation tool for one-dimensional arterial networks.
-    
-    - - 2012
-      - 2012
-      - >
-        Teaching Assistant at the
-        Department of Energy and Process Engineering, NTNU, Trondheim.
-        Elaboration of fluid mechanic exercise in Matlab for master studies in engineering at NTNU.
-    
-    - - 2011
-      - 2012
-      - >
-        Assistant Researcher at the
-        Department for Petroleum Engineering and Applied Geophysics, NTNU, Trondheim.
-        Set up and conduction of core-flooding experiments under high pressure,
-        to determine the distribution of Oil, Water and CO2 on a micro scale within a stone sample.
-    
-    - - 2007
-      - 2010
-      - >
-        Assistant Researcher at the
-        iwb – Institute for Machine Tools and Industrial Management, TUM, Munich.
-        Programming a simulation software of material flow based on physical laws 
-        for the virtual commissioning of production systems.
-        
-        
+	- - 2020
+	  -
+	  - Founder and Managing Director of Expert Analytics Gmbh, Munich
+
+	- - 2016
+	  - 2020
+	  - Consultant at Expert Analytics AS, Oslo
+
+	- - 2012
+	  - 2013
+	  - >
+		Ph.D. student at the
+		Department of Structural Engineering, NTNU, Trondheim.
+
+	- - 2013
+	  - 2012
+	  - >
+		20\% Department Engineer at the
+		Department of Circulation and Medical Imaging, Faculty of medicine, NTNU, Trondheim.
+		Development of a hemodynamic-simulation tool for one-dimensional arterial networks.
+
+	- - 2012
+	  - 2012
+	  - >
+		Teaching Assistant at the
+		Department of Energy and Process Engineering, NTNU, Trondheim.
+		Elaboration of fluid mechanic exercise in Matlab for master studies in engineering at NTNU.
+
+	- - 2011
+	  - 2012
+	  - >
+		Assistant Researcher at the
+		Department for Petroleum Engineering and Applied Geophysics, NTNU, Trondheim.
+		Set up and conduction of core-flooding experiments under high pressure,
+		to determine the distribution of Oil, Water and CO2 on a micro scale within a stone sample.
+
+	- - 2007
+	  - 2010
+	  - >
+		Assistant Researcher at the
+		iwb – Institute for Machine Tools and Industrial Management, TUM, Munich.
+		Programming a simulation software of material flow based on physical laws
+		for the virtual commissioning of production systems.
+
 Interests:
-    Music:
-        - Guitar, Bass, Clarinet, Percussion
-        - Music production (recording, mixing and mastering)
-        
-    Physical:
-        - Hiking
-        - Dancing
-        
+	Music:
+		- Guitar, Bass, Clarinet, Percussion
+		- Music production (recording, mixing and mastering)
+
+	Physical:
+		- Hiking
+		- Bouldering
+		- Dancing
+
 Projects:
-    A4:
-        Activity: ve3 - virtual commissioning software
-        Role: software developer
-        Staffing: 2 software developers
+	ve3:
+		Activity: ve3 - virtual commissioning software
+		Role: Developer
+		Staffing: 2 developers
+		Description: >
+			Realtime simulation software for the virtual commissioning of production systems,
+			simulating the material flow based on physical laws.
+			I was working manly with refactoring in addition to adding new features such
+			as fluids based on smoothed-particle hydrodynamics and flexible machine parts
+			and process goods.
+		Tools: c++, XML, OSG, 3dMax, NVIDIA PhysX, NVIDIA Cuda
+
+	starfish:
+		Activity: STARFiSh - stochastic arterial flow simulation
+		Role: Main developer and researcher
+		Staffing: 1-2 researchers
+		Description: >
+			STARFiSh is an open-source simulation program to simulate
+			blood flow in arterial networks with stochastic input parameters.
+			The software combines an advanced one-dimensional
+			fluid-structure-interaction code with methods for
+			uncertainty quantification and sensitivity analysis.
+			I wrote the software as part of my Ph.D. thesis.
+		Tools: Python, XML, Sphinx, NumPy, SciPy, GTK, OpenGl, ChaosPy, DOT
+
+	esa:
+		Activity: The Planck Legacy Archive Added Value Interface (European Space Agency)
+		Staffing: 5 developers
+		Description: >
+			The Planck Legacy Archive is a website aimed at giving the general
+			public the opportunity to access and use data from the ESA Planck satellite.
+			In 2015 ESA started work on implementing an Added Value Interface to this website,
+			which aims to allow users to manipulate and analyse data online before downloading,
+			using various data cleaning and analysis techniques.
+			My role in this project was to profile the memory usage of all analysis
+			and map manipulation algorithms. The analysis results helded to determine the optimal size and
+			type of the asynchronous workers spawned on all virtual machines.
+			As consequence, the system handles all user requests in the most efficient way.
+		Role: Profiling of the system performance
+		Tools: Python, Docker, ANOVA
+
+	sk_ltm:
+		Activity: Statkraft - Longterm Power Management - Visualization
+		Role: Main developer and architect
+		Staffing: 1 developer
+		Description: >
+			In Statkraft, Longterm Power Management is based on numerical simulations of complex water way systems,
+			including reservoirs, power stations, and pumps. For the analysis and usage of these simulation results,
+			visualization tools are needed. The goal was to visualize all data in a convenient and accessible manner
+			via web services based on Bokeh.
+			The projekt resulted in a dashboard suite which enables fast and intuitively creation of web dashboards.
+			Statkaft published the suite as Open Source Software among it's Shyft application.
+			The dashboard suite has an integrated time series viewer to visualized large amount of high frequent data
+			in a fast and effective manner. Also, graph visualization tools are included, which are for example used to
+			auto-generate and visualize the topology of arbitrary water way systems at run time.
+			The visualization tool is now used by several projects in Statkraft.
+		Tools: Python, DOT, GraphViz, Bokeh, NumPy, XML, Yaml, Json
+
+	sk_wind_turbines:
+	  Activity: Root cause analysis in Windturbines
+	  Staffing: 2 analysts
+	  Description: >
+		Random failing equipment in windturbines lead to losses in the magnitude of millions for our customer. With the analysis of weather and production data we determined the root cause and could suggest actions to save the remaining equipment and keep the production up. With a lifetime predictor we could estimate the remaining lifetime of each turbine individually. Due to the data driven mitigation action we proposed equipment was saved, and the losses considerably limited.
+	  Role: Main analyst
+	  Tools: Python, NumPy, Statsmodel, ANOVA, ARIMA, Pandas
+
+	sk_machine_learning_platform:
+        Activity: Statkraft - Machine learning platform
+        Staffing: 2 developer
         Description: >
-            Realtime simulation software for the virtual commissioning of production systems,
-            simulating the material flow based on physical laws.
-            I was working manly with refactoring in addition to adding new features such
-            as fluids based on smoothed-particle hydrodynamics and flexible machine parts
-            and process goods.
-        Tools: c++, XML, OSG, 3dMax, NVIDIA PhysX, NVIDIA Cuda
-        
-    A3:
-        Activity: STARFiSh - stochastic arterial flow simulation
-        Role: Main developer and researcher
-        Staffing: 1-2 researchers
+            Statkraft wanted a common platform to scale and facilitate machine learning projects from the explorative phase
+            to production.
+            We designed and implemented a flexible and scalable solution that allows for the integration of all common machine
+            learning libraries into one framework. With our framework machine learning workflows can be defined,
+            run and shared among teams. The unique feature is that its fast and lightweight backend
+            is optimized to run ml-workflows in production on Statkraft's systems.
+            This enables a fast transition from prototypes to validated and tested production code.
+        Role: Main developer and architect
+        Tools: Python, Yaml, Json, HDBSCAN, scicit-learn, keras, tensorflow
+
+	sk_predicive_maintenance:
+        Activity: Statkraft - Predictive Maintenance for Hydropower
+        Staffing: 2 developer
         Description: >
-            STARFiSh is an open-source simulation program to simulate
-            blood flow in arterial networks with stochastic input parameters.
-            The software combines an advanced one-dimensional
-            fluid-structure-interaction code with methods for
-            uncertainty quantification and sensitivity analysis.
-            I wrote the software as part of my Ph.D. thesis.
-        Tools: Python, XML, Sphinx, NumPy, SciPy, GTK, OpenGl, ChaosPy, DOT
-    
-    A2:
-        Activity: The Planck Legacy Archive Added Value Interface (European Space Agency)
-        Staffing: 5 developers
-        Description: >
-            The Planck Legacy Archive is a website aimed at giving the general
-            public the opportunity to access and use data from the ESA Planck satellite.
-            In 2015 ESA started work on implementing an Added Value Interface to this website,
-            which aims to allow users to manipulate and analyse data online before downloading,
-            using various data cleaning and analysis techniques. 
-            My role in this project is to profile the memory usage of all analysis
-            and map manipulations algorithms. This knowledge is used to control the size of the asynchronous 
-            workers spawned on all virtual machines.
-            As consequence, all user requests are handled in the most efficient way. 
-        Role: Profiling of the system performance
-        Tools: Python, Docker, ANOVA
-        
-    A1:
-        Activity: Statkraft - Longterm Power Management - Visualization
-        Staffing: 1 developer
-        Description: >
-            In Statkraft, Longterm Power Management is based on numerical simulations of complex water way systems,
-            including reservoirs, power stations, and pumps. For the analysis and usage of these simulation results,
-            visualization tools are needed. All results are visualized via web services based on Bokeh to present
-            the data in a convenient and accessible manner. For a fast understanding of the topology of the
-            simulated  water  way  systems, a schematic map is needed. The project goal is to implement a visualization
-            module to auto-generate layout and interactive web visualization of arbitrary water way systems at run time.
-        Role: Main developer
-        Tools: Python, DOT, GraphViz, Boukeh, NumPy, XML, Yaml, Json
+			For Statkraft I developed the backend system for predictive mainteance in hydro power. The backend system includes a versioned domain model, infrastructure to define, test, run and deploy machine learning models, data management and visualisation. In addition, I helped with the data analysis and implementation of the first predictive maintenance model.
+        Role: Main developer and architect
+        Tools: Python, Bokeh, NumPy, Json, REST, Azure
+
+	arundo:
+		Activity: Arundo - Domain Modelling
+		Staffing: 4 - 8 developer
+		Description: >
+			In Arundo, I supported the development of the domain model for a data processing engine for
+			predictive maintenance simulations.
+			In addition, I was part of a small team to design and implement the core of a standardized domain modelling
+			language framework which could be applied to many projects.
+			The framework would allow modeling physical domains of customer's assets and track changes over time.
+		Role: Developer
+		Tools: Python, NumPy, Yaml, Json, networkX, DOT, GraphViz
+
+	sk_audio_rnd:
+		Activity: Edge Audio Analytics - MVP
+		Staffing: 8 developer
+		Description: >
+			We in Expert Analytics created in a R&D project with Statkraft an MVP for an audio analysis system which runs on Siemens industry computers on site for the surveillance of large hydro power generators.
+		Role: Developer
+		Tools: Python, NumPy, Yaml, Docker, Aws, ALSA,
