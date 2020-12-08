@@ -239,7 +239,7 @@ Expert Analytics skal til enhver tid ha en tillitsvalgt. Tillitsvalgt velges
 inn demokratisk blant de ansatte som er medlem i Tekna Bedriftsgruppe for en
 periode på ett år.
 
-I perioden 01.01.2020 til 31.12.2020 er Expert Analytics' tillitsvalgt
+I perioden 01.01.2020 til 31.12.2021 er Expert Analytics' tillitsvalgt
 Alexander Fleischer <alexander@xal.no>.
 
 Gjeldende regler for tillitsvalgt beskrives i 
