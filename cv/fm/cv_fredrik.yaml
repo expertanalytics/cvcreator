@@ -99,7 +99,7 @@ Projects:
         Role: "Developer"
         Staffing: "Around 7-8 developers"
         Period: "10.2020 -- 12.2020"
-        Description: "My main responsibility was working on improving the 3D visualization of ultra scans scans of concrete in the frontend. I worked on efficiency and quality improvements. I also did other frontend tasks."
+        Description: "My main responsibility was working on improving 3D visualization of ultra sound scans of concrete in the frontend. I worked on efficiency and quality improvements. I also did other frontend tasks."
         Tools: "Rust, WebAssembly, Three.JS, Javascript."
     A2:
         Activity: "Audio analysis and edge computing"
