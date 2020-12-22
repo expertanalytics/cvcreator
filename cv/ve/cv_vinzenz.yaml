@@ -1,20 +1,19 @@
 Basic:
   Name: Vinzenz Gregor Eck
   Address: Hubertusstr. 83
-  Post: 82131 Gauting
+  Post: 82131 Gauting, Germany
   Birth: 21.09.1987
   Email: vinzenz.eck@expertanalytics.de
   Phone: +49/162/7935345
 
 Summary: >
-  I am a curious, pragmatic and creative problem solver. \\
-  In 2020, I founded Expert Analytics GmbH in Munich together with Ola Skavhaug and Åsmund Ødergård.
-  My educational background is in mechanical engineering where I hold a PhD in bio-mechanical engineering. \\\\
+  I am a curious, pragmatic and creative problem solver with a PhD in Biomechanics.\\
+  I have 12 years experience in professional software development and have worked in the following fields:\\
+  on-edge computation, backend systems for data analysis and predictive maintenance, data-driven analysis,
+  asset/domain modelling, 2d/3d visualisations, stochastic and physics based simulators and numerical solvers.\\
   
-  I have 12 years experience in software engineering. My past assignments were centered around these areas:
-  on-edge computation, backend systems for data analysis and predictive maintenance, asset/domain models,
-  data-driven analysis, 2d/3d visualisations, stochastic and physics based simulators and numerical solvers.
-
+  In 2020, I founded Expert Analytics GmbH in Munich together with Ola Skavhaug and Åsmund Ødergård.
+  
 Skills:
   Languages:
     - Python
@@ -66,10 +65,13 @@ Languages:
 SelectedSkills:
   
   Communications: >
-    I am proficient in presenting difficult contents understandably and tailored to the target audience.
+    I am proficient in presenting difficult contents understandably and tailored to the target audience.\\
   
   Management: >
-    I am experienced in leading groups and managing projects.
+    I am experienced in leading groups and managing projects.\\
+    
+  Solution Engineering: >
+    I am trained in seeing the bigger picture and connecting all the dots to provide feasible and scalable solutions.
 
 Education:
   - - 2016
@@ -97,7 +99,7 @@ Work:
   
   - - 2016
     - 2020
-    - Consultant at Expert Analytics AS, Oslo
+    - Software Engineering Consultant at Expert Analytics AS, Oslo
   
   - - 2012
     - 2013
@@ -107,8 +109,8 @@ Work:
   - - 2013
     - 2012
     - >
-      20\% Department Engineer at the Department of Circulation and Medical Imaging, Faculty of medicine, NTNU, Trondheim.
-      Development of a hemodynamic-simulation tool for one-dimensional arterial networks.
+      Department Engineer at the Department of Circulation and Medical Imaging, Faculty of medicine, NTNU, Trondheim.
+      Development of a hemodynamic-simulation tool for one-dimensional arterial networks. [20\% Position]
   
   - - 2012
     - 2012
@@ -133,7 +135,7 @@ Work:
 Interests:
   Music:
     - Guitar, Bass, Clarinet, Percussion
-    - Music production (recording, mixing and mastering)
+    - Music Production (recording, mixing and mastering)
   
   Physical:
     - Hiking
@@ -255,7 +257,7 @@ Projects:
       We in Expert Analytics joined forces with Statkraft to evaluate in an R\&D project the usefulness of audio
       surveillance to measure the health state of heavy machinery in particular hydro power generators.
       We developed an MVP for an audio analysis system with Siemens industry computers.
-      We installed the edge system at a power plant to record the acoustic emissions of 3 generators and 2 transformers
+      The edge system was installed at a power plant to record the acoustic emissions of 3 generators and 2 transformers
       with 8 microphones. The high frequent audio data (48k samples/s) is analysed on side with machine learning models.
       An edge backend system facilitates data acquisition, data saving, model scheduling, result transfer to the cloud,
       edge fleet management and code/model deployment to the edge. I was in charge of the backend architecture and design,
@@ -264,4 +266,4 @@ Projects:
       After running for 2 months we already detected 2 concerning malfunctions in different equipment.
       The project is ongoing until 2022.
     Role: Developer
-    Tools: Python, NumPy, Yaml, Docker, Aws, ALSA
+    Tools: Python, NumPy, Yaml, Docker, AWS, ALSA
