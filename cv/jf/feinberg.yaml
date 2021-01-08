@@ -65,7 +65,7 @@ Education:
          Mathematics, University of Oslo. \\newline
          Thesis written at Norwegian Geotechinical Institute: ``Threshold
          Definition of Early Warning Systems to Natural Hazards'' \\newline
-         Supervisor by Professor Bent Natvig."
+         Supervised by Professor Bent Natvig."
     - - 2007
       - "Bachelor's degree in Mathematics, Informatics and Technology,
          University of Oslo"
@@ -120,11 +120,11 @@ Projects:
         Activity: NEC Oncoimmunity
         Role: Senior Developer and Data Scientist
         Staffing: 20 Developers/Data Scientists/Bioinformaticians
+        Period: 2016 -- 2020
         Description: >
-            OncoImmunity develop bioinformatics software that has the
-            ability to empower precision cancer immunotherapy, and thus in the
-            period fall 2016 until summer 2020 was to improve the outlook for
-            patients with late-stage disease. My role is to develop
+            OncoImmunity develop bioinformatics software that has the ability
+            to empower precision cancer immunotherapy, improving the outlook
+            for patients with late-stage disease. My role there was to develop
             machine-learning methods applied to genomic data for tumor immune
             profiling. The goal is to select optimal patients to be assigned to
             cancer immunotherapy clinical trials.
@@ -133,31 +133,34 @@ Projects:
         Activity: Statkraft
         Role: Data Scientist
         Staffing: 3 developers
+        Period: Summer 2016
         Description: >
             Statkraft is a leading company in hydropower internationally, and
-            Europe's largest generator of renewable energy. My role summer of
-            2016 was to explore the possibility of applying machine learning to
-            parts of Statkraft's core business. In particular, we looked into
-            various machine learning techniques that could be used to predict
-            future market energy consume. The techniques included applying
-            methods like statistical regression, time-series models, and
-            artificial neural networks.
+            Europe's largest generator of renewable energy. My role there was
+            to explore the possibility of applying machine learning to parts of
+            Statkraft's core business. In particular, we looked into various
+            machine learning techniques that could be used to predict future
+            market energy consume. The techniques included applying methods
+            like statistical regression, time-series models, and artificial
+            neural networks.
         Tools: Python, Keras/Tensorflow, Scikit-learn, Statsmodels
     A3:
         Activity: Vipps AS
         Role: Data Scientist/Advisor
         Staffing: 5 developers
+        Period: Fall 2020 --
         Description: >
             Vipps is the leading service in Norway for person to person
-            financial transaction over mobile in Norway.
-            Since late fall 2020 I have been working on automating the
-            detection of illegal transactions using machine learning, where my
-            role is the machine learning expert providing the methodology.
+            financial transaction over mobile in Norway. I have been working on
+            automating the detection of illegal transactions using machine
+            learning, where my role is the machine learning expert providing
+            the methodology.
         Tools: Azure, SQL, XGBoost, Tensorflow
     A4:
         Activity: Matlab to C++ converter
         Role: Software developer
         Staffing: 2 developers
+        Period: 2015 -- 2016
         Description: >
             As part of an EU sponsored project, Simula Research Laboratory and
             WesternGeco is collaborating to speed up the code translation step
@@ -170,6 +173,7 @@ Projects:
         Activity: Chaospy -- Uncertainty Quantification Toolbox
         Role: Co-creator and Maintainer
         Staffing: 2 developers
+        Period: 2012 --
         Description: >
             Chaospy is an actively maintained open source toolbox containing
             a large collection of uncertainty quantification tools. It includes
@@ -182,6 +186,7 @@ Projects:
         Activity: Numpoly -- Multivariate polynomials as NumPy datatype
         Role: Creator and Maintainer
         Staffing: 1 developer
+        Period: 2019 --
         Description: >
             Numpoly is an open source library for creating, manipulating
             polynomial arrays. The library provides a subclass of
@@ -196,11 +201,12 @@ Projects:
         Activity: Variable
         Role: Advisor
         Staffing: 3 developers
+        Period: Fall 2020
         Description: >
             Variable is a small startup focusing on quantifying climate risk.
-            My job fall 2020 was to teach the team on uncertainty
-            quantification and help formulate the probabilistic building blocks
-            needed to construct risk models.
+            My job was to teach the team on uncertainty quantification and help
+            formulate the probabilistic building blocks needed to construct
+            risk models.
         Tools: Python, PyMC3
 Publications:
     B1:
