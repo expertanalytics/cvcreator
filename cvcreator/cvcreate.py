@@ -44,7 +44,7 @@ def main():
         default=(), help="Projects to include. Specify which entries by keys or use 'all' to include all entries")
     parser.add_argument(
         "-u", "--publications", type=str,
-        default=(), help="Publications to include. Specify which entries by keys or use all to inclue all entries.")
+        default=(), help="Publications to include. Specify which entries by keys or use all to include all entries.")
     parser.add_argument(
         "-lw", "--logo-width", type=str, dest="logo_width",
         help="Set the logo width.")

@@ -22,6 +22,8 @@ def get_template_names():
     templatedir = os.path.dirname(inspect.getfile(cvcreator))
     templatedir = templatedir + os.path.sep + "templates" + os.path.sep
     templates = glob.glob(templatedir + "*.yaml")
+    print(templates)
+    print('what the fucl')
     templates = [os.path.basename(t)[:-5] for t in templates]
     if "config" in templates:
         templates.remove("config")
@@ -114,6 +116,10 @@ class cvopen(object):
     def get_config(self):
         with open(self.path + "config.yaml") as f:
             return yaml.load(f, Loader=yaml.SafeLoader)
+
+    def get_config(self):
+        with open(self.path + "config.yaml") as f:
+            return yaml.load(f)
 
     def compile(self, textxt, silent):
 
