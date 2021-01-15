@@ -169,7 +169,7 @@ Projects:
     Tools: Python, XML, Sphinx, NumPy, SciPy, GTK, OpenGl, ChaosPy, DOT
   
   A7:
-    Activity: The Planck Legacy Archive Added Value Interface (European Space Agency)
+    Activity: European Space Agency - The Planck Legacy Archive Added Value Interface
     Staffing: 5 developers
     Description: >
       The Planck Legacy Archive is a website aimed at giving the general
@@ -194,7 +194,7 @@ Projects:
       visualization tools are needed. The goal was to visualize all data in a convenient and accessible manner
       via web services based on Bokeh.
       The project resulted in a dashboard suite which enables fast and intuitively creation of web dashboards.
-      Statkaft published the suite as Open Source Software among it's Shyft application.
+      Statkaft published the suite as Open Source Software as part of it's Shyft application.
       The dashboard suite has an integrated time series viewer to visualized large amount of high frequent data
       in a fast and effective manner. Also, graph visualization tools are included, which are for example used to
       auto-generate and visualize the topology of arbitrary water way systems at run time.
@@ -202,7 +202,7 @@ Projects:
     Tools: Python, DOT, GraphViz, Bokeh, NumPy, XML, Yaml, Json
   
   A5:
-    Activity: Root cause analysis in Windturbines
+    Activity: Statkraft - Root cause analysis in Windturbines
     Staffing: 2 analysts
     Description: >
       Random failing equipment in windturbines lead to losses in the magnitude of millions for our customer.
