@@ -193,7 +193,7 @@ Projects:
       including reservoirs, power stations, and pumps. For the analysis and usage of these simulation results,
       visualization tools are needed. The goal was to visualize all data in a convenient and accessible manner
       via web services based on Bokeh.
-      The projekt resulted in a dashboard suite which enables fast and intuitively creation of web dashboards.
+      The project resulted in a dashboard suite which enables fast and intuitively creation of web dashboards.
       Statkaft published the suite as Open Source Software among it's Shyft application.
       The dashboard suite has an integrated time series viewer to visualized large amount of high frequent data
       in a fast and effective manner. Also, graph visualization tools are included, which are for example used to
