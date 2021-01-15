@@ -1,104 +1,143 @@
 Basic:
-    Name:           Alfred Alocias Mariadason
-    Address:        Moldegata 17
-    Post:           0468 Oslo
-    Birth:          19.01.1994
-    Email:          alocias@xal.no
-    Phone:          +47 979 52 043
-    Nationality:    Norwegian
+    Name:  "Alfred Alocias Mariadason"
+    Address: "Ullev\xE5lsveien 111B"
+    Post: "0359 Oslo"
+    Birth: "19.01.1994"
+    Email: "alocias@xal.no"
+    Phone: "+4797952043"
+    Nationality: "Norwegian"
 Summary: >
     I have a masters degree in Computation Physics from the University of Oslo, completed in 2018.
     My project revolved around many-body quantum mechanical systems. During the project I gained a
     good set of skills with knowledge in numerical methods, efficient algorithmic approaches,
     symbolic computations, high-performance- and parallel computing and programming in several
     different languages.
+
+    I have gained skills in software development and also data analysis from the different projects
+    in immunotherapy and datamodel building in powersystems.
 Skills:
     Languages:
         - Python
         - C$\nolinebreak[3]\hspace{-0.01em}\raisebox{.2ex}{\small{++}}$
         - C
-        - Common Lisp
-        - MATLAB
-        - Vimscript
-        - TeX/LateX
         - Markdown
+        - reStructuredText
+        - Vimscript
+        - Bash
+        - Java
+        - Common Lisp
+        - Clojure
+        - TeX/Latex
+        - Go
+        - Javascipt
+        - sparql 
     Frameworks:
-        - Armadillo
-        - Eigen
-        - MPI
-        - Openmp
-        - Blas
-        - Lapack
-        - Cuda
         - Numpy
-        - Sympy
         - Scipy
-        - Scikit-Learn
-        - Pybind11
-        - Keras
+        - Pandas
         - Tensorflow
+        - Pytorch
+        - Keras
+        - Sci-kit-Learn
+        - Pybind11
         - Cython
-        - Matplotlib
+        - Pylint
+        - Black
         - Qt
+        - Eigen
+        - Armadillo
+        - MPI
+        - openmp
+        - Cuda
+        - Boost
+        - Lapack
+        - Blas
+        - Django
+        - Docker
+        - Openshift
+        - cognite-sdk  
     Tools:
         - Git
+        - gdb
+        - Ipython
+        - pdb/ipdb
+        - Make
         - CMake
         - Vim
-        - Qt Creator
-        - Gdb
         - Linux
 Languages:
     Norwegian: Native, fluent
     English: Fluent
+
 SelectedSkills:
     Programming: >
         I enjoy programming both professionally and in my spare time. My skill set is mostly in
         Python and C$\nolinebreak[3]\hspace{-0.01em}\raisebox{.2ex}{\small{++}}$, but I have been
-        tinkering with different languages such as Java, Fortran, Perl, Lua and JavaScript.
+        tinkering with different languages such as Java, Fortran, Perl, Lua and JavaScript, as well
+        as tinkering in linux and fixing my tools. Escpesially my vimrc file.
     Problem solving: >
         Learning new methods and applying them to new and interesting problems is a passion I have
         kept since I started my studies in 2013. Everything from digging into complex algorithms,
         applied mathematics and everything associated to solving the complex problems which arise
         are skills I have gained through having a genuine interest in solving problems and learning
         new tools and methods.
+
+
 Education:
-    - - 2018 
+    - - 2018
       - >
-        'M.Sc. in Computational physics from the Faculty of Mathematics and Natural Sciences,
+        M.Sc. in Computational physics from the Faculty of Mathematics and Natural Sciences,
         University of Oslo. Title of thesis: "Quantum Many-Body Simulations of Double Dot System".
-        Supervisor: Morten Hjort-Jensen'
-    - - 2016 
+        Supervisor: Morten Hjort-Jensen
+    - - 2016
       - >
-        'B.Sc. in Physics, Astronomy and Meterology, University of Oslo.'
+        B.Sc. in Physics, Astronomy and Meterology, University of Oslo.
+
 Work:
-    - - 2018 
+    - - 2018
       - >
-        Consultant at Expert Analytics 
-    - - 2014 
+        Consultant at Expert Analytics
+    - - 2014
       - 2018
       - >
-        Private tutor in for Studenthjelp Privatundervisning
+        Private tutor for Studenthjelp Privatundervisning
 #     - - "start"
 #       - "" # <- blank
 #       - >
 #         description of work3 where you still work
+
 Interests:
-    Personal:
+    Miscellaneous:
         - Playing the Bass
         - Playing the Guitar
+        - Cooking 
         - Gaming
-        - Programming 
+        - Programming
+
 Projects:
     A1:
+        Activity:   Consultant at Statnett SF 
+        Role:       Consultant
+        Staffing:   4 developers, project management and one domain specialist
+        Volume:     "100 \\%"
+        Description: >
+            Create software for fully automated extraction of data from Statnett SF platforms into
+            Cognite Data Fusion (CDF) platform. The goal was to build a data model which captures
+            contextual information about components in the powergrid and the electrical
+            connectivity. The work was mainly R\&D with proof of concept solutions and integrating
+            said solutions into a clean codebase and deploy on openshift. The work also involved
+            integrity checks of the data stream into CDF.
+        Tools: python, pandas, numpy, docker, openshift, sparql, cognite-sdk
+    A2:
         Activity:   Software Developer for OncoImmunity
         Period:     2018-2019
         Role:       Consultant
         Staffing:   8 developers
         Volume:     "100 \\%"
         Description: >
-            OncoImmunity develops software in bioinformatics with purpose of improving the
-            precision of imunotherapy. My role was to further develop existing code on
-            machine-learning methods which used genomic data and also help with making the code
-            ready for production and deployment by integrating code between
+            OncoImmunity develops software in bioinformatics with purpose of improving the precision
+            of imunotherapy. My role was to further develop existing code on machine-learning
+            methods which used genomic data and also help with making the code ready for production
+            and deployment by integrating code between
             C$\nolinebreak[3]\hspace{-0.01em}\raisebox{.2ex}{\small{++}}$ and Python.
         Tools: Python, Keras, C$\nolinebreak[3]\hspace{-0.01em}\raisebox{.2ex}{\small{++}}$, Pybind11, Cython
