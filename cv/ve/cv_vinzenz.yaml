@@ -178,7 +178,7 @@ Projects:
       which aims to allow users to manipulate and analyse data online before downloading,
       using various data cleaning and analysis techniques.
       My role in this project was to profile the memory usage of all analysis
-      and map manipulation algorithms. The analysis results helded to determine the optimal size and
+      and map manipulation algorithms. The analysis results helped to determine the optimal size and
       type of the asynchronous workers spawned on all virtual machines.
       As consequence, the system handles all user requests in the most efficient way.
     Role: Profiling of the system performance
