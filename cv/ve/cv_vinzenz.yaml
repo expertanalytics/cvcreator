@@ -258,7 +258,7 @@ Projects:
       surveillance to measure the health state of heavy machinery, in particular hydro power generators.
       We developed an MVP for an audio analysis system with Siemens industry computers.
       The edge system was installed at a power plant to record the acoustic emissions of 3 generators and 2 transformers
-      with 8 microphones. The high frequent audio data (48k samples/s) is analysed on side with machine learning models.
+      with 8 microphones. The high frequent audio data (48k samples/s) is analysed on-site with machine learning models.
       An edge backend system facilitates data acquisition, data saving, model scheduling, result transfer to the cloud,
       edge fleet management and code/model deployment to the edge. I was in charge of the backend architecture and design,
       as well as the audio hardware selection. In addition, I implemented most of the data acquisition,
