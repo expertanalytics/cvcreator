@@ -19,7 +19,7 @@ Summary: >
 Skills:
     Languages:
         - Python
-        - C$\nolinebreak[3]\hspace{-0.01em}\raisebox{.2ex}{\small{++}}$
+        - C++
         - SQL 
     Frameworks:
         - Tensorflow

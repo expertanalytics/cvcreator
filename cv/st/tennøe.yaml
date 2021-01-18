@@ -15,7 +15,9 @@ Skills:
     Languages:
         - "Python"
         - "C++"
-        - "also used: Matlab, Fortran, C"
+        - "Matlab"
+        - Fortran
+        - C
     Frameworks:
         - "Matplotlib"
         - "NumPy/SciPy"

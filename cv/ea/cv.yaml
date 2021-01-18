@@ -18,10 +18,12 @@ Summary: |
     development.
 Skills:
     Languages:
-        - "C/C++"
+        - "C"
+        - "C++"
         - "Python"
         - "Java"
-        - "TeX/LaTeX"
+        - "\LaTeX"
+        - \TeX
     Frameworks:
         - "OpenCL"
         - "Numpy and SciPy"
@@ -207,4 +209,3 @@ Projects:
             As the app used proprietary network data it was never meant for public use and is not
             available.
         Tools: Android, Java, IntelliJ IDEA, Gradle, and Git
-

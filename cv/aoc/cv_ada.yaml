@@ -13,11 +13,27 @@ Skills:
     Scientific skills:
         - "Image analysis, signal processing, pattern recognition, anomaly detection, analysis of time series, analytical modelling, statistical analysis"
     Frameworks:
-        - NumPy, SciPy, Pandas, Matplotlib, TensorFlow/Keras
+      - NumPy
+      - SciPy
+      - Pandas
+      - Matplotlib
+      - TensorFlow
+      - Keras
     Languages:
-        - "Python, IDL, Octave/Matlab, Fortran"
+      - Python
+      - IDL
+      - Octave
+      - Matlab
+      - Fortran
     Tools:
-        - "Mac OS X, Unix, Linux, Jupyter Notebook, Git, AWS, LaTex"
+      - Mac OS X
+      - Unix
+      - Linux
+      - Jupyter
+      - Notebook
+      - Git
+      - AWS
+      - \LaTeX
 Languages:
     "Spanish": "mother tongue"
     "Catalan": "mother tongue"

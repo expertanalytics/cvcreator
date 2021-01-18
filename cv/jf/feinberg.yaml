@@ -21,7 +21,8 @@ Skills:
         - "MATLAB"
         - "Python"
         - "R"
-        - "RST/Markdown"
+        - "RST"
+        - "Markdown"
         - "Vimscript"
         - "Regular Expression"
     Frameworks:
@@ -182,7 +183,7 @@ Projects:
             multiple research and development projects. \newline
             \url{https://github.com/jonathf/chaospy}
         Tools: Python, NumPy, SciPy
-    A5:
+    A6:
         Activity: Numpoly -- Multivariate polynomials as NumPy datatype
         Role: Creator and Maintainer
         Staffing: 1 developer
@@ -197,7 +198,7 @@ Projects:
             \newline
             \url{https://github.com/jonathf/numpoly}
         Tools: Python, NumPy
-    A6:
+    A7:
         Activity: Variable
         Role: Advisor
         Staffing: 3 developers
