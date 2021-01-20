@@ -39,14 +39,13 @@ behov for ekstra utstyr på kontoret, ta kontakt med daglig leder.
 ### Telefoni
 
 Telefonabonnement overføres til selskapet, slik at Expert Analytics kan dekke
-regningen. I mappen https://github.com/expertanalytics/internal/tree/master/hr finnes
-eierskifteskjema hvor selskapets informasjon er fylt inn. Fyll inn informasjon
-om nåværende eier, samt nummer som skal overføres, signer, og send til daglig
-leder som håndterer resten.
+regningen. I forbindelse med overføring kan det være behov for å signere et 
+brev angående overdragelse av abonnement. Daglig leder vil initiere overføringen
+og eventuelt sende et brev til signering.
 
 For tiden benytter vi et abonnement fra Unifon som inkluderer 35 GB data. I
 gitte situasjoner kan dette være for lite. Ta kontakt med daglig leder og
-begrunn behovet for ekstra data - dersom det er arbeidsmessige grunner for
+begrunn behovet for ekstra data -- dersom det er arbeidsmessige grunner for
 behovet vil det som hovedregel bli innvilget.
 
 ## I Oppdrag
