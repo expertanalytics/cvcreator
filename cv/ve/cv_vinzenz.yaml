@@ -19,12 +19,6 @@ Skills:
     - Python
     - C
     - C++
-    - Matlab
-    - \LaTeX
-    - HTML
-    - XML
-    - Json
-    - Yaml
   
   Frameworks:
     - NumPy
@@ -32,6 +26,9 @@ Skills:
     - Statsmodel
     - HDBSCAN
     - Scikit-learn
+    - OpenCV
+    - ImageAI
+    - TensorFlow
     - Chaospy
     - Flask
     - REST
@@ -226,13 +223,13 @@ Projects:
       is optimized to run ml-workflows in production on Statkraft's systems.
       This enables a fast transition from prototypes to validated and tested production code.
     Role: Main developer and architect
-    Tools: Python, Yaml, Json, HDBSCAN, scicit-learn, keras, tensorflow
+    Tools: Python, Yaml, Json, HDBSCAN, Scicit-learn, Keras, Tensorflow
   
   A3:
     Activity: Statkraft - Predictive Maintenance for Hydropower
     Staffing: 2 developer
     Description: >
-      For Statkraft I developed the backend system for predictive mainteance in hydro power.
+      For Statkraft I developed the backend system for predictive maintenance in hydro power.
       The backend system includes a versioned domain model, infrastructure to define, test, run and deploy machine learning models, data management and visualisation.
       In addition, I helped with the data analysis and implementation of the first predictive maintenance model.
     Role: Main developer and architect
@@ -267,3 +264,12 @@ Projects:
       The project is ongoing until 2022.
     Role: Developer
     Tools: Python, NumPy, Yaml, Docker, AWS, ALSA
+  
+  A0:
+    Activity: Deutsches Museum - VR tour object detection
+    Staffing: 1 analyst
+    Description: >
+      The goal of this project to detect objects in the 3D virtual tour of the museum and link them to the museum database.
+      This is a proof of concept and is stil going on.
+    Role: Analyts
+    Tools: Python, NumPy, OpenCV, AWS, ImageAI, Scikit-learn, TensorFlow
