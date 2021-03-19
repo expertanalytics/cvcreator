@@ -103,7 +103,7 @@ Projects:
         Role: "Data Scientist"
         Staffing: "team of 2"
         Description: >
-            This project is part of AkerBP's digitalization program, Eureka, in which the team designed an approach where we apply both physics-based models, root-cause analysis and data driven applications with the aim of understanding and predicting chalk influx events into the Valhall oilfield. I was actively involved in designing an analysis pipeline for field data obtained through the Cognite Data Fusion platform, in particular developing signal processing analysis, pattern recognition and anomaly detection models. To date I have been involved in the deployment of two models in the Petroleum Experts platform.
+            This project is part of AkerBP's digitalization program, Eureka, in which the team designed an approach where we apply both physics-based models, root-cause analysis and data driven applications with the aim of understanding and predicting chalk influx events into the Valhall oilfield. I was actively involved in designing an analysis pipeline for field data obtained through the Cognite Data Fusion platform, in particular developing signal processing analysis, pattern recognition and anomaly detection models. To date I have been involved in the deployment of two models in the Petroleum Experts' platform.
         Tools: "Python, Scipy, Cognite Data Fusion, Github, Jupyter Notebook"
 
     A2:
