@@ -2,35 +2,31 @@ Basic:
     Name:  "Ada Ortiz-Carbonell"
     Address: "Colletts gate 59"
     Post: "0456 Oslo"
-    Birth: "7$^{th}$ January 1975"
+    Birth: "7$^{th}$ January"
     Email: "ada@xal.no"
     Phone: "+47 98887847"
     Nationality: "Spanish"
 Summary: >
-    I am a physicist with 20 years of experience in academia in the field of Astrophysics. I hold a PhD in Physics from 2003. My expertise includes image analysis, time-series analysis, signal processing, feature recognition and analytical models. With time I expanded my research topics and used different methods including statistical data analysis. In 2019 I moved to the private industry sector where I started using machine learning algorithms. \\
-    I consider myself perseverant and used to overcome adversity in a scientific environment by being creative, hard-working, and having an analytical mindset. Excellence, accuracy and detail define my scientific work. My colleagues regard me as an excellent communicator and an all-terrain asset. I have experience in leading international collaborations, management of research grants, student mentoring and scientific outreach.
+    I am a senior researcher with 20 years of experience in academic research in the field of Astrophysics. I hold a PhD in Physics from 2003. In 2019 I moved into the industry sector where I started using machine learning algorithms, data lakes and edge device infrastructure. I have mostly worked on predictive maintenance in Hydropower and anomaly detection projects. My expertise includes image analysis, time-series analysis, signal processing, feature recognition, analytical models and statistical analysis.  \\
+    I consider myself perseverant and used to overcome adversity in a scientific environment by being creative, hard-working, and having an analytical mindset. Excellence, accuracy and detail define my scientific work.
 Skills:
     Scientific skills:
         - "Image analysis, signal processing, pattern recognition, anomaly detection, analysis of time series, analytical modelling, statistical analysis"
     Frameworks:
-      - NumPy
-      - SciPy
+      - NumPy/SciPy
       - Pandas
       - Matplotlib
-      - TensorFlow
-      - Keras
+      - Keras/TensorFlow
     Languages:
       - Python
       - IDL
       - Octave
-      - Matlab
       - Fortran
     Tools:
       - Mac OS X
       - Unix
       - Linux
-      - Jupyter
-      - Notebook
+      - Jupyter Notebook
       - Git
       - AWS
       - \LaTeX
@@ -54,18 +50,15 @@ SelectedSkills:
         I have well-proven experience as organizer for several international conferences and schools, where I have done everything from managing the logistical aspects, setting up the conference’s websites and planning the scientific programmes. \\
 
     "Teaching and outreach": >
-        Being Lecturer provided me with the ability to explain difficult material in an understandable language for the non-expert. I have significant experience in outreach, explaining complex science to the general public. Examples of this are invitations to deliver public talks at Queen's University Belfast (UK) and the University of Oslo (Norway) aimed for a general audience. Moreover I am editor of two outreach books and have written a popular science article in the Spanish newspaper El Pa\'{i}s. \\
+        Being Lecturer provided me with the ability to explain difficult material in an understandable language for the non-expert. I have significant experience in outreach, explaining complex science to the general public. Examples of this are invitations to deliver public talks at Queen's University Belfast (UK) and the University of Oslo (Norway) aimed for a general audience. I am editor of two outreach books and have made media appearances (radio and articles in the Spanish newspaper El Pa\'{i}s) \\
 
     "Communication and writing skills": >
         I am regarded by my peers as an excellent speaker, both in scientific talks to an specialized audience or in educating the public. Proven experience in writing scientific documents (30 published articles). I have been nominated by my peers to become a TED speaker.\\
 
-    # "Versatile and all-terrain": >
-    #     I feel comfortable whether it is scientific, administration, logistics, organisation or managing tasks. \\
-
 Education:
     - - "2000 - 2003"
       - >
-        {\bf PhD in Physics}. University of Barcelona (Spain). Thesis title: “Solar irradiance variations induced by faculae and small magnetic elements in the photosphere”. {\it Cum Laude} by unanimity.
+        {\bf PhD in Physics}. University of Barcelona (Spain). Thesis title: “Solar irradiance variations induced by faculae and small magnetic elements in the photosphere”. {\it Summa Cum Laude}.
     - - "1997 - 2000"
       - >
         {\bf Research Proficiency}. University of Barcelona (Spain)
@@ -73,10 +66,6 @@ Education:
       - >
         {\bf Licentiate in Physics}. University of Barcelona (Spain)
 Work:
-#    - - "2000"
-#      - "2003"
-#      - >
-#        {\bf PhD student}. University of Barcelona (Spain). Appointment including 25\% teaching/administration and 75\% research training.
     - - "2004"
       - "2006"
       - >
@@ -101,59 +90,59 @@ Work:
     - - "2019"
       - "" # <- blank
       - >
-        {\bf Data scientist}. Expert Analytics (Oslo, Norway)
+        {\bf Consultant}. Expert Analytics (Oslo, Norway)
 Interests:
     "Scientific outreach": >
          Outreach officer in Norway for the European Solar Telescope project, Astronomy on Tap (astronomy for the general public), as well as regular educative outreach talks \& events for the general public \\
     "Sports": >
-         Alpine skiing, scuba diving, martial arts, white-water rafting
+         Alpine skiing, scuba diving, martial arts
 Projects:
     A1:
+        Activity: "Advanced Chalk Influx Advisor"
+        Period: "2020-2021"
+        Role: "Data Scientist"
+        Staffing: "Team of 2"
+        Description: >
+            This project is part of AkerBP's digitalization program, Eureka, in which the team designed an approach where we apply both physics-based models, root-cause analysis and data driven applications with the aim of understanding and predicting chalk influx events into the Valhall oilfield. I was actively involved in designing an analysis pipeline for field data obtained through the Cognite Data Fusion platform, in particular developing signal processing analysis, pattern recognition and anomaly detection models. To date I have been involved in the deployment of two models in the Petroleum Experts' platform.
+        Tools: "Python, Scipy, Cognite Data Fusion, Github, Jupyter Notebook"
+
+    A2:
         Activity: "Audio Analytics predictive maintenance in Hydropower"
         Period: "2020"
         Role: "Data Scientist"
-        Staffing: "team of 6"
+        Staffing: "Team of 6"
         Description: >
             This project investigates whether analysing audio profiles from heavy rotating machinery (hydropower generators) and applying deep learning algorithms can help identifying and isolating faulty units. We take a non-invasive approach that allows continuation of power production while predictive maintenance is being carried out. I contributed to the Machine Learning team developing appropiate signal processing algorithms to be run on edge devices. I was involved in defining the analytical solution as well as in the maintenance of the infrastructure which involves edge devices and a cloud services platform.
             This project is very novel and poses a research challenge. As such, the project is showcased as the Norwegian user-case in a H2020-ECSEL grant application in which Expert Analytics is a partner.
         Tools: "Python, AWS Cloud, Scipy, Github, Gitlab, Jupyter Notebook, TensorFlow, Keras"
-    A2:
+    A3:
         Activity: "Observing and understanding flux emergence using IRIS and SST coordinated data. Research project funded by the Research Council of Norway."
         Period: "2016-2019"
         Role: "Principal Investigator"
         Staffing: "2 members and 5 collaborators"
         Description: >
             This effort aimed at studying how magnetic fields living in the interior of the Sun rise up and trespass the surface of the star while continuing their journey up through the solar atmosphere. In this project, I combined large data sets (images and spectra) both from spacecrafts and ground-based observatories and pre-processed them. In addition, I was in charge of carrying out the data analysis, which required developing specific scientific coding for image analysis, spectral analysis, statistical analysis, and comparison with numerical simulations. I was responsible for several scientific articles published in peer-reviewed journals and for presentation of the results in international conferences.
-    A3:
+    A4:
         Activity: "Space and ground-based observations of the solar atmosphere. Research project funded by the Research Council of Norway."
         Period: "2011-2013"
         Role: "Principal Investigator, Project leader"
         Staffing: "me, with 4 collaborators"
         Description: >
             The goal of this project was to study the lower part of the solar atmosphere at the highest spatial resolution. Both the dynamics and magnetism of the physical processes going on in the surface were studied. For this project I pre-processed large astronomical data sets of images and spectra (cleaning the data from instrumental effects and making them ready-to-use). I developed the programming codes in order to analyse images, time series, create feature tracking algorithms, and statistical data analysis. I was the main author in the resulting articles published in international peer-reviewed journals, and presentations in conferences.
-    A4:
-        Activity: "Science communication and outreach. EST Communication Officer for Norway."
-        Period: "2017 -"
-        Role: "member of organising committee"
-        Staffing: "4 members"
-        Description: >
-            I am in charge of organizing and managing a series of posts in social media about the Sun and the European Solar Telescope (EST) project in order to educate the general public about the importance of studying our nearest star. Through this project I delivered public lectures at Queen's University Belfast and the University of Oslo aimed for the general public. I am editor of two books for the EST project with the goal of educating society in the Sun and the Universe. Also in charge of dissemination activities in Norway related to the EST project.
-#    A4:
-#        Activity: "Human resources and administration, hiring committee at the Institute of Theoretical Astrophysics (University of Oslo)."
-#        #Period: "start to end"
-#        Role: "member"
-#        Staffing: "3-5 members"
-#        #Volume: "Volume of work (eg.\ percent of full time)"
-#        Description: >
-#            I rutinely evaluated and interviewed candidates for the open positions at the Institute, from PhD students to postdoctoral fellows and researchers.
-#        #Tools: "tools used"
-    A5:
-        Activity: "Organisation of international conferences and schools"
-        Period: "2010 - 2018"
-        Role: "co-organizer"
-        Staffing: "2 members"
-        Description: >
-            I have organised 7 schools and international conferences since 2010. My tasks involved everything from planning the scientific programme, managing the logistical aspects, being in charge of the conference’s websites and designing the logos and banners. In addition to these, I have been convener of 2 symposia as well as chairperson of 10+ sessions.
+    # A4:
+    #     Activity: "Science communication and outreach. EST Communication Officer for Norway."
+    #     Period: "2017 -"
+    #     Role: "member of organising committee"
+    #     Staffing: "4 members"
+    #     Description: >
+    #         I am in charge of organizing and managing a series of posts in social media about the Sun and the European Solar Telescope (EST) project in order to educate the general public about the importance of studying our nearest star. Through this project I delivered public lectures at Queen's University Belfast and the University of Oslo aimed for the general public. I am editor of two books for the EST project with the goal of educating society in the Sun and the Universe. Also in charge of dissemination activities in Norway related to the EST project.
+    # A5:
+    #     Activity: "Organisation of international conferences and schools"
+    #     Period: "2010 - 2018"
+    #     Role: "co-organizer"
+    #     Staffing: "2 members"
+    #     Description: >
+    #         I have organised 7 schools and international conferences since 2010. My tasks involved everything from planning the scientific programme, managing the logistical aspects, being in charge of the conference’s websites and designing the logos and banners. In addition to these, I have been convener of 2 symposia as well as chairperson of 10+ sessions.
     A6:
         Activity: "European Solar Telescope Science Advisory Group member. Infrastructure and technological project funded by the EU H2020 Framework"
         Period: "2017 - "
