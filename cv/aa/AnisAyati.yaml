@@ -12,13 +12,28 @@ Summary: |
     I enjoy working in multidisciplinary teams and I thrive when given the chance to be creative in my work.
 Skills:
     Languages:
-        - Python, Matlab, C++.
+      - Python
+      - Matlab
+      - C++
     Frameworks:
-        - Numpy, Pandas, SciPy, Scikit-learn, Matplotlib, Keras.
+      - Numpy
+      - Pandas
+      - SciPy
+      - Scikit-learn
+      - Matplotlib
+      - Keras
     Tools:
-        - Git, Azure Databricks, Google Cloud, Grafana, Latex.
+      - Git
+      - Azure Databricks
+      - Google Cloud
+      - Grafana
+      - \Latex
     Data analysis:
-        - Spectral analysis, multivariate statistics, ensemble learning, deep learning, optimization.
+      - Spectral analysis
+      - multivariate statistics
+      - ensemble learning
+      - deep learning
+      - optimization
 SelectedSkills: 
     "Communication": |
         As an agile data scientist, I learned to transform input from stakeholders into technical solutions and to demo minimum viable products. As a researcher, I gained experience in publishing scientific findings in international relevant peer-reviewed journals and presenting my work in international conferences. As a teacher and mentor, I learned to break down complex concepts within mathematics and physics in order to explain those to students across the educational ladder, ranging from high-school to university.

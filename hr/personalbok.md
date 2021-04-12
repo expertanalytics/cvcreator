@@ -39,14 +39,13 @@ behov for ekstra utstyr på kontoret, ta kontakt med daglig leder.
 ### Telefoni
 
 Telefonabonnement overføres til selskapet, slik at Expert Analytics kan dekke
-regningen. I mappen https://github.com/expertanalytics/internal/tree/master/hr finnes
-eierskifteskjema hvor selskapets informasjon er fylt inn. Fyll inn informasjon
-om nåværende eier, samt nummer som skal overføres, signer, og send til daglig
-leder som håndterer resten.
+regningen. I forbindelse med overføring kan det være behov for å signere et 
+brev angående overdragelse av abonnement. Daglig leder vil initiere overføringen
+og eventuelt sende et brev til signering.
 
 For tiden benytter vi et abonnement fra Unifon som inkluderer 35 GB data. I
 gitte situasjoner kan dette være for lite. Ta kontakt med daglig leder og
-begrunn behovet for ekstra data - dersom det er arbeidsmessige grunner for
+begrunn behovet for ekstra data -- dersom det er arbeidsmessige grunner for
 behovet vil det som hovedregel bli innvilget.
 
 ## I Oppdrag
@@ -66,6 +65,23 @@ et relevant behov. Eksempler på slikt utstyr o.l kan være:
 
 Terskelen for å diskutere behov for utstyr er lav; diskusjonen tas med daglig
 leder.
+
+### Dekning av ekstraordinære kostnader under pandemier
+
+Under pandemier kan myndigheter gi pålegg om at arbeid skal utføres fra
+hjemmekontor så langt dette er praktisk mulig. I en slik situasjon kan en kunde
+allikevel kreve fremmøte i sine lokaler på enkelt-dager, for utførelse av
+oppgaver eller deltakelse i møter. Når fremmøte hos kunde i gjennomsnitt skjer
+sjeldnere enn 3 dager per uke over en kalendermåned, regnes hjemmekontor som
+arbeidssted. Dersom det foreligger et krav eller en sterk forventning fra kunde
+om fremmøte i kundes lokaler, dekkes ekstraordinære kostnader som følger:
+
+* Kostnader til nødvendig smittevernutstyr for reise til og fra kunde dekkes.
+* Kostnader i forbindelse med reise til kunde dekkes når arbeidssted er
+  hjemmekontor. Det forutsettes at rimeligste praktisk mulige reisemiddel
+  benyttes; det vil som hovedregel bety vanlig offentlig kommunikasjon. 
+
+Spør daglig leder hvis du er usikker på om spesifikke reiser dekkes.
 
 ## Medarbeidersamtale
 
@@ -222,7 +238,7 @@ Expert Analytics skal til enhver tid ha en tillitsvalgt. Tillitsvalgt velges
 inn demokratisk blant de ansatte som er medlem i Tekna Bedriftsgruppe for en
 periode på ett år.
 
-I perioden 01.01.2020 til 31.12.2020 er Expert Analytics' tillitsvalgt
+I perioden 01.01.2020 til 31.12.2021 er Expert Analytics' tillitsvalgt
 Alexander Fleischer <alexander@xal.no>.
 
 Gjeldende regler for tillitsvalgt beskrives i 

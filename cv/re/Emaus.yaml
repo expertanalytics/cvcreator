@@ -41,7 +41,8 @@ Summary: >
 Skills:
     Languages:
         - Python
-        - C/C++
+        - C
+        - C++
         - MatLab
         - Bash
     Frameworks:

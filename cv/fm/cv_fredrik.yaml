@@ -6,31 +6,39 @@ Basic:
     Email: "fredrik@xal.no"
     Phone: "+47 907 74 501"
 Summary: >
-    I am a mathematician with a love of teaching. I enjoy explaining hard concepts, both in a one-to-many and one-to-one setting. I enjoy encountering new problems, and spending time thinking on creative solutions. As a software consultant I have learned how to build robust software and write clean and maintainable code.
+    I am a mathematician with a love of teaching. I enjoy explaining hard concepts, both in a one-to-many and one-to-one setting. I enjoy encountering new problems, and spending time thinking of creative solutions. As a software consultant I have learned how to build robust software and write clean and maintainable code. As a programmer I enjoy working in the intersection between mathematical problems and implementing them in software. I especially like visualizations, and have experience in UX patterns for mobile and web platforms.
 Skills:
     Languages:
         - "Clojure"
+        - "Rust"
         - "Java"
-        - "Javacript"
+        - "JavaScript"
         - "Kotlin"
-        - \LaTeX
+        - "\LaTeX"
         - "Python"
         - "HTML"
         - "React"
         - "Macaulay2"
         - "Scheme"
-        - "SQL."
+        - "SQL"
     Frameworks:
         - "Akka"
         - "JUnit"
-        - "React."
+        - "React"
+        - "Vue.js"
+        - "Three.js"
+        - "AWS (S3, ECR, DynamoDB, Greengrass, CloudWatch...)"
     Tools:
         - "Docker"
         - "Elasticsearch"
         - "Emacs"
         - "Git"
         - "Maven"
-        - "Jetbrains IDE's."
+        - "Jetbrains IDE's"
+        - "Postgresql"
+        - "Jira"
+        - "NPM"
+        - "LaTeX"
 Languages:
     "Norwegian": "Native"
     "English": "Fluent"
@@ -38,7 +46,7 @@ SelectedSkills:
     "Public speaking": |
         I enjoy explaining problems and giving presentations. In june 2019, I held a lightning speech at NDC Oslo titled "RSA in 10 minutes". I have also given several talks at internal conferences at Bekk Consulting AS (a longer version of the RSA talk, and also a lightning talk titled "One year as a consultant").
     "Writing": |
-        I enjoy writing about new stuff I learn and know. In 2016 I published the article "Hvorfor er kumlokk runde?" ("Why are man holes round?") in Aftenposten. I also have several articles in the student publication Argument.
+        I enjoy writing about new stuff I learn and know. In 2016 I published the article "Hvorfor er kumlokk runde?" ("Why are man holes round?") in Aftenposten. I also have several published articles in the student publication Argument.
 Education:
     - - "08.2013"
       - "11.2017"
@@ -54,12 +62,12 @@ Education:
       - "06.2011"
       - >
         Bachelor in mathematics at the University of Oslo.
-        
+
 Work:
   - -  "03.2020"
     - ""
     - >
-      Consultant in Expert Analytics
+      Consultant in Expert Analytics.
   - - "08.2017"
     - "02.2020"
     - >
@@ -78,30 +86,44 @@ Interests:
         - "generative art"
         - "mathematics"
         - "running"
-        - "reading."
+        - "reading"
     "Professional":
         - "Functional programmering"
         - "algorithms and complexity"
         - "machine learning"
-        - "programming languages."
+        - "programming languages"
 
 Projects:
     A1:
-        Activity: "Web and app development"
+        Activity: "Frontend development and 3D rendering"
+        Role: "Developer"
+        Staffing: "Around 7-8 developers"
+        Period: "10.2020 -- 12.2020"
+        Description: "My main responsibility was working on improving 3D visualization of ultra sound scans of concrete in the frontend. I worked on efficiency and quality improvements. I also did other frontend tasks."
+        Tools: "Rust, WebAssembly, Three.JS, Javascript."
+    A2:
+        Activity: "Audio analysis and edge computing"
+        Role: "Cloud architect and backend developer"
+        Staffing: "Around 4 backend developers"
+        Period: "04.2020 -- 09.2020"
+        Description: "We implemented a solution for recording and analysing audio data on site. Analysed data are uploaded to AWS, from where customers can download it for further use."
+        Tools: "AWS Greengrass, other AWS tools, Python, Git Actions."
+    A3:
+        Activity: "Web and app development for public transportation"
         Role: "Software consultant"
         Staffing: "4 people in my team"
         Period: "04.2019 -- 02.2020"
         Description: >
             I worked for the mobility team in a large Norwegian transport and ticketing organization. We worked on including alternative forms of transport in our public API's, and also making them available on the company's app and website.
         Tools: "React, React Native, Typescript, Flow, Bitbucket, JIRA, Google Cloud Platform, Google Firebase."
-    A2:
+    A4:
         Activity: "Web and backend development"
         Role: "Software consultant"
         Staffing: "10+ developers"
         Period: 12.2018 -- 04.2019
         Description: "I worked for a large public organization in the transport sector. My main task was implementing an Elasticsearch based search engine for their website (replacing their old CMS based search engine). I also rewrote several old web applications in more modern languages (such as Elm)."
         Tools: "Java, Kotlin, Elm, Elasticsearch, Apache StormCrawler, RedHat OpenShift, Javascript."
-    A3:
+    A5:
         Activity: "Web and backend development"
         Role: "Software consultant"
         Staffing: "$\\sim8$ developers"

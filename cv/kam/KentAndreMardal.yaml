@@ -1,0 +1,112 @@
+Basic:
+    Name:  "Kent-Andre Mardal"
+    Address: "Bestumveien 86P"
+    Post: "0283 Oslo"
+    Birth: "26.11.1974"
+    Email: "kent@xal.no"
+    Phone: "+4793610854"
+    Nationality: "Norwegian"
+Summary: |
+    I am a Professor of Applied Mathematics, with a PhD from 2003. I have a broad background in programming, 
+    computational modeling, image analysis and fluid mechanics. I have educated more than 40 MSc students
+    and 15 PhD students, written more than 100 scientific papers on topics ranging from 
+    theoretical mathematics to clinical applications, and am experienced in working with and leading multidisciplinary teams. 
+Skills:
+    Languages:
+        - Python, Matlab, C++.
+    Frameworks:
+        - FEniCS, Numpy, SciPy, FreeSurfer.
+SelectedSkills: 
+    "Communication": |
+        As a presenter, teacher, mentor and supervisor, I frequently present, discuss, and educate technical consepts
+        at various levels. Most of my research is interdisciplinary, frequently with experts with domain 
+        knowledge very different from my own.  
+    "Management": |
+       I am currently managing two research projects financed by the Norwegian Research Council 
+       "Alzheimer's physics" and "Scientific Machine Learning" of 28 MNOK, in addition
+       to participating as workpackage leader in other projects. Hence, I am experience
+       in managment.  
+Languages:
+    "Norwegian": "Fluent"
+    "English": "Fluent"
+
+Education:
+    - - "2003"
+      - >
+        Ph.D. in Scientific Computing, Department of Informatics, University of Oslo. Thesis title 'Software tools and numerical methods for the incompressible Navier-Stokes equations'
+Work:
+    - - "2019"
+      - ""
+      - >
+        Consulant for Expert Analytics (part time) 
+    - - "2015"
+      - ""
+      - >       
+        Professor, Division of Mechanics, Department of Mathematics, University of Oslo 
+    - - "2014"
+      - ""
+      - > 
+        Adjunkt Scientist (part time), Scientific Computing Department, Simula Research Laboratory.
+    - - "2015"
+      - "2014"
+      - >
+        Associate Professor, Division of Mechanics, Department of Mathematics, University of Oslo 
+    - - "2014"
+      - "2007"
+      - > 
+        Senior Scientific Resarcher, Simula Research Laboratory 
+    - - "2014"
+      - "2007"
+      - > 
+        Associate Professor (part time), University of Oslo 
+    - - "2007"
+      - "2003"
+      - > 
+        Postdoctoral Fellow at Simula Research Laboratory 
+
+Interests: 
+    "Academic": 
+        - "Biomechanics"
+        - "Scientific Computing"
+        - "Numerics"
+        - "Machine Learning"
+    "Other":
+        - Reading, traveling, football, skiing.
+
+
+Projects:
+    A1:
+        Activity: "Alzheimer's physics"
+        Period: "2020-2024"
+        Role: "Principle Investigator"
+        Staffing: "Funded by Norwegian Research Council (12 MNOK)"
+        Description: |
+            This project aims at developing numerical methods, biomechanical models and software tools for simulating prevailing theories of the physics that
+            underlies the developement of Alzheimer's disease. The project is interdisciplinary and involves clinicians as well as computational scientists, 
+            imaging experts.  
+        Tools: "Python, HPC-computing, FEniCS, Machine Learning"
+
+    A2:
+        Activity: "Scientific Machine Learning"
+        Period: "2019-2023"
+        Role: "Principle Investigator"
+        Staffing: "Funded by Norwegian Research Council (16 MNOK)"
+        Description: |
+            This project aims at developing robust methods where numerical methods such as finite elements are combined with neural networks
+            in a compatible, stable way.  
+        Tools: "Python, HPC-computing, FEniCS, Machine Learning"
+
+    A3:
+        Activity: "Notably - Novel cascade technology for optimal utilization of animal and marine  by  products"
+        Period: "2018-2021"
+        Role: "Work-package leader"
+        Staffing: "Funded by Norwegian Research Council (Work package: 2 MNOK)"
+        Description: |
+            Currently about 50\% of chicken and fish are wasted in production.  
+            This project aims at developing simulation tools for improving hydrolysis and making proteins etc available
+            for utilization in other products.  
+        Tools: "Python, HPC-computing, FEniCS, Machine Learning"
+
+
+
+

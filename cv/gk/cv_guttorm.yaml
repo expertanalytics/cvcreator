@@ -15,11 +15,25 @@ Summary: >
 
 Skills:
     Languages:
-        - Golang, Python, HTML, SQL
+      - Golang
+      - Python
+      - HTML
+      - SQL
     Frameworks:
-        - Google Cloud, Azure, Kubernetes, Flask, Tornado, Alembic, Numpy, Keras, Splunk
+      - Google Cloud
+      - Azure
+      - Kubernetes
+      - Flask
+      - Tornado
+      - Alembic
+      - Numpy
+      - Keras
+      - Splunk
     Tools:
-        - Git, Docker, Linux, \LaTeX
+      - Git
+      - Docker
+      - Linux
+      - \LaTeX
 
 Languages:
     "Norwegian": Mother tounge
