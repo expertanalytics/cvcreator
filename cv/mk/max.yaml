@@ -7,7 +7,7 @@ Basic:
     Phone:   +47 922 98 573
     Nationality: Brazilian
 Summary: >
-    I essence, I am a problem solver who relies on my scientific knowledge and programming skills to tacke difficult industrial problems. 
+    In essence, I am a problem solver who relies on my scientific knowledge and programming skills to tackle difficult industrial problems. 
     I have a PhD in Aerospace Engineering (2011-2014) and before joining Expert Analytics I held two postdoctoral positions in Applied Mathematics (2014-2016 and 2016-2019).
 
 
@@ -28,6 +28,7 @@ Skills:
     Frameworks:
         - Numpy/Scipy        
         - Pandas
+        - GeoPandas
         - Matplotlib
         - Keras
         - scikit-learn
@@ -98,7 +99,7 @@ Interests:
 Projects:
     A1:
         Activity: Automatic Slug Detector
-        Period: 1.2021-3.2021
+        Period: 01.2021-03.2021
         Role: Data Scientist
         Staffing: Team of 2
         Volume: 100\\%
