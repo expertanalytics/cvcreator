@@ -49,6 +49,7 @@ class Project(BaseModel):
     period: str
     tools: str
     description: str
+    tag: str
 
 class Publications(BaseModel):
     """Published journal papers."""
@@ -58,6 +59,7 @@ class Publications(BaseModel):
     doi: str
     authors: str
     year: int
+    tag: str
 
 class VitaeContent(BaseModel):
     """Schema for the yaml source file."""

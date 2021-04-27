@@ -61,6 +61,7 @@ project:
       tools: "tool1, tool2, ..."
       description: >
           short description of project and your involvement
+      tag: "tag1"
 
 publication:
     - journal: "title of journal"
@@ -70,3 +71,4 @@ publication:
       doi: "the DOI link to the work"
       summary: >
           brief summary of work
+      tag: "tag2"

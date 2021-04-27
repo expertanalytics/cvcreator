@@ -16,36 +16,26 @@ TEMPLATES = [os.path.basename(path).replace(".tex", "")
              for path in glob.glob(os.path.join(CURDIR, "templates", "*.tex"))]
 
 
-def filter_(idx_string: str, sequence: Sequence[Any]) -> Sequence[Any]:
+def filter_(keys: str, sequence: Sequence[Any]) -> Sequence[Any]:
     """
     Filter a sequence form CLI.
 
     Args:
-        idx_string:
-            String with comma-separated integers. Or the string 'all'.
+        keys:
+            String with comma-separated tags. Or the string ':'.
         sequence:
             Sequence of elements to filter.
 
     Returns:
-        Same as `sequence`, but filtered down to indices included in
-        `idx_string`.
-
-    Examples:
-        >>> seq = list("ABCDEF")
-        >>> filter_("0,2,5", seq)
-        ['A', 'C', 'F']
-        >>> filter_("all", seq)
-        ['A', 'B', 'C', 'D', 'E', 'F']
-        >>> filter_("", seq)
-        []
+        Same as `sequence`, but filtered down to indices included in `keys`.
 
     """
-    if idx_string == "":
+    if keys == "":
         return []
-    if idx_string == "all":
+    if keys == ":":
         return sequence
-    idx_string = idx_string.replace(" ", "")
-    return [sequence[int(val)] for val in idx_string.split(",")]
+    keys = keys.replace(" ", "").split(",")
+    return [sequence[idx] for idx, s in enumerate(sequence) if s.tag in keys]
 
 
 def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
@@ -68,6 +58,7 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
     """
     with tempfile.TemporaryDirectory() as folder:
 
+        print(f"writing {folder}{os.path.sep}{source}")
         with open(f"{folder}{os.path.sep}{source}", "w") as dst:
             dst.write(latex)
 
@@ -75,6 +66,7 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
         silent = "-silent" if silent else ""
         cmd_args = '{silent} -latexoption="-interaction=nonstopmode"'
 
+        print(f"compiling {folder}{os.path.sep}{source}")
         proc = subprocess.Popen(
             f'cd "{folder}" {sep} latexmk "{source}" {silent} '
              '-pdf -latexoption="-interaction=nonstopmode"',
@@ -95,6 +87,7 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
                 return
 
         source = source.replace(".tex", ".pdf")
+        print(f"moving {folder}{os.path.sep}{source} -> {output}")
         shutil.copy(f'{folder}{os.path.sep}{source}', output or source)
 
 
@@ -124,10 +117,10 @@ def make_parser() -> argparse.ArgumentParser:
         help="Muffle output.")
     parser.add_argument(
         "-p", "--projects", type=str, default="",
-        help="Projects to include. Specify which entries by index or use 'all' to include all entries")
+        help="Comma-seperated list of project tags to include. Use ':' for all.")
     parser.add_argument(
         "-u", "--publications", type=str, default="",
-        help="Publications to include. Specify which entries by keys or use 'all' to include all entries.")
+        help="Comma-seperated list of publication tags to include. Use ':' for all.")
     parser.add_argument(
         "--font-size", type=int, default=11,
         help="The size of the font used in the document."
@@ -197,11 +190,12 @@ def main() -> None:
     )
 
     # (compile and) store results:
-    output = args.output or args.source.replace(".yaml", ".tex")
     if args.latex:
+        output = args.output or args.source.replace(".yaml", ".tex")
         with open(output, "w") as dst:
             dst.write(latex)
     else:
+        output = args.output or args.source.replace(".yaml", ".pdf")
         compile_(
             latex=latex,
             source=args.source.replace(".yaml", ".tex"),
