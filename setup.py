@@ -13,7 +13,7 @@ shutil.copy("config.yaml", "cvcreator/templates")
 
 setup(
     name="cvcreator",
-    version="0.4.9",
+    version="1.0-alpha0",
     url="http://github.com/ExpertAnalytics/cvcreator",
 
     author="Jonathan Feinberg",
@@ -23,13 +23,12 @@ setup(
     package_data={"cvcreator": ["templates/*"]},
     entry_points={
         "console_scripts": [
+            "_cvcreate = cvcreate.__main__:main",
             "cvcreate = cvcreator.cvcreate:main",
             "txt2yaml = cvcreator.txt2yaml:main",
         ]
     },
-    install_requires=[
-        "pyyaml",
-    ],
+    install_requires=["pyyaml", "pydantic", "jinja2"],
     zip_safe=False,
 )
 
