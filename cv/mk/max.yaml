@@ -13,8 +13,8 @@ Summary: >
 
     After moving to the industry sector, I worked as a consultant within digitalization for international Oil \& Gas companies. 
     By leveraging my knowledge both in multiphase fluid mechanics and programming, I helped them optimize production (anomaly detection algorithms) and automate human tasks (script programming).
-    My experience in academia allows me to provide creative ways to attack difficult industrial problems and for the client is a guarantee of a solid solution. 
-    Moreover, I have experience in tackling problems in a timely manner, adjusting to the needs of the customer and thus guaranteeing a timely deliver for the solutions.
+    My experience in academia allows me to provide creative ways to attack difficult industrial problems and for the client it is a guarantee of a solid solution. 
+    Moreover, I have experience in tackling problems in a pragmatic manner, adjusting to the needs of the customer and thus guaranteeing a timely delivery for the solutions.
     
     
     I have a large experience in working with multidisciplinary teams and thrive in such environments. 
@@ -33,7 +33,7 @@ Skills:
         - Keras
         - scikit-learn
     Tools:
-        - git
+        - Git
         - Jupyter Notebook    
         - openFOAM
         - \LaTeX
@@ -51,9 +51,9 @@ SelectedSkills:
     "Problem solving": >
         My experience in academia allows me to solve difficult technical industry problems in creative and innovative ways.
     "Communication": >
-        I am considered an excellent communicator, specifically when it comes to simplify very technical topics to the broader audience.
+        I am considered an excellent communicator, specifically when it comes to simplifying very technical topics to the broader audience.
     "Analytical thinking": >
-        I have a facility in understanding complex problems in an organized matter, breaking it down into smaler, easier to understand pieces.
+        I have a facility in understanding complex problems in an organized matter, breaking it down into smaller, easier to understand pieces.
 Education:
     - - "2011 - 2014"
       - >
@@ -92,9 +92,9 @@ Interests:
         - Porous media
         - Enhanced Oil Recovery        
     "Personal":
-        - Traveling
+        - Travelling
         - Hiking
-        - Sports (football, swimming, rollerblading, tennis)
+        - Sports (football, swimming, rollerblading, skiing, ice skating, tennis)
         - Music
 Projects:
     A1:
@@ -105,10 +105,10 @@ Projects:
         Volume: 100\\%
         Description: >
             This project was part of Wintershall DEA's digitalization initiative. 
-            I worked with the production optimization team in a use case dedicated to develop an automatic slug detection tool for the offshore production team in the Bragge oilfield.
-            My role as a data scientist was to develop a backend solution that automatic detects anomalous events in Bragge's wells and categorizes them by severity.
-            My backend solution was coupled with a dashboard solution in Grafana for easiness of visualization to the Bragge's team.	     
-        Tools: Python, Cognite Data Fusion, git
+            I worked with the production optimization team in a use case dedicated to develop a slug detection tool for the offshore production team in the Brage oilfield.
+            My role as a data scientist was to develop a backend solution that automaticcaly detects anomalous events in Brage's wells and categorizes them by severity.
+            My backend solution was coupled with a dashboard solution in Grafana for easiness of visualization to the Brage's team.	     
+        Tools: Python, Cognite Data Fusion, Git
     A2:
         Activity: Advanced Chalk Influx Advisor (scoping phase)
         Period: 10.2020-12.2020
@@ -116,7 +116,7 @@ Projects:
         Staffing: Team of 3
         Volume: 100\\%
         Description: >
-            This project was part of AkerBP's digitalization program, Eureka, and its goal was to understand and ultimately predict chalk influx events in the Valhall oilfield. 
+            This project was part of Aker BP's digitalization program, Eureka, and its goal was to understand and ultimately predict chalk influx events in the Valhall oilfield. 
             My role as a data scientist in the scoping phase of the project was to help designing the foundations for the later development phase. 
             My broad role in the scoping phase lead me to: elaborate a root-cause diagram for chalk influx events, assess the use of proppant transport models as suitable for chalk transport, aid in the design of experimental work to characterize chalk influence on flow characteristics, data analysis of well tests, among others.
         Tools: Python, Cognite Data Fusion
