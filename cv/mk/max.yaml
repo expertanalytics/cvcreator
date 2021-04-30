@@ -106,7 +106,7 @@ Projects:
         Description: >
             This project was part of Wintershall DEA's digitalization initiative. 
             I worked with the production optimization team in a use case dedicated to develop a slug detection tool for the offshore production team in the Brage oilfield.
-            My role as a data scientist was to develop a backend solution that automaticcaly detects anomalous events in Brage's wells and categorizes them by severity.
+            My role as a data scientist was to develop a backend solution that automatically detects anomalous events in Brage's wells and categorizes them by severity.
             My backend solution was coupled with a dashboard solution in Grafana for easiness of visualization to the Brage's team.	     
         Tools: Python, Cognite Data Fusion, Git
     A2:
