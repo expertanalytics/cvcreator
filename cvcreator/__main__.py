@@ -58,17 +58,18 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
     """
     with tempfile.TemporaryDirectory() as folder:
 
-        print(f"writing {folder}{os.path.sep}{source}")
-        with open(f"{folder}{os.path.sep}{source}", "w") as dst:
+        source_name = os.path.basename(source)
+        print(f"writing {folder}{os.path.sep}{source_name}")
+        with open(f"{folder}{os.path.sep}{source_name}", "w") as dst:
             dst.write(latex)
 
         sep = "&" if os.name == "nt" else ";"
         silent = "-silent" if silent else ""
         cmd_args = '{silent} -latexoption="-interaction=nonstopmode"'
 
-        print(f"compiling {folder}{os.path.sep}{source}")
+        print(f"compiling {folder}{os.path.sep}{source_name}")
         proc = subprocess.Popen(
-            f'cd "{folder}" {sep} latexmk "{source}" {silent} '
+            f'cd "{folder}" {sep} latexmk "{source_name}" {silent} '
              '-pdf -latexoption="-interaction=nonstopmode"',
             shell=True,
         )
@@ -77,7 +78,7 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
             print("latexmk run failed, see errors above ^^^")
             print("trying pdflatex instead...")
             proc = subprocess.Popen(
-                f'cd "{folder}" {sep} pdflatex "{source}" '
+                f'cd "{folder}" {sep} pdflatex "{source_name}" '
                  '{silent} -latexoption="-interaction=nonstopmode"',
                 shell=True
             )
@@ -87,8 +88,9 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
                 return
 
         source = source.replace(".tex", ".pdf")
-        print(f"moving {folder}{os.path.sep}{source} -> {output}")
-        shutil.copy(f'{folder}{os.path.sep}{source}', output or source)
+        source_name = source_name.replace(".tex", ".pdf")
+        print(f"moving {folder}{os.path.sep}{source_name} -> {output}")
+        shutil.copy(f'{folder}{os.path.sep}{source_name}', output or source)
 
 
 def make_parser() -> argparse.ArgumentParser:

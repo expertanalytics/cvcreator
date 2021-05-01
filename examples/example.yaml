@@ -1,77 +1,82 @@
-Basic:
-    Name:  "name"
-    Address: "address"
-    Post: "zip/post + city"
-    Birth: "birthdate"
-    Email: "email adresse"
-    Phone: "phone number"
-Summary: >
-    a short description of who you are
-    over multiple lines if you wanna.
-Skills:
-    Applications:
-        - "list of experiences, applications and stuff from projects, e.g. Machine learning, Optimization algorithms, Open source programming"
-        - ...
-    Languages:
-        - "list of programming language"
-        - ...
-    Packages:
-        - "list of libraries, modules and packages"
-        - ...
-    Tools:
-        - "list of software and frameworks"
-        - ...
-Languages:
-    "language1": "how well you speak/write"
-    "language2": "how well you speak/write"
-SelectedSkills:
-    "Skill1": >
-        short description of skill1
-    "Skill2": >
-        short description of skill2
-Education:
-    - - "when degree1 completed"
-      - >
-        description of completed degree1
-    - - "when degree2 start"
-      - "when degree2 completed"
-      - >
-        description of completed degree2
-Work:
-    - - "when"
-      - >
-        description of work1
-    - - "start"
-      - "end"
-      - >
-        description of work2
-    - - "start"
-      - "" # <- blank
-      - >
-        description of work3 where you still work
-Interests:
-    "topic1":
-        - "topic element"
-        - ...
-    "toptic2":
-        - "topic element"
-        - ...
-Projects:
-    A1:
-        Activity: "project title"
-        Period: "start to end"
-        Role: "your role in project"
-        Staffing: "who worked on project"
-        Volume: "Volume of work (eg.\ percent of full time)"
-        Description: >
-            short description of project and your involvement
-        Tools: "tools used"
-Publications:
-    B1:
-        Journal: "title of the journal"
-        Date: "Date work was published"
-        Authors: "Authors for work, in correct order"
-        Title: "Title of the work"
-        Summary: >
-            A short summary of the work
-        DOI: "The DOI link to the work"
+name: name
+address: address
+post: zip/post + city
+birth: birthdate
+email: email adresse
+phone: phone number
+summary: a short description of who you are over multiple lines if you wanna.
+technical_skill:
+- title: Applications
+  values:
+  - list of experiences, applications and stuff from projects, e.g. Machine learning,
+    Optimization algorithms, Open source programming
+  - '...'
+- title: Languages
+  values:
+  - list of programming language
+  - '...'
+- title: Packages
+  values:
+  - list of libraries, modules and packages
+  - '...'
+- title: Tools
+  values:
+  - list of software and frameworks
+  - '...'
+language_skill:
+- language: language1
+  proficiency: how well you speak/write
+- language: language2
+  proficiency: how well you speak/write
+personal_skill:
+- description: short description of skill1
+  title: Skill1
+- description: short description of skill2
+  title: Skill2
+hobby:
+- title: topic1
+  values:
+  - topic element
+  - '...'
+- title: toptic2
+  values:
+  - topic element
+  - '...'
+education:
+- description: description of completed degree1
+  year: when degree1 completed
+- description: description of completed degree2
+  year: when degree2 completed
+work:
+- description: description of work1
+  period:
+  - when
+  - ''
+- description: description of work2
+  period:
+  - start
+  - end
+- description: description of work3 where you still work
+  period:
+  - start
+  - ''
+project:
+- activity: project title
+  description: >
+    short description of project and your involvement
+  period: start to end
+  role: your role in project
+  staffing: who worked on project
+  tag: '1'
+  tools: tools used
+  volume: Volume of work (eg. percent of full time)
+publication:
+- authors: Authors for work, in correct order
+  date: Date work was published
+  doi: The DOI link to the work
+  journal: title of the journal
+  summary: >
+    A short summary of the work
+  tag: '1'
+  title: Title of the work
+  year: 2020
