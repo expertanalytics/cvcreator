@@ -49,6 +49,7 @@ Prerequisite
 ------------
 System dependencies:
 - Latex (on Ubuntu/Debian: `sudo apt-get install latexmk texlive-latex-extra`)
+- Norwegian language Latex package (on Ubuntu/Debian: `sudo apt-get install texlive-lang-european`)
 - Python
 
 Python package dependencies:
