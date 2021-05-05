@@ -14,13 +14,13 @@ jobs:
           command: |
               python -m venv .venv
               source .venv/bin/activate
-              pip install -U poetry
+              pip install -U poetry PyYAML
               poetry install
       - run:
           name: "Compile CV documents"
           command: |
               source .venv/bin/activate
-              _cvcreate examples/example.yaml --output output.tex --latex
+              _cvcreate examples/example.toml --output output.tex --latex
       - run:
           name: "Run tests"
           command: |

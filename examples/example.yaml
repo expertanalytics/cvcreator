@@ -49,17 +49,12 @@ education:
   year: when degree2 completed
 work:
 - description: description of work1
-  period:
-  - when
-  - ''
+  start: when
 - description: description of work2
-  period:
-  - start
-  - end
+  start: start
+  end: end
 - description: description of work3 where you still work
-  period:
-  - start
-  - ''
+  start: start
 project:
 - activity: project title
   description: >
