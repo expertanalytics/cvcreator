@@ -1,7 +1,7 @@
 """Schema definition for the user provided yaml source file."""
 from typing import List, Tuple
 from pydantic import BaseModel, Field
-import yaml
+import toml
 
 
 class TechnicalSkill(BaseModel):
@@ -37,7 +37,8 @@ class Education(BaseModel):
 class Work(BaseModel):
     """Previous work experience."""
 
-    period: Tuple[str, str]
+    start: str
+    end: str = ""
     description: str
 
 class Project(BaseModel):
@@ -86,4 +87,4 @@ class VitaeContent(BaseModel):
     @staticmethod
     def load(path: str) -> "VitaeContent":
         with open(path) as src:
-            return VitaeContent(**yaml.safe_load(src))
+            return VitaeContent(**toml.load(src))

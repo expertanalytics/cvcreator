@@ -8,7 +8,7 @@ include = ["cvcreator/templates/*"]
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-PyYAML = "^5.4.1"
+toml = "^0.10.2"
 pydantic = "^1.8.1"
 Jinja2 = "^2.11.3"
 
@@ -18,7 +18,7 @@ pytest = "^6.2.3"
 [tool.poetry.scripts]
 _cvcreate = "cvcreator.__main__:main"
 cvcreate = "cvcreator.cvcreate:main"
-yaml2yaml = "cvcreator.yaml2yaml:main"
+yaml2toml = "cvcreator.yaml2toml:main"
 txt2yaml = "cvcreator.txt2yaml:main"
 
 [build-system]
