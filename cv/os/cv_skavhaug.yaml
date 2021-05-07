@@ -1,20 +1,20 @@
 Basic:
     Name:  "Ola Skavhaug"
-    Address: "Aslakveien 31"
-    Post: "0753 Oslo"
+    Address: "Maries Gate 5B"
+    Post: "0368 Oslo"
     Birth: "10 April"
     Email: "ola@xal.no"
     Phone: "92612490"
     Nationality: "Norwegian"
 Summary: >
-    I am a skillful software developer, researcher, and project leader with 16 years professional experience.
+    I am a skillful software architect, researcher, and project leader with more than 20 years professional experience.
     My main areas of technical expertise are mathematical and numerical software development, algorithm 
     development, advanced scripting with modern scripting languages, parallel programming, software testing 
     and deployment, library design, and scientific visualization.\\
 
     In 2013, I founded Expert Analytics AS together with Åsmund Ødegård. Since then, my assignments have mostly involved
-    writing simulation software in hydrology that combines flexibility and numerical efficiency, and building 
-    frameworks for novel analysis of the behavoir of the North European hydropower markets.
+    writing simulation software and algorithms in hydrology that combine flexibility and numerical efficiency, and 
+    building frameworks for novel analysis of the behavoir of the North European hydropower markets.
 Skills:
     Languages:
         - "Python"
@@ -41,6 +41,8 @@ Skills:
         - "Swig"
         - "Boost"
         - "Stl"
+        - "CGAL"
+        - "Gdal"
         - "VTK"
         - "FEniCS"
         - "PETSc"
@@ -97,17 +99,17 @@ Work:
     - - "2005"
       - "2007"
       - >
-        Research Scientist and head of the project Software for PDEs”at Simula Research Laboratory
+        Research Scientist and head of the project Software for PDEs at Simula Research Laboratory
     - - "2004"
       - "2005"
       - >
         IT-managet, Simula Research Laboratory
     - - "2004"
-      - ""
+      - "2004"
       - >
         System Administrator, Simula Research Laboratory
     - - "2004"
-      - "2010"
+      - "2011"
       - > 
         20\% Associate Professor, Department of Informatics, University of Oslo
     - - "2001"
@@ -125,9 +127,8 @@ Work:
 Interests:
     "Physical":
         - "Telemark skiing"
-        - "running"
-        - "biking"
         - "climbing"
+        - "biking"
         - "yoga"
     "Gastronomical":
         - "Beer brewing"
@@ -139,14 +140,14 @@ Interests:
         - "expeditions"
 Projects:
     A1:
-        Activity: "LTM Analysis Desktop for Statkraft"
+        Activity: "ADAM platform development"
         Role: "Senior developer and architect"
         Staffing: "Two main developers, and several analysts"
         Description: >
             Analysts at Statkraft use the so called EMPS model to understand the long term behaviour of the North 
             European power market. Although the core of this system is still solid and provides insights, the 
             tools and workflows associated with it is dated at best. To fix this, Statkraft has started a project, 
-            the LTM Application Platform, that augments the simulator with a powerful and flexible domain model 
+            ADAM, that augments the simulator with a powerful and flexible domain model 
             written in a mixture of Python and C++. The platform both serves as a frontend to the analysts at Statkraft, 
             enabling new ways of viewing results through domain specific transformations, and helps to manage the 
             large amounts of data that is both used as input and produced as results by the EMPS simulator. My role in
@@ -155,7 +156,7 @@ Projects:
             with regards to making the simulation results available to the analyst as soon as possible.
         Tools: "Python, HDF5, Bokeh, Matplotlib, EMPS model, Microsoft HPC Suite"
     A2:
-        Activity: "SHyFT development"
+        Activity: "ShYft development"
         Role: "Senior developer and architect"
         Staffing: "Four developers, several hydrologists"
         Description: >
@@ -164,8 +165,11 @@ Projects:
             code, was not suited for daily use in an operational setting due to limitations on scalability, 
             design and performance. I was hired in a project to remedy this, and we quickly realized that we 
             needed to reimplement everything from scratch and use the existing code base as a starting point 
-            for the algorithmic aspects. The resulting hydrological forcasting toolbox, named SHyFT, is currently
-            operationalized and run daily at Statkraft.
+            for the algorithmic aspects. The resulting hydrological forcasting toolbox, named Shyft, is currently
+            operationalized and run daily at Statkraft and is used in research by several Norwegian 
+            research institutions. For more information about the project, see 
+            \href{https://gitlab.com/shyft-os/shyft}{https://shyft.readthedocs.io/en/latest/} and 
+            \href{https://shyft.readthedocs.io/en/latest/}{https://shyft.readthedocs.io/en/latest/}.
         Tools: "C++11, Stl, Swig, Boost, Python, Armadillo, dlib, yaml, Codeblocks"
 
     A3:
