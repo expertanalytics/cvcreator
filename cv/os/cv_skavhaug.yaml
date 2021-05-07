@@ -156,7 +156,7 @@ Projects:
             with regards to making the simulation results available to the analyst as soon as possible.
         Tools: "Python, HDF5, Bokeh, Matplotlib, EMPS model, Microsoft HPC Suite"
     A2:
-        Activity: "ShYft development"
+        Activity: "Shyft development"
         Role: "Senior developer and architect"
         Staffing: "Four developers, several hydrologists"
         Description: >
