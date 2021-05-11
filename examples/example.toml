@@ -1,0 +1,88 @@
+name = "name"
+address = "address"
+post = "zip/post + city"
+birth = "birthdate"
+email = "email adresse"
+phone = "phone number"
+summary = "a short description of who you are over multiple lines if you wanna."
+
+[[technical_skill]]
+title = "Applications"
+values = [ "list of experiences, applications and stuff from projects, e.g. Machine learning, Optimization algorithms, Open source programming", "...",]
+
+[[technical_skill]]
+title = "Languages"
+values = [ "list of programming language", "...",]
+
+[[technical_skill]]
+title = "Packages"
+values = [ "list of libraries, modules and packages", "...",]
+
+[[technical_skill]]
+title = "Tools"
+values = [ "list of software and frameworks", "...",]
+
+[[language_skill]]
+language = "language1"
+proficiency = "how well you speak/write"
+
+[[language_skill]]
+language = "language2"
+proficiency = "how well you speak/write"
+
+[[personal_skill]]
+description = "short description of skill1"
+title = "Skill1"
+
+[[personal_skill]]
+description = "short description of skill2"
+title = "Skill2"
+
+[[hobby]]
+title = "topic1"
+values = [ "topic element", "...",]
+
+[[hobby]]
+title = "toptic2"
+values = [ "topic element", "...",]
+
+[[education]]
+description = "description of completed degree1"
+year = "when degree1 completed"
+
+[[education]]
+description = "description of completed degree2"
+year = "when degree2 completed"
+
+[[work]]
+description = "description of work1"
+start = "when"
+
+[[work]]
+description = "description of work2"
+start = "start"
+end = "end"
+
+[[work]]
+description = "description of work3 where you still work"
+start = "start"
+
+[[project]]
+activity = "project title"
+description = "short description of project and your involvement\n"
+period = "start to end"
+role = "your role in project"
+staffing = "who worked on project"
+tag = "1"
+tools = "tools used"
+volume = "Volume of work (eg. percent of full time)"
+
+[[publication]]
+authors = "Authors for work, in correct order"
+date = "Date work was published"
+doi = "The DOI link to the work"
+journal = "title of the journal"
+summary = "A short summary of the work\n"
+tag = "1"
+title = "Title of the work"
+year = 2020

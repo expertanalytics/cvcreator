@@ -5,33 +5,30 @@ version-tags: &version-tags
 version: 2
 jobs:
   tests:
-    environment:
-      PIPENV_VENV_IN_PROJECT: true
     docker:
-      - image: circleci/python:3.6.10
+      - image: circleci/python:3.9.4
     steps:
       - checkout
       - run:
           name: "Installation"
           command: |
-              pipenv install --deploy --dev
+              python -m venv .venv
               source .venv/bin/activate
-              python setup.py install
+              pip install -U poetry PyYAML
+              poetry install
       - run:
           name: "Compile CV documents"
           command: |
               source .venv/bin/activate
-              cvcreate examples/example.yaml --output output.tex --latex
+              _cvcreate examples/example.toml --output output.tex --latex
       - run:
           name: "Run tests"
           command: |
               source .venv/bin/activate
               pytest --doctest-modules cvcreator/ test/
   deploy:
-    environment:
-      PIPENV_VENV_IN_PROJECT: true
     docker:
-      - image: circleci/python:3.6.10
+      - image: circleci/python:3.9.4
     steps:
       - checkout
       - run:

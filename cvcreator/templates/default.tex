@@ -55,8 +55,9 @@
 $\quad\quad$
 \begin{minipage}[t]{0.3\textwidth}
 \begin{tabbing}Nationality---\=olaf\kill
-\BLOCK{if email}       E-mail:      \>\VAR{address}     \\ \BLOCK{endif}
+\BLOCK{if email}       E-mail:      \>\VAR{email}       \\ \BLOCK{endif}
 \BLOCK{if phone}       Phone:       \>\VAR{phone}       \\ \BLOCK{endif}
+\BLOCK{if github}      Github:      \>\url{\VAR{github}}\\ \BLOCK{endif}
 \BLOCK{if nationality} Nationality: \>\VAR{nationality} \\ \BLOCK{endif}
 \end{tabbing}
 \end{minipage}
@@ -92,7 +93,7 @@ $\quad\quad$
 \section*{Professional experience}
 \begin{longtable}{LR}
 \BLOCK{for s in work}
-\VAR{s.period[0]} -- \VAR{s.period[1]} & \VAR{s.description} \\
+\VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
 \BLOCK{endfor}
 \end{longtable}
 \BLOCK{endif}
@@ -133,12 +134,12 @@ $\quad\quad$
 
 \BLOCK{for s in project}
 \begin{longtable}{@{}LR}
-Activity    & \VAR{s.activity}    \\
-Period      & \VAR{s.period}      \\
-Role        & \VAR{s.role}        \\
-Staffing    & \VAR{s.staffing}    \\
-Description & \VAR{s.description} \\
-Tools       & \VAR{s.tools}       \\
+                      Activity    & \VAR{s.activity}    \\
+\BLOCK{if s.period}   Period      & \VAR{s.period}      \\ \BLOCK{endif}
+\BLOCK{if s.role}     Role        & \VAR{s.role}        \\ \BLOCK{endif}
+\BLOCK{if s.staffing} Staffing    & \VAR{s.staffing}    \\ \BLOCK{endif}
+                      Description & \VAR{s.description} \\
+\BLOCK{if s.tools}    Tools       & \VAR{s.tools}       \\ \BLOCK{endif}
 \end{longtable}
 \BLOCK{endfor}
 \BLOCK{endif}

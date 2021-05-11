@@ -58,17 +58,18 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
     """
     with tempfile.TemporaryDirectory() as folder:
 
-        print(f"writing {folder}{os.path.sep}{source}")
-        with open(f"{folder}{os.path.sep}{source}", "w") as dst:
+        source_name = os.path.basename(source)
+        print(f"writing {folder}{os.path.sep}{source_name}")
+        with open(f"{folder}{os.path.sep}{source_name}", "w") as dst:
             dst.write(latex)
 
         sep = "&" if os.name == "nt" else ";"
         silent = "-silent" if silent else ""
         cmd_args = '{silent} -latexoption="-interaction=nonstopmode"'
 
-        print(f"compiling {folder}{os.path.sep}{source}")
+        print(f"compiling {folder}{os.path.sep}{source_name}")
         proc = subprocess.Popen(
-            f'cd "{folder}" {sep} latexmk "{source}" {silent} '
+            f'cd "{folder}" {sep} latexmk "{source_name}" {silent} '
              '-pdf -latexoption="-interaction=nonstopmode"',
             shell=True,
         )
@@ -77,7 +78,7 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
             print("latexmk run failed, see errors above ^^^")
             print("trying pdflatex instead...")
             proc = subprocess.Popen(
-                f'cd "{folder}" {sep} pdflatex "{source}" '
+                f'cd "{folder}" {sep} pdflatex "{source_name}" '
                  '{silent} -latexoption="-interaction=nonstopmode"',
                 shell=True
             )
@@ -87,19 +88,19 @@ def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
                 return
 
         source = source.replace(".tex", ".pdf")
-        print(f"moving {folder}{os.path.sep}{source} -> {output}")
-        shutil.copy(f'{folder}{os.path.sep}{source}', output or source)
+        source_name = source_name.replace(".tex", ".pdf")
+        print(f"moving {folder}{os.path.sep}{source_name} -> {output}")
+        shutil.copy(f'{folder}{os.path.sep}{source_name}', output or source)
 
 
 def make_parser() -> argparse.ArgumentParser:
     """Make an argument parser."""
     parser = argparse.ArgumentParser(
         description="A template based CV creater using YAML templates.")
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument(
-        "source", type=str, nargs="?",
-        help="yaml source file to read. (If omitted create example source file.)"
-    ).completer = lambda prefix, **kws: glob.glob("*.yaml")
+    parser.add_argument(
+        "source", type=str,
+        help="toml source file to read."
+    ).completer = lambda prefix, **kws: glob.glob("*.toml")
     parser.add_argument(
         "-t", "--template", type=str, default="default",
         help="Select which latex template to use when generating document."
@@ -141,14 +142,7 @@ def main() -> None:
     parser = make_parser()
     args = parser.parse_args()
 
-    # no source, no problem: let's make one!
-    if not args.source:
-        with open(os.path.join(CURDIR, "templates", "example.yaml")) as src:
-            with open(args.source or "example.yaml", "w") as dst:
-                dst.write(src.read())
-        return
-
-    assert args.source.endswith(".yaml"), "must be YAML files with .yaml extension"
+    assert args.source.endswith(".toml"), "must be TOML files with .toml extension"
     content = VitaeContent.load(args.source)
 
     # filter projects and publications (as this can not be done in template)
@@ -191,14 +185,14 @@ def main() -> None:
 
     # (compile and) store results:
     if args.latex:
-        output = args.output or args.source.replace(".yaml", ".tex")
+        output = args.output or args.source.replace(".toml", ".tex")
         with open(output, "w") as dst:
             dst.write(latex)
     else:
-        output = args.output or args.source.replace(".yaml", ".pdf")
+        output = args.output or args.source.replace(".toml", ".pdf")
         compile_(
             latex=latex,
-            source=args.source.replace(".yaml", ".tex"),
+            source=args.source.replace(".toml", ".tex"),
             output=output,
             silent=args.silent,
         )
