@@ -20,12 +20,12 @@ jobs:
           name: "Compile CV documents"
           command: |
               source .venv/bin/activate
-              _cvcreate examples/example.toml --output output.tex --latex
-      - run:
-          name: "Run tests"
-          command: |
-              source .venv/bin/activate
-              pytest --doctest-modules cvcreator/ test/
+              cvcreate examples/example.toml --output output.tex --latex
+      # - run:
+      #     name: "Run tests"
+      #     command: |
+      #         source .venv/bin/activate
+      #         pytest --doctest-modules cvcreator/
   deploy:
     docker:
       - image: circleci/python:3.9.4
