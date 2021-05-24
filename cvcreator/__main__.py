@@ -118,20 +118,20 @@ def make_parser() -> argparse.ArgumentParser:
         help="Muffle output.")
     parser.add_argument(
         "-p", "--projects", type=str, default="",
-        help="Comma-seperated list of project tags to include. Use ':' for all.")
+        help="Comma-separated list of project tags to include. Use ':' for all.")
     parser.add_argument(
         "-u", "--publications", type=str, default="",
-        help="Comma-seperated list of publication tags to include. Use ':' for all.")
+        help="Comma-separated list of publication tags to include. Use ':' for all.")
     parser.add_argument(
-        "--font-size", type=int, default=11,
+        "--font-size", type=int, default=0,
         help="The size of the font used in the document."
     )
     parser.add_argument(
-        "--logo-image", type=str, default="logo",
+        "--logo-image", type=str, default="",
         help="path to image files compatible with latexpdf."
     )
     parser.add_argument(
-        "--footer-image", type=str, default="footer",
+        "--footer-image", type=str, default="",
         help="path to image files compatible with latexpdf."
     )
     return parser
@@ -153,19 +153,21 @@ def main() -> None:
     template = (os.path.join(CURDIR, "templates", f"{args.template}.tex")
                 if args.template in TEMPLATES else args.template)
     assert os.path.isfile(template), (
-        "template '%s' not valid path" % args.template)
+        f"template '{args.template}' not valid path")
 
-    footer_image = (args.footer_image if os.path.isfile(args.footer_image)
-                    else os.path.join(CURDIR, "templates",
-                                      f"{args.footer_image}.pdf"))
-    assert os.path.isfile(footer_image), (
-        "footer_image '%s' not valid path" % args.footer_image)
+    content.footer_image = args.footer_image or content.footer_image
+    if not os.path.isfile(content.footer_image):
+        content.footer_image = os.path.join(CURDIR, "templates", f"{content.footer_image}.pdf")
+    assert os.path.isfile(content.footer_image), (
+        f"footer_image '{content.footer_image}' not valid path")
 
-    logo_image = (args.logo_image if os.path.isfile(args.logo_image)
-                  else os.path.join(CURDIR, "templates",
-                                    f"{args.logo_image}.pdf"))
-    assert os.path.isfile(logo_image), (
-        "logo_image '%s' not valid path" % args.logo_image)
+    content.logo_image = args.logo_image or content.logo_image
+    if not os.path.isfile(content.logo_image):
+        content.logo_image = os.path.join(CURDIR, "templates", f"{content.logo_image}.pdf")
+    assert os.path.isfile(content.logo_image), (
+        f"logo_image '{content.logo_image}' not valid path")
+
+    content.font_size = args.font_size or content.font_size
 
     # Merge source and template:
     with open(template, "r") as src:
@@ -176,12 +178,7 @@ def main() -> None:
             variable_start_string="\\VAR{",
             variable_end_string="}",
         )
-    latex = template.render(
-        logo_image=logo_image,
-        footer_image=footer_image,
-        font_size=args.font_size,
-        **dict(content),
-    )
+    latex = template.render(**dict(content))
 
     # (compile and) store results:
     if args.latex:
