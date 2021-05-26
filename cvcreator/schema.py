@@ -75,6 +75,10 @@ class VitaeContent(BaseModel):
     github: str = ""
     summary: str = ""
 
+    logo_image: str = "logo"
+    footer_image: str = "footer"
+    font_size: int = 11
+
     technical_skill: List[TechnicalSkill] = Field(default_factory=list)
     language_skill: List[LanguageSkill] = Field(default_factory=list)
     personal_skill: List[PersonalSkill] = Field(default_factory=list)
