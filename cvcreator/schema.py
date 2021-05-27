@@ -62,6 +62,20 @@ class Publications(BaseModel):
     year: int
     tag: str = ""
 
+class MetaInformation(BaseModel):
+    """Meta-information used by the document."""
+
+    font_size: int = 11
+    logo_image: str = "logo"
+    footer_image: str = "footer"
+    email_image: str = "email"
+    address_image: str = "address"
+    github_image: str = "link"
+    phone_image: str = "phone"
+    birth_image: str = "birth"
+    nationality_image: str = "nationality"
+
+
 class VitaeContent(BaseModel):
     """Schema for the yaml source file."""
 
@@ -75,9 +89,7 @@ class VitaeContent(BaseModel):
     github: str = ""
     summary: str = ""
 
-    logo_image: str = "logo"
-    footer_image: str = "footer"
-    font_size: int = 11
+    meta: MetaInformation = MetaInformation()
 
     technical_skill: List[TechnicalSkill] = Field(default_factory=list)
     language_skill: List[LanguageSkill] = Field(default_factory=list)
