@@ -155,19 +155,21 @@ def main() -> None:
     assert os.path.isfile(template), (
         f"template '{args.template}' not valid path")
 
-    content.footer_image = args.footer_image or content.footer_image
-    if not os.path.isfile(content.footer_image):
-        content.footer_image = os.path.join(CURDIR, "templates", f"{content.footer_image}.pdf")
-    assert os.path.isfile(content.footer_image), (
-        f"footer_image '{content.footer_image}' not valid path")
+    # fill from argparse
+    content.meta.footer_image = args.footer_image or content.meta.footer_image
+    content.meta.logo_image = args.logo_image or content.meta.logo_image
+    content.meta.font_size = args.font_size or content.meta.font_size
 
-    content.logo_image = args.logo_image or content.logo_image
-    if not os.path.isfile(content.logo_image):
-        content.logo_image = os.path.join(CURDIR, "templates", f"{content.logo_image}.pdf")
-    assert os.path.isfile(content.logo_image), (
-        f"logo_image '{content.logo_image}' not valid path")
-
-    content.font_size = args.font_size or content.font_size
+    # anything with meta.*_image should be an image
+    for name in content.meta.__dict__:
+        if not name.endswith("_image"):
+            continue
+        value = getattr(content.meta, name)
+        if not os.path.isfile(value):
+            setattr(content.meta, name, os.path.join(
+                CURDIR, "templates", f"{value}.pdf"))
+            assert os.path.isfile(getattr(content.meta, name)), (
+                f"unrecognized value/path for meta.{name}: '{value}'")
 
     # Merge source and template:
     with open(template, "r") as src:

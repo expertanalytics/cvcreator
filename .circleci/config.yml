@@ -2,11 +2,18 @@ version-tags: &version-tags
   tags:
     only: /v\d+\.\d+\.\d+/
 
-version: 2
-jobs:
-  tests:
+version: 2.1
+executors:
+  my_container:
     docker:
       - image: circleci/python:3.9.4
+        auth:
+          username: jonathf
+          password: $DOCKERHUB_PASSWORD
+
+jobs:
+  tests:
+    executor: my_container
     steps:
       - checkout
       - run:
@@ -27,8 +34,7 @@ jobs:
       #         source .venv/bin/activate
       #         pytest --doctest-modules cvcreator/
   deploy:
-    docker:
-      - image: circleci/python:3.9.4
+    executor: my_container
     steps:
       - checkout
       - run:
