@@ -4,7 +4,7 @@ version = "1.0-beta1"
 description = "An automated tool for creating CVs on the fly."
 authors = ["Jonathan Feinberg <jonathf@gmail.com>"]
 license = "mit"
-include = ["cvcreator/templates/*"]
+include = ["cvcreator/templates/*", "cvcreator/icons/*"]
 
 [tool.poetry.dependencies]
 python = ">=3.7"
