@@ -155,6 +155,13 @@ def main() -> None:
     assert os.path.isfile(template), (
         f"template '{args.template}' not valid path")
 
+    for skill in content.technical_skill:
+        for idx, value in enumerate(skill.values):
+            path = os.path.join(CURDIR, "icons", f"{value}.pdf")
+            if os.path.isfile(path):
+                skill.values[idx] = (
+                    rf"\includegraphics[width=0.3cm]{{{path}}} {value}")
+
     # fill from argparse
     content.meta.footer_image = args.footer_image or content.meta.footer_image
     content.meta.logo_image = args.logo_image or content.meta.logo_image

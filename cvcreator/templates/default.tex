@@ -1,6 +1,7 @@
 \documentclass[english,a4paper,\VAR{meta.font_size}pt]{article}
 \usepackage[utf8]{inputenc}   % write in utf-8
 \usepackage[norsk]{babel}     % ÆØÅ support
+\usepackage[T1]{fontenc}      % extended symbol set
 \usepackage[margin=3cm,a4paper]{geometry}
 \usepackage{graphicx}         % pictures
 \usepackage{amssymb}          % math symbols
@@ -20,17 +21,18 @@
 
 % standard columns
 \usepackage{array}
-\newcolumntype{L}{>{\raggedright}p{0.16\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{0.16\textwidth}}
 \newcolumntype{R}{p{0.74\textwidth}}
 
 % manipulate section headers
 \usepackage{titlesec}
-\titlespacing*{\section}{0cm}{0cm}{0.2cm} % space for {header}{left}{above}{below}
+\titlespacing*{\section}{0cm}{0.2cm}{0cm} % space for {header}{left}{above}{below}
 \setlength{\parindent}{0pt}   % don't start paragraph with indent
-\setlength{\parskip}{0.5cm}   % space between paragraphs
+\setlength{\parskip}{0cm}   % space between paragraphs
 \renewcommand*{\familydefault}{\sfdefault}  % better font choice
-\titleformat{name=\section}[block]{}{}{}{\secformat} % make sections blue
-\newcommand\secformat[1]{\normalfont\Large\bfseries\color{xalblue}#1}
+\titleformat{\section}{\large\bfseries\color{xalblue}}{\thesection}{0pt}{}[\vspace{-0.3cm}\rule{\textwidth}{0.5pt}]
+
+\newcommand\divbar{{\ \textcolor{xalblue}{\bf|}\ }}
 
 \begin{document}
 
@@ -61,16 +63,18 @@
 
 \noindent{\LARGE \bfseries \color{xaldark} Curriculum Vitae for \VAR{name}}
 
+\vspace{0.8cm}
+
 \BLOCK{if summary}
   \VAR{summary}
-  \vspace{0.2cm}
+  \vspace{0.5cm}
 \BLOCK{endif}
 
 \BLOCK{if technical_skill}
   \section*{Technical skills}
   \begin{tabular}{LR}
     \BLOCK{for s in technical_skill}
-    \VAR{s.title} & \VAR{s.values|join(", ")} \\
+    \VAR{s.title} & \VAR{s.values|join("\\divbar ")} \\
     \BLOCK{endfor}
   \end{tabular}
 \BLOCK{endif}
@@ -130,6 +134,7 @@
 \BLOCK{if s.staffing} Staffing    & \VAR{s.staffing}    \\ \BLOCK{endif}
                       Description & \VAR{s.description} \\
 \BLOCK{if s.tools}    Tools       & \VAR{s.tools}       \\ \BLOCK{endif}
+  \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
 \BLOCK{endif}
@@ -138,11 +143,12 @@
   \section*{Publications}
   \BLOCK{for s in publication}
   \begin{tabular}{@{}LR}
-    Journal & \VAR{s.journal}     \\
     Title   & {\it \VAR{s.title}} \\
+    Journal & \VAR{s.journal}     \\
     DOI     & \VAR{s.doi}         \\
     Authors & \VAR{s.authors}     \\
     Year    & \VAR{s.year}        \\
+  \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
 \BLOCK{endif}
