@@ -157,8 +157,7 @@ def main() -> None:
 
     for skill in content.technical_skill:
         for idx, value in enumerate(skill.values):
-            filename = value.replace(" ", "_")
-            path = os.path.join(CURDIR, "icons", f"{filename}.pdf")
+            path = os.path.join(CURDIR, "icons", f"{value}.pdf")
             if os.path.isfile(path):
                 skill.values[idx] = (
                     rf"\includegraphics[width=0.3cm]{{{path}}} {value}")
