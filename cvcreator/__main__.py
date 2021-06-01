@@ -1,204 +1,128 @@
 """Main executable."""
-from typing import Any, Sequence
-import argparse
+import os
 import shutil
 import glob
-import tempfile
-import os
-import subprocess
+import click
+from click_help_colors import HelpColorsGroup, HelpColorsCommand
 
-from jinja2 import Template
-
-from .schema import VitaeContent
-
-CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
-TEMPLATES = [os.path.basename(path).replace(".tex", "")
-             for path in glob.glob(os.path.join(CURDIR, "templates", "*.tex"))]
+from .compile import compile_latex
+from .content import load_content
+from .template import load_template
+from .txt2yaml import convert_txt_to_yaml
+from .yaml2toml import convert_yaml_to_toml
 
 
-def filter_(keys: str, sequence: Sequence[Any]) -> Sequence[Any]:
+@click.group(
+    cls=HelpColorsGroup,
+    help_headers_color="green",
+    help_options_color="blue",
+    short_help="CV creator tool",
+)
+def cv():
     """
-    Filter a sequence form CLI.
-
-    Args:
-        keys:
-            String with comma-separated tags. Or the string ':'.
-        sequence:
-            Sequence of elements to filter.
-
-    Returns:
-        Same as `sequence`, but filtered down to indices included in `keys`.
-
+    Command line tool for creating curriculum vitae from TOML source files.
     """
-    if keys == "":
-        return []
-    if keys == ":":
-        return sequence
-    keys = keys.replace(" ", "").split(",")
-    return [sequence[idx] for idx, s in enumerate(sequence) if s.tag in keys]
+    pass
 
 
-def compile_(latex: str, source: str, output: str, silent: bool = True) -> None:
+@cv.command(
+    cls=HelpColorsCommand,
+    help_options_color="blue",
+    short_help="Create CV as .pdf file",
+)
+@click.argument("toml_content")
+@click.argument("document_output", default="")
+@click.option("-t", "--template", default="default", help=(
+    "Select which latex template file to use when generating document."))
+@click.option("-p", "--projects", default="", help=(
+    "Comma-separated list of project tags to include. Use ':' for all."))
+@click.option("-u", "--publications", default="", help=(
+    "Comma-separated list of publication tags to include. Use ':' for all."))
+def create(
+    toml_content: str,
+    document_output: str = "",
+    template: str = "default",
+    projects: str = "",
+    publications: str = "",
+) -> None:
     """
-    Compile latex code.
-
-    Will try to use latexmk first, then pdflatex.
-    Assumes that either of these executable exists.
-
-    Args:
-        latex:
-            The latex source code.
-        source:
-            The name of the latex source files.
-        output:
-            The folder for where to store output PDF.
-        silent:
-            Muffle latex compiles.
-
+    Create curriculum vitae .pdf document from .toml content file.
     """
-    with tempfile.TemporaryDirectory() as folder:
-
-        source_name = os.path.basename(source)
-        print(f"writing {folder}{os.path.sep}{source_name}")
-        with open(f"{folder}{os.path.sep}{source_name}", "w") as dst:
-            dst.write(latex)
-
-        sep = "&" if os.name == "nt" else ";"
-        silent = "-silent" if silent else ""
-        cmd_args = '{silent} -latexoption="-interaction=nonstopmode"'
-
-        print(f"compiling {folder}{os.path.sep}{source_name}")
-        proc = subprocess.Popen(
-            f'cd "{folder}" {sep} latexmk "{source_name}" {silent} '
-             '-pdf -latexoption="-interaction=nonstopmode"',
-            shell=True,
-        )
-        proc.wait()
-        if proc.returncode:
-            print("latexmk run failed, see errors above ^^^")
-            print("trying pdflatex instead...")
-            proc = subprocess.Popen(
-                f'cd "{folder}" {sep} pdflatex "{source_name}" '
-                 '{silent} -latexoption="-interaction=nonstopmode"',
-                shell=True
-            )
-            proc.wait()
-            if proc.returncode:
-                print("pdflatex run failed too, see errors above ^^^")
-                return
-
-        source = source.replace(".tex", ".pdf")
-        source_name = source_name.replace(".tex", ".pdf")
-        print(f"moving {folder}{os.path.sep}{source_name} -> {output}")
-        shutil.copy(f'{folder}{os.path.sep}{source_name}', output or source)
+    content = load_content(toml_content, projects, publications)
+    template = load_template(template)
+    latex_code = template.render(**dict(content))
+    name = os.path.basename(toml_content.replace(".toml", ""))
+    document_output = document_output or toml_content.replace(".toml", ".pdf")
+    with compile_latex(latex=latex_code, name=name) as pdf_path:
+        shutil.copy(pdf_path, document_output)
 
 
-def make_parser() -> argparse.ArgumentParser:
-    """Make an argument parser."""
-    parser = argparse.ArgumentParser(
-        description="A template based CV creater using YAML templates.")
-    parser.add_argument(
-        "source", type=str,
-        help="toml source file to read."
-    ).completer = lambda prefix, **kws: glob.glob("*.toml")
-    parser.add_argument(
-        "-t", "--template", type=str, default="default",
-        help="Select which latex template to use when generating document."
-    ).completer = lambda prefix, **kws: TEMPLATES
-    parser.add_argument(
-        "-o", "--output", type=str, default="",
-        help="Name of the output file. Default to 'source' with pdf-extension",
-    )
-    parser.add_argument(
-        "-l", '--latex', action="store_true",
-        help="Create latex instead of pdf."
-    )
-    parser.add_argument(
-        "-s", '--silent', action="store_true",
-        help="Muffle output.")
-    parser.add_argument(
-        "-p", "--projects", type=str, default="",
-        help="Comma-separated list of project tags to include. Use ':' for all.")
-    parser.add_argument(
-        "-u", "--publications", type=str, default="",
-        help="Comma-separated list of publication tags to include. Use ':' for all.")
-    parser.add_argument(
-        "--font-size", type=int, default=0,
-        help="The size of the font used in the document."
-    )
-    parser.add_argument(
-        "--logo-image", type=str, default="",
-        help="path to image files compatible with latexpdf."
-    )
-    parser.add_argument(
-        "--footer-image", type=str, default="",
-        help="path to image files compatible with latexpdf."
-    )
-    return parser
+@cv.command(cls=HelpColorsCommand, short_help="Create CV as .tex file")
+@click.argument("toml_content")
+@click.argument("target", default="")
+@click.option("-t", "--template", default="default", help=(
+    "Select which latex template file to use when generating document."))
+@click.option("-p", "--projects", default="", help=(
+    "Comma-separated list of project tags to include. Use ':' for all."))
+@click.option("-u", "--publications", default="", help=(
+    "Comma-separated list of publication tags to include. Use ':' for all."))
+def latex(
+    toml_content: str,
+    target: str = "",
+    template: str = "default",
+    projects: str = "",
+    publications: str = "",
+):
+    """
+    Create latex source code from .toml content file.
+    """
+    content = load_content(toml_content, projects, publications)
+    template = load_template(template)
+    latex_code = template.render(**dict(content))
+    target = target or toml_content.replace(".toml", ".tex")
+    with open(target, "w") as dst:
+        dst.write(latex_code)
 
 
-def main() -> None:
-    """Execution script."""
-    parser = make_parser()
-    args = parser.parse_args()
+@cv.command(cls=HelpColorsCommand, short_help="Convert old .txt to .yaml")
+@click.argument("txt_source")
+@click.argument("yaml_target", default="")
+def txt2yaml(txt_source, yaml_target):
+    """
+    Convert old .txt content file into newer(-ish) .yaml format.
+    """
+    convert_txt_to_yaml(txt_source, yaml_target)
 
-    assert args.source.endswith(".toml"), "must be TOML files with .toml extension"
-    content = VitaeContent.load(args.source)
 
-    # filter projects and publications (as this can not be done in template)
-    content.project = filter_(args.projects, content.project)
-    content.publication = filter_(args.publications, content.publication)
+@cv.command(cls=HelpColorsCommand, short_help="Convert old .yaml to .toml")
+@click.argument("yaml_source")
+@click.argument("toml_target", default="")
+def yaml2toml(yaml_source, toml_target):
+    """
+    Convert old .yaml content file into newer .toml format.
+    """
+    convert_yaml_to_toml(yaml_source, toml_target)
 
-    # verify paths to templates and images
-    template = (os.path.join(CURDIR, "templates", f"{args.template}.tex")
-                if args.template in TEMPLATES else args.template)
-    assert os.path.isfile(template), (
-        f"template '{args.template}' not valid path")
 
-    for skill in content.technical_skill:
-        for idx, value in enumerate(skill.values):
-            path = os.path.join(CURDIR, "icons", f"{value}.pdf")
-            if os.path.isfile(path):
-                skill.values[idx] = (
-                    rf"\includegraphics[width=0.3cm]{{{path}}} {value}")
+@cv.command(cls=HelpColorsCommand, short_help="Create example .toml file")
+@click.argument("toml_target")
+def example(toml_target):
+    """
+    Create example .toml content file to be filled out.
+    """
+    toml_source = os.path.join(os.path.dirname(__file__), "templates", "example.toml")
+    shutil.copy(pdf_path, toml_target)
 
-    # fill from argparse
-    content.meta.footer_image = args.footer_image or content.meta.footer_image
-    content.meta.logo_image = args.logo_image or content.meta.logo_image
-    content.meta.font_size = args.font_size or content.meta.font_size
 
-    # anything with meta.*_image should be an image
-    for name in content.meta.__dict__:
-        if not name.endswith("_image"):
-            continue
-        value = getattr(content.meta, name)
-        if not os.path.isfile(value):
-            setattr(content.meta, name, os.path.join(
-                CURDIR, "templates", f"{value}.pdf"))
-            assert os.path.isfile(getattr(content.meta, name)), (
-                f"unrecognized value/path for meta.{name}: '{value}'")
+@cv.command(cls=HelpColorsCommand, short_help="List technical skill badges")
+def badges():
+    r"""
+    List the technical skills that will trigger a badge prefix.
+    In other words, the text will be accompanied with an appropriate logo image.
 
-    # Merge source and template:
-    with open(template, "r") as src:
-         template = Template(
-            src.read(),
-            block_start_string="\\BLOCK{",
-            block_end_string="}",
-            variable_start_string="\\VAR{",
-            variable_end_string="}",
-        )
-    latex = template.render(**dict(content))
-
-    # (compile and) store results:
-    if args.latex:
-        output = args.output or args.source.replace(".toml", ".tex")
-        with open(output, "w") as dst:
-            dst.write(latex)
-    else:
-        output = args.output or args.source.replace(".toml", ".pdf")
-        compile_(
-            latex=latex,
-            source=args.source.replace(".toml", ".tex"),
-            output=output,
-            silent=args.silent,
-        )
+    Notable exemption: 'Latex' though it has a logo, should be preferred to be
+    included as '\\LaTeX' as the actual logo is usually unrecognizable.
+    """
+    os.chdir(os.path.join(os.path.dirname(__file__), "icons"))
+    click.echo_via_pager("\n".join(badge.replace(".pdf", "")
+                                   for badge in sorted(glob.iglob("*.pdf"))))

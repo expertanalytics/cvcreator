@@ -1,0 +1,94 @@
+name = "John Doe"
+address = "1600 Pennsylvania Avenue NW"
+post = "20500, DC"
+birth = "01.12.1950"
+email = "joe@doe.org"
+phone = "+1 979 209 0357"
+github = "https://github.com/joe"
+summary = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+"""
+
+[[work]]
+description = "Computer scientist at Google Inc. "
+start = 2019
+end = 2020
+
+[[work]]
+description = "Teacher at Brown University."
+start = 2020
+end = 2021
+
+[[work]]
+description = "Consultant at Expert Analytics."
+start = 2021
+
+[[education]]
+year = 2015
+description = "Bachelor's degree in mathematics from the University of Oslo."
+
+[[education]]
+year = 2018
+description = "Master's degree in computer science from Cambridge University."
+
+[[technical_skill]]
+title = "Languages"
+values = [ "Python", "C++", "Java"]
+
+[[technical_skill]]
+title = "Libraries"
+values = [ "Numpy", "Scipy"]
+
+[[technical_skill]]
+title = "Statistics"
+values = [ "Statsmodels", "PyMC",]
+
+[[language_skill]]
+language = "English"
+proficiency = "mother tongue"
+
+[[language_skill]]
+language = "Norwegian"
+proficiency = "fluent"
+
+[[language_skill]]
+language = "German"
+proficiency = "basic"
+
+[[personal_skill]]
+title = "Skill1"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing alit, sed"
+
+[[personal_skill]]
+title = "Skill2"
+description = "do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+[[hobby]]
+title = "Out doors"
+values = ["Running", "Hiking", "Sailing"]
+
+[[project]]
+activity = "My open source project"
+period = "2014 --"
+role = "Lead maintainer"
+staffing = "4 developers"
+tools = "numpy and scipy"
+volume = "Part time"
+description = """
+short description of project and your involvement there.
+"""
+url = "https://url_to_learn_more.com/"
+tag = "1"
+
+[[publication]]
+title = "Article title"
+journal = "Journal name"
+authors = "Authors for work, in correct order"
+doi = "https://doi.com/link_to_article"
+year = 2000
+tag = "1"

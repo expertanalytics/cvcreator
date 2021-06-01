@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cvcreator"
-version = "1.0-beta2"
+version = "1.0"
 description = "An automated tool for creating CVs on the fly."
 authors = ["Jonathan Feinberg <jonathf@gmail.com>"]
 license = "mit"
@@ -11,14 +11,14 @@ python = ">=3.7"
 toml = "^0.10.2"
 pydantic = "^1.8.1"
 Jinja2 = "^2.11.3"
+click = "^8.0.1"
+click-help-colors = "^0.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
 
 [tool.poetry.scripts]
-cvcreate = "cvcreator.__main__:main"
-yaml2toml = "cvcreator.yaml2toml:main"
-txt2yaml = "cvcreator.txt2yaml:main"
+cv = "cvcreator.__main__:cv"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
