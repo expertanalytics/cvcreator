@@ -19,6 +19,7 @@ pytest = "^6.2.3"
 
 [tool.poetry.scripts]
 cv = "cvcreator.__main__:cv"
+cvcreate = "cvcreator.__main__:create"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
