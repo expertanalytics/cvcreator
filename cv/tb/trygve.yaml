@@ -99,10 +99,10 @@ Interests:
 Projects:
     A1:
         Activity: "Short term production planning with Statkraft"
-        Period: "08/2020-"
+        Period: "08/2019-12/2020"
         Role: "Backend developer"
         Staffing: "3-5 developers, 3-7 project owners, 1 project manager"
-        Volume: "50-100\\%"
+        Volume: "50-100 \\%"
         Description: >
                 Trygve worked with development of a tool for hydro power production planning for Statkraft.
                 Here he built a system for solving various optimization problems on demand from either
@@ -110,13 +110,26 @@ Projects:
         Tools: "Python, C++, Angular, Apache"
     A2:
         Activity: "Analysis platform development with Statkraft"
-        Period: "02/2018-"
+        Period: "02/2018-12/2020"
         Role: "Developer"
-        Volume: "50-100\\%"
+        Volume: "50-100 \\%"
         Description: >
                 Trygve worked with development, maintenance and surveillance on the computer clusters used in many of Statkraft's
-                analysis pipelines. 
+                analysis pipelines.
         Tools: "Python, C++, Bokeh, Gitlab, systemd"
+    A3:
+        Activity: "Forecasting models for balancing power markets with Cognite and Hafslund Eco"
+        Period: "01/2021-06/2021"
+        Role: "Data scientist"
+        Staffing: "3 developers, 1 domain experts, 2 project ownerns and 1 project manager."
+        Volume: "100 \\%"
+        Description: >
+                     Trygve worked with the development of price forecasting models based on machine learning
+                     for the intraday- and regulating power markets, whose function is to resolve imbalances
+                     between production and consumption in the power grid.
+                     The models were set in production on Cognite's cloud infrastructure, and a GUI was built
+                     for traders to view the predictions in a context to help in their decision making.
+        Tools: "Python, scikit-learn, XGBoost, Cognite Data Fusion"
 Languages:
     "Norwegian": "Native speaker and writer"
     "English": "Speak and write fluently"
