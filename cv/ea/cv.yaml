@@ -18,10 +18,12 @@ Summary: |
     development.
 Skills:
     Languages:
-        - "C/C++"
+        - "C"
+        - "C++"
         - "Python"
         - "Java"
-        - "TeX/LaTeX"
+        - \LaTeX
+        - \TeX
     Frameworks:
         - "OpenCL"
         - "Numpy and SciPy"
@@ -103,8 +105,39 @@ Work:
         Worked on testing web applications: both manually and by automating manual procedures.
 Projects:
     A1:
+        Activity: "Python developer at Hafslund-Eco"
+        Period: "Jan.\ 2021 ---"
+        Role: "Developer"
+        Staffing: "10 persons, (6 are developers/data scientists)"
+        Volume: "100\\%"
+        Description: |
+            At Hafslund-Eco they are building and improving infrastructure for controlling and
+            monitoring price and forecast simulations.
+
+            My role in the project has been development and maintenance of Python packages
+            interfacing various third-party applications and systems, simple data visulization,
+            teaching and answering Python related questions, setup and maintenance of CI/CD
+            for Python projects in Azure DevOps, and various other tasks.
+        Tools: Python, Azure DevOps, Git, and Docker
+    A2:
+        Activity: "Domain and asset modelling at Arundo Analytics"
+        Period: "Nov.\ 2019 --- July 2020"
+        Role: "Developer"
+        Staffing: "On my team: 2-3 developers and an architect, the entire project included about 10 people"
+        Volume: "40\\% until Jan. 2020, 100\\% from Jan.\ 2020"
+        Description: |
+            I worked in a team with designing and implementing a domain and asset model to be used
+            in a project developing a cloud solution for petrochemical plants.
+
+            I joined in the design and prototype phase of creating the model, and continued into
+            developing the implementation to be used with the rest of the project. I worked on
+            the overall model design in collaboration with the rest of the team, and on the data
+            structure components of the model, and on parsing, analysing, and cleaning existing
+            Json data before importing.
+        Tools: Python, TypeScript, Git, JIRA, and Confluence
+    A3:
         Activity: "Prototype IoT platform at Statkraft"
-        Period: "July 2019 ---"
+        Period: "July 2019 --- Nov. 2019"
         Role: "Developer"
         Staffing: "3 developers"
         Volume: "20\\%"
@@ -117,12 +150,12 @@ Projects:
             communication between the node and the gateway using LoRaWAN, and interface the node
             with the sensor circuitry being developed in parallel.
         Tools: ESP32, Arduino, ESP-IDF, and C/C++
-    A2:
+    A4:
         Activity: "Data collection, modelling, and analysis at Statkraft"
-        Period: "Aug.\ 2017 ---"
+        Period: "Aug.\ 2017 --- Dec.\ 2019"
         Role: "Developer"
         Staffing: "3 developers, 2 hydrologists"
-        Volume: "100\\% until June 2019, 80\\% from July 2019"
+        Volume: "100\\% until June 2019, 80\\% from July 2019, 60\\% from November 2019"
         Description: |
             Statkraft is a major hydropower producer in Norway, and have need of stable and correct
             data. As part of updating their data frameworks they are hosting several projects for
@@ -132,7 +165,7 @@ Projects:
             sources, design and implement a model of the network of sensor stations and nodes,
             and data analysis of hydrological/meterologial time series data.
         Tools: Python, C++, Boost Python, Git, and Sphinx
-    A3:
+    A5:
         Activity: The norwegian land register (NO:~{\it{}{``}Matrikkelen{''}}) at Kartverket
         Period: "Apr.\ 2017 --- May 2017"
         Role: "Developer"
@@ -145,7 +178,7 @@ Projects:
             I have redesigned and implemented the algorithms for computing changes to land borders
             using a specialized depth-first graph search.
         Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence, and Perforce
-    A4:
+    A6:
         Activity: Region and Municipality reorganization (NO:~{\it{}{``}Kommunereformen{''}})
             at Kartverket
         Period: "Jan.\ 2017 --- Apr.\ 2017"
@@ -164,7 +197,7 @@ Projects:
             constraints of the data transforms, and by database constraints. The partitioning was
             done using graph search and graph partitioning algorithms.
         Tools: Java, Oracle SQL, Hibernate, IntelliJ IDEA, JIRA, Confluence, and Perforce
-    A5:
+    A7:
         Activity: "A C++/OpenCL library for sparse linear algebra"
         Period: "Aug.\ 2015 --- Dec.\ 2017"
         Role: "Researcher and developer"
@@ -176,7 +209,7 @@ Projects:
             operations. Matrix-vector algorithms are implemented both serially, and parallel for
             GPUs using the OpenCL framework.
         Tools: C++, OpenCL, Python, CMake, and Git
-    A6:
+    A8:
         Activity: "Prototype an Android app for logging mobile network parameters"
         Period: "June 2013 --- Aug.\ 2014"
         Role: "Developer"
@@ -191,4 +224,3 @@ Projects:
             As the app used proprietary network data it was never meant for public use and is not
             available.
         Tools: Android, Java, IntelliJ IDEA, Gradle, and Git
-

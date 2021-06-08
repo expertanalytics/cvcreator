@@ -22,8 +22,9 @@ Summary: >
 
 Skills:
     Languages:
-        - "Python" 
-        - "C/C++" 
+        - "Python"
+        - "C"
+        - "C++"
         - "Javascript"
         - "Java"
         - "Bash"

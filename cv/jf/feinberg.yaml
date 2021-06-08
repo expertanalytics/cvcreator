@@ -1,17 +1,17 @@
 Basic:
     Name: "Jonathan Feinberg"
-    Address: "Wessels gate 9A"
-    Post: "0165 Oslo"
+    Address: "Pilestredet park 15"
+    Post: "0176 Oslo"
     Birth: "28.04.1984"
     Email: "jonathan@xal.no"
-    Phone: "+47 932 14 474"
+    Phone: "+47 93 21 44 74"
 Summary: >
     I am a specialist in probability theory, statistics and machine learning
     with heavy focus on numerical programming and practical applications. I am
     highly analytical in my thinking and can quickly break down open ended
-    complex problems into manageable components. I am also an experienced
-    programmer, with expert level knowledge in the Python programming
-    language.
+    complex problems into manageable components. At the same time I am also an
+    experienced programmer, with expert level knowledge in the Python
+    programming language.
 Skills:
     Languages:
         - "Bash"
@@ -21,7 +21,8 @@ Skills:
         - "MATLAB"
         - "Python"
         - "R"
-        - "RST/Markdown"
+        - "RST"
+        - "Markdown"
         - "Vimscript"
         - "Regular Expression"
     Frameworks:
@@ -55,19 +56,20 @@ SelectedSkills:
         proposed progress plans, grounded in fact-based thought.
 Education:
     - - 2015
-      - "Ph.D. in Mathematics from the Department of Mathematics, University of
-         Oslo \\newline
-         Thesis: ``Some Improvements and Applications and Non-intrusive
-         Polynomial Chaos Expansions'' \\newline
-         Supervisor: Professor Hans Petter Langtangen"
+      - "PhD in Mathematics from the Department of Mathematics, University of
+         Oslo. \\newline
+         Thesis written at Simula Research Laboratory: ``Some Improvements and
+         Applications and Non-intrusive Polynomial Chaos Expansions'' \\newline
+         Supervised by Professor Hans Petter Langtangen."
     - - 2009
-      - "M.Sc. in Modelling and Data Analysis from the Department of
-         Mathematics, University of Oslo \\newline
-         Thesis: ``Threshold Definition of Early Warning Systems to Natural
-         Hazards'' \\newline
-         Supervisor: Professor Bent Natvig"
+      - "Master's degree in Modelling and Data Analysis, Department of
+         Mathematics, University of Oslo. \\newline
+         Thesis written at Norwegian Geotechinical Institute: ``Threshold
+         Definition of Early Warning Systems to Natural Hazards'' \\newline
+         Supervised by Professor Bent Natvig."
     - - 2007
-      - "B.Sc. in Mathematics, Informatics and Technology, University of Oslo"
+      - "Bachelor's degree in Mathematics, Informatics and Technology,
+         University of Oslo"
 Work:
     - - 2016
       - ""
@@ -119,22 +121,24 @@ Projects:
         Activity: NEC Oncoimmunity
         Role: Senior Developer and Data Scientist
         Staffing: 20 Developers/Data Scientists/Bioinformaticians
+        Period: 2016 -- 2020
         Description: >
-            OncoImmunity develop bioinformatics software that has the
-            ability to empower precision cancer immunotherapy, and thus
-            improves the outlook for patients with late-stage disease. My role
-            is to develop machine-learning methods applied to genomic data for
-            tumor immune profiling. The goal is to select optimal patients to
-            be assigned to cancer immunotherapy clinical trials.
+            OncoImmunity develop bioinformatics software that has the ability
+            to empower precision cancer immunotherapy, improving the outlook
+            for patients with late-stage disease. My role there was to develop
+            machine-learning methods applied to genomic data for tumor immune
+            profiling. The goal is to select optimal patients to be assigned to
+            cancer immunotherapy clinical trials.
         Tools: Python, Keras/Tensorflow, Numpy, Pandas, Scikit-learn, XGBoost
     A2:
         Activity: Statkraft
         Role: Data Scientist
         Staffing: 3 developers
+        Period: Summer 2016
         Description: >
             Statkraft is a leading company in hydropower internationally, and
-            Europe's largest generator of renewable energy. Our role was to
-            explore the possibility of applying machine learning to parts of
+            Europe's largest generator of renewable energy. My role there was
+            to explore the possibility of applying machine learning to parts of
             Statkraft's core business. In particular, we looked into various
             machine learning techniques that could be used to predict future
             market energy consume. The techniques included applying methods
@@ -142,9 +146,22 @@ Projects:
             neural networks.
         Tools: Python, Keras/Tensorflow, Scikit-learn, Statsmodels
     A3:
+        Activity: Vipps AS
+        Role: Data Scientist/Advisor
+        Staffing: 5 developers
+        Period: Fall 2020 --
+        Description: >
+            Vipps is the leading service in Norway for person to person
+            financial transaction over mobile in Norway. I have been working on
+            automating the detection of illegal transactions using machine
+            learning, where my role is the machine learning expert providing
+            the methodology.
+        Tools: Azure, SQL, XGBoost, Tensorflow
+    A4:
         Activity: Matlab to C++ converter
         Role: Software developer
         Staffing: 2 developers
+        Period: 2015 -- 2016
         Description: >
             As part of an EU sponsored project, Simula Research Laboratory and
             WesternGeco is collaborating to speed up the code translation step
@@ -153,10 +170,11 @@ Projects:
             I contributed as the developer of the parser, and the structure of
             translation.
         Tools: Python, Armadillo, Sphinx
-    A4:
+    A5:
         Activity: Chaospy -- Uncertainty Quantification Toolbox
         Role: Co-creator and Maintainer
         Staffing: 2 developers
+        Period: 2012 --
         Description: >
             Chaospy is an actively maintained open source toolbox containing
             a large collection of uncertainty quantification tools. It includes
@@ -165,10 +183,11 @@ Projects:
             multiple research and development projects. \newline
             \url{https://github.com/jonathf/chaospy}
         Tools: Python, NumPy, SciPy
-    A5:
+    A6:
         Activity: Numpoly -- Multivariate polynomials as NumPy datatype
         Role: Creator and Maintainer
         Staffing: 1 developer
+        Period: 2019 --
         Description: >
             Numpoly is an open source library for creating, manipulating
             polynomial arrays. The library provides a subclass of
@@ -179,6 +198,17 @@ Projects:
             \newline
             \url{https://github.com/jonathf/numpoly}
         Tools: Python, NumPy
+    A7:
+        Activity: Variable
+        Role: Advisor
+        Staffing: 3 developers
+        Period: Fall 2020
+        Description: >
+            Variable is a small startup focusing on quantifying climate risk.
+            My job was to teach the team on uncertainty quantification and help
+            formulate the probabilistic building blocks needed to construct
+            risk models.
+        Tools: Python, PyMC3
 Publications:
     B1:
         Journal: Journal of Computational Science

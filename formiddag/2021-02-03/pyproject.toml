@@ -1,0 +1,26 @@
+[project]
+name = "hover_pres"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jonathan Feinberg", email = "jonathf@gmail.com"},
+]
+dependencies = [
+    "hovercraft~=2.7",
+    "pipx~=0.16",
+    "pdm~=1.2",
+]
+dev-dependencies = []
+requires-python = ">=3.9"
+dynamic = ["classifiers"]
+license = {text = "MIT"}
+
+[project.urls]
+homepage = ""
+
+[tool]
+[tool.pdm]
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"

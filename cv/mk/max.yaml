@@ -1,23 +1,24 @@
 Basic:
     Name:    Max Akira Endo Kokubun
-    Address: Waldemars Hage 3
-    Post:    0175 Oslo
+    Address: Gunnar Schjelderups Vei 11B
+    Post:    0485 Oslo
     Birth:   24.01.1986
     Email:   max@xal.no
     Phone:   +47 922 98 573
     Nationality: Brazilian
 Summary: >
-    In essence, I am a problem-solver who relies on my scientific knowledge and experience in academia. 
-    I have a PhD in Aerospace Engineering, from the National Institute for Space Research (INPE, 2014) and 
-    before joining Expert Analytics I held two postdoctoral positions: one in Applied Mathematics, at the National Institute for Pure and Applied Mathematics (IMPA, 2014-2016), 
-    and one in Chemistry/Applied Mathematics, at the University of Bergen (UiB, 2016-2019). 
-    My role in these projects was to develop mathematical models, and its associated numerical solvers, describing experimentally-obtained results. 
-    Thus, I have an expertise in understanding real-world problems/data and translating them into a mathematical framework.
+    In essence, I am a problem solver who relies on my scientific knowledge and programming skills to tackle difficult industrial problems. 
+    I have a PhD in Aerospace Engineering (2011-2014) and before joining Expert Analytics I held two postdoctoral positions in Applied Mathematics (2014-2016 and 2016-2019).
 
+
+    After moving to the industry sector, I worked as a consultant within digitalization for international Oil \& Gas companies. 
+    By leveraging my knowledge both in multiphase fluid mechanics and programming, I helped them optimize production (anomaly detection algorithms) and automate human tasks (script programming).
+    My experience in academia allows me to provide creative ways to attack difficult industrial problems and for the client it is a guarantee of a solid solution. 
+    Moreover, I have experience in tackling problems in a pragmatic manner, adjusting to the needs of the customer and thus guaranteeing a timely delivery for the solutions.
     
-    I worked in close collaboration with researchers from different backgrounds (physicists, engineers, mathematicians, experimentalist chemists, etc) and 
-    international institutions (Norway, Brazil, USA, Netherlands, Sweden, Belgium, UK). 
-    Therefore, I have excellent communication skills and can easily connect with both technical and non-technical audiences.
+    
+    I have a large experience in working with multidisciplinary teams and thrive in such environments. 
+    I'm considered by my peers as an excellent speaker and someone who is able to communicate well both with technical people and with stakeholders.
 Skills:
     Languages:
         - Matlab
@@ -25,18 +26,19 @@ Skills:
         - Fortran
         - Octave
     Frameworks:
-        - Scipy
-        - Matplotlib
+        - Numpy/Scipy        
         - Pandas
+        - GeoPandas
+        - Matplotlib
         - Keras
         - scikit-learn
     Tools:
+        - Git
+        - Jupyter Notebook    
         - openFOAM
+        - \LaTeX
         - COMSOL
-        - Mathematica
-        - FEniCS
-        - gmsh
-        - Latex
+        - Mathematica        
 Languages:
     "Portuguese": Native
     "English": Fluent
@@ -45,13 +47,13 @@ Languages:
 SelectedSkills:
     "Team work": >
         I enjoy being part of a team when solving problems. 
-        My experience in research was always guided by collaborative work, absorbing knowledge from more experienced researchers and guiding younger researchers.
+        I have experience working within the Agile methodology, thus ensuring an efficient and fast-paced path from design to implementation.
     "Problem solving": >
-        I like solving real-world problems by analysing them through my scientific background.
+        My experience in academia allows me to solve difficult technical industry problems in creative and innovative ways.
     "Communication": >
-        I am considered an excellent communicator, specifically when it comes to simplify very technical topics to the broader audience.
+        I am considered an excellent communicator, specifically when it comes to simplifying very technical topics to the broader audience.
     "Analytical thinking": >
-        I have a facility in understanding complex problems in an organized matter, breaking it down into smaler, easier to understand pieces.
+        I have a facility in understanding complex problems in an organized matter, breaking it down into smaller, easier to understand pieces.
 Education:
     - - "2011 - 2014"
       - >
@@ -90,12 +92,35 @@ Interests:
         - Porous media
         - Enhanced Oil Recovery        
     "Personal":
-        - Traveling
+        - Travelling
         - Hiking
-        - Sports (football, swimming, rollerblading, tennis)
+        - Sports (football, swimming, rollerblading, skiing, ice skating, tennis)
         - Music
 Projects:
     A1:
+        Activity: Automatic Slug Detector
+        Period: 01.2021-03.2021
+        Role: Data Scientist
+        Staffing: Team of 2
+        Volume: 100\\%
+        Description: >
+            This project was part of Wintershall DEA's digitalization initiative. 
+            I worked with the production optimization team in a use case dedicated to develop a slug detection tool for the offshore production team in the Brage oilfield.
+            My role as a data scientist was to develop a backend solution that automatically detects anomalous events in Brage's wells and categorizes them by severity.
+            My backend solution was coupled with a dashboard solution in Grafana for easiness of visualization to the Brage's team.	     
+        Tools: Python, Cognite Data Fusion, Git
+    A2:
+        Activity: Advanced Chalk Influx Advisor (scoping phase)
+        Period: 10.2020-12.2020
+        Role: Data Scientist
+        Staffing: Team of 3
+        Volume: 100\\%
+        Description: >
+            This project was part of Aker BP's digitalization program, Eureka, and its goal was to understand and ultimately predict chalk influx events in the Valhall oilfield. 
+            My role as a data scientist in the scoping phase of the project was to help designing the foundations for the later development phase. 
+            My broad role in the scoping phase lead me to: elaborate a root-cause diagram for chalk influx events, assess the use of proppant transport models as suitable for chalk transport, aid in the design of experimental work to characterize chalk influence on flow characteristics, data analysis of well tests, among others.
+        Tools: Python, Cognite Data Fusion
+    A3:
         Activity: Experimentally-based modelling of colloid transport in multiphase porous media (EPOCH)
         Period: 2016-2019
         Role: Postdoctoral Fellow
@@ -105,7 +130,7 @@ Projects:
             This project was funded by Equinor and it aimed at developing mathematical models and numerical solvers for the problem of polymer particles transport in oil-water flow in porous media. 
             The models we developed were based on experimentally-obtained results for enhanced oil recovery. 
         Tools: openFOAM, Matlab, MRST, COMSOL
-    A2:
+    A4:
         Activity: Mathematical modelling and analysis of medium-temperature oxidation (MTO) of multicomponent oil flow in porous media
         Period: 2014-2016
         Role: Postdoctoral Fellow
@@ -114,17 +139,5 @@ Projects:
         Description: >
             Development of mathematical models and numerical solvers for the problem of reactive multiphase flow of a multicomponent oil in porous media. 
             This project was part of IMPA's strategy to tackle industry-relevant problems by the use of high-level mathematical and numerical tools. 
-            Our theoretical results were compared with experimental results from a collaborative research team at TU Delft.
-        Tools: Mathematica, COMSOL, Matlab
-    A3:
-        Activity: Asymptotic analysis of a chambered diffusion flame
-        Period: 2013-2014
-        Role: Visiting Scholar
-        Staffing: 3 Researchers
-        Volume: 100\\%
-        Description: >
-            Analysis of the extinction limits of a diffusion flame established in porous media. 
-            This collaborative work between INPE and the University of Illinois at Urbana-Champaign, USA, was part of my PhD project. 
-            This work identified the similarities between the extinction of a diffusion flame established in a porous matrix and the extinction of spread flames in solid fuels. 
-            The novelty of this work was recognized by The Combustion Institute, who awarded it the prize of Distinguished Paper in the 36th International Symposium on Combustion.
-        Tools: Matlab, Fortran
+            Our theoretical results were compared with experimental results from a collaborative research team at TU Delft.  
+        Tools: Mathematica, COMSOL, Matlab      

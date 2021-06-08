@@ -1,0 +1,218 @@
+Basic:
+    Name:  "Sebastian Franco Ulloa"
+    Address: "Helgesens gate 14D"
+    Post: "0553 Oslo"
+    Birth: "28.07.1993"
+    Email: "sebastian.ulloa@xal.no"
+    Phone: "+47 466 79 133"
+Summary: >
+    Consultant at Expert Analytics AS. PhD in biotechnological sciences with
+    a background in physics and chemistry. My areas of interest include 
+    data science (analysis and visualization), machine learning, drug discovery, 
+    nanomaterials, and the theory of evolution. My values are based on the scientific
+    method, critical thinking, and teaching. I am an analytical and compassionate person
+    prompt to hear different perspectives on the same problem, to consolidate them into
+    the most informed and reasonable judgement possible.
+Skills:
+    Applications:
+        - "Supervised machine learning"
+        - "Molecular dynamics"
+        - "Mathematical modeling"
+        - "Data visualization"
+        - "Finite element methods"
+        - "Design of experiments"
+        - "Scientific writing"
+    Languages:
+        - "Python"
+        - "C"
+        - "SQL"
+        - "bash"
+    Packages:
+        - "Scikit-learn"
+        - "TensorFlow"
+        - "Pandas"
+        - "Matplotlib"
+        - "Bokeh"
+        - "Tkinter"
+        - "Seaborn"
+        - "Numpy"
+    Tools:
+        - "Ipython"
+        - "GitHub"
+        - "Linux"
+        - "VMD"
+        - "Gromacs"
+        - "Microsoft Office Suite"
+Languages:
+    "Spanish": "Native"
+    "English": "Highly proficient in speaking and writing"
+    "Italian": "Proficient in speaking and intermediate writing skills"
+SelectedSkills:
+    "Teaching": >
+        Passionate about sharing knowledge both in formal and informal settings
+    "Problem solving": >
+        Interested in merging seemingly disconnected concepts into innovative and creative perspectives
+    "Statistics": >
+        Solid background in statistics resulting from a training in scientific research
+    "Data visualization": >
+        Intrinsically motivated to creating visually appealing representations of data
+Education:
+    - - "2017"
+      - "2021"
+      - > 
+        {\bf PhD Biotechnological sciences.}
+        {\it Italian Institute of Technology}. Genoa, Italy
+    - - "2017"
+      - "2020"
+      - > 
+        {\bf Data science certificates of accomplishment.}
+        {\it DataCamp, Inc.} Online
+    - - "2020"
+      #- "2020"
+      - > 
+        {\bf Leading Digital Transformation online course (6 weeks).}
+        {\it Massachusetts Institute of Technology - Professional Education}. Online
+    - - "2012"
+      - "2017"
+      - > 
+        {\bf BSc. Physics.}
+        {\it University of Los Andes}. Bogota, Colombia
+    - - "2011"
+      - "2016"
+      - > 
+        {\bf BSc. Chemistry.}
+        {\it University of Los Andes}. Bogota, Colombia
+    - - "2016"
+      - "2019"
+      - >  
+        {\bf Modern Physics at All Scales summer school.}
+        {\it University of Leiden}. Leiden, The Netherlands
+Work:
+    - - "2021"
+      - "Present" # <- blank
+      - > 
+        {\bf Consultant.}
+        {\it Expert Analytics}. Oslo, Norway
+    - - "2018"
+      - "2021"
+      - > 
+        {\bf Research collaborator.}
+        {\it Italian Institute of Technology}. Genoa, Italy
+    - - "2019"
+      #- "2019"
+      - > 
+        {\bf Guest researcher (6 months).}
+        {\it Hylleraas Centre for Quantum Molecular Sciences}. Oslo, Norway
+    - - "2016"
+      #- "2016"
+      - > 
+        {\bf Part-time professor (6 months).}
+        {\it University of Los Andes}. Bogota, Colombia
+    - - "2015"
+      - "2017"
+      - > 
+        {\bf Teaching assistant.}
+        {\it University of Los Andes}. Bogota, Colombia
+    - - "2016"
+      #- "2016"
+      - > 
+        {\bf Accompaniment program tutor.}
+        {\it University of Los Andes}. Bogota, Colombia
+Interests:
+    "Physical activity":
+        - "Boxing, dancing, acrobatics, yoga, hiking"
+    "Leisure":
+        - "Music, knitting, pet-sitting"
+    "Miscellaneous":
+        - "Generative art, the Theory of Evolution, jewel crafting"
+Projects:
+    A1:
+        Activity: "project title"
+        Period: "start to end"
+        Role: "your role in project"
+        Staffing: "who worked on project"
+        Volume: "Volume of work (eg.\ percent of full time)"
+        Description: >
+            short description of project and your involvement
+        Tools: "tools used"
+Publications:
+    B1:
+        Journal: "Journal of Chemical Theory and Computation"
+        Date: "in revision"
+        Authors: "S. Franco-Ulloa, D. Guarnieri, P. P. Pompa, M. De Vivo"
+        Title: "Association mechanism of peptide-coated metal nanoparticles with cell membranes: A coarse-grained study"
+        Summary: >
+            A short summary of the work
+        DOI: "The DOI link to the work"
+
+    B2:
+        Journal: "Communications Chemistry"
+        Date: "in revision"
+        Authors: "L. Morillas-Becerril, S. Franco-Ulloa, I. Fortunati, R. Marotta, X. Sun, G. Zanoni, M. De Vivo"
+        Title: "Arginine magic with gold nanoparticles: Selective and nondisruptive targeting of neutral phospholipid bilayers"
+        Summary: >
+            A short summary of the work
+        DOI: "The DOI link to the work"
+
+    B3:
+        Journal: "Biometals"
+        Date: "13.11.2020"
+        Authors: "P. D. Mestizo, D. M. Narvaez, J. A. Pinzon-Ulloa, D. Torres Di Bello, S. Franco-Ulloa, M. A. Macias, H. Groot, G. P. Miscione, L. Suescun, J. J. Hurtado"
+        Title: "Novel complexes with ONNO tetradentate coumarin schiff-base donor ligands: x-ray structures, DFT calculations, molecular dynamics and potential anticarcinogenic activity"
+        Summary: >
+            A short summary of the work
+        DOI: "10.1007/s10534-020-00268-8"
+
+    B4:
+        Journal: "Nature Communications"
+        Date: "27.10.2020"
+        Authors: "S. Franco-Ulloa, G. Tatulli, S. L. Bore, M. Moglianetti, P. P. Pompa, M. Cascella, M. De Vivo"
+        Title: "Dispersion state phase diagram of citrate-coated metallic nanoparticles in saline solutions"
+        Summary: >
+            A short summary of the work
+        DOI: "10.1038/s41467-020-19164-3"
+
+    B5:
+        Journal: "Journal of Medicinal Chemistry"
+        Date: "20.10.2020"
+        Authors: "J. A. Ortega, J. M. Arencibia, E. Minniti, J. A. W. Byl, S. Franco-Ulloa, M. Borgogno, V. Genna, M. Summa, S. M. Bertozzi, R. Bertorelli, A. Armirotti, A. Minarini, C. Sissi, N. Osheroff, M. De Vivo"
+        Title: "Novel, Potent, and Druglike Tetrahydroquinazoline Inhibitor That Is Highly Selective for Human Topoisomerase II α over β"
+        Summary: >
+            A short summary of the work
+        DOI: "10.1021/acs.jmedchem.0c00774"
+
+    B6:
+        Journal: "Journal of Medicinal Chemistry"
+        Date: "20.03.2020"
+        Authors: "J. M. Arencibia, N. Brindani, S. Franco-Ulloa, M. Nigro, J. Akkarapattiakal Kuriappan, G. Ottonello, S. M. Bertozzi, M. Summa, S. Girotto, R. Bertorelli, A. Armirotti, M. De Vivo"
+        Title: "Design, Synthesis, Dynamic Docking, Biochemical Characterization, and in Vivo Pharmacokinetics Studies of Novel Topoisomerase II Poisons with Promising Antiproliferative Activity"
+        Summary: >
+            A short summary of the work
+        DOI: "10.1021/acs.jmedchem.9b01760"
+
+    B7:
+        Journal: "Journal of Chemical Theory and Computation"
+        Date: "13.02.2019"
+        Authors: "S. Franco-Ulloa, L. Riccardi, F. Rimembrana, M. Pini, M. De Vivo"
+        Title: "NanoModeler: A Webserver for Molecular Simulations and Engineering of Nanoparticles"
+        Summary: >
+            A short summary of the work
+        DOI: "10.1021/acs.jctc.8b01304"
+
+    B8:
+        Journal: "Crystal Growth and Design"
+        Date: "19.04.2019"
+        Authors: "J. F. Torres, M. A. Macias, S. Franco-Ulloa, G. P. Miscione, J. Cobo, J. J. Hurtado"
+        Title: "Cu(II) and Zn(II) Complexes with Dinitrobenzoates and Pyrazolyl Ligands: Structural and Thermal Stability Influence of N–H Moiety"
+        Summary: >
+            A short summary of the work
+        DOI: "10.1021/acs.cgd.9b00246"
+
+    B9:
+        Journal: "International Journal of Molecular Sciences"
+        Date: "03.02.2018"
+        Authors: "S. Franco-Ulloa, G. La Sala, G. P. Miscione, M. De Vivo"
+        Title: "Novel Bacterial Topoisomerase Inhibitors Exploit Asp83 and the Intrinsic Flexibility of the DNA Gyrase Binding Site"
+        Summary: >
+            A short summary of the work
+        DOI: "10.3390/ijms19020453"
