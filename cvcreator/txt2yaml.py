@@ -1,14 +1,10 @@
-#!/usr/bin/env python3
-
+"""Tool for migrating from old txt to new(er) yaml."""
 import re
-import sys
 import yaml
 
-def main():
 
-    if len(sys.argv) < 2:
-        sys.exit(1)
-
+def convert_txt_to_yaml(source: str, target: str) -> None:
+    """Convert txt format to yaml."""
     data = {
         "Basic": {},
         "Summary": {},
@@ -24,7 +20,7 @@ def main():
 
     cur = ""
 
-    with open(sys.argv[1], "r") as f:
+    with open(source, "r") as f:
         text = f.read()
 
     text = re.sub(r"\n\\\> *", r"\n", text, 0, re.M)
@@ -153,9 +149,9 @@ def main():
                     a["Tools"] = line[6:]
                 else:
                     a[cur] += " " + line
-    
+
         elif header[0] == "B":
-            
+
             header = "B%d" % (int(header[1:-1])+1)
             data["Publications"][header] = b = {}
 
@@ -170,6 +166,6 @@ def main():
 
     txt = yaml.dump(data, default_flow_style=False)
 
-    f = open(sys.argv[1][:-3]+"yaml", "w")
-    f.write(txt)
-    f.close()
+    target = target or source.replace(".txt", ".yaml")
+    with open(target, "w") as f:
+        f.write(txt)

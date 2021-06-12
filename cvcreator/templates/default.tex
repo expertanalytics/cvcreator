@@ -70,11 +70,11 @@
   \vspace{0.5cm}
 \BLOCK{endif}
 
-\BLOCK{if technical_skill}
-  \section*{Technical skills}
+\BLOCK{if work}
+  \section*{Professional experience}
   \begin{tabular}{LR}
-    \BLOCK{for s in technical_skill}
-    \VAR{s.title} & \VAR{s.values|join("\\divbar ")} \\
+    \BLOCK{for s in work}
+    \VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
     \BLOCK{endfor}
   \end{tabular}
 \BLOCK{endif}
@@ -88,11 +88,11 @@
   \end{tabular}
 \BLOCK{endif}
 
-\BLOCK{if work}
-  \section*{Professional experience}
+\BLOCK{if technical_skill}
+  \section*{Technical skills}
   \begin{tabular}{LR}
-    \BLOCK{for s in work}
-    \VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
+    \BLOCK{for s in technical_skill}
+    \VAR{s.title} & \VAR{s.values|join("\\divbar ")} \\
     \BLOCK{endfor}
   \end{tabular}
 \BLOCK{endif}
@@ -145,7 +145,7 @@
   \begin{tabular}{@{}LR}
     Title   & {\it \VAR{s.title}} \\
     Journal & \VAR{s.journal}     \\
-    DOI     & \VAR{s.doi}         \\
+    DOI     & \url{\VAR{s.doi}}   \\
     Authors & \VAR{s.authors}     \\
     Year    & \VAR{s.year}        \\
   \rule{\textwidth}{0.1pt}

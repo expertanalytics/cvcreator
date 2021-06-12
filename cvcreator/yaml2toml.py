@@ -1,18 +1,15 @@
 """Tool for migrating from old yaml to new one."""
-import sys
 import yaml
 import toml
 
 
-def main():
+def convert_yaml_to_toml(source: str, target: str) -> None:
     """Convert from old to new yaml format."""
-    if len(sys.argv) < 2:
-        sys.exit(1)
 
-    with open(sys.argv[1]) as src:
+    with open(source) as src:
         content = yaml.safe_load(src)
 
-    with open(sys.argv[2], "w") as dst:
+    with open(target, "w") as dst:
         for name in content["Basic"]:
             toml.dump({name.lower(): content["Basic"][name]}, dst)
 
