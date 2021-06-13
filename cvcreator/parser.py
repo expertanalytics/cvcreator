@@ -3,6 +3,7 @@ import os
 import shutil
 import glob
 
+import toml
 import click
 from click_help_colors import HelpColorsGroup, HelpColorsCommand
 
@@ -115,8 +116,8 @@ def example(toml_target):
     shutil.copy(pdf_path, toml_target)
 
 
-@cv.command(cls=HelpColorsCommand, short_help="List technical skill badges")
-def badges():
+@cv.command(cls=HelpColorsCommand, short_help="List allowed technical skills")
+def skills():
     r"""
     List the technical skills that will trigger a badge prefix.
     In other words, the text will be accompanied with an appropriate logo image.
@@ -124,6 +125,7 @@ def badges():
     Notable exemption: 'Latex' though it has a logo, should be preferred to be
     included as '\\LaTeX' as the actual logo is usually unrecognizable.
     """
-    os.chdir(os.path.join(os.path.dirname(__file__), "icons"))
-    click.echo_via_pager("\n".join(badge.replace(".pdf", "")
-                                   for badge in sorted(glob.iglob("*.pdf"))))
+    path = os.path.join(os.path.dirname(__file__), "templates", "tech_skills.toml")
+    with open(path) as handle:
+        data = toml.load(handle)
+    click.echo_via_pager("\n".join(data["skills"]))

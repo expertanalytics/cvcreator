@@ -3,6 +3,7 @@ from typing import Any, List, Sequence
 
 import toml
 from .schema import VitaeContent
+from .tech_skills import make_skill_groups
 
 CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
 
@@ -61,12 +62,15 @@ def load_content(
     content.project = filter_(projects, content.project)
     content.publication = filter_(publications, content.publication)
 
+    # place technical skills into groups
+    content.technical_skill = make_skill_groups(content.technical_skill)
+
     for skill in content.technical_skill:
         for idx, value in enumerate(skill.values):
             path = os.path.join(CURDIR, "icons", f"{value}.pdf")
             if os.path.isfile(path):
                 skill.values[idx] = (
-                    rf"\includegraphics[width=0.3cm]{{{path}}} {value}")
+                    rf"\includegraphics[width=0.3cm]{{{path}}}~{value}")
 
     # anything with meta.*_image should be an image
     for name in content.meta.__dict__:

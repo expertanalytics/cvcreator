@@ -92,7 +92,7 @@
   \section*{Technical skills}
   \begin{tabular}{LR}
     \BLOCK{for s in technical_skill}
-    \VAR{s.title} & \VAR{s.values|join("\\divbar ")} \\
+    \VAR{s.title} & \VAR{s.values|join("\\nobreak\\divbar{}")} \\
     \BLOCK{endfor}
   \end{tabular}
 \BLOCK{endif}

@@ -40,7 +40,7 @@ def compile_latex(
         silent = "-silent" if silent else ""
 
         if not silent:
-            click.echo(f"trying to compile {name}.tex", fg="yellow")
+            click.secho(f"trying to compile {name}.tex", fg="yellow")
         proc = subprocess.Popen(
             f'cd "{folder}" {sep} latexmk {source_file} {silent} '
             '-pdf -latexoption="-interaction=nonstopmode"',

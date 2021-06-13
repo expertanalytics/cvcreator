@@ -36,17 +36,7 @@ description = "Bachelor's degree in mathematics from the University of Oslo."
 year = 2018
 description = "Master's degree in computer science from Cambridge University."
 
-[[technical_skill]]
-title = "Languages"
-values = [ "Python", "C++", "Java"]
-
-[[technical_skill]]
-title = "Libraries"
-values = [ "Numpy", "Scipy"]
-
-[[technical_skill]]
-title = "Statistics"
-values = [ "Statsmodels", "PyMC",]
+technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "PyMC"]
 
 [[language_skill]]
 language = "English"
