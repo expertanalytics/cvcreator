@@ -1,9 +1,16 @@
 # Master list of available technical skills and associated group labels.
 
 allowed_labels = [
+  "Languages",
+  "Tools",
+  "High performance computing",
+  "Machine learning",
+  "Modelling",
+  "Project management",
+  "Scientific computing",
   "Build systems",
   "Cloud infrastructure",
-  "Code interoprability",
+  "Code interoperability",
   "Code management",
   "Databases",
   "Document generators",
@@ -12,19 +19,13 @@ allowed_labels = [
   "Graphical toolkits",
   "Graphics",
   "Hardware",
-  "High performance computing",
-  "Languages",
-  "Machine learning",
-  "Modelling",
   "Office suite",
   "Operating systems",
   "Package managers",
   "Parallelization",
-  "Project management",
-  "Scientific computing",
+  "Platforms",
   "Statistics",
   "Testing",
-  "Tools",
   "Version control",
   "Viritualization",
   "Visuallization",
@@ -43,11 +44,27 @@ allowed_labels = [
 "SQLAlchemy" = "SQL"
 "SQLite" = "SQL"
 
+"Amazon ECR" = "Amazon AWS"
+"Amazon RDS" = "Amazon AWS"
+"Amazon S3" = "Amazon AWS"
+"Amazon VPC" = "Amazon AWS"
+"Amazon CloudWatch" = "Amazon AWS"
+"Amazon DynamoDB" = "Amazon AWS"
+"Amazon Greengrass" = "Amazon AWS"
+
+"OpenGL Shading Language" = "OpenGL"
+
+"Azure Databricks" = "Microsoft Azure"
+"Azure Devops" = "Microsoft Azure"
 
 [skills]
 "Akka" = ["Tools", "Web tools"]
 "Alembic" = ["Tools", "Databases"]
 "Amazon AWS" = ["Platforms", "Cloud infrastructure"]
+"Amazon CloudWatch" = ["Platforms", "Cloud infrastructure"]
+"Amazon DynamoDB" = ["Platforms", "Cloud infrastructure", "Databases"]
+"Amazon ECR" = ["Platforms", "Cloud infrastructure"]
+"Amazon Greengrass" = ["Hardware", "Platforms", "Cloud infrastructure"]
 "Amazon RDS" = ["Platforms", "Cloud infrastructure", "Databases"]
 "Amazon S3" = ["Platforms", "Cloud infrastructure"]
 "Amazon VPC" = ["Platforms", "Cloud infrastructure"]
@@ -55,15 +72,17 @@ allowed_labels = [
 "Apache Spark" = ["Tools", "Databases"]
 "Apple" = ["Platforms", "Operating systems"]
 "Armadillo" = ["Tools", "Scientific computing", "High performance computing"]
-"AsyncIO" = ["Tools", "Scientific computing", "High performance computing", "Parallelization"]
+"AsyncIO" = ["Tools", "High performance computing", "Parallelization"]
 "Autoconf" = ["Tools", "Code management", "Build systems"]
 "Azure Databricks" = ["Platforms", "Cloud infrastructure"]
 "Azure Devops" = ["Tools", "Testing"]
+"Backbone.js" = ["Tools", "Web tools"]
 "Bash" = ["Languages"]
 "Black" = ["Tools", "Testing"]
-"Blas" = ["Tools", "Scientific computing", "High performance computing"]
+"Blas" = ["Tools", "High performance computing"]
 "Bokeh" = ["Tools", "Scientific computing", "Visuallization"]
-"Boost" = ["Tools", "Scientific computing", "High performance computing"]
+"Boost" = ["Tools", "High performance computing"]
+"Boost.Python" = ["Tools", "Scientific computing", "High performance computing"]
 "C" = ["Languages"]
 "C++" = ["Languages"]
 "CLion" = ["Tools", "Editors"]
@@ -78,8 +97,8 @@ allowed_labels = [
 "Cognite-SDK" = ["Tools", "Scientific computing", "Modelling"]
 "Confluence" = ["Tools", "Code management", "Project management"]
 "Copper CRM" = ["Tools", "Office suite"]
-"Cuda" = ["Tools", "Scientific computing", "High performance computing", "Parallelization"]
-"Cython" = ["Tools", "Scientific computing", "High performance computing"]
+"Cuda" = ["Tools", "High performance computing", "Parallelization"]
+"Cython" = ["Tools", "High performance computing"]
 "DOT" = ["Tools", "Graphics"]
 "Dash" = ["Tools", "Scientific computing", "Machine learning"]
 "Diffpack" = ["Tools", "Scientific computing", "Modelling"]
@@ -87,7 +106,7 @@ allowed_labels = [
 "DocOnce" = ["Tools", "File formats"]
 "Docker" = ["Platforms", "Cloud infrastructure"]
 "Eclipse" = ["Tools", "Editors"]
-"Eigen" = ["Tools", "Scientific computing", "High performance computing"]
+"Eigen" = ["Tools", "High performance computing"]
 "Elastic Search" = ["Tools", "Web tools"]
 "Elixir" = ["Languages"]
 "Emacs" = ["Tools", "Editors"]
@@ -97,16 +116,19 @@ allowed_labels = [
 "Fish" = ["Languages"]
 "Flask" = ["Tools", "Web tools"]
 "Fortran" = ["Languages"]
-"GCC" = ["Tools", "Scientific computing", "High performance computing"]
+"FreeSurfer" = ["Tools", "Scientific computing", "Modelling"]
+"GCC" = ["Tools", "High performance computing"]
 "GDB" = ["Tools", "Testing"]
 "GDL" = ["Languages"]
+"GeoPandas" = ["Tools", "Scientific computing", "Modelling"]
 "GMSH" = ["Tools", "Scientific computing", "Modelling"]
 "GTK" = ["Tools", "Graphics", "Graphical toolkits"]
 "Gimp" = ["Tools", "Graphics"]
 "Git" = ["Tools", "Code management", "Version control"]
 "Github" = ["Tools", "Code management", "Project management"]
 "Go" = ["Languages"]
-"Google Cloud" = ["Platforms", "Cloud infrastructure"]
+"GoogleTest" = ["Tools", "Testing", "Graphical toolkits"]
+"Google Cloud Platform" = ["Platforms", "Cloud infrastructure"]
 "Google OR-tools" = ["Tools", "Scientific computing", "Machine learning"]
 "Grafana" = ["Tools", "Databases"]
 "GraphQL" = ["Tools", "Web tools"]
@@ -123,6 +145,7 @@ allowed_labels = [
 "ImageAI" = ["Tools", "Scientific computing", "Machine learning"]
 "Inkscape" = ["Tools", "Graphics"]
 "IntelliJ" = ["Tools", "Editors"]
+"Ipywidgets" = ["Tools", "Graphical toolkits"]
 "JQuery" = ["Tools", "Web tools"]
 "JUnit" = ["Tools", "Testing"]
 "Java" = ["Languages"]
@@ -134,11 +157,11 @@ allowed_labels = [
 "Keras" = ["Tools", "Scientific computing", "Machine learning"]
 "Kotlin" = ["Languages"]
 "Kubernetes" = ["Platforms", "Cloud infrastructure"]
-"Lapack" = ["Tools", "Scientific computing", "High performance computing"]
+"Lapack" = ["Tools", "High performance computing"]
 "Linux" = ["Platforms", "Operating systems"]
 "Lisp" = ["Languages"]
 "Luascript" = ["Languages"]
-"MPI" = ["Tools", "Scientific computing", "High performance computing", "Parallelization"]
+"MPI" = ["Tools", "High performance computing", "Parallelization"]
 "Macaulay2" = ["Tools", "Scientific computing"]
 "Make" = ["Tools", "Code management", "Build systems"]
 "Markdown" = ["Tools", "File formats"]
@@ -153,39 +176,42 @@ allowed_labels = [
 "Microsoft SQL Server" = ["Tools", "Databases"]
 "Microsoft Windows" = ["Platforms", "Operating systems"]
 "MySQL" = ["Tools", "Databases"]
+"NLTK" = ["Tools", "Machine learning"]
 "NPM" = ["Tools", "Code management", "Package managers"]
 "Node.js" = ["Tools", "Web tools"]
 "Numpy" = ["Tools", "Scientific computing"]
 "OSG" = ["Tools", "Graphics"]
 "Octave" = ["Languages"]
 "OpenBSD" = ["Platforms", "Operating systems"]
+"OpenCL" = ["Tools", "High performance computing"]
 "OpenCV" = ["Tools", "Scientific computing", "Machine learning"]
-"OpenFoam" = ["Tools", "Scientific computing", "Modelling"]
+"OpenFOAM" = ["Tools", "Scientific computing", "Modelling"]
 "OpenGL" = ["Tools", "Graphics", "Graphical toolkits"]
-"OpenMP" = ["Tools", "Scientific computing", "High performance computing", "Parallelization"]
+"OpenGL Shading Language" = ["Languages"]
+"OpenMP" = ["Tools", "High performance computing", "Parallelization"]
 "OpenOffice" = ["Tools", "Office suite"]
 "Openshift" = ["Platforms", "Cloud infrastructure"]
 "PDB" = ["Tools", "Testing"]
-"PETSc" = ["Tools", "Scientific computing", "High performance computing"]
+"PETSc" = ["Tools", "High performance computing"]
 "PHP" = ["Languages"]
 "Pandas" = ["Tools", "Scientific computing"]
 "ParaView" = ["Tools", "Graphics"]
 "Perl" = ["Languages"]
-"PetSc" = ["Tools", "Scientific computing", "High performance computing"]
+"PetSc" = ["Tools", "High performance computing"]
 "Pip" = ["Tools", "Code management", "Package managers"]
 "Plotly" = ["Tools", "Graphics"]
 "PostgreSQL" = ["Tools", "Databases"]
+"PyCharm" = ["Tools", "Editors"]
 "PyMC" = ["Tools", "Scientific computing", "Statistics"]
 "PyPDF" = ["Tools", "Document generators"]
 "Pybind11" = ["Tools", "Code management", "Code interoperability"]
-"Pycharm" = ["Tools", "Editors"]
 "Pylint" = ["Tools", "Testing"]
 "Pytest" = ["Tools", "Testing"]
 "Python" = ["Languages"]
 "Pytorch" = ["Tools", "Scientific computing", "Machine learning"]
 "Qlik" = ["Tools", "Graphics"]
 "Qt" = ["Tools", "Graphics", "Graphical toolkits"]
-"R Studio" = ["Tools", "Editors"]
+"RStudio" = ["Tools", "Editors"]
 "R" = ["Languages"]
 "REST API" = ["Tools", "Web tools"]
 "Racket" = ["Languages"]
@@ -195,16 +221,20 @@ allowed_labels = [
 "Restructured text" = ["Tools", "File formats"]
 "Rust" = ["Languages"]
 "SCons" = ["Tools", "Code management", "Build systems"]
-"SLEPc" = ["Tools", "Scientific computing", "High performance computing"]
+"SegyIO" = ["Tools", "Modelling", "Scientific computing"]
+"SLEPc" = ["Tools", "High performance computing"]
 "SPARQL" = ["Tools", "Databases"]
 "SQL" = ["Tools", "Databases"]
 "SQLAlchemy" = ["Tools", "Databases"]
 "SQLite" = ["Tools", "Databases"]
 "STL" = ["Languages"]
+"Scala" = ["Languages"]
 "Scheme" = ["Languages"]
 "Scikit-Learn" = ["Tools", "Scientific computing", "Machine learning"]
 "Scipy" = ["Tools", "Scientific computing"]
 "Seaborn" = ["Tools", "Scientific computing", "Visuallization"]
+"Shapely" = ["Tools", "Modelling", "Scientific computing"]
+"Shell" = ["Languages"]
 "Sphinx" = ["Tools", "Document generators"]
 "Splunk" = ["Platforms", "Cloud infrastructure"]
 "Statsmodels" = ["Tools", "Scientific computing", "Statistics"]
@@ -229,7 +259,9 @@ allowed_labels = [
 "Vim" = ["Tools", "Editors"]
 "Vimscript" = ["Languages"]
 "VirtualBox" = ["Platforms", "Viritualization"]
+"Virtualenv" = ["Tools", "Build systems"]
 "Vue.js" = ["Tools", "Web tools"]
+"WebGL" = ["Tools", "Web tools", "Graphical toolkits"]
 "XGBoost" = ["Tools", "Scientific computing", "Machine learning"]
 "XML" = ["Tools", "File formats"]
 "\\LaTeX" = ["Tools", "File formats"]

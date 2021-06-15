@@ -90,11 +90,13 @@
 
 \BLOCK{if technical_skill}
   \section*{Technical skills}
+  {\renewcommand{\arraystretch}{1.4}
   \begin{tabular}{LR}
     \BLOCK{for s in technical_skill}
     \VAR{s.title} & \VAR{s.values|join("\\nobreak\\divbar{}")} \\
+    \hline
     \BLOCK{endfor}
-  \end{tabular}
+  \end{tabular}}
 \BLOCK{endif}
 
 \BLOCK{if language_skill}
@@ -147,7 +149,7 @@
     Journal & \VAR{s.journal}     \\
     DOI     & \url{\VAR{s.doi}}   \\
     Authors & \VAR{s.authors}     \\
-    Year    & \VAR{s.year}        \\
+\BLOCK{if s.year}Year    & \VAR{s.year} \\\BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
