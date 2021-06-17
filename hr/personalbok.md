@@ -6,7 +6,7 @@
 
 Ved oppstart får du tildelt en e-post-addresse. Denne vil typisk være på
 formatet `<fornavn>@xal.no`. Det er også lov til å uttrykke sin preferanse til
-dagelig leder on hvilket navn man ønsker, hvis man ønsker å ikke bruke sitt
+daglig leder on hvilket navn man ønsker, hvis man ønsker å ikke bruke sitt
 fornavn.
 
 E-post-addressen fungerer som brukernavn til de fleste tjenestene i bedriften.
@@ -36,8 +36,12 @@ Disse inkluderer:
     til kontoret, eller ønsker å få med deg noe av det som skjer på MESH.
 * MESH sine intranet-sider: [members.meshcommunity.com](https://members.meshcommunity.com).
   * Booking av møterom.
-  * Påmelding til MESH-relaterte arrangementer. (Som er uavhengig av XALs egne arrangementer.)
+  * Påmelding til MESH-relaterte arrangementer.
+    (Som er uavhengig av XALs egne arrangementer.)
   * Hjelpsider til bruk printer.
+
+Merk at dette er alle separate tjenester, og passord må håndteres separat for
+hver tjeneste.
 
 ### Github
 
@@ -72,7 +76,7 @@ dette av følgende:
 * En ekstra strøm-adapter til bærbar pc
 * Mobiltelefon; forventet levetid 2 år
 * Tablet -- [reMarkable](https://remarkale.com), iPad 10", eller annen tablet i
-  samme prisklasse (ca. 6K); forventet levetid 3 år
+  samme prisklasse; forventet levetid 3 år
 * Støydempende hodetelefoner
 * Skjerm til bruk hjemme, budsjett 4500,- eks.mva; forventet levetid 5 år
 
@@ -103,7 +107,7 @@ et relevant behov. Eksempler på slikt utstyr o.l kan være:
 * Eksternt tastatur og mus
 * Docking
 * Backup disk eller annen form for ekstern lagring
-* Software lisenser (f.eks JetBrains, PyCharm, CLion, Datagrip, Office365)
+* Software lisenser (f.eks PyCharm, CLion, Datagrip, Office365)
 * Fagbøker 
 * Online kurs
 * Journalartikler
