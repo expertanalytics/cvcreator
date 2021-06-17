@@ -22,7 +22,6 @@ Skills:
         - "C++"
         - "Fortran"
         - "IDL"
-        - "Qlik"
     Platforms:
         - "Google Cloud Platform"
         - "Amazon Web Services"
@@ -36,12 +35,13 @@ Skills:
         - "Git"
         - "Linux"
         - "Docker"
-        - "CVS"
         - "Confluence"
         - "Jira"
         - "Trello"
         - "RStudio"
         - "Latex"
+        - "PowerBI"
+        - "QlikView/QlikSense"
 Languages:
     "Norwegian": "mother tongue"
     "English": "fluent"
@@ -105,16 +105,16 @@ Interests:
 Projects:
     A1:
         Activity: "Production optimization with Cognite"
-        Period: "11/2019-06/2020"
+        Period: "11/2019-02/2021"
         Role: "Data scientist and developer"
         Staffing: "2-10 developers and data scientists, 3-5 project owners, and 1-3 project managers"
         Volume: "100\\%"
         Description: >
-            Thomas worked with production optimization for two different customers in the oil and gas industry.
-            Here he built a system for running physics simulations on demand from a web application.
-            He also prepared and modeled data and built interactive web applications as the front end solution
-            for a gas lift optimization project.
-        Tools: "Python, Pywin32, Grafana, Plotly Dash, Google Cloud Platform"
+            Thomas worked with production optimization for three different customers in the oil and gas industry.
+            The main deliverables were a system for running third party physics simulations on demand from a web application, 
+            a front end solution for a gas lift optimization project, and a system for automatic classification of HSEQ-reports.
+            The work included application development as well as data preparation and data modeling.
+        Tools: "Python, Pywin32, Grafana, Plotly Dash, Google Cloud Platform, Cognite Data Fusion, PowerBI"
     A2:
         Activity: "Reinforcement learning internal project"
         Period: "10/2019-11/2019"
