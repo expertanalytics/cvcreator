@@ -4,18 +4,58 @@
 
 ### System-tilganger
 
-Ved oppstart får du tilgang til:
+Ved oppstart får du tildelt en e-post-addresse. Denne vil typisk være på
+formatet `<fornavn>@xal.no` og fungerer som brukernavn til de fleste tjenestene
+i bedriften. Disse inkluderer:
 
-* en e-post konto <fornavn>@xal.no. Du logger inn på http://mail.xal.no (som
-  videresender til Google)
-* en konto i timeførings-systemet Tripletex. Du får invitasjon hit på din
-  xal-epost.
-* et github repository https://github.com/expertanalytics/internal
+* Google for bedrift.
+  * Webmail: [mail.xal.no](http://mail.xal.no).
+    (eller [mail.google.com](https://mail.google.com)). All jobb-relatert
+    informasjon, inkludert tilganger blir sendt til denne adressen.
+  * Kalender: [calendar.google.com](https://calendar.google.com).
+    Kalenderen inneholder en kalender med oversikt over alle større
+    arrangementer i bedriften. Denne kalenderen er delbar, og alle skal ha
+    skrive-tilgang.
+* Tripletex timeførings-system: [tripletex.no](https://tripletex.no).
+  * Føring av jobb-relaterte timer.
+  * Rapportering av sykedager.
+  * Føring av bilag for utlegg.
+  * Oversikt over lønns- og time-relatert statistikk.
+* Slack chat.
+  * Intern-kommunikasjon: [xal.slack.com](https://xal.slack.com).
+    Den mest daglige kommunikasjonsplatformen i bedriften. Den brukes til
+    blandt annet annonseringer, organiseringer av diverse samlinger, og Q&A om
+    stort og smått, for å nevne noe.
+  * Kommunikasjon med de andre i MESH kontorfelleskap:
+    [meshcommunity.slack.com](https://meshcommunity.slack.com).
+    Ikke veldig mye brukt, men nyttig hvis man f.eks. trenger hjelp til tilgang
+    til kontoret, eller ønsker å få med deg noe av det som skjer på MESH.
+* MESH sine intranet-sider: [members.meshcommunity.com](https://members.meshcommunity.com).
+  * Booking av møterom.
+  * Påmelding til MESH-relaterte arrangementer. (Som er uavhengig av XALs egne arrangementer.)
+  * Hjelpsider til bruk printer.
 
-Vi benytter Github til mange ting, og alle skal være med
-i ExpertAnalytics-organisasjonen på Github. Send informasjon om din
-github-bruker til daglig leder eller den som har ansvar for å introdusere deg
-i selskapet, så gis du tilgang til https://github.com/expertanalytics
+### Github
+
+I tillegg til tjenestene nevnt over, gjøres mye på Git. I Expert Analytics
+bruker vi [Github](https://github.com), så du trenger å ha en bruker der.
+Her kan man enten bruke sitt egen private brukernavn, eller opprette en ny en
+for anledningen. Uansett kan man sende daglig leder adressen man ønsker å
+bruke som da vil få tilgang til Expert Analytics' Github
+organisasjon: [github.com/expertanalytics](https://github.com/expertanalytics).
+
+Av Github repoer mest verdt å nevne har vi:
+[expertanalytics/internal](https://github.com/expertanalytics/internal). Denne
+inneholder alt av mer (semi-)permanent natur, inkludert personalhåndboken (som
+du leser nå).
+
+Det er forventet at de ansatte holder følgende innhold oppdatert:
+
+* En offentlig introduksjon  med bilde: [expertanalytics/xal](https://github.com/expertanalytics/xal)
+* En oppdatert jobb-CV som kan distribueres til potensielle klienter:
+  [expertanalytics/internal/cv](https://github.com/expertanalytics/internal/tree/master/cv)
+
+Beskrivelse på hvordan dette gjøres finnes på de respektive sidene.
 
 ### Basis-utstyr
 
@@ -26,8 +66,8 @@ dette av følgende:
 * Etui eller enkel veske for å beskytte pc
 * En ekstra strøm-adapter til bærbar pc
 * Mobiltelefon; forventet levetid 2 år
-* Tablet -- reMarkable, iPad 10", eller annen tablet i samme prisklasse (ca.
-  6K); forventet levetid 3 år
+* Tablet -- [reMarkable](https://remarkale.com), iPad 10", eller annen tablet i
+  samme prisklasse (ca. 6K); forventet levetid 3 år
 * Støydempende hodetelefoner
 * Skjerm til bruk hjemme, budsjett 4500,- eks.mva; forventet levetid 5 år
 
@@ -58,7 +98,7 @@ et relevant behov. Eksempler på slikt utstyr o.l kan være:
 * Eksternt tastatur og mus
 * Docking
 * Backup disk eller annen form for ekstern lagring
-* Software lisenser (f.eks JetBrains PyCharm, CLion, Datagrip, Office365)
+* Software lisenser (f.eks JetBrains, PyCharm, CLion, Datagrip, Office365)
 * Fagbøker 
 * Online kurs
 * Journalartikler
