@@ -5,8 +5,12 @@
 ### System-tilganger
 
 Ved oppstart får du tildelt en e-post-addresse. Denne vil typisk være på
-formatet `<fornavn>@xal.no` og fungerer som brukernavn til de fleste tjenestene
-i bedriften. Disse inkluderer:
+formatet `<fornavn>@xal.no`. Det er også lov til å uttrykke sin preferanse til
+dagelig leder on hvilket navn man ønsker, hvis man ønsker å ikke bruke sitt
+fornavn.
+
+E-post-addressen fungerer som brukernavn til de fleste tjenestene i bedriften.
+Disse inkluderer:
 
 * Google for bedrift.
   * Webmail: [mail.xal.no](http://mail.xal.no).
@@ -51,7 +55,8 @@ du leser nå).
 
 Det er forventet at de ansatte holder følgende innhold oppdatert:
 
-* En offentlig introduksjon  med bilde: [expertanalytics/xal](https://github.com/expertanalytics/xal)
+* En offentlig introduksjon med bilde til Expert Analytics' nettside:
+  [expertanalytics/xal](https://github.com/expertanalytics/xal)
 * En oppdatert jobb-CV som kan distribueres til potensielle klienter:
   [expertanalytics/internal/cv](https://github.com/expertanalytics/internal/tree/master/cv)
 
