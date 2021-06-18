@@ -4,7 +4,7 @@
 
 ### System-tilganger
 
-Ved oppstart får du tildelt en e-post-addresse. Denne vil typisk være på
+Ved oppstart får du tildelt en e-postadresse. Denne vil typisk være på
 formatet `<fornavn>@xal.no`. Det er også lov til å uttrykke sin preferanse til
 daglig leder om hvilket brukernavn man ønsker hvis man ønsker å ikke bruke sitt
 fornavn.
