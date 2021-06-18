@@ -6,16 +6,16 @@
 
 Ved oppstart får du tildelt en e-post-addresse. Denne vil typisk være på
 formatet `<fornavn>@xal.no`. Det er også lov til å uttrykke sin preferanse til
-daglig leder on hvilket navn man ønsker, hvis man ønsker å ikke bruke sitt
+daglig leder om hvilket brukernavn man ønsker hvis man ønsker å ikke bruke sitt
 fornavn.
 
-E-post-addressen fungerer som brukernavn til de fleste tjenestene i bedriften.
+E-postadressen fungerer som brukernavn til de fleste tjenestene i bedriften.
 Disse inkluderer:
 
 * Google for bedrift.
   * Webmail: [mail.xal.no](http://mail.xal.no).
     (eller [mail.google.com](https://mail.google.com)). All jobb-relatert
-    informasjon, inkludert tilganger blir sendt til denne adressen.
+    informasjon, inkludert tilganger, blir sendt til denne adressen.
   * Kalender: [calendar.google.com](https://calendar.google.com).
     Kalenderen inneholder en kalender med oversikt over alle større
     arrangementer i bedriften. Denne kalenderen er delbar, og alle skal ha
@@ -25,10 +25,10 @@ Disse inkluderer:
   * Rapportering av sykedager.
   * Føring av bilag for utlegg.
   * Oversikt over lønns- og time-relatert statistikk.
-* Slack chat.
+* Slack-chat.
   * Intern-kommunikasjon: [xal.slack.com](https://xal.slack.com).
     Den mest daglige kommunikasjonsplatformen i bedriften. Den brukes til
-    blandt annet annonseringer, organiseringer av diverse samlinger, og Q&A om
+    blant annet annonseringer, organiseringer av diverse samlinger og Q&A om
     stort og smått, for å nevne noe.
   * Kommunikasjon med de andre i MESH kontorfelleskap:
     [meshcommunity.slack.com](https://meshcommunity.slack.com).
@@ -38,7 +38,7 @@ Disse inkluderer:
   * Booking av møterom.
   * Påmelding til MESH-relaterte arrangementer.
     (Som er uavhengig av XALs egne arrangementer.)
-  * Hjelpsider til bruk printer.
+  * Hjelpesider til bruk printer.
 
 Merk at dette er alle separate tjenester, og passord må håndteres separat for
 hver tjeneste.
@@ -49,10 +49,10 @@ I tillegg til tjenestene nevnt over, gjøres mye på Git. I Expert Analytics
 bruker vi [Github](https://github.com), så du trenger å ha en bruker der.
 Her kan man enten bruke sitt egen private brukernavn, eller opprette en ny en
 for anledningen. Uansett kan man sende daglig leder adressen man ønsker å
-bruke som da vil få tilgang til Expert Analytics' Github
-organisasjon: [github.com/expertanalytics](https://github.com/expertanalytics).
+bruke som da vil få tilgang til Expert Analytics' Github-organisasjonen:
+[github.com/expertanalytics](https://github.com/expertanalytics).
 
-Av Github repoer mest verdt å nevne har vi:
+Av Github-repoer mest verdt å nevne har vi:
 [expertanalytics/internal](https://github.com/expertanalytics/internal). Denne
 inneholder alt av mer (semi-)permanent natur, inkludert personalhåndboken (som
 du leser nå).
@@ -75,10 +75,10 @@ dette av følgende:
 * Etui eller enkel veske for å beskytte pc
 * En ekstra strøm-adapter til bærbar pc
 * Mobiltelefon; forventet levetid 2 år
-* Tablet -- [reMarkable](https://remarkale.com), iPad 10", eller annen tablet i
+* Tablet -- [reMarkable](https://remarkale.com), iPad 10" eller annen tablet i
   samme prisklasse; forventet levetid 3 år
 * Støydempende hodetelefoner
-* Skjerm til bruk hjemme, budsjett 4500,- eks.mva; forventet levetid 5 år
+* Skjerm til bruk hjemme, budsjett 4500,- eks. mva; forventet levetid 5 år
 
 I tillegg vil det finnes skjermer, tastatur, mus, diverse strømadaptere og
 kabler på selskapets kontor på Mesh. Dette er utstyr som fritt kan benyttes 
@@ -106,10 +106,10 @@ et relevant behov. Eksempler på slikt utstyr o.l kan være:
 * Ekstern skjerm
 * Eksternt tastatur og mus
 * Docking
-* Backup disk eller annen form for ekstern lagring
-* Software lisenser (f.eks PyCharm, CLion, Datagrip, Office365)
+* Backup-disk eller annen form for ekstern lagring
+* Software-lisenser (f.eks PyCharm, CLion, Datagrip, Office365)
 * Fagbøker 
-* Online kurs
+* Online-kurs
 * Journalartikler
 
 Terskelen for å diskutere behov for utstyr er lav; diskusjonen tas med daglig
