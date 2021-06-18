@@ -41,7 +41,7 @@ Disse inkluderer:
   * Hjelpesider til bruk printer.
 
 Merk at dette er alle separate tjenester, og passord må håndteres separat for
-hver tjeneste.
+hver av dem.
 
 ### Github
 
@@ -60,7 +60,7 @@ du leser nå).
 Det er forventet at de ansatte holder følgende innhold oppdatert:
 
 * En offentlig introduksjon med bilde til Expert Analytics' nettside:
-  [expertanalytics/xal](https://github.com/expertanalytics/xal)
+  [expertanalytics/website](https://github.com/expertanalytics/website)
 * En oppdatert jobb-CV som kan distribueres til potensielle klienter:
   [expertanalytics/internal/cv](https://github.com/expertanalytics/internal/tree/master/cv)
 
