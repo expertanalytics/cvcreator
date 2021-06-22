@@ -153,7 +153,13 @@ prosjektansvarlig (vanligvis Ola eller Ásmund) sette opp prosjekt og gi
 tilgang. 
 
 Vi fører også intern-tid. Da velger du "Administrasjon" under prosjekt, og som
-aktivetet "Interntid - ikke fakturerbar".
+aktivitet "Interntid - ikke fakturerbar".
+
+## Pensjon
+
+Selskapet har med virkning fra 1. juni 2021 en avtale om obligatorisk tjenestepensjon
+(OTP) for alle ansatte der det betales et innskudd på 5 % for all lønn opp til 12 ganger folketrygdens grunnbeløp (G).
+Selskapets avtalepartner for OTP er Duvi.
 
 ## Årsavregning for resultatbasert del av lønn
 
