@@ -20,7 +20,7 @@ def get_skills_data() -> Dict[str, Any]:
 def make_skill_groups(
     skills: Sequence[str],
     threshold: int = 5,
-    cut_below: bool = True,
+    cut_below: bool = False,
 ) -> List[TechnicalSkill]:
     """
     Group skills into categories.

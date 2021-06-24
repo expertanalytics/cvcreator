@@ -14,6 +14,8 @@ fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
 """
 
+technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "PyMC"]
+
 [[work]]
 description = "Computer scientist at Google Inc. "
 start = 2019
@@ -35,8 +37,6 @@ description = "Bachelor's degree in mathematics from the University of Oslo."
 [[education]]
 year = 2018
 description = "Master's degree in computer science from Cambridge University."
-
-technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "PyMC"]
 
 [[language_skill]]
 language = "English"
