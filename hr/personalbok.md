@@ -2,7 +2,7 @@
 
 ## Oppstart
 
-### System-tilganger
+### Systemtilganger
 
 Ved oppstart får du tildelt en e-postadresse. Denne vil typisk være på
 formatet `<fornavn>@xal.no`. Det er også lov til å uttrykke sin preferanse til
@@ -19,26 +19,26 @@ Disse inkluderer:
   * Kalender: [calendar.google.com](https://calendar.google.com).
     Kalenderen inneholder en kalender med oversikt over alle større
     arrangementer i bedriften. Denne kalenderen er delbar, og alle skal ha
-    skrive-tilgang.
-* Tripletex timeførings-system: [tripletex.no](https://tripletex.no).
-  * Føring av jobb-relaterte timer.
+    skrivetilgang.
+* Tripletex timeføringssystem: [tripletex.no](https://tripletex.no).
+  * Føring av jobbrelaterte timer.
   * Rapportering av sykedager.
   * Føring av bilag for utlegg.
   * Oversikt over lønns- og time-relatert statistikk.
 * Slack-chat.
-  * Intern-kommunikasjon: [xal.slack.com](https://xal.slack.com).
-    Den mest daglige kommunikasjonsplatformen i bedriften. Den brukes til
+  * Internkommunikasjon: [xal.slack.com](https://xal.slack.com).
+    Den mest daglige kommunikasjonsplattformen i bedriften. Den brukes til
     blant annet annonseringer, organiseringer av diverse samlinger og Q&A om
     stort og smått, for å nevne noe.
   * Kommunikasjon med de andre i MESH kontorfelleskap:
     [meshcommunity.slack.com](https://meshcommunity.slack.com).
     Ikke veldig mye brukt, men nyttig hvis man f.eks. trenger hjelp til tilgang
-    til kontoret, eller ønsker å få med deg noe av det som skjer på MESH.
+    til kontoret eller ønsker å få med deg noe av det som skjer på MESH.
 * MESH sine intranet-sider: [members.meshcommunity.com](https://members.meshcommunity.com).
   * Booking av møterom.
   * Påmelding til MESH-relaterte arrangementer.
     (Som er uavhengig av XALs egne arrangementer.)
-  * Hjelpesider til bruk printer.
+  * Hjelpesider til bruk av printer.
 
 Merk at dette er alle separate tjenester, og passord må håndteres separat for
 hver av dem.
@@ -46,14 +46,14 @@ hver av dem.
 ### Github
 
 I tillegg til tjenestene nevnt over, gjøres mye på Git. I Expert Analytics
-bruker vi [Github](https://github.com), så du trenger å ha en bruker der.
-Her kan man enten bruke sitt egen private brukernavn, eller opprette en ny en
+bruker vi [Github](https://github.com), så du må ha en bruker der.
+Her kan man enten bruke sitt eget private brukernavn eller opprette en ny bruker
 for anledningen. Uansett kan man sende daglig leder adressen man ønsker å
-bruke som da vil få tilgang til Expert Analytics' Github-organisasjonen:
+bruke. Denne vil da få tilgang til Expert Analytics' Github-organisasjon:
 [github.com/expertanalytics](https://github.com/expertanalytics).
 
-Av Github-repoer mest verdt å nevne har vi:
-[expertanalytics/internal](https://github.com/expertanalytics/internal). Denne
+Det viktigste Github-repoet er
+[expertanalytics/internal](https://github.com/expertanalytics/internal). Dette
 inneholder alt av mer (semi-)permanent natur, inkludert personalhåndboken (som
 du leser nå).
 
@@ -68,12 +68,12 @@ Beskrivelse på hvordan dette gjøres finnes på de respektive sidene.
 
 ### Basis-utstyr
 
-Alle får utstyr man trenger for å utføre sitt arbeide. Som utgangspunkt består
+Alle får det utstyret man trenger for å utføre sitt arbeide. Som utgangspunkt består
 dette av følgende:
 
 * Bærbar pc; forventet levetid 3 år (vi kjøper derfor god kvalitet)
 * Etui eller enkel veske for å beskytte pc
-* En ekstra strøm-adapter til bærbar pc
+* En ekstra strømadapter til bærbar pc
 * Mobiltelefon; forventet levetid 2 år
 * Tablet -- [reMarkable](https://remarkale.com), iPad 10" eller annen tablet i
   samme prisklasse; forventet levetid 3 år
@@ -119,7 +119,7 @@ leder.
 
 Under pandemier kan myndigheter gi pålegg om at arbeid skal utføres fra
 hjemmekontor så langt dette er praktisk mulig. I en slik situasjon kan en kunde
-allikevel kreve fremmøte i sine lokaler på enkelt-dager, for utførelse av
+allikevel kreve fremmøte i sine lokaler på enkeltdager, for utførelse av
 oppgaver eller deltakelse i møter. Når fremmøte hos kunde i gjennomsnitt skjer
 sjeldnere enn 3 dager per uke over en kalendermåned, regnes hjemmekontor som
 arbeidssted. Dersom det foreligger et krav eller en sterk forventning fra kunde
@@ -152,7 +152,7 @@ ansatt i selskapet. For tilgang til prosjekter for kunde vil en
 prosjektansvarlig (vanligvis Ola eller Ásmund) sette opp prosjekt og gi
 tilgang. 
 
-Vi fører også intern-tid. Da velger du "Administrasjon" under prosjekt, og som
+Vi fører også interntid. Da velger du "Administrasjon" under prosjekt, og som
 aktivitet "Interntid - ikke fakturerbar".
 
 ## Pensjon
@@ -184,7 +184,7 @@ Ved sykdom, eller syke barn og liknende, føres tid i Tripletex under prosjekt
 "Administrasjon" og aktivitet "Fravær - syk / syke barn / etc". Denne koden kan
 også benyttes dersom man har velferdspermisjon uten innvirkning på bonus. 
 
-Dersom man har fravær med sykemelding, mamma/pappa-perm, eller annet fravær med
+Dersom man har fravær med sykemelding, mamma-/pappa-perm eller annet fravær med
 justering av bonus, ta kontakt med daglig leder for å avklare timeføring.
 Unntaksregelen i bonusordningen for fravær med sykemelding gjelder fra første
 dag sykemeldingen gjelder for, og skal derfor føres med egen aktivitetskode for
@@ -199,22 +199,24 @@ søkes om dette. E-post til daglig leder er tilstrekkelig.
 
 ## Fagdager og -kvelder
 
-Det avholdes for tiden fagdag omtrent hver 4. uke, og fagkveld her 14. dag, hele
-året bortsett fra ferie-perioden fra slutten av juni til starten av august. Plan
-for fagdager og -kvelder finnes i en delt kalender. Deltakelse på fagdager og -kvelder
+Det avholdes for tiden fagdag omtrent hver fjerde uke og fagkveld annenhver uke hele
+året bortsett fra ferieperioden fra slutten av juni til starten av august. Plan
+for fagdager og -kvelder finnes i en delt Google-kalender. Om du ikke har tilgang til
+kalenderen, ta kontakt med daglig leder.
+Deltakelse på fagdager og -kvelder
 er et tilbud som er åpent for alle, men det er opp til hver enkelt medarbeider 
 å prioritere deltakelse sett opp mot andre gjøremål for kunde.
 
 På fagdager møtes vi fra morgenen og jobber sammen på prosjekter definert av oss 
-selv. Lunch på fagdagen dekkes for alle som deltar i prosjektene, enten i form
-av felles lunch eller ved budsjett nærmere angitt av daglig leder for dekning
+selv. Lunsj på fagdagen dekkes for alle som deltar i prosjektene, enten i form
+av felles lunsj eller ved budsjett nærmere angitt av daglig leder for dekning
 av utgiftene.
 
-På fagkvelder, også betegnet "formiddager", holdes det et fordrag fra kl 17.
+På fagkvelder, også betegnet "formiddager", holdes det et foredrag fra kl. 17.
 Foredragsholder og tema for foredrag annonseres senest 3 virkedager før oppsatt
-fagkveld, for eksempel ved post i #fagdag-kanalen på slack, ved å legge inn en
-oppføring i formiddag/schedule.txt-filen i github.com/expertanalytics/internal,
-eller på annen måte gjøres kjent for alle
+fagkveld, for eksempel ved et innlegg i #fagdag-kanalen på slack, ved å legge inn en
+oppføring i formiddag/schedule.txt-filen i github.com/expertanalytics/internal
+eller på annen måte gjøre det kjent for alle
 ansatte. Dersom ingen melder seg som foredragsholder, avlyses arrangementet. De 
 som deltar på foredraget får et budsjett til dekning av kostnader til middag rett 
 etter fordraget -- derav "formiddag". Budsjett angis av daglig leder.
@@ -226,7 +228,7 @@ Foredragsholder er ansvarlig for å organisere formiddag. Dette innebærer:
 * Annonsere tittel på foredrag innen frist som angitt over
 * Velge restaurant/sted hvor man samles for å spise etterpå, av typen hvor
   budsjettet strekker til
-* Organisere pamelding til middag hvis valgt spisested forutsetter
+* Organisere påmelding til middag hvis valgt spisested forutsetter
   bordbestilling
 * Ta en "selfie" med minimum de som er med på middagen og poste i slack-kanalen
   #selfie-4-food
@@ -239,7 +241,7 @@ Foredragsholder er ansvarlig for å organisere formiddag. Dette innebærer:
 Budsjett angis av daglig leder, og er for tiden:
 
 * 400 kroner per person til middag for de som deltar på formiddag
-* 250 kroner per person til lunch for de som deltar på fagdag
+* 250 kroner per person til lunsj for de som deltar på fagdag
 
 ## Organisering av reise til konferanse
 
@@ -250,11 +252,11 @@ kollegaer, gjelder følgende regler:
 * For å reise til en konferanse må minimum 5 ansatte dra på samme konferanse.
   Dersom noen må melde forfall på grunn av sykdom og liknende, kan de øvrige
 likevel reise.
-* Konferansen må annonseres for alle minimum 3 månder før den finner sted.
+* Konferansen må annonseres for alle minimum 3 måneder før den finner sted.
 * Man reiser på statens satser; transport og hotell dekkes etter regning.
-  Reisens varighet må være kompatibel med gjeldene lovgivning; spesielt kan
+  Reisens varighet må være kompatibel med gjeldende lovgivning; spesielt kan
   reisens varighet være maksimalt 2 døgn utover konferansens varighet.
-* Økonomisk ramme må avklares med daglig leder i god tid, og senest før man
+* Økonomisk ramme må avklares med daglig leder i god tid og senest før man
   bestiller. Den økonomiske rammen vil bli vurdert mot konferansens
 relevans. Det er hensiktsmessig at de som skal reise på en gitt konferanse
 oppnevner en reiseansvarlig, som legger frem et fullstendig budsjett for daglig
@@ -263,14 +265,14 @@ relevant, men det er daglig leders ansvar å godkjenne dette.
 
 ### Foredrag på konferanser
 
-Reiser til konferanse hvor man har sendt inn et bidrag og blitt akseptert,
+Reiser til konferanse hvor man har sendt inn et bidrag og blitt akseptert
 behøver ikke være omfattet av punktet over. I slike tilfeller vil den eller de
 som skal presentere reise etter egen avtale med daglig leder.
 
 ## Verneombud
 
 Verneombudet er arbeidstakernes representant i spørsmål knyttet til
-arbeidsmiljøet. Vedkommende representerer alle ansatte, og skal virke som
+arbeidsmiljøet. Vedkommende representerer alle ansatte og skal virke som
 støtte for arbeidsgiver i vernearbeidet.
 
 Expert Analytics skal til enhver tid ha et verneombud. Verneombudet skal velges
@@ -285,7 +287,7 @@ Gjeldende regler for verneombudet beskrives i
 ## Tillitsvalgt
 
 Tillitsvalgt er arbeidstakernes representant i spørsmål knyttet til
-fagforening. Vedkommende representerer Tekna Bedriftsgruppe, og skal være et
+fagforening. Vedkommende representerer Tekna Bedriftsgruppe og skal være et
 kontaktpunkt for arbeidsgiver i spørsmål relatert til endringer
 i arbeidsforhold.
 
