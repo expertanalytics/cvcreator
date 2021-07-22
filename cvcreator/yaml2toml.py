@@ -16,8 +16,10 @@ def convert_yaml_to_toml(source: str, target: str) -> None:
         toml.dump({"summary": content["Summary"].strip()}, dst)
         dst.write("\n")
 
-        toml.dump({"technical_skill": [dict(title=title, values=values)
-                                       for title, values in content.get("Skills", {}).items()]}, dst)
+        toml.dump({"technical_skill": [value for _, values in content.get("Skills", {}).items()
+                                       for value in values]}, dst)
+        dst.write("\n")
+
         toml.dump({"language_skill": [dict(language=language, proficiency=proficiency)
                                       for language, proficiency in content.get("Languages", {}).items()]}, dst)
         toml.dump({"personal_skill": [dict(title=title, description=description.strip())

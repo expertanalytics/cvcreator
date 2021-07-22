@@ -96,22 +96,33 @@ Add the following two lines to the top of the file (outside a title scope):
 These can be any images, but it perhaps makes sense that the ``logo_image`` is
 a personal photo when using the tool privately.
 
-Technology skill badges
-=======================
+Technology skills
+=================
 
-When listing up technology skills, there will in some cases be an icon on the
-left of the skill. These icons (or badges) pop up when a trigger word is used.
-To list the current list of badges:
+To be able to do statistics on various skills, the list of allowed skills is
+limited to a predefined list. To quickly list what skills are allowed, and
+their spelling, see::
 
-.. code:: sh
+  cv skills
 
-  cv badges
+In addition, some skills have badges that can be activated during document
+creation using the ``--badges`` flag with e.g. ``cv create`` and ``cv latex``.
+To list which skill can produce an icon, see::
 
-If there is a badge that is missing and you want to add it, please submit an
-`issue <https://github.com/expertanalytics/cvcreator/issues>`_ with a request,
-or more preferable submitting a
-`pull request <https://github.com/expertanalytics/cvcreator/pulls>`_ with a
-badge. If you do the latter:
+  cv skills --badges
+
+
+Adding new skills and badges
+----------------------------
+
+If a skill is missing, or a skill is written in an incorrect way, please either
+`file an issue <https://github.com/expertanalytics/cvcreator/issues>`_ or
+`make a request `<https://github.com/expertanalytics/cvcreator/pulls>`_ with a
+the proposed change. In the latter case, the changes can be made to the file:
+``cvcreator/templates/tech_skills.toml``.
+
+In addition, if there is a badge that is missing (or needs replacing) here is
+useful checklist:
 
 * Find a badge candidate, consisting of simple pure black vector graphics
   formatted as a ``.pdf`` file. Be wary that some tools will convert vector
@@ -119,6 +130,6 @@ badge. If you do the latter:
 * There should not be any copyright issues with the badge. Most badges are
   currently `CC0
   <https://creativecommons.org/share-your-work/public-domain/cc0/>`_.
-* Place the badge in the folder `cvcreator/icons`.
+* Place the badge in the folder ``cvcreator/icons``.
 * Except for the ``.pdf`` extension, the name must exactly match that of the
   badge trigger. This means include capitalized letters and spaces.

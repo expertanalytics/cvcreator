@@ -1,8 +1,10 @@
 """Command line interface parser."""
 import os
+import re
 import shutil
 import glob
 
+import toml
 import click
 from click_help_colors import HelpColorsGroup, HelpColorsCommand
 
@@ -35,6 +37,8 @@ def cv():
 @click.argument("document_output", default="")
 @click.option("-t", "--template", default="default", help=(
     "Select which latex template file to use when generating document."))
+@click.option("-b", "--badges", is_flag=True, help=(
+    "Include small badge icons to selected technical skills."))
 @click.option("-p", "--projects", default="", help=(
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
@@ -43,13 +47,15 @@ def create(
     toml_content: str,
     document_output: str = "",
     template: str = "default",
+    badges: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> None:
     """
     Create curriculum vitae .pdf document from .toml content file.
     """
-    content = load_content(toml_content, projects, publications)
+    content = load_content(toml_content, badges=badges,
+                           projects=projects, publications=publications)
     template = load_template(template)
     latex_code = template.render(**dict(content))
     name = os.path.basename(toml_content.replace(".toml", ""))
@@ -63,6 +69,8 @@ def create(
 @click.argument("target", default="")
 @click.option("-t", "--template", default="default", help=(
     "Select which latex template file to use when generating document."))
+@click.option("-b", "--badges", is_flag=True, help=(
+    "Include small badge icons to selected technical skills."))
 @click.option("-p", "--projects", default="", help=(
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
@@ -71,13 +79,15 @@ def latex(
     toml_content: str,
     target: str = "",
     template: str = "default",
+    badges: bool = False,
     projects: str = "",
     publications: str = "",
 ):
     """
     Create latex source code from .toml content file.
     """
-    content = load_content(toml_content, projects, publications)
+    content = load_content(toml_content, badges=badges,
+                           projects=projects, publications=publications)
     template = load_template(template)
     latex_code = template.render(**dict(content))
     target = target or toml_content.replace(".toml", ".tex")
@@ -115,15 +125,18 @@ def example(toml_target):
     shutil.copy(pdf_path, toml_target)
 
 
-@cv.command(cls=HelpColorsCommand, short_help="List technical skill badges")
-def badges():
-    r"""
-    List the technical skills that will trigger a badge prefix.
-    In other words, the text will be accompanied with an appropriate logo image.
-
-    Notable exemption: 'Latex' though it has a logo, should be preferred to be
-    included as '\\LaTeX' as the actual logo is usually unrecognizable.
+@cv.command(cls=HelpColorsCommand, short_help="List allowed technical skills")
+@click.option("--badges", is_flag=True, help=(
+    "Only list skills that has an associated icon."))
+def skills(badges):
     """
-    os.chdir(os.path.join(os.path.dirname(__file__), "icons"))
-    click.echo_via_pager("\n".join(badge.replace(".pdf", "")
-                                   for badge in sorted(glob.iglob("*.pdf"))))
+    List of allowed technical skills. The spelling is case sensitive.
+    """
+    if badges:
+        icons = glob.glob(os.path.join(os.path.dirname(__file__), "icons", "*.pdf"))
+        data = (re.sub(r".*/([^/]+).pdf$", r"\1", icon) for icon in icons)
+    else:
+        path = os.path.join(os.path.dirname(__file__), "templates", "tech_skills.toml")
+        with open(path) as handle:
+            data = toml.load(handle)["skills"]
+    click.echo("\n".join(data))

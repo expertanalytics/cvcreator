@@ -90,7 +90,10 @@ class VitaeContent(BaseModel):
 
     meta: MetaInformation = MetaInformation()
 
-    technical_skill: List[TechnicalSkill] = Field(default_factory=list)
+    # Should be TechnicalSkill, but is constructed after parsing.
+    # 'str' is used here as a placeholder for list of skills.
+    technical_skill: List[str] = Field(default_factory=list)
+
     language_skill: List[LanguageSkill] = Field(default_factory=list)
     personal_skill: List[PersonalSkill] = Field(default_factory=list)
     hobby: List[Hobby] = Field(default_factory=list)
