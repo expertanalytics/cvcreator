@@ -112,7 +112,7 @@ def example(toml_target):
     Create example .toml content file to be filled out.
     """
     toml_source = os.path.join(os.path.dirname(__file__), "templates", "example.toml")
-    shutil.copy(pdf_path, toml_target)
+    shutil.copy(toml_source, toml_target)
 
 
 @cv.command(cls=HelpColorsCommand, short_help="List technical skill badges")
