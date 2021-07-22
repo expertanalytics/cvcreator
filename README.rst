@@ -36,7 +36,7 @@ Start by creating a simple example:
 
 .. code:: sh
 
-  cv toml example.toml
+  cv example example.toml
 
 Edit the resulting ``example.toml`` file with your favorite text editor.
 This is the content file which will be inserted into the final CV output.
