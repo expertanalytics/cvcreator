@@ -1,0 +1,265 @@
+Basic:
+    Name:  "Mats K. Brun"
+    Address: "Uelands gate 57M"
+    Post: "0457 Oslo"
+    Birth: "19.04.1988"
+    Email: "mats@xal.no"
+    Phone: "+47 908 00 174"
+    Nationality: "Norwegian"
+Summary: >
+    I hold a PhD in Applied and Computational Mathematics, and have several years of experience with
+    mathematical modeling and scientific programming. Through my work as a researcher both at the
+    University of Bergen and at the University of Oslo, I have gained a good understanding of
+    mathematical modeling and numerical simulation of diverse real-world systems, ranging from
+    geothermal energy storage to evolutionary biology. 
+Skills:
+    Numerical methods:
+        - "(Mixed) Finite Element Method"
+        - Finite Volume Method
+    Languages:
+        - "Python"
+        - "Java"
+        - "MatLab"
+        - "Haskell"
+    Frameworks:
+        - "NumPy"
+        - "SciPy"
+        - "FEniCS"
+        - "Pandas"
+        - "MatPlotLib"
+        - "Keras"
+    Tools:
+        - "Git"
+        - "\\LaTeX"
+        - "Microsoft Office"
+Languages:
+    "Norwegian": "Native language"
+    "English": "Fluent (written and spoken)"
+SelectedSkills:
+    "Analytical": >
+        Through many years of technical education I have gained a good ability to think logically and 
+        analytically, and am not afraid to confront challenging problems.
+    "Modeling and scientific programming": >
+        Extensive experience with mathematical modeling of real-world systems, and design and
+        implementation of numerical algorithms.
+    "Creative": >
+        Extensive experience in creative thinking, both in terms of creative solutions to academic 
+        and technical problems, and in terms of music performance and production.
+    "Communication and teaching": >
+        Several teaching experiences both at the high-school and university levels has augmented
+        my ability to internalize and communicate difficult concepts.
+    "Problem solving": >
+        Always up for a new challenge, and always eager to learn new skills and explore 
+        new technology.    
+Education:
+    - - "2012"
+      - >
+        BSc in Physics, Department of Physics and Technology, University of Bergen
+    - - "2013"
+      - "2015"
+      - >
+        MSc in Applid and Computational Mathematics, Department of Mathematics, University of Bergen.
+        Thesis title: 'Wave breaking in long wave models and undular bores'
+    - - "2016"
+      - "2019"
+      - >
+        PhD in Applied and Computational Mathematics, Department of Mathematics, University of Bergen.
+        Thesis title: 'Upscaling, analysis, and iterative numerical solution schemes for
+        thermo-poroelasticity'. Main supervisor: Florin Radu. Co-supervisors: Inga Berre and Jan M. 
+        Nordbotten
+Work:
+    - - "2008"
+      - "2011"
+      - >
+        Part-time employee at Dolly Dimple's Torgallmenningen, Bergen
+    - - "2014"
+      - >
+        Teaching assistant in Calculus II (MAT112) at the University of Bergen
+    - - "2011"
+      - "2016"
+      - >
+        Part-time Team Leader at ADAM 2326
+    - - "2016"
+      - >
+        Substitute teacher (with varying hours) in mathematics and physics at 
+        Bergen Katedralskole
+    - - "2016"
+      - "2019"
+      - >
+        PhD Research Fellow aff. with the Porous Media Group,
+        Department of Mathematics, University of Bergen
+    - - "2018"
+      - >
+        Visiting researcher, Institute of Applied Mathematics, Leibniz Universit{\"a}t Hannover,
+        Germany
+    - - "2019"
+      - >
+        Co-supervisor for a MSc student aff. with the Porous Media Group         
+    - - "2019"
+      - >
+        Analyst at Frende Insurance, Bergen
+    - - "2020"
+      - "2021"
+      - >
+        Postdoctoral Fellow at CEES - Centre for Ecological and Evolutionary Synthesis, Department of
+        Biosciences, University of Oslo
+    - - "2021"
+      - >
+        Part-time position (20{\%}) as teacher in mathematics (S2) at Sonans, Oslo        
+    - - "2021"
+      - "" # <- blank
+      - >
+        IT-Consultant at Expert Analytics
+Interests:
+    "Music":
+        - "Guitar"
+        - "Piano"
+        - "Music production" 
+    "Sports":
+        - "Weightlifting"
+        - "Running"
+        - "Hiking"
+        - "Skiing"
+    "Personal":
+        - "Personal development"
+        - "Traveling"
+        - "Live music"
+        - "Reading"    
+Projects:
+    A1:
+        Activity: "Drivers of evolutionary change: Understanding stasis and non-stasis
+        through integration of micro- and macroevolution"
+        Period: "2020 -- 2021"
+        Role: "Researcher"
+        Staffing: "Team of 4"
+        Volume: "Full-time"
+        Description: >
+            As a postdoctoral researcher in biomathematics, I was part of a research team led by Prof.
+            Nils Chr. Stenseth and Prof. Jan Martin Nordbotten, devoted to developing a 
+            mathematical framework for eco-evolutionary modeling. In particular, to connect 
+            evolutionary models at different scales in a unified mathematical framework. E.g., 
+            one may consider a population as a system of interacting species, or, one may
+            consider the population as distinct individuals without imposing the category of species 
+            upon them. A multi-scale description of an eco-evolutionary system can therefore give new
+            insight into phenomena such as speciation. My role in this project was two-fold: To
+            extend the existing mathematical framework in a more mathematically rigorous direction,
+            and to apply this framework to a real-world eco-evolutionary system using biological data.
+        Tools: "Mathematical modeling and analysis, Mathematical biology, Finite Volume Method, 
+        MatLab, Latex"
+    A2:
+        Activity: "An iterative staggered scheme for phase field brittle fracture propagation
+        with stabilizing parameters"
+        Period: "2018"
+        Role: "Researcher"
+        Staffing: "Team of 5"
+        Volume: "Full-time"
+        Description: >
+            During my doctoral work I spent some time at the Leibniz Universit{\"a}t 
+            Hannover, Germany, as a visiting researcher, where I collaborated with Prof. Thomas 
+            Wick. The purpose of this collaboration was to work on numerical solution algorithms
+            for fracture propagation in brittle materials, where the fracture surface is 
+            represented by a phase-field variable. Our strategy was to decouple the mechanics 
+            from the phase-field and solve each linearized subproblem separately, while iteratively
+            updating coupling terms. Analysis of the proposed algorithm revealed bounds on the
+            elastic strain and the thickness of the phase-field surface for which convergence is 
+            guaranteed. Moreover, stabilizing parameters were introduced and tailored specifically 
+            to each subproblem. The resulting algorithm is a stable and efficient solution 
+            procedure for the notoriously difficult phase-field brittle fracture propagation
+            problems, including conditions for guaranteed convergence.
+        Tools: "Mechanics, Finite Element Method, Latyex, Deal II" 
+    A3:
+        Activity: "Upscaling, analysis, and iterative numerical solution schemes for 
+        thermo-poroelasticity"
+        Period: "2016 -- 2019"
+        Role: "Researcher"
+        Staffing: "Team of 5"
+        Volume: "Full-time"
+        Description: >
+            The main objectives of my doctoral research was to provide part of the mathematical 
+            models and simulation technology required to assess large-scale deployment
+            of thermo-mechanical subsurface energy storage in the context of
+            intermittent renewable energy. The relevant physical processes for this application
+            is the coupling of geomechenics, flow, and heat transfer within a porous material, i.e.,
+            thermo-poroelasticity. Thus, together with my supervisors; Prof. Florin Radu, 
+            Prof. Inga Berre, and Prof. Jan Martin Nordbotten, we focused on different aspects
+            of thermo-poroelasticity, relevant for the previously mentioned application, and under the 
+            technical umbrella of mathematical modeling and analysis. In particular, the research
+            was separated into three parts; (1) modeling, (2) analysis, and (3) implementation.
+        Tools: "Mathematical modeling and analysis, Finite Element Method, Python, 
+        Numpy, SciPy, Latex"       
+Publications:
+    B1:
+        Journal: "Computers \\& Mathematics with Applications"
+        Date: "2020"
+        Authors: "Brun, Mats Kirkes{\\ae}ther and Ahmed, Elyes and Berre, Inga and Nordbotten, 
+        Jan Martin and Radu, Florin Adrian"
+        Title: "Monolithic and splitting solution schemes for fully coupled quasi-static 
+        thermo-poroelasticity with nonlinear convective transport"
+        Summary: >
+            This paper concerns monolithic and splitting-based iterative procedures for the coupled
+            nonlinear thermo-poroelasticity model problem. The thermo-poroelastic model problem we
+            consider is formulated as a three-field system of PDE’s, consisting of an energy balance
+            equation, a mass balance equation and a momentum balance equation, where the primary
+            variables are temperature, fluid pressure, and elastic displacement. Due to the
+            presence of a nonlinear convective transport term in the energy balance equation,
+            it is convenient to have access to both the pressure and temperature gradients.
+            Hence, we introduce these as two additional variables and extend the original 
+            three-field model to a five-field model. For the numerical solution of this 
+            five-field formulation, we compare six approaches that differ by how we treat 
+            the coupling/decoupling between the flow and/from heat and/from the mechanics, 
+            suitable for varying coupling strength between the three physical processes. 
+            We provide a convergence proof for the derived algorithms, and demonstrate their 
+            performance through several numerical examples investigating different 
+            strengths of the coupling between the different processes.
+        DOI: "https://doi.org/10.1016/j.camwa.2020.08.022"
+    B2:
+        Journal: "Computer Methods in Applied Mechanics and Engineering"
+        Date: "2020"
+        Authors: "Brun, Mats Kirkes{\\ae}ther and Wick, Thomas and Berre, 
+        Inga and Nordbotten, Jan Martin and Radu, Florin Adrian"
+        Title: "An iterative staggered scheme for phase field brittle fracture 
+        propagation with stabilizing parameters"
+        Summary: >
+            This paper concerns the analysis and implementation of a novel iterative staggered 
+            scheme for quasi-static brittle fracture propagation models, where the fracture 
+            evolution is tracked by a phase field variable. The model we consider is a 
+            two-field variational inequality system, with the phase field function and 
+            the elastic displacements of the solid material as independent variables. 
+            Using a penalization strategy, this variational inequality system is transformed 
+            into a variational equality system, which is the formulation we take as the 
+            starting point for our algorithmic developments. The proposed scheme involves 
+            a partitioning of this model into two subproblems; phase field and mechanics, 
+            with added stabilization terms to both subproblems for improved efficiency 
+            and robustness. We analyze the convergence of the proposed scheme using a 
+            fixed point argument, and find that under a natural condition, the elastic 
+            mechanical energy remains bounded, and, if the diffusive zone around crack 
+            surfaces is sufficiently thick, monotonic convergence is achieved. Finally, 
+            the proposed scheme is validated numerically with several bench-mark problems.
+        DOI: "https://doi.org/10.1016/j.cma.2019.112752"   
+    B3:
+        Journal: "Journal of Mathematical Analysis and Applications"
+        Date: "2019"
+        Authors: "Brun, Mats Kirkes{\\ae}ther and Ahmed, Elyes and Nordbotten, 
+        Jan Martin and Radu, Florin Adrian"
+        Title: "Well-posedness of the fully coupled quasi-static thermo-poroelastic equations 
+        with nonlinear convective transport"
+        Summary: >
+            This paper is concerned with the analysis of the quasi-static thermo-poroelastic 
+            model. This model is nonlinear and includes thermal effects compared to the 
+            classical quasi-static poroelastic model (also known as Biot's model). 
+            It consists of a momentum balance equation, a mass balance equation, and an 
+            energy balance equation, fully coupled and nonlinear due to a convective 
+            transport term in the energy balance equation. The aim of this article is 
+            to investigate, in the context of mixed formulations, the existence and 
+            uniqueness of a weak solution to this model problem. The primary variables 
+            in these formulations are the fluid pressure, temperature and elastic 
+            displacement as well as the Darcy flux, heat flux and total stress. The 
+            well-posedness of a linearized formulation is addressed first through 
+            the use of a Galerkin method and suitable a priori estimates. This is 
+            used next to study the well-posedness of an iterative solution procedure 
+            for the full nonlinear problem. A convergence proof for this algorithm is 
+            then inferred by a contraction of successive difference functions of the 
+            iterates using suitable norms. 
+        DOI: "https://doi.org/10.1016/j.jmaa.2018.10.074"           
+        
+        
