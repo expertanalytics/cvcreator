@@ -43,13 +43,14 @@ jobs:
           command: |
               python -m venv .venv
               source .venv/bin/activate
-              pip install -U setuptools wheel twine
-              python setup.py sdist bdist_wheel --universal
+              poetry install
+              pip install -U wheel
       - run:
           name: "Publish to PyPI"
           command: |
               source .venv/bin/activate
-              twine upload --username jonathf --password $PYPI_PASSWORD dist/*
+              poetry publish --build --username jonathf \
+                  --password $PYPI_PASSWORD --no-interaction
 workflows:
   version: 2
   workflow:
