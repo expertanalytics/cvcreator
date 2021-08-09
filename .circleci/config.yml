@@ -41,8 +41,9 @@ jobs:
       - run:
           name: "Build wheel"
           command: |
-              pipenv install --deploy --dev
+              python -m venv .venv
               source .venv/bin/activate
+              pip install -U setuptools wheel twine
               python setup.py sdist bdist_wheel --universal
       - run:
           name: "Publish to PyPI"
