@@ -117,7 +117,7 @@ Adding new skills and badges
 
 If a skill is missing, or a skill is written in an incorrect way, please either
 `file an issue <https://github.com/expertanalytics/cvcreator/issues>`_ or
-`make a request `<https://github.com/expertanalytics/cvcreator/pulls>`_ with a
+`make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with a
 the proposed change. In the latter case, the changes can be made to the file:
 ``cvcreator/templates/tech_skills.toml``.
 
