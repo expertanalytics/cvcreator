@@ -1,4 +1,5 @@
 """Command line interface parser."""
+from typing import List
 import os
 import re
 import shutil
@@ -9,8 +10,10 @@ import click
 from click_help_colors import HelpColorsGroup, HelpColorsCommand
 
 from .compile import compile_latex
-from .content import load_content
 from .template import load_template
+
+from .vitae import load_vitae
+from .aggregate import load_aggregate
 from .txt2yaml import convert_txt_to_yaml
 from .yaml2toml import convert_yaml_to_toml
 
@@ -35,8 +38,6 @@ def cv():
 )
 @click.argument("toml_content")
 @click.argument("document_output", default="")
-@click.option("-t", "--template", default="default", help=(
-    "Select which latex template file to use when generating document."))
 @click.option("-b", "--badges", is_flag=True, help=(
     "Include small badge icons to selected technical skills."))
 @click.option("-p", "--projects", default="", help=(
@@ -46,7 +47,6 @@ def cv():
 def create(
     toml_content: str,
     document_output: str = "",
-    template: str = "default",
     badges: bool = False,
     projects: str = "",
     publications: str = "",
@@ -54,9 +54,9 @@ def create(
     """
     Create curriculum vitae .pdf document from .toml content file.
     """
-    content = load_content(toml_content, badges=badges,
-                           projects=projects, publications=publications)
-    template = load_template(template)
+    content = load_vitae(toml_content, badges=badges,
+                         projects=projects, publications=publications)
+    template = load_template("default")
     latex_code = template.render(**dict(content))
     name = os.path.basename(toml_content.replace(".toml", ""))
     document_output = document_output or toml_content.replace(".toml", ".pdf")
@@ -67,8 +67,6 @@ def create(
 @cv.command(cls=HelpColorsCommand, short_help="Create CV as .tex file")
 @click.argument("toml_content")
 @click.argument("target", default="")
-@click.option("-t", "--template", default="default", help=(
-    "Select which latex template file to use when generating document."))
 @click.option("-b", "--badges", is_flag=True, help=(
     "Include small badge icons to selected technical skills."))
 @click.option("-p", "--projects", default="", help=(
@@ -78,7 +76,6 @@ def create(
 def latex(
     toml_content: str,
     target: str = "",
-    template: str = "default",
     badges: bool = False,
     projects: str = "",
     publications: str = "",
@@ -86,13 +83,32 @@ def latex(
     """
     Create latex source code from .toml content file.
     """
-    content = load_content(toml_content, badges=badges,
-                           projects=projects, publications=publications)
-    template = load_template(template)
+    content = load_vitae(toml_content, badges=badges,
+                         projects=projects, publications=publications)
+    template = load_template("default")
     latex_code = template.render(**dict(content))
     target = target or toml_content.replace(".toml", ".tex")
     with open(target, "w") as dst:
         dst.write(latex_code)
+
+
+@cv.command(cls=HelpColorsCommand, short_help="Create aggregate as .pdf file")
+@click.argument("agg_content")
+@click.argument("cv_content", nargs=-1, required=True)
+def aggregate(
+    agg_content: str,
+    cv_content: List[str],
+):
+    """
+    Create aggregate .pdf document from series of .toml content file.
+    """
+    content = load_aggregate(agg_content, cv_content)
+    template = load_template("aggregate")
+    latex_code = template.render(**dict(content))
+    name = os.path.basename(agg_content.replace(".toml", ""))
+    document_output = agg_content.replace(".toml", ".pdf")
+    with compile_latex(latex=latex_code, name=name) as pdf_path:
+        shutil.copy(pdf_path, document_output)
 
 
 @cv.command(cls=HelpColorsCommand, short_help="Convert old .txt to .yaml")
@@ -133,7 +149,7 @@ def skills(badges):
     List of allowed technical skills. The spelling is case sensitive.
     """
     if badges:
-        icons = glob.glob(os.path.join(os.path.dirname(__file__), "icons", "*.pdf"))
+        icons = glob.glob(os.path.join(os.path.dirname(__file__), "data", "badges", "*.pdf"))
         data = (re.sub(r".*/([^/]+).pdf$", r"\1", icon) for icon in icons)
     else:
         path = os.path.join(os.path.dirname(__file__), "templates", "tech_skills.toml")
