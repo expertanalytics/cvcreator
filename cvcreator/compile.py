@@ -1,3 +1,4 @@
+from typing import Iterator
 from contextlib import contextmanager
 import tempfile
 import os
@@ -12,7 +13,7 @@ def compile_latex(
     latex: str,
     name: str = "document",
     silent: bool = False,
-) -> None:
+) -> Iterator[str]:
     """
     Compile latex code.
 
