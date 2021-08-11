@@ -13,7 +13,7 @@ CURDIR = os.path.dirname(os.path.abspath(__file__))
 def get_skills_data() -> Dict[str, Any]:
     """Get technical skills data."""
     with open(os.path.join(
-            CURDIR, "templates", "tech_skills.toml")) as handler:
+            CURDIR, os.path.pardir, "data", "tech_skills.toml")) as handler:
         return toml.load(handler)
 
 
@@ -42,17 +42,13 @@ def make_skill_groups(
 
     Examples:
         >>> make_skill_groups(  # doctest: +NORMALIZE_WHITESPACE
-        ...     ["SQLite", "CVS", "Git", "pip"], threshold=1)
-        {'Package managers': ['pip'],
-         'Databases': ['SQLite'],
-         'Version control': ['CVS', 'Git']}
-        >>> make_skill_groups(["SQLite", "CVS", "Git", "pip"], threshold=2)
-        {'Version control': ['CVS', 'Git'], 'Tools': ['SQLite', 'pip']}
-        >>> make_skill_groups(["SQLite", "CVS", "Git", "pip"], threshold=3)
-        {'Code management': ['CVS', 'Git', 'pip']}
-        >>> make_skill_groups(["SQLite", "CVS", "Git", "pip"],
-        ...     threshold=3, cut_below=False)
-        {'Code management': ['CVS', 'Git', 'pip'], 'Tools': ['SQLite']}
+        ...     ["SQLite", "CVS", "Git", "Pip"], threshold=1)
+        [TechnicalSkill(title='Organize', values=['CVS', 'Git', 'Pip']), 
+         TechnicalSkill(title='Databases', values=['SQLite'])]
+        >>> make_skill_groups(  # doctest: +NORMALIZE_WHITESPACE
+        ...     ["SQLite", "CVS", "Git", "Pip"], threshold=2)
+        [TechnicalSkill(title='Tools', values=['SQLite']), 
+         TechnicalSkill(title='Organize', values=['CVS', 'Git', 'Pip'])]
 
     """
     skills_data = get_skills_data()
