@@ -30,7 +30,7 @@ def filter_(keys: str, sequence: Sequence[Any]) -> List[Any]:
     return [sequence[idx] for idx, s in enumerate(sequence) if s.tag in keys]
 
 
-def load_content(
+def load_vitae(
     path: str,
     badges: bool = False,
     projects: str = "",
@@ -71,7 +71,8 @@ def load_content(
     if badges:
         for skill in content.technical_skill:
             for idx, value in enumerate(skill.values):
-                path = os.path.join(CURDIR, "icons", f"{value}.pdf")
+                path = os.path.join(
+                    CURDIR, os.path.pardir, "data", "badges", f"{value}.pdf")
                 if os.path.isfile(path):
                     skill.values[idx] = (
                         rf"\includegraphics[width=0.3cm]{{{path}}}~{value}")
@@ -83,7 +84,7 @@ def load_content(
         value = getattr(content.meta, name)
         if not os.path.isfile(value):
             setattr(content.meta, name, os.path.join(
-                CURDIR, "templates", f"{value}.pdf"))
+                CURDIR, os.path.pardir, "templates", f"{value}.pdf"))
             assert os.path.isfile(getattr(content.meta, name)), (
                 f"unrecognized value/path for meta.{name}: '{value}'")
 

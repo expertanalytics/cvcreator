@@ -1,5 +1,5 @@
 """Schema definition for the user provided yaml source file."""
-from typing import List
+from typing import List, Union
 from pydantic import BaseModel, Field
 
 
@@ -9,11 +9,13 @@ class TechnicalSkill(BaseModel):
     title: str
     values: List[str]
 
+
 class LanguageSkill(BaseModel):
     """Language skill and proficiency."""
 
     language: str
     proficiency: str
+
 
 class PersonalSkill(BaseModel):
     """A personal skill and description."""
@@ -21,11 +23,13 @@ class PersonalSkill(BaseModel):
     title: str
     description: str
 
+
 class Hobby(BaseModel):
     """Group of hobbies."""
 
     title: str
     values: List[str]
+
 
 class Education(BaseModel):
     """Completed educational degree."""
@@ -33,12 +37,14 @@ class Education(BaseModel):
     year: str
     description: str
 
+
 class Work(BaseModel):
     """Previous work experience."""
 
     start: str
     end: str = ""
     description: str
+
 
 class Project(BaseModel):
     """Extended description of a project."""
@@ -51,6 +57,7 @@ class Project(BaseModel):
     tools: str = ""
     tag: str = ""
 
+
 class Publications(BaseModel):
     """Published journal papers."""
 
@@ -60,6 +67,7 @@ class Publications(BaseModel):
     authors: str
     year: int
     tag: str = ""
+
 
 class MetaInformation(BaseModel):
     """Meta-information used by the document."""
@@ -77,7 +85,7 @@ class MetaInformation(BaseModel):
 
 
 class VitaeContent(BaseModel):
-    """Schema for the yaml source file."""
+    """Schema for Vitae content file."""
 
     name: str
     address: str = ""
@@ -94,7 +102,8 @@ class VitaeContent(BaseModel):
 
     # Should be TechnicalSkill, but is constructed after parsing.
     # 'str' is used here as a placeholder for list of skills.
-    technical_skill: List[str] = Field(default_factory=list)
+    technical_skill: Union[List[str], List[TechnicalSkill]] = (
+        Field(default_factory=list))
 
     language_skill: List[LanguageSkill] = Field(default_factory=list)
     personal_skill: List[PersonalSkill] = Field(default_factory=list)
