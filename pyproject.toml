@@ -19,8 +19,8 @@ click-help-colors = "^0.9"
 pytest = "^6.2.3"
 
 [tool.poetry.scripts]
-cv = "cvcreator.__main__:cv"
-cvcreate = "cvcreator.__main__:create"
+cv = "cvcreator.parser:cv"
+cvcreate = "cvcreator.parser:create"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
