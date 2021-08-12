@@ -1,5 +1,8 @@
 """Schema definition for the user provided yaml source file."""
-from typing import List, Union
+import datetime
+from typing import List, Optional, Union
+from enum import Enum
+
 from pydantic import BaseModel, Field
 
 
@@ -31,11 +34,47 @@ class Hobby(BaseModel):
     values: List[str]
 
 
+class DegreeTitle(str, Enum):
+    bacholors = "Bachelor's degree"
+    masters = "Master's degree"
+    phd = "PhD"
+    licientiate = "Licentiate"  # Master's
+    diploma = "Diploma degree"
+    research_proficiency = "Research Proficiency"
+    cand_scient = "Cand. Scient"
+    doctor_scient = "Doctor Scient"
+
+
+class DegreeTags(str, Enum):
+    physics = "Physics"
+    scicomp = "Scientfic Computing"
+    mechanics = "Mechanics"
+    mathematics = "Mathematics"
+    engineering = "Engineering"
+    chemestry = "Chemestry"
+    biotechology = "Bio-technology"
+    geology = "Geology/Geophysics"
+    computer_science = "Computer Science"
+
+
+class Country(str, Enum):
+    norway = "Norway"
+    turkey = "Turkey"
+    spain = "Spain"
+
+
 class Education(BaseModel):
     """Completed educational degree."""
 
-    year: str
-    description: str
+    start: Optional[datetime.date] = None
+    end: datetime.date
+    degree: DegreeTitle
+    topic: DegreeTags
+    title: str = ""
+    department: str = ""
+    university: str
+    country: Country
+    description: str = ""
 
 
 class Work(BaseModel):
@@ -90,7 +129,7 @@ class VitaeContent(BaseModel):
     name: str
     address: str = ""
     post: str = ""
-    birth: str = ""
+    birth: Optional[datetime.date] = None
     email: str = ""
     phone: str = ""
     nationality: str = ""
