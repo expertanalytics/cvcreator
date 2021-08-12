@@ -138,16 +138,15 @@ Developor Guide
 ===============
 
 The project uses `poetry`_ to manage its development installation. Assuming
-`poetry`_ installed on your system, installing ``chaospy`` for development can
-be done from the repository root with the command:
+`poetry`_ installed on your system, installing ``cvcreator`` for development
+can be done from the repository root with the command:
 
 .. code-block:: bash
 
     poetry install
 
-This will install all required dependencies and chaospy into a virtual
-environment.
-To enter the create environment, run:
+This will install all required dependencies and cvcreator into a virtual
+environment. To enter the create environment, run:
 
 .. code-block:: bash
 
@@ -168,4 +167,4 @@ To ensure that the code run on your local system, run the following:
 
 .. code-block:: bash
 
-    poetry run pytest --doctest-modules chaospy/ tests/
+    poetry run pytest --doctest-modules cvcreator/ tests/
