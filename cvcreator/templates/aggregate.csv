@@ -1,0 +1,4 @@
+feature,value
+\BLOCK{if summary}summary,"\VAR{summary}"\BLOCK{endif}
+\BLOCK{if skill_count}\BLOCK{for s in skill_count}\VAR{s.value},\VAR{s.count}
+\BLOCK{endfor}\BLOCK{endif}
