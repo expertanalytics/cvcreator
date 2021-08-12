@@ -133,3 +133,39 @@ useful checklist:
 * Place the badge in the folder ``cvcreator/icons``.
 * Except for the ``.pdf`` extension, the name must exactly match that of the
   badge trigger. This means include capitalized letters and spaces.
+
+Developor Guide
+===============
+
+The project uses `poetry`_ to manage its development installation. Assuming
+`poetry`_ installed on your system, installing ``chaospy`` for development can
+be done from the repository root with the command:
+
+.. code-block:: bash
+
+    poetry install
+
+This will install all required dependencies and chaospy into a virtual
+environment.
+To enter the create environment, run:
+
+.. code-block:: bash
+
+    poetry shell
+
+Afterwards exit with:
+
+.. code-block:: bash
+
+    exit
+
+.. _poetry: https://poetry.eustace.io/
+
+Testing
+-------
+
+To ensure that the code run on your local system, run the following:
+
+.. code-block:: bash
+
+    poetry run pytest --doctest-modules chaospy/ tests/
