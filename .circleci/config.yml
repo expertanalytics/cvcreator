@@ -27,8 +27,8 @@ jobs:
           name: "Compile CV documents"
           command: |
               source .venv/bin/activate
-              cv latex cvcreator/templates/example.toml output.tex
-              python -m cvcreator latex cvcreator/templates/example.toml output.tex
+              cv create --latex cvcreator/templates/example.toml output.tex
+              python -m cvcreator --latex cvcreator/templates/example.toml output.tex
       # - run:
       #     name: "Run tests"
       #     command: |
