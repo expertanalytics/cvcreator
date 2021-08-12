@@ -28,7 +28,6 @@ def cv():
     """
     Command line tool for creating curriculum vitae from TOML source files.
     """
-    pass
 
 
 @cv.command(
@@ -37,62 +36,42 @@ def cv():
     short_help="Create CV as .pdf file",
 )
 @click.argument("toml_content")
-@click.argument("document_output", default="")
+@click.argument("output", default="")
 @click.option("-b", "--badges", is_flag=True, help=(
     "Include small badge icons to selected technical skills."))
+@click.option("-l", "--latex", is_flag=True, help=(
+    "Output latex document instead of a pdf."))
 @click.option("-p", "--projects", default="", help=(
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
 def create(
     toml_content: str,
-    document_output: str = "",
+    output: str = "",
     badges: bool = False,
+    latex: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> None:
     """
-    Create curriculum vitae .pdf document from .toml content file.
+    Create curriculum vitae from TOML content file.
     """
     content = load_vitae(toml_content, badges=badges,
                          projects=projects, publications=publications)
-    template = load_template("default")
+    template = load_template("vitae.tex")
     latex_code = template.render(**dict(content))
-    name = os.path.basename(toml_content.replace(".toml", ""))
-    document_output = document_output or toml_content.replace(".toml", ".pdf")
-    with compile_latex(latex=latex_code, name=name) as pdf_path:
-        shutil.copy(pdf_path, document_output)
+    if latex:
+        output = output or toml_content.replace(".toml", ".tex")
+        with open(output, "w") as dst:
+            dst.write(latex_code)
+    else:
+        name = os.path.basename(toml_content.replace(".toml", ""))
+        output = output or toml_content.replace(".toml", ".pdf")
+        with compile_latex(latex=latex_code, name=name) as pdf_path:
+            shutil.copy(pdf_path, output)
 
 
-@cv.command(cls=HelpColorsCommand, short_help="Create CV as .tex file")
-@click.argument("toml_content")
-@click.argument("target", default="")
-@click.option("-b", "--badges", is_flag=True, help=(
-    "Include small badge icons to selected technical skills."))
-@click.option("-p", "--projects", default="", help=(
-    "Comma-separated list of project tags to include. Use ':' for all."))
-@click.option("-u", "--publications", default="", help=(
-    "Comma-separated list of publication tags to include. Use ':' for all."))
-def latex(
-    toml_content: str,
-    target: str = "",
-    badges: bool = False,
-    projects: str = "",
-    publications: str = "",
-):
-    """
-    Create latex source code from .toml content file.
-    """
-    content = load_vitae(toml_content, badges=badges,
-                         projects=projects, publications=publications)
-    template = load_template("default")
-    latex_code = template.render(**dict(content))
-    target = target or toml_content.replace(".toml", ".tex")
-    with open(target, "w") as dst:
-        dst.write(latex_code)
-
-
-@cv.command(cls=HelpColorsCommand, short_help="Create aggregate as .pdf file")
+@cv.command(cls=HelpColorsCommand, short_help="Create aggregate CSV file")
 @click.argument("agg_content")
 @click.argument("cv_content", nargs=-1, required=True)
 def aggregate(
@@ -100,15 +79,14 @@ def aggregate(
     cv_content: List[str],
 ):
     """
-    Create aggregate .pdf document from series of .toml content file.
+    Create aggregate .csv from series of .toml content files.
     """
     content = load_aggregate(agg_content, cv_content)
-    template = load_template("aggregate")
-    latex_code = template.render(**dict(content))
-    name = os.path.basename(agg_content.replace(".toml", ""))
-    document_output = agg_content.replace(".toml", ".pdf")
-    with compile_latex(latex=latex_code, name=name) as pdf_path:
-        shutil.copy(pdf_path, document_output)
+    template = load_template("aggregate.csv")
+    csv_string = template.render(**dict(content))
+    output = agg_content.replace(".toml", ".csv")
+    with open(output, "w") as dst:
+        dst.write(csv_string)
 
 
 @cv.command(cls=HelpColorsCommand, short_help="Convert old .txt to .yaml")
@@ -131,7 +109,7 @@ def yaml2toml(yaml_source, toml_target):
     convert_yaml_to_toml(yaml_source, toml_target)
 
 
-@cv.command(cls=HelpColorsCommand, short_help="Create example .toml file")
+@cv.command(cls=HelpColorsCommand, short_help="Create example TOML file")
 @click.argument("toml_target")
 def example(toml_target):
     """
@@ -152,7 +130,7 @@ def skills(badges):
         icons = glob.glob(os.path.join(os.path.dirname(__file__), "data", "badges", "*.pdf"))
         data = (re.sub(r".*/([^/]+).pdf$", r"\1", icon) for icon in icons)
     else:
-        path = os.path.join(os.path.dirname(__file__), "templates", "tech_skills.toml")
+        path = os.path.join(os.path.dirname(__file__), "data", "tech_skills.toml")
         with open(path) as handle:
             data = toml.load(handle)["skills"]
     click.echo("\n".join(data))

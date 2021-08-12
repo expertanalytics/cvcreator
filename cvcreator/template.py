@@ -5,8 +5,6 @@ import glob
 from jinja2 import Template
 
 CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
-TEMPLATES = [os.path.basename(path).replace(".tex", "")
-             for path in glob.glob(os.path.join(CURDIR, "templates", "*.tex"))]
 
 
 def load_template(template_name: str) -> Template:
@@ -25,8 +23,9 @@ def load_template(template_name: str) -> Template:
         Template engine for the given template with latex groups.
 
     """
-    template = (os.path.join(CURDIR, "templates", f"{template_name}.tex")
-                if template_name in TEMPLATES else template_name)
+    template = os.path.join(CURDIR, "templates", template_name)
+    if not os.path.isfile(template):
+        template = template_name
     assert os.path.isfile(template), (
         f"template '{template}' not valid path")
 
