@@ -1,0 +1,4 @@
+summary = """
+Some text in the beginning
+"""
+technical_skills = ["Python", "AWS", "C++"]
