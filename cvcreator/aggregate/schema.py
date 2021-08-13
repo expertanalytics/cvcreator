@@ -11,20 +11,9 @@ class SkillCount(BaseModel):
     count: int
 
 
-class MetaInformation(BaseModel):
-    """Meta-information used by the document."""
-
-    font_size: int = 11
-    logo_image: str = "logo"
-    footer_image: str = "footer"
-
-
 class AggregateContent(BaseModel):
     """Schema for Aggregate content file."""
 
-    summary: str = ""
-
-    meta: MetaInformation = MetaInformation()
-
     technical_skills: List[str]
+
     skill_count: List[SkillCount] = Field(default_factory=list)

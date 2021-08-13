@@ -42,15 +42,4 @@ def load_aggregate(
         if value in aggr.technical_skills
     ]
 
-    # anything with meta.*_image should be an image
-    for name in aggr.meta.__dict__:
-        if not name.endswith("_image"):
-            continue
-        value = getattr(aggr.meta, name)
-        if not os.path.isfile(value):
-            setattr(aggr.meta, name, os.path.join(
-                CURDIR, os.path.pardir, "templates", f"{value}.pdf"))
-            assert os.path.isfile(getattr(aggr.meta, name)), (
-                f"unrecognized value/path for meta.{name}: '{value}'")
-
     return aggr

@@ -4,11 +4,57 @@ import datetime
 from typing import List, Literal, Optional, Union
 
 from pydantic import BaseModel, Field
-from country_list import countries_for_language
+import pycountry
 
 
-COUNTRIES = tuple(name for _, name in countries_for_language("en"))
+COUNTRIES = tuple(country.__dict__.get("common_name", country.name)
+                  for country in pycountry.countries)
 Country = Literal[COUNTRIES]
+
+LANGUAGES = tuple(language.name for language in pycountry.languages)
+Language = Literal[LANGUAGES]
+
+# hopefully exhaustive:
+NATIONALITIES = (
+    'Afghan', 'Albanian', 'Algerian', 'American', 'Andorran', 'Angolan',
+    'Antiguans', 'Argentinean', 'Armenian', 'Australian', 'Austrian',
+    'Azerbaijani', 'Bahamian', 'Bahraini', 'Bangladeshi', 'Barbadian',
+    'Barbudans', 'Batswana', 'Belarusian', 'Belgian', 'Belizean', 'Beninese',
+    'Bhutanese', 'Bolivian', 'Bosnian', 'Brazilian', 'British', 'Bruneian',
+    'Bulgarian', 'Burkinabe', 'Burmese', 'Burundian', 'Cambodian',
+    'Cameroonian', 'Canadian', 'Cape Verdean', 'Central African', 'Chadian',
+    'Chilean', 'Chinese', 'Colombian', 'Comoran',  'Congolese', 'Costa Rican',
+    'Croatian', 'Cuban', 'Cypriot', 'Czech', 'Danish', 'Djibouti', 'Dominican',
+    'Dutch', 'Dutchman', 'Dutchwoman', 'East Timorese', 'Ecuadorean',
+    'Egyptian', 'Emirian', 'Equatorial Guinean', 'Eritrean', 'Estonian',
+    'Ethiopian', 'Fijian', 'Filipino', 'Finnish', 'French', 'Gabonese',
+    'Gambian', 'Georgian', 'German', 'Ghanaian', 'Greek', 'Grenadian',
+    'Guatemalan', 'Guinea-Bissauan', 'Guinean', 'Guyanese', 'Haitian',
+    'Herzegovinian', 'Honduran', 'Hungarian', 'I-Kiribati', 'Icelander',
+    'Indian', 'Indonesian', 'Iranian', 'Iraqi', 'Irish', 'Israeli', 'Italian',
+    'Ivorian', 'Jamaican', 'Japanese', 'Jordanian', 'Kazakhstani', 'Kenyan',
+    'Kittian and Nevisian', 'Kuwaiti', 'Kyrgyz', 'Laotian', 'Latvian',
+    'Lebanese', 'Liberian', 'Libyan', 'Liechtensteiner', 'Lithuanian',
+    'Luxembourger', 'Macedonian', 'Malagasy', 'Malawian', 'Malaysian',
+    'Maldivan', 'Malian', 'Maltese', 'Marshallese', 'Mauritanian', 'Mauritian',
+    'Mexican', 'Micronesian', 'Moldovan', 'Monacan', 'Mongolian', 'Moroccan',
+    'Mosotho', 'Motswana', 'Mozambican', 'Namibian', 'Nauruan', 'Nepalese',
+    'Netherlander', 'New Zealander', 'Ni-Vanuatu', 'Nicaraguan', 'Nigerian',
+    'Nigerien', 'North Korean', 'Northern Irish', 'Norwegian', 'Omani',
+    'Pakistani', 'Palauan', 'Panamanian', 'Papua New Guinean', 'Paraguayan',
+    'Peruvian', 'Polish', 'Portuguese', 'Qatari', 'Romanian', 'Russian',
+    'Rwandan', 'Saint Lucian', 'Salvadoran', 'Samoan', 'San Marinese',
+    'Sao Tomean', 'Saudi', 'Scottish', 'Senegalese', 'Serbian', 'Seychellois',
+    'Sierra Leonean', 'Singaporean', 'Slovakian', 'Slovenian',
+    'Solomon Islander', 'Somali', 'South African', 'South Korean', 'Spanish',
+    'Sri Lankan', 'Sudanese', 'Surinamer', 'Swazi', 'Swedish', 'Swiss',
+    'Syrian', 'Taiwanese', 'Tajik', 'Tanzanian', 'Thai', 'Togolese', 'Tongan',
+    'Trinidadian or Tobagonian', 'Tunisian', 'Turkish', 'Tuvaluan', 'Ugandan',
+    'Ukrainian', 'Uruguayan', 'Uzbekistani', 'Venezuelan', 'Vietnamese',
+    'Welsh', 'Yemenite', 'Zambian', 'Zimbabwean'
+)
+Nationality = Literal[NATIONALITIES]
+
 
 
 class TechnicalSkill(BaseModel):
@@ -21,8 +67,8 @@ class TechnicalSkill(BaseModel):
 class LanguageSkill(BaseModel):
     """Language skill and proficiency."""
 
-    language: str
-    proficiency: str
+    language: Language
+    proficiency: Literal["Native", "Fluent", "Intermediate", "Basic"]
 
 
 class PersonalSkill(BaseModel):
@@ -112,7 +158,7 @@ class VitaeContent(BaseModel):
     birth: Optional[datetime.date] = None
     email: str = ""
     phone: str = ""
-    nationality: str = ""
+    nationality: Optional[Nationality] = None
     github: str = ""
     website: str = ""
     summary: str = ""
