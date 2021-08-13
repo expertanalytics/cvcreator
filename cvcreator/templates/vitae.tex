@@ -86,7 +86,11 @@
   \section*{Education}
   \begin{tabular}{LR}
     \BLOCK{for s in education}
-    \VAR{s.year} & \VAR{s.description} \\
+      \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
+      \BLOCK{if s.degree}{\bf \VAR{s.degree} in \BLOCK{if s.title}\VAR{s.title}\BLOCK{else}\VAR{s.topic}\BLOCK{endif}}\BLOCK{endif} \
+      \BLOCK{if s.department or s.university or s.country} at \VAR{[s.department, s.university, s.country]|select()|join(", ")}.\BLOCK{endif} \
+      \BLOCK{if s.thesis}Thesis title: ``\VAR{s.thesis}''.\BLOCK{endif} \
+      \VAR{s.description} \\
     \BLOCK{endfor}
   \end{tabular}
   \vspace{0.5cm}

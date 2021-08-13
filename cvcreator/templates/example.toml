@@ -1,11 +1,11 @@
 name = "John Doe"
 address = "1600 Pennsylvania Avenue NW"
 post = "20500, DC"
-birth = "01.12.1950"
+birth = "1950-12-01"  # Required format: YYYY-MM-DD
 email = "joe@doe.org"
 phone = "+1 979 209 0357"
-github = "https://github.com/joe"
-website = "https://example.com"
+github = "https://github.com/joe"  # optional
+website = "https://example.com"  # optional
 summary = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -18,26 +18,53 @@ culpa qui officia deserunt mollit anim id est laborum.
 technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "PyMC"]
 
 [[work]]
-description = "Computer scientist at Google Inc. "
-start = 2019
-end = 2020
+description = "Computer scientist at Google Inc."
+start = "2019"
+end = "2020"
 
 [[work]]
 description = "Teacher at Brown University."
-start = 2020
-end = 2021
+start = "2020"
+end = "2021"
 
 [[work]]
 description = "Consultant at Expert Analytics."
-start = 2021
+start = "2021"
 
 [[education]]
-year = 2015
-description = "Bachelor's degree in mathematics from the University of Oslo."
+end = "2015"  # must be string
+
+# Choices: Bachelor's degree | Master's degree | PhD | Diploma degree | Cand. Scient | Doctor Scient
+degree = "Bachelor's degree"
+
+# Choices: Methematics | Physics | Scientific Computing | Mechanics | Engineering | Chemestry | Geology/Geophysics | Computer Science
+topic = "Mathematics"
+
+# Free form degree title
+title = "Applied Mathematics"  # -> "Bachelor's degree in Applied Mathematics"
+
+# Optional description of department
+department = "Department of Mathematics"  # optional
+
+# Required for all degrees:
+university = "University of Oslo"
+country = "Norway"
 
 [[education]]
-year = 2018
-description = "Master's degree in computer science from Cambridge University."
+end = 2016
+# Non-degree entries only uses title and description
+title = "Certification in Machine learning"
+description = "6 week online course, Coursera"
+
+[[education]]
+# Optional start time
+start = 2015
+end = 2018
+degree = "Master's degree"
+topic = "Computer Science"
+# Title if missing defaults to topic: "Master's degree in Computer Science"
+university = "Cambridge University"
+country = "United Kingdom"
 
 [[language_skill]]
 language = "English"

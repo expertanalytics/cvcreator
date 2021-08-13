@@ -1,9 +1,14 @@
+# pylint: disable=too-few-public-methods
 """Schema definition for the user provided yaml source file."""
 import datetime
-from typing import List, Optional, Union
-from enum import Enum
+from typing import List, Literal, Optional, Union
 
 from pydantic import BaseModel, Field
+from country_list import countries_for_language
+
+
+COUNTRIES = tuple(name for _, name in countries_for_language("en"))
+Country = Literal[COUNTRIES]
 
 
 class TechnicalSkill(BaseModel):
@@ -34,46 +39,23 @@ class Hobby(BaseModel):
     values: List[str]
 
 
-class DegreeTitle(str, Enum):
-    bacholors = "Bachelor's degree"
-    masters = "Master's degree"
-    phd = "PhD"
-    licientiate = "Licentiate"  # Master's
-    diploma = "Diploma degree"
-    research_proficiency = "Research Proficiency"
-    cand_scient = "Cand. Scient"
-    doctor_scient = "Doctor Scient"
-
-
-class DegreeTags(str, Enum):
-    physics = "Physics"
-    scicomp = "Scientfic Computing"
-    mechanics = "Mechanics"
-    mathematics = "Mathematics"
-    engineering = "Engineering"
-    chemestry = "Chemestry"
-    biotechology = "Bio-technology"
-    geology = "Geology/Geophysics"
-    computer_science = "Computer Science"
-
-
-class Country(str, Enum):
-    norway = "Norway"
-    turkey = "Turkey"
-    spain = "Spain"
-
-
 class Education(BaseModel):
     """Completed educational degree."""
 
-    start: Optional[datetime.date] = None
-    end: datetime.date
-    degree: DegreeTitle
-    topic: DegreeTags
+    start: int = 0
+    end: int = 0
+    degree: Literal[
+        "Bachelor's degree", "Master's degree", "PhD", "Licentiate",
+        "Diploma degree", "Research Proficiency", "Cand. Scient",
+        "Doctor Scient", ""] = ""
+    topic: Literal["Physics", "Scientific Computing", "Mechanics",
+                   "Mathematics", "Engineering", "Chemestry",
+                   "Geology and Geophysics", "Computer Science", ""] = ""
     title: str = ""
+    thesis: str = ""
     department: str = ""
-    university: str
-    country: Country
+    university: str = ""
+    country: Country = ""
     description: str = ""
 
 
