@@ -44,10 +44,8 @@ class Education(BaseModel):
 
     start: int = 0
     end: int = 0
-    degree: Literal[
-        "Bachelor's degree", "Master's degree", "PhD", "Licentiate",
-        "Diploma degree", "Research Proficiency", "Cand. Scient",
-        "Doctor Scient", ""] = ""
+    degree: Literal["Bachelor's degree", "Master's degree", "PhD",
+                    "Diploma degree", "Cand. Scient", "Doctor Scient", ""] = ""
     topic: Literal["Physics", "Scientific Computing", "Mechanics",
                    "Mathematics", "Engineering", "Chemestry",
                    "Geology and Geophysics", "Computer Science", ""] = ""
