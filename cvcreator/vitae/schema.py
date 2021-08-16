@@ -56,7 +56,6 @@ NATIONALITIES = (
 Nationality = Literal[NATIONALITIES]
 
 
-
 class TechnicalSkill(BaseModel):
     """Group of technical skills."""
 
