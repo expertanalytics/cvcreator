@@ -48,6 +48,7 @@ allowed_labels = [
 "Azure Devops" = "Microsoft Azure"
 
 [skills]
+"Abaqus" = ["Tools", "Modelling"]
 "Akka" = ["Tools", "Databases"]
 "Alembic" = ["Tools", "Databases"]
 "AWS" = ["Platforms", "Cloud"]
@@ -75,6 +76,7 @@ allowed_labels = [
 "Boost.Python" = ["Tools"]
 "C" = ["Languages"]
 "C++" = ["Languages"]
+"Cat3M" = ["Tools", "Modelling"]
 "CLion" = ["Tools", "Editors"]
 "CMake" = ["Tools"]
 "COMSOL" = ["Tools", "Modelling"]
