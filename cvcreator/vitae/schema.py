@@ -94,8 +94,8 @@ class Education(BaseModel):
     topic: Literal["Physics", "Scientific Computing", "Mechanics",
                    "Mathematics", "Engineering", "Chemestry",
                    "Geology and Geophysics", "Computer Science", ""] = ""
-    title: str = ""
-    thesis: str = ""
+    specialization: str = ""
+    thesis_title: str = ""
     department: str = ""
     university: str = ""
     country: Country = ""

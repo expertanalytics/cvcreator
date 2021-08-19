@@ -1,11 +1,11 @@
 name = "John Doe"
 address = "1600 Pennsylvania Avenue NW"
 post = "20500, DC"
-birth = "1950-12-01"  # Required format: YYYY-MM-DD
+birth = "1950-12-01"  # Optional. If included: YYYY-MM-DD
 email = "joe@doe.org"
 phone = "+1 979 209 0357"
-github = "https://github.com/joe"  # optional
-website = "https://example.com"  # optional
+github = "https://github.com/joe"  # Optional
+website = "https://example.com"  # Optional
 summary = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -19,29 +19,32 @@ technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "P
 
 [[work]]
 description = "Computer scientist at Google Inc."
-start = "2019"
-end = "2020"
+start = 2019
+end = 2020
 
 [[work]]
 description = "Teacher at Brown University."
-start = "2020"
-end = "2021"
+start = 2020
+end = 2021
 
 [[work]]
 description = "Consultant at Expert Analytics."
-start = "2021"
+start = 2021
 
 [[education]]
-end = "2015"  # must be string
+start = 2012  # Optional
+end = 2015
 
 # Choices: Bachelor's degree | Master's degree | PhD | Diploma degree | Cand. Scient | Doctor Scient
 degree = "Bachelor's degree"
 
-# Choices: Methematics | Physics | Scientific Computing | Mechanics | Engineering | Chemestry | Geology/Geophysics | Computer Science
+# Choices: Mathematics | Physics | Scientific Computing | Mechanics | Engineering | Chemistry | Geology/Geophysics | Computer Science
 topic = "Mathematics"
 
 # Free form degree title
-title = "Applied Mathematics"  # -> "Bachelor's degree in Applied Mathematics"
+specialization = "Applied Mathematics"  # -> "Bachelor's degree in Applied Mathematics"
+
+thesis_title = "My awesome dissertation!"
 
 # Optional description of department
 department = "Department of Mathematics"  # optional
@@ -57,7 +60,6 @@ title = "Certification in Machine learning"
 description = "6 week online course, Coursera"
 
 [[education]]
-# Optional start time
 start = 2015
 end = 2018
 degree = "Master's degree"
