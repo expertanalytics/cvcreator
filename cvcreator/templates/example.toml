@@ -5,6 +5,7 @@ birth = "01.12.1950"
 email = "joe@doe.org"
 phone = "+1 979 209 0357"
 github = "https://github.com/joe"
+website = "https://example.com"
 summary = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
