@@ -70,6 +70,7 @@ class MetaInformation(BaseModel):
     email_image: str = "email"
     address_image: str = "address"
     github_image: str = "link"
+    website_image: str = "link"
     phone_image: str = "phone"
     birth_image: str = "birth"
     nationality_image: str = "nationality"
@@ -86,6 +87,7 @@ class VitaeContent(BaseModel):
     phone: str = ""
     nationality: str = ""
     github: str = ""
+    website: str = ""
     summary: str = ""
 
     meta: MetaInformation = MetaInformation()
