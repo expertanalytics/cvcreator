@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cvcreator"
-version = "1.0.3"
+version = "1.0.4"
 description = "An automated tool for creating CVs on the fly."
 authors = ["Jonathan Feinberg <jonathf@gmail.com>"]
 license = "mit"
