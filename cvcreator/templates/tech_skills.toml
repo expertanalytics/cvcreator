@@ -184,6 +184,7 @@ allowed_labels = [
 "OSG" = ["Tools", "Visualization"]
 "Octave" = ["Languages", "Math"]
 "OpenBSD" = ["Platforms"]
+"OpenCOVER" = ["Visualization"]
 "OpenCL" = ["Tools"]
 "OpenCV" = ["Tools", "ML"]
 "OpenFOAM" = ["Tools", "Modelling"]
