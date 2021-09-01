@@ -122,6 +122,7 @@ allowed_labels = [
 "Gimp" = ["Tools", "Visualization"]
 "Git" = ["Tools", "Organize"]
 "Github" = ["Tools", "Organize"]
+"GitLab" = ["Tools", "Organize"]
 "Go" = ["Languages"]
 "GoogleTest" = ["Tools", "Testing"]
 "Google Cloud Platform" = ["Platforms", "Cloud"]
