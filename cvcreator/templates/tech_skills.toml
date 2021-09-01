@@ -201,6 +201,7 @@ allowed_labels = [
 "ParaView" = ["Tools", "Visualization"]
 "Perl" = ["Languages"]
 "Pip" = ["Tools", "Organize"]
+"Pillow" = ["Tools", "Visualization"]
 "Plotly" = ["Tools", "Visualization"]
 "PostgreSQL" = ["Tools", "Databases"]
 "PostGIS" = ["Tools", "Databases"]
