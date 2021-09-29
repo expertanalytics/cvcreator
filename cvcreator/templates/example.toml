@@ -35,28 +35,29 @@ start = 2021
 start = 2012  # Optional
 end = 2015
 
+# The degree you achieved.
 # Choices: Bachelor's degree | Master's degree | PhD | Diploma degree | Cand. Scient | Doctor Scient
 degree = "Bachelor's degree"
 
+# What the education will be sorted under.
 # Choices: Mathematics | Physics | Scientific Computing | Mechanics | Engineering | Chemistry | Geology/Geophysics | Computer Science
 topic = "Mathematics"
 
 # Free form degree title
 specialization = "Applied Mathematics"  # -> "Bachelor's degree in Applied Mathematics"
 
-thesis_title = "My awesome dissertation!"
+thesis_title = "My awesome dissertation!"  # Optional
 
-# Optional description of department
-department = "Department of Mathematics"  # optional
+department = "Department of Mathematics"  # Optional
 
-# Required for all degrees:
+# Required when degree is included:
 university = "University of Oslo"
 country = "Norway"
 
 [[education]]
 end = 2016
-# Non-degree entries only uses title and description
-title = "Certification in Machine learning"
+# Non-degree entries only uses specialization and description
+specialization = "Certification in Machine learning"
 description = "6 week online course, Coursera"
 
 [[education]]
@@ -70,15 +71,15 @@ country = "United Kingdom"
 
 [[language_skill]]
 language = "English"
-proficiency = "mother tongue"
+proficiency = "Native"
 
 [[language_skill]]
 language = "Norwegian"
-proficiency = "fluent"
+proficiency = "Fluent"
 
 [[language_skill]]
 language = "German"
-proficiency = "basic"
+proficiency = "Basic"
 
 [[personal_skill]]
 title = "Skill1"

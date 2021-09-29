@@ -7,8 +7,9 @@ from pydantic import BaseModel, Field
 import pycountry
 
 
-COUNTRIES = tuple(country.__dict__.get("common_name", country.name)
-                  for country in pycountry.countries)
+COUNTRIES = tuple(country.__dict__.get(
+    "common_name", country.name).replace(", Islamic Republic of", "")
+    for country in pycountry.countries)
 Country = Literal[COUNTRIES]
 
 LANGUAGES = tuple(language.name for language in pycountry.languages)
