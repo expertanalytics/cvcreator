@@ -141,7 +141,7 @@ class Publications(StrictModel):
     authors: str
     year: int
     tag: str = ""
-    summary: str = ""
+    description: str = ""
 
 
 class MetaInformation(StrictModel):
