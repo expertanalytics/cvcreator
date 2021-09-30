@@ -168,3 +168,16 @@ To ensure that the code run on your local system, run the following:
 .. code-block:: bash
 
     poetry run pytest --doctest-modules cvcreator/ tests/
+
+Deployment
+==========
+
+Releases to PyPI (the repository used when using ``pip install``) is created
+and deployed automatically when making a tagged released. To do so you need to:
+
+* Update and push a new version number in ``pyproject.toml`` to branch ``master``.
+* Create and push a git tag (or Github release) using the tag name `v<version number>`.
+  (E.g. if you make version 1.2.3, the tag should be `v1.2.3`.)
+
+And that is it. CircleCI is configured to automatically build Python wheel and
+upload them to PyPI.
