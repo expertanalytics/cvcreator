@@ -24,11 +24,14 @@ jobs:
               pip install -U poetry PyYAML
               poetry install
       - run:
-          name: "Compile CV documents"
+          name: "Smoke tests"
           command: |
               source .venv/bin/activate
-              cv latex cvcreator/templates/example.toml output.tex
-              python -m cvcreator latex cvcreator/templates/example.toml output.tex
+              cv create --latex cvcreator/templates/example.toml output.tex
+              cv aggregate test/aggregate_example.toml \
+                cvcreator/templates/example.toml \
+                cvcreator/templates/example.toml
+              python -m cvcreator --latex cvcreator/templates/example.toml output.tex
       # - run:
       #     name: "Run tests"
       #     command: |

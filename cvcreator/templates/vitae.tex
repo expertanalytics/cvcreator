@@ -48,7 +48,8 @@
 \BLOCK{if phone}      \includegraphics[width=0.3cm]{\VAR{meta.phone_image}}       & \VAR{phone}               \\ \BLOCK{endif}
 \BLOCK{if github}     \includegraphics[width=0.3cm]{\VAR{meta.github_image}}      & \url{\VAR{github}}        \\ \BLOCK{endif}
 \BLOCK{if website}    \includegraphics[width=0.3cm]{\VAR{meta.website_image}}     & \url{\VAR{website}}       \\ \BLOCK{endif}
-\BLOCK{if birth}      \includegraphics[width=0.3cm]{\VAR{meta.birth_image}}       & \VAR{birth}               \\ \BLOCK{endif}
+\BLOCK{if birth}      \includegraphics[width=0.3cm]{\VAR{meta.birth_image}}       &
+    \VAR{"%02d"|format(birth.day)}-\VAR{"%02d"|format(birth.month)}-\VAR{birth.year}\\ \BLOCK{endif}
 \BLOCK{if address}    \includegraphics[width=0.3cm]{\VAR{meta.address_image}}     & \VAR{address}, \VAR{post} \\ \BLOCK{endif}
 \BLOCK{if nationality}\includegraphics[width=0.3cm]{\VAR{meta.nationality_image}} & \VAR{nationality}         \\ \BLOCK{endif}
   \end{tabular}
@@ -85,7 +86,12 @@
   \section*{Education}
   \begin{tabular}{LR}
     \BLOCK{for s in education}
-    \VAR{s.year} & \VAR{s.description} \\
+      \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
+      \BLOCK{if s.degree}{\bf \VAR{s.degree} in \BLOCK{if s.specialization}\VAR{s.specialization}\BLOCK{else}\VAR{s.topic}\BLOCK{endif}}\
+        \BLOCK{else}\VAR{s.specialization} -- \VAR{s.description}\BLOCK{endif} \
+      \BLOCK{if s.department or s.university or s.country} at \VAR{[s.department, s.university, s.country]|select()|join(", ")}.\BLOCK{endif} \
+      \BLOCK{if s.thesis_title}Thesis title: ``\VAR{s.thesis_title}''.\BLOCK{endif} \
+      \BLOCK{if s.degree}\VAR{s.description}\BLOCK{endif} \\
     \BLOCK{endfor}
   \end{tabular}
   \vspace{0.5cm}
@@ -139,8 +145,10 @@
 \BLOCK{if s.period}   Period      & \VAR{s.period}      \\ \BLOCK{endif}
 \BLOCK{if s.role}     Role        & \VAR{s.role}        \\ \BLOCK{endif}
 \BLOCK{if s.staffing} Staffing    & \VAR{s.staffing}    \\ \BLOCK{endif}
+\BLOCK{if s.volume}   Volume      & \Var{s.volume}      \\ \BLOCK{endif}
                       Description & \VAR{s.description} \\
 \BLOCK{if s.tools}    Tools       & \VAR{s.tools}       \\ \BLOCK{endif}
+\BLOCK{if s.url}      URL         & \Var{s.url}         \\ \BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
@@ -156,6 +164,7 @@
     DOI     & \url{\VAR{s.doi}}   \\
     Authors & \VAR{s.authors}     \\
 \BLOCK{if s.year}Year    & \VAR{s.year} \\\BLOCK{endif}
+\BLOCK{if s.summary}Summary & \VAR{s.summary} \\\BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}

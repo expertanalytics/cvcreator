@@ -1,0 +1,9 @@
+feature,value
+num_employee,\VAR{num_employees}
+num_doctors,\VAR{num_doctors}
+num_nationalities,\VAR{num_nationalities}
+num_languages_spoken,\VAR{num_languages_spoken}
+num_universities_attended,\VAR{num_universities_attended}
+\BLOCK{for s in topic_count}\VAR{s.value},\VAR{s.count}
+\BLOCK{endfor}\BLOCK{for s in skill_count}\VAR{s.value},\VAR{s.count}
+\BLOCK{endfor}

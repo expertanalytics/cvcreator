@@ -1,11 +1,11 @@
 name = "John Doe"
 address = "1600 Pennsylvania Avenue NW"
 post = "20500, DC"
-birth = "01.12.1950"
+birth = "1950-12-01"  # Optional. If included: YYYY-MM-DD
 email = "joe@doe.org"
 phone = "+1 979 209 0357"
-github = "https://github.com/joe"
-website = "https://example.com"
+github = "https://github.com/joe"  # Optional
+website = "https://example.com"  # Optional
 summary = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -18,7 +18,7 @@ culpa qui officia deserunt mollit anim id est laborum.
 technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "PyMC"]
 
 [[work]]
-description = "Computer scientist at Google Inc. "
+description = "Computer scientist at Google Inc."
 start = 2019
 end = 2020
 
@@ -32,24 +32,54 @@ description = "Consultant at Expert Analytics."
 start = 2021
 
 [[education]]
-year = 2015
-description = "Bachelor's degree in mathematics from the University of Oslo."
+start = 2012  # Optional
+end = 2015
+
+# The degree you achieved.
+# Choices: Bachelor's degree | Master's degree | PhD | Diploma degree | Cand. Scient | Doctor Scient
+degree = "Bachelor's degree"
+
+# What the education will be sorted under.
+# Choices: Mathematics | Physics | Scientific Computing | Mechanics | Engineering | Chemistry | Geology/Geophysics | Computer Science
+topic = "Mathematics"
+
+# Free form degree title
+specialization = "Applied Mathematics"  # -> "Bachelor's degree in Applied Mathematics"
+
+thesis_title = "My awesome dissertation!"  # Optional
+
+department = "Department of Mathematics"  # Optional
+
+# Required when degree is included:
+university = "University of Oslo"
+country = "Norway"
 
 [[education]]
-year = 2018
-description = "Master's degree in computer science from Cambridge University."
+end = 2016
+# Non-degree entries only uses specialization and description
+specialization = "Certification in Machine learning"
+description = "6 week online course, Coursera"
+
+[[education]]
+start = 2015
+end = 2018
+degree = "Master's degree"
+topic = "Computer Science"
+# Title if missing defaults to topic: "Master's degree in Computer Science"
+university = "Cambridge University"
+country = "United Kingdom"
 
 [[language_skill]]
 language = "English"
-proficiency = "mother tongue"
+proficiency = "Native"
 
 [[language_skill]]
 language = "Norwegian"
-proficiency = "fluent"
+proficiency = "Fluent"
 
 [[language_skill]]
 language = "German"
-proficiency = "basic"
+proficiency = "Basic"
 
 [[personal_skill]]
 title = "Skill1"
@@ -65,15 +95,15 @@ values = ["Running", "Hiking", "Sailing"]
 
 [[project]]
 activity = "My open source project"
-period = "2014 --"
-role = "Lead maintainer"
-staffing = "4 developers"
-tools = "numpy and scipy"
-volume = "Part time"
+period = "2014 --"  # Optional
+role = "Lead maintainer"  # Optional
+staffing = "4 developers"  # Optional
+tools = "numpy and scipy"  # Optional
+volume = "Part time"  # Optional
 description = """
 short description of project and your involvement there.
 """
-url = "https://url_to_learn_more.com/"
+url = "https://url_to_learn_more.com/"  # Optional
 tag = "1"
 
 [[publication]]
@@ -81,5 +111,6 @@ title = "Article title"
 journal = "Journal name"
 authors = "Authors for work, in correct order"
 doi = "https://doi.com/link_to_article"
-year = 2000
+year = 2000  # Optional
+description = "Description of the paper"  # Optional
 tag = "1"

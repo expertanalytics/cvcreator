@@ -1,5 +1,5 @@
 """Main executable."""
-from cvcreator.parser import cv
+from cvcreator.parser import create
 
 if __name__ == "__main__":
-    cv()
+    create()
