@@ -145,8 +145,10 @@
 \BLOCK{if s.period}   Period      & \VAR{s.period}      \\ \BLOCK{endif}
 \BLOCK{if s.role}     Role        & \VAR{s.role}        \\ \BLOCK{endif}
 \BLOCK{if s.staffing} Staffing    & \VAR{s.staffing}    \\ \BLOCK{endif}
+\BLOCK{if s.volume}   Volume      & \Var{s.volume}      \\ \BLOCK{endif}
                       Description & \VAR{s.description} \\
 \BLOCK{if s.tools}    Tools       & \VAR{s.tools}       \\ \BLOCK{endif}
+\BLOCK{if s.url}      URL         & \Var{s.url}         \\ \BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
@@ -162,6 +164,7 @@
     DOI     & \url{\VAR{s.doi}}   \\
     Authors & \VAR{s.authors}     \\
 \BLOCK{if s.year}Year    & \VAR{s.year} \\\BLOCK{endif}
+\BLOCK{if s.summary}Summary & \VAR{s.summary} \\\BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}

@@ -95,15 +95,15 @@ values = ["Running", "Hiking", "Sailing"]
 
 [[project]]
 activity = "My open source project"
-period = "2014 --"
-role = "Lead maintainer"
-staffing = "4 developers"
-tools = "numpy and scipy"
-volume = "Part time"
+period = "2014 --"  # Optional
+role = "Lead maintainer"  # Optional
+staffing = "4 developers"  # Optional
+tools = "numpy and scipy"  # Optional
+volume = "Part time"  # Optional
 description = """
 short description of project and your involvement there.
 """
-url = "https://url_to_learn_more.com/"
+url = "https://url_to_learn_more.com/"  # Optional
 tag = "1"
 
 [[publication]]
@@ -111,5 +111,6 @@ title = "Article title"
 journal = "Journal name"
 authors = "Authors for work, in correct order"
 doi = "https://doi.com/link_to_article"
-year = 2000
+year = 2000  # Optional
+description = "Description of the paper"  # Optional
 tag = "1"

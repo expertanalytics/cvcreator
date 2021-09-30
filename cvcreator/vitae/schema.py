@@ -57,35 +57,42 @@ NATIONALITIES = (
 Nationality = Literal[NATIONALITIES]
 
 
-class TechnicalSkill(BaseModel):
+class StrictModel(BaseModel):
+    """Same as baseclass, but forbit superfluous variables."""
+
+    class Config:
+        extra = "forbid"
+
+
+class TechnicalSkill(StrictModel):
     """Group of technical skills."""
 
     title: str
     values: List[str]
 
 
-class LanguageSkill(BaseModel):
+class LanguageSkill(StrictModel):
     """Language skill and proficiency."""
 
     language: Language
     proficiency: Literal["Native", "Fluent", "Intermediate", "Basic"]
 
 
-class PersonalSkill(BaseModel):
+class PersonalSkill(StrictModel):
     """A personal skill and description."""
 
     title: str
     description: str
 
 
-class Hobby(BaseModel):
+class Hobby(StrictModel):
     """Group of hobbies."""
 
     title: str
     values: List[str]
 
 
-class Education(BaseModel):
+class Education(StrictModel):
     """Completed educational degree."""
 
     start: int = 0
@@ -103,7 +110,7 @@ class Education(BaseModel):
     description: str = ""
 
 
-class Work(BaseModel):
+class Work(StrictModel):
     """Previous work experience."""
 
     start: str
@@ -111,7 +118,7 @@ class Work(BaseModel):
     description: str
 
 
-class Project(BaseModel):
+class Project(StrictModel):
     """Extended description of a project."""
 
     activity: str
@@ -120,10 +127,12 @@ class Project(BaseModel):
     period: str = ""
     description: str
     tools: str = ""
+    volume: str = ""
+    url: str = ""
     tag: str = ""
 
 
-class Publications(BaseModel):
+class Publications(StrictModel):
     """Published journal papers."""
 
     journal: str
@@ -132,9 +141,10 @@ class Publications(BaseModel):
     authors: str
     year: int
     tag: str = ""
+    summary: str = ""
 
 
-class MetaInformation(BaseModel):
+class MetaInformation(StrictModel):
     """Meta-information used by the document."""
 
     font_size: int = 11
@@ -149,7 +159,7 @@ class MetaInformation(BaseModel):
     nationality_image: str = "nationality"
 
 
-class VitaeContent(BaseModel):
+class VitaeContent(StrictModel):
     """Schema for Vitae content file."""
 
     name: str
