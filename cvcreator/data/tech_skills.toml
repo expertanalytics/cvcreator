@@ -277,3 +277,4 @@ allowed_labels = [
 "x86 Assembly" = ["Languages"]
 "XML" = ["Tools", "File formats"]
 "Zig" = ["Languages"]
+"CGAL" = ["Tools", "Modelling"]
