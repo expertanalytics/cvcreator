@@ -80,6 +80,7 @@ allowed_labels = [
 "C" = ["Languages"]
 "C++" = ["Languages"]
 "Cat3M" = ["Tools", "Modelling"]
+"CGAL" = ["Tools", "Modelling"]
 "CLion" = ["Tools", "Editors"]
 "CMake" = ["Tools"]
 "COMSOL" = ["Tools", "Modelling"]
