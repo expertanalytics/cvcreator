@@ -62,7 +62,7 @@ Can either be called with specific tags:
 
 .. code:: sh
 
-  cv create example.yaml --projects "A1,foo,whatever"
+  cv create example.toml --projects "A1,foo,whatever"
 
 The tags are defined in the ``.toml`` content file.
 
