@@ -3,7 +3,7 @@ import os
 
 from pytest import fixture
 
-from cvcreator.tech_skills import get_skills_data
+from cvcreator.vitae.tech_skills import get_skills_data
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
 CODEDIR = os.path.abspath(os.path.join(os.path.pardir, "cvcreator"))

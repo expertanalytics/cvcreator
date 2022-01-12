@@ -63,7 +63,8 @@ def make_skill_groups(
     skills = list(skills)
     unknown_skills = set(skills).difference(skills_data["skills"])
     assert not unknown_skills, (
-            f"unrecognized technical skills: {sorted(unknown_skills)}")
+            f"unrecognized technical skills: {sorted(unknown_skills)}"
+            "\nPrint out all available technical skills with `cv skills`")
 
     output = {}
     while skills:
