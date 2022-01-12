@@ -15,8 +15,7 @@ install through ``pip``.
 See `this guide <https://packaging.python.org/tutorials/installing-packages>`_
 for help to get ``pip`` working on your system.
 
-With `Python <https://python.org>`_ and ``pip`` in place, install CV Creator
-through:
+With this repository cloned to disk, and `Python <https://python.org>`_ and ``pip`` in place, install CV Creator through:
 
 .. code:: sh
 
@@ -58,18 +57,18 @@ Projects and publications
 =========================
 
 To include projects/publications use the flag ``--publications``/``--projects``.
-Can either be called with specific tags:
+These flags must be followed by specific tags present in the ``.toml`` content file:
 
 .. code:: sh
 
-  cv create example.yaml --projects "A1,foo,whatever"
-
-The tags are defined in the ``.toml`` content file.
+  cv create example.yaml --projects "A1,A2"
+  cv create example.yaml --publications "P1,P2"
 
 The projects/publications will be added in selected order.
-Use a colon ``:`` to include all entries.
+Alternatively, use a colon ``:`` to include all entries.
 
 .. code:: sh
+
   cv create example.yaml --publications :
 
 .. note::
@@ -117,7 +116,7 @@ Adding new skills and badges
 
 If a skill is missing, or a skill is written in an incorrect way, please either
 `file an issue <https://github.com/expertanalytics/cvcreator/issues>`_ or
-`make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with a
+`make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with 
 the proposed change. In the latter case, the changes can be made to the file:
 ``cvcreator/templates/tech_skills.toml``.
 
@@ -134,7 +133,7 @@ useful checklist:
 * Except for the ``.pdf`` extension, the name must exactly match that of the
   badge trigger. This means include capitalized letters and spaces.
 
-Developor Guide
+Developer Guide
 ===============
 
 The project uses `poetry`_ to manage its development installation. Assuming
