@@ -167,7 +167,7 @@ To ensure that the code run on your local system, run the following:
 
 .. code-block:: bash
 
-    poetry run pytest --doctest-modules cvcreator/ tests/
+    poetry run pytest --doctest-modules cvcreator/ test/
 
 Deployment
 ==========
