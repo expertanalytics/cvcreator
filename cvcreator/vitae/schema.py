@@ -101,7 +101,7 @@ class Education(StrictModel):
                     "Diploma degree", "Cand. Scient", "Doctor Scient", ""] = ""
     topic: Literal["Physics", "Scientific Computing", "Mechanics",
                    "Mathematics", "Engineering", "Chemestry",
-                   "Geology and Geophysics", "Computer Science", ""] = ""
+                   "Geology and Geophysics", "Computer Science", "Music", ""] = ""
     specialization: str = ""
     thesis_title: str = ""
     department: str = ""
