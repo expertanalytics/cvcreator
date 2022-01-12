@@ -7,6 +7,13 @@
 \usepackage{amssymb}          % math symbols
 \usepackage{hyperref}         % make URL links
 
+% Format hyperlinks
+\hypersetup {
+  colorlinks=true,
+  linkcolor=[rgb]{0,0.5,0.5},
+  urlcolor=blue,
+}
+
 % add footer image
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt} % because fancyhdr usually makes a topline
@@ -46,8 +53,8 @@
   \begin{tabular}{r@{\ \ }l}
 \BLOCK{if email}      \includegraphics[width=0.3cm]{\VAR{meta.email_image}}       & \VAR{email}               \\ \BLOCK{endif}
 \BLOCK{if phone}      \includegraphics[width=0.3cm]{\VAR{meta.phone_image}}       & \VAR{phone}               \\ \BLOCK{endif}
-\BLOCK{if github}     \includegraphics[width=0.3cm]{\VAR{meta.github_image}}      & \url{\VAR{github}}        \\ \BLOCK{endif}
-\BLOCK{if website}    \includegraphics[width=0.3cm]{\VAR{meta.website_image}}     & \url{\VAR{website}}       \\ \BLOCK{endif}
+\BLOCK{if github}     \includegraphics[width=0.3cm]{\VAR{meta.github_image}}      & \href{\VAR{github}}{GitHub}  \\ \BLOCK{endif}
+\BLOCK{if website}    \includegraphics[width=0.3cm]{\VAR{meta.website_image}}     & \href{\VAR{website}}{Website} \\ \BLOCK{endif}
 \BLOCK{if birth}      \includegraphics[width=0.3cm]{\VAR{meta.birth_image}}       &
     \VAR{"%02d"|format(birth.day)}-\VAR{"%02d"|format(birth.month)}-\VAR{birth.year}\\ \BLOCK{endif}
 \BLOCK{if address}    \includegraphics[width=0.3cm]{\VAR{meta.address_image}}     & \VAR{address}, \VAR{post} \\ \BLOCK{endif}
