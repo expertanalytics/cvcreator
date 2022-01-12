@@ -152,7 +152,7 @@ class MetaInformation(StrictModel):
     footer_image: str = "footer"
     email_image: str = "email"
     address_image: str = "address"
-    github_image: str = "link"
+    github_image: str = "github"
     website_image: str = "link"
     phone_image: str = "phone"
     birth_image: str = "birth"
