@@ -261,6 +261,7 @@ allowed_labels = [
 "Sphinx" = ["Tools"]
 "Splunk" = ["Platforms", "Cloud"]
 "Statsmodels" = ["Tools", "ML"]
+"Streamlit" = ["Tools", "Visualization"]
 "Subversion" = ["Tools", "Organize"]
 "SuperOffice" = ["Tools", "Office"]
 "Swift" = ["Languages"]
