@@ -161,6 +161,7 @@ allowed_labels = [
 "JetBrains" = ["Tools", "Editors"]
 "Jira" = ["Tools", "Organize"]
 "Julia" = ["Languages"]
+"JupyterLab" = ["Tools", "Editors", "Visualization"]
 "Jupyter Notebook" = ["Tools", "Editors", "Visualization"]
 "Keras" = ["Tools", "ML"]
 "Kotlin" = ["Languages"]
