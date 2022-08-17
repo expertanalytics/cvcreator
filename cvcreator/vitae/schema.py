@@ -98,10 +98,12 @@ class Education(StrictModel):
     start: int = 0
     end: int = 0
     degree: Literal["Bachelor's degree", "Master's degree", "PhD",
-                    "Diploma degree", "Cand. Scient", "Doctor Scient", ""] = ""
+                    "Diploma degree", "Cand. Scient", "Doctor Scient", 
+                    "Certificate of accomplishment", ""] = ""
     topic: Literal["Physics", "Scientific Computing", "Mechanics",
                    "Mathematics", "Engineering", "Chemistry",
-                   "Geology and Geophysics", "Computer Science", "Music", ""] = ""
+                   "Geology and Geophysics", "Computer Science", "Music", 
+                   "Leadership", ""] = ""
     specialization: str = ""
     thesis_title: str = ""
     department: str = ""
