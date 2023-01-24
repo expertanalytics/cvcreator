@@ -52,6 +52,7 @@ allowed_labels = [
 
 [skills]
 "Abaqus" = ["Tools", "Modelling"]
+"Adobe Illustrator" = ["Visualization"]
 "Akka" = ["Tools", "Databases"]
 "Alembic" = ["Tools", "Databases"]
 "Amcharts" = ["Tools", "Web"]
@@ -66,6 +67,7 @@ allowed_labels = [
 "Angular" = ["Tools", "Web"]
 "Apache Spark" = ["Tools", "Databases"]
 "Apple OS" = ["Platforms"]
+"ArcGIS" = ["Tools", "Visualization"]
 "Armadillo" = ["Tools", "Math"]
 "AsyncIO" = ["Tools"]
 "Autoconf" = ["Tools"]
@@ -231,6 +233,7 @@ allowed_labels = [
 "Pytest" = ["Tools", "Testing"]
 "Python" = ["Languages"]
 "Pytorch" = ["Tools", "ML"]
+"QGIS" = ["Tools", "Visualization"]
 "Qlik" = ["Tools", "Visualization"]
 "Qt" = ["Tools", "Languages", "GUI"]
 "RStudio" = ["Tools", "Editors"]
