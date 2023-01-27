@@ -1,7 +1,7 @@
 CV Creator is an automated curriculum vitae (CV) generator which uses TOML
 templates.
 
-Its primary usage is to standardize Expert Analytics' (XA) employee CVs, but it
+Its primary usage is to standardize Expert Analytics' (XAL) employee CVs, but it
 can be used for creating CV without the company branding for private use as
 well.
 
