@@ -1,0 +1,119 @@
+name: BuildAndRelease
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:    
+      - master
+
+env:
+  PIPELINE_POETRY: '1.4.0' 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      tag_name: ${{ steps.pkg-version.outputs.tag_name }}
+      skip_release: ${{ steps.pkg-version.outputs.skip_release }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4 
+        with:
+          python-version: '3.11'
+      - name: Poetry Installation and configure
+        run: |
+          python -m pip install poetry==$PIPELINE_POETRY
+          python -m poetry config virtualenvs.in-project true
+
+      - name: Cache the virtualenv
+        uses: actions/cache@v2
+        with:
+          path: ./.venv
+          key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        run: |
+          poetry install  
+
+      - name: Run pytests
+        run: |
+          poetry run pytest --doctest-modules cvcreator/
+
+      - name: Smoke tests
+        run: |
+          source .venv/bin/activate
+          cv create --latex cvcreator/templates/example.toml output.tex
+          cv aggregate test/aggregate_example.toml \
+            cvcreator/templates/example.toml \
+            cvcreator/templates/example.toml
+          python -m cvcreator --latex cvcreator/templates/example.toml output.tex  
+    
+      - name: Check Package Release
+        id: pkg-version
+        shell: bash
+        run: |
+          version=$(poetry version -s)
+          if [ "$(git tag -l | grep $version)" == "" ]; then
+            echo "skip_release=YES" >> $GITHUB_OUTPUT
+          else
+            echo "skip_release=NO" >> $GITHUB_OUTPUT
+            echo "tag_name=v$version" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Make a New Wheel file 
+        if: steps.outputs.pkg-version.skip_release == 'NO'
+        run: poetry build --format wheel
+
+      - name: Archive Wheel file for release
+        if: steps.outputs.pkg-version.skip_release == 'NO'
+        uses: actions/upload-artifact@v3
+        with:
+          name: pkg-wheel
+          path: dist
+          retention-days: 1
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    # if: ${{ github.ref == 'refs/heads/master' && needs.build.outputs.skip_release == 'NO' }}
+    if: ${{ needs.build.outputs.skip_release == 'NO' }}
+    env:
+      tag_name: ${{ needs.build.outputs.tag_name }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Make a tag
+        shell: bash
+        run: git tag $tag_name
+
+      - name: Download dist artifact 
+        uses: actions/download-artifact@v3
+        with:
+          name: pkg-wheel
+
+      # loads contents of the dist/ folder into PyPI
+      - name: Publish distribution 📦 to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_TOKEN }}
+
+      - name: Create Release
+        id: create-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        with:
+          tag_name: $tag_name
+          release_name: Release $tag_name
+          draft: false
+          prerelease: false
+    
+
+
+
+
