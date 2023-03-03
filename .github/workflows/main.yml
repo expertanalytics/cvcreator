@@ -19,3 +19,4 @@ jobs:
     uses: ./.github/workflows/release.yml
     with:
       tag_name: ${{ needs.test-and-build.outputs.tag_name }}
+      wheel_file: ${{ needs.test-and-build.outputs.wheel_file }}

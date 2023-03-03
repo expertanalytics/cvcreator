@@ -10,7 +10,9 @@ on:
       skip_release:
         description: "Skip release step"
         value: ${{ jobs.test-and-build.outputs.skip_release }}
-
+      wheel_file:
+        description: "wheel file name"
+        value: ${{ jobs.test-and-build.outputs.wheel_file }}
 env:
   PIPELINE_POETRY: '1.4.0' 
 
@@ -20,6 +22,7 @@ jobs:
     outputs:
       tag_name: ${{ steps.pkg-version.outputs.tag_name }}
       skip_release: ${{ steps.pkg-version.outputs.skip_release }}
+      wheel_file: ${{ steps.wheel.outputs.file }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.11
@@ -59,22 +62,27 @@ jobs:
         shell: bash
         run: |
           version=$(poetry version -s)
+          echo $version
+          echo "$(git tag -l | grep $version)"
           if [ "$(git tag -l | grep $version)" == "" ]; then
-            echo "skip_release=YES" >> $GITHUB_OUTPUT
-          else
             echo "skip_release=NO" >> $GITHUB_OUTPUT
             echo "tag_name=v$version" >> $GITHUB_OUTPUT
+          else
+            echo "skip_release=YES" >> $GITHUB_OUTPUT
           fi
 
       - name: Make a New Wheel file 
-        if: steps.outputs.pkg-version.skip_release == 'NO'
-        run: poetry build --format wheel
+        id: wheel
+        if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
+        run: |
+          poetry build --format wheel
+          echo "file=$(ls dist)" >> $GITHUB_OUTPUT
 
       - name: Archive Wheel file for release
-        if: steps.outputs.pkg-version.skip_release == 'NO'
+        if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
         uses: actions/upload-artifact@v3
         with:
-          name: pkg-wheel
+          name: ${{ steps.wheel.outputs.file }}
           path: dist
           retention-days: 1
 

@@ -6,12 +6,15 @@ on:
       tag_name:
         required: true
         type: string
-
+      wheel_file:
+        required: true
+        type: string
 jobs:
   release:
     runs-on: ubuntu-latest
     env:
       tag_name:  ${{ inputs.tag_name }}
+      wheel_file:  ${{ inputs.wheel_file }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -19,12 +22,23 @@ jobs:
 
       - name: Make a tag
         shell: bash
-        run: git tag $tag_name
+        run: |
+          echo "Tag $tag_name" will be created
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git tag -a $tag_name -m "Updated by Github workflow"
+          git push origin $tag_name
 
       - name: Download dist artifact 
         uses: actions/download-artifact@v3
         with:
-          name: pkg-wheel
+          name: ${{ inputs.wheel_file }}
+
+      - name: Place artifacts
+        shell: bash
+        run: |
+          mkdir dist/
+          mv $wheel_file dist/$wheel_file
 
       # loads contents of the dist/ folder into PyPI
       - name: Publish distribution 📦 to PyPI
@@ -43,7 +57,3 @@ jobs:
           draft: false
           prerelease: false
     
-
-
-
-
