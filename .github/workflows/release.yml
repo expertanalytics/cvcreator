@@ -20,14 +20,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Make a tag
+      - name: Make a tag and create changelog.txt
         shell: bash
         run: |
+          previous_tag=$(git -c 'versionsort.suffix=-' \
+            ls-remote --exit-code --refs --sort='version:refname' --tags origin '*.*.*' \
+            | tail --lines=1 \
+            | cut -d '/' -f 3)
           echo "Tag $tag_name" will be created
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git tag -a $tag_name -m "Updated by Github workflow"
+          
+          echo "Change Log" > CHANGELOG.md
+          echo "-----------------" >> CHANGELOG.md
+          echo "All the commits since the last tag are as followed:" >> CHANGELOG.md
+          git log --pretty=oneline $previous_tag...$tag_name >> CHANGELOG.md
           git push origin $tag_name
+          
 
       - name: Download dist artifact 
         uses: actions/download-artifact@v3
@@ -56,4 +66,5 @@ jobs:
           release_name: Release $tag_name
           draft: false
           prerelease: false
+          bodyFile: CHANGELOG.md
     
