@@ -49,9 +49,9 @@ With the content ready, create a CV with:
 
 It will look something like this:
 
-.. raw:: html
-
-  <img src="./example.jpg" width="300">
+.. image:: ./example.jpg
+  :align: center
+  :width: 300px
 
 Projects and publications
 =========================
