@@ -14,8 +14,7 @@ jobs:
 
   release:
     needs: test-and-build
-    if: ${{ needs.test-and-build.outputs.skip_release == 'NO' }}
-    # if: ${{ github.ref == 'refs/heads/master' && needs.test-and-build.outputs.skip_release == 'NO' }}
+    if: ${{ github.ref == 'refs/heads/master' && needs.test-and-build.outputs.skip_release == 'NO' }}
     uses: ./.github/workflows/release.yml
     with:
       tag_name: ${{ needs.test-and-build.outputs.tag_name }}
