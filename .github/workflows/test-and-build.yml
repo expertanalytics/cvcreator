@@ -61,13 +61,16 @@ jobs:
         id: pkg-version
         run: |
           version=$(poetry version -s)
-          echo $version
-          echo "$(git tag -l | grep $version)"
-          if [ "$(git tag -l | grep $version)" == "" ]; then
-            echo "skip_release=NO" >> $GITHUB_OUTPUT
-            echo "tag_name=v$version" >> $GITHUB_OUTPUT
+          echo "version: $version"
+          if [[ -z "$(git -c 'versionsort.suffix=-' \
+            ls-remote --exit-code --refs --sort='version:refname' --tags origin '*.*.*' \
+            | grep "v$version$")" ]]; then
+              echo "No existing git tag found for version v$version."
+              echo "skip_release=NO"  >> $GITHUB_OUTPUT
+              echo "tag_name=v$version"  >> $GITHUB_OUTPUT
           else
-            echo "skip_release=YES" >> $GITHUB_OUTPUT
+              echo "An existing git tag was found for version v$version."
+              echo "skip_release=YES"  >> $GITHUB_OUTPUT
           fi
 
       - name: Make a New Wheel file 
