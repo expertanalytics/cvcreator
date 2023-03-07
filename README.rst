@@ -176,5 +176,5 @@ and deployed automatically when making a tagged released. To do so you need to:
 
 * Update and push a new version number in ``pyproject.toml`` to branch ``master``.
 
-After merging to master, the workflow creates the a tag and a Github release and 
-uploads the latest version Pypi.
+After merging to master, the workflow creates the tag and Github release for 
+this version and uploads its wheel file to Pypi.
