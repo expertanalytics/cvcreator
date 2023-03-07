@@ -59,7 +59,6 @@ jobs:
     
       - name: Check Package Release
         id: pkg-version
-        shell: bash
         run: |
           version=$(poetry version -s)
           echo $version

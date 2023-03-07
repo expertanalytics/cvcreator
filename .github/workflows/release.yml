@@ -24,7 +24,6 @@ jobs:
           fetch-depth: 0
 
       - name: Make a tag and create CHANGELOG.md
-        shell: bash
         run: |
           previous_tag=$(git -c 'versionsort.suffix=-' \
             ls-remote --exit-code --refs --sort='version:refname' --tags origin '*.*.*' \
@@ -48,7 +47,6 @@ jobs:
           name: ${{ inputs.wheel_file }}
 
       - name: Place artifacts
-        shell: bash
         run: |
           mkdir dist/
           mv $wheel_file dist/$wheel_file
