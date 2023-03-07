@@ -49,7 +49,7 @@ With the content ready, create a CV with:
 
 It will look something like this:
 
-.. image:: ./example.jpg
+.. image:: https://raw.githubusercontent.com/expertanalytics/cvcreator/master/example.jpg 
   :align: center
   :width: 300px
 
