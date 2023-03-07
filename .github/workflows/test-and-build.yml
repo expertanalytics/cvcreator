@@ -1,0 +1,92 @@
+name: Test and Build
+
+on:
+  workflow_call:
+    # Map the workflow outputs to job outputs
+    outputs:
+      tag_name:
+        description: "Tag to be released"
+        value: ${{ jobs.test-and-build.outputs.tag_name}}
+      skip_release:
+        description: "Skip release step"
+        value: ${{ jobs.test-and-build.outputs.skip_release }}
+      wheel_file:
+        description: "wheel file name"
+        value: ${{ jobs.test-and-build.outputs.wheel_file }}
+env:
+  PIPELINE_POETRY: '1.4.0' 
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    outputs:
+      tag_name: ${{ steps.pkg-version.outputs.tag_name }}
+      skip_release: ${{ steps.pkg-version.outputs.skip_release }}
+      wheel_file: ${{ steps.wheel.outputs.file }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4 
+        with:
+          python-version: '3.11'
+      - name: Poetry Installation and configure
+        run: |
+          python -m pip install poetry==$PIPELINE_POETRY
+          python -m poetry config virtualenvs.in-project true
+
+      - name: Cache the virtualenv
+        uses: actions/cache@v2
+        with:
+          path: ./.venv
+          key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        run: |
+          poetry install  
+
+      - name: Run pytests
+        run: |
+          poetry run pytest --doctest-modules cvcreator/
+
+      - name: Smoke tests
+        run: |
+          source .venv/bin/activate
+          cv create --latex cvcreator/templates/example.toml output.tex
+          cv aggregate test/aggregate_example.toml \
+            cvcreator/templates/example.toml \
+            cvcreator/templates/example.toml
+          python -m cvcreator --latex cvcreator/templates/example.toml output.tex  
+    
+      - name: Check Package Release
+        id: pkg-version
+        run: |
+          version=$(poetry version -s)
+          echo $version
+          echo "$(git tag -l | grep $version)"
+          if [ "$(git tag -l | grep $version)" == "" ]; then
+            echo "skip_release=NO" >> $GITHUB_OUTPUT
+            echo "tag_name=v$version" >> $GITHUB_OUTPUT
+          else
+            echo "skip_release=YES" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Make a New Wheel file 
+        id: wheel
+        if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
+        run: |
+          poetry build --format wheel
+          echo "file=$(ls dist)" >> $GITHUB_OUTPUT
+
+      - name: Archive Wheel file for release
+        if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ steps.wheel.outputs.file }}
+          path: dist
+          retention-days: 1
+
+    
+
+
+
+

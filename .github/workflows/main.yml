@@ -1,0 +1,23 @@
+name: Main
+
+on:
+   push:
+     branches:
+       - master
+   pull_request:
+     branches:    
+       - master
+
+jobs:
+  test-and-build:
+    uses: ./.github/workflows/test-and-build.yml
+
+  release:
+    needs: test-and-build
+    if: ${{ github.ref == 'refs/heads/master' && needs.test-and-build.outputs.skip_release == 'NO' }}
+    uses: ./.github/workflows/release.yml
+    with:
+      tag_name: ${{ needs.test-and-build.outputs.tag_name }}
+      wheel_file: ${{ needs.test-and-build.outputs.wheel_file }}
+    secrets:
+      pypi_token: ${{ secrets.PYPI_API_TOKEN }}
