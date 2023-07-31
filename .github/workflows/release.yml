@@ -36,7 +36,7 @@ jobs:
           
           echo "Change Log" > CHANGELOG.md
           echo "-----------------" >> CHANGELOG.md
-          echo "All the commits since the last tag are as followed:" >> CHANGELOG.md
+          echo "All the commits since the last tag are as follows:" >> CHANGELOG.md
           git log --pretty=oneline $previous_tag...$tag_name >> CHANGELOG.md
           git push origin $tag_name
           
