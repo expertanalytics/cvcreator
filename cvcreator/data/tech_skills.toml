@@ -231,6 +231,7 @@ allowed_labels = [
 "PyMC" = ["Tools", "ML"]
 "PyPDF" = ["Tools"]
 "Pybind11" = ["Tools"]
+"Pydantic" = ["Tools"]
 "Pylint" = ["Tools", "Testing"]
 "Pytest" = ["Tools", "Testing"]
 "Python" = ["Languages"]
