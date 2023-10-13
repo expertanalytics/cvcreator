@@ -161,6 +161,49 @@ class MetaInformation(StrictModel):
     nationality_image: str = "nationality"
 
 
+class SectionTitles(StrictModel):
+    """Titles of the different sections. In English by default."""
+
+    professional_experience: str = "Professional Experience"
+    education: str = "Education"
+    technical_skills: str = "Technical Skills"
+    languages: str = "Languages"
+    personal_skills: str = "Personal Skills"
+    hobbies: str = "Interests and hobbies"
+    projects: str = "Extended description of selected projects"
+    publications: str = "Publications"
+
+
+class ProjectSubtitles(StrictModel):
+    """Subtitles of projects. In English by default."""
+
+    activity: str = "Activity"
+    period: str = "Period"
+    role: str = "Role"
+    staffing: str = "Staffing"
+    volume: str = "Volume"
+    description: str = "Description"
+    tools: str = "Tools"
+    url: str = "URL"
+
+
+class PublicationSubtitles(StrictModel):
+    """Subtitles of publication. In English by default."""
+
+    title: str = "Title"
+    journal: str = "Journal"
+    doi: str = "DOI"
+    authors: str = "Authors"
+    year: str = "Year"
+    summary: str = "Summary"
+
+
+class Titles(StrictModel):
+    section_titles: SectionTitles = SectionTitles()
+    project_sub_titles: ProjectSubtitles = ProjectSubtitles()
+    publication_sub_titles: PublicationSubtitles = PublicationSubtitles()
+
+
 class VitaeContent(StrictModel):
     """Schema for Vitae content file."""
 
@@ -176,6 +219,7 @@ class VitaeContent(StrictModel):
     summary: str = ""
 
     meta: MetaInformation = MetaInformation()
+    titles: Titles = Titles()
 
     # Should be TechnicalSkill, but is constructed after parsing.
     # 'str' is used here as a placeholder for list of skills.
@@ -189,3 +233,39 @@ class VitaeContent(StrictModel):
     work: List[Work] = Field(default_factory=list)
     project: List[Project] = Field(default_factory=list)
     publication: List[Publications] = Field(default_factory=list)
+
+    def change_to_norwegian_titles(self):
+        self.titles = _create_norwegian_titles()
+
+
+def _create_norwegian_titles() -> Titles:
+    return Titles(
+        section_titles=SectionTitles(
+            professional_experience="Arbeidserfaring",
+            education="Utdanning",
+            technical_skills="Tekniske ferdigheter",
+            languages="Språk",
+            personal_skills="Personlige ferdigheter",
+            hobbies="Interesser",
+            projects="Prosjekter",
+            publications="Publikasjoner"
+        ),
+        project_sub_titles=ProjectSubtitles(
+            activity="Aktivitet",
+            period="Periode",
+            role="Rolle",
+            staffing="Bemanning",
+            volume="Omfang",
+            description="Beskrivelse",
+            tools="Verktøy",
+            url="URL"
+        ),
+        publication_sub_titles=PublicationSubtitles(
+            title="Tittel",
+            journal="Tidsskrift",
+            doi="DOI",
+            authors="Forfattere",
+            year="År",
+            summary="Oppsummering"
+        )
+    )
