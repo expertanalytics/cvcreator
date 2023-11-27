@@ -2,8 +2,9 @@ import os
 from typing import Any, List, Sequence
 
 import toml
-from .schema import VitaeContent, SectionTitles, ProjectSubtitles, PublicationSubtitles, Titles
-from .tech_skills import make_skill_groups
+from .schema import VitaeContent, NorwegianVitaeContent
+from .schema import TechnicalSkill
+from .tech_skills import make_skill_groups, get_skills_data
 
 CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
 
@@ -62,19 +63,28 @@ def load_vitae(
     assert str(path).endswith(".toml"), (
         "must be TOML files with .toml extension.")
     with open(path) as src:
-        content = VitaeContent(**toml.load(src))
+        if norwegian:
+            content = NorwegianVitaeContent(**toml.load(src))
+        else:
+            content = VitaeContent(**toml.load(src))
 
     # filter projects and publications (as this can not be done in template)
     content.project = filter_(projects, content.project)
     content.publication = filter_(publications, content.publication)
-    if norwegian:
-        content.change_to_norwegian_titles()
 
     # remove potential duplicates from technical skills
     content.technical_skill = list(set(content.technical_skill))
 
     # place technical skills into groups
     content.technical_skill = make_skill_groups(content.technical_skill)
+
+    if norwegian:
+        norwegian_labels = get_skills_data()["norwegian_labels"]
+        norwegian_skills = []
+        for skill in content.technical_skill:
+            norwegian_skills.append(TechnicalSkill(title=norwegian_labels[skill.title], values=skill.values))
+        
+        content.technical_skill = norwegian_skills
 
     if badges:
         for skill in content.technical_skill:

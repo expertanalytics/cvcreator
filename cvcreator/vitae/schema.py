@@ -77,6 +77,24 @@ class LanguageSkill(StrictModel):
     language: Language
     proficiency: Literal["Native", "Fluent", "Intermediate", "Basic"]
 
+class NorwegianLanguageSkill(StrictModel):
+    """Language skill and proficiency."""
+
+    # In principal, it should be possible to map a language name from english to norwegian
+    # using the following code snippet (which generates a list of language names in norwegian):
+    # no = gettext.translation("iso639-3", pycountry.LOCALES_DIR,languages=["nb"])
+    # exceptions = {"English": "Engelsk"}
+    # LANGUAGE_NAMES_NO = tuple(exceptions[language.name] if language.name in exceptions \
+    #                     else no.gettext(language.name)
+    #                     for language in pycountry.languages if not no.gettext(language.name) == language.name)
+    # LanguagesNorwegian = Literal[LANGUAGE_NAMES_NO]
+    # The problem, however, is that not all language names are translated in the data base, and hence one would have to 
+    # treat that. Thus for now, the user has to enter the correct norwegian name for the language in the toml file
+    # and type(language) is str.
+    language: str
+    proficiency: Literal["Morsmål", "Flytende", "Middels", "Grunnleggende"]
+
+
 
 class PersonalSkill(StrictModel):
     """A personal skill and description."""
@@ -110,7 +128,31 @@ class Education(StrictModel):
     university: str = ""
     country: Country = ""
     description: str = ""
+    title: str = "Thesis title" # used for printing the education in latex
+    what : str = "in" # used for printing the education in latex
+    fromwhere : str = "at" # used for printing the education in latex
 
+
+class NorwegianEducation(StrictModel):
+    """Completed educational degree."""
+
+    start: int = 0
+    end: int = 0
+    degree: Literal["Mastergrad", "PhD",
+                    ""] = ""
+    topic: Literal["Fysikk", "Scientific Computing", "Mekanikk",
+                   "Matematikk", "Engineering", "Kjemi",
+                   "Geologi og Geofysikk", "informatikk", "Musikk", 
+                   ] = ""
+    specialization: str = ""
+    thesis_title: str = ""
+    department: str = ""
+    university: str = ""
+    country: Country = ""
+    description: str = ""
+    title: str = "Avhandlingens tittel" # used for printing the education in latex
+    what : str = "innen" # used for printing the education in latex
+    fromwhere : str = "fra" # used for printing the education in latex
 
 class Work(StrictModel):
     """Previous work experience."""
@@ -169,8 +211,8 @@ class SectionTitles(StrictModel):
     technical_skills: str = "Technical Skills"
     languages: str = "Languages"
     personal_skills: str = "Personal Skills"
-    hobbies: str = "Interests and hobbies"
-    projects: str = "Extended description of selected projects"
+    hobbies: str = "Interests and Hobbies"
+    projects: str = "Extended Description of Selected Projects"
     publications: str = "Publications"
 
 
@@ -234,12 +276,14 @@ class VitaeContent(StrictModel):
     project: List[Project] = Field(default_factory=list)
     publication: List[Publications] = Field(default_factory=list)
 
-    def change_to_norwegian_titles(self):
-        self.titles = _create_norwegian_titles()
 
+class NorwegianVitaeContent(VitaeContent):
 
-def _create_norwegian_titles() -> Titles:
-    return Titles(
+    language_skill: List[NorwegianLanguageSkill] = Field(default_factory=list)
+
+    education: List[NorwegianEducation] = Field(default_factory=list)
+
+    titles: Titles = Titles(
         section_titles=SectionTitles(
             professional_experience="Arbeidserfaring",
             education="Utdanning",
