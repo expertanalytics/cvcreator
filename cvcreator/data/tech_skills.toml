@@ -23,6 +23,25 @@ allowed_labels = [
   "GUI",                      # Creating graphical user interfaces
 ]
 
+[norwegian_labels]
+
+"Tools" = "Verktøy"
+"Languages" = "Språk" # Note that "Programeringsspråk" breaks the table columns
+# because it is too long
+"ML" = "Maskinlæring"
+"Modelling" = "Modellering"
+"Organize" = "Organisering"
+"Cloud" = "Sky"
+"Databases" = "Databaser"
+"Web" = "Nett"
+"Platforms" = "Platformer"
+"Testing" = "Testing"
+"Visualization" = "Visualisering"
+"Office" = "Office"
+"Math" = "Matematikk"
+"File formats" = "Filformater"
+"Editors" = "Editors"
+"GUI" = "GUI"
 
 # If we want to group some labels together.
 [short_map]
