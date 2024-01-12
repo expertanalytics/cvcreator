@@ -137,10 +137,10 @@ class NorwegianEducation(StrictModel):
 
     start: int = 0
     end: int = 0
-    degree: Literal["Mastergrad", "PhD",
+    degree: Literal["Mastergrad", "Doktorgrad",
                     ""] = ""
-    topic: Literal["Fysikk", "Scientific Computing", "Mekanikk",
-                   "Matematikk", "Engineering", "Kjemi",
+    topic: Literal["Fysikk", "Vitenskapelige Beregninger", "Mekanikk",
+                   "Matematikk", "Ingeniørarbeid", "Kjemi",
                    "Geologi og Geofysikk", "Informatikk", "Musikk",
                    ] = ""
     specialization: str = ""
