@@ -41,22 +41,27 @@ def cv():
     "Include small badge icons to selected technical skills."))
 @click.option("-l", "--latex", is_flag=True, help=(
     "Output latex document instead of a pdf."))
+@click.option("-n", "--norwegian", is_flag=True, help=(
+    "Generate titles in Norwegian."))
 @click.option("-p", "--projects", default="", help=(
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
+    "Comma-separated list of publication tags to include. Use ':' for all."))
+@click.option("-", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
 def create(
     toml_content: str,
     output: str = "",
     badges: bool = False,
     latex: bool = False,
+    norwegian: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> None:
     """
     Create curriculum vitae from TOML content file.
     """
-    content = load_vitae(toml_content, badges=badges,
+    content = load_vitae(toml_content, badges=badges, norwegian=norwegian,
                          projects=projects, publications=publications)
     template = load_template("vitae.tex")
     latex_code = template.render(**dict(content))

@@ -2,7 +2,7 @@ import os
 from typing import Any, List, Sequence
 
 import toml
-from .schema import VitaeContent
+from .schema import VitaeContent, SectionTitles, ProjectSubtitles, PublicationSubtitles, Titles
 from .tech_skills import make_skill_groups
 
 CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
@@ -33,6 +33,7 @@ def filter_(keys: str, sequence: Sequence[Any]) -> List[Any]:
 def load_vitae(
     path: str,
     badges: bool = False,
+    norwegian: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> VitaeContent:
@@ -47,6 +48,8 @@ def load_vitae(
             Path to the content to load.
         badges:
             Include small badge icons to selected technical skills.
+        norwegian:
+            If titles should be in Norwegian.
         projects:
             Comma-separated list of project tags to include. ':' includes all.
         publications:
@@ -64,6 +67,8 @@ def load_vitae(
     # filter projects and publications (as this can not be done in template)
     content.project = filter_(projects, content.project)
     content.publication = filter_(publications, content.publication)
+    if norwegian:
+        content.change_to_norwegian_titles()
 
     # remove potential duplicates from technical skills
     content.technical_skill = list(set(content.technical_skill))

@@ -79,8 +79,9 @@
   \vspace{0.5cm}
 \BLOCK{endif}
 
+
 \BLOCK{if work}
-  \section*{Professional experience}
+  \section*{\VAR{titles.section_titles.professional_experience}}
   \begin{tabular}{LR}
     \BLOCK{for s in work}
     \VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
@@ -90,7 +91,7 @@
 \BLOCK{endif}
 
 \BLOCK{if education}
-  \section*{Education}
+  \section*{\VAR{titles.section_titles.education}}
   \begin{tabular}{LR}
     \BLOCK{for s in education}
       \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
@@ -105,7 +106,7 @@
 \BLOCK{endif}
 
 \BLOCK{if technical_skill}
-  \section*{Technical skills}{
+  \section*{\VAR{titles.section_titles.technical_skills}}{
   \begin{tabular}{LR}
     \BLOCK{for s in technical_skill}
     \VAR{s.title} & \VAR{s.values|join(", ")} \\
@@ -115,7 +116,7 @@
 \BLOCK{endif}
 
 \BLOCK{if language_skill}
-  \section*{Languages}
+  \section*{\VAR{titles.section_titles.languages}}
   \begin{tabular}{LR}
     \BLOCK{for s in language_skill}
     \VAR{s.language} & \VAR{s.proficiency} \\
@@ -125,7 +126,7 @@
 \BLOCK{endif}
 
 \BLOCK{if personal_skill}
-  \section*{Personal skills}
+  \section*{\VAR{titles.section_titles.personal_skills}}
   \begin{tabular}{LR}
     \BLOCK{for s in personal_skill}
     \VAR{s.title} & \VAR{s.description} \\
@@ -135,7 +136,7 @@
 \BLOCK{endif}
 
 \BLOCK{if hobby}
-  \section*{Some interests and hobbies}
+  \section*{\VAR{titles.section_titles.hobbies}}
   \begin{tabular}{LR}
     \BLOCK{for s in hobby}
     \VAR{s.title} & \VAR{s.values|join(", ")} \\
@@ -145,17 +146,17 @@
 \BLOCK{endif}
 
 \BLOCK{if project}
-  \section*{Extended description of selected projects}
+  \section*{\VAR{titles.section_titles.projects}}
   \BLOCK{for s in project}
   \begin{tabular}{@{}LR}
-                      Activity    & \VAR{s.activity}    \\
-\BLOCK{if s.period}   Period      & \VAR{s.period}      \\ \BLOCK{endif}
-\BLOCK{if s.role}     Role        & \VAR{s.role}        \\ \BLOCK{endif}
-\BLOCK{if s.staffing} Staffing    & \VAR{s.staffing}    \\ \BLOCK{endif}
-\BLOCK{if s.volume}   Volume      & \VAR{s.volume}      \\ \BLOCK{endif}
-                      Description & \VAR{s.description} \\
-\BLOCK{if s.tools}    Tools       & \VAR{s.tools}       \\ \BLOCK{endif}
-\BLOCK{if s.url}      URL         & \VAR{s.url}         \\ \BLOCK{endif}
+                      \VAR{titles.project_sub_titles.activity}    & \VAR{s.activity}    \\
+\BLOCK{if s.period}   \VAR{titles.project_sub_titles.period}      & \VAR{s.period}      \\ \BLOCK{endif}
+\BLOCK{if s.role}     \VAR{titles.project_sub_titles.role}        & \VAR{s.role}        \\ \BLOCK{endif}
+\BLOCK{if s.staffing} \VAR{titles.project_sub_titles.staffing}    & \VAR{s.staffing}    \\ \BLOCK{endif}
+\BLOCK{if s.volume}   \VAR{titles.project_sub_titles.volume}      & \VAR{s.volume}      \\ \BLOCK{endif}
+                      \VAR{titles.project_sub_titles.description} & \VAR{s.description} \\
+\BLOCK{if s.tools}    \VAR{titles.project_sub_titles.verktøy}     & \VAR{s.tools}       \\ \BLOCK{endif}
+\BLOCK{if s.url}      \VAR{titles.project_sub_titles.url}         & \VAR{s.url}         \\ \BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
@@ -163,15 +164,15 @@
 \BLOCK{endif}
 
 \BLOCK{if publication}
-  \section*{Publications}
+  \section*{\VAR{titles.section_titles.publications}}
   \BLOCK{for s in publication}
   \begin{tabular}{@{}LR}
-    Title   & {\it \VAR{s.title}} \\
-    Journal & \VAR{s.journal}     \\
-    DOI     & \url{\VAR{s.doi}}   \\
-    Authors & \VAR{s.authors}     \\
-\BLOCK{if s.year}Year    & \VAR{s.year} \\\BLOCK{endif}
-\BLOCK{if s.summary}Summary & \VAR{s.summary} \\\BLOCK{endif}
+    \VAR{titles.publication_sub_titles.title}   & {\it \VAR{s.title}} \\
+    \VAR{titles.publication_sub_titles.journal} & \VAR{s.journal}     \\
+    \VAR{titles.publication_sub_titles.doi}     & \url{\VAR{s.doi}}   \\
+    \VAR{titles.publication_sub_titles.authors} & \VAR{s.authors}     \\
+\BLOCK{if s.year} \VAR{titles.publication_sub_titles.year}    & \VAR{s.year} \\\BLOCK{endif}
+\BLOCK{if s.summary} \VAR{titles.publication_sub_titles.oppsummering} & \VAR{s.summary} \\\BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
