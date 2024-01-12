@@ -3,9 +3,8 @@
 import datetime
 from typing import List, Literal, Optional, Union
 
-from pydantic import BaseModel, Field
 import pycountry
-
+from pydantic import BaseModel, Field
 
 COUNTRIES = tuple(country.__dict__.get(
     "common_name", country.name).replace(", Islamic Republic of", "")
@@ -77,6 +76,7 @@ class LanguageSkill(StrictModel):
     language: Language
     proficiency: Literal["Native", "Fluent", "Intermediate", "Basic"]
 
+
 class NorwegianLanguageSkill(StrictModel):
     """Language skill and proficiency."""
 
@@ -88,12 +88,11 @@ class NorwegianLanguageSkill(StrictModel):
     #                     else no.gettext(language.name)
     #                     for language in pycountry.languages if not no.gettext(language.name) == language.name)
     # LanguagesNorwegian = Literal[LANGUAGE_NAMES_NO]
-    # The problem, however, is that not all language names are translated in the data base, and hence one would have to 
+    # The problem, however, is that not all language names are translated in the data base, and hence one would have to
     # treat that. Thus for now, the user has to enter the correct norwegian name for the language in the toml file
     # and type(language) is str.
     language: str
     proficiency: Literal["Morsmål", "Flytende", "Middels", "Grunnleggende"]
-
 
 
 class PersonalSkill(StrictModel):
@@ -116,11 +115,11 @@ class Education(StrictModel):
     start: int = 0
     end: int = 0
     degree: Literal["Bachelor's degree", "Master's degree", "PhD",
-                    "Diploma degree", "Cand. Scient", "Doctor Scient", 
+                    "Diploma degree", "Cand. Scient", "Doctor Scient",
                     "Certificate of accomplishment", ""] = ""
     topic: Literal["Physics", "Scientific Computing", "Mechanics",
                    "Mathematics", "Engineering", "Chemistry",
-                   "Geology and Geophysics", "Computer Science", "Music", 
+                   "Geology and Geophysics", "Computer Science", "Music",
                    "Leadership", ""] = ""
     specialization: str = ""
     thesis_title: str = ""
@@ -128,9 +127,9 @@ class Education(StrictModel):
     university: str = ""
     country: Country = ""
     description: str = ""
-    title: str = "Thesis title" # used for printing the education in latex
-    what : str = "in" # used for printing the education in latex
-    fromwhere : str = "at" # used for printing the education in latex
+    title: str = "Thesis title"  # used for printing the education in latex
+    what: str = "in"  # used for printing the education in latex
+    fromwhere: str = "at"  # used for printing the education in latex
 
 
 class NorwegianEducation(StrictModel):
@@ -138,11 +137,11 @@ class NorwegianEducation(StrictModel):
 
     start: int = 0
     end: int = 0
-    degree: Literal["Mastergrad", "PhD",
+    degree: Literal["Mastergrad", "Doktorgrad",
                     ""] = ""
-    topic: Literal["Fysikk", "Scientific Computing", "Mekanikk",
-                   "Matematikk", "Engineering", "Kjemi",
-                   "Geologi og Geofysikk", "informatikk", "Musikk", 
+    topic: Literal["Fysikk", "Vitenskapelige Beregninger", "Mekanikk",
+                   "Matematikk", "Ingeniørarbeid", "Kjemi",
+                   "Geologi og Geofysikk", "Informatikk", "Musikk",
                    ] = ""
     specialization: str = ""
     thesis_title: str = ""
@@ -150,9 +149,10 @@ class NorwegianEducation(StrictModel):
     university: str = ""
     country: Country = ""
     description: str = ""
-    title: str = "Avhandlingens tittel" # used for printing the education in latex
-    what : str = "innen" # used for printing the education in latex
-    fromwhere : str = "fra" # used for printing the education in latex
+    title: str = "Avhandlingens tittel"  # used for printing the education in latex
+    what: str = "innen"  # used for printing the education in latex
+    fromwhere: str = "fra"  # used for printing the education in latex
+
 
 class Work(StrictModel):
     """Previous work experience."""
