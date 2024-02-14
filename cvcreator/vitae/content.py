@@ -73,7 +73,7 @@ def load_vitae(
     content.publication = filter_(publications, content.publication)
 
     # remove potential duplicates from technical skills
-    content.technical_skill = list(set(content.technical_skill))
+    content.technical_skill = list(content.technical_skill)
 
     # place technical skills into groups
     content.technical_skill = make_skill_groups(content.technical_skill)
