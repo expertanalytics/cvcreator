@@ -356,6 +356,7 @@ class Project(StrictModel):
     description: str
     bullet_points: List[str] = []
     tools: List[str] = []
+    tools_title: str = "Tools"
     url: str = ""
     tag: str = ""
 
@@ -447,6 +448,12 @@ class VitaeContent(StrictModel):
     meta: MetaInformation = MetaInformation()
     titles: Titles = Titles()
 
+    programming_languages_title: str = "Languages"
+    tools_title: str = "Tools"
+
+    programming_languages: List[str] = Field(default_factory=list)
+    tools: List[str] = Field(default_factory=list)
+
     # Should be TechnicalSkill, but is constructed after parsing.
     # 'str' is used here as a placeholder for list of skills.
     technical_skill: Union[List[str], List[TechnicalSkill]] = Field(default_factory=list)
@@ -465,6 +472,9 @@ class NorwegianVitaeContent(VitaeContent):
     language_skill: List[NorwegianLanguageSkill] = Field(default_factory=list)
 
     education: List[NorwegianEducation] = Field(default_factory=list)
+
+    programming_languages_title = "Språk"
+    tools_title = "Verktøy"
 
     titles: Titles = Titles(
         section_titles=SectionTitles(
