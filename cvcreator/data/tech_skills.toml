@@ -43,6 +43,27 @@ allowed_labels = [
 "Editors" = "Editors"
 "GUI" = "GUI"
 
+[german_labels]
+
+"Tools" = "Tools"
+"Languages" = "Sprachen" # Note that "Programeringsspråk" breaks the table columns
+# because it is too long
+"ML" = "KI"
+"Modelling" = "Modelierung"
+"Organize" = "Organisation"
+"Cloud" = "Cloud"
+"Databases" = "Datenbanken"
+"Web" = "Internet"
+"Platforms" = "Platform"
+"Testing" = "Test"
+"Visualization" = "Visualisierung"
+"Office" = "Büro"
+"Math" = "Mathematik"
+"File formats" = "Dateiformate"
+"Editors" = "Editoren"
+"GUI" = "GUI"
+
+
 # If we want to group some labels together.
 [short_map]
 
@@ -273,6 +294,7 @@ allowed_labels = [
 "SCons" = ["Tools"]
 "SegyIO" = ["Tools", "Modelling"]
 "SLEPc" = ["Tools", "Math"]
+"SAP" = ["Tools"]
 "SPARQL" = ["Tools", "Databases"]
 "SQL" = ["Languages"]
 "SQLAlchemy" = ["Tools", "Databases"]
@@ -294,6 +316,7 @@ allowed_labels = [
 "Swift" = ["Languages"]
 "Swig" = ["Tools"]
 "Sympy" = ["Tools", "Math"]
+"Tableau" = ["Tools","Visualization"]
 "Talys" = ["Tools"]
 "TKinter" = ["Tools", "GUI"]
 "Tcl/Tk" = ["Languages"]

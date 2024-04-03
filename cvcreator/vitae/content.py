@@ -2,7 +2,7 @@ import os
 from typing import Any, List, Sequence
 
 import toml
-from .schema import VitaeContent, NorwegianVitaeContent
+from .schema import VitaeContent, NorwegianVitaeContent, CVLanguage, GermanVitaeContent
 from .schema import TechnicalSkill
 from .tech_skills import make_skill_groups, get_skills_data
 
@@ -34,7 +34,8 @@ def filter_(keys: str, sequence: Sequence[Any]) -> List[Any]:
 def load_vitae(
     path: str,
     badges: bool = False,
-    norwegian: bool = False,
+    language: CVLanguage = CVLanguage.english,
+    german_branding: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> VitaeContent:
@@ -49,8 +50,8 @@ def load_vitae(
             Path to the content to load.
         badges:
             Include small badge icons to selected technical skills.
-        norwegian:
-            If titles should be in Norwegian.
+        language:
+            Language of titles.
         projects:
             Comma-separated list of project tags to include. ':' includes all.
         publications:
@@ -63,10 +64,16 @@ def load_vitae(
     assert str(path).endswith(".toml"), (
         "must be TOML files with .toml extension.")
     with open(path) as src:
-        if norwegian:
+        print(f'language {language} {language == CVLanguage.german}')
+        if language == CVLanguage.norwegian:
             content = NorwegianVitaeContent(**toml.load(src))
+        elif language == CVLanguage.german:
+            content = GermanVitaeContent(**toml.load(src))
         else:
             content = VitaeContent(**toml.load(src))
+    if german_branding:
+        content.meta.footer_image = 'footer_de'
+        content.meta.logo_image = 'logo_de'
 
     # filter projects and publications (as this can not be done in template)
     content.project = filter_(projects, content.project)
@@ -78,13 +85,21 @@ def load_vitae(
     # place technical skills into groups
     content.technical_skill = make_skill_groups(content.technical_skill)
 
-    if norwegian:
+    if language == CVLanguage.norwegian:
         norwegian_labels = get_skills_data()["norwegian_labels"]
         norwegian_skills = []
         for skill in content.technical_skill:
             norwegian_skills.append(TechnicalSkill(title=norwegian_labels[skill.title], values=skill.values))
         
         content.technical_skill = norwegian_skills
+
+    if language == CVLanguage.german:
+        german_labels = get_skills_data()["german_labels"]
+        german_skills = []
+        for skill in content.technical_skill:
+            german_skills.append(TechnicalSkill(title=german_labels[skill.title], values=skill.values))
+
+        content.technical_skill = german_skills
 
     if badges:
         for skill in content.technical_skill:
@@ -96,10 +111,13 @@ def load_vitae(
                         rf"\includegraphics[width=0.3cm]{{{path}}}~{value}")
 
     # anything with meta.*_image should be an image
+    print(content.meta.__dict__)
     for name in content.meta.__dict__:
+        
         if not name.endswith("_image"):
             continue
         value = getattr(content.meta, name)
+        print(name, value)
         if not os.path.isfile(value):
             setattr(content.meta, name, os.path.join(
                 CURDIR, os.path.pardir, "templates", f"{value}.pdf"))

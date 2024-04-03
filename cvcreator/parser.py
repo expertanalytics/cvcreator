@@ -15,6 +15,7 @@ from .template import load_template
 from .vitae import load_vitae
 from .aggregate import load_aggregate
 from .txt2yaml import convert_txt_to_yaml
+from .vitae.schema import CVLanguage
 from .yaml2toml import convert_yaml_to_toml
 
 
@@ -41,8 +42,10 @@ def cv():
     "Include small badge icons to selected technical skills."))
 @click.option("-l", "--latex", is_flag=True, help=(
     "Output latex document instead of a pdf."))
-@click.option("-n", "--norwegian", is_flag=True, help=(
-    "Generate titles in Norwegian."))
+@click.option("-l", "--language", default=CVLanguage.english, help=(
+    "Language of the titles."))
+@click.option("-g", "--german-branding", is_flag=True, help=(
+    "Use german branding in footer and logo."))
 @click.option("-p", "--projects", default="", help=(
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
@@ -54,15 +57,22 @@ def create(
     output: str = "",
     badges: bool = False,
     latex: bool = False,
-    norwegian: bool = False,
+    language: CVLanguage = CVLanguage.english,
+    german_branding: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> None:
     """
     Create curriculum vitae from TOML content file.
     """
-    content = load_vitae(toml_content, badges=badges, norwegian=norwegian,
-                         projects=projects, publications=publications)
+    try:
+        language = CVLanguage[language]
+    except:
+        print(f'unknown CV language: `{language}`, use one of {[l.name for l in CVLanguage]}')
+
+    content = load_vitae(toml_content, badges=badges, language=language,
+                         projects=projects, publications=publications,
+                         german_branding=german_branding)
     template = load_template("vitae.tex")
     latex_code = template.render(**dict(content))
     if latex:

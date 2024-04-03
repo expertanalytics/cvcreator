@@ -2,9 +2,17 @@
 """Schema definition for the user provided yaml source file."""
 import datetime
 from typing import List, Literal, Optional, Union
+from enum import Enum, auto
 
 import pycountry
 from pydantic import BaseModel, Field
+
+
+class CVLanguage(Enum):
+    english = auto()
+    german = auto()
+    norwegian = auto()
+
 
 COUNTRIES = tuple(country.__dict__.get(
     "common_name", country.name).replace(", Islamic Republic of", "")
@@ -95,6 +103,24 @@ class NorwegianLanguageSkill(StrictModel):
     proficiency: Literal["Morsmål", "Flytende", "Middels", "Grunnleggende"]
 
 
+class GermanLanguageSkill(StrictModel):
+    """Language skill and proficiency."""
+
+    # In principal, it should be possible to map a language name from english to norwegian
+    # using the following code snippet (which generates a list of language names in norwegian):
+    # no = gettext.translation("iso639-3", pycountry.LOCALES_DIR,languages=["nb"])
+    # exceptions = {"English": "Engelsk"}
+    # LANGUAGE_NAMES_NO = tuple(exceptions[language.name] if language.name in exceptions \
+    #                     else no.gettext(language.name)
+    #                     for language in pycountry.languages if not no.gettext(language.name) == language.name)
+    # LanguagesNorwegian = Literal[LANGUAGE_NAMES_NO]
+    # The problem, however, is that not all language names are translated in the data base, and hence one would have to
+    # treat that. Thus for now, the user has to enter the correct norwegian name for the language in the toml file
+    # and type(language) is str.
+    language: str
+    proficiency: Literal["Muttersprache", "Verhandlungssicher", "Fließend", "Gute Kenntnisse", "Grundkenntnisse"]
+
+
 class PersonalSkill(StrictModel):
     """A personal skill and description."""
 
@@ -152,6 +178,28 @@ class NorwegianEducation(StrictModel):
     title: str = "Avhandlingens tittel"  # used for printing the education in latex
     what: str = "innen"  # used for printing the education in latex
     fromwhere: str = "fra"  # used for printing the education in latex
+
+
+class GermanEducation(StrictModel):
+    """Completed educational degree."""
+
+    start: int = 0
+    end: int = 0
+    degree: Literal["Bachelor's degree", "Master's degree", "PhD",
+                    "Diploma degree", "Cand. Scient", "Doctor Scient",
+                    "Certificate of accomplishment", ""] = ""
+    topic: Literal["Physik", "Scientific Computing", "Maschinenwesen",
+                    "Mathematik", "Chemie", "Geologie and Geophysik",
+                    "Computer Science", "Musik", "Führung", ""] = ""
+    specialization: str = ""
+    thesis_title: str = ""
+    department: str = ""
+    university: str = ""
+    country: Country = ""
+    description: str = ""
+    title: str = "Titel"  # used for printing the education in latex
+    what: str = "in"  # used for printing the education in latex
+    fromwhere: str = "von"  # used for printing the education in latex
 
 
 class Work(StrictModel):
@@ -241,6 +289,7 @@ class PublicationSubtitles(StrictModel):
 
 
 class Titles(StrictModel):
+    main_title: str = 'Curriculum Vitae for'
     section_titles: SectionTitles = SectionTitles()
     project_sub_titles: ProjectSubtitles = ProjectSubtitles()
     publication_sub_titles: PublicationSubtitles = PublicationSubtitles()
@@ -311,5 +360,44 @@ class NorwegianVitaeContent(VitaeContent):
             authors="Forfattere",
             year="År",
             summary="Oppsummering"
+        )
+    )
+
+
+class GermanVitaeContent(VitaeContent):
+
+    language_skill: List[GermanLanguageSkill] = Field(default_factory=list)
+
+    education: List[GermanEducation] = Field(default_factory=list)
+
+    titles: Titles = Titles(
+        main_title='Curriculum Vitae für',
+        section_titles=SectionTitles(
+            professional_experience="Arbeitserfahrung",
+            education="Ausbildung",
+            technical_skills="Technische Kompetenzen",
+            languages="Sprachen",
+            personal_skills="Persönliche Kompetenzen",
+            hobbies="Hobbies",
+            projects="Projekte",
+            publications="Veröffentlichungen"
+        ),
+        project_sub_titles=ProjectSubtitles(
+            activity="Aktivität",
+            period="Periode",
+            role="Rolle",
+            staffing="Besetzung",
+            volume="Umfang",
+            description="Beschreibung",
+            tools="Tools",
+            url="URL"
+        ),
+        publication_sub_titles=PublicationSubtitles(
+            title="Titel",
+            journal="Zeitschrift",
+            doi="DOI",
+            authors="Authoren",
+            year="Jahr",
+            summary="Überblick"
         )
     )
