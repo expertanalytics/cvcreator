@@ -1,7 +1,13 @@
 \documentclass[english,a4paper,\VAR{meta.font_size}pt]{article}
 \usepackage[utf8]{inputenc}   % write in utf-8
 \usepackage[T1]{fontenc}      % extended symbol set
-\usepackage[margin=3cm,a4paper]{geometry}
+\usepackage[a4paper,
+            %bindingoffset=0.2in,
+            left=1.5cm,
+            right=1.5cm,
+            top=3cm,
+            bottom=2cm,
+            footskip=.25in]{geometry}
 \usepackage{graphicx}         % pictures
 \usepackage{amssymb}          % math symbols
 \usepackage{hyperref}         % make URL links
@@ -63,7 +69,7 @@
 
   % XAL logo
   \vspace{-1.4cm}
-  \hspace{3cm}
+  \hspace{6cm}
   \includegraphics[width=6cm]{\VAR{meta.logo_image}}
 \end{tabular}
 
@@ -71,36 +77,10 @@
 
 \noindent{\LARGE \bfseries \color{xaldark} \VAR{titles.main_title} \VAR{name}}
 
-\vspace{0.8cm}
+\vspace{0.5cm}
 
 \BLOCK{if summary}
   \VAR{summary}
-  \vspace{0.5cm}
-\BLOCK{endif}
-
-
-\BLOCK{if work}
-  \section*{\VAR{titles.section_titles.professional_experience}}
-  \begin{tabular}{LR}
-    \BLOCK{for s in work}
-    \VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
-    \BLOCK{endfor}
-  \end{tabular}
-  \vspace{0.5cm}
-\BLOCK{endif}
-
-\BLOCK{if education}
-  \section*{\VAR{titles.section_titles.education}}
-  \begin{tabular}{LR}
-    \BLOCK{for s in education}
-      \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
-      \BLOCK{if s.degree}{\bf \VAR{s.degree} \VAR{s.what} \BLOCK{if s.specialization}\VAR{s.specialization}\BLOCK{else}\VAR{s.topic}\BLOCK{endif}}\
-      \BLOCK{else}\VAR{s.specialization} -- \VAR{s.description}\BLOCK{endif}\
-      \BLOCK{if s.department or s.university or s.country} \VAR{s.fromwhere} \VAR{[s.department, s.university, s.country]|select()|join(", ")}.\BLOCK{endif} \
-      \BLOCK{if s.thesis_title}\VAR{s.title}: ``\VAR{s.thesis_title}''.\BLOCK{endif} \
-      \BLOCK{if s.degree}\VAR{s.description}\BLOCK{endif} \\
-    \BLOCK{endfor}
-  \end{tabular}
   \vspace{0.5cm}
 \BLOCK{endif}
 
@@ -113,6 +93,35 @@
   \end{tabular}}
   \vspace{0.5cm}
 \BLOCK{endif}
+
+\BLOCK{if project}
+  \section*{\VAR{titles.section_titles.projects}}
+  \BLOCK{for s in project}
+  \begin{tabular}{@{}LR}
+                      \VAR{titles.project_sub_titles.activity}    & \VAR{s.activity}    \\
+\BLOCK{if s.period}   \VAR{titles.project_sub_titles.period}      & \VAR{s.period}      \\ \BLOCK{endif}
+\BLOCK{if s.role}     \VAR{titles.project_sub_titles.role}        & \VAR{s.role}        \\ \BLOCK{endif}
+\BLOCK{if s.staffing} \VAR{titles.project_sub_titles.staffing}    & \VAR{s.staffing}    \\ \BLOCK{endif}
+\BLOCK{if s.volume}   \VAR{titles.project_sub_titles.volume}      & \VAR{s.volume}      \\ \BLOCK{endif}
+                      \VAR{titles.project_sub_titles.description} & \VAR{s.description} \\
+\BLOCK{if s.tools}    \VAR{titles.project_sub_titles.verktøy}     & \VAR{s.tools}       \\ \BLOCK{endif}
+\BLOCK{if s.url}      \VAR{titles.project_sub_titles.url}         & \VAR{s.url}         \\ \BLOCK{endif}
+  \rule{\textwidth}{0.1pt}
+  \end{tabular}
+  \BLOCK{endfor}
+  \vspace{0.5cm}
+\BLOCK{endif}
+
+\BLOCK{if work}
+  \section*{\VAR{titles.section_titles.professional_experience}}
+  \begin{tabular}{LR}
+    \BLOCK{for s in work}
+    \VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
+    \BLOCK{endfor}
+  \end{tabular}
+  \vspace{0.5cm}
+\BLOCK{endif}
+
 
 \BLOCK{if language_skill}
   \section*{\VAR{titles.section_titles.languages}}
@@ -144,21 +153,18 @@
   \vspace{0.5cm}
 \BLOCK{endif}
 
-\BLOCK{if project}
-  \section*{\VAR{titles.section_titles.projects}}
-  \BLOCK{for s in project}
-  \begin{tabular}{@{}LR}
-                      \VAR{titles.project_sub_titles.activity}    & \VAR{s.activity}    \\
-\BLOCK{if s.period}   \VAR{titles.project_sub_titles.period}      & \VAR{s.period}      \\ \BLOCK{endif}
-\BLOCK{if s.role}     \VAR{titles.project_sub_titles.role}        & \VAR{s.role}        \\ \BLOCK{endif}
-\BLOCK{if s.staffing} \VAR{titles.project_sub_titles.staffing}    & \VAR{s.staffing}    \\ \BLOCK{endif}
-\BLOCK{if s.volume}   \VAR{titles.project_sub_titles.volume}      & \VAR{s.volume}      \\ \BLOCK{endif}
-                      \VAR{titles.project_sub_titles.description} & \VAR{s.description} \\
-\BLOCK{if s.tools}    \VAR{titles.project_sub_titles.verktøy}     & \VAR{s.tools}       \\ \BLOCK{endif}
-\BLOCK{if s.url}      \VAR{titles.project_sub_titles.url}         & \VAR{s.url}         \\ \BLOCK{endif}
-  \rule{\textwidth}{0.1pt}
+\BLOCK{if education}
+  \section*{\VAR{titles.section_titles.education}}
+  \begin{tabular}{LR}
+    \BLOCK{for s in education}
+      \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
+      \BLOCK{if s.degree}{\bf \VAR{s.degree} \VAR{s.what} \BLOCK{if s.specialization}\VAR{s.specialization}\BLOCK{else}\VAR{s.topic}\BLOCK{endif}}\
+      \BLOCK{else}\VAR{s.specialization} -- \VAR{s.description}\BLOCK{endif}\
+      \BLOCK{if s.department or s.university or s.country} \VAR{s.fromwhere} \VAR{[s.department, s.university, s.country]|select()|join(", ")}.\BLOCK{endif} \
+      \BLOCK{if s.thesis_title}\VAR{s.title}: ``\VAR{s.thesis_title}''.\BLOCK{endif} \
+      \BLOCK{if s.degree}\VAR{s.description}\BLOCK{endif} \\
+    \BLOCK{endfor}
   \end{tabular}
-  \BLOCK{endfor}
   \vspace{0.5cm}
 \BLOCK{endif}
 

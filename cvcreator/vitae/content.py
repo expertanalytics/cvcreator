@@ -111,13 +111,10 @@ def load_vitae(
                         rf"\includegraphics[width=0.3cm]{{{path}}}~{value}")
 
     # anything with meta.*_image should be an image
-    print(content.meta.__dict__)
     for name in content.meta.__dict__:
-        
         if not name.endswith("_image"):
             continue
         value = getattr(content.meta, name)
-        print(name, value)
         if not os.path.isfile(value):
             setattr(content.meta, name, os.path.join(
                 CURDIR, os.path.pardir, "templates", f"{value}.pdf"))

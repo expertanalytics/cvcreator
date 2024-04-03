@@ -336,7 +336,7 @@ class NorwegianVitaeContent(VitaeContent):
         section_titles=SectionTitles(
             professional_experience="Arbeidserfaring",
             education="Utdanning",
-            technical_skills="Tekniske ferdigheter",
+            technical_skills="Utvalgte tekniske ferdigheter",
             languages="Språk",
             personal_skills="Personlige ferdigheter",
             hobbies="Interesser",
