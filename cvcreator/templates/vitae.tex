@@ -89,7 +89,7 @@
   \vspace{0.5cm}
 \BLOCK{endif}
 
-\section*{\VAR{titles.section_titles.technical_skills}}{
+\section*{\VAR{titles.section_titles.technical_skills}}
 
 \begin{adjustwidth}{-1.25cm}{-1.25cm}
     \begin{tabularx}{1\textwidth}{L X}
@@ -107,7 +107,8 @@
   \BLOCK{for s in project}
 
     \begin{tabularx}{1\textwidth}{X X}
-      \multirow[t]{3}{.5\textwidth}{\textbf{\VAR{s.title}}} & \hfill\textbf{\VAR{s.period}}\\
+      \multirow[t]{3}{.5\textwidth}{\textbf{\VAR{s.title}}}\\
+      & \hfill\textbf{\VAR{s.period}}\\
       & \hfill\textbf{\VAR{s.company}}\\
       & \hfill\textbf{\VAR{s.role}}\\
     \end{tabularx}
@@ -115,15 +116,17 @@
     \vspace{0.2cm}
 
     \begin{adjustwidth}{0.25cm}{0.25cm}
-    \VAR{s.description}
+      \VAR{s.description}
     \end{adjustwidth}
     \vbox{
 
-      \begin{itemize}[itemsep=-0.1cm,topsep=0.2cm]
-        \BLOCK{for bp in s.bullet_points}
-          \item \VAR{bp}
-        \BLOCK{endfor}
-      \end{itemize}
+      \BLOCK{if s.bullet_points}
+        \begin{itemize}[itemsep=-0.1cm,topsep=0.2cm]
+          \BLOCK{for bp in s.bullet_points}
+            \item \VAR{bp}
+          \BLOCK{endfor}
+        \end{itemize}
+      \BLOCK{endif}
 
       \BLOCK{if s.url}
         \begin{adjustwidth}{0.25cm}{0.25cm}

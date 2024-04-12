@@ -92,7 +92,7 @@ def load_vitae(
         norwegian_skills = []
         for skill in content.technical_skill:
             norwegian_skills.append(TechnicalSkill(title=norwegian_labels[skill.title], values=skill.values))
-        
+
         content.technical_skill = norwegian_skills
 
     if badges:

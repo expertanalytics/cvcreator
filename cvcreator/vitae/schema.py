@@ -15,7 +15,7 @@ COUNTRIES = tuple(country.__dict__.get(
 Country = Literal[COUNTRIES]
 
 # Countries in Norwegian
-no = gettext.translation('iso3166', pycountry.LOCALES_DIR, languages=['nb'])
+no = gettext.translation('iso3166-1', pycountry.LOCALES_DIR, languages=['nb'])
 COUNTRIES_NO = tuple(no.gettext(country.name) for country in pycountry.countries)
 CountryNO = Literal[COUNTRIES_NO]
 # Languages
@@ -490,8 +490,8 @@ class NorwegianVitaeContent(VitaeContent):
 
     education: List[NorwegianEducation] = Field(default_factory=list)
 
-    programming_languages_title = "Språk"
-    tools_title = "Verktøy"
+    programming_languages_title: str = "Språk"
+    tools_title: str = "Verktøy"
 
     titles: Titles = Titles(
         section_titles=SectionTitles(
