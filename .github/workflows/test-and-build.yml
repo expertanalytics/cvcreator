@@ -14,7 +14,7 @@ on:
         description: "wheel file name"
         value: ${{ jobs.test-and-build.outputs.wheel_file }}
 env:
-  PIPELINE_POETRY: '1.4.0' 
+  PIPELINE_POETRY: '1.4.0'
 
 jobs:
   test-and-build:
@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.11
-        uses: actions/setup-python@v4 
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
       - name: Poetry Installation and configure
@@ -42,7 +42,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          poetry install  
+          poetry install
 
       - name: Run pytests
         run: |
@@ -55,8 +55,8 @@ jobs:
           cv aggregate test/aggregate_example.toml \
             cvcreator/templates/example.toml \
             cvcreator/templates/example.toml
-          python -m cvcreator --latex cvcreator/templates/example.toml output.tex  
-    
+          python -m cvcreator --latex cvcreator/templates/example.toml output.tex
+
       - name: Check Package Release
         id: pkg-version
         run: |
@@ -73,7 +73,7 @@ jobs:
               echo "skip_release=YES"  >> $GITHUB_OUTPUT
           fi
 
-      - name: Make a New Wheel file 
+      - name: Make a New Wheel file
         id: wheel
         if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
         run: |
@@ -87,9 +87,4 @@ jobs:
           name: ${{ steps.wheel.outputs.file }}
           path: dist
           retention-days: 1
-
-    
-
-
-
 
