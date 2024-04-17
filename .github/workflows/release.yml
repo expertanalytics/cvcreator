@@ -1,73 +1,21 @@
 name: Release
 
 on:
-  workflow_call:
-    inputs:
-      tag_name:
-        required: true
-        type: string
-      wheel_file:
-        required: true
-        type: string
-    secrets:
-      pypi_token:
-        required: true
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
 jobs:
   release:
+    name: Release
     runs-on: ubuntu-latest
-    env:
-      tag_name:  ${{ inputs.tag_name }}
-      wheel_file:  ${{ inputs.wheel_file }}
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Make a tag and create CHANGELOG.md
-        run: |
-          previous_tag=$(git -c 'versionsort.suffix=-' \
-            ls-remote --exit-code --refs --sort='version:refname' --tags origin '*.*.*' \
-            | tail --lines=1 \
-            | cut -d '/' -f 3)
-          echo "Tag $tag_name" will be created
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-          git tag -a $tag_name -m "Updated by Github workflow"
-          
-          echo "Change Log" > CHANGELOG.md
-          echo "-----------------" >> CHANGELOG.md
-          echo "All the commits since the last tag are as follows:" >> CHANGELOG.md
-          git log --pretty=oneline $previous_tag...$tag_name >> CHANGELOG.md
-          git push origin $tag_name
-          
-
-      - name: Download dist artifact 
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ inputs.wheel_file }}
-
-      - name: Place artifacts
-        run: |
-          mkdir dist/
-          mv $wheel_file dist/$wheel_file
-
-      # loads contents of the dist/ folder into PyPI
-      - name: Publish distribution 📦 to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.pypi_token }}
-          verbose: true
-
-      - name: Create Github Release
-        id: create-release
-        uses: actions/create-release@v1
+      - name: Create release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        with:
-          tag_name: ${{ inputs.tag_name }}
-          release_name: Release ${{ inputs.tag_name }}
-          draft: false
-          prerelease: false
-          body_path: ./CHANGELOG.md
-    
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$TAG" --title "release $TAG" --notes "release $TAG" --target $TAG
