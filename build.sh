@@ -1,3 +1,3 @@
 #!/bin/bash
 
-poetry build && podman build --rm -t cvcreator --network host .
+python -m build --wheel . && podman build --rm -t cvcreator --network host .

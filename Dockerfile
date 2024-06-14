@@ -19,6 +19,6 @@ RUN pacman -S --noconfirm texlive-basic \
                           texlive-xetex \
                           texlive-formatsextra
 
-COPY ./dist/cvcreator-1.1.15-py3-none-any.whl /
+COPY ./dist/cvcreator-1.1.15-py2.py3-none-any.whl /
 
-RUN python -m virtualenv .venv && source .venv/bin/activate && pip install cvcreator-1.1.15-py3-none-any.whl
+RUN python -m virtualenv .venv && source .venv/bin/activate && pip install cvcreator-1.1.15-py2.py3-none-any.whl
