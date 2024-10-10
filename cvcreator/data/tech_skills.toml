@@ -89,6 +89,7 @@ allowed_labels = [
 "ArcGIS" = ["Tools", "Visualization"]
 "Armadillo" = ["Tools", "Math"]
 "AsyncIO" = ["Tools"]
+"AutoCAD" = ["Tools"]
 "Autoconf" = ["Tools"]
 "Azure Databricks" = ["Platforms", "Cloud"]
 "Azure Devops" = ["Tools", "Testing", "Organize"]
