@@ -72,7 +72,7 @@ def create(
     else:
         name = os.path.basename(toml_content.replace(".toml", ""))
         output = output or toml_content.replace(".toml", ".pdf")
-        with compile_latex(latex=latex_code, name=name) as pdf_path:
+        with compile_latex(latex=latex_code, name=name, output=output) as pdf_path:
             shutil.copy(pdf_path, output)
 
 
