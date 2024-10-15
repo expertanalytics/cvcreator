@@ -118,7 +118,7 @@ If a skill is missing, or a skill is written in an incorrect way, please either
 `file an issue <https://github.com/expertanalytics/cvcreator/issues>`_ or
 `make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with 
 the proposed change. In the latter case, the changes can be made to the file:
-``cvcreator/templates/tech_skills.toml``.
+``cvcreator/data/tech_skills.toml``.
 
 In addition, if there is a badge that is missing (or needs replacing) here is
 useful checklist:
