@@ -15,6 +15,7 @@
 \usepackage{tabularx}         % make URL links
 \usepackage{changepage}
 \usepackage{enumitem}
+\usepackage{multirow}
 
 % Format hyperlinks
 \hypersetup {
@@ -92,8 +93,9 @@
 
 \begin{adjustwidth}{-1.25cm}{-1.25cm}
     \begin{tabularx}{1\textwidth}{L X}
-        \textbf{\VAR{programming_languages_title}: } & \VAR{programming_languages|join(", ")} \\
-        \textbf{\VAR{tools_title}: } & \VAR{tools|join(", ")} \\
+      \BLOCK{for s in technical_skill}
+        \textbf{\VAR{s.title}} & \VAR{s.values|join(", ")} \\
+      \BLOCK{endfor}
     \end{tabularx}
 \end{adjustwidth}
 
@@ -102,28 +104,32 @@
   \section*{\VAR{titles.section_titles.projects}}
 
   \BLOCK{for s in project}
-  \begin{tabularx}{1\textwidth}{X X X}
-    \textbf{\VAR{s.title}} & \centering\textbf{\VAR{s.company}} & \hfill\textbf{\VAR{s.period}}\\
-    \VAR{s.role}           &                          &                        \\
-  \end{tabularx}
 
-  \vspace{0.2cm}
+    \begin{tabularx}{1\textwidth}{X X}
+      \multirow[t]{3}{.5\textwidth}{\textbf{\VAR{s.title}}} & \hfill\textbf{\VAR{s.period}}\\
+      & \hfill\textbf{\VAR{s.company}}\\
+      & \hfill\textbf{\VAR{s.role}}\\
+    \end{tabularx}
 
-  \begin{adjustwidth}{0.25cm}{0.25cm}
-  \VAR{s.description}
-  \end{adjustwidth}
+    \vspace{0.2cm}
 
-  \begin{itemize}[itemsep=-0.1cm,topsep=0.2cm]
-    \BLOCK{for bp in s.bullet_points}
-      \item \VAR{bp}
-    \BLOCK{endfor}
-  \end{itemize}
+    \begin{adjustwidth}{0.25cm}{0.25cm}
+    \VAR{s.description}
+    \end{adjustwidth}
+    \vbox{
 
-  \begin{adjustwidth}{0.25cm}{0.25cm}
-  \textbf{\VAR{tools_title}: }\VAR{s.tools|join(", ")}
-  \end{adjustwidth}
-  \rule{\textwidth}{0.1pt}
-  \vspace{0.5cm}
+      \begin{itemize}[itemsep=-0.1cm,topsep=0.2cm]
+        \BLOCK{for bp in s.bullet_points}
+          \item \VAR{bp}
+        \BLOCK{endfor}
+      \end{itemize}
+
+      \begin{adjustwidth}{0.25cm}{0.25cm}
+      \textbf{\VAR{tools_title}: }\VAR{s.tools|join(", ")}
+      \end{adjustwidth}
+      \rule{\textwidth}{0.1pt}
+      \vspace{0.5cm}
+    }
   \BLOCK{endfor}
   \vspace{0.5cm}
 \BLOCK{endif}
