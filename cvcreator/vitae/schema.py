@@ -77,6 +77,13 @@ class TechnicalSkill(StrictModel):
     values: List[str]
 
 
+class SkillCategory(StrictModel):
+    """Group of skills under the same category."""
+
+    category: str
+    technical_skills: List[str]
+
+
 class LanguageSkill(StrictModel):
     """Language skill and proficiency."""
 
@@ -274,6 +281,8 @@ class VitaeContent(StrictModel):
     # 'str' is used here as a placeholder for list of skills.
     technical_skill: Union[List[str], List[TechnicalSkill]] = (
         Field(default_factory=list))
+    # Skills structure alternative to `technical_skill`: skills grouped by user-defined categories
+    skills_category: List[SkillCategory] = Field(default_factory=list)
 
     language_skill: List[LanguageSkill] = Field(default_factory=list)
     personal_skill: List[PersonalSkill] = Field(default_factory=list)
