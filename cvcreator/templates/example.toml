@@ -15,7 +15,17 @@ fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
 """
 
-technical_skill = [ "Python", "C++", "Java", "Numpy", "Scipy", "Statsmodels", "PyMC"]
+[[skills_category]]
+category = "Tools"
+technical_skills = [
+    "Numpy", "PyMC", "Scipy", "Statsmodels",
+]
+[[skills_category]]
+category = "Languages"
+technical_skills = [
+    "C++", "Java", "Python",
+]
+
 
 [[work]]
 description = "Computer scientist at Google Inc."

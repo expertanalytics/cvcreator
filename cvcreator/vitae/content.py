@@ -4,7 +4,7 @@ from typing import Any, List, Sequence
 import toml
 from .schema import VitaeContent, NorwegianVitaeContent
 from .schema import TechnicalSkill
-from .tech_skills import make_skill_groups, get_skills_data
+from .tech_skills import make_skill_groups, get_skills_data, get_skills
 
 CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
 
@@ -75,8 +75,17 @@ def load_vitae(
     # remove potential duplicates from technical skills
     content.technical_skill = list(set(content.technical_skill))
 
-    # place technical skills into groups
-    content.technical_skill = make_skill_groups(content.technical_skill)
+    # Process technical skills
+    if len(content.technical_skill) > 0 and len(content.skills_category) > 0:
+        raise ValueError("Cannot process skills in from both `technical_skill` or in `skills_category`")
+    elif len(content.technical_skill) > 0:
+        # place technical skills into groups
+        content.technical_skill = make_skill_groups(content.technical_skill)
+    elif len(content.skills_category) > 0:
+        # get technical skills grouped by user-defined categories
+        content.technical_skill = get_skills(content.skills_category)
+    else:
+        raise ValueError("Unexpected values for `content.technical_skill` and `content.skills_category`")
 
     if norwegian:
         norwegian_labels = get_skills_data()["norwegian_labels"]
