@@ -87,7 +87,7 @@ def make_skill_groups(
                 break
 
         skills = [skill for skill in skills if skill not in mapping[key]]
-        output[key] = sorted(mapping.pop(key))
+        output[key] = mapping.pop(key)
 
     output = [TechnicalSkill(title=title, values=output[title])
               for title in skills_data["allowed_labels"] if title in output]
