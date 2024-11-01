@@ -3,7 +3,7 @@ import os
 
 from pytest import fixture
 
-from cvcreator.tech_skills import get_skills_data
+from cvcreator.vitae.tech_skills import get_skills_data
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
 CODEDIR = os.path.abspath(os.path.join(os.path.pardir, "cvcreator"))
@@ -34,3 +34,9 @@ def test_short_maps(skills_data):
     unknown_vals = set(skills_data["short_map"].values()).difference(skills_data["skills"])
     assert not unknown_vals, f"Shortmap value not recognized: {unknown_vals}"
 
+
+def test_skill_translation(skills_data):
+
+    norwegian_labels = get_skills_data()["norwegian_labels"]
+    for label in skills_data["allowed_labels"]:
+        assert label in norwegian_labels.keys()

@@ -1,7 +1,7 @@
 CV Creator is an automated curriculum vitae (CV) generator which uses TOML
 templates.
 
-Its primary usage is to standardize Expert Analytics' (XA) employee CVs, but it
+Its primary usage is to standardize Expert Analytics' (XAL) employee CVs, but it
 can be used for creating CV without the company branding for private use as
 well.
 
@@ -15,8 +15,7 @@ install through ``pip``.
 See `this guide <https://packaging.python.org/tutorials/installing-packages>`_
 for help to get ``pip`` working on your system.
 
-With `Python <https://python.org>`_ and ``pip`` in place, install CV Creator
-through:
+With this repository cloned to disk, and `Python <https://python.org>`_ and ``pip`` in place, install CV Creator through:
 
 .. code:: sh
 
@@ -50,26 +49,26 @@ With the content ready, create a CV with:
 
 It will look something like this:
 
-.. raw:: html
-
-  <img src="./example.jpg" width="300">
+.. image:: https://raw.githubusercontent.com/expertanalytics/cvcreator/master/example.jpg 
+  :align: center
+  :width: 300px
 
 Projects and publications
 =========================
 
 To include projects/publications use the flag ``--publications``/``--projects``.
-Can either be called with specific tags:
+These flags must be followed by specific tags present in the toml content file:
 
 .. code:: sh
 
-  cv create example.yaml --projects "A1,foo,whatever"
-
-The tags are defined in the ``.toml`` content file.
+  cv create example.yaml --projects "A1,A2"
+  cv create example.yaml --publications "P1,P2"
 
 The projects/publications will be added in selected order.
-Use a colon ``:`` to include all entries.
+Alternatively, use a colon ``:`` to include all entries.
 
 .. code:: sh
+
   cv create example.yaml --publications :
 
 .. note::
@@ -117,7 +116,7 @@ Adding new skills and badges
 
 If a skill is missing, or a skill is written in an incorrect way, please either
 `file an issue <https://github.com/expertanalytics/cvcreator/issues>`_ or
-`make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with a
+`make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with 
 the proposed change. In the latter case, the changes can be made to the file:
 ``cvcreator/templates/tech_skills.toml``.
 
@@ -134,7 +133,7 @@ useful checklist:
 * Except for the ``.pdf`` extension, the name must exactly match that of the
   badge trigger. This means include capitalized letters and spaces.
 
-Developor Guide
+Developer Guide
 ===============
 
 The project uses `poetry`_ to manage its development installation. Assuming
@@ -167,7 +166,7 @@ To ensure that the code run on your local system, run the following:
 
 .. code-block:: bash
 
-    poetry run pytest --doctest-modules cvcreator/ tests/
+    poetry run pytest --doctest-modules cvcreator/ test/
 
 Deployment
 ==========
@@ -176,8 +175,6 @@ Releases to PyPI (the repository used when using ``pip install``) is created
 and deployed automatically when making a tagged released. To do so you need to:
 
 * Update and push a new version number in ``pyproject.toml`` to branch ``master``.
-* Create and push a git tag (or Github release) using the tag name `v<version number>`.
-  (E.g. if you make version 1.2.3, the tag should be `v1.2.3`.)
 
-And that is it. CircleCI is configured to automatically build Python wheel and
-upload them to PyPI.
+After merging to master, the workflow creates the tag and Github release for 
+this version and uploads its wheel file to Pypi.

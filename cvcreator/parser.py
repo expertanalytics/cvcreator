@@ -42,17 +42,22 @@ def cv():
     "Include small badge icons to selected technical skills."))
 @click.option("-l", "--latex", is_flag=True, help=(
     "Output latex document instead of a pdf."))
+@click.option("-n", "--norwegian", is_flag=True, help=(
+    "Generate titles in Norwegian."))
 @click.option("-p", "--projects", default="", help=(
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
 @click.option("-v", "--verbose", is_flag=False, help=(
-    "Do not muffle latex compilation output"))
+    "Do not muffle latex compilation output")
+@click.option("-", "--publications", default="", help=(
+    "Comma-separated list of publication tags to include. Use ':' for all."))
 def create(
     toml_content: str,
     output: str = "",
     badges: bool = False,
     latex: bool = False,
+    norwegian: bool = False,
     projects: str = "",
     publications: str = "",
     verbose: bool = False
@@ -60,7 +65,7 @@ def create(
     """
     Create curriculum vitae from TOML content file.
     """
-    content = load_vitae(toml_content, badges=badges,
+    content = load_vitae(toml_content, badges=badges, norwegian=norwegian,
                          projects=projects, publications=publications)
 
     # Uniquify technical skills, and alert the user
@@ -81,7 +86,7 @@ def create(
         name = os.path.basename(toml_content.replace(".toml", ""))
         output = output or toml_content.replace(".toml", ".pdf")
         silent = not verbose
-        with compile_latex(latex=latex_code, name=name, silent=silent) as pdf_path:
+        with compile_latex(latex=latex_code, name=name, silent=silent, output=output) as pdf_path:
             shutil.copy(pdf_path, output)
 
 

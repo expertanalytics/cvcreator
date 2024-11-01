@@ -1,5 +1,8 @@
 __pycache__/
 *.egg-info/
-
+.DS_Store
 *.pyc
 .idea
+.envrc
+.python-version
+dist/

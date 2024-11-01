@@ -5,7 +5,7 @@ from collections import defaultdict
 
 import toml
 
-from .schema import TechnicalSkill
+from .schema import TechnicalSkill, SkillCategory
 
 CURDIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -60,10 +60,7 @@ def make_skill_groups(
             count[label] += 1
     max_count = max(count.values())+1
 
-    skills = list(skills)
-    unknown_skills = set(skills).difference(skills_data["skills"])
-    assert not unknown_skills, (
-            f"unrecognized technical skills: {sorted(unknown_skills)}")
+    _validate_skills(skills, skills_data)
 
     output = {}
     while skills:
@@ -86,8 +83,54 @@ def make_skill_groups(
                 break
 
         skills = [skill for skill in skills if skill not in mapping[key]]
-        output[key] = sorted(mapping.pop(key))
+        output[key] = mapping.pop(key)
 
     output = [TechnicalSkill(title=title, values=output[title])
               for title in skills_data["allowed_labels"] if title in output]
     return output
+
+
+def get_skills(skill_categories: List[SkillCategory]) -> List[TechnicalSkill]:
+    """Process skills organized in skill categories into a list of `TechnicalSkill` objects
+
+    Args:
+        skill_categories:
+            User provided skills to distribute into groups.
+
+    Returns:
+        List of TechnicalSkill objects
+    """
+    output: List[TechnicalSkill] = []
+
+    # Get technical skills data
+    skills_data = get_skills_data()
+
+    # Process the skill categories in the CV
+    for skill_category in skill_categories:
+        label = skill_category.category
+        skills = skill_category.technical_skills
+        # Validation of skill categories and skills
+        if label not in skills_data["allowed_labels"]:
+            raise ValueError(f"{label}: Invalid skill label")
+        _validate_skills(skills, skills_data)
+
+        output.append(TechnicalSkill(title=label, values=skills))
+
+    return output
+
+
+def _validate_skills(skills: Sequence[str], skills_data: dict[str, Any]):
+    """Check that skills are valid.
+
+    Compare a list of skill strings against a data structure containing allowed skills.
+
+    Args:
+        skills:
+             List of skills.
+        skills_data:
+            Technical skills data.
+    """
+    unknown_skills = set(skills).difference(skills_data["skills"])
+    assert not unknown_skills, (
+        f"unrecognized technical skills: {sorted(unknown_skills)}"
+        "\nPrint out all available technical skills with `cv skills`")
