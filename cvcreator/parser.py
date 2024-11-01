@@ -48,7 +48,7 @@ def cv():
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
-@click.option("-v", "--verbose", is_flag=False, help=("Do not muffle latex compilation output")
+@click.option("-v", "--verbose", is_flag=False, help="Do not muffle latex compilation output")
 @click.option("-", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
 def create(
