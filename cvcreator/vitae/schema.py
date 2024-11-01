@@ -4,14 +4,21 @@ import datetime
 from typing import List, Literal, Optional, Union
 
 import pycountry
+import gettext
 from pydantic import BaseModel, Field
 
-COUNTRIES = tuple(
-    country.__dict__.get("common_name", country.name).replace(", Islamic Republic of", "")
-    for country in pycountry.countries
-)
+
+# Countries
+COUNTRIES = tuple(country.__dict__.get(
+    "common_name", country.name).replace(", Islamic Republic of", "")
+    for country in pycountry.countries)
 Country = Literal[COUNTRIES]
 
+# Countries in Norwegian
+no = gettext.translation('iso3166', pycountry.LOCALES_DIR, languages=['nb'])
+COUNTRIES_NO = tuple(no.gettext(country.name) for country in pycountry.countries)
+CountryNO = Literal[COUNTRIES_NO]
+# Languages
 LANGUAGES = tuple(language.name for language in pycountry.languages)
 Language = Literal[LANGUAGES]
 
@@ -232,6 +239,13 @@ class TechnicalSkill(StrictModel):
     values: List[str]
 
 
+class SkillCategory(StrictModel):
+    """Group of skills under the same category."""
+
+    category: str
+    technical_skills: List[str]
+
+
 class LanguageSkill(StrictModel):
     """Language skill and proficiency."""
 
@@ -242,7 +256,7 @@ class LanguageSkill(StrictModel):
 class NorwegianLanguageSkill(StrictModel):
     """Language skill and proficiency."""
 
-    # In principal, it should be possible to map a language name from english to norwegian
+    # In principle, it should be possible to map a language name from english to norwegian
     # using the following code snippet (which generates a list of language names in norwegian):
     # no = gettext.translation("iso639-3", pycountry.LOCALES_DIR,languages=["nb"])
     # exceptions = {"English": "Engelsk"}
@@ -331,7 +345,7 @@ class NorwegianEducation(StrictModel):
     thesis_title: str = ""
     department: str = ""
     university: str = ""
-    country: Country = ""
+    country: CountryNO = ""
     description: str = ""
     title: str = "Avhandlingens tittel"  # used for printing the education in latex
     what: str = "innen"  # used for printing the education in latex
@@ -456,7 +470,10 @@ class VitaeContent(StrictModel):
 
     # Should be TechnicalSkill, but is constructed after parsing.
     # 'str' is used here as a placeholder for list of skills.
-    technical_skill: Union[List[str], List[TechnicalSkill]] = Field(default_factory=list)
+    technical_skill: Union[List[str], List[TechnicalSkill]] = (
+        Field(default_factory=list))
+    # Skills structure alternative to `technical_skill`: skills grouped by user-defined categories
+    skills_category: List[SkillCategory] = Field(default_factory=list)
 
     language_skill: List[LanguageSkill] = Field(default_factory=list)
     personal_skill: List[PersonalSkill] = Field(default_factory=list)
