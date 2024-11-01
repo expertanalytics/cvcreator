@@ -23,6 +23,25 @@ allowed_labels = [
   "GUI",                      # Creating graphical user interfaces
 ]
 
+[norwegian_labels]
+
+"Tools" = "Verktøy"
+"Languages" = "Språk" # Note that "Programeringsspråk" breaks the table columns
+# because it is too long
+"ML" = "Maskinlæring"
+"Modelling" = "Modellering"
+"Organize" = "Organisering"
+"Cloud" = "Sky"
+"Databases" = "Databaser"
+"Web" = "Nett"
+"Platforms" = "Platformer"
+"Testing" = "Testing"
+"Visualization" = "Visualisering"
+"Office" = "Office"
+"Math" = "Matematikk"
+"File formats" = "Filformater"
+"Editors" = "Editors"
+"GUI" = "GUI"
 
 # If we want to group some labels together.
 [short_map]
@@ -70,10 +89,13 @@ allowed_labels = [
 "ArcGIS" = ["Tools", "Visualization"]
 "Armadillo" = ["Tools", "Math"]
 "AsyncIO" = ["Tools"]
+"AutoCAD" = ["Tools"]
 "Autoconf" = ["Tools"]
+"Azure Event Hub" = ["Tools"]
 "Azure Databricks" = ["Platforms", "Cloud"]
 "Azure Devops" = ["Tools", "Testing", "Organize"]
 "Azure SQL" = ["Platforms", "Cloud", "Databases"]
+"Azure Event Hub" = ["Tools", "Organize"]
 "Backbone.js" = ["Tools", "Web"]
 "Bash" = ["Languages"]
 "Bicep" = ["Languages"]
@@ -109,6 +131,7 @@ allowed_labels = [
 "Django" = ["Tools", "Web"]
 "DocOnce" = ["Tools", "File formats"]
 "Docker" = ["Platforms", "Cloud"]
+"Doxygen" = ["Tools"]
 "Eclipse" = ["Tools", "Editors"]
 "Eigen" = ["Tools", "Math"]
 "Elastic Search" = ["Tools", "Web"]
@@ -121,6 +144,7 @@ allowed_labels = [
 "Fish" = ["Languages"]
 "Flake8" = ["Tools", "Testing"]
 "Flask" = ["Tools", "Web"]
+"Flux" = ["Tools", "Cloud"]
 "Fortran" = ["Languages"]
 "FreeSurfer" = ["Tools", "Modelling"]
 "GCC" = ["Tools"]
@@ -132,6 +156,7 @@ allowed_labels = [
 "Gimp" = ["Tools", "Visualization"]
 "Git" = ["Tools", "Organize"]
 "Github" = ["Tools", "Organize"]
+"Github Actions" = ["Tools", "Organize"]
 "GitLab" = ["Tools", "Organize"]
 "Go" = ["Languages"]
 "GoogleTest" = ["Tools", "Testing"]
@@ -166,6 +191,7 @@ allowed_labels = [
 "Julia" = ["Languages"]
 "JupyterLab" = ["Tools", "Editors", "Visualization"]
 "Jupyter Notebook" = ["Tools", "Editors", "Visualization"]
+"Kafka" = ["Tools"]
 "Keras" = ["Tools", "ML"]
 "Kotlin" = ["Languages"]
 "Kubernetes" = ["Platforms", "Cloud"]
@@ -199,6 +225,7 @@ allowed_labels = [
 "NLTK" = ["Tools", "ML"]
 "NPM" = ["Tools", "Organize"]
 "Neo4j" = ["Tools", "Databases"]
+"Ninja" = ["Tools", "Organize"]
 "Node.js" = ["Tools", "Web"]
 "Numpy" = ["Tools", "Math"]
 "OSG" = ["Tools", "Visualization"]
@@ -219,6 +246,7 @@ allowed_labels = [
 "PHP" = ["Languages"]
 "Pandas" = ["Tools"]
 "Polars" = ["Tools"]
+"Podman" = ["Tools", "Cloud", "Platforms"]
 "ParaView" = ["Tools", "Visualization"]
 "Perforce" = ["Tools", "Organize"]
 "Perl" = ["Languages"]
@@ -298,6 +326,9 @@ allowed_labels = [
 "Virtualenv" = ["Tools"]
 "Vue.js" = ["Tools", "Web"]
 "WebGL" = ["Tools", "Web", "Visualization"]
+"WebGPU" = ["Tools", "Web", "Visualization"]
+"WebAssembly" = ["Tools", "Web", "Visualization"]
+"Vulkan" = ["Tools"]
 "Wicket" = ["Tools", "Web"]
 "Wordpress" = ["Tools", "Web"]
 "XGBoost" = ["Tools", "ML"]

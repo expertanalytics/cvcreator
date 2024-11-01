@@ -34,3 +34,9 @@ def test_short_maps(skills_data):
     unknown_vals = set(skills_data["short_map"].values()).difference(skills_data["skills"])
     assert not unknown_vals, f"Shortmap value not recognized: {unknown_vals}"
 
+
+def test_skill_translation(skills_data):
+
+    norwegian_labels = get_skills_data()["norwegian_labels"]
+    for label in skills_data["allowed_labels"]:
+        assert label in norwegian_labels.keys()
