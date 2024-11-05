@@ -4,6 +4,7 @@ import os
 import re
 import shutil
 import glob
+import warnings
 
 import toml
 import click
@@ -47,6 +48,7 @@ def cv():
     "Comma-separated list of project tags to include. Use ':' for all."))
 @click.option("-u", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
+@click.option("-v", "--verbose", is_flag=False, help="Do not muffle latex compilation output")
 @click.option("-", "--publications", default="", help=(
     "Comma-separated list of publication tags to include. Use ':' for all."))
 def create(
@@ -57,12 +59,22 @@ def create(
     norwegian: bool = False,
     projects: str = "",
     publications: str = "",
+    verbose: bool = False
 ) -> None:
     """
     Create curriculum vitae from TOML content file.
     """
     content = load_vitae(toml_content, badges=badges, norwegian=norwegian,
                          projects=projects, publications=publications)
+
+    # Uniquify technical skills, and alert the user
+    for ts in content.technical_skill:
+        unique_values = list(dict.fromkeys(ts.values, None).keys())
+        if len(unique_values) != len(ts.values):
+            duplicate_skills = set((x for x in unique_values if ts.values.count(x) > 1))
+            warnings.warn(f"Detected duplicate tech skills({ts.title}): {duplicate_skills}")
+        ts.values = unique_values
+
     template = load_template("vitae.tex")
     latex_code = template.render(**dict(content))
     if latex:
@@ -72,7 +84,8 @@ def create(
     else:
         name = os.path.basename(toml_content.replace(".toml", ""))
         output = output or toml_content.replace(".toml", ".pdf")
-        with compile_latex(latex=latex_code, name=name, output=output) as pdf_path:
+        silent = not verbose
+        with compile_latex(latex=latex_code, name=name, silent=silent, output=output) as pdf_path:
             shutil.copy(pdf_path, output)
 
 
@@ -138,4 +151,5 @@ def skills(badges):
         path = os.path.join(os.path.dirname(__file__), "data", "tech_skills.toml")
         with open(path) as handle:
             data = toml.load(handle)["skills"]
+
     click.echo("\n".join(data))
