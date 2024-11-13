@@ -12,6 +12,10 @@
 \usepackage{graphicx}         % pictures
 \usepackage{amssymb}          % math symbols
 \usepackage{hyperref}         % make URL links
+\usepackage{tabularx}         % make URL links
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{multirow}
 
 % Format hyperlinks
 \hypersetup {
@@ -20,10 +24,8 @@
   urlcolor=blue,
 }
 
-% add footer image
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt} % because fancyhdr usually makes a topline
-\cfoot{\vspace{0.2cm}\includegraphics[width=5cm]{\VAR{meta.footer_image}}}
 \pagestyle{fancy} % activate fancyhdr!
 
 % define some colors
@@ -74,41 +76,60 @@
   \includegraphics[width=6cm]{\VAR{meta.logo_image}}
 \end{tabular}
 
-\vspace{2cm}
+\vspace{1cm}
 
 \noindent{\LARGE \bfseries \color{xaldark} \VAR{name}}
 
 \vspace{0.5cm}
 
 \BLOCK{if summary}
-  \VAR{summary}
+  \begin{adjustwidth}{0.25cm}{0.25cm}
+    \VAR{summary}
+  \end{adjustwidth}
   \vspace{0.5cm}
 \BLOCK{endif}
 
-\BLOCK{if technical_skill}
-  \section*{\VAR{titles.section_titles.technical_skills}}{
-  \begin{tabular}{LR}
-    \BLOCK{for s in technical_skill}
-    \VAR{s.title} & \VAR{s.values|join(", ")} \\
-    \BLOCK{endfor}
-  \end{tabular}}
-  \vspace{0.5cm}
-\BLOCK{endif}
+\section*{\VAR{titles.section_titles.technical_skills}}{
+
+\begin{adjustwidth}{-1.25cm}{-1.25cm}
+    \begin{tabularx}{1\textwidth}{L X}
+      \BLOCK{for s in technical_skill}
+        \textbf{\VAR{s.title}} & \VAR{s.values|join(", ")} \\
+      \BLOCK{endfor}
+    \end{tabularx}
+\end{adjustwidth}
+
 
 \BLOCK{if project}
   \section*{\VAR{titles.section_titles.projects}}
+
   \BLOCK{for s in project}
-  \begin{tabular}{@{}LR}
-                      \VAR{titles.project_sub_titles.activity}    & \VAR{s.activity}    \\
-\BLOCK{if s.period}   \VAR{titles.project_sub_titles.period}      & \VAR{s.period}      \\ \BLOCK{endif}
-\BLOCK{if s.role}     \VAR{titles.project_sub_titles.role}        & \VAR{s.role}        \\ \BLOCK{endif}
-\BLOCK{if s.staffing} \VAR{titles.project_sub_titles.staffing}    & \VAR{s.staffing}    \\ \BLOCK{endif}
-\BLOCK{if s.volume}   \VAR{titles.project_sub_titles.volume}      & \VAR{s.volume}      \\ \BLOCK{endif}
-                      \VAR{titles.project_sub_titles.description} & \VAR{s.description} \\
-\BLOCK{if s.tools}    \VAR{titles.project_sub_titles.verktøy}     & \VAR{s.tools}       \\ \BLOCK{endif}
-\BLOCK{if s.url}      \VAR{titles.project_sub_titles.url}         & \VAR{s.url}         \\ \BLOCK{endif}
-  \rule{\textwidth}{0.1pt}
-  \end{tabular}
+
+    \begin{tabularx}{1\textwidth}{X X}
+      \multirow[t]{3}{.5\textwidth}{\textbf{\VAR{s.title}}} & \hfill\textbf{\VAR{s.period}}\\
+      & \hfill\textbf{\VAR{s.company}}\\
+      & \hfill\textbf{\VAR{s.role}}\\
+    \end{tabularx}
+
+    \vspace{0.2cm}
+
+    \begin{adjustwidth}{0.25cm}{0.25cm}
+    \VAR{s.description}
+    \end{adjustwidth}
+    \vbox{
+
+      \begin{itemize}[itemsep=-0.1cm,topsep=0.2cm]
+        \BLOCK{for bp in s.bullet_points}
+          \item \VAR{bp}
+        \BLOCK{endfor}
+      \end{itemize}
+
+      \begin{adjustwidth}{0.25cm}{0.25cm}
+      \textbf{\VAR{tools_title}: }\VAR{s.tools|join(", ")}
+      \end{adjustwidth}
+      \rule{\textwidth}{0.1pt}
+      \vspace{0.5cm}
+    }
   \BLOCK{endfor}
   \vspace{0.5cm}
 \BLOCK{endif}

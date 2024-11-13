@@ -103,18 +103,53 @@ description = "do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 title = "Out doors"
 values = ["Running", "Hiking", "Sailing"]
 
+[[hobby]]
+title = "Out doors"
+values = ["Running", "Hiking", "Sailing"]
+[[hobby]]
+title = "Out doors"
+values = ["Running", "Hiking", "Sailing"]
+[[hobby]]
+title = "Out doors"
+values = ["Running", "Hiking", "Sailing"]
+[[hobby]]
+title = "Out doors"
+values = ["Running", "Hiking", "Sailing"]
+[[hobby]]
+title = "Out doors"
+values = ["Running", "Hiking", "Sailing"]
+
 [[project]]
-activity = "My open source project"
+title = "Refactor Unix"
 period = "2014 --"  # Optional
+company = "Linus Thorvalds As"  # Optional
 role = "Lead maintainer"  # Optional
-staffing = "4 developers"  # Optional
-tools = "numpy and scipy"  # Optional
-volume = "Part time"  # Optional
+tools = ["numpy", "scipy"]  # Optional
 description = """
 short description of project and your involvement there.
 """
+bullet_points = [
+    "I did this important thing",
+    "and I also did this"
+]
 url = "https://url_to_learn_more.com/"  # Optional
 tag = "A1"
+
+[[project]]
+title = "Oil Drilling Optimization"
+period = "2014 -- 2017"  # Optional
+company = "AkerBP"  # Optional
+role = "Senior Software Engineer"  # Optional
+tools = ["numpy", "scipy", "tools"]  # Optional
+description = """
+short description of project and your involvement there.
+"""
+bullet_points = [
+    "I computed 1 000 000 primes in 0.1 seconds",
+    "I developed an application used to monitor every citizen of China"
+]
+url = "https://url_to_learn_more.com/"  # Optional
+tag = "A2"
 
 [[publication]]
 title = "Article title"

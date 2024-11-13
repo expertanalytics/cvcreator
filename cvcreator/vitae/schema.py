@@ -7,6 +7,7 @@ import pycountry
 import gettext
 from pydantic import BaseModel, Field
 
+
 # Countries
 COUNTRIES = tuple(country.__dict__.get(
     "common_name", country.name).replace(", Islamic Republic of", "")
@@ -23,42 +24,203 @@ Language = Literal[LANGUAGES]
 
 # hopefully exhaustive:
 NATIONALITIES = (
-    'Afghan', 'Albanian', 'Algerian', 'American', 'Andorran', 'Angolan',
-    'Antiguans', 'Argentinean', 'Armenian', 'Australian', 'Austrian',
-    'Azerbaijani', 'Bahamian', 'Bahraini', 'Bangladeshi', 'Barbadian',
-    'Barbudans', 'Batswana', 'Belarusian', 'Belgian', 'Belizean', 'Beninese',
-    'Bhutanese', 'Bolivian', 'Bosnian', 'Brazilian', 'British', 'Bruneian',
-    'Bulgarian', 'Burkinabe', 'Burmese', 'Burundian', 'Cambodian',
-    'Cameroonian', 'Canadian', 'Cape Verdean', 'Central African', 'Chadian',
-    'Chilean', 'Chinese', 'Colombian', 'Comoran',  'Congolese', 'Costa Rican',
-    'Croatian', 'Cuban', 'Cypriot', 'Czech', 'Danish', 'Djibouti', 'Dominican',
-    'Dutch', 'Dutchman', 'Dutchwoman', 'East Timorese', 'Ecuadorean',
-    'Egyptian', 'Emirian', 'Equatorial Guinean', 'Eritrean', 'Estonian',
-    'Ethiopian', 'Fijian', 'Filipino', 'Finnish', 'French', 'Gabonese',
-    'Gambian', 'Georgian', 'German', 'Ghanaian', 'Greek', 'Grenadian',
-    'Guatemalan', 'Guinea-Bissauan', 'Guinean', 'Guyanese', 'Haitian',
-    'Herzegovinian', 'Honduran', 'Hungarian', 'I-Kiribati', 'Icelander',
-    'Indian', 'Indonesian', 'Iranian', 'Iraqi', 'Irish', 'Israeli', 'Italian',
-    'Ivorian', 'Jamaican', 'Japanese', 'Jordanian', 'Kazakhstani', 'Kenyan',
-    'Kittian and Nevisian', 'Kuwaiti', 'Kyrgyz', 'Laotian', 'Latvian',
-    'Lebanese', 'Liberian', 'Libyan', 'Liechtensteiner', 'Lithuanian',
-    'Luxembourger', 'Macedonian', 'Malagasy', 'Malawian', 'Malaysian',
-    'Maldivan', 'Malian', 'Maltese', 'Marshallese', 'Mauritanian', 'Mauritian',
-    'Mexican', 'Micronesian', 'Moldovan', 'Monacan', 'Mongolian', 'Moroccan',
-    'Mosotho', 'Motswana', 'Mozambican', 'Namibian', 'Nauruan', 'Nepalese',
-    'Netherlander', 'New Zealander', 'Ni-Vanuatu', 'Nicaraguan', 'Nigerian',
-    'Nigerien', 'North Korean', 'Northern Irish', 'Norwegian', 'Omani',
-    'Pakistani', 'Palauan', 'Panamanian', 'Papua New Guinean', 'Paraguayan',
-    'Peruvian', 'Polish', 'Portuguese', 'Qatari', 'Romanian', 'Russian',
-    'Rwandan', 'Saint Lucian', 'Salvadoran', 'Samoan', 'San Marinese',
-    'Sao Tomean', 'Saudi', 'Scottish', 'Senegalese', 'Serbian', 'Seychellois',
-    'Sierra Leonean', 'Singaporean', 'Slovakian', 'Slovenian',
-    'Solomon Islander', 'Somali', 'South African', 'South Korean', 'Spanish',
-    'Sri Lankan', 'Sudanese', 'Surinamer', 'Swazi', 'Swedish', 'Swiss',
-    'Syrian', 'Taiwanese', 'Tajik', 'Tanzanian', 'Thai', 'Togolese', 'Tongan',
-    'Trinidadian or Tobagonian', 'Tunisian', 'Turkish', 'Tuvaluan', 'Ugandan',
-    'Ukrainian', 'Uruguayan', 'Uzbekistani', 'Venezuelan', 'Vietnamese',
-    'Welsh', 'Yemenite', 'Zambian', 'Zimbabwean'
+    "Afghan",
+    "Albanian",
+    "Algerian",
+    "American",
+    "Andorran",
+    "Angolan",
+    "Antiguans",
+    "Argentinean",
+    "Armenian",
+    "Australian",
+    "Austrian",
+    "Azerbaijani",
+    "Bahamian",
+    "Bahraini",
+    "Bangladeshi",
+    "Barbadian",
+    "Barbudans",
+    "Batswana",
+    "Belarusian",
+    "Belgian",
+    "Belizean",
+    "Beninese",
+    "Bhutanese",
+    "Bolivian",
+    "Bosnian",
+    "Brazilian",
+    "British",
+    "Bruneian",
+    "Bulgarian",
+    "Burkinabe",
+    "Burmese",
+    "Burundian",
+    "Cambodian",
+    "Cameroonian",
+    "Canadian",
+    "Cape Verdean",
+    "Central African",
+    "Chadian",
+    "Chilean",
+    "Chinese",
+    "Colombian",
+    "Comoran",
+    "Congolese",
+    "Costa Rican",
+    "Croatian",
+    "Cuban",
+    "Cypriot",
+    "Czech",
+    "Danish",
+    "Djibouti",
+    "Dominican",
+    "Dutch",
+    "Dutchman",
+    "Dutchwoman",
+    "East Timorese",
+    "Ecuadorean",
+    "Egyptian",
+    "Emirian",
+    "Equatorial Guinean",
+    "Eritrean",
+    "Estonian",
+    "Ethiopian",
+    "Fijian",
+    "Filipino",
+    "Finnish",
+    "French",
+    "Gabonese",
+    "Gambian",
+    "Georgian",
+    "German",
+    "Ghanaian",
+    "Greek",
+    "Grenadian",
+    "Guatemalan",
+    "Guinea-Bissauan",
+    "Guinean",
+    "Guyanese",
+    "Haitian",
+    "Herzegovinian",
+    "Honduran",
+    "Hungarian",
+    "I-Kiribati",
+    "Icelander",
+    "Indian",
+    "Indonesian",
+    "Iranian",
+    "Iraqi",
+    "Irish",
+    "Israeli",
+    "Italian",
+    "Ivorian",
+    "Jamaican",
+    "Japanese",
+    "Jordanian",
+    "Kazakhstani",
+    "Kenyan",
+    "Kittian and Nevisian",
+    "Kuwaiti",
+    "Kyrgyz",
+    "Laotian",
+    "Latvian",
+    "Lebanese",
+    "Liberian",
+    "Libyan",
+    "Liechtensteiner",
+    "Lithuanian",
+    "Luxembourger",
+    "Macedonian",
+    "Malagasy",
+    "Malawian",
+    "Malaysian",
+    "Maldivan",
+    "Malian",
+    "Maltese",
+    "Marshallese",
+    "Mauritanian",
+    "Mauritian",
+    "Mexican",
+    "Micronesian",
+    "Moldovan",
+    "Monacan",
+    "Mongolian",
+    "Moroccan",
+    "Mosotho",
+    "Motswana",
+    "Mozambican",
+    "Namibian",
+    "Nauruan",
+    "Nepalese",
+    "Netherlander",
+    "New Zealander",
+    "Ni-Vanuatu",
+    "Nicaraguan",
+    "Nigerian",
+    "Nigerien",
+    "North Korean",
+    "Northern Irish",
+    "Norwegian",
+    "Omani",
+    "Pakistani",
+    "Palauan",
+    "Panamanian",
+    "Papua New Guinean",
+    "Paraguayan",
+    "Peruvian",
+    "Polish",
+    "Portuguese",
+    "Qatari",
+    "Romanian",
+    "Russian",
+    "Rwandan",
+    "Saint Lucian",
+    "Salvadoran",
+    "Samoan",
+    "San Marinese",
+    "Sao Tomean",
+    "Saudi",
+    "Scottish",
+    "Senegalese",
+    "Serbian",
+    "Seychellois",
+    "Sierra Leonean",
+    "Singaporean",
+    "Slovakian",
+    "Slovenian",
+    "Solomon Islander",
+    "Somali",
+    "South African",
+    "South Korean",
+    "Spanish",
+    "Sri Lankan",
+    "Sudanese",
+    "Surinamer",
+    "Swazi",
+    "Swedish",
+    "Swiss",
+    "Syrian",
+    "Taiwanese",
+    "Tajik",
+    "Tanzanian",
+    "Thai",
+    "Togolese",
+    "Tongan",
+    "Trinidadian or Tobagonian",
+    "Tunisian",
+    "Turkish",
+    "Tuvaluan",
+    "Ugandan",
+    "Ukrainian",
+    "Uruguayan",
+    "Uzbekistani",
+    "Venezuelan",
+    "Vietnamese",
+    "Welsh",
+    "Yemenite",
+    "Zambian",
+    "Zimbabwean",
 )
 Nationality = Literal[NATIONALITIES]
 
@@ -128,13 +290,29 @@ class Education(StrictModel):
 
     start: int = 0
     end: int = 0
-    degree: Literal["Bachelor's degree", "Master's degree", "PhD",
-                    "Diploma degree", "Cand. Scient", "Doctor Scient",
-                    "Certificate of accomplishment", ""] = ""
-    topic: Literal["Physics", "Scientific Computing", "Mechanics",
-                   "Mathematics", "Engineering", "Chemistry",
-                   "Geology and Geophysics", "Computer Science", "Music",
-                   "Leadership", ""] = ""
+    degree: Literal[
+        "Bachelor's degree",
+        "Master's degree",
+        "PhD",
+        "Diploma degree",
+        "Cand. Scient",
+        "Doctor Scient",
+        "Certificate of accomplishment",
+        "",
+    ] = ""
+    topic: Literal[
+        "Physics",
+        "Scientific Computing",
+        "Mechanics",
+        "Mathematics",
+        "Engineering",
+        "Chemistry",
+        "Geology and Geophysics",
+        "Computer Science",
+        "Music",
+        "Leadership",
+        "",
+    ] = ""
     specialization: str = ""
     thesis_title: str = ""
     department: str = ""
@@ -151,12 +329,18 @@ class NorwegianEducation(StrictModel):
 
     start: int = 0
     end: int = 0
-    degree: Literal["Mastergrad", "Doktorgrad",
-                    ""] = ""
-    topic: Literal["Fysikk", "Vitenskapelige Beregninger", "Mekanikk",
-                   "Matematikk", "Ingeniørarbeid", "Kjemi",
-                   "Geologi og Geofysikk", "Informatikk", "Musikk",
-                   ] = ""
+    degree: Literal["Mastergrad", "Doktorgrad", ""] = ""
+    topic: Literal[
+        "Fysikk",
+        "Vitenskapelige Beregninger",
+        "Mekanikk",
+        "Matematikk",
+        "Ingeniørarbeid",
+        "Kjemi",
+        "Geologi og Geofysikk",
+        "Informatikk",
+        "Musikk",
+    ] = ""
     specialization: str = ""
     thesis_title: str = ""
     department: str = ""
@@ -179,13 +363,14 @@ class Work(StrictModel):
 class Project(StrictModel):
     """Extended description of a project."""
 
-    activity: str
+    title: str
+    company: str = ""
     role: str = ""
-    staffing: str = ""
     period: str = ""
     description: str
-    tools: str = ""
-    volume: str = ""
+    bullet_points: List[str] = []
+    tools: List[str] = []
+    tools_title: str = "Tools"
     url: str = ""
     tag: str = ""
 
@@ -277,6 +462,12 @@ class VitaeContent(StrictModel):
     meta: MetaInformation = MetaInformation()
     titles: Titles = Titles()
 
+    programming_languages_title: str = "Languages"
+    tools_title: str = "Tools"
+
+    programming_languages: List[str] = Field(default_factory=list)
+    tools: List[str] = Field(default_factory=list)
+
     # Should be TechnicalSkill, but is constructed after parsing.
     # 'str' is used here as a placeholder for list of skills.
     technical_skill: Union[List[str], List[TechnicalSkill]] = (
@@ -299,6 +490,9 @@ class NorwegianVitaeContent(VitaeContent):
 
     education: List[NorwegianEducation] = Field(default_factory=list)
 
+    programming_languages_title = "Språk"
+    tools_title = "Verktøy"
+
     titles: Titles = Titles(
         section_titles=SectionTitles(
             professional_experience="Arbeidserfaring",
@@ -308,7 +502,7 @@ class NorwegianVitaeContent(VitaeContent):
             personal_skills="Personlige ferdigheter",
             hobbies="Interesser",
             projects="Prosjekter",
-            publications="Publikasjoner"
+            publications="Publikasjoner",
         ),
         project_sub_titles=ProjectSubtitles(
             activity="Aktivitet",
@@ -318,14 +512,9 @@ class NorwegianVitaeContent(VitaeContent):
             volume="Omfang",
             description="Beskrivelse",
             tools="Verktøy",
-            url="URL"
+            url="URL",
         ),
         publication_sub_titles=PublicationSubtitles(
-            title="Tittel",
-            journal="Tidsskrift",
-            doi="DOI",
-            authors="Forfattere",
-            year="År",
-            summary="Oppsummering"
-        )
+            title="Tittel", journal="Tidsskrift", doi="DOI", authors="Forfattere", year="År", summary="Oppsummering"
+        ),
     )
