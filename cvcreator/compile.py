@@ -12,6 +12,7 @@ import click
 def compile_latex(
     latex: str,
     name: str = "document",
+    output: str = "",
     silent: bool = False,
 ) -> Iterator[str]:
     """
@@ -25,7 +26,9 @@ def compile_latex(
             The latex source code as a string.
         name:
             The name of the file to be used during compilation.
-            The extensions `.tex` and `.pdf` will be added.
+            The extension `.tex` will be added.
+        output:
+            The name of the output file e.g. `mycv.pdf`.
         silent:
             Muffle latex compiles.
 
@@ -62,5 +65,5 @@ def compile_latex(
                 sys.exit(2)
         if not silent:
             click.secho(
-                f"Document successfully compiled: {name}.tex -> {name}.pdf", fg="green")
+                f"Document successfully compiled: {name}.tex -> {output}", fg="green")
         yield source_file.replace(".tex", ".pdf")

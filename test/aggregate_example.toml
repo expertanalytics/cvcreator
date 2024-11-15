@@ -1,5 +1,5 @@
 summary = """
 Some text in the beginning
 """
-technical_skills = ["Python", "AWS", "C++"]
+technical_skills = ["Python", "AWS", "C++", "Java"]
 topics = ["Physics", "Mathematics"]

@@ -1,7 +1,7 @@
 CV Creator is an automated curriculum vitae (CV) generator which uses TOML
 templates.
 
-Its primary usage is to standardize Expert Analytics' (XA) employee CVs, but it
+Its primary usage is to standardize Expert Analytics' (XAL) employee CVs, but it
 can be used for creating CV without the company branding for private use as
 well.
 
@@ -49,9 +49,9 @@ With the content ready, create a CV with:
 
 It will look something like this:
 
-.. raw:: html
-
-  <img src="./example.jpg" width="300">
+.. image:: https://raw.githubusercontent.com/expertanalytics/cvcreator/master/example.jpg 
+  :align: center
+  :width: 300px
 
 Projects and publications
 =========================
@@ -118,7 +118,7 @@ If a skill is missing, or a skill is written in an incorrect way, please either
 `file an issue <https://github.com/expertanalytics/cvcreator/issues>`_ or
 `make a request <https://github.com/expertanalytics/cvcreator/pulls>`_ with 
 the proposed change. In the latter case, the changes can be made to the file:
-``cvcreator/templates/tech_skills.toml``.
+``cvcreator/data/tech_skills.toml``.
 
 In addition, if there is a badge that is missing (or needs replacing) here is
 useful checklist:
@@ -175,8 +175,6 @@ Releases to PyPI (the repository used when using ``pip install``) is created
 and deployed automatically when making a tagged released. To do so you need to:
 
 * Update and push a new version number in ``pyproject.toml`` to branch ``master``.
-* Create and push a git tag (or Github release) using the tag name `v<version number>`.
-  (E.g. if you make version 1.2.3, the tag should be `v1.2.3`.)
 
-And that is it. CircleCI is configured to automatically build Python wheel and
-upload them to PyPI.
+After merging to master, the workflow creates the tag and Github release for 
+this version and uploads its wheel file to Pypi.

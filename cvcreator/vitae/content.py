@@ -2,8 +2,9 @@ import os
 from typing import Any, List, Sequence
 
 import toml
-from .schema import VitaeContent
-from .tech_skills import make_skill_groups
+from .schema import VitaeContent, NorwegianVitaeContent
+from .schema import TechnicalSkill
+from .tech_skills import make_skill_groups, get_skills_data, get_skills
 
 CURDIR = f"{os.path.dirname(__file__)}{os.path.sep}"
 
@@ -33,6 +34,7 @@ def filter_(keys: str, sequence: Sequence[Any]) -> List[Any]:
 def load_vitae(
     path: str,
     badges: bool = False,
+    norwegian: bool = False,
     projects: str = "",
     publications: str = "",
 ) -> VitaeContent:
@@ -47,6 +49,8 @@ def load_vitae(
             Path to the content to load.
         badges:
             Include small badge icons to selected technical skills.
+        norwegian:
+            If titles should be in Norwegian.
         projects:
             Comma-separated list of project tags to include. ':' includes all.
         publications:
@@ -59,14 +63,37 @@ def load_vitae(
     assert str(path).endswith(".toml"), (
         "must be TOML files with .toml extension.")
     with open(path) as src:
-        content = VitaeContent(**toml.load(src))
+        if norwegian:
+            content = NorwegianVitaeContent(**toml.load(src))
+        else:
+            content = VitaeContent(**toml.load(src))
 
     # filter projects and publications (as this can not be done in template)
     content.project = filter_(projects, content.project)
     content.publication = filter_(publications, content.publication)
 
-    # place technical skills into groups
-    content.technical_skill = make_skill_groups(content.technical_skill)
+    # remove potential duplicates from technical skills
+    content.technical_skill = list(set(content.technical_skill))
+
+    # Process technical skills
+    if len(content.technical_skill) > 0 and len(content.skills_category) > 0:
+        raise ValueError("Cannot process skills in from both `technical_skill` or in `skills_category`")
+    elif len(content.technical_skill) > 0:
+        # place technical skills into groups
+        content.technical_skill = make_skill_groups(content.technical_skill)
+    elif len(content.skills_category) > 0:
+        # get technical skills grouped by user-defined categories
+        content.technical_skill = get_skills(content.skills_category)
+    else:
+        raise ValueError("Unexpected values for `content.technical_skill` and `content.skills_category`")
+
+    if norwegian:
+        norwegian_labels = get_skills_data()["norwegian_labels"]
+        norwegian_skills = []
+        for skill in content.technical_skill:
+            norwegian_skills.append(TechnicalSkill(title=norwegian_labels[skill.title], values=skill.values))
+        
+        content.technical_skill = norwegian_skills
 
     if badges:
         for skill in content.technical_skill:

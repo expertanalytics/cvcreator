@@ -2,10 +2,20 @@
 \usepackage[utf8]{inputenc}   % write in utf-8
 \usepackage[norsk]{babel}     % ÆØÅ support
 \usepackage[T1]{fontenc}      % extended symbol set
-\usepackage[margin=3cm,a4paper]{geometry}
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=1cm,
+            right=1cm,
+            top=3cm,
+            bottom=2cm,
+            footskip=.25in]{geometry}
 \usepackage{graphicx}         % pictures
 \usepackage{amssymb}          % math symbols
 \usepackage{hyperref}         % make URL links
+\usepackage{tabularx}         % make URL links
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{multirow}
 
 % Format hyperlinks
 \hypersetup {
@@ -14,10 +24,8 @@
   urlcolor=blue,
 }
 
-% add footer image
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt} % because fancyhdr usually makes a topline
-\cfoot{\vspace{0.2cm}\includegraphics[width=5cm]{\VAR{meta.footer_image}}}
 \pagestyle{fancy} % activate fancyhdr!
 
 % define some colors
@@ -64,23 +72,70 @@
 
   % XAL logo
   \vspace{-1.4cm}
-  \hspace{3cm}
+  \hspace{6cm}
   \includegraphics[width=6cm]{\VAR{meta.logo_image}}
 \end{tabular}
 
-\vspace{2cm}
+\vspace{1cm}
 
-\noindent{\LARGE \bfseries \color{xaldark} Curriculum Vitae for \VAR{name}}
+\noindent{\LARGE \bfseries \color{xaldark} \VAR{name}}
 
-\vspace{0.8cm}
+\vspace{0.5cm}
 
 \BLOCK{if summary}
-  \VAR{summary}
+  \begin{adjustwidth}{0.25cm}{0.25cm}
+    \VAR{summary}
+  \end{adjustwidth}
+  \vspace{0.5cm}
+\BLOCK{endif}
+
+\section*{\VAR{titles.section_titles.technical_skills}}{
+
+\begin{adjustwidth}{-1.25cm}{-1.25cm}
+    \begin{tabularx}{1\textwidth}{L X}
+      \BLOCK{for s in technical_skill}
+        \textbf{\VAR{s.title}} & \VAR{s.values|join(", ")} \\
+      \BLOCK{endfor}
+    \end{tabularx}
+\end{adjustwidth}
+
+
+\BLOCK{if project}
+  \section*{\VAR{titles.section_titles.projects}}
+
+  \BLOCK{for s in project}
+
+    \begin{tabularx}{1\textwidth}{X X}
+      \multirow[t]{3}{.5\textwidth}{\textbf{\VAR{s.title}}} & \hfill\textbf{\VAR{s.period}}\\
+      & \hfill\textbf{\VAR{s.company}}\\
+      & \hfill\textbf{\VAR{s.role}}\\
+    \end{tabularx}
+
+    \vspace{0.2cm}
+
+    \begin{adjustwidth}{0.25cm}{0.25cm}
+    \VAR{s.description}
+    \end{adjustwidth}
+    \vbox{
+
+      \begin{itemize}[itemsep=-0.1cm,topsep=0.2cm]
+        \BLOCK{for bp in s.bullet_points}
+          \item \VAR{bp}
+        \BLOCK{endfor}
+      \end{itemize}
+
+      \begin{adjustwidth}{0.25cm}{0.25cm}
+      \textbf{\VAR{tools_title}: }\VAR{s.tools|join(", ")}
+      \end{adjustwidth}
+      \rule{\textwidth}{0.1pt}
+      \vspace{0.5cm}
+    }
+  \BLOCK{endfor}
   \vspace{0.5cm}
 \BLOCK{endif}
 
 \BLOCK{if work}
-  \section*{Professional experience}
+  \section*{\VAR{titles.section_titles.professional_experience}}
   \begin{tabular}{LR}
     \BLOCK{for s in work}
     \VAR{s.start} \BLOCK{if s.end}-- \VAR{s.end}\BLOCK{endif} & \VAR{s.description} \\
@@ -89,33 +144,9 @@
   \vspace{0.5cm}
 \BLOCK{endif}
 
-\BLOCK{if education}
-  \section*{Education}
-  \begin{tabular}{LR}
-    \BLOCK{for s in education}
-      \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
-      \BLOCK{if s.degree}{\bf \VAR{s.degree} in \BLOCK{if s.specialization}\VAR{s.specialization}\BLOCK{else}\VAR{s.topic}\BLOCK{endif}}\
-        \BLOCK{else}\VAR{s.specialization} -- \VAR{s.description}\BLOCK{endif} \
-      \BLOCK{if s.department or s.university or s.country} at \VAR{[s.department, s.university, s.country]|select()|join(", ")}.\BLOCK{endif} \
-      \BLOCK{if s.thesis_title}Thesis title: ``\VAR{s.thesis_title}''.\BLOCK{endif} \
-      \BLOCK{if s.degree}\VAR{s.description}\BLOCK{endif} \\
-    \BLOCK{endfor}
-  \end{tabular}
-  \vspace{0.5cm}
-\BLOCK{endif}
-
-\BLOCK{if technical_skill}
-  \section*{Technical skills}{
-  \begin{tabular}{LR}
-    \BLOCK{for s in technical_skill}
-    \VAR{s.title} & \VAR{s.values|join(", ")} \\
-    \BLOCK{endfor}
-  \end{tabular}}
-  \vspace{0.5cm}
-\BLOCK{endif}
 
 \BLOCK{if language_skill}
-  \section*{Languages}
+  \section*{\VAR{titles.section_titles.languages}}
   \begin{tabular}{LR}
     \BLOCK{for s in language_skill}
     \VAR{s.language} & \VAR{s.proficiency} \\
@@ -125,7 +156,7 @@
 \BLOCK{endif}
 
 \BLOCK{if personal_skill}
-  \section*{Personal skills}
+  \section*{\VAR{titles.section_titles.personal_skills}}
   \begin{tabular}{LR}
     \BLOCK{for s in personal_skill}
     \VAR{s.title} & \VAR{s.description} \\
@@ -135,7 +166,7 @@
 \BLOCK{endif}
 
 \BLOCK{if hobby}
-  \section*{Some interests and hobbies}
+  \section*{\VAR{titles.section_titles.hobbies}}
   \begin{tabular}{LR}
     \BLOCK{for s in hobby}
     \VAR{s.title} & \VAR{s.values|join(", ")} \\
@@ -144,34 +175,31 @@
   \vspace{0.5cm}
 \BLOCK{endif}
 
-\BLOCK{if project}
-  \section*{Extended description of selected projects}
-  \BLOCK{for s in project}
-  \begin{tabular}{@{}LR}
-                      Activity    & \VAR{s.activity}    \\
-\BLOCK{if s.period}   Period      & \VAR{s.period}      \\ \BLOCK{endif}
-\BLOCK{if s.role}     Role        & \VAR{s.role}        \\ \BLOCK{endif}
-\BLOCK{if s.staffing} Staffing    & \VAR{s.staffing}    \\ \BLOCK{endif}
-\BLOCK{if s.volume}   Volume      & \VAR{s.volume}      \\ \BLOCK{endif}
-                      Description & \VAR{s.description} \\
-\BLOCK{if s.tools}    Tools       & \VAR{s.tools}       \\ \BLOCK{endif}
-\BLOCK{if s.url}      URL         & \VAR{s.url}         \\ \BLOCK{endif}
-  \rule{\textwidth}{0.1pt}
+\BLOCK{if education}
+  \section*{\VAR{titles.section_titles.education}}
+  \begin{tabular}{LR}
+    \BLOCK{for s in education}
+      \BLOCK{if s.start}\VAR{s.start} -- \VAR{s.end}\BLOCK{else}\VAR{s.end}\BLOCK{endif} &
+      \BLOCK{if s.degree}{\bf \VAR{s.degree} \VAR{s.what} \BLOCK{if s.specialization}\VAR{s.specialization}\BLOCK{else}\VAR{s.topic}\BLOCK{endif}}\
+      \BLOCK{else}\VAR{s.specialization} -- \VAR{s.description}\BLOCK{endif}\
+      \BLOCK{if s.department or s.university or s.country} \VAR{s.fromwhere} \VAR{[s.department, s.university, s.country]|select()|join(", ")}.\BLOCK{endif} \
+      \BLOCK{if s.thesis_title}\VAR{s.title}: ``\VAR{s.thesis_title}''.\BLOCK{endif} \
+      \BLOCK{if s.degree}\VAR{s.description}\BLOCK{endif} \\
+    \BLOCK{endfor}
   \end{tabular}
-  \BLOCK{endfor}
   \vspace{0.5cm}
 \BLOCK{endif}
 
 \BLOCK{if publication}
-  \section*{Publications}
+  \section*{\VAR{titles.section_titles.publications}}
   \BLOCK{for s in publication}
   \begin{tabular}{@{}LR}
-    Title   & {\it \VAR{s.title}} \\
-    Journal & \VAR{s.journal}     \\
-    DOI     & \url{\VAR{s.doi}}   \\
-    Authors & \VAR{s.authors}     \\
-\BLOCK{if s.year}Year    & \VAR{s.year} \\\BLOCK{endif}
-\BLOCK{if s.summary}Summary & \VAR{s.summary} \\\BLOCK{endif}
+    \VAR{titles.publication_sub_titles.title}   & {\it \VAR{s.title}} \\
+    \VAR{titles.publication_sub_titles.journal} & \VAR{s.journal}     \\
+    \VAR{titles.publication_sub_titles.doi}     & \url{\VAR{s.doi}}   \\
+    \VAR{titles.publication_sub_titles.authors} & \VAR{s.authors}     \\
+\BLOCK{if s.year} \VAR{titles.publication_sub_titles.year}    & \VAR{s.year} \\\BLOCK{endif}
+\BLOCK{if s.summary} \VAR{titles.publication_sub_titles.oppsummering} & \VAR{s.summary} \\\BLOCK{endif}
   \rule{\textwidth}{0.1pt}
   \end{tabular}
   \BLOCK{endfor}
