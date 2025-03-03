@@ -35,7 +35,7 @@ jobs:
           python -m poetry config virtualenvs.in-project true
 
       - name: Cache the virtualenv
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ./.venv
           key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
@@ -82,7 +82,7 @@ jobs:
 
       - name: Archive Wheel file for release
         if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.wheel.outputs.file }}
           path: dist
