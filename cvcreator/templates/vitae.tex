@@ -125,6 +125,11 @@
         \BLOCK{endfor}
       \end{itemize}
 
+      \BLOCK{if s.url}
+        \begin{adjustwidth}{0.25cm}{0.25cm}
+          \textbf{Link}: \href{\VAR{s.url}}{\VAR{s.url}}
+        \end{adjustwidth}
+      \BLOCK{endif}
       \begin{adjustwidth}{0.25cm}{0.25cm}
       \textbf{\VAR{tools_title}: }\VAR{s.tools|join(", ")}
       \end{adjustwidth}
