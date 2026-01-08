@@ -4,7 +4,8 @@ FROM texlive/texlive:latest-small
 
 # Install additional TeX Live collections for language support
 RUN tlmgr update --self && \
-    tlmgr install collection-langeuropean
+    tlmgr install collection-langeuropean && \
+    tlmgr install changepage enumitem multirow titlesec
 
 # Install Python and curl for uv installation
 RUN apt-get update && \
@@ -24,10 +25,10 @@ COPY pyproject.toml README.rst ./
 COPY cvcreator ./cvcreator
 
 # Create virtual environment and install project with dev dependencies
-RUN python3 -m venv /opt/venv
+RUN uv venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 RUN uv pip install -e ".[dev]"
 
 # Set the entrypoint to the cv command
-ENTRYPOINT ["cv"]
+ENTRYPOINT ["/opt/venv/bin/cv"]
 
