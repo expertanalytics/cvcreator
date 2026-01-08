@@ -23,5 +23,11 @@ WORKDIR /app
 COPY pyproject.toml README.rst ./
 COPY cvcreator ./cvcreator
 
-# Install project with dev dependencies using uv
-RUN /root/.local/bin/uv pip install --system --break-system-packages -e ".[dev]"
+# Create virtual environment and install project with dev dependencies
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN uv pip install -e ".[dev]"
+
+# Set the entrypoint to the cv command
+ENTRYPOINT ["cv"]
+

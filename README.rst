@@ -194,7 +194,7 @@ Example usage of running cvcreator in the docker container:
 
 .. code:: bash  
 
-    docker run --rm -v $(pwd):/data cvcreator cv create /data/example.toml /data/my_cv.pdf
+    docker run --rm -v $(pwd):/data cvcreator create /data/example.toml /data/my_cv.pdf
 
 This will mount the current working directory into the container at /data, and
 run the cvcreator command to create a CV from example.toml to my_cv.pdf.
