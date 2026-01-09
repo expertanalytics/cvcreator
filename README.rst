@@ -198,3 +198,16 @@ Example usage of running cvcreator in the docker container:
 
 This will mount the current working directory into the container at /data, and
 run the cvcreator command to create a CV from example.toml to my_cv.pdf.
+
+if you want it even simpler (and always have to stand in the directory where your files are located), 
+you can create an alias in your shell configuration file like this:
+
+.. code:: bash
+
+    alias cvcreator='docker run --rm -v $(pwd):/data cvcreator'
+
+Then you can run cvcreator commands as if it was installed on your system, e.g.:
+
+.. code:: bash
+
+    cvcreator create /data/example.toml /data/my_cv.pdf
