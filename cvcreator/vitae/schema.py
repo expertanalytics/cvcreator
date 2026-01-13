@@ -506,11 +506,11 @@ class NorwegianVitaeContent(VitaeContent):
         section_titles=SectionTitles(
             professional_experience="Arbeidserfaring",
             education="Utdanning",
-            technical_skills="Utvalgte tekniske ferdigheter",
+            technical_skills="Tekniske ferdigheter",
             languages="Språk",
             personal_skills="Personlige ferdigheter",
             hobbies="Interesser",
-            projects="Prosjekter",
+            projects="Utvidet beskrivelse av utvalgte prosjekter",
             publications="Publikasjoner",
         ),
         project_sub_titles=ProjectSubtitles(
