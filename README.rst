@@ -178,3 +178,36 @@ and deployed automatically when making a tagged released. To do so you need to:
 
 After merging to master, the workflow creates the tag and Github release for 
 this version and uploads its wheel file to Pypi.
+
+
+Docker
+======
+
+Cvcreator can also be run in a docker container. To build the container image,
+run the following command from the repository root:
+
+.. code:: bash
+    
+    docker build -t cvcreator .
+
+Example usage of running cvcreator in the docker container:
+
+.. code:: bash  
+
+    docker run --rm -v $(pwd):/data cvcreator create /data/example.toml /data/my_cv.pdf
+
+This will mount the current working directory into the container at /data, and
+run the cvcreator command to create a CV from example.toml to my_cv.pdf.
+
+If you want it even simpler (and always have to stand in the directory where your files are located), 
+you can create an alias in your shell configuration file like this:
+
+.. code:: bash
+
+    alias cvcreator='docker run --rm -v $(pwd):/data cvcreator'
+
+Then you can run cvcreator commands as if it was installed on your system, e.g.:
+
+.. code:: bash
+
+    cvcreator create /data/example.toml /data/my_cv.pdf
