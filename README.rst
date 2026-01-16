@@ -199,7 +199,7 @@ Example usage of running cvcreator in the docker container:
 This will mount the current working directory into the container at /data, and
 run the cvcreator command to create a CV from example.toml to my_cv.pdf.
 
-if you want it even simpler (and always have to stand in the directory where your files are located), 
+If you want it even simpler (and always have to stand in the directory where your files are located), 
 you can create an alias in your shell configuration file like this:
 
 .. code:: bash
