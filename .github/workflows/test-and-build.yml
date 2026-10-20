@@ -14,7 +14,7 @@ on:
         description: "wheel file name"
         value: ${{ jobs.test-and-build.outputs.wheel_file }}
 env:
-  PIPELINE_POETRY: '1.4.0' 
+  PIPELINE_POETRY: '2.2.1' 
 
 jobs:
   test-and-build:
@@ -24,9 +24,9 @@ jobs:
       skip_release: ${{ steps.pkg-version.outputs.skip_release }}
       wheel_file: ${{ steps.wheel.outputs.file }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Set up Python 3.11
-        uses: actions/setup-python@v4 
+        uses: actions/setup-python@v7 
         with:
           python-version: '3.11'
       - name: Poetry Installation and configure
@@ -35,7 +35,7 @@ jobs:
           python -m poetry config virtualenvs.in-project true
 
       - name: Cache the virtualenv
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ./.venv
           key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
@@ -82,7 +82,7 @@ jobs:
 
       - name: Archive Wheel file for release
         if: ${{ steps.pkg-version.outputs.skip_release == 'NO' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ steps.wheel.outputs.file }}
           path: dist
