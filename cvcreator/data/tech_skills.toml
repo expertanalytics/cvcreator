@@ -14,6 +14,8 @@ allowed_labels = [
   "Platforms",                # Operating system and system infrastructure
   "Testing",                  # Tools and frameworks for testing code
   "Visualization",            # Make pretty visualizations
+  "Libraries",                # Code libraries for data analysis and computation
+  "Data modelling",           # Modelling and transforming data in a warehouse
   "Office",                   # Tools typically found in and around office suite software
 
   # Should we keep these?
@@ -37,6 +39,8 @@ allowed_labels = [
 "Platforms" = "Platformer"
 "Testing" = "Testing"
 "Visualization" = "Visualisering"
+"Libraries" = "Biblioteker"
+"Data modelling" = "Datamodellering"
 "Office" = "Office"
 "Math" = "Matematikk"
 "File formats" = "Filformater"
@@ -166,6 +170,8 @@ allowed_labels = [
 "Git" = ["Tools", "Organize"]
 "Github" = ["Tools", "Organize"]
 "Github Actions" = ["Tools", "Organize"]
+"GitHub" = ["Tools", "Organize"]
+"GitHub Actions" = ["Tools", "Organize"]
 "GitLab" = ["Tools", "Organize"]
 "Go" = ["Languages"]
 "GoogleTest" = ["Tools", "Testing"]
