@@ -2,6 +2,12 @@
 \usepackage[utf8]{inputenc}   % write in utf-8
 \usepackage[norsk]{babel}     % ÆØÅ support
 \usepackage[T1]{fontenc}      % extended symbol set
+% map ligatures (fi, fl, ...) to unicode so text can be extracted by
+% CV parsing systems and copy-paste
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 \usepackage[a4paper,
             bindingoffset=0.2in,
             left=1cm,

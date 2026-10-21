@@ -19,7 +19,7 @@ jobs:
       tag_name:  ${{ inputs.tag_name }}
       wheel_file:  ${{ inputs.wheel_file }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -42,7 +42,7 @@ jobs:
           
 
       - name: Download dist artifact 
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.wheel_file }}
 
