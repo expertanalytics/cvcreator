@@ -66,7 +66,7 @@
 \BLOCK{if birth}      \includegraphics[width=0.3cm]{\VAR{meta.birth_image}}       &
     \VAR{"%02d"|format(birth.day)}-\VAR{"%02d"|format(birth.month)}-\VAR{birth.year}\\ \BLOCK{endif}
 \BLOCK{if address}    \includegraphics[width=0.3cm]{\VAR{meta.address_image}}     & \VAR{address}, \VAR{post} \\ \BLOCK{endif}
-\BLOCK{if nationality}\includegraphics[width=0.3cm]{\VAR{meta.nationality_image}} & \VAR{nationality}         \\ \BLOCK{endif}
+\BLOCK{if nationality}\includegraphics[width=0.3cm]{\VAR{meta.nationality_image}} & \VAR{nationality|join(", ")} \\ \BLOCK{endif}
   \end{tabular}
   \end{footnotesize} &
 

@@ -265,7 +265,7 @@ class VitaeContent(StrictModel):
     birth: Optional[datetime.date] = None
     email: str = ""
     phone: str = ""
-    nationality: Optional[Nationality] = None
+    nationality: Optional[Union[Nationality, List[Nationality]]] = None
     github: str = ""
     website: str = ""
     summary: str = ""
@@ -296,8 +296,7 @@ class VitaeContent(StrictModel):
 
 
 class NorwegianVitaeContent(VitaeContent):
-    nationality: Optional[NationalityNO] = None
-
+    nationality: Optional[Union[NationalityNO, List[NationalityNO]]] = None
     language_skill: List[NorwegianLanguageSkill] = Field(default_factory=list)
 
     education: List[NorwegianEducation] = Field(default_factory=list)
