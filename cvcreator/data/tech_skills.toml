@@ -253,7 +253,6 @@ allowed_labels = [
 "Next.js" = ["Tools", "Web"]
 "Ninja" = ["Tools", "Organize"]
 "Node.js" = ["Tools", "Web"]
-"Next.js" = ["Tools", "Web"]
 "Numpy" = ["Tools", "Math"]
 "Nx" = ["Tools", "Testing"]
 "OSG" = ["Tools", "Visualization"]
